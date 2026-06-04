@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Investment Scan — June 4, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ffffff;
+  --bg-alt: #fafbfc;
+  --text: #1a1a2e;
+  --text-muted: #64748b;
+  --accent: #2563eb;
+  --accent-light: #dbeafe;
+  --border: #e2e8f0;
+  --green: #16a34a;
+  --green-bg: #dcfce7;
+  --amber: #d97706;
+  --amber-bg: #fef3c7;
+  --red: #dc2626;
+  --red-bg: #fee2e2;
+  --gray: #64748b;
+  --gray-bg: #f1f5f9;
+  --orange: #ea580c;
+  --orange-bg: #fff7ed;
+  --purple: #7c3aed;
+  --purple-bg: #f5f3ff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 15px;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
+h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; }
+h2 { font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 3px solid var(--accent); }
+h3 { font-size: 1.25rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--accent); }
+h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1rem; margin-bottom: 0.5rem; }
+p { margin-bottom: 0.75rem; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.date-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+.summary-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+.summary-box h3 { color: var(--accent); margin-top: 0; }
+.post-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.post-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.post-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.analysis-box {
+  background: var(--orange-bg);
+  border-left: 4px solid var(--orange);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+.analysis-box h4 { color: var(--orange); margin-top: 0; }
+.tag {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+  vertical-align: middle;
+}
+.tag-long { background: var(--green-bg); color: var(--green); }
+.tag-short { background: var(--red-bg); color: var(--red); }
+.tag-neutral { background: var(--gray-bg); color: var(--gray); }
+.tag-cautious { background: var(--amber-bg); color: var(--amber); }
+.ticker {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.ticker-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.25rem 0;
+}
+.ticker-card h3 { margin-top: 0; }
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.metric {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+.metric-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.metric-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.validation {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+}
+.val-strong { background: var(--green-bg); color: var(--green); }
+.val-partial { background: var(--amber-bg); color: var(--amber); }
+.val-limited { background: var(--gray-bg); color: var(--gray); }
+.val-contradicted { background: var(--red-bg); color: var(--red); }
+blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: var(--bg-alt);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #475569;
+}
+.scoreboard {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+.scoreboard th {
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.scoreboard td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+.pub-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.pub-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.confidence {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+.conf-high { background: var(--green-bg); color: var(--green); }
+.conf-med { background: var(--amber-bg); color: var(--amber); }
+.conf-low { background: var(--red-bg); color: var(--red); }
+.cross-ref {
+  background: var(--purple-bg);
+  border-left: 4px solid var(--purple);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+.cross-ref h4 { color: var(--purple); margin-top: 0; }
+.news-box {
+  background: #f0fdf4;
+  border-left: 4px solid var(--green);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+.news-box h4 { color: var(--green); margin-top: 0; }
+hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Substack Investment Scanner</h1>
+<p class="date-label">Report generated: June 4, 2026 | Scan window: June 1 – June 4, 2026</p>
+
+<!-- ==================== EXECUTIVE SUMMARY ==================== -->
+<div class="summary-box">
+<h3>Executive Summary</h3>
+<p><strong>11 posts scanned across 6 publications</strong> (Citrini Research had no new posts). The dominant theme this week is <strong>Marvell Technology (MRVL)</strong>, featured in 5 of 6 active publications after Jensen Huang called it "the next trillion-dollar company" at Computex Taipei. Broadcom (AVGO) earnings landed after hours on June 3 with a strong beat but unchanged full-year AI guidance, triggering a 12% after-hours sell-off. SemiAnalysis published a massive deep dive on space datacenters tied to SpaceX's S-1 filing. Optical interconnect (Coherent Lite, CPO) was a secondary theme across FundaAI and Semi Doped.</p>
+<p><strong>Key calls this scan:</strong></p>
+<ul>
+<li><span class="tag tag-long">LONG</span> <span class="ticker">MRVL</span> — Consensus bullish across 5 pubs; CXL/DDR4 re-use angle unique to Irrational Analysis; FundaAI sees FY28 guide as conservative</li>
+<li><span class="tag tag-cautious">CAUTIOUS</span> <span class="ticker">AVGO</span> — KOVA flags expectation reset after -12% AH; strong fundamentals but priced for perfection</li>
+<li><span class="tag tag-long">LONG</span> <span class="ticker">AMD</span> — Irrational Analysis sizing up position; CPU story interesting post-Computex</li>
+<li><span class="tag tag-long">LONG</span> <span class="ticker">COHR / LITE / SMTC</span> — FundaAI deep dive on Coherent Lite value chain; optical names ripping on NVLink Fusion</li>
+<li><span class="tag tag-neutral">NEUTRAL</span> <span class="ticker">INTC</span> — 18A at full scale per Computex; KOVA and Semi Doped note competitive pressure from Nvidia N1X</li>
+</ul>
+</div>
+
+<!-- ==================== TICKER SCOREBOARD ==================== -->
+<h2>Ticker Scoreboard</h2>
+<table class="scoreboard">
+<thead>
+<tr>
+<th>Ticker</th>
+<th>Price</th>
+<th>Market Cap</th>
+<th>Signal</th>
+<th>Mentioned By</th>
+<th>Analyst Consensus</th>
+<th>Validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="ticker">MRVL</span></td>
+<td>$309</td>
+<td>$255B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>5 pubs</td>
+<td>Strong Buy — avg PT $233 (lagging)</td>
+<td><span class="validation val-partial">PARTIALLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">AVGO</span></td>
+<td>$477</td>
+<td>$2.26T</td>
+<td><span class="tag tag-cautious">CAUTIOUS</span></td>
+<td>2 pubs</td>
+<td>Buy — Q2 beat but AH -12%</td>
+<td><span class="validation val-partial">PARTIALLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">AMD</span></td>
+<td>$522</td>
+<td>$839B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>1 pub</td>
+<td>Buy — 138% 12mo return</td>
+<td><span class="validation val-limited">LIMITED DATA</span></td>
+</tr>
+<tr>
+<td><span class="ticker">COHR</span></td>
+<td>$427</td>
+<td>~$65B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>2 pubs</td>
+<td>Strong Buy — PT $371 (lagging)</td>
+<td><span class="validation val-strong">STRONGLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">LITE</span></td>
+<td>$1,056</td>
+<td>$80B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>2 pubs</td>
+<td>Buy — avg PT $1,105</td>
+<td><span class="validation val-strong">STRONGLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">SMTC</span></td>
+<td>$161</td>
+<td>~$11B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>1 pub</td>
+<td>Buy — PT raised to $225 (UBS)</td>
+<td><span class="validation val-strong">STRONGLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">INTC</span></td>
+<td>$108</td>
+<td>~$460B</td>
+<td><span class="tag tag-neutral">NEUTRAL</span></td>
+<td>2 pubs</td>
+<td>Hold/Buy — PTs being raised</td>
+<td><span class="validation val-partial">PARTIALLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">ALAB</span></td>
+<td>$358</td>
+<td>$62B</td>
+<td><span class="tag tag-neutral">NEUTRAL</span></td>
+<td>2 pubs</td>
+<td>Buy</td>
+<td><span class="validation val-partial">PARTIALLY VALIDATED</span></td>
+</tr>
+<tr>
+<td><span class="ticker">CIEN</span></td>
+<td>$627</td>
+<td>~$31B</td>
+<td><span class="tag tag-long">LONG</span></td>
+<td>1 pub</td>
+<td>Buy — earnings June 4</td>
+<td><span class="validation val-limited">LIMITED DATA</span></td>
+</tr>
+</tbody>
+</table>
+
+<!-- ==================== PUBLICATION: IRRATIONAL ANALYSIS ==================== -->
+<h2>Irrational Analysis</h2>
+
+<div class="post-card">
+<div class="post-title">What's Going On With Marvell?</div>
+<div class="post-meta">Jun 03, 2026 | ~1,000 words | Tickers: <span class="ticker">MRVL</span> <span class="ticker">AMD</span> <span class="ticker">CIEN</span> <span class="ticker">ALAB</span></div>
+<div>
+<span class="tag tag-long">LONG</span> AMD
+<span class="tag tag-neutral">NEUTRAL</span> MRVL
+<span class="tag tag-long">LONG</span> CIEN
+</div>
+
+<h4>Full Summary</h4>
+<p>The author — a semiconductor industry veteran invested since 2011 — opens with a self-deprecating admission: despite being "the most asked about stock from institutional investors" (at least 10 hedge funds and 3 family offices regularly ask him about MRVL), he genuinely doesn't know what's driving Marvell's 60% one-week rally. He congratulates CEO Matt Murphy and the "non-trivial number" of Marvell employees subscribed to his newsletter. He reveals he tried to short MRVL around $172 but gave up, and was not short during the rally.</p>
+
+<p>Rather than chasing MRVL, the author pivots to what he finds more interesting: <strong>AMD's CPU story</strong>. He's debating sizing up his AMD position significantly and considers it more compelling than Marvell at current levels. He also wants to buy back into Ciena (CIEN) but is too leveraged, with AMD taking priority.</p>
+
+<p><strong>Section 1 — Politics and Conspiracy Theories:</strong> Jensen Huang's $2B personal investment in Marvell has vastly outperformed his own NVDA stock. The author speculates on Jensen's motivations, all with "zero conviction": (a) force Amazon to use NVLink Fusion instead of Celestial, (b) block AMD from custom high-performance switches, (c) weaken Broadcom, (d) get access to Celestial IP as a backup if ring modulators don't scale, or (e) get access to Marvell's dense SRAM IP. He notes significant friction between Nvidia and Marvell over optical DSP pricing and performance, mentioning Nvidia has its own internal DSP (shown at a recent OFC demo) that "seems pretty good."</p>
+
+<p><strong>Section 2 — Dense SRAM:</strong> The most technically substantive section. Marvell showed "excellent results" of custom dense SRAM IP at Hot Chips. The key achievement: they can run at 500 mV (450 mV if pushed), compared to a typical floor of 630 mV for licensable IP (e.g., Synopsys). Even acknowledging that Nvidia, AMD, and Broadcom have better internal SRAM IP than Synopsys's stock offering, the author believes Marvell's gap is "so wide" that it's likely better than most or all internal SRAM IP. He notes the comparison data is for N2 (TSMC 2nm), making it especially impressive. The voltage advantage translates directly to power efficiency — critical for datacenter chips.</p>
+
+<p><strong>Section 3 — DDR4 CXL Re-Use:</strong> A contrarian call. The author had previously viewed CXL as "dead technology," but the DRAM shortage has changed everything. With DRAM prices going "exponential," the residual value of old DDR4 sticks from decommissioned CPU servers is now extremely high. Marvell's Structera CXL card allows hyperscalers to re-use DDR4 in a CXL memory pool when consolidating old servers. The latency is "dogshit" but far better than NAND storage. The author calls this "probably Marvell's highest gross margin product" with margins likely around 85%, going "from zero to a large revenue number." He views Marvell's product as "just better" than Astera Labs' competing CXL solution due to superior interface IP and the dense SRAM advantage (used as cache to hide CXL controller latency).</p>
+
+<p><strong>Holdings Update:</strong> Rebalancing long-only accounts (~90% complete). Wants Samsung >5% position. Considering cutting GEV in half. Trading account wants to "size up AMD a lot." Acknowledges $56K tax pre-payment due July 15. Will buy Ciena if it drops on earnings; admits he'll "probably FOMO in anyway" if it rallies. "Very unhappy" with how he played Ciena this year.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The dense SRAM and DDR4 CXL analyses are technically rigorous and novel — this is the only publication in our scan raising these specific angles. The SRAM voltage data is verifiable (Hot Chips is a peer-reviewed venue), and the DDR4 re-use thesis is logically sound given the DRAM shortage. The conspiracy theory section is explicitly caveated as speculation with "zero conviction," which is appropriately disclosed.</p>
+
+<p><strong>Unstated Assumptions:</strong> The DDR4 CXL thesis assumes (a) the DRAM shortage persists long enough for Structera to ramp meaningfully, (b) hyperscalers will adopt CXL pooling rather than simply bidding up DDR5 prices, and (c) Marvell can capture pricing power at 85% margins without attracting competitive response. The first two assumptions have supporting evidence; the third is aggressive.</p>
+
+<p><strong>Bias/Conflicts:</strong> Author is transparent about positions — he's not long MRVL, wants more AMD and Samsung, and admits to FOMO risk on CIEN. The "I don't know" framing on Marvell is refreshingly honest compared to the certainty expressed by other publications. However, his AMD bullishness lacks the same depth of analysis he gives MRVL's technical advantages.</p>
+
+<p><strong>What Would Need to Be True for This to Be Wrong:</strong> If DRAM prices normalize quickly (new fab capacity, demand destruction), the DDR4 CXL thesis collapses. If Nvidia's internal DSP proves competitive, Marvell's optical DSP moat narrows. The AMD thesis is underdeveloped — he's mostly saying "I like it" without the same rigor.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> on technical analysis quality; <span class="confidence conf-med">MEDIUM</span> on the DDR4 CXL investment thesis (execution timing uncertain).</p>
+</div>
+</div>
+
+<!-- ==================== PUBLICATION: GLOBAL SEMI RESEARCH ==================== -->
+<h2>Global Semi Research</h2>
+
+<div class="post-card">
+<div class="post-title">Marvell: Strategic Transformation in the AI Data Center Era</div>
+<div class="post-meta">Jun 02, 2026 | ~864 words (partial; paid content truncated) | Tickers: <span class="ticker">MRVL</span> <span class="ticker">AVGO</span></div>
+<div>
+<span class="tag tag-long">LONG</span> MRVL
+</div>
+
+<h4>Full Summary</h4>
+<p>This piece provides a comprehensive overview of Marvell's transformation from a traditional storage/networking chip company into a core AI data center player. The analysis is structured around three growth engines and a detailed acquisition history.</p>
+
+<p><strong>Financial Performance:</strong> Q1 FY2026 revenue of $2.418B (+28% YoY), revised full-year guidance to $11.5B (+40% growth). The company hit its $3B quarterly target a quarter early. Data center accounts for 76% of total revenue and is projected to grow 50% YoY this fiscal year.</p>
+
+<p><strong>Acquisition-Driven Transformation:</strong> The piece traces Marvell's strategic M&A: Cavium (2018, data center processors), Avera (2019, custom ASIC), Innovium (2020, Ethernet switching), Inphi (2021, $10B, optical DSPs — the transformative deal), and Celestial AI (Dec 2025, ~$3B, CPO technology). Each acquisition filled a specific capability gap. The Inphi deal is positioned as the most transformative, giving Marvell deep optical physics and high-speed SerDes expertise just as GPU compute growth created an interconnect bottleneck.</p>
+
+<p><strong>Three Growth Engines:</strong> (1) <em>Interconnect</em> — optical DSPs, DCI modules, scale-up optical. Marvell held 60% market share in 800G-era DSPs but is projected to lose ground to Broadcom in the 1.6T era (Broadcom ~60%, Marvell ~40%) due to design capability and TSMC 3nm capacity advantages. (2) <em>Switching</em> — Marvell announced a 102.4Tbps Teralynx switch. (3) <em>Custom Silicon</em> — ASIC design for hyperscalers, competing with Broadcom as a duopoly.</p>
+
+<p><strong>Revenue Mix:</strong> FY26 data center at 74% of total revenue vs. 26% for communications/other. FY27 projected data center growth of 50% vs. 10% for other segments. The company is described as "no longer a traditional semiconductor company, but a company focused on AI data infrastructure."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> This is a solid, well-structured overview but lacks original insight. The acquisition timeline and financial data are accurate and verifiable. However, the piece reads more like a sell-side initiation note than independent analysis — it presents Marvell's narrative without substantive pushback.</p>
+
+<p><strong>Cherry-Picked Data:</strong> The article emphasizes revenue growth and market share gains while glossing over profitability. GAAP gross margins of 52.1% are modest for a "high-growth AI company." The non-GAAP figure (58.9%) is more flattering but still below Broadcom's ~75% operating margins. Stock-based compensation, a chronic issue for Marvell, is not mentioned.</p>
+
+<p><strong>What's Missing:</strong> (1) Valuation discussion — at ~$255B market cap against ~$11.5B revenue guidance, MRVL trades at ~22x sales, extremely rich. (2) The 800G to 1.6T transition risk — losing 20 points of DSP market share to Broadcom is significant. (3) Customer concentration risk — dependence on a handful of hyperscalers. (4) Celestial AI integration risk at $3B.</p>
+
+<p><strong>What Would Need to Be True for This to Be Wrong:</strong> If the 1.6T DSP transition goes worse than expected (Broadcom takes 70%+ share), Marvell's interconnect growth engine stalls. If custom silicon deals are slower to ramp, the "next chip giant" narrative deflates.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-med">MEDIUM</span> — accurate data but lacks depth, original angles, and valuation rigor. Content was partially paywalled.</p>
+</div>
+</div>
+
+<!-- ==================== PUBLICATION: SEMIANALYSIS ==================== -->
+<h2>SemiAnalysis</h2>
+
+<div class="post-card">
+<div class="post-title">To Boldly Go: The Case for Space Datacenters</div>
+<div class="post-meta">Jun 03, 2026 | ~9,400 words (free preview) | 10 co-authors | Tickers: None directly promoted</div>
+<div>
+<span class="tag tag-neutral">NEUTRAL</span> Research / Thematic
+</div>
+
+<h4>Full Summary</h4>
+<p>This is a massive, first-principles analysis of orbital compute economics, tied to the launch of SemiAnalysis's new "AI Space Datacenter TCO Model." The piece spans four major sections, building the case that space datacenters are theoretically viable but currently 4x+ more expensive than terrestrial alternatives, with parity not expected until ~2040 in the base case.</p>
+
+<p><strong>Context &amp; Motivation:</strong> Elon Musk has been aggressively pushing orbital compute — in a February 2026 Dwarkesh Podcast appearance, he predicted "a few hundred gigawatts per year of AI in space" within five years. SpaceX's May 2026 S-1 filing (targeting $1.75T valuation at $135/share) explicitly states a goal of "100 gigawatts of compute to space each year." The xAI-SpaceX merger and Terafab initiative are framed as the corporate machinery behind this vision.</p>
+
+<p><strong>Debunking Four Casual Arguments:</strong></p>
+<ul>
+<li><strong>"Free 24-hour solar"</strong> — False for LEO (~60% sun exposure). Sun-Synchronous Orbit (SSO) gets near-constant sun but still requires battery backup for 35-minute eclipse periods.</li>
+<li><strong>"Free cooling"</strong> — The biggest misconception. Space is a vacuum — no convective cooling. Heat can only be radiated away. The ISS's radiator system costs $340-500M to reject just 70kW (less than half an NVL72 rack). Cooling is the "largest structural constraint for orbital compute."</li>
+<li><strong>"Lowest latency"</strong> — Only true for 5-7 minutes per day when a LEO satellite passes overhead. Inter-satellite links add 30-80ms one-way delay for distant connections.</li>
+<li><strong>"No permitting needed"</strong> — Dawn-dusk SSO is actually a very constrained orbital subset. Capacity limits will eventually create "permitting" equivalents.</li>
+</ul>
+
+<p><strong>Five Layers of Terrestrial Supply:</strong> The article introduces a framework for when space becomes necessary: (1) Grid-connected supply ($12-15M/MW, but 5-7 year queues); (2) Converted capacity/powered land (crypto miners, 8-10 GW near-term); (3) Behind-the-meter generation (projected to supply 50% of new AI DC power by 2028); (4) Industrial production expansion ($20M+/MW); (5) Semiconductor ceiling (the binding constraint — TSMC N3 and HBM production limits).</p>
+
+<p><strong>TCO Analysis (2026 baseline):</strong> A 30.5kW B300 cluster (16 GPUs) costs $4.1M to deploy in space vs. $1.4M terrestrially. Monthly ownership: $100,925/month (space) vs. $27,724/month (terrestrial). On a GPU-hour basis: $8.64/hr/GPU (space) vs. $2.37/hr/GPU (terrestrial). After accounting for radiation availability and redundancy requirements, Levelized Cost of Compute (LCOC): $10.91/hr/GPU (space) vs. $2.49/hr/GPU (terrestrial).</p>
+
+<p><strong>Path to Parity:</strong> Base case: parity ~2040, driven by launch cost drops (Falcon 9 ~$1,400-1,800/kg to Starship ~$250/kg), radiator improvements, and solar cost reductions. "Elon Musk case": near-parity by early 2030s, assuming terrestrial capacity peaks in 2028. By the early 2030s, space could be "only ~30% more expensive."</p>
+
+<p><strong>Terafab Analysis:</strong> Musk's $20-25B Austin fab targets 100K WSPM initially, scaling to 1M WSPM (~70% of TSMC's current global output). The authors are cautious: Tesla has "no manufacturing IP," process IP is the deeper constraint, and memory fabrication from scratch is "the hardest to square." They note 1M WSPM would be "24% of global foundry capacity" — unprecedented for any single fab. The piece concludes that Terafab at even a fraction of its target would be meaningful, but the chip constraint will bind before the datacenter constraint.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> Exceptional analytical rigor. The piece systematically debunks simplistic arguments while building a fair framework that acknowledges space compute's long-term viability. The five-layer terrestrial supply framework is original and useful. The TCO breakdown is granular and first-principles-based. The Terafab section appropriately challenges Musk's claims while acknowledging his track record.</p>
+
+<p><strong>Unstated Assumptions:</strong> The base case assumes "considerable resources mustered to add semiconductor manufacturing capacity" — this is explicitly acknowledged as optimistic. The model also assumes radiation and reliability challenges are "sufficiently solved or mitigated by ~2040," which is hand-waved. The "Elon Musk scenario" requires terrestrial capacity to peak in 2028, which contradicts the massive BTM and grid expansion the article itself documents.</p>
+
+<p><strong>Potential Bias:</strong> SemiAnalysis is launching a paid TCO Model product alongside this article. The piece is partially a product launch disguised as research. Nearly every section ends with a reference to the paid model. However, the free preview is sufficiently detailed to be valuable standalone.</p>
+
+<p><strong>Investment Implications:</strong> While no tickers are directly promoted, the analysis is bullish for terrestrial datacenter infrastructure plays (power, cooling, networking) for the next 5-10 years, and implicitly bullish for TSMC/semiconductor equipment makers as the binding constraint. The SpaceX IPO angle (S-1 at $1.75T) is the most directly investable takeaway — the piece provides an analytical framework for evaluating SpaceX's orbital compute claims.</p>
+
+<p><strong>What Would Need to Be True for This to Be Wrong:</strong> If Starship achieves $50/kg (not $250/kg) and radiator technology has a breakthrough, the timeline could compress dramatically. If terrestrial permitting gridlock worsens faster than expected, space becomes necessary sooner.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> — best analytical framework in this scan. The product-launch angle doesn't undermine the research quality.</p>
+</div>
+</div>
+
+<!-- ==================== PUBLICATION: KOVA INVESTMENT RESEARCH ==================== -->
+<h2>KOVA Investment Research</h2>
+
+<div class="post-card">
+<div class="post-title">AVGO After-Hours -12%: Broadcom Didn't Miss — The Bar Did</div>
+<div class="post-meta">Jun 04, 2026 | Paid (preview only) | Tickers: <span class="ticker">AVGO</span></div>
+<div>
+<span class="tag tag-cautious">CAUTIOUS</span> AVGO
+</div>
+
+<h4>Full Summary</h4>
+<p>(Mostly paywalled — preview analyzed) KOVA frames the Broadcom after-hours drop as an "expectation reset" rather than a fundamental miss. The key data points from the preview: Revenue +48% YoY, AI semiconductor revenue +143%, non-GAAP EPS beat, free cash flow $10.26B. Despite this, the stock dropped 13%+ after hours.</p>
+
+<p>The author explicitly distinguishes this from an "earnings blowup," calling it "more dangerous and more common" — an expectation reset where the stock price had already priced in all the good news. The subtitle captures the thesis: "AVGO's problem isn't that AI revenue wasn't strong enough — it's that the stock price had already bought all the good news in advance." The post promises historical analysis of similar post-earnings patterns and portfolio positioning guidance, behind the paywall. A live member session is scheduled for 9:30 AM EST the following morning.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The framing is sound — AVGO reporting revenue +48% and AI +143% while falling 12%+ is a textbook "sell the news" event, not a fundamental deterioration. The distinction between "earnings miss" and "expectation reset" is important for how investors should respond (buy-the-dip vs. de-risk). However, there's a critical detail in the actual results: Broadcom's Q3 guidance and unchanged full-year AI revenue target of $100B were the actual disappointments, not just "expectations being too high."</p>
+
+<p><strong>What's Missing:</strong> The preview doesn't address why guidance wasn't raised — was it conservatism or actual demand deceleration? At $477 with a P/E of ~94x, even a "reset" leaves AVGO at a stretched valuation. The 143% AI revenue growth is partially lapping easy comps from the VMware integration year.</p>
+
+<p><strong>Bias/Conflicts:</strong> KOVA is a momentum trading newsletter (self-described). Their portfolio was "up 10%" and "up 64% in May." The live session format creates urgency/FOMO that may conflict with objective analysis. The bilingual Chinese/English format targets a specific retail demographic.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-med">MEDIUM</span> — correct directional framing but insufficient depth due to paywall.</p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">$MRVL Up 32% in One Day: Jensen's "Trillion" Endorsement — My Updated Price Target</div>
+<div class="post-meta">Jun 03, 2026 | Paid (preview only) | Tickers: <span class="ticker">MRVL</span></div>
+<div>
+<span class="tag tag-long">LONG</span> MRVL
+</div>
+
+<h4>Full Summary</h4>
+<p>(Mostly paywalled) KOVA claims validation of their April 28 thesis that Marvell is the "duopoly leader" in AI data center connectivity alongside Broadcom. Their core argument from April: "Any hyperscaler wanting custom AI chips or to connect tens of thousands of GPUs into clusters has only two global design partners: Broadcom or Marvell." On June 2, Jensen Huang at Computex said "Ladies and gentlemen, the next trillion-dollar company" while pointing at Marvell CEO Matt Murphy. MRVL rallied 29% (intraday 33%), its largest single-day gain ever, reaching ~$250B market cap.</p>
+
+<p>KOVA claims MRVL is "up 100% since I shared it in my VIP chat." The post promises: (1) complete logic of the two-day rally, (2) teardown of Marvell's technical moat, (3) updated price target. At the April target, sell-side consensus was $131 — KOVA argued the "real" target should be $200+.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The duopoly framing for custom AI silicon design (MRVL + AVGO) is broadly correct and a legitimate structural advantage. However, the "100% since VIP chat" claim and the emphasis on Jensen's endorsement as validation conflates narrative momentum with fundamental analysis. Jensen has economic incentives (his $2B personal stake) for talking up MRVL.</p>
+
+<p><strong>Cherry-Picked Data:</strong> Highlighting the 29% single-day move as validation ignores that such moves often mean the stock has disconnected from fundamentals. At ~$250B market cap against $11.5B revenue guidance, MRVL trades at ~22x forward sales — pricing in years of flawless execution.</p>
+
+<p><strong>What Would Need to Be True for This to Be Wrong:</strong> If custom silicon ramps slower than the two-year timeline hyperscalers typically commit to, or if a third competitor emerges (unlikely near-term), the duopoly premium erodes.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-low">LOW</span> — the victory-lap tone, VIP chat promotion, and paywall obscure whether there's substantive updated analysis.</p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">June 1st Trading Report: +10% Today; Jensen Redefines the CPU in Taipei</div>
+<div class="post-meta">Jun 01, 2026 | Paid (preview only) | Tickers: <span class="ticker">INTC</span> <span class="ticker">AMD</span></div>
+<div>
+<span class="tag tag-cautious">CAUTIOUS</span> INTC
+<span class="tag tag-neutral">NEUTRAL</span> AMD
+</div>
+
+<h4>Full Summary</h4>
+<p>(Mostly paywalled) KOVA reports their portfolio gained 10% on the day, calling it "the longest, craziest run since COVID." They reference their public holdings from May 31 showing +64% for the month. The post highlights pressure on INTC from Computex, specifically Nvidia's entry into the Windows PC space with N1X (Arm-based CPU + Blackwell GPU), which directly threatens Intel and AMD in the PC segment. KOVA notifies members to reduce positions ("always nice to take profit/chips off the table") despite continued uptrend in QQQ and SPY, noting the market is "slowly losing momentum."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The caution on market momentum is reasonable — profit-taking after +64% monthly gains is prudent risk management. The N1X competitive threat to INTC and AMD is real but early-stage; Nvidia's first Windows PCs ship this fall. However, the extreme portfolio performance claims (+64% monthly, +10% daily) are unusual and difficult to verify independently.</p>
+
+<p><strong>Bias:</strong> The newsletter's primary value proposition is trading performance, creating incentive to highlight winning months. The "since COVID" comparison adds dramatic framing.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-low">LOW</span> — mostly promotional, limited analytical content visible.</p>
+</div>
+</div>
+
+<!-- ==================== PUBLICATION: SEMI DOPED ==================== -->
+<h2>Semi Doped</h2>
+
+<div class="post-card">
+<div class="post-title">Daily Update — June 3rd, 2026</div>
+<div class="post-meta">Jun 03, 2026 | ~893 words | Tickers: <span class="ticker">NVDA</span> <span class="ticker">LITE</span> <span class="ticker">COHR</span> <span class="ticker">GOOGL</span> <span class="ticker">ALAB</span></div>
+<div>
+<span class="tag tag-neutral">NEUTRAL</span> Broad Coverage
+</div>
+
+<h4>Full Summary</h4>
+<p><strong>NVLink Fusion Opens to Photonics:</strong> Nvidia announced at GTC Taipei that NVLink Fusion will extend to photonic interconnects. Lightmatter (Passage interconnects, Guide laser sources) and Ayar Labs (CPO products) join as co-packaged optics partners. Optical supplier stocks Lumentum, Coherent, and Corning rose sharply.</p>
+
+<p><strong>Jensen's Key Quote:</strong> "We should use copper as much as we can, for as long as we can, but copper has its limits. The right strategy is to scale up with copper as long as you can. After that you scale up further with optics, you scale out with optics and you scale across with optics."</p>
+
+<p><strong>Austin's Take (Critical):</strong> "Nothing new was said." Near-term interpretation: copper for in-rack scale-up, optics for between-rack and scale-out. The real TAM growth for optical names comes when in-rack scale-up moves to optical — "that will come, but not nearly as soon as the rhetoric makes it seem."</p>
+
+<p><strong>RTX Spark:</strong> Microsoft and Nvidia launched RTX Spark — an Arm-based chip for thin-and-light Windows PCs with 1 petaflop AI performance, 6,144 Blackwell RTX cores, 20 Arm CPU cores, 128GB unified memory. The pitch: on-device agents running frontier models locally (GitHub Copilot, Claude Code, Cursor). Also announced DGX Station deskside box (748GB coherent memory, 20 PFLOPS FP4). Austin notes he's already running agentic workloads on a Framework AMD Ryzen Max+ 395 — "memory and compute won't be the barrier to local agentic AI, rather UX and consumer awareness."</p>
+
+<p><strong>Alphabet $80B Equity Raise:</strong> ~$30B underwritten, $40B ATM program, $10B Berkshire private placement. Market reaction muted (-2% premarket) because ~40% is for employee equity-tax obligations, not direct capex.</p>
+
+<p><strong>Quick Hits:</strong> Koh Young semiconductor packaging inspection equipment sales +79%. Chinese NAND makers reaching Micron/SanDisk market share parity. CoreWeave data center entity raised $900M via junk bonds. Astera Labs expanding Taiwan operations.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The "nothing new was said" take on Jensen's optical comments is a valuable contrarian perspective — while optical stocks rallied sharply, Austin correctly notes the actual NVLink Fusion announcement didn't change the timeline for in-rack optical adoption. This is the kind of industry-insider skepticism that's hard to find elsewhere.</p>
+
+<p><strong>Added Value:</strong> The RTX Spark analysis is practical — Austin is actually running local models on similar hardware and provides real-world context. The Alphabet raise breakdown (40% employee equity taxes) is a useful detail the market didn't initially parse.</p>
+
+<p><strong>What's Missing:</strong> No quantitative analysis — Semi Doped intentionally operates as "quick hits, high signal" rather than deep dives. No price targets or position disclosures.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> on the contrarian optical take; <span class="confidence conf-med">MEDIUM</span> overall (breadth over depth).</p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">Daily Update — June 2nd, 2026</div>
+<div class="post-meta">Jun 02, 2026 | ~565 words | Tickers: <span class="ticker">MRVL</span> <span class="ticker">INTC</span> <span class="ticker">ARM</span></div>
+<div>
+<span class="tag tag-neutral">NEUTRAL</span> MRVL
+<span class="tag tag-neutral">NEUTRAL</span> INTC
+</div>
+
+<h4>Full Summary</h4>
+<p><strong>Marvell at Computex:</strong> CEO Matt Murphy presented Marvell's CPO switch and argued the "copper wall is moving into the rack" such that only very short interconnects remain copper. Semi Doped pushes back: "This is overly optimistic and in-rack copper scale up is here to stay for the time being. Not to say optics is not important; both will coexist for at least a few more years." Also announced the 102.4Tbps Teralynx switch. Then Jensen arrived on stage and called Marvell "the next trillion dollar company," sparking the rally.</p>
+
+<p><strong>Intel at Computex:</strong> CEO Lip-Bu Tan announced 18A process at full scale — Core Ultra 3, Core 3, Clearwater Forest, and Xeon 6+ all in production on 18A. 300+ Panther Lake devices shipping, Wildcat Lake has 70 designs. Arc G3 discrete GPU introduced. 130+ edge devices across 4,000+ partners. Austin attended but was "too jet lagged" to write detailed impressions — promised a full podcast episode.</p>
+
+<p><strong>Arm Adoption:</strong> Oracle Cloud Infrastructure and ByteDance now using Arm data-center CPUs, joining Cerebras, Cloudflare, Meta, OpenAI, Positron, Rebellions, SAP, SK Telecom. The Arm ecosystem for datacenter CPUs continues to broaden.</p>
+
+<p><strong>In-Rack Optical Demo:</strong> A "really cool" rack showing what optical scale-up looks like: ELSFP laser modules (blue plugs) and optical fibers (yellow cables) going into a switch.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Value-Add:</strong> The pushback on Marvell's "copper wall" narrative is informed by industry expertise. The note that Intel's 18A is "at full scale" is a significant development that other publications in this scan largely ignored — if 18A delivers, Intel's foundry business and competitive position improve materially.</p>
+
+<p><strong>What's Missing:</strong> No analysis of what "full scale" actually means for Intel's volumes or competitive positioning vs. TSMC N2. The Arm datacenter CPU adoption story (Oracle, ByteDance) is significant for the INTC/AMD competitive landscape but gets no analytical treatment.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-med">MEDIUM</span> — useful on-the-ground reporting but intentionally brief.</p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">Daily Update — June 1st, 2026</div>
+<div class="post-meta">Jun 01, 2026 | ~515 words | Tickers: <span class="ticker">NVDA</span> <span class="ticker">DELL</span></div>
+<div>
+<span class="tag tag-neutral">NEUTRAL</span> Broad Coverage
+</div>
+
+<h4>Full Summary</h4>
+<p><strong>First Vera Rubin NVL72 Deployment:</strong> Dell and CoreWeave completed the first deployment of Nvidia's Vera Rubin VR200 NVL72 rack-scale system, passing L11 diagnostics (full rack-scale validation). SemiAnalysis confirmed it's the first cloud provider to have fully passing L11 diags. Next steps: multi-rack burn-in and software bringup (sglang, vLLM, Dynamo).</p>
+
+<p><strong>Nvidia Windows PCs (Preview):</strong> Nvidia and Microsoft to unveil first Nvidia-powered Windows PCs at Computex. Dell preparing embargoed XPS launch using Nvidia N1X (Arm CPU + Blackwell integrated GPU). Lenovo and ASUS as additional OEM partners. This marks Nvidia's entry into the Windows-on-Arm PC segment against Qualcomm, AMD, and Intel.</p>
+
+<p><strong>Computex Keynote:</strong> Sources who attended said "the whole thing was boring" — nothing unexpected. N1X response was "underwhelming." Key number: 1GW of compute will cost $80B to build.</p>
+
+<p><strong>Power wall at Computex:</strong> 800V power chips showcased extensively.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Value-Add:</strong> The "boring" Computex keynote assessment from on-the-ground attendees is valuable context vs. the hype in financial media. The $80B/GW cost figure is a useful benchmark. The Vera Rubin NVL72 deployment being confirmed with L11 diags is a genuine milestone.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-med">MEDIUM</span> — news-focused, limited analysis.</p>
+</div>
+</div>
+
+<!-- ==================== PUBLICATION: FUNDAAI ==================== -->
+<h2>FundaAI</h2>
+
+<div class="post-card">
+<div class="post-title">Deep | Coherent Lite Reshapes AI Optical Interconnects</div>
+<div class="post-meta">Jun 03, 2026 | ~403 words (free preview; paid) | Tickers: <span class="ticker">COHR</span> <span class="ticker">LITE</span> <span class="ticker">MRVL</span> <span class="ticker">SMTC</span></div>
+<div>
+<span class="tag tag-long">LONG</span> COHR
+<span class="tag tag-long">LONG</span> LITE
+<span class="tag tag-long">LONG</span> MRVL (DSP)
+<span class="tag tag-long">LONG</span> SMTC (TIA)
+</div>
+
+<h4>Full Summary</h4>
+<p>FundaAI argues the market is "underestimating the upside" of Coherent Lite technology. The key insight: the industry's prevailing narrative focuses on Coherent Lite for DCI/LR/campus interconnect (2-20 km reach), but the real volume driver is <strong>OCS (Optical Circuit Switch) paired interconnect in Google TPU/AI clusters</strong>.</p>
+
+<p><strong>The OCS Problem:</strong> Optical Circuit Switches improve network reconfigurability and expand scale-up/scale-out interconnect scale, but each OCS node adds 1.5-3 dB of insertion loss. Conventional IMDD (Intensity Modulation Direct Detection) links have only a few dB of link budget — after subtracting OCS loss plus fiber/connector losses, IMDD has "almost no remaining link margin" in the 2.4T/3.2T module generations. The more OCS becomes central to AI cluster networking, the more exposed IMDD's limitation becomes.</p>
+
+<p><strong>Coherent Lite's Role:</strong> Through a simplified coherent detection scheme, Coherent Lite recovers the link budget margin consumed by OCS, allowing OCS architecture to continue scaling into 2.4T/3.2T. The thesis: "DCI/LR is the surface-level application; OCS-paired links are Coherent Lite's most central and scale-driven deployment scenario in AI infrastructure."</p>
+
+<p><strong>Value Chain Mapping:</strong></p>
+<ul>
+<li><strong>InP beneficiaries:</strong> Nokia/Infinera, Lumentum, Coherent Corp, Sumitomo Electric</li>
+<li><strong>Core DSP beneficiary:</strong> Marvell</li>
+<li><strong>TIA beneficiary:</strong> Semtech</li>
+<li><strong>Transceiver beneficiaries:</strong> TeraHop/InnoLight, Lumentum, Coherent Corp</li>
+<li><strong>Substrate/foundry:</strong> TSEM (SiPh foundry), Soitec (Photonics-SOI substrate), AXT (InP substrate)</li>
+</ul>
+
+<p><strong>TAM Estimate:</strong> "In 2028, Coherent Lite may bring $15-20 billion of incremental industry value, and this figure will rise further in 2029."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The OCS-paired argument is technically sophisticated and differentiated. It goes beyond the consensus "Coherent Lite = cheaper DCI" narrative to identify a specific architectural requirement in Google's TPU clusters. The link budget math (IMDD losing margin as OCS nodes add loss) is sound physics. This is original, high-quality analysis.</p>
+
+<p><strong>Unstated Assumptions:</strong> (1) Google's OCS architecture becomes the standard for AI clusters — it's currently Google-specific, and other hyperscalers may not adopt it. (2) The $15-20B TAM estimate for 2028 is very aggressive and not backed by visible methodology in the free preview. (3) The value chain mapping assumes all listed companies can capture their respective segments without competitive disruption.</p>
+
+<p><strong>Cherry-Picked Data:</strong> The analysis is Google-centric. Amazon, Microsoft, and Meta's interconnect architectures are not discussed. If OCS remains a Google-only approach, the TAM shrinks dramatically.</p>
+
+<p><strong>What Would Need to Be True for This to Be Wrong:</strong> If Google moves away from OCS in favor of direct optical switching, or if IMDD link budgets improve through better lasers/receivers, Coherent Lite's killer use case narrows to the already-priced DCI segment.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> on technical analysis; <span class="confidence conf-med">MEDIUM</span> on TAM — too Google-dependent and insufficiently substantiated.</p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">Weekly | Welcome Fabian Onboard, SNOW Cortex Code, MRVL Optical Raise, SMTC Beat, MDB, PANW</div>
+<div class="post-meta">Jun 01, 2026 | ~604 words (free preview; paid) | Tickers: <span class="ticker">MRVL</span> <span class="ticker">SNOW</span> <span class="ticker">SMTC</span> <span class="ticker">MDB</span></div>
+<div>
+<span class="tag tag-long">LONG</span> SNOW
+<span class="tag tag-long">LONG</span> MRVL
+<span class="tag tag-long">LONG</span> SMTC
+<span class="tag tag-cautious">CAUTIOUS</span> MDB
+</div>
+
+<h4>Full Summary</h4>
+<p>FundaAI's weekly recap covers the team expansion (Fabian, a data center interconnect expert, joining) and summarizes key earnings calls.</p>
+
+<p><strong>Snowflake (SNOW):</strong> Product revenue grew 34% YoY — "the largest beat in recent memory." Full-year guide lifted from 27% to 31%. The Cortex Code thesis FundaAI had been building for three quarters "finally showed up in the numbers." They called it "the fastest-ramping product in Snowflake's history" and view SNOW alongside Datadog as their two favorite AI SaaS names.</p>
+
+<p><strong>Marvell (MRVL):</strong> Inline quarter, with the key being the raises — interconnect guidance to +70%, data center to +50%. FundaAI's growth assumptions "remain ahead of management" and they view FY28 data center guidance as conservative. Key insight: "Optical pays the bills today, and Marvell's Google content compounds faster than the lazy TPU-unit math implies." Supply-side: "The laser bottleneck, not demand, is the limiter."</p>
+
+<p><strong>Semtech (SMTC):</strong> "Clear standout performer in the recent optics pullback." Covered in their Institutional publication.</p>
+
+<p><strong>MongoDB (MDB):</strong> FundaAI flagged pre-earnings that investors were "too optimistic about the consumption tailwind from Anthropic" and that Enterprise Advanced's importance was underappreciated. Both were validated, causing "significant volatility post-earnings."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> FundaAI demonstrates consistent pre-earnings forecasting ability (SNOW Cortex Code, MDB Anthropic caution, MRVL raises). Their claim that Marvell's Google content "compounds faster than lazy TPU-unit math" is an interesting insider-level insight but not substantiated with data in this preview. The "laser bottleneck, not demand" observation aligns with Irrational Analysis's semiconductor supply thesis.</p>
+
+<p><strong>Bias:</strong> FundaAI operates an Institutional publication and sales channel (sales@funda.ai), creating incentive to demonstrate forecasting accuracy. The weekly format naturally emphasizes successful calls while potentially burying misses.</p>
+
+<p><strong>Confidence:</strong> <span class="confidence conf-med">MEDIUM</span> — strong track record claims but mostly behind paywall. The MRVL "Google content compounds" insight is the most actionable tidbit.</p>
+</div>
+</div>
+
+<!-- ==================== TICKER DEEP DIVES ==================== -->
+<h2>Ticker Deep Dives</h2>
+
+<!-- MRVL Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">MRVL</span> — Marvell Technology</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$309.13</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">$255B</div>
+</div>
+<div class="metric">
+<div class="metric-label">Q1 FY27 Revenue</div>
+<div class="metric-value">$2.42B (+28% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Non-GAAP EPS</div>
+<div class="metric-value">$0.80 (+29% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Non-GAAP Gross Margin</div>
+<div class="metric-value">58.9%</div>
+</div>
+<div class="metric">
+<div class="metric-label">GAAP Gross Margin</div>
+<div class="metric-value">52.1%</div>
+</div>
+<div class="metric">
+<div class="metric-label">FY27 Rev Guide</div>
+<div class="metric-value">$11.5B (+40%)</div>
+</div>
+<div class="metric">
+<div class="metric-label">FY28 Rev Target</div>
+<div class="metric-value">$16.5B (+45%)</div>
+</div>
+<div class="metric">
+<div class="metric-label">P/S (Forward)</div>
+<div class="metric-value">~22x</div>
+</div>
+<div class="metric">
+<div class="metric-label">Data Center % Rev</div>
+<div class="metric-value">76%</div>
+</div>
+</div>
+
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Five publications covered MRVL this scan. The consensus thesis: Marvell is a structural duopoly winner in AI data center connectivity (with Broadcom), benefiting from custom ASIC, optical DSP, and switching demand. Irrational Analysis adds a unique angle on dense SRAM and DDR4 CXL re-use. FundaAI sees FY28 guidance as conservative and claims optical demand is supply-constrained ("laser bottleneck").</p>
+
+<p><strong>Financial reality check:</strong> The fundamentals largely support the growth narrative — 28% YoY revenue growth accelerating to 40% guided, with a credible path to $16.5B by FY28. However, GAAP profitability is thin (EPS $0.04 GAAP vs. $0.80 non-GAAP), indicating massive stock-based compensation dilution. At 22x forward sales, the stock prices in perfect execution through FY28+ and leaves minimal margin for error. The stock has rallied 60% in one week following Jensen's endorsement — a large portion of future upside may already be captured.</p>
+
+<h4>Analyst Consensus vs. Newsletters</h4>
+<p><strong>Consensus:</strong> Strong Buy, average PT $233 (44 analysts) — now massively below the current $309 price. High PT $321. The sell-side is playing catch-up after the Jensen-fueled rally. KOVA argued the "real" target should be $200+ back in April when consensus was $131 — that call has been validated, but the stock has overshot even their April bull case.</p>
+
+<div class="news-box">
+<h4>Recent News Newsletters Didn't Cover</h4>
+<ul>
+<li><strong>Sell-the-News recap (Jun 2):</strong> MRVL up 33% on Jensen's endorsement — the market narrative focused on the "trillion dollar" call rather than fundamentals.</li>
+<li><strong>GAAP profitability concerns:</strong> Simply Wall St flagged "thin Q1 EPS raises questions for bullish profitability narrative" — high SBC is diluting shareholders even as non-GAAP EPS grows.</li>
+<li><strong>Analyst price target lag:</strong> Average PT of $233 is 25% below current price — analysts haven't caught up, suggesting either the stock is ahead of itself or PTs will be revised sharply higher.</li>
+</ul>
+</div>
+
+<div class="cross-ref">
+<h4>Cross-Reference Across Publications</h4>
+<p><strong>Irrational Analysis:</strong> Not buying MRVL despite understanding the thesis. Unique angles on dense SRAM (verifiable Hot Chips data) and DDR4 CXL re-use. Prefers AMD.</p>
+<p><strong>Global Semi Research:</strong> Comprehensive bull case but notes 1.6T DSP market share loss to Broadcom (60% AVGO vs 40% MRVL).</p>
+<p><strong>KOVA:</strong> Aggressively bullish, claims 100% return since VIP call. PT was $200+ in April; stock now at $309.</p>
+<p><strong>Semi Doped:</strong> Pushes back on Marvell's "copper wall" narrative — "overly optimistic, in-rack copper scale up is here to stay."</p>
+<p><strong>FundaAI:</strong> Most analytically bullish — views FY28 guide as conservative, "Google content compounds faster than TPU-unit math implies," laser bottleneck limits supply not demand. Also covered MRVL earnings review and preview in prior weeks.</p>
+</div>
+
+<p><strong>Synthesis:</strong> The bull case is well-supported by fundamentals (growth acceleration, duopoly position, multiple product lines) but the valuation is extremely stretched after the Jensen-fueled rally. The GAAP/non-GAAP EPS gap ($0.04 vs. $0.80) is a red flag that newsletters are ignoring. Irrational Analysis's refusal to buy despite deep technical understanding is the most telling signal.</p>
+
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> — Growth thesis validated by earnings and guidance; valuation thesis NOT validated at $309 (33% above highest analyst PT consensus pre-rally). <span class="confidence conf-med">MEDIUM confidence</span> — great business, dangerous price.</p>
+</div>
+
+<!-- AVGO Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">AVGO</span> — Broadcom Inc.</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$477 (pre-AH drop)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">$2.26T</div>
+</div>
+<div class="metric">
+<div class="metric-label">Q2 FY26 Revenue</div>
+<div class="metric-value">$22.2B (+48% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">AI Semi Revenue</div>
+<div class="metric-value">$10.8B (+143% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Adj. EBITDA</div>
+<div class="metric-value">$15.2B (69% margin)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Q3 AI Semi Guide</div>
+<div class="metric-value">$16.0B (+200% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">P/E Ratio</div>
+<div class="metric-value">~94x</div>
+</div>
+<div class="metric">
+<div class="metric-label">FCF</div>
+<div class="metric-value">$10.26B quarterly</div>
+</div>
+</div>
+
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>KOVA frames the -12% after-hours move as an "expectation reset" — the bar was too high, not the results too low. The actual earnings were objectively strong: revenue +48%, AI semiconductor +143%, $10.26B FCF. The disappointment centers on the unchanged full-year $100B AI revenue target and Q3 guidance that, while massive ($16B AI semi), didn't exceed whisper numbers.</p>
+
+<p><strong>Financial reality check:</strong> At ~$2.26T market cap and ~94x P/E, AVGO was priced for continued beats and raises. The 143% AI revenue growth is partially aided by VMware integration comps. Free cash flow generation ($10.26B/quarter) is genuinely impressive, but the stock price implies multi-year compounding at current growth rates. The after-hours drop to roughly $420 would bring the P/E to a more reasonable ~82x — still premium but more justifiable.</p>
+
+<div class="news-box">
+<h4>Recent News Context</h4>
+<ul>
+<li><strong>Q3 guidance:</strong> AI semiconductor revenue expected to grow 200%+ YoY to $16B — this is the first $16B AI quarter for any company, but wasn't enough.</li>
+<li><strong>Full-year unchanged:</strong> Management did not raise the $100B full-year AI revenue target despite Q2 tracking above run-rate — the market wanted a raise.</li>
+<li><strong>Competition:</strong> Global Semi Research notes Broadcom gaining 1.6T DSP share (60%) at Marvell's expense — positive for AVGO's product mix.</li>
+</ul>
+</div>
+
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> — KOVA's "expectation reset" framing is correct; fundamentals remain strong but the stock was priced beyond perfection. <span class="confidence conf-med">MEDIUM confidence</span> — the dip may be buyable, but unchanged guidance is a legitimate concern.</p>
+</div>
+
+<!-- AMD Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">AMD</span> — Advanced Micro Devices</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$522</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">$839B</div>
+</div>
+<div class="metric">
+<div class="metric-label">12-Month Return</div>
+<div class="metric-value">+138%</div>
+</div>
+<div class="metric">
+<div class="metric-label">30-Day Return</div>
+<div class="metric-value">+41.5%</div>
+</div>
+</div>
+
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Irrational Analysis is "debating sizing up the position a lot" on AMD, calling the CPU story "more interesting" than Marvell. KOVA notes competitive pressure from Nvidia N1X on AMD's PC business. Semi Doped doesn't take a position.</p>
+
+<p><strong>Financial reality check:</strong> AMD has rallied 138% over 12 months and 41.5% in 30 days. The "CPU story" referenced by Irrational Analysis likely relates to AMD's data center CPU gains vs. Intel, but at $839B market cap, much of this is priced in. The N1X competitive threat is real but early — AMD's server CPU business (EPYC) is the core growth driver, not PCs.</p>
+
+<div class="news-box">
+<h4>Recent News Context</h4>
+<ul>
+<li><strong>Nvidia N1X threat:</strong> Nvidia entering Windows-on-Arm PC segment directly competes with AMD's Ryzen mobile CPUs — longer-term headwind.</li>
+<li><strong>Intel 18A competition:</strong> Intel's 18A at full scale could re-compete in server CPUs, narrowing AMD's EPYC advantage.</li>
+<li><strong>Valuation concern:</strong> At $839B, AMD is the 17th most valuable company globally — the bar for further upside is very high.</li>
+</ul>
+</div>
+
+<p><span class="validation val-limited">LIMITED DATA</span> — Irrational Analysis didn't provide substantive AMD analysis beyond "I like it." <span class="confidence conf-low">LOW confidence</span> — the call lacks supporting analysis despite the author's credibility.</p>
+</div>
+
+<!-- COHR/LITE/SMTC Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">COHR / LITE / SMTC</span> — Optical Interconnect Value Chain</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">COHR Price</div>
+<div class="metric-value">$427</div>
+</div>
+<div class="metric">
+<div class="metric-label">LITE Price</div>
+<div class="metric-value">$1,056</div>
+</div>
+<div class="metric">
+<div class="metric-label">SMTC Price</div>
+<div class="metric-value">$161</div>
+</div>
+<div class="metric">
+<div class="metric-label">LITE Rev (Q3 FY26)</div>
+<div class="metric-value">$808M (+90% YoY)</div>
+</div>
+<div class="metric">
+<div class="metric-label">LITE Op Margin</div>
+<div class="metric-value">32.2% non-GAAP</div>
+</div>
+<div class="metric">
+<div class="metric-label">LITE Supply Gap</div>
+<div class="metric-value">Under-shipping by 30%</div>
+</div>
+<div class="metric">
+<div class="metric-label">SMTC Demand/Supply</div>
+<div class="metric-value">3x demand vs. capacity</div>
+</div>
+<div class="metric">
+<div class="metric-label">Coherent Lite TAM (2028E)</div>
+<div class="metric-value">$15-20B incremental</div>
+</div>
+</div>
+
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>FundaAI's Coherent Lite deep dive and Semi Doped's NVLink Fusion coverage converge on the same theme: optical interconnect demand is structural and accelerating. FundaAI's differentiated insight is that OCS-paired links (Google TPU clusters) — not DCI/LR — are the primary Coherent Lite volume driver. Semi Doped tempers expectations: "nothing new was said" by Jensen, and optical in-rack scale-up is "not nearly as soon as the rhetoric makes it seem."</p>
+
+<p><strong>Financial reality check:</strong> LITE's 90% revenue growth and 30% under-shipment vs. demand confirms the supply-constraint thesis. Semtech's 3x demand-to-capacity ratio is similarly bullish. Analyst targets are being raised aggressively (SMTC PT to $225 at UBS, COHR PT to $371 at Raymond James). However, all three stocks have had massive runs — LITE up from ~$450 twelve months ago to $1,056 (135% return).</p>
+
+<div class="cross-ref">
+<h4>Cross-Reference</h4>
+<p><strong>FundaAI vs. Semi Doped:</strong> Key disagreement on timing. FundaAI sees Coherent Lite as a 2028 story with $15-20B TAM. Semi Doped's Austin argues optical in-rack is "not nearly as soon as the rhetoric makes it seem" and copper will "coexist for at least a few more years." Both may be right — FundaAI is focused on OCS-paired (scale-out), while Semi Doped is discussing in-rack (scale-up).</p>
+<p><strong>Irrational Analysis:</strong> Notes friction between Nvidia and Marvell over optical DSP pricing — suggests pricing power may be contested in the value chain.</p>
+</div>
+
+<p><span class="validation val-strong">STRONGLY VALIDATED</span> — Supply constraints confirmed by management commentary (LITE -30% under-shipping, SMTC 3x demand), revenue growth rates exceptional, analyst targets rising. <span class="confidence conf-high">HIGH confidence</span> on demand; <span class="confidence conf-med">MEDIUM confidence</span> on whether these stocks offer further upside at current prices.</p>
+</div>
+
+<!-- INTC Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">INTC</span> — Intel Corporation</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$108</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">~$460B</div>
+</div>
+<div class="metric">
+<div class="metric-label">18A Status</div>
+<div class="metric-value">Full Scale Production</div>
+</div>
+<div class="metric">
+<div class="metric-label">Panther Lake</div>
+<div class="metric-value">300+ devices shipping</div>
+</div>
+</div>
+
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Semi Doped reports Intel 18A at full scale with multiple products in production — a milestone that, if confirmed in volumes, would be the biggest Intel turnaround story in a decade. KOVA notes INTC faces pressure from Nvidia's N1X entry into PCs. Wells Fargo, Barclays, and Mizuho all raised INTC price targets post-Computex, tying the bull case to AI and agentic CPU demand.</p>
+
+<p><strong>Financial reality check:</strong> Intel's stock at $108 (from a 52-week low around $18-20 in 2024) has already priced in significant 18A optimism. The key unknown: whether 18A yields and performance are competitive with TSMC N2. "Full scale" production doesn't necessarily mean high yields or competitive performance per watt.</p>
+
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> — 18A production milestone is real; competitive impact remains unproven. <span class="confidence conf-med">MEDIUM confidence</span>.</p>
+</div>
+
+<!-- ALAB Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">ALAB</span> — Astera Labs</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$358</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">$62B</div>
+</div>
+<div class="metric">
+<div class="metric-label">52-Week Range</div>
+<div class="metric-value">$85 — $356</div>
+</div>
+</div>
+
+<h4>Newsletter Context</h4>
+<p>Irrational Analysis directly compares Astera Labs unfavorably to Marvell in CXL: "Marvell product is just better. Way better interface IP than the Synopsys stuff Astera licenses. And remember, dense SRAM!" Semi Doped notes Astera expanding Taiwan operations. At $62B market cap for a company with relatively small revenue, the stock is expensive — but positioned in the CXL and PCIe retimer growth segments.</p>
+
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> — Growth positioning is real; Irrational Analysis's competitive critique is technically informed. <span class="confidence conf-med">MEDIUM confidence</span>.</p>
+</div>
+
+<!-- CIEN Deep Dive -->
+<div class="ticker-card">
+<h3><span class="ticker">CIEN</span> — Ciena Corporation</h3>
+<div class="metric-grid">
+<div class="metric">
+<div class="metric-label">Price</div>
+<div class="metric-value">$627</div>
+</div>
+<div class="metric">
+<div class="metric-label">Market Cap</div>
+<div class="metric-value">~$31B</div>
+</div>
+<div class="metric">
+<div class="metric-label">Q2 EPS Est.</div>
+<div class="metric-value">$1.45-1.46</div>
+</div>
+<div class="metric">
+<div class="metric-label">Q1 Revenue</div>
+<div class="metric-value">$1.43B (record)</div>
+</div>
+<div class="metric">
+<div class="metric-label">Earnings Date</div>
+<div class="metric-value">June 4, 2026</div>
+</div>
+</div>
+
+<h4>Newsletter Context</h4>
+<p>Irrational Analysis mentions Ciena as a position he wants to buy back into — "if Ciena shits itself this week from earnings I will buy back in. If they moon I will also probably FOMO in anyway." He's "very unhappy" with how he played CIEN this year. The stock is up massively (+$57 or 10% on June 2 alone) ahead of earnings today.</p>
+
+<p><strong>Financial reality check:</strong> Ciena earnings (June 4) will be the catalyst. Analysts expect $1.45 EPS (+248% YoY) on $1.50B revenue. Record Q1 and "robust order activity" from AI-driven optical networking demand. However, the average analyst PT of $477 is 24% below the current $627 price — suggesting the stock has overshot consensus.</p>
+
+<p><span class="validation val-limited">LIMITED DATA</span> — Earnings today will determine direction. <span class="confidence conf-low">LOW confidence</span> — no substantive analysis from any publication, just FOMO positioning.</p>
+</div>
+
+<!-- ==================== MARKET CONTEXT ==================== -->
+<h2>Market Context (Sell The News Recaps)</h2>
+
+<div class="post-card">
+<h4>June 2, 2026 — "Stocks hit records as Gulf clashes lift oil"</h4>
+<p>AI leadership carried US equities to another record close. SOX surged with MRVL +33% and AVGO strong. HPE +19%. Alphabet -3.9% on $80B equity plan concerns. Oil rose after US-Iran exchanged fire in the Persian Gulf (Brent near $97). USTR proposed broad Section 301 tariffs of at least 10%. GameStop rallied on record quarterly profit and $2B buyback. CBOE/Nasdaq/CME fell on perpetual-futures competition concerns.</p>
+
+<h4>June 1, 2026 — "Oil surges after Iran suspends US talks"</h4>
+<p>Brent +6% to ~$97 after Iran suspended indirect US talks and threatened Hormuz closure. Nvidia unveiled RTX Spark, challenging Intel and AMD with Arm-based CPU. Barry Diller bid $48.30/share for MGM (+14%). Alphabet announced $80B equity raise including Berkshire private placement.</p>
+
+<p><strong>What newsletters missed:</strong> The geopolitical risk (Iran/Hormuz, oil at $97) and tariff overhang (Section 301 at 10%+) were largely absent from semiconductor-focused newsletters. These macro factors represent significant risk to the "AI capex continues forever" narrative — rising energy costs and tariffs could constrain hyperscaler budgets.</p>
+</div>
+
+<!-- ==================== METHODOLOGY ==================== -->
+<hr>
+<p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 2rem;">
+Scan: 7 publications, 11 posts, 9 tickers analyzed | Financial data: Web search (Yahoo Finance, MarketBeat, StockAnalysis, CNBC) | News: Sell The News MCP daily recaps | Cross-reference: 15+ recent posts across all publications | Generated by Claude Code
+</p>
+
+</div>
+</body>
+</html>
