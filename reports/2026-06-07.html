@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Investment Scan — June 7, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-secondary: #4a5568;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e2e8f0;
+    --green: #059669;
+    --green-bg: #d1fae5;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --red: #dc2626;
+    --red-bg: #fee2e2;
+    --gray: #6b7280;
+    --gray-bg: #f3f4f6;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --purple: #7c3aed;
+    --purple-bg: #ede9fe;
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+    --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; letter-spacing: -0.02em; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
+  h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+  h4 { font-size: 1.05rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+  p { margin-bottom: 0.75rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .header-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+
+  .summary-box {
+    background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-box h3 { color: var(--accent); margin-top: 0; }
+  .summary-box ul { padding-left: 1.25rem; }
+  .summary-box li { margin-bottom: 0.4rem; }
+
+  .scoreboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .score-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: var(--card-shadow);
+    transition: box-shadow 0.2s;
+  }
+  .score-card:hover { box-shadow: var(--card-shadow-hover); }
+  .score-card .ticker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .score-card .price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  .score-card .stance { margin-top: 0.5rem; }
+
+  .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+
+  .validation-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .v-strong { background: var(--green-bg); color: var(--green); }
+  .v-partial { background: var(--amber-bg); color: var(--amber); }
+  .v-limited { background: var(--gray-bg); color: var(--gray); }
+  .v-contradicted { background: var(--red-bg); color: var(--red); }
+
+  .pub-section { margin-bottom: 3rem; }
+
+  .post-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--card-shadow);
+  }
+  .post-card h3 { margin-top: 0; }
+  .post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .analysis-box {
+    background: var(--orange-bg);
+    border: 1px solid #fed7aa;
+    border-radius: 6px;
+    padding: 1.25rem;
+    margin-top: 1rem;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; }
+
+  .ticker-profile {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--card-shadow);
+  }
+  .ticker-profile h3 { margin-top: 0; }
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.5rem 1.5rem;
+    margin: 1rem 0;
+  }
+  .data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.35rem 0;
+    border-bottom: 1px dotted var(--border);
+  }
+  .data-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+  }
+  .data-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-light);
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  .confidence {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .conf-high { background: var(--green-bg); color: var(--green); }
+  .conf-medium { background: var(--amber-bg); color: var(--amber); }
+  .conf-low { background: var(--red-bg); color: var(--red); }
+
+  .news-item {
+    background: var(--purple-bg);
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+
+  .cross-ref {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+
+  .no-posts {
+    color: var(--text-secondary);
+    font-style: italic;
+    padding: 0.5rem 0;
+  }
+
+  .market-context {
+    background: linear-gradient(135deg, #fef3c7 0%, #fee2e2 100%);
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .market-context h3 { color: var(--amber); margin-top: 0; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+</style>
+</head>
+<body>
+
+<h1>Substack Investment Scanner</h1>
+<div class="header-meta">Report Date: 2026-06-07 | Scan Window: June 4 &ndash; June 7, 2026 | 8 posts across 3 publications</div>
+
+<!-- ============================================== -->
+<!-- EXECUTIVE SUMMARY                              -->
+<!-- ============================================== -->
+<div class="summary-box">
+  <h3>Executive Summary</h3>
+  <ul>
+    <li><strong>8 new posts</strong> from 3 of 7 tracked publications (KOVA: 3, Semi Doped: 3, FundaAI: 2). No new posts from Irrational Analysis, Global Semi Research, SemiAnalysis, or Citrini Research.</li>
+    <li><strong>Dominant theme:</strong> Post-Broadcom-earnings shock. AVGO dropped ~12% after-hours despite strong Q2 results (+48% revenue, +143% AI semi), because guidance merely reiterated the $100B+ FY27 AI target rather than raising it. SOXX experienced a ~10% single-day drawdown on June 5, its worst since April 2025.</li>
+    <li><strong>Macro backdrop:</strong> May payrolls beat at 172K (above all forecasts), pushing 10Y yield above 4.5% and December rate-hike odds past 70%. Nasdaq fell 4.2% on June 5. Geopolitical risk elevated with Iranian drone/missile attacks near Strait of Hormuz.</li>
+    <li><strong>Key bullish calls:</strong> MRVL (KOVA & FundaAI), ON (KOVA), PANW (FundaAI). KOVA went fully short the market via SQQQ after June 5 selloff.</li>
+    <li><strong>Key cautious calls:</strong> AVGO (expectations overpriced per KOVA), QLYS/TENB/RPD (AI-native cyber commoditization per FundaAI).</li>
+    <li><strong>5 tickers</strong> with clear investment theses analyzed in depth: AVGO, MRVL, ON, PANW, AAOI.</li>
+  </ul>
+</div>
+
+<!-- ============================================== -->
+<!-- MARKET CONTEXT BOX                             -->
+<!-- ============================================== -->
+<div class="market-context">
+  <h3>Market Context: June 4&ndash;6, 2026</h3>
+  <p><strong>June 4:</strong> Broadcom Q2 earnings trigger massive semi selloff. AVGO fell ~13%, erasing ~$286B in market cap. Philadelphia Semiconductor Index dropped as much as 6.3%. Simultaneously, Blackstone capped Bcred withdrawals (first time ever) after quarterly redemption requests hit $4.5B. Anthropic urged a global pause in frontier AI development, adding cautionary pressure.</p>
+  <p><strong>June 5:</strong> Nasdaq posted its worst day since April 2025, down 4.2%. May payrolls at 172K (above every Bloomberg forecast) drove 10Y yields above 4.5%. December hike odds topped 70%. NVDA and AVGO fell 5-6%. Meta dropped on equity-raise report (later denied). Marvell and Flex rose on S&amp;P 500 inclusion news.</p>
+  <p><strong>June 6:</strong> Iran launched drones and ballistic missiles toward Strait of Hormuz, Kuwait, and Bahrain. US intercepted and struck Iranian radar sites. Nvidia cleared all three memory makers (Samsung, SK Hynix, Micron) for HBM4 on Vera Rubin. Google-SpaceX deal revealed: $920M/month for Nvidia chip access through June 2029.</p>
+</div>
+
+<!-- ============================================== -->
+<!-- TICKER SCOREBOARD                              -->
+<!-- ============================================== -->
+<h2>Ticker Scoreboard</h2>
+<div class="scoreboard">
+  <div class="score-card">
+    <div class="ticker">AVGO <span class="tag tag-cautious">Cautious</span></div>
+    <div class="price">$479 | MCap $1.98T | PE ~94x</div>
+    <div class="stance">Newsletter: expectations overpriced, "didn't miss — bar did"</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-partial">Partially Validated</span> <span class="confidence conf-medium">MEDIUM</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">MRVL <span class="tag tag-long">Long</span></div>
+    <div class="price">$316 | MCap ~$270B | PE ~57-103x</div>
+    <div class="stance">KOVA + FundaAI: custom silicon + optics growth, FY28 $16.5B</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-partial">Partially Validated</span> <span class="confidence conf-medium">MEDIUM</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">ON <span class="tag tag-long">Long</span></div>
+    <div class="price">$129 | MCap ~$52B | PE ~86x</div>
+    <div class="stance">KOVA: data center power management secular growth</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-partial">Partially Validated</span> <span class="confidence conf-medium">MEDIUM</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">PANW <span class="tag tag-long">Long</span></div>
+    <div class="price">$269 | MCap ~$228B</div>
+    <div class="stance">FundaAI: platform cyber wins as AI-native disrupts scanners</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-partial">Partially Validated</span> <span class="confidence conf-medium">MEDIUM</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">AAOI <span class="tag tag-long">Long</span></div>
+    <div class="price">$174 | 52wk $15-$234</div>
+    <div class="stance">Semi Doped: 800G baseline, 1.6T ramping, supply tightening</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-limited">Limited Data</span> <span class="confidence conf-low">LOW</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">QLYS / TENB <span class="tag tag-cautious">Cautious</span></div>
+    <div class="price">Vulnerability scanner pure-plays</div>
+    <div class="stance">FundaAI: face commoditization from AI-native cyber (Mythos)</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-partial">Partially Validated</span> <span class="confidence conf-medium">MEDIUM</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">QQQ <span class="tag tag-short">Short</span></div>
+    <div class="price">KOVA: 3x short via SQQQ</div>
+    <div class="stance">Cleared all positions, went short after June 5 selloff</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-limited">Limited Data</span> <span class="confidence conf-low">LOW</span></div>
+  </div>
+  <div class="score-card">
+    <div class="ticker">TSM <span class="tag tag-neutral">Neutral</span></div>
+    <div class="price">TSMC: order visibility to 2030, 30%+ growth</div>
+    <div class="stance">Semi Doped: can't make chips fast enough, no CapEx slowdown</div>
+    <div style="margin-top:0.5rem;"><span class="validation-tag v-strong">Strongly Validated</span> <span class="confidence conf-high">HIGH</span></div>
+  </div>
+</div>
+
+<!-- ============================================== -->
+<!-- PUBLICATION: KOVA INVESTMENT RESEARCH           -->
+<!-- ============================================== -->
+<h2>KOVA Investment Research</h2>
+
+<div class="post-card">
+  <h3>AVGO Post-Earnings &minus;12%: AVGO Didn't Miss &mdash; The Bar Did</h3>
+  <div class="post-meta">Published: June 4, 2026 | Tickers: AVGO</div>
+
+  <h4>Summary</h4>
+  <p>KOVA's analysis of Broadcom's after-hours crash centers on a critical distinction: this was not an earnings miss but an <strong>expectations reset</strong>. After market close, AVGO delivered Q2 FY2026 revenue of $22.2 billion (+48% YoY), AI semiconductor income of $10.8 billion (+143% YoY), non-GAAP EPS beat, and free cash flow of $10.26 billion. Despite these objectively strong numbers, the stock fell over 13% in after-hours trading.</p>
+  <p>The author argues this is "more dangerous and more common" than a genuine earnings blowup. The key disappointment was that management <strong>reiterated rather than raised</strong> its FY2027 AI revenue target of $100B+, and guided Q3 AI chip revenue to $16 billion versus the $17.2 billion Street estimate. At a ~$2 trillion market cap with a PE around 94x, "good" wasn't good enough &mdash; the stock needed to deliver beyond what anyone could imagine.</p>
+  <p>KOVA promised to cover historical parallels of similar post-earnings reactions and planned to address portfolio positioning in a member livestream the following morning.</p>
+
+  <blockquote>"This is not a blowup. This is an expectations reset. Separating it from a real earnings disaster is the most important thing to understand tonight."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The "expectations reset vs. blowup" framing is sound and well-articulated. The distinction between fundamental quality and valuation-driven reactions is the correct lens for this event. The Q2 numbers were genuinely strong by any historical standard.</p>
+    <p><strong>What's missing:</strong> The author doesn't address the <em>structural concern</em> Hock Tan raised on the call &mdash; that Google is diversifying away from Broadcom for custom silicon (Customer-Owned Tooling). This isn't a temporary expectations gap; it's a potential <strong>permanent revenue risk</strong> for one of Broadcom's biggest AI customers. Semi Doped flagged this; KOVA did not.</p>
+    <p><strong>What would prove this wrong:</strong> If Google's CoT shift is accelerating, the FY27 $100B+ target may not be conservative &mdash; it may be aspirational. If more hyperscalers follow Google's lead in owning their chip design process, Broadcom's custom silicon moat narrows significantly.</p>
+    <p><strong>Cherry-picking risk:</strong> The article focuses heavily on one quarter's strength while glossing over the forward guidance miss. At 94x trailing PE, the market isn't pricing Q2 &mdash; it's pricing FY28-FY30. The author's bullish undertone doesn't match the recommendation to hold steady.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span> &mdash; The framing is correct for a single-day reaction, but the CoT risk and structurally elevated valuation create real downside tail risk that isn't addressed.</p>
+  </div>
+</div>
+
+<div class="post-card">
+  <h3>June 4th Trading Report: Healthy Pullback &mdash; Adding Positions</h3>
+  <div class="post-meta">Published: June 5, 2026 | Tickers: MRVL, AVGO, ON, STRL</div>
+
+  <h4>Summary</h4>
+  <p>KOVA's portfolio, heavily concentrated in AI and semiconductors, took a -9% premarket hit from the AVGO earnings spillover but recovered most of it intraday. The public account closed at approximately -5% for the day. The author views this as a healthy correction, not a regime change.</p>
+
+  <p><strong>MRVL (Marvell) Deep Analysis:</strong> The author notes MRVL is up 94% since their VIP chat recommendation. The core thesis is that AVGO's selloff actually <em>validates</em> MRVL's bull case. Broadcom's Q2 proved that demand for custom AI silicon and networking is real, visible to 2028, with AI chip orders exceeding 3x current quarterly shipments. Customer base has expanded from Google/Meta to include Anthropic and OpenAI. AVGO fell on expectations, not demand &mdash; but MRVL trades at a lower valuation premium relative to its growth trajectory.</p>
+
+  <p>MRVL's own Q1 FY27 results (May 27): record revenue of $2.418 billion (+28% YoY), data center at 76% of total, adjusted EPS $0.80, record operating cash flow of $638.8 million. Management guided FY27 to ~$11.5B and FY28 to ~$16.5B. The company prepaid $1 billion to lock capacity, signaling demand is a "can we deliver" problem, not a "do we have orders" problem.</p>
+
+  <p>The author sees MRVL's two growth vectors &mdash; <strong>optics</strong> (optical DSPs, NVLink Fusion, AI RAN) and <strong>custom silicon</strong> (XPU, with FY29 target of $10B+) &mdash; as now backed by revenue, guidance, and order visibility rather than just narrative. Nvidia is positioned as a "multiplier" for Marvell, not a competitor. However, the author warns valuations are stretched: MRVL just hit $324 all-time highs, retail sentiment is hot, and S&amp;P 500 inclusion chatter could make trading crowded. The stock is a purer hardware play than AVGO (no software buffer), so cyclical downturn would hit harder.</p>
+
+  <p><strong>ON (onsemi) Analysis:</strong> KOVA's bull thesis rests on ON's position in the <strong>data center power conversion chain</strong> &mdash; not AI compute directly, but converting high-voltage power into what servers, GPUs, and chips actually use. The author argues the market underestimates this "boring but critical" role. Q1 2026: revenue $1.51B, adjusted EPS $0.64 (beat), gross margin 38.5% (third consecutive quarterly improvement). AI data center revenue doubled YoY with management guiding for another doubling in 2026.</p>
+
+  <p>ON's product portfolio spans traditional silicon, SiC, SiC JFET, and GaN &mdash; covering multiple voltage conversion scenarios. The author highlights the dual growth engine: legacy auto/industrial stabilizing from the bottom + AI data center as a new growth vector. Long-term targets: 53% gross margin, 40% operating margin. Up 77% since VIP chat recommendation. However, ON is still predominantly an auto/industrial company (bulk of revenue) and vulnerable to cyclical weakness. At current valuations, "data center power" narrative is partially priced in. The author's $120B AI data center TAM by 2029 target is a forward opportunity, not current revenue.</p>
+
+  <blockquote>"Broadcom just used its own orders and guidance to prove that demand isn't a one-or-two quarter story &mdash; it has years of visibility. MRVL fell today on sentiment contagion, not a change in its own fundamentals."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>MRVL thesis:</strong> The reasoning that AVGO's Q2 validates MRVL's runway is logically sound &mdash; both benefit from the same hyperscaler spend cycle. But the author's framing buries a key risk: MRVL's GAAP net income <em>fell 81%</em> in Q1 FY27 ($34.5M vs. $187M prior year). Adjusted EPS of $0.80 masks significant stock-based compensation. At ~57-103x PE (depending on methodology), the stock is pricing in flawless execution through FY28. Jensen Huang's "trillion-dollar company" endorsement at Computex drove a 45% rally in 3 days &mdash; this is narrative-driven momentum, not fundamental repricing.</p>
+    <p><strong>ON thesis:</strong> The dual-growth-engine thesis is the strongest argument here, but the timing is premature. AI data center revenue is growing fast from a small base but is still a minority of total revenue. The 53% gross margin / 40% op margin targets are aspirational &mdash; current gross margin is 38.5%. If auto/industrial demand weakens again (cyclical risk is real), the AI data center growth won't be large enough to offset it at current revenue mix.</p>
+    <p><strong>Bias alert:</strong> The author prominently displays "up 94%" and "up 77%" returns on MRVL and ON respectively. This is marketing, not analysis &mdash; past returns don't validate forward theses. The repeated references to VIP chat, live streams, and member-only content suggest this is as much a subscriber acquisition vehicle as investment analysis.</p>
+    <p><strong>What would prove MRVL thesis wrong:</strong> AWS concentration risk &mdash; if custom silicon customer diversification beyond AWS doesn't materialize. FY28 $16.5B revenue guide requires 45% growth from FY27; any deceleration in hyperscaler CapEx would make this number unreachable.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span> &mdash; Correct directional calls on MRVL and ON, but valuations are stretched and the promotional tone reduces analytical credibility.</p>
+  </div>
+</div>
+
+<div class="post-card">
+  <h3>June 5th Trading Report: Sell Everything &mdash; 3x Short QQQ via SQQQ</h3>
+  <div class="post-meta">Published: June 5, 2026 | Tickers: QQQ (SQQQ), SPY</div>
+
+  <h4>Summary</h4>
+  <p>In a dramatic tactical pivot, KOVA cleared <strong>all positions</strong> and personally went short the market via SQQQ (3x inverse QQQ), though explicitly not recommending the short to subscribers unless they are experienced traders. The trigger: the morning opened looking like a healthy pullback, but within 10 minutes the market accelerated downward with heavy volume, prompting immediate action.</p>
+
+  <p>The author attributes the selloff to two independent factors converging: (1) Broadcom's earnings triggering an AI-complex de-rating (valuation compression), and (2) the 172K non-farm payrolls print creating a "good news is bad news" interest rate shock. Semiconductors and AI stocks sat at the intersection of both forces, taking the heaviest damage.</p>
+
+  <p>KOVA plans to stay inactive on the long side until a clear bottom signal appears. The author references their April 8 trading report (during tariff panic + AI bubble fears) as evidence of their ability to identify turning points, noting they "precisely caught the bottom" and added semiconductor positions at the nadir. The author is hosting a Kova Trading Summit in New York the following week.</p>
+
+  <blockquote>"This isn't a single-cause crash. It's two independent factors colliding on the same day: Broadcom's earnings triggering AI valuation compression, and 172K non-farm payrolls delivering a rate shock."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The two-factor framework (valuation kill + rate kill) is a clean and accurate read of June 5. Semiconductors genuinely sit at the intersection of elevated AI multiples and rate sensitivity. The decision to de-risk is defensible given SOXX's ~10% single-day drawdown.</p>
+    <p><strong>Major concern &mdash; SQQQ position:</strong> Going 3x short on the same day as the crash is classic <strong>chasing momentum into a crowded trade</strong>. Leveraged inverse ETFs suffer from daily rebalancing decay and are designed for intraday use, not position holds. If the market bounces (as it often does after capitulation-volume selloffs), SQQQ holders get whipsawed. The author's April 8 bottom-call is presented as proof of timing skill, but survivorship bias applies &mdash; we don't see the mistimed calls.</p>
+    <p><strong>Contradiction with previous post:</strong> Less than 24 hours earlier, KOVA called June 4 a "healthy pullback" and was adding positions. Now everything is sold and the market is shorted. This 180-degree reversal in under a day signals reactive trading, not systematic risk management.</p>
+    <p><strong>What would prove this wrong:</strong> If June 5 was the capitulation day (levered ETF rebalancing forcing mechanical selling), the snap-back could be violent. SOXX has historically recovered most of its 10%+ single-day drawdowns within 1-2 weeks. FundaAI explicitly attributes the selloff to levered equity ETF deleveraging ($12-18B daily rebalancing from $300B+ AUM), which is a mechanical, not fundamental, flow.</p>
+    <p><strong>Bias:</strong> Heavy self-promotion (VIP chat, live streams, summit). The April 8 reference is unfalsifiable self-congratulation.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-low">LOW</span> &mdash; Correct in identifying the dual-force nature of the selloff, but going 3x short after a major down day is high-risk momentum chasing. The whiplash from "healthy pullback" to "sell everything" in 24 hours undermines credibility.</p>
+  </div>
+</div>
+
+<!-- ============================================== -->
+<!-- PUBLICATION: SEMI DOPED                        -->
+<!-- ============================================== -->
+<h2>Semi Doped</h2>
+
+<div class="post-card">
+  <h3>Daily Update &mdash; June 4th, 2026</h3>
+  <div class="post-meta">Published: June 4, 2026 | Tickers: AVGO, TSM, MU</div>
+
+  <h4>Summary</h4>
+  <p><strong>Broadcom AI chip forecast misses estimates:</strong> Q2 FY26 revenue $22.19B (+48% YoY, +15% QoQ), adjusted EPS $2.44 vs. $2.39 consensus. Shares fell after-hours because: (1) AI chip sales forecast came in below Wall Street expectations, and (2) management reiterated rather than raised the $100B+ FY27 target. The critical revelation from the earnings call: <strong>CEO Hock Tan admitted Google is diversifying away from Broadcom for custom silicon</strong>. Semi Doped's analyst Vik notes that "Broadcom's self-proclaimed silicon prowess is starting to show cracks when others execute just as well" &mdash; Customer-Owned Tooling (CoT) is real and some share of custom ASIC design is shifting away from Broadcom. Broadcom's market cap stands near $2 trillion, vs. Nvidia's $5.2 trillion.</p>
+
+  <p><strong>TSMC reaffirms 30%+ revenue growth:</strong> Chairman C.C. Wei at the annual shareholder meeting said AI demand is shifting from generative models toward agentic and command-execution workloads. Chip supply will fall short of AI-fueled demand "for years." No CapEx slowdown planned. CoPoS advanced packaging pilot line running, volume ramp in 2-3 years. The company is expanding mature-node capacity and signaling interest in higher chip prices.</p>
+
+  <p><strong>Stanford shrinks 2D nanoribbon transistors to 15 nm:</strong> Researchers demonstrated monolayer and bilayer MoS2 nanoribbon transistors at 15nm channel widths with 10^6 on/off ratios &mdash; the highest reported for similar dimensions. Improved mobility and threshold-voltage stability at narrower widths. This represents a peek at what comes after silicon runs out of room.</p>
+
+  <p><strong>Quick Hits:</strong> LPDDR6 adding data-center features (JEDEC), semiconductor laser annealing expanding beyond logic into SiC and 400-layer NAND, Xnrgy (AI data center cooling/power) exploring $10B sale, InchFab selling $10M mini-fabs to Roche, Cisco positioning Silicon One for agentic-AI networking, mid/low-end handset vendors eyeing market exits.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Strength:</strong> Semi Doped's treatment of the Broadcom earnings is more nuanced than KOVA's. The highlight of Hock Tan's CoT admission is the <em>most important signal</em> from the call &mdash; a structural shift in the custom silicon value chain that could permanently cap Broadcom's growth ceiling. KOVA missed this entirely.</p>
+    <p><strong>TSMC coverage:</strong> The agentic-workload demand driver is well-flagged and directionally correct. However, TSMC always talks bullishly at shareholder meetings &mdash; this is partly investor relations, not pure demand signal. The "can't make chips fast enough" narrative benefits TSMC's pricing power argument, so take the supply-shortage framing as directionally but not precisely accurate.</p>
+    <p><strong>What's missing:</strong> No explicit investment stance or price targets. Semi Doped is informational, not advisory, which makes it more trustworthy as a signal source but less actionable.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> &mdash; Factual, sourced, balanced coverage with expert commentary from industry analysts. The CoT insight is genuinely valuable.</p>
+  </div>
+</div>
+
+<div class="post-card">
+  <h3>Daily Update &mdash; June 5th, 2026</h3>
+  <div class="post-meta">Published: June 5, 2026 | Tickers: TSM, NVDA, MU, AAOI, INTC</div>
+
+  <h4>Summary</h4>
+  <p><strong>TSMC sees AI chip demand visibility through 2030:</strong> C.C. Wei told shareholders order visibility now extends to 2030, supporting a mid-30% YoY revenue growth target. TSMC has purchased ASML's High-NA EUV lithography tools but not yet deployed for mass production. CoPoS advanced packaging volume production is 2-3 years out. Wei explicitly dismissed competitive threats from Chinese foundries and Elon Musk's TeraFab. He warned of potential memory supply shortages and said TSMC would avoid aggressive price hikes of the kind seen in memory. Semi Doped's Austin wonders if this visibility could trigger further fab expansion plans.</p>
+
+  <p><strong>Nvidia clears all three memory makers for HBM4:</strong> Samsung, SK Hynix, and Micron all qualified for the Vera Rubin platform. Despite all three being qualified, one analyst cut Micron's projected Nvidia HBM4 supply forecast to zero, sending MU shares lower. Semi Doped's Vik pushes back: "Classic example of how everything is not a zero sum game. All three memory makers can win, and they did. All three of them are $1T companies today."</p>
+
+  <p><strong>AAOI notes a shift in optical transceivers:</strong> 800G is now the baseline for AI infrastructure builds, and 1.6T is moving from roadmap to production volume. Industry projections put 800G+ transceiver shipments at ~63M units in 2026 (up from ~24M in 2025). Key insights: 800G supply could tighten as manufacturing shifts toward 1.6T; optical qualification needs to run in parallel with GPU procurement (misaligned timelines are a real risk); vertical integration (in-house laser fab) is a supply chain differentiator. Semi Doped's Vik notes hearing at Computex that "some infra builders are choosing to skip 800G and go straight to 1.6T" &mdash; unverified but plausible.</p>
+
+  <p><strong>SK Hynix DRAM expansion:</strong> Targeting ~1M DRAM wafers/month by 2030-2031, up from ~550K today. Yongin cluster: six cleanrooms adding 60K wafers every six months starting Feb 2027, totaling 360K by H1 2030. Chairman Chey Tae-won publicly outlined capacity doubling target at Computex and signaled willingness to expand through short-term price weakness.</p>
+
+  <p><strong>Intel 18A:</strong> Intel published TEM images of its 18A node showing nanosheet transistors and PowerVia backside-power architecture. Engineers called it a "game changer."</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>AAOI/optical thesis quality:</strong> The 800G-to-1.6T transition narrative is well-sourced but readers should note AAOI's blog post is essentially <em>marketing content</em>. The TAA-compliance and in-house laser fab angles serve AAOI's specific sales case. The market numbers ($63M units in 2026) come from AAOI, not independent forecasts, and should be treated as directional.</p>
+    <p><strong>Memory coverage:</strong> Vik's pushback on the zero-sum HBM4 narrative is correct &mdash; all three makers being qualified expands the total addressable memory supply, which benefits Nvidia's Rubin platform. SK Hynix's willingness to expand through price weakness is a more interesting signal than the capacity numbers themselves; it suggests memory makers see this as structural, not cyclical.</p>
+    <p><strong>Bias check:</strong> Semi Doped aggregates industry news with light expert commentary. No positions disclosed, no subscriber upselling. This makes it the most reliable source among the tracked publications for factual accuracy, though least useful for trade ideas.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> &mdash; Solid industry aggregation with appropriately skeptical framing of vendor-sourced data.</p>
+  </div>
+</div>
+
+<div class="post-card">
+  <h3>TIL: The Man Who Invented the Future, Then Starved to Death in It</h3>
+  <div class="post-meta">Published: June 6, 2026 | Tickers: None</div>
+
+  <h4>Summary</h4>
+  <p>A historical narrative about <strong>Oleg Losev</strong> (1903&ndash;1942), a Soviet technician who at age 18 built what we now call an LED in 1922 &mdash; 25 years before the rest of the world caught up. Working with carborundum crystal detectors, Losev identified the phenomenon as the inverse of the photoelectric effect, patented it, and predicted it would replace incandescent bulbs. He also discovered negative resistance in zincite crystals, building fully functional solid-state radios by 1924 (Hugo Gernsback named them "Crystodyne").</p>
+  <p>His class background as the son of a retired Tsarist Army captain blocked academic advancement. He received a doctorate from the Ioffe Physical-Technical Institute in 1938 only because the institution waived the thesis requirement entirely &mdash; acknowledging that his 43 papers and 16 author's certificates made it moot. He died of starvation during the Siege of Leningrad on January 22, 1942, at age 38. Shortly before his death, he mailed a manuscript describing <strong>a three-electrode semiconductor device</strong> to Physical Review. The paper was lost in the wartime Atlantic. Five years later, Shockley, Bardeen, and Brattain invented the transistor at Bell Labs independently.</p>
+
+  <blockquote>"The semiconductor industry has always had this quality: the difference between a pioneer and a founder is often just access to materials, capital, and time."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Investment relevance:</strong> None &mdash; this is a historical essay with no tickers, theses, or market implications. It's well-written and provides cultural context for the semiconductor industry's relationship with timing and access. Skip for trading purposes; read for intellectual enrichment.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> &mdash; Factual historical content. Not applicable to investment decisions.</p>
+  </div>
+</div>
+
+<!-- ============================================== -->
+<!-- PUBLICATION: FundaAI                           -->
+<!-- ============================================== -->
+<h2>FundaAI</h2>
+
+<div class="post-card">
+  <h3>Weekly: Heightened Volatility, Coherent Lite + OCS, NVL576 NPO Optics Doubling, Glasswing Reshapes Cyber, Kioxia NAND Supercycle</h3>
+  <div class="post-meta">Published: June 6, 2026 | Tickers: MRVL, PANW, PL, SOXX</div>
+
+  <h4>Summary</h4>
+  <p>FundaAI's weekly roundup frames the past week as defined by <strong>extreme bullishness followed by brutal deleveraging</strong>. The most iconic moment: Marvell (MRVL) rallied ~45% in 3 days after Jensen Huang endorsed it as "the next trillion-dollar company" at Computex. Then came a SOXX 10% single-day drawdown, sending the index back to where it was two weeks prior.</p>
+
+  <p><strong>Deleveraging mechanics:</strong> FundaAI provides the key structural explanation: levered equity ETFs now have >$300B in AUM controlling >$750B in global equities. A 1% move in equity indices implies $12-18B in daily rebalancing needs. The concentrated long bets were in NDX, Semis, Memory, AI, and Korea. The selloff was not fundamental &mdash; it was <strong>mechanical deleveraging of overcrowded leveraged positions</strong>.</p>
+
+  <p><strong>Forward drivers:</strong> The key fundamental event the market should watch is <strong>frontier lab progress</strong>. The recent rally was sparked by Anthropic ARR growth acceleration driven by Claude Code. Any volatility in that growth trajectory will be closely monitored, especially amid growing LLM usage optimization discussions ("Tokenmaxxing"). Also flagged: SpaceX IPO next week as a market liquidity concern.</p>
+
+  <p><strong>Coherent Lite analysis:</strong> FundaAI argues consensus misses the real Coherent Lite story. The 2-20km reach narrative is wrong &mdash; the real value is that Coherent Lite enables OCS-based TPU/AI clusters to keep scaling into the 2.4T/3.2T module era. This is an architecture argument, not a distance argument.</p>
+
+  <p><strong>Glasswing/Mythos impact on cybersecurity (preview):</strong> Anthropic's expansion of Project Glasswing shifts cybersecurity toward closed-loop validation and remediation. Platform names (PANW, CRWD, MSFT, GOOGL, CYBR) capture upside; scanner/SAST models (QLYS, TENB, RPD) get squeezed.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Deleveraging thesis quality:</strong> Excellent. The $300B levered ETF AUM / $12-18B daily rebalancing math is the most important piece of context for understanding June 5. This explains why SOXX dropped 10% on what was arguably a rate-shock day, not an AI-demand-destruction day. This is the insight KOVA missed when going short &mdash; the selloff may have been mechanical, not fundamental.</p>
+    <p><strong>Jensen Huang endorsement risk:</strong> FundaAI correctly calls MRVL a "favorite name" but doesn't adequately warn that a 45% rally driven by a CEO endorsement from another company is a <em>narrative bubble</em>, not a valuation signal. Jensen Huang has incentives to pump ecosystem partners. The endorsement makes MRVL more correlated with Nvidia sentiment, not less risky.</p>
+    <p><strong>Anthropic ARR as market driver:</strong> This is a novel and important framing. If the AI semiconductor rally is fundamentally tied to Anthropic's revenue trajectory (via Claude Code adoption), then investors should be tracking Anthropic's growth metrics, not just chip shipments. However, Anthropic is private &mdash; making this an unverifiable thesis for public market participants.</p>
+    <p><strong>Bias:</strong> Institutional-grade tone with references to institutional subscriber analysis. This is likely the highest-quality source among the seven tracked publications. However, the paywall means the detailed Coherent Lite and Glasswing analyses are not fully accessible.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-high">HIGH</span> &mdash; Best structural market analysis in this scan cycle. The levered-ETF deleveraging framework is genuinely actionable context.</p>
+  </div>
+</div>
+
+<div class="post-card">
+  <h3>Deep: Glasswing/Mythos &mdash; AI-Native Cyber Reshapes the Cybersecurity Value Chain</h3>
+  <div class="post-meta">Published: June 4, 2026 | Tickers: PANW, CRWD, MSFT, GOOGL, CYBR (Long) | QLYS, TENB, RPD (Cautious)</div>
+
+  <h4>Summary</h4>
+  <p>FundaAI's deep analysis examines the implications of Anthropic expanding <strong>Project Glasswing to ~200 partners</strong> (from initial ~50) across 15+ countries. The expansion covers critical infrastructure: power, water, healthcare, communications, hardware. FundaAI frames this as <strong>not a simple model pilot but a fundamental shift in cybersecurity's value chain</strong>.</p>
+
+  <p><strong>Three reasons this matters:</strong> (1) Shift from capability validation to controlled real-world deployment &mdash; technical barriers to broader Mythos rollout are declining; (2) Proactive dual-use risk management &mdash; Anthropic chose vetted partner network over public GA; (3) Governance/productization rehearsal for Mythos-class models ahead of commercialization.</p>
+
+  <p><strong>Mythos capabilities beyond traditional scanning (5 areas):</strong></p>
+  <p>(1) <em>Vulnerability Discovery:</em> Stronger contextual understanding and cross-file reasoning vs. rule-based scanners. Channel feedback: Mythos surfaces "vulnerabilities that traditional tools have failed to find for years." Direct substitution risk for DAST/SAST players like Veracode and Snyk.</p>
+  <p>(2) <em>Exploitability Analysis:</em> Deeper contextual analysis to assess which vulnerabilities are real, externally triggerable, and actually exploitable. Shifts center of gravity from "listing CVEs" to "identifying real attack risk."</p>
+  <p>(3) <em>Exploit Chain Construction:</em> Key breakthrough &mdash; ability to chain multiple individually low-severity issues into high-risk exploit chains. Enterprises need to shift from "do I have this vulnerability?" to "can an adversary weaponize this?" Channel contacts believe SIEM and MDR could be materially disrupted within 12-18 months by agentic SOC tools like 7AI and Dropzone AI.</p>
+  <p>(4) <em>Proof Generation:</em> Generates evidence to validate findings, reducing triage burden and improving security-to-engineering handoff efficiency. Addresses the root cause of scanner findings failing to enter remediation loops: high false-positive rates.</p>
+  <p>(5) <em>Remediation/Patch Suggestion:</em> Anthropic's Claude Security (public beta) extends beyond discovery into remediation workflows, CI/CD integration, Jira/GitHub workflow completion, fix validation, and compliance records.</p>
+
+  <p><strong>Investment implications:</strong> <span class="tag tag-long">Long</span> PANW, MSFT, CRWD, GOOGL, CYBR &mdash; platform vendors with breadth, cross-domain telemetry, remediation loops, and SOC control points. <span class="tag tag-cautious">Cautious</span> QLYS, TENB, RPD &mdash; business models dependent on traditional vulnerability scanning face "dual pressure of functional commoditization and multiple compression."</p>
+
+  <blockquote>"Models such as Claude Mythos Preview are likely to push the marginal cost of vulnerability discovery another step lower, while shifting the center of gravity in cybersecurity from 'finding vulnerabilities' toward later-stage, more closed-loop workflows."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Thesis quality:</strong> This is the most substantive and original analysis in this scan cycle. The framework &mdash; AI-native cyber capability shifts value from discovery (commoditized) to validation/remediation (scarce) &mdash; is logically rigorous and has clear investment implications. The 5-capability taxonomy is well-structured and maps cleanly to competitive positioning.</p>
+    <p><strong>Key risk to thesis:</strong> The analysis assumes Anthropic will maintain the vetted-partner model rather than broadly releasing Mythos capabilities. If Mythos goes GA (or if OpenAI/Google build comparable security models and release them broadly), then the "platform advantage" thesis weakens &mdash; <em>everyone</em> gets the capability, and the differentiator becomes integration, not AI access. FundaAI's PANW/CRWD bull case depends on platform vendors having preferential access to frontier cyber models, which is not guaranteed.</p>
+    <p><strong>12-18 month SIEM/MDR disruption timeline:</strong> This is an aggressive call based on "channel contacts." AI security tools replacing established SIEM/MDR workflows in production environments typically takes 3-5 years due to compliance requirements, enterprise procurement cycles, and integration complexity. The 12-18 month timeline may reflect pilot excitement rather than deployment reality.</p>
+    <p><strong>Cherry-picking risk:</strong> The analysis mentions "channel feedback" multiple times but doesn't identify sources. Unverifiable industry checks are the weakest form of evidence. Channel checks can be biased by respondent selection &mdash; Anthropic partners are inherently bullish on Anthropic products.</p>
+    <p><strong>What would prove this wrong:</strong> (1) Mythos-class models go open-source or GA, democratizing the capability and removing platform advantage. (2) QLYS/TENB successfully integrate AI-native capabilities into their existing platforms, defending their positions. (3) Enterprise security buyers treat AI scanning as complementary to, not substitutive for, existing tools &mdash; expanding the market rather than redistributing share.</p>
+    <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span> &mdash; Excellent framework, but the timeline is aggressive and the evidence is channel-check dependent. The long-term direction is probably right; the speed of disruption is probably overstated.</p>
+  </div>
+</div>
+
+<!-- ============================================== -->
+<!-- SILENT PUBLICATIONS                            -->
+<!-- ============================================== -->
+<h2>No New Posts</h2>
+<p class="no-posts"><strong>Irrational Analysis</strong> &mdash; No posts since last scan.</p>
+<p class="no-posts"><strong>Global Semi Research</strong> &mdash; No posts since last scan.</p>
+<p class="no-posts"><strong>SemiAnalysis</strong> &mdash; No posts since last scan.</p>
+<p class="no-posts"><strong>Citrini Research</strong> &mdash; No posts since last scan.</p>
+
+<!-- ============================================== -->
+<!-- TICKER DEEP DIVES                              -->
+<!-- ============================================== -->
+<h2>Ticker Deep Dives</h2>
+
+<!-- AVGO -->
+<div class="ticker-profile">
+  <h3>AVGO &mdash; Broadcom Inc. <span class="tag tag-cautious">Cautious</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">Price</span><span class="data-value">~$479</span></div>
+    <div class="data-item"><span class="data-label">Market Cap</span><span class="data-value">$1.98T</span></div>
+    <div class="data-item"><span class="data-label">Trailing PE</span><span class="data-value">~94x</span></div>
+    <div class="data-item"><span class="data-label">Q2 Revenue</span><span class="data-value">$22.2B (+48% YoY)</span></div>
+    <div class="data-item"><span class="data-label">AI Semi Revenue</span><span class="data-value">$10.8B (+143% YoY)</span></div>
+    <div class="data-item"><span class="data-label">Q3 Guide</span><span class="data-value">$29.4B (+84% YoY)</span></div>
+    <div class="data-item"><span class="data-label">FY26 AI Guide</span><span class="data-value">$56B (~180% growth)</span></div>
+    <div class="data-item"><span class="data-label">FY27 AI Target</span><span class="data-value">>$100B (reiterated)</span></div>
+    <div class="data-item"><span class="data-label">Adj. EBITDA</span><span class="data-value">$15.2B (69% margin)</span></div>
+    <div class="data-item"><span class="data-label">AI Chip Bookings</span><span class="data-value">>$30B (3x shipments)</span></div>
+    <div class="data-item"><span class="data-label">Core AI Customers</span><span class="data-value">6 (GOOG, META, ANTH, OAI...)</span></div>
+    <div class="data-item"><span class="data-label">After-Hours Drop</span><span class="data-value">-13% (~$286B erased)</span></div>
+  </div>
+
+  <h4>Newsletter Thesis vs. Financial Data</h4>
+  <p>KOVA's "expectations reset, not blowup" thesis is <strong>factually supported</strong> by the Q2 numbers. Revenue beat, EPS beat, EBITDA margin expanded. The issue is forward guidance: Q3 AI chip revenue guided to $16B vs. $17.2B consensus, and the FY27 $100B+ target was reiterated, not raised. At 94x PE, the market needs continuous positive surprises, and management delivered only in-line guidance.</p>
+
+  <h4>Key Risk: Google Customer-Owned Tooling (CoT)</h4>
+  <p>Semi Doped flagged the most important signal KOVA missed: CEO Hock Tan admitted Google is diversifying away from Broadcom for custom silicon. This represents a potential structural cap on Broadcom's AI growth &mdash; its biggest hyperscaler customer is building internal design capability. If Meta and others follow, the $100B FY27 target becomes harder to reach.</p>
+
+  <h4>Recent News Not Covered by Newsletters</h4>
+  <div class="news-item">June 5: Nasdaq had worst day since April 2025 (-4.2%). AVGO fell 5-6% on top of the post-earnings drop, compounding losses.</div>
+  <div class="news-item">June 4: Anthropic urged a global pause in frontier AI development, adding cautionary pressure to the AI spending narrative that underpins AVGO's growth.</div>
+  <div class="news-item">June 4: Blackstone capped Bcred withdrawals (first time ever), signaling private-market liquidity stress that could spill into public equities.</div>
+
+  <h4>Cross-Reference: Other Publications</h4>
+  <div class="cross-ref"><strong>Semi Doped (June 4):</strong> More bearish read &mdash; highlighted CoT risk, called Broadcom's silicon prowess "starting to show cracks." Noted market cap of $2T vs. Nvidia's $5.2T.</div>
+  <div class="cross-ref"><strong>FundaAI (June 6):</strong> Attributed the selloff primarily to mechanical levered-ETF deleveraging ($300B AUM, $12-18B daily rebalance), not fundamental demand destruction.</div>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-partial">Partially Validated</span> &mdash; The Q2 numbers validate the bull case on demand. But the forward guidance miss, CoT risk from Google, and $2T valuation at 94x PE create a challenging risk/reward setup. The selloff had both fundamental (guidance miss) and mechanical (deleveraging) components. Near-term, the stock likely finds support as the $30B+ backlog provides revenue visibility, but the multiple probably compresses from here unless FY27 guidance is raised.</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span></p>
+</div>
+
+<!-- MRVL -->
+<div class="ticker-profile">
+  <h3>MRVL &mdash; Marvell Technology <span class="tag tag-long">Long</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">Price</span><span class="data-value">~$316</span></div>
+    <div class="data-item"><span class="data-label">Market Cap</span><span class="data-value">~$270B</span></div>
+    <div class="data-item"><span class="data-label">Trailing PE</span><span class="data-value">~57-103x (varies)</span></div>
+    <div class="data-item"><span class="data-label">Q1 FY27 Revenue</span><span class="data-value">$2.42B (+28% YoY)</span></div>
+    <div class="data-item"><span class="data-label">Data Center %</span><span class="data-value">76% of total</span></div>
+    <div class="data-item"><span class="data-label">GAAP Net Income</span><span class="data-value">$34.5M (-81% YoY)</span></div>
+    <div class="data-item"><span class="data-label">Adj. EPS</span><span class="data-value">$0.80</span></div>
+    <div class="data-item"><span class="data-label">Op. Cash Flow</span><span class="data-value">$639M (record)</span></div>
+    <div class="data-item"><span class="data-label">FY27 Guide</span><span class="data-value">~$11.5B (+40%)</span></div>
+    <div class="data-item"><span class="data-label">FY28 Guide</span><span class="data-value">~$16.5B (+45%)</span></div>
+    <div class="data-item"><span class="data-label">Capacity Prepay</span><span class="data-value">$1B locked</span></div>
+    <div class="data-item"><span class="data-label">Analyst Consensus</span><span class="data-value">Buy, ~$211 target (28 analysts)</span></div>
+  </div>
+
+  <h4>Newsletter Thesis vs. Financial Data</h4>
+  <p>Both KOVA and FundaAI are bullish on MRVL. The revenue growth, data center concentration, and multi-year guidance are all genuine. However, the stock is trading at ~$316 vs. the $211 analyst consensus target &mdash; <strong>50% above the average price target</strong>. This gap was largely created by the 45% rally in 3 days following Jensen Huang's Computex endorsement. The GAAP net income decline of 81% highlights that adjusted metrics mask heavy stock-based compensation.</p>
+
+  <h4>Key Tension: Narrative vs. Fundamentals</h4>
+  <p>The "trillion-dollar company" endorsement from Jensen Huang is powerful but is essentially a <strong>third-party narrative catalyst, not a fundamental data point</strong>. Huang has business incentives to pump Marvell as a key Nvidia ecosystem partner. The $1B capacity prepay is a stronger fundamental signal &mdash; it shows management is putting capital behind its confidence. The question is whether FY28 $16.5B revenue justifies a $270B market cap (~16x forward P/S).</p>
+
+  <h4>Recent News</h4>
+  <div class="news-item">June 5: MRVL and Flex rose on S&amp;P 500 inclusion news, providing a technical catalyst alongside the Jensen endorsement.</div>
+  <div class="news-item">June 5-6: Despite broad market selloff (Nasdaq -4.2%), MRVL's selloff was primarily mechanical (levered ETF deleveraging per FundaAI), not fundamental.</div>
+  <div class="news-item">WSB DD: ADTN pitched as leveraging Marvell's optical DSP tech (LiteWave800) for AI interconnect &mdash; showing MRVL's ecosystem reach.</div>
+
+  <h4>Cross-Reference</h4>
+  <div class="cross-ref"><strong>KOVA:</strong> Bullish &mdash; up 94% since recommendation. Sees optics + custom silicon as two confirmed growth vectors. Warns of crowded positioning and valuation stretch.</div>
+  <div class="cross-ref"><strong>FundaAI:</strong> "One of our favorite names." Notes the 45% Computex rally was overdone and the selloff was mechanical deleveraging, not fundamental.</div>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-partial">Partially Validated</span> &mdash; The fundamental growth story is real: record revenue, strong data center concentration, multi-year guidance, and capacity prepayment all support the bull case. However, the stock is 50% above analyst consensus, GAAP profitability is declining, and the Jensen endorsement created a narrative bubble. Both KOVA and FundaAI are bullish but both also warn about crowded positioning. The risk/reward at $316 is materially worse than it was at $200. Best entry would be on a pullback toward analyst consensus (~$210-230 range).</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span></p>
+</div>
+
+<!-- ON -->
+<div class="ticker-profile">
+  <h3>ON &mdash; onsemi (ON Semiconductor) <span class="tag tag-long">Long</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">Price</span><span class="data-value">~$129</span></div>
+    <div class="data-item"><span class="data-label">Market Cap</span><span class="data-value">~$52B</span></div>
+    <div class="data-item"><span class="data-label">Trailing PE</span><span class="data-value">~86x</span></div>
+    <div class="data-item"><span class="data-label">Forward PE</span><span class="data-value">~42x</span></div>
+    <div class="data-item"><span class="data-label">Q1 Revenue</span><span class="data-value">$1.51B (+5% YoY)</span></div>
+    <div class="data-item"><span class="data-label">Adj. EPS</span><span class="data-value">$0.64 (beat $0.62)</span></div>
+    <div class="data-item"><span class="data-label">Gross Margin</span><span class="data-value">38.5% (3rd qtr improvement)</span></div>
+    <div class="data-item"><span class="data-label">AI DC Rev Growth</span><span class="data-value">2x YoY, +30% QoQ</span></div>
+    <div class="data-item"><span class="data-label">FY26 AI DC Guide</span><span class="data-value">Another doubling expected</span></div>
+    <div class="data-item"><span class="data-label">LT Gross Margin Target</span><span class="data-value">53%</span></div>
+    <div class="data-item"><span class="data-label">LT Op Margin Target</span><span class="data-value">40%</span></div>
+    <div class="data-item"><span class="data-label">Analyst Consensus Target</span><span class="data-value">$97-125 (range)</span></div>
+  </div>
+
+  <h4>Newsletter Thesis vs. Financial Data</h4>
+  <p>KOVA's thesis &mdash; data center power conversion is the underappreciated play &mdash; is <strong>directionally correct but timing-sensitive</strong>. AI data center revenue is doubling from a small base, but total revenue growth is only 5% YoY. The dual-engine thesis (auto/industrial recovery + DC power growth) requires both vectors to work simultaneously. At 86x trailing PE, the stock is priced for significant acceleration that hasn't fully materialized yet.</p>
+
+  <h4>Valuation Context</h4>
+  <p>At ~$129, ON trades above the upper end of the pre-earnings analyst consensus (~$97-102) and near the most bullish post-earnings targets (~$125 from KeyBanc and Roth). The 86x trailing PE vs. 42x forward PE gap suggests analysts expect meaningful earnings acceleration, but 38.5% gross margin vs. the 53% long-term target means there's a long execution road ahead.</p>
+
+  <h4>Recent News</h4>
+  <div class="news-item">Multiple analysts raised targets post-Q1: KeyBanc to $125, Roth to $125, Wells Fargo/Jefferies/MS maintained buy/hold with hikes to $115+.</div>
+  <div class="news-item">24/7 Wall St predicts ON could be "2026's big tech stock" with target of $141.68.</div>
+  <div class="news-item">Product portfolio spans Si, SiC, SiC JFET, and GaN &mdash; broadest coverage in power semiconductor space.</div>
+
+  <h4>Cross-Reference</h4>
+  <div class="cross-ref"><strong>KOVA only.</strong> No other tracked publication covered ON in this scan window. This is a single-source thesis, which increases the risk of confirmation bias.</div>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-partial">Partially Validated</span> &mdash; The data center power thesis is structurally sound &mdash; every GPU needs power conversion, and ON's broad product portfolio (Si, SiC, GaN) positions it well. But the stock trades above most analyst targets, auto/industrial cyclical risk persists, and AI DC revenue is growing fast from a small base. The gap between current 38.5% gross margin and the 53% target represents years of execution. Best risk/reward on a cyclical pullback.</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span></p>
+</div>
+
+<!-- PANW -->
+<div class="ticker-profile">
+  <h3>PANW &mdash; Palo Alto Networks <span class="tag tag-long">Long</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">Price</span><span class="data-value">~$269</span></div>
+    <div class="data-item"><span class="data-label">Market Cap</span><span class="data-value">~$228B</span></div>
+    <div class="data-item"><span class="data-label">52-wk High</span><span class="data-value">$300.48 (Jun 1)</span></div>
+    <div class="data-item"><span class="data-label">Sector</span><span class="data-value">Cybersecurity Platform</span></div>
+    <div class="data-item"><span class="data-label">Newsletter Stance</span><span class="data-value">Constructive (FundaAI)</span></div>
+    <div class="data-item"><span class="data-label">Catalyst</span><span class="data-value">Glasswing/Mythos expansion</span></div>
+  </div>
+
+  <h4>Newsletter Thesis vs. Market Reality</h4>
+  <p>FundaAI's thesis is that AI-native cyber (specifically Anthropic's Glasswing/Mythos) will shift the cybersecurity value chain toward platforms with broad coverage, cross-domain telemetry, and remediation loops. PANW is positioned as the primary beneficiary due to its platform breadth. The thesis is structurally sound but depends on: (1) Anthropic maintaining controlled deployment (not GA release), (2) PANW integrating AI-native capabilities faster than competitors, and (3) enterprise buyers actually shifting budget from scanning to validation/remediation.</p>
+
+  <h4>Recent News</h4>
+  <div class="news-item">WSB DD: One post discusses pivoting to mega-cap tech including PANW as part of a rotation trade, suggesting retail sentiment is constructive.</div>
+  <div class="news-item">Another WSB DD covers Netskope IPO (NTSK) as a security play, indicating competitive landscape expansion in cloud security.</div>
+
+  <h4>Cross-Reference</h4>
+  <div class="cross-ref"><strong>FundaAI only.</strong> No other tracked publication covered PANW. The Glasswing thesis is unique to FundaAI and based heavily on "channel feedback" from Anthropic partners.</div>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-partial">Partially Validated</span> &mdash; PANW is a consensus-quality cybersecurity platform play that benefits from any structural shift toward integrated security. The Glasswing-specific catalyst is novel but unverifiable from public data. At $269 (down ~10% from the $300 all-time high), the stock is in a broad correction that could present opportunity if the AI-native cyber thesis plays out over 12-24 months. The risk is that the Glasswing/Mythos disruption timeline is overstated, and the real impacts don't materialize for 3-5 years.</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span></p>
+</div>
+
+<!-- AAOI -->
+<div class="ticker-profile">
+  <h3>AAOI &mdash; Applied Optoelectronics <span class="tag tag-long">Long</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">Price</span><span class="data-value">~$174</span></div>
+    <div class="data-item"><span class="data-label">52-Week Range</span><span class="data-value">$15.29 &ndash; $233.67</span></div>
+    <div class="data-item"><span class="data-label">YTD Move</span><span class="data-value">~1,000%+ from 52-wk low</span></div>
+    <div class="data-item"><span class="data-label">800G Shipments (2026E)</span><span class="data-value">~63M units (from 24M)</span></div>
+    <div class="data-item"><span class="data-label">Key Transition</span><span class="data-value">800G &rarr; 1.6T optical</span></div>
+    <div class="data-item"><span class="data-label">Differentiator</span><span class="data-value">In-house laser fab, TAA compliance</span></div>
+  </div>
+
+  <h4>Newsletter Thesis vs. Market Reality</h4>
+  <p>Semi Doped covered AAOI's blog post about the 800G-to-1.6T optical transceiver transition. The thesis: 800G is now baseline, 1.6T is ramping to production volume, supply could tighten as manufacturing shifts, and vertically integrated players (like AAOI with in-house laser fab) have an advantage. Semi Doped appropriately flagged that AAOI's blog is essentially marketing content &mdash; the $63M unit projection comes from AAOI itself, not independent analysis.</p>
+
+  <h4>Critical Context</h4>
+  <p>AAOI has been one of the most extreme AI beneficiaries in the market, rallying from $15 to $234 (over 1,400%) in 52 weeks before pulling back to $174. This is a small-cap, high-volatility name with extreme sensitivity to AI infrastructure spending sentiment. The stock fell 9% in a single day (June 3) and swung between $170-$209 on June 6. This is a momentum/speculation vehicle, not a valuation play.</p>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-limited">Limited Data</span> &mdash; The optical transceiver demand thesis is real (corroborated by TSMC capacity constraints, Nvidia Vera Rubin ramp, and Google-SpaceX chip deal). But AAOI is a speculative small-cap with extreme volatility. The stock has already priced in massive growth expectations after its 1,000%+ move. Semi Doped provided industry context, not an investment recommendation. Treat this as an informational data point, not an actionable thesis.</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-low">LOW</span> &mdash; Real secular trend, but the stock's extreme prior move and small-cap volatility make risk/reward unclear.</p>
+</div>
+
+<!-- QLYS / TENB -->
+<div class="ticker-profile">
+  <h3>QLYS / TENB / RPD &mdash; Vulnerability Scanner Pure-Plays <span class="tag tag-cautious">Cautious</span></h3>
+
+  <div class="data-grid">
+    <div class="data-item"><span class="data-label">FundaAI Stance</span><span class="data-value">Cautious / Bearish</span></div>
+    <div class="data-item"><span class="data-label">Thesis</span><span class="data-value">AI-native cyber commoditizes scanning</span></div>
+    <div class="data-item"><span class="data-label">Threat Source</span><span class="data-value">Anthropic Mythos / Claude Security</span></div>
+    <div class="data-item"><span class="data-label">Risk Type</span><span class="data-value">Functional commoditization + multiple compression</span></div>
+  </div>
+
+  <h4>Newsletter Thesis</h4>
+  <p>FundaAI argues that companies whose business models depend on traditional vulnerability scanning, low-end SAST, point AppSec scanners, or commoditized SOAR automation face "dual pressure of functional commoditization and multiple compression" as AI-native cyber capabilities (like Anthropic's Mythos) push the marginal cost of vulnerability discovery toward zero. Qualys (QLYS), Tenable (TENB), and Rapid7 (RPD) are specifically named as cautious positions.</p>
+
+  <h4>Counter-Argument</h4>
+  <p>All three companies are actively integrating AI into their platforms. Tenable and Qualys are investing in exposure management and remediation workflows &mdash; exactly the direction FundaAI says the market is heading. If these companies successfully pivot from "scanning" to "platform," the bearish thesis weakens. Enterprise security budgets are also expanding, not fixed-sum &mdash; AI cyber tools may grow the pie rather than redistribute it. The 12-18 month disruption timeline from FundaAI is likely too aggressive given enterprise procurement cycles.</p>
+
+  <h4>Synthesis</h4>
+  <p><span class="validation-tag v-partial">Partially Validated</span> &mdash; The directional thesis (AI commoditizes basic scanning) is probably correct over a 3-5 year horizon. But the pace of disruption is likely overstated, and the incumbents have more pivot optionality than FundaAI credits. The cautious stance is appropriate for new positions but doesn't necessarily mean sell existing holdings.</p>
+  <p><strong>Confidence:</strong> <span class="confidence conf-medium">MEDIUM</span></p>
+</div>
+
+<!-- ============================================== -->
+<!-- FOOTER                                         -->
+<!-- ============================================== -->
+<footer>
+  <p>Generated by Substack Investment Scanner | Scan window: 2026-06-04 to 2026-06-07 | 7 publications monitored | Data sources: Substack MCP, SellTheNews, WebSearch</p>
+  <p>Disclaimer: This report is for informational purposes only and does not constitute investment advice. All analysis represents the scanner's independent assessment of newsletter content and publicly available financial data. Always do your own research before making investment decisions.</p>
+</footer>
+
+</body>
+</html>
