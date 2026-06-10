@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Scan Report — June 10, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e5e7eb;
+    --green: #059669;
+    --green-bg: #d1fae5;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --gray: #6b7280;
+    --gray-bg: #f3f4f6;
+    --red: #dc2626;
+    --red-bg: #fee2e2;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --analysis-bg: #fffbf0;
+    --analysis-border: #f59e0b;
+    --ticker-card-bg: #f8fafc;
+    --validated-strong: #059669;
+    --validated-partial: #d97706;
+    --validated-limited: #6b7280;
+    --contradicted: #dc2626;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; margin: 2.5rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 3px solid var(--accent); }
+  h3 { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: var(--accent); }
+  h4 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+  p { margin-bottom: 0.75rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .header { margin-bottom: 2rem; }
+  .header .date { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); font-size: 0.95rem; }
+  .header .subtitle { color: var(--text-muted); margin-top: 0.25rem; }
+
+  .summary-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 2rem;
+  }
+  .summary-box h3 { color: var(--accent); margin-top: 0; }
+  .summary-box ul { margin-left: 1.25rem; margin-bottom: 0.5rem; }
+  .summary-box li { margin-bottom: 0.35rem; }
+
+  .scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+    font-size: 0.9rem;
+  }
+  .scoreboard th {
+    background: var(--text);
+    color: white;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .scoreboard td {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+  .scoreboard .ticker-cell { font-family: 'JetBrains Mono', monospace; font-weight: 600; }
+
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+
+  .post-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .post-card .post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+  .post-card h3 { margin-top: 0; }
+
+  .analysis-box {
+    background: var(--analysis-bg);
+    border-left: 4px solid var(--analysis-border);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; }
+
+  .ticker-card {
+    background: var(--ticker-card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .ticker-card h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.15rem;
+    margin-top: 0;
+  }
+  .ticker-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+  .ticker-metric {
+    background: white;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .ticker-metric .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .ticker-metric .value {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .validation {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+  }
+  .validation-strong { background: var(--validated-strong); }
+  .validation-partial { background: var(--validated-partial); }
+  .validation-limited { background: var(--validated-limited); }
+  .validation-contradicted { background: var(--contradicted); }
+
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem 1.25rem;
+    margin: 1rem 0;
+    background: var(--bg-alt);
+    border-radius: 0 6px 6px 0;
+    font-style: italic;
+    color: #374151;
+  }
+
+  .confidence {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .conf-high { color: var(--green); }
+  .conf-medium { color: var(--amber); }
+  .conf-low { color: var(--red); }
+
+  .pub-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .pub-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    background: var(--accent);
+    color: white;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  .news-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.85rem;
+    margin: 0.35rem 0;
+    font-size: 0.9rem;
+  }
+
+  .cross-ref {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+  }
+  .cross-ref .pub-name { font-weight: 600; color: var(--accent); }
+
+  @media (max-width: 700px) {
+    body { padding: 1rem; font-size: 14px; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.35rem; }
+    .ticker-grid { grid-template-columns: 1fr; }
+    .scoreboard { font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Substack Investment Scanner</h1>
+  <div class="date">2026-06-10 &mdash; Scan period: June 7&ndash;10, 2026</div>
+  <div class="subtitle">5 publications scanned &bull; 5 posts analyzed &bull; 8 tickers profiled</div>
+</div>
+
+<!-- ============ EXECUTIVE SUMMARY ============ -->
+<div class="summary-box">
+  <h3>Executive Summary</h3>
+  <ul>
+    <li><strong>SemiAnalysis</strong> published two major pieces: a deep technical benchmark of DeepSeekV4 inference across NVDA/AMD/Huawei hardware, and a bullish investment case for Unitree Robotics (pre-IPO) as the "next BYD/DJI" of humanoid robotics.</li>
+    <li><strong>Semi Doped</strong> covered Intel's blockbuster 3M-chip foundry deal with Alphabet, Marvell's S&P 500 inclusion, the $1.3T semiconductor selloff after Broadcom's disappointing guidance, the SemiAnalysis SOCAMM scare, and Rubin Ultra NPO demand.</li>
+    <li><strong>Citrini Research</strong> published a sweeping "State of the Themes" update warning of "Token Panic" — enterprise AI cost blowouts as monetization begins — while flagging that Chinese open-source models are 10-25x cheaper than frontier US models.</li>
+    <li><strong>Market context</strong>: Semis sold off $1.3T last week after AVGO earnings disappointed on custom ASIC guidance. Geopolitical risk elevated with US strikes on Iran driving oil volatility. Memory names bouncing from sharp selloff.</li>
+  </ul>
+  <p><strong>Key takeaways:</strong> INTC is the clear near-term catalyst play (foundry validation). NVDA remains the inference king but valuations are reasonable. MU is volatile but memory demand is structural. The "Token Panic" narrative from Citrini is the most important macro risk to monitor for the AI trade.</p>
+</div>
+
+<!-- ============ TICKER SCOREBOARD ============ -->
+<h3>Ticker Scoreboard</h3>
+<table class="scoreboard">
+  <thead>
+    <tr>
+      <th>Ticker</th>
+      <th>Price</th>
+      <th>Market Cap</th>
+      <th>Fwd P/E</th>
+      <th>Signal</th>
+      <th>Mentioned By</th>
+      <th>Analyst Confidence</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="ticker-cell">NVDA</td>
+      <td>$208.64</td>
+      <td>$4.98T</td>
+      <td>23.4x</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>SemiAnalysis, Semi Doped, Citrini</td>
+      <td><span class="confidence conf-high">HIGH</span></td>
+      <td><span class="validation validation-strong">STRONGLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">INTC</td>
+      <td>$110</td>
+      <td>~$504B</td>
+      <td>N/A</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>Semi Doped</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-partial">PARTIALLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">AMD</td>
+      <td>$523</td>
+      <td>$760B</td>
+      <td>53.5x</td>
+      <td><span class="tag tag-cautious">CAUTIOUS</span></td>
+      <td>SemiAnalysis, Semi Doped, Citrini</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-partial">PARTIALLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">MRVL</td>
+      <td>~$175</td>
+      <td>~$150B</td>
+      <td>~45x</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>Semi Doped</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-strong">STRONGLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">MU</td>
+      <td>$971</td>
+      <td>~$1.1T</td>
+      <td>~15x</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>Semi Doped, Citrini</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-strong">STRONGLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">AVGO</td>
+      <td>$388</td>
+      <td>$1.84T</td>
+      <td>~28x</td>
+      <td><span class="tag tag-cautious">CAUTIOUS</span></td>
+      <td>Semi Doped, Citrini</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-partial">PARTIALLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">ALAB</td>
+      <td>$347</td>
+      <td>~$56B</td>
+      <td>~80x</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>Semi Doped</td>
+      <td><span class="confidence conf-medium">MEDIUM</span></td>
+      <td><span class="validation validation-partial">PARTIALLY VALIDATED</span></td>
+    </tr>
+    <tr>
+      <td class="ticker-cell">GOOGL</td>
+      <td>$363</td>
+      <td>$4.4T</td>
+      <td>~22x</td>
+      <td><span class="tag tag-long">LONG</span></td>
+      <td>Semi Doped, Citrini</td>
+      <td><span class="confidence conf-high">HIGH</span></td>
+      <td><span class="validation validation-strong">STRONGLY VALIDATED</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============ PUBLICATION 1: SEMIANALYSIS ============ -->
+<h2><span class="pub-badge">Publication</span> SemiAnalysis</h2>
+
+<!-- POST 1 -->
+<div class="post-card">
+  <div class="post-meta">Jun 09, 2026 &bull; ~6,300 words &bull; Bryan Shan, Cam Quilici, Kimbo Chen et al.</div>
+  <h3>DeepSeekV4 1.6T Day 0 to Day 43 Performance Over Time</h3>
+  <p><span class="tag tag-long">NVDA</span> <span class="tag tag-cautious">AMD</span> <span class="tag tag-neutral">Huawei</span></p>
+
+  <h4>Full Summary</h4>
+  <p>This is SemiAnalysis's InferenceX team's comprehensive benchmark analysis of DeepSeek V4 (1.6 trillion parameter model) inference performance across every major hardware platform — NVIDIA GB300 NVL72, B200, B300, AMD MI355X, and Huawei Ascend 950DT — tracking improvements from Day 0 through Day 43 post-release.</p>
+
+  <p><strong>Key finding #1: NVIDIA GB300 NVL72 dominates.</strong> The GB300 rack-scale architecture is "unbeatable across all interactivity levels" with MTP (Multi-Token Prediction) enabled. The cost per million output tokens reaches $0.156 at 50 tok/s/user (8k input, 1k output). The rack's 72-GPU NVLink domain enables expert parallelism wide enough to keep DeepSeek V4's MoE dispatch/combine entirely on NVLink, avoiding slower scale-out fabric. CoreWeave provided the compute for these benchmarks after SemiAnalysis's own GB300 cluster was down at launch.</p>
+
+  <p><strong>Key finding #2: AMD MI355X achieved a 100x performance improvement in 26 days.</strong> On Day 0, the MI355X was "unusable" — delivering only 1-2 tokens per user per second, far below human reading speed. The AMD SGLang team led by HaiShaw systematically replaced PyTorch-native fallback paths with real AITER, Triton, TileLang, and FlyDSL kernels, eventually achieving pareto-frontier performance that exceeded H200 at lower interactivity levels. Key improvements: AITER mHC kernels, SWA-prepare Triton implementation, FlashMLA migration from TileLang to Triton, AITER FlyDSL FP4 MoE kernel, and fused hash-topk.</p>
+
+  <p><strong>Key finding #3: CUDA ecosystem moat is real but narrowing.</strong> Both vLLM and SGLang supported native DeepSeek V4 on CUDA the moment the model was released. Distributed inferencing works on Day 0 for CUDA. By contrast, AMD's ROCm stack didn't work on Day 0, and TensorRT-LLM had a critical hidden-size bug (hardcoded FHC_HIDDEN = 4096 when V4 Pro uses 7168). SemiAnalysis had to fix NVIDIA's own open-source mHC kernel code. However, AMD's ROCm vLLM distributed inference for non-DeepSeekV4 models has finally been enabled.</p>
+
+  <p><strong>Key finding #4: Huawei Ascend 950DT achieved Day 0 support.</strong> This is the first major open model with first-class Huawei support on Day 0 — only the second stack (along with CUDA) to achieve this. DeepSeek's official API has been partly served on Huawei since Day 0. CANN (Compute Architecture for Neural Networks) delivered optimized inference with MC² compute-communication fusion, independent AIC/AIV core scheduling, and on-device AI CPU for metadata operations. The 950 chip (codename "David") comes in two flavors: 950PR (Prefill/Recommendation, lower cost) and 950DT (Decode/Training, higher bandwidth).</p>
+
+  <p><strong>Key finding #5: B200 power efficiency improved 1.7x purely through software.</strong> Token throughput per all-in provisioned utility megawatt went from ~300K tok/s/MW on Day 0 to ~500K tok/s/MW by June 5th for 50 tok/s/user interactivity. Since B200's all-in power envelope is fixed at ~2.17 kW/GPU, this is a pure software gain from MegaMoE grouped-FP4 GEMMs, wider EP, FP4 weight path, and scheduler tuning.</p>
+
+  <p><strong>Key finding #6: DeepSeek V4 architectural innovations.</strong> The model introduces Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA), replacing MLA. This achieves 50x KV cache reduction at 1M context length. MegaMoE splits experts into waves for finer-grained overlapping, claiming 1.92x theoretical speedup. DeepSeek went "all in" on deterministic computation for RL training stability, writing custom batch-invariant kernels for all operations.</p>
+
+  <p><strong>Key finding #7: Open-source inference ecosystem dynamics.</strong> Both vLLM (now Inferact) and SGLang (now RadixArk) have raised hundreds of millions each to continue fueling their open-source inference engines. Chinese labs continue dominating the open model landscape, with Kimi K2.6 still beating NVIDIA's Nemotron 3 Ultra on coding. AMD is criticized for re-focusing on ATOM (which has "zero production customers") instead of native vLLM that major customers actually use.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The technical analysis is exceptionally rigorous — this is first-party benchmark data from SemiAnalysis's own InferenceX initiative, making it highly credible. The throughput-interactivity curves are real measurements, not estimates. However, the article is fundamentally promotional of the InferenceX platform and its supporters (CoreWeave, NVIDIA, Oracle, Microsoft, etc.), which creates an inherent bias toward showcasing the value of these partnerships.</p>
+
+    <p><strong>Bias/conflict of interest:</strong> SemiAnalysis has a commercial relationship with CoreWeave (who provided GB300 compute), and InferenceX is supported by NVIDIA, Oracle, Microsoft, and others. The article prominently credits these supporters. The critique of AMD's ATOM engine ("zero production customers") and TensorRT-LLM bugs serves SemiAnalysis's narrative that open-source inference (vLLM/SGLang) is superior — which aligns with InferenceX's mission.</p>
+
+    <p><strong>What would invalidate this thesis?</strong> If AMD's ATOM or a proprietary inference engine achieved meaningfully better production performance than vLLM/SGLang, the open-source dominance narrative weakens. If Huawei's Day 0 support is only viable for Chinese-designed models (not Western architectures), the "David vs. Goliath" framing overstates the threat. If GB300 NVL72 supply remains severely constrained, its theoretical superiority may be academic for most deployments.</p>
+
+    <p><strong>Key gap:</strong> The cost-per-token analysis is paywalled. The article shows performance but doesn't provide the TCO comparison that would make this actionable for investors deciding between NVDA and AMD exposure. Also, the AMD 100x improvement narrative could be misleading — going from "completely broken" to "functional" is very different from delivering competitive production performance.</p>
+
+    <p><span class="confidence conf-high">Confidence: HIGH</span> — First-party benchmark data with transparent methodology. The NVDA inference dominance thesis is well-supported. The AMD software improvement narrative is real but overstated in its investment implications.</p>
+  </div>
+</div>
+
+<!-- POST 2 -->
+<div class="post-card">
+  <div class="post-meta">Jun 08, 2026 &bull; ~5,700 words &bull; Reyk Knuhtsen, Niko Ciminelli, Jacob Rintamaki et al.</div>
+  <h3>China's Unitree Will Dominate Global Robotics</h3>
+  <p><span class="tag tag-long">Unitree (pre-IPO)</span> <span class="tag tag-neutral">TSLA</span> <span class="tag tag-neutral">BYDDY</span></p>
+
+  <h4>Full Summary</h4>
+  <p>SemiAnalysis presents a comprehensive bullish investment case for Unitree Robotics ahead of its highly anticipated IPO on the Shanghai Stock Exchange. The central thesis: Unitree is executing the "DJI Strategy" — own the critical bottleneck component (actuators, 50-70% of humanoid BoM), bootstrap a willing niche audience (researchers/hobbyists), ride the Chinese manufacturing ecosystem, and let each hardware generation unlock the next market. The piece draws extensive parallels to BYD (battery cells → EVs → global automotive dominance) and DJI (flight controllers → consumer drones → 70% global market share).</p>
+
+  <p><strong>Financial profile:</strong> Unitree is tripling revenues YoY on 60% gross margin product lines. They plan ~$300M in AI R&D spend. The G1 humanoid's BoM has been engineered down to $8,976 with 67% gross margins at a $27.3K price point. SemiAnalysis has "already heard pricing well under $20K in some deals." Pre-tax pricing has been slashed from $50K+ to $27.3K over 12-18 months, and BoM is set to plummet further as manufacturing scales.</p>
+
+  <p><strong>The QDD actuator bet:</strong> Unlike competitors using expensive HarmonicDrive strainwave gearboxes (~13-step manufacturing process, decades to perfect), Unitree chose quasi-direct-drive (QDD) actuators — simpler, cheaper (up to 80% cheaper), higher efficiency (95-98% vs 85-90% for strainwaves). Early critics were right that QDDs caused overheating — the original G1 could only hold 2kg for a few seconds before needing 30-minute cooldown. But after two years of iteration (reduced cogging torque, reshaped magnets, denser copper windings, active cooling around pelvis), the G1 now sustains 5kg for 10-15 minutes with arms bent — a 2x payload increase and 5x duration improvement. A new QDD redesign becomes a sample actuator within weeks at Unitree vs. 3+ months for Western humanoid companies.</p>
+
+  <p><strong>Deployment viability:</strong> SemiAnalysis estimates ~250 Unitree humanoids are deployed in productive industry settings, with one company running 30 G1s and multiple companies with 5-6 each. The primary use case is lightweight materials handling — carrying 2-5kg totes from A to B in e-commerce settings, similar to Agility Robotics' GXO deployment. Even with fully conservative assumptions (100% teleoperation, 15% service contract, 2-year useful life, zero residual, two shifts), Unitree's economics are "currently passing below the $30/hour labor cost of a human." The robot runs 10-15 minutes of work followed by 5-10 minutes of cooling, yielding 50-67% utilization.</p>
+
+  <p><strong>Competitive landscape:</strong> Tesla "first unveiled a humanoid in 2022, and while it and other Western players are now producing early humanoids that remain works in progress, we hear Unitree may ship its 10,000th in the coming weeks." NVIDIA, Apple, and Meta have all purchased hundreds of G1 units for AI research. Western startups (Sunday Robotics, Dyna, XDOF) already run hardware teams out of China. Even Tesla Optimus sources from the Chinese supply chain.</p>
+
+  <p><strong>Manufacturing advantage:</strong> Unitree self-develops BLDC motors, planetary gearboxes, LiDARs, and depth cameras. Their IPO filing shows quadruped margins improved from 42.36% to 55.49% while costs dropped nearly in half. Within China, ~200 humanoid companies now exist, all contributing to and benefiting from the ecosystem Unitree helped create.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The BYD/DJI analogy is compelling but risks selection bias — for every BYD there are dozens of Chinese hardware companies that failed to achieve ecosystem dominance. The key assumptions (QDD reliability improvement trajectory continues, deployment economics scale linearly, Western competitors can't close the cost gap) each carry meaningful risk.</p>
+
+    <p><strong>Unstated assumptions:</strong> (1) That teleop-to-autonomy transition will happen smoothly — current economics assume full teleoperation, but the thesis implicitly requires AI-driven autonomy to unlock larger TAMs. (2) That Western governments won't impose tariffs or restrictions on Chinese humanoid robots the way they have on EVs (US already imposed 100% tariffs on Chinese EVs). (3) That the IPO valuation will be reasonable relative to current revenues.</p>
+
+    <p><strong>Cherry-picked data?</strong> The 250 deployed units and $30/hour viability calculation uses Agility Robotics' task profile (tote handoff) which is specifically optimized for Unitree's current limitations. Real-world deployments involving heavier payloads, dexterous manipulation, or longer duty cycles would tell a very different story. The "10,000th humanoid shipping" claim is sourced as "we hear" — unverified.</p>
+
+    <p><strong>What would need to be true for this to be WRONG?</strong> (1) QDD actuators hit a thermal ceiling that prevents meaningful payload improvement beyond 5-10kg. (2) Western companies (Tesla, Figure, Agility) achieve cost parity through their own supply chain deals. (3) Geopolitical restrictions limit Unitree's addressable market. (4) The IPO prices in the growth story at excessive multiples.</p>
+
+    <p><strong>Author bias:</strong> SemiAnalysis has established relationships with Unitree (they received detailed BoM data, and referenced prior coverage from their quadrupeds piece). The piece reads as fundamentally promotional of the Unitree thesis, with limited engagement on bear cases beyond acknowledging early QDD weaknesses.</p>
+
+    <p><span class="confidence conf-medium">Confidence: MEDIUM</span> — Unitree's manufacturing advantage is real and well-documented, but the investment case depends on unproven deployment scaling and an uncertain IPO valuation. The BYD/DJI parallels are instructive but not predictive.</p>
+  </div>
+</div>
+
+<!-- ============ PUBLICATION 2: SEMI DOPED ============ -->
+<h2><span class="pub-badge">Publication</span> Semi Doped</h2>
+
+<!-- POST 3 -->
+<div class="post-card">
+  <div class="post-meta">Jun 09, 2026 &bull; ~930 words &bull; Vik &amp; Austin</div>
+  <h3>Daily Update — June 9, 2026</h3>
+  <p><span class="tag tag-long">INTC</span> <span class="tag tag-long">MRVL</span> <span class="tag tag-long">ALAB</span> <span class="tag tag-neutral">NVDA</span></p>
+
+  <h4>Full Summary</h4>
+  <p><strong>Intel-Alphabet foundry deal:</strong> Alphabet has ordered roughly 3 million chips from Intel Foundry, per The Information via Reuters. This is described as a "real hyperscaler, legit volume, marquee logo." The key question Vik raises: is this wafers (18A process) or just EMIB packaging? Austin notes The Information said "manufacture" not "assemble," suggesting actual fabrication, though he cautions journalists don't always get technical details right. INTC surged 11% on the news, trading between $99-$114.</p>
+
+  <p><strong>Marvell S&P 500 inclusion:</strong> Marvell joins the S&P 500 effective June 22, replacing PoolCorp. Shares jumped 10.4% on the announcement and are up 210% YTD. Barron's flagged Astera Labs, Bloom Energy, Alnylam, and Reddit as next candidates. Vik quips the S&P 500 is "apparently now an AI connectivity ETF." Austin correctly notes these are volatile stocks — "as fast as they shot up into the S&P 500 they could fall back out" — but affirms AI and data movement are "here to stay."</p>
+
+  <p><strong>SpaceX TeraFab:</strong> Elon Musk outlined plans for a ~100M sq ft chip factory to produce a terawatt of AI compute/year — 10x the footprint of Tesla's Gigafactory Texas. This would supply SpaceX's AI1 satellites carrying NVIDIA Rubin/GB300 chips with 150kW peak compute payload, 70m solar array wingspan, and terabit laser links. Annualized launch rate: 1 GW of orbital compute by end-2027.</p>
+
+  <p><strong>Quick hits:</strong> GlobalFoundries outlines RF GaN roadmap. Arista introduces 1.6T portfolio for AI fabrics. Broadcom/Apollo/Blackstone launch $35B AI infrastructure platform for 20+ GW of global AI deployments. d-Matrix Corsair AI inference platform enters full production. OpenAI submitted a confidential S-1 — "We have not decided on timing yet."</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Intel-Alphabet deal:</strong> This is legitimately bullish for INTC if it's 18A wafer fabrication (not just advanced packaging). However, 3 million chips is a large but not transformative order for Intel Foundry — it's a marquee logo that validates 18A more than it moves the revenue needle immediately. The stock's 11% reaction suggests the market is pricing this as foundry validation. Risk: if it's "just packaging" the narrative deflates significantly. Neither company has confirmed details.</p>
+
+    <p><strong>Marvell S&P inclusion:</strong> Index inclusion is a mechanical event — passive fund buying creates a predictable demand surge. But MRVL is up 210% YTD, so much of the AI connectivity story is already priced. At these levels, MRVL is trading on momentum and index mechanics rather than underappreciated fundamentals. Jensen Huang calling it "the next trillion dollar company" is promotional, not analytical.</p>
+
+    <p><strong>SpaceX TeraFab:</strong> This is Elon Musk's vision, which historically has a significant discount rate between announcement and reality. A 100M sq ft fab producing a terawatt of compute is unprecedented and would face immense capital, regulatory, and engineering challenges. Worth monitoring but not investable in the near term.</p>
+
+    <p><span class="confidence conf-medium">Confidence: MEDIUM</span> — The INTC catalyst is real but the magnitude depends on unconfirmed details. MRVL is a momentum/mechanics play at stretched valuations. SpaceX is non-actionable.</p>
+  </div>
+</div>
+
+<!-- POST 4 -->
+<div class="post-card">
+  <div class="post-meta">Jun 08, 2026 &bull; ~1,135 words &bull; Vik &amp; Austin</div>
+  <h3>Daily Update — June 8, 2026</h3>
+  <p><span class="tag tag-cautious">AVGO</span> <span class="tag tag-long">MU</span> <span class="tag tag-long">NVDA</span> <span class="tag tag-neutral">AMD</span></p>
+
+  <h4>Full Summary</h4>
+  <p><strong>$1.3 trillion semiconductor selloff:</strong> A broad chip selloff late last week wiped ~$1.3T from market value, with memory names Micron and SanDisk among the steepest decliners. The selloff was triggered by Broadcom's Q2 FY2026 earnings where custom ASIC demand guidance of $16B fell short of the $17.2B analyst expectation. CEO Hock Tan declined to raise the $100B annual AI semiconductor revenue target for fiscal 2027. Jensen Huang called it "a great buying opportunity."</p>
+
+  <p><strong>Nvidia-SK Hynix multi-year memory pact:</strong> SK Hynix and NVIDIA signed a multi-year co-development partnership for next-gen memory covering Vera Rubin, Vera CPU, RTX Spark, and Jetson Thor platforms. SK Hynix will adopt NVIDIA's Omniverse and CUDA-X across its fabs. Vik: "I personally do not see the demand for memory leveling off. Co-development efforts are strong signals." Austin highlights edge AI memory demand — "local machines don't have enough memory to support useful models."</p>
+
+  <p><strong>The SOCAMM Rubin scare:</strong> Memory stocks sold off after reports NVIDIA would halve CPU-side SOCAMM (LPDDR5X) DRAM in Vera Rubin NVL72 racks from ~55TB to ~28TB by shipping 96GB modules instead of 192GB. SemiAnalysis's Dylan Patel clarified the institutional research note was taken out of context. Austin delivers a sharp meta-observation: "This is the SemiAnalysis business model working as designed. Sell market-moving research to a select few, and snippets will leak and lose their context. That asymmetry is really the product: if you paid for the full note, everyone else's out-of-context panic is your edge."</p>
+
+  <p><strong>Rubin Ultra NPO shift:</strong> NVIDIA's Rubin Ultra NVL576 platform will use Near-Package Optics (NPO) for inter-rack scale-up, nearly doubling optical-engine content per GPU from ~2.25 to ~4.0 units (+78%), implying ~12M units of demand. This is bullish for optical-engine makers, lasers, DSPs, and SiPh foundries. Vik calls NPO the "goldilocks zone" between full CPO and traditional approaches.</p>
+
+  <p><strong>Lotus Microsystems (startup):</strong> Copenhagen startup launches vStrata vertical power delivery platform — claims 50% cut in power conversion losses, 96% point-of-load efficiency, kiloampere-class loads. Taped out for unnamed "leading xPU and AI infrastructure" partners. Engineering samples in Q3 2026.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Selloff assessment:</strong> Both Vik and Austin treat the $1.3T selloff as a buying opportunity, and they're likely right in the medium term — nothing has materially changed about AI infrastructure demand. However, Vik's comment that "we will have to wait and see if this materially affects token spend" is important and honest. The selloff coincided with Citrini's "Token Panic" narrative, and the combination of AVGO guidance miss + enterprise AI cost blowouts could signal a more than temporary rotation.</p>
+
+    <p><strong>SOCAMM analysis is meta-sharp:</strong> Austin's observation about SemiAnalysis's business model is the most valuable insight in the piece. The information asymmetry between institutional subscribers and retail is a feature, not a bug, and creates predictable trading patterns around leaked notes. This is worth internalizing for any retail investor following these newsletters.</p>
+
+    <p><strong>NPO thesis is well-reasoned:</strong> The shift from full CPO to modular NPO is a pragmatic engineering decision that preserves value for the optical ecosystem rather than vertically integrating. This is bullish for names like Coherent, II-VI/Coherent, and Broadcom's optical division, but the specific beneficiaries weren't named.</p>
+
+    <p><span class="confidence conf-medium">Confidence: MEDIUM</span> — The "buy the dip" framing for semis is directionally correct but lacks engagement with the bear case around AI cost inflation and potential capex deceleration.</p>
+  </div>
+</div>
+
+<!-- ============ PUBLICATION 3: CITRINI RESEARCH ============ -->
+<h2><span class="pub-badge">Publication</span> Citrini Research</h2>
+
+<!-- POST 5 -->
+<div class="post-card">
+  <div class="post-meta">Jun 08, 2026 &bull; ~1,800 words (free portion) &bull; Citrini</div>
+  <h3>State of the Themes: June 2026</h3>
+  <p><span class="tag tag-long">GOOGL</span> <span class="tag tag-cautious">AI Infra broadly</span> <span class="tag tag-neutral">NVDA</span> <span class="tag tag-neutral">MU</span></p>
+
+  <h4>Full Summary</h4>
+  <p>Citrini publishes their semi-annual thematic universe update, covering performance attribution, forward-looking positioning, and a major new macro risk narrative they call "Token Panic." The Citrindex model portfolio's four of six baskets have outperformed the US market YTD, with AI and Robotics leading.</p>
+
+  <p><strong>Track record highlights:</strong> In August 2025, Citrini called Google (GOOG) "the most asymmetric large cap AI winner" — it doubled over 9 months. They published a bullish Korea thesis — KOSPI tripled since. Called for Taiwan to outperform the US — TWSE outperformed QQQ by 60%+. They acknowledge being "too cautious at points — like cutting memory exposure early in the year."</p>
+
+  <p><strong>The Token Panic thesis (most important section):</strong> In weeks, the narrative has shifted from "tokenmaxxing" to "tokenpanic." Enterprise AI costs are exploding: Uber burned through its entire AI budget in four months. An anonymous $500M budget overrun was reported. Anthropic's ARR reached $45B in May (5x increase since start of year per The Economist). Sam Altman confirmed: "My company spent my entire 2026 budget in Q1. Can you make this more efficient? That went from an issue that never came up to all of a sudden a huge issue." Microsoft's AI Chief cancelled Claude Code licenses in May, saying: "Anthropic is extremely expensive, and I think many people are urgently looking for alternatives."</p>
+
+  <p><strong>Pricing shifts driving panic:</strong> All major providers have shifted to usage-based pricing in near-lockstep: OpenAI changed Codex pricing (April 2), Google changed Gemini to "compute-used" model (May 19), Microsoft GitHub Copilot moved to usage-based billing (June 1). Claude Opus 4.7/4.8 uses a "new tokenizer" that may use up to 35% more tokens for the same text — effectively a hidden price increase.</p>
+
+  <p><strong>Chinese alternatives:</strong> DeepSeek V4 and Qwen 3.7 are 10-25x cheaper than Opus 4.8 and GPT 5.5. DeepSeek has shot past Anthropic to the top of OpenRouter in tokens processed. Cursor's new model is post-trained on xAI compute using a Moonshot base model — "comparable to 4.7 and 5.5 for 10x lower cost per task." The trend of application-layer companies post-training on open-source base models for specialized workflows is accelerating.</p>
+
+  <p><strong>Implications for the AI trade:</strong> Citrini emphasizes this isn't the end of AI spending — "revenues for labs and hyperscalers are going to grow" and "this won't fix near-term compute constraints." But cost and efficiency become more important. Themes to watch: local inference, miniaturization, smart routing, observability, price competition, efficient model architecture. The full article (paywalled) covers Edge AI, DRAM optimization, agentic utilities, AI losers, robotics, EU Chips Act, Colombia, oil capex, Shopify, Hyperliquid, healthcare, and "The Girlfriend Index" (GOP loses the House).</p>
+
+  <blockquote>"Free-AI is ending. Tokenomics is beginning. What happens when underlying costs of compute become more transparent and directly traceable to outcomes? The ROI debate is about to be answered in real time, across millions of users and use cases."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The Token Panic thesis is the most important macro narrative in this scan. The evidence is compelling and multi-sourced (Uber, anonymous reports, Altman direct quotes, Microsoft AI Chief). The shift from subsidized AI to usage-based monetization is real and well-documented. The pricing data (four providers moving to usage-based in near-lockstep) is particularly strong evidence of coordination.</p>
+
+    <p><strong>However, this narrative has limits:</strong> (1) Enterprise AI cost blowouts are partially a demand signal — companies are using AI so much they're burning budgets, which is bullish for infrastructure. (2) The "switch to Chinese alternatives" framing overstates the practical barrier to adoption for large US enterprises dealing with compliance, security, and data sovereignty requirements. (3) Citrini admits they were "too cautious" cutting memory exposure earlier — they may be pattern-matching to their prior mistake.</p>
+
+    <p><strong>What would invalidate this thesis?</strong> If token costs continue falling fast enough (via efficiency gains, competition, model distillation) that total AI spend grows modestly even as token consumption explodes, the "panic" resolves without damaging the infrastructure trade. If enterprises simply increase AI budgets rather than cut back, the revenue growth narrative holds.</p>
+
+    <p><strong>Cherry-picked data?</strong> The Uber budget blowout and $500M anonymous report are anecdotes, not systematic evidence. Citrini doesn't present data on what percentage of enterprises are experiencing budget overruns vs. those operating within budget. The Claude tokenizer price increase claim ("up to 35% more tokens") needs verification — this could be an architectural choice rather than deliberate price extraction.</p>
+
+    <p><strong>Conflict of interest:</strong> Citrini manages the Citrindex model portfolio, so their thematic calls directly affect their positioning and trading. The strong track record cited (GOOG doubled, KOSPI tripled) creates survivorship bias in credibility. They acknowledge underperformance areas (cutting memory too early) which adds credibility.</p>
+
+    <p><span class="confidence conf-high">Confidence: HIGH</span> — The Token Panic narrative is well-evidenced and represents a genuine risk to the AI infrastructure trade's most aggressive valuations. The resolution is likely in the middle: AI budgets grow but more slowly, efficiency becomes paramount, and Chinese alternatives gain share at the margin.</p>
+  </div>
+</div>
+
+<!-- ============ PUBLICATIONS WITH NO NEW POSTS ============ -->
+<h2><span class="pub-badge">No new posts</span> Irrational Analysis</h2>
+<p style="color: var(--text-muted); padding: 0.5rem 0;">No posts published June 7&ndash;10, 2026.</p>
+
+<h2><span class="pub-badge">No new posts</span> Global Semi Research</h2>
+<p style="color: var(--text-muted); padding: 0.5rem 0;">No posts published June 7&ndash;10, 2026.</p>
+
+<!-- ============ TICKER DEEP DIVES ============ -->
+<h2>Ticker Deep Dives</h2>
+
+<!-- NVDA -->
+<div class="ticker-card">
+  <h4>NVDA — NVIDIA Corporation <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$208.64</div></div>
+    <div class="ticker-metric"><div class="label">Market Cap</div><div class="value">$4.98T</div></div>
+    <div class="ticker-metric"><div class="label">Trailing P/E</div><div class="value">31.8x</div></div>
+    <div class="ticker-metric"><div class="label">Forward P/E</div><div class="value">23.4x</div></div>
+    <div class="ticker-metric"><div class="label">EPS (TTM)</div><div class="value">$6.56</div></div>
+    <div class="ticker-metric"><div class="label">P/E vs 12m avg</div><div class="value">-26% (was 43.3x)</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> SemiAnalysis positions NVDA's GB300 NVL72 as the uncontested inference king, delivering lowest cost per token ($0.156/M output tokens) and dominant performance across all interactivity levels. Semi Doped notes Jensen called the $1.3T selloff "a great buying opportunity." Citrini is more cautious, flagging the Token Panic as a potential headwind to unbounded AI infrastructure spending.</p>
+
+  <p><strong>Financial data validation:</strong> At 23.4x forward P/E, NVDA is actually trading at reasonable multiples for a company with this growth profile — well below its 12-month average of 43.3x. The valuation compression suggests the market has already partially priced in some deceleration risk.</p>
+
+  <p><strong>Analyst consensus:</strong> Broadly bullish. The stock's recent decline from ~$220+ to $208 creates a more attractive entry. The GB300 performance data from SemiAnalysis validates NVDA's product superiority. However, PHLX Semiconductor Index was down 4% on June 9 intraday.</p>
+
+  <p><strong>Recent news not covered:</strong> US strikes on Iran (June 9) add geopolitical risk premium. China's $295B data center plan requiring 80% local suppliers could limit NVDA's China TAM. Super Micro announced a $7B equity raise to buy AI-server components — signals strong GPU demand but also dilution concerns for the ecosystem.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> Mentioned by all 3 active publications this scan. SemiAnalysis (inference benchmarks), Semi Doped (selloff context, SK Hynix partnership), Citrini (Token Panic implications). Consensus is bullish on fundamentals, cautious on near-term positioning given elevated sentiment.
+  </div>
+
+  <p><span class="validation validation-strong">STRONGLY VALIDATED</span> &mdash; GB300 NVL72 performance leadership is empirically demonstrated. Valuation is reasonable at 23x forward. Token Panic narrative is a risk but doesn't undermine NVDA's structural position. <span class="confidence conf-high">HIGH confidence.</span></p>
+</div>
+
+<!-- INTC -->
+<div class="ticker-card">
+  <h4>INTC — Intel Corporation <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$110 (post-surge)</div></div>
+    <div class="ticker-metric"><div class="label">Market Cap</div><div class="value">~$504B</div></div>
+    <div class="ticker-metric"><div class="label">Q1 Revenue</div><div class="value">$13.6B (+7% YoY)</div></div>
+    <div class="ticker-metric"><div class="label">Day Move</div><div class="value">+11% on Jun 9</div></div>
+    <div class="ticker-metric"><div class="label">52w Range</div><div class="value">~$20 to $122</div></div>
+    <div class="ticker-metric"><div class="label">YTD Move</div><div class="value">Massive rally</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Semi Doped highlights the Alphabet 3M-chip foundry order as a major validation of Intel Foundry's competitiveness. The key question is whether this is 18A wafer fabrication (transformative for INTC's foundry narrative) or EMIB advanced packaging (still positive but less so). The Information used "manufacture" not "assemble."</p>
+
+  <p><strong>Financial data validation:</strong> INTC has rallied massively in 2026, from ~$20 to $110+, driven by AI data center demand and Q1 earnings beats ($13.6B revenue, +7% YoY). The stock has moved from "value trap" to "foundry turnaround" narrative. At ~$504B market cap, INTC has re-rated dramatically.</p>
+
+  <p><strong>Recent news not covered:</strong> The sellthenews daily recap confirms Intel jumped on Google's 3M TPU order. The broader semi selloff on June 9 (PHLX Semi Index down 4%) may create a near-term pullback opportunity if the foundry narrative holds.</p>
+
+  <p><strong>What newsletters missed:</strong> At $110/share, INTC has already priced in significant foundry success. The risk is that 3M chips is a packaging deal rather than 18A fabrication, which would deflate the narrative. Also, Intel's foundry business has historically lost money — one customer order doesn't guarantee profitability.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> sellthenews daily recap (June 8) confirms "Intel jumped after reports that Google ordered more than 3 million TPUs." No contradictory coverage found across subscribed publications.
+  </div>
+
+  <p><span class="validation validation-partial">PARTIALLY VALIDATED</span> &mdash; The Alphabet order is confirmed by multiple sources but details (wafer vs. packaging) are unconfirmed. The stock has already moved significantly on the news. <span class="confidence conf-medium">MEDIUM confidence.</span></p>
+</div>
+
+<!-- AMD -->
+<div class="ticker-card">
+  <h4>AMD — Advanced Micro Devices <span class="tag tag-cautious">CAUTIOUS</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$523</div></div>
+    <div class="ticker-metric"><div class="label">Market Cap</div><div class="value">$760B</div></div>
+    <div class="ticker-metric"><div class="label">Trailing P/E</div><div class="value">~156-178x</div></div>
+    <div class="ticker-metric"><div class="label">Forward P/E</div><div class="value">53.5x</div></div>
+    <div class="ticker-metric"><div class="label">Valuation</div><div class="value">Elevated</div></div>
+    <div class="ticker-metric"><div class="label">Key Risk</div><div class="value">Software gap vs NVDA</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> SemiAnalysis delivers a nuanced view — AMD's MI355X achieved a remarkable 100x performance improvement from Day 0 to Day 26 for DeepSeek V4, eventually exceeding H200 performance at some interactivity levels. However, the article is also sharply critical: ROCm didn't work on Day 0, AMD is "re-focusing on ATOM (an inference engine that serves 0 production tokens) instead of focusing on native vLLM," and distributed inference still doesn't work for DeepSeek V4 on ROCm.</p>
+
+  <p><strong>Financial data validation:</strong> At 53.5x forward P/E and ~$760B market cap, AMD is priced for very aggressive growth. The trailing P/E of 156-178x shows current earnings don't justify the valuation — investors are betting on future MI355X adoption and data center GPU share gains.</p>
+
+  <p><strong>The bull/bear tension:</strong> The 100x improvement narrative sounds incredible but is misleading — going from "completely broken" to "functional" is not the same as delivering competitive production performance vs. NVDA. SemiAnalysis confirms NVDA's CUDA moat remains wide: Day 0 support, distributed inference, and the vLLM/SGLang ecosystem all favor NVIDIA. AMD's software team is doing great engineering work but remains structurally behind.</p>
+
+  <p><strong>Recent news:</strong> sellthenews reports AMD was down in June 9 trading alongside the broader semi selloff. China's $295B data center plan using 80% local suppliers could potentially benefit AMD (as an alternative to NVDA) or hurt it (if local suppliers means Huawei).</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> SemiAnalysis (detailed technical analysis), Semi Doped (selloff context), Citrini (token cost competition). SemiAnalysis is the most informative — upcoming "State of AMD 2026" article promised covering "the good, the bad, and the ugly."
+  </div>
+
+  <p><span class="validation validation-partial">PARTIALLY VALIDATED</span> &mdash; AMD's software improvement is real but the stock's valuation already assumes significant share gains that haven't materialized in production deployments. The CUDA moat remains wide. <span class="confidence conf-medium">MEDIUM confidence on caution rating.</span></p>
+</div>
+
+<!-- MRVL -->
+<div class="ticker-card">
+  <h4>MRVL — Marvell Technology <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">~$175 (post-surge)</div></div>
+    <div class="ticker-metric"><div class="label">YTD Return</div><div class="value">+210%</div></div>
+    <div class="ticker-metric"><div class="label">Q1 Revenue</div><div class="value">$2.4B (beat estimates)</div></div>
+    <div class="ticker-metric"><div class="label">S&P 500 Entry</div><div class="value">June 22, 2026</div></div>
+    <div class="ticker-metric"><div class="label">Weekly Gain</div><div class="value">~29%</div></div>
+    <div class="ticker-metric"><div class="label">Jensen Quote</div><div class="value">"Next trillion $ company"</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Semi Doped highlights MRVL's S&P 500 inclusion (effective June 22) as a mechanical catalyst — passive fund buying creates predictable demand. The stock is up 210% YTD, fueled by AI connectivity demand and Jensen Huang's endorsement.</p>
+
+  <p><strong>Financial data validation:</strong> The S&P 500 inclusion is confirmed and dated (June 22). Q1 revenue of $2.4B beat estimates with data center operations leading growth. The GAAP profitability hurdle has been cleared. The 210% YTD gain and 29% weekly gain suggest extreme momentum that could mean the inclusion is already priced in.</p>
+
+  <p><strong>Risks not discussed:</strong> At 210% YTD, the risk/reward is asymmetric to the downside for new entries. The June 9 PHLX Semi selloff hit MRVL particularly hard (-10% intraday per sellthenews). S&P 500 inclusion often triggers a "sell the news" reaction after the effective date. The "next trillion dollar company" label from Jensen is marketing, not analysis.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> sellthenews intraday recap confirms MRVL was down 10% on June 9 despite the S&P 500 news, suggesting the inclusion premium has already been captured and the stock is now trading with the broader semi selloff.
+  </div>
+
+  <p><span class="validation validation-strong">STRONGLY VALIDATED</span> &mdash; S&P 500 inclusion is confirmed, fundamentals are strong. But at 210% YTD the easy money has been made. Entry timing matters enormously. <span class="confidence conf-medium">MEDIUM confidence — right thesis, late to the trade.</span></p>
+</div>
+
+<!-- MU -->
+<div class="ticker-card">
+  <h4>MU — Micron Technology <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$971</div></div>
+    <div class="ticker-metric"><div class="label">YTD Return</div><div class="value">+304%</div></div>
+    <div class="ticker-metric"><div class="label">1-Month Return</div><div class="value">+100%</div></div>
+    <div class="ticker-metric"><div class="label">Analyst Targets</div><div class="value">$1,050-$1,750</div></div>
+    <div class="ticker-metric"><div class="label">Key Catalyst</div><div class="value">HBM4, AI memory</div></div>
+    <div class="ticker-metric"><div class="label">Supply Outlook</div><div class="value">Shortage 2-3 years</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Semi Doped is bullish on memory demand — Vik says "I personally do not see the demand for memory leveling off" and the NVIDIA-SK Hynix multi-year pact is a "strong signal." Austin adds that edge AI will demand more memory too. Citrini admits being "too cautious" cutting memory exposure earlier in the year.</p>
+
+  <p><strong>Financial data validation:</strong> MU is up 304% YTD and ~100% in the past month. Analyst targets are extremely bullish: Susquehanna at $1,750, UBS at $1,625, Morgan Stanley doubled to $1,050. The company rolled out an AI-optimized portfolio at Computex 2026 including HBM4 and high-capacity DDR5/LPDDR. Morgan Stanley cites a "global memory shortage that could last another 2-3 years."</p>
+
+  <p><strong>The SOCAMM scare was overblown:</strong> Semi Doped's analysis (via SemiAnalysis institutional note) of NVIDIA halving SOCAMM DRAM in Rubin NVL72 racks was interpreted bearishly by the market but is actually bullish — it's smart supply-chain management that allows more Rubin systems to ship by easing LPDDR5X bottlenecks and cutting ~$800K per-rack costs.</p>
+
+  <p><strong>Risks:</strong> At $971 and +304% YTD, the stock is priced for perfection. Memory is cyclical and DRAM pricing eventually normalizes. The $1.3T semi selloff hit memory names hardest. Korean memory stocks (Samsung, SK Hynix) rebounded 8-14% on June 9, suggesting the dip may already be bought.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> Semi Doped (bullish), Citrini (admits being too cautious on memory earlier). SemiAnalysis institutional note triggered the SOCAMM scare but the publication's own view was that it was bullish. sellthenews confirms Korean chip shares rebounded sharply on June 9.
+  </div>
+
+  <p><span class="validation validation-strong">STRONGLY VALIDATED</span> &mdash; Memory demand is structural and analyst consensus is overwhelmingly bullish. However, the +304% YTD move and cyclical nature of memory warrant caution on new entries. <span class="confidence conf-medium">MEDIUM confidence — right direction, valuation risk.</span></p>
+</div>
+
+<!-- AVGO -->
+<div class="ticker-card">
+  <h4>AVGO — Broadcom Inc. <span class="tag tag-cautious">CAUTIOUS</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$388</div></div>
+    <div class="ticker-metric"><div class="label">Market Cap</div><div class="value">$1.84T</div></div>
+    <div class="ticker-metric"><div class="label">Q2 Revenue</div><div class="value">$22.2B (+48% YoY, record)</div></div>
+    <div class="ticker-metric"><div class="label">AI Semis Rev</div><div class="value">$10.8B (+143% YoY)</div></div>
+    <div class="ticker-metric"><div class="label">Q3 AI Guide</div><div class="value">$16B (vs $17.2B est)</div></div>
+    <div class="ticker-metric"><div class="label">FY27 AI Target</div><div class="value">$100B (maintained)</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Semi Doped highlighted AVGO's earnings as the catalyst for the $1.3T semi selloff. Q2 AI revenue of $10.8B (+143% YoY) was actually above forecast, but Q3 AI guidance of $16B fell short of $17.2B expectations. CEO Hock Tan declined to raise the FY27 $100B AI semiconductor revenue target, disappointing investors who expected an upgrade.</p>
+
+  <p><strong>Financial data validation:</strong> The stock fell ~15% on June 4 after earnings, from all-time highs near $495 to $388. Q2 was objectively strong — record $22.2B revenue, 48% YoY growth, AI semiconductor revenue +143% YoY. The selloff was about expectations management, not fundamental weakness. The $100B FY27 target was maintained, just not raised.</p>
+
+  <p><strong>Key context:</strong> Broadcom, Apollo, and Blackstone launched a $35B AI XPV platform for 20+ GW of compute capacity, suggesting confidence in the infrastructure buildout. The stock had rallied 40% YTD pre-earnings, creating an extremely high bar.</p>
+
+  <p><strong>Risks:</strong> Custom ASIC demand guidance miss could indicate hyperscaler customers slowing custom silicon orders, which would be a leading indicator for broader AI capex deceleration. This aligns with Citrini's Token Panic thesis — if enterprises are pushing back on AI costs, hyperscalers may eventually slow their own spending.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> Semi Doped (earnings selloff), Citrini (Token Panic, AI cost concerns). sellthenews confirms AVGO was up on June 9 as Broadcom/Apollo/Blackstone launched the $35B AI platform.
+  </div>
+
+  <p><span class="validation validation-partial">PARTIALLY VALIDATED</span> &mdash; Fundamentals are strong (record revenue, massive AI growth) but the guidance miss is a real signal. The selloff from $495 to $388 may present opportunity if the $100B target proves achievable. <span class="confidence conf-medium">MEDIUM confidence.</span></p>
+</div>
+
+<!-- ALAB -->
+<div class="ticker-card">
+  <h4>ALAB — Astera Labs <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$347</div></div>
+    <div class="ticker-metric"><div class="label">All-Time High</div><div class="value">$372 (Jun 3)</div></div>
+    <div class="ticker-metric"><div class="label">3-Month Return</div><div class="value">+203%</div></div>
+    <div class="ticker-metric"><div class="label">Analyst Consensus</div><div class="value">Buy (26 analysts)</div></div>
+    <div class="ticker-metric"><div class="label">Catalyst</div><div class="value">S&P 500 candidate</div></div>
+    <div class="ticker-metric"><div class="label">Business</div><div class="value">AI connectivity silicon</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Semi Doped flags ALAB as a potential next S&P 500 addition per Barron's, noting the company "supplies connectivity silicon for AI servers" and has seen its market cap expand alongside hyperscaler infrastructure spending since its 2024 IPO. The Rubin Ultra NPO shift (+78% more optical-engine content per GPU) is a tailwind for connectivity plays like ALAB.</p>
+
+  <p><strong>Financial data validation:</strong> At $347, ALAB is 7% below its June 3 all-time high of $372. The stock has surged 203% in 3 months. Analyst consensus is Buy across 26 analysts, with recent target raises from Evercore ($297), Morgan Stanley ($240), and JPMorgan ($280) — all below the current price, suggesting the stock has run ahead of even bullish estimates.</p>
+
+  <p><strong>Risks:</strong> The stock is trading well above every analyst target listed, which is a warning sign. S&P 500 inclusion is speculative (flagged by Barron's, not confirmed). At +203% in 3 months, any disappointment could trigger sharp corrections. The company is relatively early-stage compared to MRVL.</p>
+
+  <p><span class="validation validation-partial">PARTIALLY VALIDATED</span> &mdash; AI connectivity demand is real and growing, but the stock has outrun analyst targets. S&P 500 inclusion is speculative. <span class="confidence conf-medium">MEDIUM confidence — strong business, stretched valuation.</span></p>
+</div>
+
+<!-- GOOGL -->
+<div class="ticker-card">
+  <h4>GOOGL — Alphabet Inc. <span class="tag tag-long">LONG</span></h4>
+  <div class="ticker-grid">
+    <div class="ticker-metric"><div class="label">Price</div><div class="value">$363</div></div>
+    <div class="ticker-metric"><div class="label">Market Cap</div><div class="value">$4.4T</div></div>
+    <div class="ticker-metric"><div class="label">P/E Ratio</div><div class="value">28.1x</div></div>
+    <div class="ticker-metric"><div class="label">ATH</div><div class="value">$402 (May 13)</div></div>
+    <div class="ticker-metric"><div class="label">Citrini Call</div><div class="value">+100% since Aug '25</div></div>
+    <div class="ticker-metric"><div class="label">Catalyst</div><div class="value">Intel TPU order, AI</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Citrini highlights their August 2025 call on GOOG as "the most asymmetric large cap AI winner" — it doubled in 9 months. Semi Doped covers the Intel foundry deal from Google's perspective: ordering 3M chips shows Google is diversifying its chip manufacturing beyond TSMC. The Citrini Token Panic thesis also positions Google as both a beneficiary (Gemini monetization) and a contributor to the problem (shifting to "compute-used" pricing in May).</p>
+
+  <p><strong>Financial data validation:</strong> At $363 and 28.1x P/E, GOOGL trades at a reasonable multiple for a $4.4T company. It's 10% below its May ATH of $402, suggesting a pullback opportunity. The Intel TPU order validates Google's custom silicon strategy and its willingness to invest heavily in diversifying manufacturing.</p>
+
+  <p><strong>Recent news:</strong> sellthenews confirms Google was referenced in the Intel surge news. China's $295B data center plan requiring 80% local suppliers is a mixed signal for Google — limits China market but Google's primary exposure is outside China. The broader Nasdaq selloff on June 9 (~1.5% close) created a down day.</p>
+
+  <div class="cross-ref">
+    <span class="pub-name">Cross-reference:</span> Semi Doped (Intel foundry deal), Citrini (track record call, Token Panic context). Both publications are positive on GOOGL. Citrini's prior call doubling in 9 months adds credibility to their ongoing bullishness.
+  </div>
+
+  <p><span class="validation validation-strong">STRONGLY VALIDATED</span> &mdash; Reasonable valuation, strong AI positioning, diversified chip strategy, and Citrini's excellent track record on this name. The 10% pullback from ATH creates a better entry. <span class="confidence conf-high">HIGH confidence.</span></p>
+</div>
+
+<!-- ============ MARKET CONTEXT ============ -->
+<h2>Market Context — June 9, 2026</h2>
+
+<div class="post-card">
+  <h4>Key Market Events (from sellthenews)</h4>
+
+  <div class="news-item"><strong>Geopolitics:</strong> US launched strikes on Iran after an Apache helicopter was downed near Hormuz. Brent oil fell 3% to ~$91.4 before rebounding after US strikes. Kuwait offered crude to Asian refiners for the first time since war began.</div>
+
+  <div class="news-item"><strong>Semiconductors:</strong> PHLX Semiconductor Index down 4% intraday, with MRVL -10% and MU -4%. Semi selloff extended from AVGO earnings disappointment last week. Korean chip shares rebounded sharply (Samsung +9.1%, SK Hynix +14%).</div>
+
+  <div class="news-item"><strong>AI Infrastructure:</strong> Broadcom/Apollo/Blackstone launched $35B AI XPV platform. Super Micro plans $7B equity raise for AI-server components. China preparing $295B data center plan with 80% local sourcing requirement.</div>
+
+  <div class="news-item"><strong>Macro:</strong> NFIB small-business optimism fell to 95.3 (lowest since Oct 2024). Existing home sales +3.2% beating estimates. SOFR options positioning for at least one Fed hike this year before CPI.</div>
+
+  <div class="news-item"><strong>M&A:</strong> GSK agreed to buy Nuvalent for $10.6B ($124/share, 40% premium). China exports beat forecasts — computer-parts exports +66%, integrated circuits +111%.</div>
+</div>
+
+<!-- ============ KEY THEMES ============ -->
+<h2>Cross-Cutting Themes</h2>
+
+<div class="post-card">
+  <h4>1. Token Panic vs. Infrastructure Demand</h4>
+  <p>The most important tension in this scan. Citrini's Token Panic thesis (enterprises burning AI budgets, Anthropic ARR at $45B, coordinated shift to usage-based pricing) represents the first serious narrative challenge to the "unlimited AI spending" consensus. Semi Doped's selloff coverage and SemiAnalysis's inference benchmarks both implicitly support the infrastructure demand side. The resolution will likely be: demand grows but at a more measured pace, efficiency becomes the key differentiator, and Chinese open-source alternatives gain share at the margin. Watch for Q2 earnings calls from MSFT, GOOGL, and META for enterprise AI spending commentary.</p>
+</div>
+
+<div class="post-card">
+  <h4>2. The CUDA Moat Is Real But AMD Is Closing</h4>
+  <p>SemiAnalysis's InferenceX data provides the most granular evidence available for the NVDA vs. AMD software gap. CUDA wins on Day 0 support, distributed inference, and ecosystem maturity. AMD's 100x MI355X improvement is genuine engineering progress but started from "completely broken." The upcoming "State of AMD 2026" article from SemiAnalysis will be a must-read for AMD bulls. Key watch: when does AMD achieve Day 0 parity for major model releases?</p>
+</div>
+
+<div class="post-card">
+  <h4>3. China's Hardware Advantage Is Expanding</h4>
+  <p>Two data points this scan: (1) Unitree's humanoid robotics dominance (10,000th unit, $8,976 BoM, 67% gross margins) with Western companies still prototyping, and (2) Huawei Ascend 950DT achieving Day 0 DeepSeek V4 support alongside NVIDIA CUDA. Combined with DeepSeek V4 leading on OpenRouter tokens and Chinese exports of integrated circuits +111% YoY, the Chinese hardware/AI ecosystem is accelerating relative to the West across multiple vectors.</p>
+</div>
+
+<div class="post-card">
+  <h4>4. Intel Foundry Turnaround Gaining Credibility</h4>
+  <p>The Alphabet 3M-chip order is the most significant foundry validation event for Intel this year. If confirmed as 18A fabrication (not just packaging), it positions Intel as a credible TSMC alternative for hyperscaler custom silicon. At $110/share (up from ~$20 earlier in 2026), much of the turnaround is priced in, but the foundry story is still in early innings if execution continues.</p>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 2px solid var(--border); color: var(--text-muted); font-size: 0.85rem;">
+  <p><strong>Disclaimer:</strong> This report is an automated scan and analysis of publicly available Substack newsletter content, cross-referenced with financial data and news sources. It is not investment advice. All financial data sourced from public market data as of June 8-10, 2026. Analyst estimates and price targets are from publicly available sources. Newsletter content is summarized and analyzed independently — the original authors have not endorsed or reviewed this analysis.</p>
+  <p style="margin-top: 0.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;">
+    Generated 2026-06-10 &bull; Publications: irrationalanalysis, globalsemiresearch, semianalysis, semidoped, citrini &bull; Posts: 5 analyzed &bull; Tickers: 8 profiled
+  </p>
+</div>
+
+</body>
+</html>
