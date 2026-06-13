@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Scan Report — 2026-06-13</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',sans-serif; background:#ffffff; color:#1a1a2e; line-height:1.7; padding:0; }
+.container { max-width:920px; margin:0 auto; padding:2rem 1.5rem; }
+header { background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%); color:#fff; padding:2.5rem 0; margin-bottom:2rem; }
+header .container { padding-top:0; padding-bottom:0; }
+header h1 { font-size:2rem; font-weight:800; margin-bottom:0.25rem; }
+header .date { font-family:'JetBrains Mono',monospace; font-size:0.95rem; opacity:0.8; }
+header .subtitle { font-size:1rem; opacity:0.7; margin-top:0.5rem; }
+
+.summary-box { background:#f0f4ff; border-left:4px solid #2563eb; border-radius:8px; padding:1.25rem 1.5rem; margin-bottom:2rem; }
+.summary-box h2 { font-size:1.1rem; color:#2563eb; margin-bottom:0.5rem; }
+.summary-box p { font-size:0.95rem; }
+
+.scoreboard { background:#fafbfc; border:1px solid #e2e8f0; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; }
+.scoreboard h2 { font-size:1.15rem; padding:1rem 1.25rem; background:#f8fafc; border-bottom:1px solid #e2e8f0; }
+.scoreboard table { width:100%; border-collapse:collapse; font-size:0.88rem; }
+.scoreboard th { background:#f1f5f9; padding:0.6rem 0.75rem; text-align:left; font-weight:600; font-family:'JetBrains Mono',monospace; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.05em; color:#475569; border-bottom:1px solid #e2e8f0; }
+.scoreboard td { padding:0.6rem 0.75rem; border-bottom:1px solid #f1f5f9; }
+.scoreboard tr:last-child td { border-bottom:none; }
+.scoreboard .ticker { font-family:'JetBrains Mono',monospace; font-weight:600; color:#1a1a2e; }
+
+.tag { display:inline-block; padding:2px 10px; border-radius:12px; font-size:0.75rem; font-weight:600; font-family:'JetBrains Mono',monospace; text-transform:uppercase; letter-spacing:0.03em; }
+.tag-long { background:#dcfce7; color:#166534; }
+.tag-cautious { background:#fef3c7; color:#92400e; }
+.tag-neutral { background:#f1f5f9; color:#475569; }
+.tag-short { background:#fee2e2; color:#991b1b; }
+
+.publication { margin-bottom:3rem; }
+.pub-header { font-size:1.65rem; font-weight:800; color:#1a1a2e; padding-bottom:0.5rem; border-bottom:3px solid #2563eb; margin-bottom:1.5rem; }
+
+.post { background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; margin-bottom:1.5rem; }
+.post-title { font-size:1.2rem; font-weight:700; color:#1a1a2e; margin-bottom:0.15rem; }
+.post-meta { font-family:'JetBrains Mono',monospace; font-size:0.8rem; color:#64748b; margin-bottom:1rem; }
+.post-tags { margin-bottom:1rem; display:flex; gap:0.4rem; flex-wrap:wrap; }
+
+.summary-section h3 { font-size:1rem; font-weight:700; color:#1a1a2e; margin-bottom:0.5rem; }
+.summary-section p, .summary-section ul { font-size:0.92rem; margin-bottom:0.75rem; }
+.summary-section ul { padding-left:1.25rem; }
+.summary-section li { margin-bottom:0.35rem; }
+
+.analysis-box { background:#fffbeb; border:1px solid #fbbf24; border-radius:8px; padding:1.25rem 1.5rem; margin-top:1.25rem; }
+.analysis-box h4 { color:#d97706; font-size:1rem; font-weight:700; margin-bottom:0.5rem; }
+.analysis-box p, .analysis-box ul { font-size:0.9rem; margin-bottom:0.6rem; }
+.analysis-box ul { padding-left:1.25rem; }
+.analysis-box li { margin-bottom:0.3rem; }
+.confidence { font-family:'JetBrains Mono',monospace; font-weight:600; padding:2px 8px; border-radius:4px; font-size:0.8rem; }
+.conf-high { background:#dcfce7; color:#166534; }
+.conf-medium { background:#fef3c7; color:#92400e; }
+.conf-low { background:#fee2e2; color:#991b1b; }
+
+blockquote { border-left:3px solid #cbd5e1; padding:0.5rem 1rem; margin:0.75rem 0; background:#f8fafc; font-style:italic; font-size:0.9rem; color:#475569; border-radius:0 6px 6px 0; }
+
+.ticker-dive { margin-bottom:3rem; }
+.ticker-dive h2 { font-size:1.65rem; font-weight:800; color:#1a1a2e; padding-bottom:0.5rem; border-bottom:3px solid #2563eb; margin-bottom:1.5rem; }
+
+.ticker-card { background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:1.5rem; margin-bottom:1.5rem; }
+.ticker-card-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:0.5rem; }
+.ticker-card-header h3 { font-family:'JetBrains Mono',monospace; font-size:1.2rem; font-weight:700; }
+.ticker-card-header .price { font-family:'JetBrains Mono',monospace; font-size:1.1rem; color:#2563eb; font-weight:600; }
+
+.metric-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:0.75rem; margin-bottom:1rem; }
+.metric { background:#f8fafc; padding:0.6rem 0.75rem; border-radius:6px; }
+.metric-label { font-family:'JetBrains Mono',monospace; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.05em; color:#64748b; }
+.metric-value { font-size:0.95rem; font-weight:600; color:#1a1a2e; }
+
+.validation { display:inline-block; padding:3px 12px; border-radius:6px; font-family:'JetBrains Mono',monospace; font-size:0.8rem; font-weight:600; }
+.val-strong { background:#dcfce7; color:#166534; }
+.val-partial { background:#fef3c7; color:#92400e; }
+.val-limited { background:#fed7aa; color:#9a3412; }
+.val-contra { background:#fee2e2; color:#991b1b; }
+
+.subsection { margin-top:0.75rem; }
+.subsection h4 { font-size:0.88rem; font-weight:600; color:#475569; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:0.35rem; }
+.subsection p, .subsection ul { font-size:0.9rem; }
+.subsection ul { padding-left:1.25rem; }
+.subsection li { margin-bottom:0.25rem; }
+
+footer { text-align:center; padding:2rem; font-size:0.8rem; color:#94a3b8; border-top:1px solid #e2e8f0; margin-top:2rem; }
+
+@media (max-width:640px) {
+  .container { padding:1rem; }
+  .pub-header, .ticker-dive h2 { font-size:1.35rem; }
+  .metric-grid { grid-template-columns:1fr 1fr; }
+  header h1 { font-size:1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<h1>Substack Subscription Scanner</h1>
+<div class="date">2026-06-13 | Scan Window: Jun 10 &ndash; Jun 13</div>
+<div class="subtitle">6 posts across 3 publications | 7 tickers analyzed</div>
+</div>
+</header>
+
+<div class="container">
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="summary-box">
+<h2>Executive Summary</h2>
+<p><strong>Intel's capital raise debate and Computex CPO mania dominate this cycle.</strong> SemiAnalysis argues Intel should issue ~$25B in equity at elevated prices to fund Terafab and capitalize on the SpaceX partnership &mdash; the stock trades at $123 with a forward P/E near 100x, well above every analyst target except BofA's fresh $135. Global Semi Research continues its CPO defense, directly rebutting SemiAnalysis's delay thesis with supply-chain evidence. Semi Doped delivers extensive Computex coverage: Jensen's "$100B sentence" calling Marvell the next trillion-dollar company (MRVL +30%), Marvell's 102.4 Tbps Teralynx switch, CPO vs XPO vs NPO debates on the show floor, 800V power everywhere, and Intel Foundry flexing Clearwater Forest's 18A + EMIB + Foveros. TSMC raises 3nm prices 15% with output at 175K wafers/month, Corning lands a multibillion AWS fiber deal, and Google talks to Samsung about second-sourcing TPUs. Macro backdrop: SpaceX IPO debuts at $161 (+19%), semi index surges 7.9% on Iran de-escalation, and banks are tightening lending on semi stocks.</p>
+</div>
+
+<!-- TICKER SCOREBOARD -->
+<div class="scoreboard">
+<h2>Ticker Scoreboard</h2>
+<table>
+<thead>
+<tr><th>Ticker</th><th>Price</th><th>Mkt Cap</th><th>Fwd P/E</th><th>Signal</th><th>Sources</th><th>Analyst Consensus</th></tr>
+</thead>
+<tbody>
+<tr><td class="ticker">INTC</td><td>$123</td><td>$565B</td><td>~100x</td><td><span class="tag tag-cautious">Cautious</span></td><td>SA, SD</td><td>Hold &mdash; PT $85-93 (below price)</td></tr>
+<tr><td class="ticker">MRVL</td><td>$281</td><td>$225B</td><td>58-66x</td><td><span class="tag tag-long">Long</span></td><td>SD, GSR, IA</td><td>Strong Buy &mdash; targets being revised</td></tr>
+<tr><td class="ticker">LITE</td><td>$890</td><td>$70B</td><td>52x</td><td><span class="tag tag-long">Long</span></td><td>GSR, SD</td><td>Buy &mdash; PT ~$919 (high $1,270)</td></tr>
+<tr><td class="ticker">COHR</td><td>$405</td><td>$70B</td><td>44x</td><td><span class="tag tag-long">Long</span></td><td>GSR, SD</td><td>Buy &mdash; PT ~$380</td></tr>
+<tr><td class="ticker">TSM</td><td>$428</td><td>$2.18T</td><td>~30x</td><td><span class="tag tag-long">Long</span></td><td>SD</td><td>Strong Buy &mdash; PT $452-463</td></tr>
+<tr><td class="ticker">GLW</td><td>$177</td><td>$152B</td><td>~56x</td><td><span class="tag tag-long">Long</span></td><td>SD</td><td>Buy &mdash; PT $198-204</td></tr>
+<tr><td class="ticker">ALAB</td><td>$367</td><td>$61B</td><td>121x</td><td><span class="tag tag-neutral">Neutral</span></td><td>SD</td><td>Buy &mdash; PT ~$245 (below price)</td></tr>
+</tbody>
+</table>
+</div>
+
+<!-- ================================================================ -->
+<!-- PUBLICATION: GLOBAL SEMI RESEARCH -->
+<!-- ================================================================ -->
+<div class="publication">
+<h2 class="pub-header">Global Semi Research</h2>
+
+<div class="post">
+<div class="post-title">Co-Packaged Optics Is Not Delayed. SemiAnalysis Is Just Wrong</div>
+<div class="post-meta">Jun 10, 2026 &bull; Paid (free preview) &bull; ~3,500+ words</div>
+<div class="post-tags">
+<span class="tag tag-long">LITE Long</span>
+<span class="tag tag-long">COHR Long</span>
+<span class="tag tag-long">AAOI Long</span>
+<span class="tag tag-long">GLW Long</span>
+<span class="tag tag-long">MRVL Long</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p>Global Semi Research fires a direct broadside at SemiAnalysis's June 9 report "Powered Down, Lights Off," which claimed co-packaged optics (CPO) is going to be late &mdash; scale-out CPO shipments revised down through 2027, scale-up pushed to 2029, and the entire photonics "bottleneck trade" overcrowded and due for a violent unwind. GSR says unequivocally: CPO is not being delayed, and the delay thesis is "a positioning call wearing a supply-chain costume."</p>
+
+<p><strong>The 19% yield trick.</strong> SemiAnalysis's core case rests on a single calculation: assume 95% optical-engine attach yield, compound across 32 COUPEs per Spectrum-6 ASIC, and 0.95<sup>32</sup> &asymp; 19% system yield. GSR calls this "a magic trick" &mdash; it freezes yield at one pessimistic snapshot, assumes no screening, no binning, no redundancy, and no learning curve. Critically, GSR points out that SemiAnalysis's own report contradicts itself: it observes Nvidia's Quantum-X (3 COUPEs) is "in comparatively better shape" due to module screening, which is an admission that 0.95<sup>32</sup> is an artifact of module granularity, not physics. Spectrum-X carries redundant engines (32 active plus spares), so a single bad coupling doesn't brick the switch. TSMC's COUPE production is running <em>ahead</em> of expectations per GSR's supply chain checks.</p>
+
+<p><strong>GSR concedes the legitimate concerns:</strong> soldered switch substrates have no rework path, Spectrum-6 reportedly showed &gt;3.5 dB insertion loss in system-level testing (enough to eat the entire optical channel budget), integration at 32 engines is genuinely hard, and neither Nvidia nor TSMC had identified the root cause at time of writing.</p>
+
+<p><strong>The supply chain evidence that detonates the delay thesis:</strong></p>
+<ul>
+<li><strong>Laser orders:</strong> Nvidia's guidance to Coherent and Lumentum for high-power CW (continuous-wave) lasers climbed from ~40M units in January to ~100M units by April/May &mdash; a 2.5x jump likely pulling some 2027-2028 demand forward.</li>
+<li><strong>Translation:</strong> ~100M lasers implies 10M+ ELSFP external-laser units, which back-solves to CPO shipments of 200K-300K switches in 2027, scaling to 600K-800K in 2028. This squares with TSMC's COUPE production plan.</li>
+<li><strong>Lumentum</strong> announced its largest ELSFP purchase order ever. Both Lumentum and Coherent state they expect to ship into scale-up hardware by 2027.</li>
+<li><strong>Lumentum</strong> has booked out an entire FA (final assembly) production line for this demand.</li>
+</ul>
+
+<p><strong>GSR's core argument:</strong> You don't 2.5x your laser orders and book out entire production lines for a technology that's "delivering meaningfully below prior expectations." The supply chain commitments are observable, contractual, and capital-intensive &mdash; they don't happen for speculative demand.</p>
+
+<blockquote>"Nvidia does not scale high-power laser orders from 40 million to 100 million units, and Lumentum does not book out an entire FA production line, for a technology that is supposedly delivering 'meaningfully below prior expectations.'"</blockquote>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Where GSR is compelling:</strong> The supply-chain evidence remains GSR's strongest card, and this update reinforces it. Order volumes are observable, contractual, and hard to fake. A 2.5x ramp in laser orders is a concrete, verifiable data point that is very hard to reconcile with a "CPO is delayed" thesis. The logical argument &mdash; why would Nvidia massively scale orders and Lumentum book out production lines for delayed tech? &mdash; is sound and difficult to dismiss.</p>
+
+<p><strong>Where GSR overreaches:</strong> The article dismisses the 3.5 dB insertion loss too quickly. This is not a yield problem that improves with learning curves &mdash; it's a physics/design constraint that could require a generation-level fix. GSR's "TSMC running ahead of expectations" claim is based on anonymous supply chain checks with no independent verification. The article also doesn't address whether Nvidia could be over-ordering as a hedge (ordering lasers for both CPO and pluggable fallback paths simultaneously).</p>
+
+<p><strong>Bias and conflict:</strong> This is a public feud between two paid newsletters with opposing positions. GSR has historically been bullish on photonics and likely holds positions in LITE/COHR. SemiAnalysis has a track record of provocative bearish calls that generate attention and drive subscriptions. Both have financial incentives beyond accuracy.</p>
+
+<p><strong>What would make this thesis WRONG:</strong> (1) If the 3.5 dB insertion loss proves to be a fundamental design flaw requiring a full re-spin, laser orders could become inventory write-downs. (2) If Nvidia is hedging by ordering for both CPO and pluggable paths, total demand may be overstated. (3) "Demand pull-forward" cuts both ways: accelerated orders from 2027-2028 into 2026 could create future quarter disappointments even if CPO works.</p>
+
+<p><strong>Verdict:</strong> <span class="confidence conf-medium">MEDIUM-HIGH Confidence</span> &mdash; Supply chain evidence strongly supports GSR's position. The insertion-loss issue remains underexplored and is the real swing factor.</p>
+</div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PUBLICATION: SEMIANALYSIS -->
+<!-- ================================================================ -->
+<div class="publication">
+<h2 class="pub-header">SemiAnalysis</h2>
+
+<div class="post">
+<div class="post-title">Intel Should Raise Capital</div>
+<div class="post-meta">Jun 11, 2026 &bull; Paid (free preview) &bull; ~4,000+ words</div>
+<div class="post-tags">
+<span class="tag tag-cautious">INTC Cautious-Long</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p>SemiAnalysis (Doug, Sravan Kundojjala, Dylan Patel) makes the case that Intel should seize the current equity market window to issue approximately $25 billion in new shares &mdash; about a 4-5% dilution &mdash; to fund its Terafab buildout and capitalize on its strongest financial position in years.</p>
+
+<p><strong>The board transformation thesis.</strong> Intel's board has been completely overhauled. Franky Yeary stepped down after 17 years, replaced by people who understand technology: the new chair is ex-Qualcomm, Lip-Bu Tan is CEO, and the board now includes Steve Sanghi (Microchip), Stacey Smith, and Eric Meurice (ex-ASML). SemiAnalysis credits the new board with the turnaround that has "partially begun."</p>
+
+<p><strong>Capital already raised &mdash; at lower prices.</strong> The US government took 433M shares at $20.47 (9.9% stake), SoftBank paid $23.00, Nvidia paid $23.28. All of these anchor investors are already substantially above water at today's ~$123 price. Issuing stock now, well above those entry marks, lifts book value per share and validates earlier investors. Intel is "one of the very few companies on earth that can sell size into a hot tape with the U.S. government holding the floor."</p>
+
+<p><strong>Why other funding sources are exhausted:</strong></p>
+<ul>
+<li><strong>SCIPs are dead:</strong> Intel just bought back Apollo's 49% of Fab 34 for $14.2B (cash + $6.5B bridge loan), proving that selling fab stakes to financial sponsors was expensive money all along. Management called the unwind accretive.</li>
+<li><strong>Debt is maxed:</strong> $45B already on the balance sheet, rising to ~$51.5B with the Apollo bridge loan.</li>
+<li><strong>Asset sales exhausted:</strong> Mobileye and Altera already sold or majority gone.</li>
+<li><strong>Equity is cheapest:</strong> At current valuations (Intel has "pretty much never traded this expensive on a trailing twelve month basis since the 2000 bubble"), equity is the cheapest capital available.</li>
+</ul>
+
+<p><strong>What the capital is for:</strong></p>
+<ul>
+<li><strong>Terafab:</strong> The full multi-phase project could cost up to $119 billion. SpaceX is putting up initial capital, but Intel must contribute meaningfully. Even marginal capital matching means tens of billions not previously in the capex decision matrix.</li>
+<li><strong>14A capacity:</strong> SpaceX, Tesla, and Terafab solve the 14A customer problem. Initial target of 100K WSPM scaling to 1M (SA acknowledges this will be "extremely rough" in terms of capital).</li>
+<li><strong>Agentic CPU demand:</strong> New wins include Nvidia DGX Rubin NVL8 (dual Xeon 6), Google multi-year Xeon/IPU deal, SambaNova inference.</li>
+</ul>
+
+<p><strong>The market window is open:</strong> Intel's ~$498B market cap (SA's figure &mdash; actual cap is now ~$565B+) easily supports a large follow-on. SA notes: "If Cerebras can raise $5.55 billion, Intel can raise $25 billion."</p>
+
+<blockquote>"It's time to undo a decade of financial engineering and issue equity now. Because while the ramp is exciting, it's going to cost a lot."</blockquote>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Where SemiAnalysis is compelling:</strong> The logical framework is sound. Intel has exhausted cheaper alternatives (SCIPs proven expensive by the Apollo buyback, debt near capacity, assets sold). The equity window is genuinely open &mdash; Intel is trading at extreme multiples (~100x forward P/E) on thin earnings ($0.29 adjusted EPS). BofA just double-upgraded to Buy with a $135 target. The board transformation is real and verifiable. The SpaceX/Terafab partnership creates genuine capital needs that didn't exist a month ago.</p>
+
+<p><strong>Where the thesis stretches:</strong></p>
+<ul>
+<li><strong>Market cap discrepancy:</strong> SA cites ~$498B, but Intel's actual market cap is $560-620B. This doesn't change the thesis but suggests the piece was drafted before the latest rally.</li>
+<li><strong>Execution risk is enormous:</strong> A $119B Terafab project is the largest semiconductor capital program ever attempted. The 100K-to-1M WSPM ramp target is acknowledged as "extremely rough" but not quantified. What if SpaceX/Tesla demand doesn't materialize at projected volumes?</li>
+<li><strong>Dilution at peak valuation:</strong> SA argues dilution rewards existing investors, but this assumes the stock stays elevated. At ~$123, Intel is trading well above the average analyst target of $85-93. If the stock corrects before or after a raise, dilution at the peak could be seen as a classic sell signal.</li>
+<li><strong>18A yield is the elephant:</strong> SA doesn't address 18A manufacturing yield, which is the single biggest risk to Intel Foundry's external customer ramp. Without competitive yields, external revenue won't materialize regardless of capital invested.</li>
+<li><strong>"Never traded this expensive since 2000"</strong> &mdash; SA uses this as a reason to issue equity, but it's equally a reason the stock is overvalued. The same data point supports opposite conclusions depending on your prior.</li>
+</ul>
+
+<p><strong>What would make this thesis WRONG:</strong> (1) If Intel announces an equity raise and the stock drops 20%+, confirming that the valuation was unsustainable. (2) If 18A yields don't reach competitive levels by late 2027, making the Terafab capital largely speculative. (3) If SpaceX/Tesla shift to TSMC for their primary foundry needs after using Intel as leverage.</p>
+
+<p><strong>Author bias:</strong> SemiAnalysis has been "vocally right" on Intel's product mishaps and "supportive and excited for the turnaround." They're emotionally invested in Intel's success ("a firm near and dear to our heart") which may reduce skepticism about the turnaround's sustainability.</p>
+
+<p><strong>Verdict:</strong> <span class="confidence conf-medium">MEDIUM Confidence</span> &mdash; The capital structure argument is logical, but issuing equity at historically extreme valuations is a double-edged sword. The 18A yield question is conspicuously absent.</p>
+</div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PUBLICATION: SEMI DOPED -->
+<!-- ================================================================ -->
+<div class="publication">
+<h2 class="pub-header">Semi Doped</h2>
+
+<!-- Post 1: Computex Mania -->
+<div class="post">
+<div class="post-title">Computex Mania 2026: Optics and Power</div>
+<div class="post-meta">Jun 12, 2026 &bull; Podcast &bull; ~8,200 words (transcript)</div>
+<div class="post-tags">
+<span class="tag tag-long">MRVL Long</span>
+<span class="tag tag-long">INTC Long</span>
+<span class="tag tag-neutral">AVGO Neutral</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p>Austin Lyons (Chipstrat) and Vik Sekar (Vik's Newsletter) deliver a comprehensive Computex 2026 debrief, covering optics, power delivery, prefab infrastructure, and Intel Foundry. This is their first in-person meeting after six months of podcasting.</p>
+
+<p><strong>Jensen's $100 Billion Sentence.</strong> Jensen Huang made a surprise appearance at Marvell's networking keynote, declaring Marvell "the next trillion dollar company." Vik was in the front row filming the leather jacket when MRVL's market cap jumped approximately $100 billion. Vik laments: "My video cost me thousands of dollars. I should have bought." Matt Murphy (Marvell CEO) had just noted three trillion-dollar memory companies had recently emerged in the AI boom. Jensen's endorsement caused MRVL to surge ~30% immediately. Austin notes: "At this point [Jensen] doesn't have to give two billion, he just has to give compliments &mdash; and maybe that's even more valuable."</p>
+
+<p><strong>Marvell's Copper Wall and Teralynx.</strong> Marvell's keynote positioned the company as an interconnect company, not just an ASIC maker. Matt Murphy drew the line: everything within the rack is now going optical. They unveiled the 102.4 Tbps Teralynx switch (competing with Broadcom's Tomahawk 6), a large tray of pluggables vs. a much smaller CPO module ("the size of your hand"). Marvell's data center revenue is now 76% of total, with interconnect as the lead story. Austin felt Marvell missed an opportunity to explain how their ASIC and interconnect businesses cross-sell.</p>
+
+<p><strong>CPO vs. XPO vs. NPO debate &mdash; live from the show floor.</strong></p>
+<ul>
+<li><strong>XPO modules:</strong> Vik saw XPO in person for the first time &mdash; "as big as my hand," liquid-cooled, equivalent to 8 OSFP pluggable modules in one. He thinks XPO has "a shot at being an alternative to CPO if the ecosystem wants to stay pluggable."</li>
+<li><strong>Ayar Labs' CPO scale-up rack:</strong> A fully optical CPO rack demo with external laser modules in the faceplate and optical fiber from co-packaged modules inside. Not in production, but a compelling concept of what data centers will look like in 3-5 years.</li>
+<li><strong>CPO yield concerns:</strong> Vik noted that 99% yield in engineering samples doesn't mean you can scale to millions. Testing optical engines is hard &mdash; two-sided dies require simultaneous electrical/optical alignment, and current testers can't do this fast enough. "CPO is definitely coming because we have to go to optical &mdash; there's no way around it. But there are a lot of challenges."</li>
+<li><strong>MediaTek microLEDs:</strong> Still nascent &mdash; only ~100 LEDs running at 1-4 Gbps per lane vs. Avicena's 400-LED demos. Vik: "I see blinky things every day."</li>
+</ul>
+
+<p><strong>800V Power Everywhere.</strong> Every rack provider at Computex had 800V systems. Austin and Vik saw a wall of power converter chips from multiple vendors. Key finding from LiteOn's booth: grid-to-800V conversion uses silicon carbide, but everything from 800V down (to 48V, 12V, 6V) is plain silicon. GaN is "still new" and not deployed. This is a significant data point against the GaN hype &mdash; silicon is doing the heavy lifting in the actual power delivery chain.</p>
+
+<p><strong>Prefab AI Infrastructure.</strong> Vertiv, Delta, Schneider Electric, and Eaton all showed prefabricated AI infrastructure blocks &mdash; essentially modular container homes pre-fitted with cooling and power infrastructure. A Delta representative said these reduce deployment time by half. Ketaflow Technologies showed an edge AI deployment that's literally a chest freezer filled with non-conductive liquid, with GPUs fully immersed inside.</p>
+
+<p><strong>Intel Foundry Flex: Clearwater Forest.</strong> Austin attended Lip-Bu Tan's keynote (Lip-Bu spoke in Mandarin initially, audience loved it). Clearwater Forest (Xeon 6 Plus with E-cores) is a 17-chiplet design: 2 I/O tiles on Intel 7, 3 active base tiles on Intel 3, and 12 compute tiles on Intel 18A (Darkmont E-cores). Connected via EMIB + Foveros Direct 3D (hybrid bonding, logic-on-logic stacking). Austin's key insight: this is actually an Intel Foundry story masquerading as a product launch. The I/O tiles are reused from Granite Rapids. SRAM doesn't scale, so stays on Intel 3. Only compute uses 18A. This demonstrates Intel Foundry's EMIB + Foveros + 18A + PowerVia (backside power) + RibbonFET (gate-all-around) capabilities all in one shipping product.</p>
+
+<p>Vik adds that Google is engaging Intel Foundry for TPUs (unclear if 18A wafers or just EMIB packaging). Both hosts agree a second packaging option beyond TSMC CoWoS is needed for the industry: "I would hate to see [AI] constrained by the inability to package something."</p>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Exceptional ground-truth reporting.</strong> The show-floor observations on 800V power (silicon carbide at grid, plain silicon below, no GaN) are the kind of data you can't get from analyst notes. The XPO hands-on and Ayar Labs rack walkthrough provide visual context that's uniquely valuable.</p>
+
+<p><strong>Jensen's market-moving ability is real but dangerous.</strong> A single sentence adding ~$100B to MRVL's market cap illustrates the reflexivity problem in AI semis. The endorsement is not new information &mdash; Nvidia had already invested $2B in Marvell. Jensen's words are being priced as if they contain forward-looking insider knowledge, which creates fragility if sentiment shifts.</p>
+
+<p><strong>The Intel Foundry read is insightful but optimistic.</strong> Austin correctly identifies Clearwater Forest as a packaging technology showcase. However, shipping a 17-chiplet product internally is different from winning external foundry customers at competitive yields and pricing. The Google/Intel Foundry engagement is unconfirmed and could be limited to packaging (EMIB) rather than leading-edge 18A wafer fabrication.</p>
+
+<p><strong>CPO timeline reality check:</strong> Vik's candid admission that "nobody really knows if you can produce CPO at scale" and that testing at speed is an unsolved problem is more honest than either side of the SemiAnalysis/GSR debate. The truth is likely between the two extremes.</p>
+
+<p><strong>Verdict:</strong> <span class="confidence conf-high">HIGH Confidence</span> &mdash; As on-the-ground reporting, this is high quality. As investment thesis, the podcast correctly identifies the key debates without over-committing.</p>
+</div>
+</div>
+
+<!-- Post 2: Daily June 12 -->
+<div class="post">
+<div class="post-title">Daily Update &mdash; June 12th, 2026</div>
+<div class="post-meta">Jun 12, 2026 &bull; Free &bull; ~1,370 words</div>
+<div class="post-tags">
+<span class="tag tag-long">TSM Long</span>
+<span class="tag tag-long">GLW Long</span>
+<span class="tag tag-neutral">ALAB Neutral</span>
+<span class="tag tag-cautious">ORCL Cautious</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p><strong>TSMC raises 3nm prices 15% in H2 2026.</strong> Monthly 3nm output has hit a record 175,000 wafers, but supply still falls short of orders from Nvidia, AMD, and Apple. TSMC is expanding Fab 18 in Tainan and ramping Arizona output. Austin does the math: at an assumed ~$20K/wafer, a 15% hike is ~$3K incremental per wafer, or ~$525M/month additional revenue ($1.5B/quarter). "If there's ever a time for it... it's now."</p>
+
+<p><strong>Google taps Samsung for next AI chip.</strong> Google is in talks with Samsung to fabricate part of its next-gen TPU, per The Information. This is a supply diversification move as TSMC capacity tightens. Vik is skeptical: "If it's 2nm GAA in Samsung, I don't buy that the yields are up to snuff." Austin notes the Tesla/Samsung connection may have opened the door.</p>
+
+<p><strong>Nasdaq 100 adds Nebius, Astera Labs, Rocket Lab, Teradyne, CoreWeave.</strong> More AI infrastructure companies entering index funds means "safe" investments are becoming increasingly exposed to the AI boom. Austin: "ETF buyers get exposure and probably don't know it. Incremental mechanical buying will probably help boost prices near term."</p>
+
+<p><strong>UBS sees semis hitting $2.38T by 2027.</strong> UBS forecasts 118% growth to $1.62T in 2026 and $2.38T in 2027. WSTS revised its 2026 forecast from $975B to $1.51T. Austin: "Not long ago we were just talking about $1T by 2030. Now $2T in 2027. Memory price increases are doing a lot of the heavy lifting."</p>
+
+<p><strong>Corning inks multibillion-dollar AWS fiber deal.</strong> Custom optical fiber and connectors for AWS data centers &mdash; higher-density fiber and smaller connector form factors. Vik: "Its really a 100-year-old company that's more than relevant in the AI age." Austin: "Amazon isn't pulling SKUs off Corning's telecom catalog &mdash; they're buying fiber spec'd to AWS rack architecture, which means higher ASPs and a customer that can't switch without re-engineering the datacenter."</p>
+
+<p><strong>Other notable items:</strong> onsemi launches GaNEXUS GaN portfolio; Micron selects Bechtel for NY fab; Applied Materials expands Singapore; Supermicro announces $7B equity/debt raise; AMD CFO confirms strong AI demand visibility through 2027; DDR4 production restart signals deepening memory shortages; Astera Labs says switch silicon will overtake retimers by end of 2026.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>TSMC pricing power is validated by math.</strong> Austin's back-of-envelope &mdash; $525M/month incremental from 15% on 175K wafers &mdash; understates the revenue impact because it uses a conservative $20K/wafer assumption. N3 wafers are likely $22-25K, making the quarterly uplift closer to $2B. TSMC's ability to raise prices while demand exceeds supply confirms the structural shortage narrative.</p>
+<p><strong>Google/Samsung skepticism is warranted.</strong> Samsung's 2nm GAA yields are widely reported as problematic. However, Google could be seeking Samsung for packaging or older-node components (I/O chiplets) rather than leading-edge compute dies. The market will likely read this as a Samsung positive, but execution risk is high.</p>
+<p><strong>UBS $2.38T forecast deserves scrutiny.</strong> These numbers are driven heavily by memory price inflation. If DRAM/NAND prices normalize (supply additions in 2028), the headline "semis at $2.38T" could be achieved via pricing rather than unit growth, which would make it fragile.</p>
+<p><strong>Verdict:</strong> <span class="confidence conf-high">HIGH Confidence</span> &mdash; High-signal daily digest with good quantitative takes. TSMC price-hike math and Corning lock-in analysis are particularly useful.</p>
+</div>
+</div>
+
+<!-- Post 3: Daily June 11 -->
+<div class="post">
+<div class="post-title">Daily Update &mdash; June 11th, 2026</div>
+<div class="post-meta">Jun 11, 2026 &bull; Paid &bull; ~1,250 words</div>
+<div class="post-tags">
+<span class="tag tag-long">LITE Long</span>
+<span class="tag tag-cautious">ORCL Cautious</span>
+<span class="tag tag-neutral">AXTI Neutral</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p><strong>Colt and Ciena complete quantum-safe transatlantic optical trial</strong> &mdash; the fastest quantum-resistant long-distance transmission to date, over 5,500 km of subsea fiber using Ciena's WaveLogic 6 Extreme. Vik explains the "harvest now, decrypt later" attack vector: adversaries intercept and store encrypted data today, waiting for quantum computing to crack it. Austin initially skeptical ("solution looking for a problem") but concedes the severity of being unprepared.</p>
+
+<p><strong>TSMC pulls CoPoS packaging to H2 2028</strong> (from 2029). CoPoS uses a glass core with ABF routing, designed for ultra-large packages above 9.5x reticle size. Nvidia's Feynman GPU is cited as potential first adopter. Two glass formats: 310x310 mm temporary glass carrier + separate substrate component. This is a significant roadmap acceleration.</p>
+
+<p><strong>China stalls InP export approvals.</strong> Coherent CEO Jim Anderson raised the issue during a US delegation visit. AXT and Sumitomo Electric control 60-70% of global InP substrate supply. China imposed export licensing as part of critical materials controls. Vik warns: "No InP lasers, no optics." This is a genuine supply chain risk that the CPO bulls (including GSR) may be underweighting.</p>
+
+<p><strong>Oracle slides on $40B AI CapEx plans.</strong> Oracle plans to raise ~$40B in debt and equity in FY2027, including a $20B ATM equity issuance. The financing overshadowed strong AI/cloud results. Vik notes the capex paradox: "Spend too much, investors ding you. Spend too little, investors ding you for being a declining business." Austin praises Oracle's strategy of hosting its infrastructure within competitors' clouds.</p>
+
+<p><strong>Quick Hits:</strong> Lumentum CEO teased a new NPO (near-packaged optics) market opportunity potentially larger than CPO. Astera Labs says switch silicon will overtake retimers by end of 2026. Taiwan data center suppliers push back on 800VDC delay rumors. Omdia reports semiconductor revenue surpassed $300B quarterly for the first time in Q1 2026.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>The InP supply chain risk is the sleeper issue.</strong> While everyone debates CPO yield and timing, China controls 60-70% of InP substrate supply through AXT/Sumitomo. This is a material choke point that could constrain laser production regardless of demand. Neither GSR's bullish thesis nor SemiAnalysis's bearish thesis adequately addresses what happens if InP supply is weaponized more aggressively.</p>
+<p><strong>Lumentum's NPO tease is strategically significant.</strong> If the CEO is positioning NPO as potentially larger than CPO, it suggests Lumentum is hedging its bets on CPO timing &mdash; which somewhat validates SemiAnalysis's concern that CPO may be further out than bulls expect, even as Lumentum's order book validates near-term demand.</p>
+<p><strong>CoPoS pull-in is bullish for advanced packaging.</strong> Moving from 2029 to H2 2028 confirms the urgency of next-gen packaging. Glass substrates enable larger packages (critical for Feynman-class GPUs), and TSMC accelerating this roadmap suggests they see the demand pull.</p>
+<p><strong>Verdict:</strong> <span class="confidence conf-medium">MEDIUM-HIGH Confidence</span> &mdash; Strong daily coverage with the InP angle being the most original and underappreciated risk factor.</p>
+</div>
+</div>
+
+<!-- Post 4: Daily June 10 -->
+<div class="post">
+<div class="post-title">Daily Update &mdash; June 10th, 2026</div>
+<div class="post-meta">Jun 10, 2026 &bull; Free &bull; ~1,040 words</div>
+<div class="post-tags">
+<span class="tag tag-long">TSM Long</span>
+<span class="tag tag-long">NVDA Long</span>
+<span class="tag tag-neutral">AAPL Neutral</span>
+</div>
+
+<div class="summary-section">
+<h3>Summary</h3>
+<p><strong>Anthropic launches Claude Fable 5 and Mythos 5.</strong> Fable 5 is the GA model; Mythos 5 is the ungated version for authorized partners. Priced at $10/$50 per million input/output tokens (less than half Mythos Preview price). Key claim: a 50-million-line Ruby codebase migration completed in one day that would have taken a team two months. Vik raises the efficiency concern: "The cost of frontier intelligence is increasing, and will soon reach a point where most people won't need the cutting edge."</p>
+
+<p><strong>TSMC May revenue hits record NT$417B</strong> ($13.2B), up 30.1% YoY. Jan-May revenue at NT$1.96T, tracking the 30%+ growth guidance. Vik: "The moment TSMC stops making money, we're all screwed."</p>
+
+<p><strong>Apple Private Cloud Compute adds Nvidia GPUs</strong> via Google Cloud with Confidential Computing. This is Apple's first use of Nvidia chips in years. Austin: "Apple improving Siri &rarr; more cloud inference from huge iPhone installed base &rarr; more Nvidia GPUs."</p>
+
+<p><strong>SpaceX IPO demand approaching 4x oversubscribed</strong> &mdash; $250B+ demand against $75B raise at $1.77T valuation. Some analysts think part of the broader market selloff is investors raising cash for this deal.</p>
+
+<p><strong>Semi Drama:</strong> Twitter/X is filled with debate over SemiAnalysis's CPO/800V delay thesis. Vik notes the consensus view: "It doesn't matter if CPO is delayed, the demand for lasers does not go away. NPO/Pluggables/you-name-it needs all optical components still."</p>
+</div>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>The "Token Panic" narrative connects across publications.</strong> Citrini Research's detailed "Token Panic" analysis (June 8) dovetails with Vik's observation about Fable 5 pricing: frontier model costs are rising, pushing enterprises toward cheaper alternatives. This has second-order implications for GPU demand: if enterprises shift to open-source models requiring fewer/cheaper GPUs, the capex supercycle could decelerate sooner than bulls expect.</p>
+<p><strong>Apple+Nvidia via Google Cloud is a triple positive:</strong> bullish for NVDA (more GPU demand), GOOG (cloud revenue), and validates Confidential Computing as the trust layer enabling cross-ecosystem AI inference.</p>
+<p><strong>SpaceX IPO sucking liquidity from tech:</strong> If $250B+ in demand is being redirected from existing holdings, this is a temporary headwind for semis. Once the IPO settles, that capital may rotate back into the sector.</p>
+<p><strong>Verdict:</strong> <span class="confidence conf-high">HIGH Confidence</span> &mdash; Good daily wrap connecting macro events to semiconductor implications.</p>
+</div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- PUBLICATIONS WITH NO NEW POSTS -->
+<!-- ================================================================ -->
+<div class="publication">
+<h2 class="pub-header">Irrational Analysis</h2>
+<div class="post" style="background:#fafbfc;">
+<div class="post-title" style="color:#64748b;">No new posts in scan window (Jun 10&ndash;13)</div>
+<div class="post-meta">Most recent: "What's going on with Marvell?" (Jun 3) &bull; Used for cross-referencing</div>
+<div class="summary-section">
+<p style="color:#64748b;">Irrational Analysis's June 3 Marvell post is highly relevant to this cycle's MRVL coverage. Key points: (1) MRVL is the most-asked-about stock from institutional investors (10+ hedge funds, 3 family offices). (2) Author guesses at Jensen's $2B investment motivation: force Amazon to use NVLink Fusion, block AMD from custom switches, weaken Broadcom, or access Celestial/SRAM IP. (3) Marvell's dense SRAM IP (500 mV operation vs. typical 630 mV floor) is "rock solid and excellent." (4) DDR4 CXL re-use via Structera could be Marvell's highest-margin product in a DRAM shortage. (5) Author is NOT buying MRVL and finds AMD more interesting.</p>
+</div>
+</div>
+</div>
+
+<div class="publication">
+<h2 class="pub-header">Citrini Research</h2>
+<div class="post" style="background:#fafbfc;">
+<div class="post-title" style="color:#64748b;">No new posts in scan window (Jun 10&ndash;13)</div>
+<div class="post-meta">Most recent: "State of the Themes: June 2026" (Jun 8) &bull; Used for cross-referencing</div>
+<div class="summary-section">
+<p style="color:#64748b;">Citrini's June 8 thematic update is essential context. Key insight: the "Token Panic" narrative &mdash; enterprises burning through AI budgets in weeks, Anthropic ARR at $45B, providers shifting to usage-based pricing &mdash; is the biggest risk to the AI capex cycle. Citrini also flags that Chinese open-source models (DeepSeek V4, Qwen 3.7) are 10-25x cheaper than Opus 4.8/GPT 5.5 while closing the capability gap. Application-layer companies post-training on open-source may compress frontier model pricing power. Past calls: Google as most asymmetric large-cap AI winner (GOOG doubled), Korea bullish (KOSPI tripled), Taiwan outperformance (TWSE +60% vs QQQ).</p>
+</div>
+</div>
+</div>
+
+<!-- ================================================================ -->
+<!-- TICKER DEEP DIVES -->
+<!-- ================================================================ -->
+<div class="ticker-dive">
+<h2>Ticker Deep Dives</h2>
+
+<!-- INTC -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>INTC &mdash; Intel Corporation</h3>
+<div class="price">$123.07</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$565B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">98-147x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">~904x</div></div>
+<div class="metric"><div class="metric-label">Q1 Revenue</div><div class="metric-value">$13.6B (+7% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">41% (non-GAAP)</div></div>
+<div class="metric"><div class="metric-label">Adj. EPS</div><div class="metric-value">$0.29 (vs $0.01 est)</div></div>
+<div class="metric"><div class="metric-label">52-Wk Range</div><div class="metric-value">$18.97 &ndash; $132.75</div></div>
+<div class="metric"><div class="metric-label">YTD Move</div><div class="metric-value">+250%</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>SemiAnalysis argues Intel should raise ~$25B via equity at current prices. The thesis is built on: (1) exhaustion of alternative funding (SCIPs unwound at $14.2B, debt at $51.5B), (2) Terafab + SpaceX capital needs of up to $119B, (3) a hot equity window. Our data validates that the stock is at extreme valuations &mdash; forward P/E of 98-147x on $0.29 quarterly EPS is priced for massive earnings growth that hasn't materialized. The stock is 32-45% above the average analyst target of $85-93. BofA's double upgrade to $135 is the only target above the current price.</p>
+</div>
+
+<div class="subsection">
+<h4>Analyst Consensus</h4>
+<p><strong>Rating: Hold</strong> (31-53 analysts). Average PT: $85-93 (well below current price). BofA double-upgraded to Buy on June 11, PT $135. The stock is trading in extremely rarefied air &mdash; above nearly every analyst target, which historically precedes either a massive earnings beat that forces target raises, or a correction.</p>
+</div>
+
+<div class="subsection">
+<h4>Recent News Not Covered by Newsletters</h4>
+<ul>
+<li>Banks tightening financing and limiting swap sizes on semiconductor stocks including INTC (sellthenews recap, June 12)</li>
+<li>Broader market context: PHLX Semiconductor Index jumped 7.9% on June 11 (best day since Apr 2025) on Iran de-escalation</li>
+<li>Intel filed an S-3ASR shelf registration enabling future equity/debt issuance &mdash; the mechanism for SA's proposed raise already exists</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Cross-Reference</h4>
+<p><strong>Semi Doped</strong> (Computex, Jun 12): Covered Clearwater Forest as an Intel Foundry flex &mdash; 18A + EMIB + Foveros in a 17-chiplet design. Bullish on Intel Foundry capabilities but not explicitly on the equity raise thesis. Google reportedly engaging Intel Foundry for TPUs.</p>
+<p><strong>SemiAnalysis</strong> (multiple posts): Previously covered Intel's near-death experience (Dec 2024), now pivoting to bullish. This flip adds credibility but also suggests potential overcorrection.</p>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> &mdash; The capital structure argument is sound (alternative funding exhausted, equity window open), but the stock's extreme valuation (+250% YTD, above all but one analyst target) and thin earnings ($0.29 EPS) suggest the "cheap equity" window could close violently. The Terafab execution risk ($119B program) is enormous and underweighted. <span class="confidence conf-medium">MEDIUM Confidence</span></p>
+</div>
+</div>
+
+<!-- MRVL -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>MRVL &mdash; Marvell Technology</h3>
+<div class="price">$280.71</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$225B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">58-66x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">91x</div></div>
+<div class="metric"><div class="metric-label">Q1 Revenue</div><div class="metric-value">$2.42B (+28% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">58.9% (non-GAAP)</div></div>
+<div class="metric"><div class="metric-label">Non-GAAP EPS</div><div class="metric-value">$0.80 (beat $0.79)</div></div>
+<div class="metric"><div class="metric-label">Data Center Rev %</div><div class="metric-value">76% of total</div></div>
+<div class="metric"><div class="metric-label">S&P 500 Entry</div><div class="metric-value">June 22, 2026</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Jensen's trillion-dollar endorsement requires MRVL to ~4.5x from $225B. The revenue trajectory supports the narrative: data center revenue is 76% of total and growing 50% YoY, with an $11.5B full-year guidance representing 40% growth. The Celestial AI acquisition ($3B) gives CPO technology for 2027-2028. However, 91x trailing P/E and 58-66x forward P/E are pricing in near-perfect execution. The CFO resigned effective June 15, which is a governance concern at this critical juncture.</p>
+</div>
+
+<div class="subsection">
+<h4>Analyst Consensus</h4>
+<p><strong>Rating: Strong Buy</strong> (44 analysts). Average PT: ~$233 (lagging current price post-surge). Highest target: $321 (Stifel). Many targets were set before the Computex surge and are being revised upward. S&P 500 inclusion on June 22 will drive incremental passive buying.</p>
+</div>
+
+<div class="subsection">
+<h4>Recent News Not Covered by Newsletters</h4>
+<ul>
+<li>CFO Willem Meintjes resigned effective June 15 (remains as advisor through April 2027)</li>
+<li>S&P 500 inclusion scheduled for June 22 &mdash; expect significant passive fund inflows</li>
+<li>Nvidia invested $2B in Marvell (announced March 2026) &mdash; built on NVLink Fusion platform</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Cross-Reference</h4>
+<p><strong>Irrational Analysis</strong> (Jun 3): The most skeptical voice. Author is NOT buying MRVL despite 10+ hedge funds asking about it. Sees AMD CPU story as more interesting. Questions Jensen's $2B investment motivations &mdash; possibly to force Amazon onto NVLink Fusion, block AMD, or access Celestial IP. BUT praises Marvell's dense SRAM IP and sees DDR4 CXL re-use (Structera) as a high-margin sleeper product.</p>
+<p><strong>Global Semi Research</strong> (Jun 2): Deep-dive positioning MRVL as "the next chip giant" based on interconnect + switching + custom silicon portfolio. Notes Marvell's 1.6T DSP market share falling from 60% to 40% as Broadcom gains with better TSMC 3nm capacity.</p>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> &mdash; Revenue growth and data center concentration support the bull case. S&P 500 inclusion is a near-term catalyst. But 4.5x to $1T requires sustained 50%+ growth for years. CFO departure is a flag. The DSP market share loss to Broadcom (60% &rarr; 40% in 1.6T) contradicts the "next chip giant" narrative in the highest-margin product line. Jensen's endorsement is a marketing event, not fundamental analysis. <span class="confidence conf-medium">MEDIUM Confidence</span></p>
+</div>
+</div>
+
+<!-- LITE -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>LITE &mdash; Lumentum Holdings</h3>
+<div class="price">$889.59</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$69.7B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">52x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">191x</div></div>
+<div class="metric"><div class="metric-label">Q3 FY26 Revenue</div><div class="metric-value">$808M (+90% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">47.9% (non-GAAP)</div></div>
+<div class="metric"><div class="metric-label">Non-GAAP EPS</div><div class="metric-value">$2.37 (beat $2.26)</div></div>
+<div class="metric"><div class="metric-label">Q4 Guidance</div><div class="metric-value">$960M-$1.01B rev</div></div>
+<div class="metric"><div class="metric-label">Analyst PT</div><div class="metric-value">Avg $919, High $1,270</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>GSR's bull case rests on observable supply-chain data: Nvidia scaling laser orders from 40M to 100M units, Lumentum's largest-ever ELSFP purchase order, and an entire FA production line booked out. The financials back it up: Q3 FY26 revenue of $808M grew 90% YoY, non-GAAP EPS of $2.37 beat estimates, and Q4 guidance of $960M-$1.01B implies continued acceleration. Non-GAAP gross margin expanded 540 bps QoQ to 47.9%. The CEO is also teasing NPO as potentially larger than CPO &mdash; a hedge that de-risks the company even if CPO timing slips. Northland raised its PT to $1,200 (from $1,000) on June 2. The stock sold off on SemiAnalysis's bearish CPO note (LITE -8%) but bounced +4.26% on June 11. The underlying demand for lasers (whether for CPO, NPO, or pluggables) appears robust.</p>
+</div>
+
+<div class="subsection">
+<h4>Risk: InP Supply Chain</h4>
+<p>China controls 60-70% of global InP substrate supply (AXT + Sumitomo). If export controls tighten further, laser production could be physically constrained regardless of demand. This is the risk neither GSR nor SemiAnalysis adequately addresses. Coherent CEO Jim Anderson raised this during a US delegation visit to China in May.</p>
+</div>
+
+<div class="subsection">
+<h4>Cross-Reference</h4>
+<p><strong>Semi Doped</strong> (Jun 11): CEO teased NPO as potentially larger than CPO. This implies Lumentum is hedging CPO timing &mdash; which is both prudent management and a subtle validation of the delay concern.</p>
+<p><strong>Semi Doped</strong> (Jun 10): Broader consensus on X/Twitter: "It doesn't matter if CPO is delayed, the demand for lasers does not go away."</p>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-strong">STRONGLY VALIDATED</span> &mdash; Order book evidence is compelling regardless of CPO vs. NPO timing. The risk is InP supply, not demand. Analyst consensus remains bullish with PT of ~$1,105 above current price. <span class="confidence conf-medium">MEDIUM-HIGH Confidence</span></p>
+</div>
+</div>
+
+<!-- COHR -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>COHR &mdash; Coherent Corp</h3>
+<div class="price">$405</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$69.6B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">44.2x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">~151x</div></div>
+<div class="metric"><div class="metric-label">Q3 FY26 Revenue</div><div class="metric-value">$1.81B (+21% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">39.6% (non-GAAP)</div></div>
+<div class="metric"><div class="metric-label">Non-GAAP EPS</div><div class="metric-value">$1.41</div></div>
+<div class="metric"><div class="metric-label">Q4 Guidance</div><div class="metric-value">$1.91B-$2.05B rev</div></div>
+<div class="metric"><div class="metric-label">Analyst PT</div><div class="metric-value">Avg ~$380 (Buy, 81%)</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Coherent is the second major beneficiary of the laser order ramp cited by GSR (Nvidia orders climbing from 40M to 100M units). Q3 FY26 revenue of $1.81B grew 21% YoY (27% pro forma), with Q4 guidance of $1.91-2.05B showing continued acceleration. Non-GAAP gross margins of 39.6% lag LITE's 47.9%, but COHR has a broader product portfolio. CEO Jim Anderson's advocacy on InP supply in China demonstrates both the company's critical role in the optical supply chain and its exposure to geopolitical risk. COHR was hit harder by the SemiAnalysis selloff (-11% vs. LITE's -8%). Northland downgraded to Market Perform, creating a mixed analyst picture. At $405, the stock is above the average PT of ~$380.</p>
+</div>
+
+<div class="subsection">
+<h4>Risk Factors</h4>
+<ul>
+<li><strong>InP exposure:</strong> Same risk as LITE &mdash; China controls 60-70% of substrate supply</li>
+<li><strong>SemiAnalysis selloff:</strong> COHR was one of the stocks hit by the "Powered Down, Lights Off" note</li>
+<li><strong>Valuation:</strong> At $405, above the $380 consensus PT &mdash; upside is negative unless targets are revised higher</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-partial">PARTIALLY VALIDATED</span> &mdash; Strong demand thesis supported by GSR's supply chain evidence, but closer to analyst PT limits upside. InP risk is material and underappreciated. <span class="confidence conf-medium">MEDIUM Confidence</span></p>
+</div>
+</div>
+
+<!-- TSM -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>TSM &mdash; Taiwan Semiconductor</h3>
+<div class="price">$428</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$2.18T</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">34.8-37x</div></div>
+<div class="metric"><div class="metric-label">Q1 Revenue</div><div class="metric-value">$35.9B (+40.6% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">66.2%</div></div>
+<div class="metric"><div class="metric-label">EPS (Q1)</div><div class="metric-value">$3.49/ADR (+58% YoY)</div></div>
+<div class="metric"><div class="metric-label">May Revenue</div><div class="metric-value">NT$417B record</div></div>
+<div class="metric"><div class="metric-label">3nm Price Hike</div><div class="metric-value">+15% in H2 2026</div></div>
+<div class="metric"><div class="metric-label">Analyst PT</div><div class="metric-value">$452-463 (BofA $500)</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>TSMC's position is the most straightforward in this scan. Q1 2026 revenue of $35.9B grew 40.6% YoY with 66.2% gross margins and EPS of $3.49/ADR (+58% YoY). May revenue hit a record NT$417B ($13.2B). At 35x trailing P/E with 40%+ revenue growth and 66% margins, TSMC is arguably the best value in AI infrastructure. The 15% price hike on 175K 3nm wafers translates to ~$1.5-2B in incremental quarterly revenue. 2nm production is underway with strong yields. CoPoS pulled to H2 2028 (from 2029). Chairman Wei reaffirmed no capex cuts. BofA has a $500 target, Aletheia $600.</p>
+</div>
+
+<div class="subsection">
+<h4>Recent News Not Covered by Newsletters</h4>
+<ul>
+<li>Banks tightening financing and limiting swap sizes on TSM, SK Hynix, Samsung (rates 300 bps to 11% over SOFR) &mdash; a potential headwind for leveraged positions</li>
+<li>Patent infringement lawsuit concern: US lawmakers urging ITC investigation into TSMC</li>
+<li>Google in talks with Samsung for TPU second-sourcing &mdash; could slightly reduce TSMC's monopoly premium long-term</li>
+<li>Taiwan ecosystem reports record May revenues across the supply chain</li>
+<li>2nm production underway with strong yields per management</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-strong">STRONGLY VALIDATED</span> &mdash; Q1 revenue +40.6% YoY, 66.2% gross margins, record monthly revenue, pricing power, and capacity constraints. At 35x trailing P/E, arguably the best value in AI infrastructure. The main risks are geopolitical (Taiwan) and the emerging patent lawsuit, not fundamental. <span class="confidence conf-high">HIGH Confidence</span></p>
+</div>
+</div>
+
+<!-- GLW -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>GLW &mdash; Corning Incorporated</h3>
+<div class="price">$177</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$152.2B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">~56x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">85-96x</div></div>
+<div class="metric"><div class="metric-label">Q1 Revenue</div><div class="metric-value">$4.35B (+18% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">39.1% (+120bps YoY)</div></div>
+<div class="metric"><div class="metric-label">EPS (Q1)</div><div class="metric-value">$0.70 (+30% YoY)</div></div>
+<div class="metric"><div class="metric-label">Optical Comm Growth</div><div class="metric-value">+36% YoY</div></div>
+<div class="metric"><div class="metric-label">Analyst PT</div><div class="metric-value">$198-204 (UBS $228)</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Corning's AI story is accelerating. Q1 revenue of $4.35B grew 18% YoY with the Optical Communications segment up 36% YoY. EPS of $0.70 grew 30% YoY. The AWS custom fiber deal is the third major hyperscaler commitment in 2026 (after Meta ~$6B and Nvidia), with 1,000 new manufacturing jobs in North Carolina. Austin's analysis is sharp: "Amazon isn't pulling SKUs off Corning's telecom catalog &mdash; they're buying fiber spec'd to AWS rack architecture, which means higher ASPs and a customer that can't switch without re-engineering the datacenter." The stock jumped 6.1% on the Amazon announcement. At $177, it's below the avg PT of $198-204 (UBS $228), offering upside.</p>
+</div>
+
+<div class="subsection">
+<h4>Risk Factors</h4>
+<ul>
+<li>Corning is diversified &mdash; Optical Communications is growing 36% but other segments (display, life sciences) dilute the AI story</li>
+<li>At 85-96x trailing P/E and ~56x forward P/E, Corning is no longer cheap for a materials company</li>
+<li>If AI buildout decelerates, custom fiber orders could slow before multiyear deals are fully delivered</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-strong">STRONGLY VALIDATED</span> &mdash; Three hyperscaler fiber deals in 2026 (Meta, Nvidia, AWS) validate the thesis. Optical Communications growing 36% YoY. Below analyst PTs. The main concern is the ~56x forward P/E for what's still partly a legacy materials company. <span class="confidence conf-medium">MEDIUM-HIGH Confidence</span></p>
+</div>
+</div>
+
+<!-- ALAB -->
+<div class="ticker-card">
+<div class="ticker-card-header">
+<h3>ALAB &mdash; Astera Labs</h3>
+<div class="price">$367</div>
+</div>
+
+<div class="metric-grid">
+<div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$61.4B</div></div>
+<div class="metric"><div class="metric-label">Fwd P/E</div><div class="metric-value">120.6x</div></div>
+<div class="metric"><div class="metric-label">Trailing P/E</div><div class="metric-value">138x</div></div>
+<div class="metric"><div class="metric-label">Q1 Revenue</div><div class="metric-value">$308.4M (+93% YoY)</div></div>
+<div class="metric"><div class="metric-label">Gross Margin</div><div class="metric-value">76.4% (non-GAAP)</div></div>
+<div class="metric"><div class="metric-label">Non-GAAP EPS</div><div class="metric-value">$0.61 (beat by 239%)</div></div>
+<div class="metric"><div class="metric-label">Q2 Guidance</div><div class="metric-value">$355-365M rev</div></div>
+<div class="metric"><div class="metric-label">Nasdaq 100 Entry</div><div class="metric-value">June 22, 2026</div></div>
+</div>
+
+<div class="subsection">
+<h4>Newsletter Thesis vs. Financial Data</h4>
+<p>Semi Doped covered ALAB's Nasdaq 100 addition and the company's statement that switch silicon (Scorpio) will overtake retimers as its largest revenue driver by end of 2026. The financials are explosive: 93% YoY revenue growth, 76.4% non-GAAP gross margins (among the highest in semis), and a Q1 EPS beat of 239% vs estimates. The Scorpio X-Series smart fabric switch with PCIe 6 was showcased at Computex.</p>
+</div>
+
+<div class="subsection">
+<h4>Risk Factors</h4>
+<ul>
+<li><strong>Valuation:</strong> At 138x trailing P/E and 121x forward P/E, ALAB is priced for perfection. Any deceleration will be punished severely.</li>
+<li><strong>Above consensus:</strong> At $367, the stock is 50% above the average analyst PT of ~$245. This is an extreme disconnect.</li>
+<li><strong>Competitive landscape:</strong> Irrational Analysis notes Marvell's Structera CXL product is "just better" than Astera's, with superior interface IP and dense SRAM cache.</li>
+</ul>
+</div>
+
+<div class="subsection">
+<h4>Validation Assessment</h4>
+<p><span class="validation val-limited">LIMITED</span> &mdash; Growth metrics are extraordinary (93% YoY, 76% margins) but the stock is 50% above consensus PT. At 121x forward P/E, the valuation prices in years of flawless execution. Irrational Analysis's competitive concern (Marvell Structera superiority) adds risk. Nasdaq 100 inclusion provides near-term mechanical buying support. <span class="confidence conf-low">LOW Confidence</span> at current price.</p>
+</div>
+</div>
+
+</div><!-- end ticker-dive -->
+
+<!-- ================================================================ -->
+<!-- MACRO CONTEXT -->
+<!-- ================================================================ -->
+<div class="publication">
+<h2 class="pub-header">Macro Context: This Week in Markets</h2>
+<div class="post">
+<div class="summary-section">
+<p><strong>June 10:</strong> Stocks slide as US launches fresh Iran strikes. Nasdaq -2%, S&amp;P -1.6%, Dow -953 pts. Brent above $94. VIX to 22.20. Super Micro fell ~30% on a $7B equity offering. Oracle slipped on $40B capex plan.</p>
+<p><strong>June 11:</strong> Massive reversal after Trump cancels Iran strikes. PHLX Semiconductor Index jumped 7.9% (best day since Apr 2025). Nasdaq +2.5%, S&amp;P +1.8%. AMAT, LRCX, MU up double digits. SpaceX priced at $135, raising $75B at $1.77T valuation. May PPI hot (6.5% YoY) but overwhelmed by geopolitical relief.</p>
+<p><strong>June 12:</strong> SpaceX debuts at $161.11, +19.3% from IPO price, closing near $2.1T market value. $64.4B traded by midday. US-Iran deal reports pushed oil lower (Brent to $87). Banks tightening financing on semi stocks.</p>
+<p><strong>Key tension:</strong> The SpaceX IPO ($75B) is sucking significant liquidity from the market. Some of the recent tech selloff may be investors raising cash for SPCX allocation. Once the IPO settles, rotational flows could benefit semis.</p>
+</div>
+</div>
+</div>
+
+</div><!-- end container -->
+
+<footer>
+<p>Generated by Substack Subscription Scanner &bull; 2026-06-13 &bull; Sources: Substack MCP, sellthenews, WebSearch, public filings</p>
+<p>This report is for informational purposes only. Not financial advice. Always do your own research.</p>
+</footer>
+
+</body>
+</html>
