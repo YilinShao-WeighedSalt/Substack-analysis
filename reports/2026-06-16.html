@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Scan Report — June 16, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-secondary: #4a5568;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e2e8f0;
+    --green: #059669;
+    --green-bg: #d1fae5;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --red: #dc2626;
+    --red-bg: #fee2e2;
+    --gray: #6b7280;
+    --gray-bg: #f3f4f6;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --purple: #7c3aed;
+    --purple-bg: #ede9fe;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.25rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent);
+  }
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.75rem;
+    color: var(--accent);
+  }
+  h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0.5rem;
+  }
+  p { margin-bottom: 0.75rem; }
+  .date-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  .summary-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 2rem;
+  }
+  .summary-box h3 { color: var(--accent); margin-top: 0; }
+  .analysis-box {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.25rem 0;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; }
+  .ticker-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin: 2px 4px 2px 0;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+  .post-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .post-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 0.75rem 0;
+    background: var(--bg-alt);
+    font-style: italic;
+    color: var(--text-secondary);
+    border-radius: 0 6px 6px 0;
+  }
+  .ticker-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .ticker-card h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  .metric {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+  }
+  .metric-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+  }
+  .metric-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .validation-badge {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+  }
+  .v-strong { background: var(--green-bg); color: var(--green); }
+  .v-partial { background: var(--amber-bg); color: var(--amber); }
+  .v-limited { background: var(--gray-bg); color: var(--gray); }
+  .v-contradicted { background: var(--red-bg); color: var(--red); }
+  .scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+  .scoreboard th {
+    background: var(--accent);
+    color: white;
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+  }
+  .scoreboard td {
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+  .scoreboard .ticker-col {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+  }
+  .confidence-high { color: var(--green); font-weight: 600; }
+  .confidence-medium { color: var(--amber); font-weight: 600; }
+  .confidence-low { color: var(--red); font-weight: 600; }
+  .news-item {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .crossref {
+    background: var(--purple-bg);
+    border-left: 4px solid var(--purple);
+    padding: 0.75rem 1rem;
+    border-radius: 0 6px 6px 0;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+  .crossref strong { color: var(--purple); }
+  .macro-box {
+    background: #f0fdf4;
+    border-left: 4px solid var(--green);
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Substack Investment Scan</h1>
+<div class="date-label">Report generated June 16, 2026 &nbsp;|&nbsp; Covering June 13–16, 2026 &nbsp;|&nbsp; 6 posts across 4 publications</div>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="summary-box">
+<h3>Executive Summary</h3>
+<p><strong>6 new posts</strong> from <strong>4 of 5</strong> tracked publications (Global Semi Research had no new posts). The standout investment-relevant content comes from <strong>Irrational Analysis</strong>, which makes a detailed engineering case for coherent lite transceiver winners (MRVL, TSEM, COHR) and flags an underappreciated AMD datacenter CPU opportunity. <strong>SemiAnalysis</strong> published a landmark teardown of SMIC's N+3 process — technically rich but limited direct investment implications. <strong>Citrini Research</strong> provides macro context: medium-term bullish on US equities despite near-term inflation/rate volatility from the Iran-Hormuz situation. <strong>Semi Doped</strong> covers industry news flow including Tensordyne's Napier ASIC launch, Korean CPO suppliers gaining Nvidia orders, and ByteDance exploring Chinese GPU alternatives.</p>
+<p><strong>Key tickers in focus:</strong>
+<span class="ticker-tag tag-long">MRVL LONG</span>
+<span class="ticker-tag tag-long">AMD LONG</span>
+<span class="ticker-tag tag-long">TSEM LONG</span>
+<span class="ticker-tag tag-long">COHR LONG</span>
+<span class="ticker-tag tag-cautious">SMTC CAUTIOUS</span>
+<span class="ticker-tag tag-short">MACOM SHORT</span>
+<span class="ticker-tag tag-neutral">INTC NEUTRAL</span>
+<span class="ticker-tag tag-neutral">NOK NEUTRAL</span>
+</p>
+</div>
+
+<!-- TICKER SCOREBOARD -->
+<h3>Ticker Scoreboard</h3>
+<table class="scoreboard">
+<thead>
+<tr><th>Ticker</th><th>Direction</th><th>Source</th><th>Price / Mkt Cap</th><th>Key Metric</th><th>Analyst Consensus</th><th>Validation</th><th>Confidence</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td class="ticker-col">MRVL</td>
+  <td><span class="ticker-tag tag-long">LONG</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$280 / $112B</td>
+  <td>PE ~90–103; AI rev &gt;$2.5B guided</td>
+  <td>Buy; PT $110 (pre-split adj.)</td>
+  <td><span class="validation-badge v-strong">STRONGLY VALIDATED</span></td>
+  <td class="confidence-high">HIGH</td>
+</tr>
+<tr>
+  <td class="ticker-col">AMD</td>
+  <td><span class="ticker-tag tag-long">LONG</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$516 / $355B</td>
+  <td>Fwd PE ~56–61; DC rev +57% YoY</td>
+  <td>Buy consensus</td>
+  <td><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></td>
+  <td class="confidence-medium">MEDIUM</td>
+</tr>
+<tr>
+  <td class="ticker-col">TSEM</td>
+  <td><span class="ticker-tag tag-long">LONG</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$216–279 / $30B</td>
+  <td>Up 580% in 12mo</td>
+  <td>Buy</td>
+  <td><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></td>
+  <td class="confidence-medium">MEDIUM</td>
+</tr>
+<tr>
+  <td class="ticker-col">COHR</td>
+  <td><span class="ticker-tag tag-long">LONG</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$375–440 / $55–84B</td>
+  <td>Up 583% in 12mo; 6" InP leader</td>
+  <td>Buy</td>
+  <td><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></td>
+  <td class="confidence-medium">MEDIUM</td>
+</tr>
+<tr>
+  <td class="ticker-col">SMTC</td>
+  <td><span class="ticker-tag tag-cautious">CAUTIOUS</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$116 / $8B</td>
+  <td>Targets raised to $188–225</td>
+  <td>Buy; targets recently raised</td>
+  <td><span class="validation-badge v-limited">LIMITED</span></td>
+  <td class="confidence-medium">MEDIUM</td>
+</tr>
+<tr>
+  <td class="ticker-col">MACOM</td>
+  <td><span class="ticker-tag tag-short">SHORT</span></td>
+  <td>Irrational Analysis</td>
+  <td>~$365 / $19B</td>
+  <td>Strong Buy consensus; DC rev +60%</td>
+  <td>Strong Buy (8.8/10)</td>
+  <td><span class="validation-badge v-contradicted">CONTRADICTED</span></td>
+  <td class="confidence-low">LOW</td>
+</tr>
+</tbody>
+</table>
+
+<hr style="margin: 2.5rem 0; border: none; border-top: 1px solid var(--border);">
+
+<!-- PUBLICATION 1: IRRATIONAL ANALYSIS -->
+<h2>Irrational Analysis</h2>
+
+<div class="post-card">
+<div class="post-title">Coherent Lite Transceivers + AMD CPU Opportunity</div>
+<div class="post-meta">Published June 13, 2026 &nbsp;|&nbsp; ~1,800 words (public content)</div>
+<div>
+<span class="ticker-tag tag-long">MRVL</span>
+<span class="ticker-tag tag-long">TSEM</span>
+<span class="ticker-tag tag-long">COHR</span>
+<span class="ticker-tag tag-long">AMD</span>
+<span class="ticker-tag tag-long">NOK</span>
+<span class="ticker-tag tag-cautious">SMTC</span>
+<span class="ticker-tag tag-short">MACOM</span>
+</div>
+
+<h4>Full Summary</h4>
+<p>This post is a two-part analysis. The first and larger section responds to FundaAI's article on coherent lite transceivers, correcting key technical errors while broadly affirming FundaAI's investment conclusions. The second section is a brief but punchy case for AMD's datacenter CPU opportunity tied to incremental TSMC N3P wafer allocation.</p>
+
+<p><strong>Part 1 — Coherent Lite Transceivers:</strong> The author begins with a crash course on coherent optics fundamentals. Coherent optics encodes data on two axes (I and Q), similar to wireless communication. The benefit is dramatically more bits per symbol (optics uses 16QAM). The critical drawback is phase noise management — laser linewidth must be &lt;0.2 MHz, and if the symmetry between arms and photodetectors is not precisely matched, "everything becomes garbage and is unfixable." RIN (relative intensity noise) kills you; linewidth kills you harder.</p>
+
+<p>The author then breaks down the Google OFC 2026 tutorial on coherent lite architecture. The key insight is <strong>polarization-folding</strong> — a clever trick that eliminates polarization handling from the transmitter side entirely. The transmitter output has random polarization, so the receiver uses a structure that folds all light onto a single polarization mode (likely TE), and the DSP backs out a simple 1+Z⁻¹ transfer function. This dramatically reduces complexity and cost on both Tx and Rx sides.</p>
+
+<p>Crucially, the author identifies that <strong>FundaAI's InP intensity table is "completely wrong."</strong> The errors stem from treating photonic chip area as rectangular when InP devices are actually narrow and long — you need a wafer map calculator, not simple area calculations. The author spent time running sanity checks and concluded that all numbers in FundaAI's table are incorrect, though the directional investment conclusions remain valid.</p>
+
+<blockquote>"A MZI modulator can easily hit 5 mm long. Using InP for coherent lite Tx PIC would obliterate the industry. Also would obliterate cost."</blockquote>
+
+<p>Key technical correction: <strong>The transmit side of coherent lite does NOT need InP.</strong> Nothing in the Tx block is polarization-sensitive. SiPho (silicon photonics) will work fine for the MZI modulators, which run at 168 Gbps per modulator — actually easier than the 224 Gbps line rate SiPho already handles. The receive side does use monolithic InP PIC, but making both Tx and Rx monolithic InP would be "crazy town" given that InP supply is already "an unmitigated disaster."</p>
+
+<p>The author describes InP yield as a "satanic nightmare" — 50% yield is considered normal for discrete devices. Devices fail at wrong wavelengths (too far to thermally tune), fail to hit target power at temperature, or exhibit mode hopping. InP is also extremely brittle, so many die are lost during packaging and wirebonding.</p>
+
+<p><strong>The author's theoretical optimal coherent lite design:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li><strong>Tx:</strong> DFB laser (no ITLA), Tower Semiconductor SiPho with MZI modulators (168 Gbps each), Marvell or Semtech drivers</li>
+<li><strong>Rx:</strong> Monolithic InP PIC (Coherent Corp or Nokia), TIA from Marvell or Semtech</li>
+<li><strong>DSP:</strong> Marvell — 8× 336G PAM6 SerDes receive from host, 16× 168G PAM4 SerDes to PIC</li>
+</ul>
+
+<p><strong>Winners and Losers:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li><strong>Marvell (MRVL):</strong> "Biggest winner by far." Will make "so much money" on DSP and has driver/TIA bundling opportunities.</li>
+<li><strong>Tower Semi (TSEM):</strong> Wins because of more SiPho demand, and "GloFo is actually incompetent."</li>
+<li><strong>Semtech (SMTC):</strong> Wins, but "maybe not as much as I hope" — Marvell might take most transceiver sockets.</li>
+<li><strong>MACOM:</strong> Loses because photodiodes integrate into the InP PIC, eliminating MACOM's discrete photodiode revenue.</li>
+<li><strong>Coherent Corp (COHR) &amp; Nokia (NOK):</strong> Win with 6-inch InP process for monolithic InP PIC. Other InP players "won't want to burn their 4in capacity on this."</li>
+</ul>
+
+<p><strong>Part 2 — AMD CPU Opportunity:</strong> The author argues that if AMD secures incremental N3P wafers from TSMC (hinted at during a Raymond James bus tour), all of that capacity would go to datacenter CPUs — AMD's "hottest and by far highest gross margin product line." AMD Turin uses N3P for CPU core chiplets and N6 for the I/O die, which the author calls "by far the best implementation of chiplets." The numbers are described as "dirty" in a positive sense — implying very high margins. The author claims contacts don't fully appreciate "the money tsunami Dr. Lisa Su is capable of unleashing IF AND ONLY IF SHE GOT MORE N3P WAFERS."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+
+<p><strong>Logic Assessment:</strong> The coherent lite technical analysis is exceptionally strong. The author demonstrates first-principles engineering knowledge — the correction of FundaAI's InP intensity table, the phase noise crash course, and the polarization-folding explanation all reflect deep domain expertise. The identification that Tx does not need InP is a crucial insight that FundaAI missed. The author's claim to have "numbers pulled from my anus" while simultaneously winking about industry knowledge is consistent with someone who works in the semiconductor industry and cannot directly cite proprietary data.</p>
+
+<p><strong>Unstated Assumptions:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li>Coherent lite adoption timeline is assumed to be imminent, but Google is the primary driver and hyperscaler adoption cycles are notoriously slow. The OFC 2026 tutorial is a research presentation, not a product announcement.</li>
+<li>The "SiPho for Tx, InP for Rx" architecture is the author's "best guess" — the design space is acknowledged as "pretty open," which means actual implementations could differ significantly.</li>
+<li>The AMD N3P wafer argument is entirely conditional on TSMC allocation decisions that are not public. "Assume this but don't think about it" is literally the author's framing.</li>
+</ul>
+
+<p><strong>What Would Make This Wrong:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li>If coherent lite adoption is delayed 2+ years, the near-term thesis evaporates. Coherent optics adoption has historically moved slower than predictions.</li>
+<li>If Broadcom develops competitive DSP for coherent lite (they already dominate traditional coherent DSP), Marvell's "biggest winner" status could be contested.</li>
+<li>MACOM's photodiode business could be more defensible than assumed if discrete solutions maintain cost or performance advantages at certain reach profiles.</li>
+<li>AMD's N3P wafer allocation may not materialize — TSMC capacity is under extreme pressure from Apple, Nvidia, and others.</li>
+</ul>
+
+<p><strong>Bias/Conflict:</strong> The author explicitly states they are "heavily invested in the semiconductor industry" and regularly shares trading snapshots. The coherent lite piece is framed around correcting another newsletter's errors (FundaAI), which creates a "I'm smarter" dynamic that could bias toward more confident conclusions. The AMD section relies on non-public "contacts" and a bus tour hint — this is classic industry-insider alpha that is hard to verify externally.</p>
+
+<p><strong>Confidence: <span class="confidence-high">HIGH</span> on the coherent lite technical analysis and MRVL/TSEM positioning. <span class="confidence-medium">MEDIUM</span> on the AMD N3P wafer thesis (conditional and unverifiable). <span class="confidence-low">LOW</span> on MACOM as a loser (contradicted by consensus).</strong></p>
+</div>
+</div>
+
+<!-- PUBLICATION 2: SEMIANALYSIS -->
+<h2>SemiAnalysis</h2>
+
+<div class="post-card">
+<div class="post-title">Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?</div>
+<div class="post-meta">Published June 14, 2026 &nbsp;|&nbsp; ~8,100 words &nbsp;|&nbsp; Paid (partial paywall) &nbsp;|&nbsp; STEEL Team, Afzal Ahmad, Andrew Wagner +5 others</div>
+<div>
+<span class="ticker-tag tag-neutral">INTC</span>
+<span class="ticker-tag tag-neutral">TSM</span>
+</div>
+
+<h4>Full Summary</h4>
+<p>This is the inaugural public report from SemiAnalysis's new <strong>Teardown Engineering &amp; Evaluation Lab (STEEL)</strong> — a state-of-the-art facility in Oregon for reverse-engineering advanced chips. SemiAnalysis claims to now exceed TechInsights in revenue and frames this as competition for the decades-long TechInsights monopoly in chip teardowns. The report is a comprehensive teardown of the <strong>HiSilicon Kirin 9030 Pro</strong> SoC fabricated on <strong>SMIC N+3</strong>, compared with a MediaTek Helio G99 on <strong>TSMC N6</strong>.</p>
+
+<p><strong>The headline finding:</strong> SMIC N+3 uses a minimum metal pitch (M0) of 32.5 nm, which is ~10% tighter than the 36 nm M0 pitch shipping in Intel's Panther Lake on 18A. However, SemiAnalysis immediately contextualizes this: "The headline is true, but an incomplete cherry picked metric." M0 is a local intra-cell routing layer — its usefulness depends on the full interconnect stack. Intel 18A's looser M0 pitch is partly due to PowerVia (backside power delivery), which reduces front-side congestion.</p>
+
+<p><strong>Process Technology Details:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li><strong>Transistor density:</strong> SMIC N+3 achieves 113.4 MTr/mm² vs TSMC N6 at 107.7 MTr/mm² — slightly above N6 class, achieved without EUV through aggressive DUV multi-patterning (SAQP for M0) and DTCO</li>
+<li><strong>Fin profile:</strong> N+3 fins are taller, narrower (aspect ratio ~9.5:1 vs N6's 7.8:1), with less top rounding — technically impressive single-digit-nm engineering</li>
+<li><strong>Cell height:</strong> 228 nm across all CPU cores (5% smaller than N6, 9.5% smaller than N+2)</li>
+<li><strong>CGP:</strong> 57 nm (matching TSMC N6, 9.5% shrink from N+2)</li>
+<li><strong>SRAM:</strong> 8T bitcell at 0.0463 µm², with estimated 6T HDC at 0.0260 µm² — near Samsung 7LPP/5LPP levels</li>
+</ul>
+
+<p><strong>Architecture &amp; Performance (Kirin 9030 vs 9020):</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li>Prime core: +10% frequency (2.5→2.75 GHz), 2× L2 cache, core size -7.6% (excl. L2: -21%)</li>
+<li>Middle cores: increased from 3 to 4, each shrinks ~22%, +17% integer IPC</li>
+<li>GPU: Maleoon 935 with 6 CUs (from 4), adds ray tracing, +70–79% in 3DMark benchmarks — reaches Snapdragon 8+ Gen 1 territory but trails current flagships by 2.4–3.2×</li>
+<li>NPU: added second Tiny core, significant layout changes</li>
+</ul>
+
+<p><strong>The Performance Gap:</strong> The most striking comparison is against Apple. Apple's efficiency cores deliver 20% higher integer performance at 1W vs Huawei's prime core at 4.5W. Apple M5 P-core is 60% higher per-clock and 2.7× faster in absolute performance. The current process gap (N+3 matches N6, a several-generation-old node) means Huawei cannot match the voltage-frequency curves or transistor budgets available to Apple, Qualcomm, and MediaTek on TSMC N4/N3P.</p>
+
+<p><strong>Memory &amp; Packaging:</strong> Samsung LPDDR5X-9600 (1a node, 12GB in Pro), with CXMT DRAM found in 16GB Pro Max variant. All-organic iPoP packaging — no silicon interposer needed.</p>
+
+<p><strong>Future Roadmap:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li><strong>N+4 (theoretical):</strong> Could reach ~138 MTr/mm² (TSMC N5/Samsung SF4 class) via cell height reduction to 198nm, CGP to 54nm — but cumulative difficulty is high</li>
+<li><strong>N+5 (theoretical):</strong> Would require backside contacts, reaching ~164 MTr/mm² (Intel 18A HP class) — but "much more expensive route"</li>
+<li><strong>Huawei's τ Scaling &amp; LogicFolding:</strong> Huawei's answer to lack of EUV — 3D stacking of active logic, not just cache. Prime core targets ~5 GHz by 2031, with "14A-equivalent density" through stacking. But this inflates density by counting multiple active layers per package footprint — not directly comparable to foundry Bohr density</li>
+</ul>
+
+<p><strong>Export Control Assessment:</strong> Export controls forced a different path but didn't freeze progress. SMIC is licensing N+2/N+3 to HLMC/Hua Hong, spreading manufacturing knowledge. Cambricon (expected ByteDance supplier) and Alibaba T-Head could benefit. "Sanctions aimed at SMIC alone become less effective once the manufacturing knowledge has spread."</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+
+<p><strong>Logic Assessment:</strong> This is first-rate technical journalism from a team with a real lab and TEM cross-sections. The analysis is methodical, comparison-based, and appropriately hedged. SemiAnalysis correctly contextualizes the clickbait-worthy "SMIC beats Intel 18A" headline — a single metal pitch metric means little in isolation. The teardown methodology (fin-cut + gate-cut TEM, EDS, die annotation) is rigorous.</p>
+
+<p><strong>Investment Implications:</strong> The direct investment implications are limited because SMIC, Huawei, and HiSilicon are not publicly traded on Western exchanges in a way most readers can access. The indirect reads are:</p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li><strong>INTC (neutral):</strong> Intel 18A's M0 pitch being "beaten" by SMIC is headline risk, but the analysis shows 18A's architecture (PowerVia, HP libraries) is deliberately optimized differently. Not a real competitive threat to Intel in datacenter or PC.</li>
+<li><strong>TSM (neutral):</strong> TSMC N6 comparison shows SMIC has caught up to a mature node, not the leading edge. TSMC's moat (N3P, N2, EUV) remains wide.</li>
+<li>The LogicFolding / τ scaling analysis is important for anyone assessing the long-term efficacy of export controls.</li>
+</ul>
+
+<p><strong>What's Missing:</strong> Cost-per-transistor comparison — SMIC's SAQP approach for M0 requires more masks and tighter overlay control than TSMC's equivalent, making cost significantly higher. Also missing: yield data comparison (mentioned qualitatively but not quantified).</p>
+
+<p><strong>Self-Promotion Note:</strong> The report doubles as a marketing piece for STEEL lab, with multiple calls to contact sales@semianalysis.com. The TechInsights competitive framing ("virtually no credible competition for decades") is aggressive but factual.</p>
+
+<p><strong>Confidence: <span class="confidence-high">HIGH</span> on technical accuracy. <span class="confidence-medium">MEDIUM</span> on geopolitical/sanctions implications (prediction, not engineering).</strong></p>
+</div>
+</div>
+
+<!-- PUBLICATION 3: SEMI DOPED -->
+<h2>Semi Doped</h2>
+
+<div class="post-card">
+<div class="post-title">Daily Update — June 15th, 2026</div>
+<div class="post-meta">Published June 15, 2026 &nbsp;|&nbsp; ~1,000 words &nbsp;|&nbsp; Austin &amp; Vik</div>
+<div>
+<span class="ticker-tag tag-neutral">NVDA</span>
+<span class="ticker-tag tag-neutral">TSM</span>
+</div>
+
+<h4>Full Summary</h4>
+<p>A concise industry news roundup covering five stories with brief analyst commentary:</p>
+
+<p><strong>1. Tensordyne launches Napier:</strong> AI ASIC startup Tensordyne announced its Napier inference system, built with Broadcom and HPE Juniper on TSMC 3nm. Claims 17× more tokens/watt and 13× more tokens/second than Nvidia Blackwell at rack level. Uses logarithmic math (adders instead of multipliers), SRAM+HBM memory, and custom TDN Link scale-up fabric. Over $200M in forecasted demand with named customers (Cirrascale, BlueSky Compute). Series D planned.</p>
+<blockquote>"The log math is novel. After all, why use multipliers when you can just use adders? That's truly different. Curious to see benchmarks." — Austin</blockquote>
+
+<p><strong>2. Korean suppliers win Nvidia CPO orders:</strong> RF Materials (327260.KQ) and Sungho Electronics (043260.KQ) are gaining traction in Nvidia's co-packaged optics supply chain, supplying CPO components and equipment beyond the established Taiwanese/US ecosystem. This signals Nvidia diversifying its optics supply chain geographically.</p>
+
+<p><strong>3. TSMC opens Munich design center:</strong> First European design center, supporting automotive and industrial customers. Complements the Dresden fab JV with Bosch, Infineon, and NXP. Widens lead over Samsung Foundry in Europe.</p>
+
+<p><strong>4. ByteDance eyes Iluvatar CoreX GPUs:</strong> ByteDance exploring GPU purchases from Chinese startup Iluvatar CoreX for AI training/inference. Would become ByteDance's third major domestic GPU supplier after Huawei and Cambricon. Reflects ongoing China domestic semiconductor sourcing under export restrictions.</p>
+
+<p><strong>5. Kioxia targets edge AI:</strong> Kioxia outlined embedded storage roadmap for industrial, automotive, and IoT with extended lifecycles and on-device inference support.</p>
+
+<p>Also includes a link to a World Labs (Fei-Fei Li) Bloomberg interview and a CoPoS (panel-level packaging) infographic with supplier list.</p>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Tensordyne Claims:</strong> The 17× tokens/watt and 13× tokens/s vs Blackwell claims are extraordinary and unverified. No independent benchmarks are cited — only company claims with LOIs (not binding orders). $200M in "forecasted demand" is marketing language, not booked revenue. The log-math approach is genuinely novel but has historically struggled with accuracy in production inference. Healthy skepticism warranted until independent benchmarks emerge.</p>
+<p><strong>Korean CPO:</strong> The diversification of Nvidia's CPO supply chain into Korea is significant — it validates CPO's trajectory toward production volumes and creates investable plays in Korean small-caps (RF Materials, Sungho). However, these are speculative small-cap plays with limited liquidity for most Western investors.</p>
+<p><strong>ByteDance/Iluvatar:</strong> Directly relevant to SemiAnalysis's SMIC N+3 piece — Chinese tech giants are building alternative GPU supply chains. The question is which foundry builds Iluvatar's chips (likely SMIC), creating another demand vector for the SMIC process nodes analyzed above.</p>
+<p><strong>Confidence: <span class="confidence-medium">MEDIUM</span> — news roundup, not analysis. Take Tensordyne claims with large grain of salt.</strong></p>
+</div>
+</div>
+
+<div class="post-card">
+<div class="post-title">Quiz #5 — Ajinomoto</div>
+<div class="post-meta">Published June 14, 2026 &nbsp;|&nbsp; ~340 words &nbsp;|&nbsp; Trivia</div>
+
+<h4>Summary</h4>
+<p>An entertaining trivia piece tracing Ajinomoto's journey from MSG to aspartame ("AminoSweet") to ABF (Ajinomoto Build-up Film) — the dielectric substrate material beneath nearly every advanced processor. When ABF supply ran short in 2021, lead times stretched past a year and affected car assembly lines. A reminder that obscure materials companies can be critical chokepoints in the semiconductor supply chain. <strong>No investment thesis.</strong></p>
+</div>
+
+<div class="post-card">
+<div class="post-title">TIL: The Calculator Wars And the Revenge That Took a Decade</div>
+<div class="post-meta">Published June 13, 2026 &nbsp;|&nbsp; ~855 words &nbsp;|&nbsp; Historical essay</div>
+
+<h4>Summary</h4>
+<p>A well-written historical essay about the 1970s "Calculator Wars" and how Texas Instruments weaponized its vertical integration against customers like Bowmar and Commodore — then how Commodore's Jack Tramiel bought MOS Technology (maker of the 6502 CPU), waited a decade, and used TI's own playbook to destroy TI's home computer business in 1983.</p>
+<blockquote>"The rhythm keeps recurring: a chipmaker enables a brand-new class of device, integrates downward to squeeze out the assemblers buying its parts, then provokes a wave of defensive vertical integration from whoever survives."</blockquote>
+<p>The essay draws an explicit parallel to today: Nvidia moving into full systems, Apple/Amazon/hyperscalers rolling their own accelerators. The implication is that "the next Tramiel" — someone who integrates backward into silicon to compete with Nvidia — is out there. <strong>No specific investment thesis, but frames the strategic landscape for AI hardware competition.</strong></p>
+</div>
+
+<!-- PUBLICATION 4: CITRINI RESEARCH -->
+<h2>Citrini Research</h2>
+
+<div class="post-card">
+<div class="post-title">Macro Memo: Spin Cycle — What Comes Out In The Warsh?</div>
+<div class="post-meta">Published June 14, 2026 &nbsp;|&nbsp; ~720 words (public preview of paid post)</div>
+<div>
+<span class="ticker-tag tag-neutral">SPY</span>
+<span class="ticker-tag tag-neutral">QQQ</span>
+</div>
+
+<h4>Full Summary</h4>
+<p>Citrini's macro outlook centers on the tension between <strong>thematic momentum</strong> (AI-driven equity performance) and <strong>macro conditions</strong> (inflation, rates, geopolitics). The team remains <strong>medium-term bullish on US equities</strong> but expects heightened volatility over the next 3 months.</p>
+
+<p><strong>Key Arguments:</strong></p>
+
+<p><strong>The Inflation Setup:</strong> Since the Iran war began on February 28, short-term interest rate expectations jumped 100+ bps. In May, SOFR futures began pricing in near-term rate hikes for the first time this cycle — a monetary development not seen since early 2023 before SVB. This was driven by (1) inflation uptick from the Hormuz energy shock, (2) strengthening labor data, and (3) hawkish central bank reactions. The April FOMC held rates in an unusual 8-4 vote, with 3 members wanting to remove the "easing bias." The ECB hiked 25bps and threatened July follow-up. May CPI printed the highest headline since 2023.</p>
+
+<p><strong>The Labor Market:</strong> May jobs report showed 172,000 new jobs (vs 88,000 consensus, much higher than "whisper number"). This adds to a string of employment beats. However, Citrini argues the labor market "is not tight" and recent payroll data "overstate the rebound" — specifics are behind the paywall.</p>
+
+<p><strong>The Sell-off Was Overdue:</strong> The market had risen for seven straight weeks. The sell-off was concentrated in tech/hardware/momentum names that were "extremely overbought by all indicators." Even without the rates catalyst, a correction was coming.</p>
+
+<p><strong>Why They're Still Bullish:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li>Most commodity disruption from the Iran conflict has already peaked — allows the Fed to "look through" remaining price pressure</li>
+<li>Core inflation readings are stable with no signs of wage-push inflation</li>
+<li>New Fed Chair Warsh will likely do "Nothing" — maintain status quo</li>
+<li>"Fundamentals support a continued melt-up into late summer"</li>
+<li>Expect 10–15% drawdowns off highs over the next 3–4 months — buy-the-dip opportunities</li>
+</ul>
+
+<div class="analysis-box">
+<h4>Critical Analysis</h4>
+<p><strong>Logic Assessment:</strong> The framework is coherent — Citrini correctly identifies the "momentum vs. macro" oscillation pattern that has defined 2025-2026 markets. Their argument that the Iran-related oil shock is peaking is supported by the June 13-14 news flow showing a Hormuz reopening framework emerging (confirmed by sellthenews recap: Brent fell 4%+ toward $83, 2-year yields fell 6bp, Fed-hike odds dropped to ~60% from ~80%).</p>
+
+<p><strong>Unstated Assumptions:</strong></p>
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+<li>The Iran-Hormuz deal actually holds — implementation risk remains (shipping, mine clearance, insurance, routing all still pending). A deal collapse would spike oil immediately.</li>
+<li>"Warsh will do nothing" is a bold call. A new Fed chair is inherently unpredictable, and the 8-4 FOMC split suggests significant hawkish pressure internally.</li>
+<li>The "labor market isn't tight" argument is asserted but the evidence is behind the paywall — we can't fully evaluate.</li>
+</ul>
+
+<p><strong>What Would Make This Wrong:</strong> A second Hormuz disruption (the deal is fragile), a wage spiral emerging in the data, or an unexpected Warsh hawkish pivot. The 10-15% drawdown range they forecast is wide enough to encompass a genuine bear scare — if the drawdown hits 15%, their thesis might be right but your portfolio still hurts.</p>
+
+<p><strong>Confidence: <span class="confidence-medium">MEDIUM</span> — Directionally reasonable but critical details are paywalled. The "melt-up into late summer" call assumes Iran de-escalation holds, which is a geopolitical bet more than a financial one.</strong></p>
+</div>
+</div>
+
+<div class="macro-box">
+<h4>Macro Context (from sellthenews Weekly Recap, Week 24)</h4>
+<p><strong>Week Summary:</strong> Risk appetite whipsawed by US-Iran conflict, ending with relief bid as Hormuz-deal headlines pulled crude and yields lower. Brent spiked toward $98 mid-week on strikes, then slid to low-$80s by weekend. Hot PPI and 4.2% May CPI kept inflation risk alive, but lower crude drove the bigger move. Semis sold off during conflict escalation, then surged when geopolitical risk receded. SpaceX IPO (+19% day 1) dominated risk appetite. Apple fell on slower Siri AI rollout. Amazon in focus on Anthropic export control reports.</p>
+</div>
+
+<!-- PUBLICATION 5: GLOBAL SEMI RESEARCH -->
+<h2>Global Semi Research</h2>
+
+<div class="post-card">
+<div class="post-title" style="color: var(--gray);">No new posts in scan window (June 13–16, 2026)</div>
+<div class="post-meta">Last post: "Co-Packaged Optics Is Not Delayed. SemiAnalysis Is Just Wrong" — June 10, 2026</div>
+<p>Note: Global Semi Research's recent output is highly relevant to this scan's themes. Their June 10 CPO piece directly contradicts SemiAnalysis's earlier CPO skepticism, and their June 2 Marvell deep-dive and May 16 "China's Indium Phosphide Surge" piece provide important cross-reference context for Irrational Analysis's coherent lite thesis. See cross-references in Ticker Deep Dives below.</p>
+</div>
+
+<hr style="margin: 2.5rem 0; border: none; border-top: 1px solid var(--border);">
+
+<!-- TICKER DEEP DIVES -->
+<h2>Ticker Deep Dives</h2>
+
+<!-- MRVL -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-long" style="font-size: 0.9rem;">LONG</span> MRVL — Marvell Technology</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$280</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$112B</div></div>
+  <div class="metric"><div class="metric-label">PE (TTM)</div><div class="metric-value">89–103</div></div>
+  <div class="metric"><div class="metric-label">AI Rev Guide</div><div class="metric-value">&gt;$2.5B FY26</div></div>
+  <div class="metric"><div class="metric-label">Key Products</div><div class="metric-value">1.6T DSP, Coherent ZR</div></div>
+  <div class="metric"><div class="metric-label">52W Performance</div><div class="metric-value">Significant gains</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis identifies Marvell as the <strong>"biggest winner by far"</strong> from the coherent lite transition. The thesis rests on Marvell's dominant position in coherent DSP, plus bundling opportunities for drivers and TIAs within the transceiver module. The DSP is the highest-value component, and coherent lite's 168 Gbps per lane architecture plays directly to Marvell's existing product roadmap.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>Marvell's fundamentals support the secular growth story: AI revenue guided well above $2.5B for FY26, expanded coherent DSP lineup (COLORZ 1600, 2nm Electra/Libra platforms sampling H2 2026), and analyst consensus is bullish (BofA PT $110 base case). Revenue projection of $12.1B by 2028. However, the PE of 89-103x prices in substantial growth — any coherent lite delay or competitive loss to Broadcom would compress multiples painfully.</p>
+
+<h4>Analyst Consensus</h4>
+<p>Consensus is bullish with Buy ratings. BofA has $110 PT, Barclays rates Overweight. AI revenue compound growth above 40% annually through FY27 is the base case, with operating margin expanding toward high 30s. Analysts broadly agree with the coherent/optical DSP thesis.</p>
+
+<div class="crossref">
+<strong>Cross-References:</strong>
+<br>• <strong>Irrational Analysis</strong> (June 3): "What's going on with Marvell?" — recent dedicated piece exploring MRVL dynamics
+<br>• <strong>Global Semi Research</strong> (June 2): "Marvell: Strategic Transformation in the AI Data Center Era" — comprehensive analysis
+<br>• <strong>Global Semi Research</strong> (April 16): "Four Technologies Making Marvell the Next Chip Giant" — UALink, CXL, Google LPU, memory architecture
+<br>• <strong>Semi Doped</strong> (June 12): Computex recap highlights Marvell's 102.4 Tbps Teralynx
+<br>• <strong>Semi Doped</strong> (June 9): Marvell joins the S&P 500
+<br>• <strong>WSB DD</strong>: ADTN LiteWave800 DD mentions MRVL SiPh at &lt;5 pJ/bit as comparison point
+<br>• <strong>Nokia WSB DD</strong> (June 14): Notes "Marvell and Nokia have been partners for years" — validates the NOK InP PIC + MRVL DSP pairing
+</div>
+
+<h4>Recent News Not Covered by Newsletters</h4>
+<div class="news-item">• Marvell expanded its AI-focused 1.6T optical DSP portfolio in March 2026 — sampling of COLORZ 1600 and 2nm platforms in H2 2026</div>
+<div class="news-item">• Marvell joined the S&P 500 in June 2026 — a significant catalyst for passive fund inflows</div>
+<div class="news-item">• BofA set $110 PT (pre any recent split adjustment); Barclays assigned Overweight</div>
+
+<p><span class="validation-badge v-strong">STRONGLY VALIDATED</span></p>
+<p>Marvell's coherent DSP dominance is well-documented across multiple publications and analyst reports. The coherent lite thesis adds an incremental growth vector to an already strong AI/optical story. The risk is valuation (PE 90-103x) — the stock prices in perfection, and any execution stumble will be punished. But the fundamental positioning is real and multi-sourced.</p>
+</div>
+
+<!-- AMD -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-long" style="font-size: 0.9rem;">LONG</span> AMD — Advanced Micro Devices</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$516</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">~$355B</div></div>
+  <div class="metric"><div class="metric-label">Forward PE</div><div class="metric-value">56–61</div></div>
+  <div class="metric"><div class="metric-label">DC Revenue (Q1)</div><div class="metric-value">$5.8B (+57% YoY)</div></div>
+  <div class="metric"><div class="metric-label">Server CPU Growth</div><div class="metric-value">+70% YoY Q2 guide</div></div>
+  <div class="metric"><div class="metric-label">Next Gen</div><div class="metric-value">Venice (2nm) H2 2026</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis argues that IF AMD secures incremental N3P wafers from TSMC, the marginal revenue flows entirely to datacenter CPUs — AMD's highest gross margin product. Turin (N3P CCDs + N6 I/O die) is described as "by far the best implementation of chiplets." The thesis is that the market underappreciates the earnings leverage from additional wafer allocation.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>AMD's datacenter segment is already on fire: Q1 record $5.8B revenue (+57% YoY), with server CPU revenue guided to grow 70%+ YoY in Q2. Venice (Zen 6 on TSMC N2P CCDs + N3P I/O die) is on track for H2 2026 volume ramp. The fundamental growth is real and accelerating. Forward PE of 56-61 is rich but supported by the growth trajectory — revenue estimates step up from ~$11.3B (June Q) to ~$15.6B (December Q).</p>
+
+<h4>Analyst Consensus</h4>
+<p>Buy consensus. Analysts are broadly bullish on the datacenter CPU story, though most focus on AI accelerator (MI350X/MI400) rather than the CPU-specific thesis Irrational Analysis highlights.</p>
+
+<div class="crossref">
+<strong>Cross-References:</strong>
+<br>• <strong>Irrational Analysis</strong> (May 8): Earnings roundup included AMD — recent financial context
+<br>• <strong>Global Semi Research</strong> (April 28): "CPU and AI: The Misunderstood Proportioning Logic" — argues CPU demand from AI agents is underappreciated (supports Irrational Analysis's thesis directionally)
+<br>• <strong>SemiAnalysis</strong> (June 9): DeepSeek V4 performance analysis includes MI355X comparisons
+<br>• <strong>TSMC capacity context</strong>: TSMC 3nm now at 175K wafers/month, prices up 15% — wafer allocation is genuinely scarce and valuable
+</div>
+
+<h4>Recent News Not Covered</h4>
+<div class="news-item">• AMD's Venice (Zen 6) confirmed using TSMC N2P for CCDs and N3P for I/O die — transitioning beyond Turin</div>
+<div class="news-item">• TSMC lifted 3nm prices 15% with output at 175K wafers/month — confirms the wafer scarcity Irrational Analysis's thesis depends on</div>
+<div class="news-item">• AMD Helios rack-scale platform (Venice-based) targeting multi-gigawatt deployments starting H2 2026</div>
+
+<p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></p>
+<p>The datacenter CPU growth story is powerfully confirmed by AMD's own financial results. The specific "incremental N3P wafer" catalyst is unverifiable from public data — it's based on industry contacts and a bus tour hint. The risk is that TSMC wafer allocation may be already priced into AMD's guidance. AMD stock is up ~319% in 52 weeks — substantial multiple expansion has already occurred.</p>
+</div>
+
+<!-- COHR -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-long" style="font-size: 0.9rem;">LONG</span> COHR — Coherent Corp</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$375–440</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">$55–84B</div></div>
+  <div class="metric"><div class="metric-label">1Y Performance</div><div class="metric-value">+583%</div></div>
+  <div class="metric"><div class="metric-label">ATH</div><div class="metric-value">$440 (Jun 3)</div></div>
+  <div class="metric"><div class="metric-label">Thesis Driver</div><div class="metric-value">6" InP PIC for coherent lite Rx</div></div>
+  <div class="metric"><div class="metric-label">Catalyst</div><div class="metric-value">Monolithic InP monopoly risk</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis identifies Coherent Corp as a winner because of its 6-inch InP wafer process capability — critical for manufacturing monolithic InP PICs for coherent lite receivers. Other InP fabs running 4-inch won't want to dedicate capacity to this, giving Coherent (and Nokia) a structural advantage. The InP supply situation is described as "an unmitigated disaster" even before coherent lite demand layers on.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>Coherent's +583% one-year performance reflects a massive re-rating driven by AI optical interconnect demand. The stock hit its all-time high of $440 on June 3 before pulling back to the $375-418 range. The InP thesis adds another demand vector but comes atop an already extremely expensive stock. At $55-84B market cap (range reflecting recent volatility), the valuation assumes sustained hypergrowth.</p>
+
+<div class="crossref">
+<strong>Cross-References:</strong>
+<br>• <strong>Irrational Analysis</strong> (May 8): Earnings roundup included COHR
+<br>• <strong>Global Semi Research</strong> (May 16): "China's Indium Phosphide Surge" — warns of Chinese InP capacity buildout that could eventually ease the supply crisis Irrational Analysis describes
+<br>• <strong>Global Semi Research</strong> (June 10): "Co-Packaged Optics Is Not Delayed" — discusses optical supply chain dynamics including Coherent's role
+<br>• <strong>Semi Doped</strong> (June 11): Notes InP imports from China — relevant supply chain context
+</div>
+
+<p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></p>
+<p>The 6-inch InP advantage is real and structurally significant. However, the stock has already rallied nearly 6× in 12 months — the InP thesis may be substantially priced in. Global Semi Research's China InP analysis warns of potential medium-term supply relief from Chinese capacity additions, which could undermine the scarcity premium. At current valuations, execution risk is extreme.</p>
+</div>
+
+<!-- TSEM -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-long" style="font-size: 0.9rem;">LONG</span> TSEM — Tower Semiconductor</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$216–279</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">~$30B</div></div>
+  <div class="metric"><div class="metric-label">1Y Performance</div><div class="metric-value">+580%</div></div>
+  <div class="metric"><div class="metric-label">52W Low</div><div class="metric-value">$37.48</div></div>
+  <div class="metric"><div class="metric-label">52W High</div><div class="metric-value">$302.86</div></div>
+  <div class="metric"><div class="metric-label">Thesis Driver</div><div class="metric-value">SiPho foundry for coherent lite Tx</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis argues Tower Semi wins from coherent lite because SiPho (silicon photonics) will handle the Tx PIC, and Tower is the preferred SiPho foundry — explicitly contrasted with GlobalFoundries: "Tower Semi sipho, not that GloFo dogshit." The thesis is that coherent lite creates incremental SiPho wafer demand flowing to Tower's foundry.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>Tower has already rallied 580% in 12 months, driven by the broader SiPho/AI optical demand wave. The stock is well off its 52W high of $302 (currently ~$216-279), suggesting recent profit-taking. At $30B market cap, Tower has re-rated from a niche specialty foundry to a mid-cap growth story. The coherent lite thesis adds another demand driver but is incremental to existing SiPho demand.</p>
+
+<div class="crossref">
+<strong>Cross-References:</strong>
+<br>• <strong>Irrational Analysis</strong> (April 30): Market Memo included TSEM
+<br>• <strong>Global Semi Research</strong> (May 10): "China's Opening in Optical Chips" — discusses SiPho competitive landscape
+</div>
+
+<p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span></p>
+<p>Tower's SiPho leadership is well-established and the coherent lite Tx thesis is technically sound. The risk is that after a 580% run, the stock already prices in substantial SiPho demand growth. The specific coherent lite incremental contribution to Tower's revenue is likely small relative to total SiPho demand from other applications (pluggable transceivers, CPO). This is a "more of the same good thing" thesis rather than a new catalyst.</p>
+</div>
+
+<!-- SMTC -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-cautious" style="font-size: 0.9rem;">CAUTIOUS</span> SMTC — Semtech</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$116</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">~$8B</div></div>
+  <div class="metric"><div class="metric-label">Consensus</div><div class="metric-value">Buy (93% buy/strong buy)</div></div>
+  <div class="metric"><div class="metric-label">PT Range</div><div class="metric-value">$119–239</div></div>
+  <div class="metric"><div class="metric-label">Recent PT Raises</div><div class="metric-value">$188–225 (May 27)</div></div>
+  <div class="metric"><div class="metric-label">Thesis Driver</div><div class="metric-value">Driver/TIA in coherent lite</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis rates Semtech as a winner from coherent lite but hedges: "maybe not as much as I hope. Marvell might take most of the sockets inside the transceiver." The driver/TIA opportunity is real but Marvell's bundling strategy (DSP + drivers + TIA) could squeeze Semtech out of sockets where Marvell has the DSP win.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>Analysts recently raised targets dramatically (Baird to $225, Oppenheimer to $200, Stifel to $188) on improved data center and optical growth prospects. At ~$116 with targets up to $239, there's meaningful upside if execution continues. However, the author's own hedge — that Marvell may capture most sockets — is a genuine risk for Semtech's share of the coherent lite TAM.</p>
+
+<p><span class="validation-badge v-limited">LIMITED VALIDATION</span></p>
+<p>Analyst targets support the stock but the specific coherent lite contribution is uncertain. The author's own skepticism ("maybe not as much as I hope") is telling — Marvell's bundling power is a legitimate threat to Semtech's socket share in new transceiver architectures.</p>
+</div>
+
+<!-- MACOM -->
+<div class="ticker-card">
+<h3><span class="ticker-tag tag-short" style="font-size: 0.9rem;">SHORT</span> MACOM (MTSI) — MACOM Technology Solutions</h3>
+<div class="metric-grid">
+  <div class="metric"><div class="metric-label">Price</div><div class="metric-value">~$365</div></div>
+  <div class="metric"><div class="metric-label">Market Cap</div><div class="metric-value">~$19B</div></div>
+  <div class="metric"><div class="metric-label">Consensus</div><div class="metric-value">Strong Buy (8.8/10)</div></div>
+  <div class="metric"><div class="metric-label">PT Mean</div><div class="metric-value">$398</div></div>
+  <div class="metric"><div class="metric-label">DC Rev Growth</div><div class="metric-value">+60% YoY</div></div>
+  <div class="metric"><div class="metric-label">Thesis Driver</div><div class="metric-value">Photodiode integration into InP PIC</div></div>
+</div>
+
+<h4>Newsletter Thesis</h4>
+<p>Irrational Analysis says "MACOM lose because photodiodes integrate into InP PIC" — i.e., if coherent lite Rx uses monolithic InP PICs (from Coherent Corp or Nokia), discrete photodiodes from MACOM would be designed out.</p>
+
+<h4>Financial Data vs. Thesis</h4>
+<p>This thesis is <strong>directly contradicted by market consensus.</strong> MACOM has a Strong Buy rating (12 Buy, 3 Hold, 0 Sell), record Q2 2026 revenue and profitability, data center revenue growing 60%+ YoY, and raised FY26 guidance. The stock is near all-time highs with analysts targeting $398.</p>
+
+<h4>Why the Contradiction Matters</h4>
+<p>MACOM's current revenue is driven by traditional pluggable transceivers and data center connectivity — business that exists today and is growing fast. The coherent lite photodiode displacement is a <strong>future risk</strong> that would only materialize as coherent lite achieves meaningful volume, which could be 2-3+ years away. In the meantime, MACOM's current business is thriving. The author may be directionally correct on the long-term architectural shift but wrong on timing — shorting a stock with 60% revenue growth and a Strong Buy consensus based on a future technology transition is extremely risky.</p>
+
+<p><span class="validation-badge v-contradicted">CONTRADICTED BY CONSENSUS</span></p>
+<p>The long-term technical thesis (InP PIC integration displaces discrete photodiodes) is plausible but the short-term financial reality is overwhelmingly positive. Shorting MACOM based solely on this thesis is a timing bet against strong fundamental momentum. <strong>Low confidence in the short call.</strong></p>
+</div>
+
+<hr style="margin: 2.5rem 0; border: none; border-top: 1px solid var(--border);">
+
+<!-- CROSS-PUBLICATION THEMES -->
+<h2>Cross-Publication Themes</h2>
+
+<div class="post-card">
+<h4>1. Optical Interconnect Buildout — Accelerating</h4>
+<p>Every publication in this scan touches optical interconnects from a different angle: Irrational Analysis on coherent lite architecture, Semi Doped on Korean CPO suppliers winning Nvidia orders, and Global Semi Research's recent CPO defense piece. The convergence of multiple independent sources on optical as a critical AI infrastructure bottleneck reinforces the thesis for MRVL, COHR, TSEM.</p>
+
+<h4>2. InP Supply Crisis</h4>
+<p>Irrational Analysis calls InP an "unmitigated disaster," Global Semi Research published "China's Indium Phosphide Surge" (May 16), and Semi Doped's June 11 update flagged InP imports from China. This is a genuine supply chain chokepoint. The key tension: Chinese InP capacity is ramping (GSR's piece), which could provide medium-term relief — but in the short term, any incremental demand (like coherent lite) exacerbates the crisis.</p>
+
+<h4>3. China Semiconductor Independence</h4>
+<p>SemiAnalysis's SMIC N+3 teardown and Semi Doped's ByteDance/Iluvatar CoreX story paint a consistent picture: China is advancing despite export controls, the technology is diffusing across the ecosystem, and domestic demand for domestic chips is growing. This is a 5-10 year structural theme, not a trading catalyst.</p>
+
+<h4>4. Macro: Inflation Fears Peaking?</h4>
+<p>Citrini's "Spin Cycle" and the sellthenews weekly recap both point to the same dynamic: Iran-Hormuz de-escalation is pulling oil, yields, and inflation expectations lower. If this holds, the recent momentum sell-off in tech/semis was a buying opportunity. If the Hormuz deal collapses, the trade reverses violently.</p>
+</div>
+
+<footer>
+<p>Report generated by automated Substack scanner &nbsp;|&nbsp; June 16, 2026</p>
+<p>Publications tracked: Irrational Analysis, Global Semi Research, SemiAnalysis, Semi Doped, Citrini Research</p>
+<p>This report is for informational purposes only and does not constitute financial advice.</p>
+</footer>
+
+</body>
+</html>
