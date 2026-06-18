@@ -1,0 +1,71 @@
+---
+type: ticker
+title: "QCOM — Qualcomm"
+tags: []
+related: ["[[irrationalanalysis-2024-01-27-intels-terrifying-future]]", "[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[irrationalanalysis-2024-03-08-q1-cy2024-marvell-broadcom]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[irrationalanalysis-2024-04-27-elite-x-hype-mediocre-impact]]", "[[irrationalanalysis-2024-05-15-dell-mega-leak-analysis]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-25-maxlinear-implosion-apple-modem]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[irrationalanalysis-2024-08-02-lscc-amd-arm-qcom-mbly-intc]]", "[[irrationalanalysis-2024-08-04-blackwell-delay-packaging]]", "[[irrationalanalysis-2024-08-09-obfuscation-inside]]", "[[irrationalanalysis-2024-08-17-background-proof-guide-on-ai]]", "[[irrationalanalysis-2024-08-21-screaming-buy-keys]]", "[[irrationalanalysis-2024-09-02-hot-chips-2024-irrational-recap]]", "[[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-09-22-qualcomm-should-not-buy-intel]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-10-23-arms-chernobyl-moment]]", "[[irrationalanalysis-2024-11-01-qorvo-onto-amd-intel]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[irrationalanalysis-2024-11-23-qualcomm-investor-day-arm-cerebras]]", "[[semianalysis-2024-12-09-intel-brink-death-culture-foundry]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-26-ceva-apple-modem-yolo]]", "[[irrationalanalysis-2025-03-03-iphone-16e-sitm-qcom-out]]", "[[irrationalanalysis-2025-03-05-panther-lake-delay]]", "[[irrationalanalysis-2025-05-02-apple-modem-timeline]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[irrationalanalysis-2025-10-28-qualcomm-q4-2025-earnings-preview]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-04-fabulous-failures]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]"]
+created: 2024-01-27
+updated: 2026-06-14
+ticker: QCOM
+current_stance: short
+conviction: high
+last_review: 2026-06-14
+---
+## Call log
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2024-01-27 | [[irrationalanalysis]] | MENTION | n/a | Entering PC market with competitive Snapdragon X Elite in H2 2024, adding further pressure on Intel CCG |
+| 2024-02-08 | [[irrationalanalysis]] | NEUTRAL | n/a | Samsung share loss to Exynos and smartphone growth normalization cap near-term upside despite solid auto |
+| 2024-03-08 | [[irrationalanalysis]] | MENTION | n/a | Cautionary example of wasted R&D on mmWave with no addressable market |
+| 2024-04-03 | [[irrationalanalysis]] | LONG | n/a | Expected to take ~5% client CPU share from Intel by 2025 |
+| 2024-04-27 | [[irrationalanalysis]] | NEUTRAL | n/a | Snapdragon X Elite will take QCOM from <0.1% to ~5% PC share by CY2025, but sell-side already has it priced in; stock won't move. |
+| 2024-05-15 | [[irrationalanalysis]] | LONG | n/a | Dell leak confirms ~2x battery-life advantage and lower BOM vs. Intel; 52% GM base case with V2 upside to 60%+ and 10%+ PC market share by H2 2025 |
+| 2024-07-08 | [[citrini]] | LONG | n/a | Owned; Snapdragon-based edge inference and Android AI device exposure |
+| 2024-07-25 | [[irrationalanalysis]] | SHORT | n/a | Apple modem arriving years earlier than expected will gut iPhone modem revenue far sooner and by a larger magnitude than consensus models |
+| 2024-07-27 | [[irrationalanalysis]] | SHORT | n/a | $60/chip OEM subsidy collapses X Elite gross margin from ~52% to ~14%, making the AI PC chip dilutive to operating profit; PMIC design is inefficient |
+| 2024-08-02 | [[irrationalanalysis]] | SHORT | n/a | Management evaded PC ramp revenue questions three times; evasion signals bad sell-through data being hidden |
+| 2024-08-04 | [[irrationalanalysis]] | SHORT | n/a | Rotated the former AMD short into a new QCOM short position |
+| 2024-08-09 | [[irrationalanalysis]] | LONG | n/a | Charging half Intel's laptop chip price while earning ~52% gross margins and gaining OEM share |
+| 2024-08-17 | [[irrationalanalysis]] | SHORT | n/a | Shorted to lever up AVGO long position |
+| 2024-08-21 | [[irrationalanalysis]] | MENTION | n/a | Geoshifting volume to Asia-Pacific cited as a gross-margin headwind for Keysight's wireless segment |
+| 2024-09-02 | [[irrationalanalysis]] | MENTION | n/a | On-device AI tutorial dismissed as copeium; NPU utilization negligible in practice |
+| 2024-09-06 | [[irrationalanalysis]] | SHORT | n/a | Short leg of leveraged spread trade against long AVGO/TSM/ARM |
+| 2024-09-14 | [[irrationalanalysis]] | SHORT | n/a | Apple modem share collapses to 0% by 2027; AI PC disappointment; TSMC price-hike margin pressure |
+| 2024-09-22 | [[irrationalanalysis]] | SHORT | n/a | Author holds large short; views Qualcomm-Intel acquisition as value-destroying with massive redundancy and no synergy |
+| 2024-09-27 | [[irrationalanalysis]] | MENTION | n/a | Trolling Intel publicly with a meme acquisition bid the author views as a joke |
+| 2024-10-14 | [[irrationalanalysis]] | SHORT | 163.08 | Author's largest short; QCOM inference partnership with Cerebras was abruptly abandoned in August 2024 after being announced just six months earlier |
+| 2024-10-20 | [[irrationalanalysis]] | NEUTRAL | n/a | Covered short at a loss after PRC stimulus revived smartphone market; may re-short in 2025 |
+| 2024-10-23 | [[irrationalanalysis]] | LONG | n/a | Author bought call options; Oryon v2 appears clean-sheet and legally insulated, so business is unaffected absent an injunction ARM is unlikely to obtain two months before trial |
+| 2024-11-01 | [[irrationalanalysis]] | LONG | n/a | 100% RFFE share in Galaxy S25 and modem bundling gains; preferred smartphone play via call options |
+| 2024-11-09 | [[irrationalanalysis]] | NEUTRAL | n/a | Beat driven by suspected PRC revenue pull-forward; post-earnings reversal unexplained |
+| 2024-11-23 | [[irrationalanalysis]] | SHORT | n/a | Gross margin destruction from Apple modem loss, dilutive diversification revenue, and accelerating share losses to MediaTek |
+| 2024-12-09 | [[semianalysis]] | MENTION | n/a | Developing Arm-based PC CPUs, contributing to collapse of x86 PC moat |
+| 2024-12-31 | [[irrationalanalysis]] | SHORT | n/a | Used as a hedge against leveraged AVGO long; failed to cover at profit; stock did not react even after total courtroom victory over ARM |
+| 2025-01-15 | [[irrationalanalysis]] | MENTION | n/a | Gaining laptop share but serial datacenter CPU failures under current CEO raise execution doubts |
+| 2025-02-07 | [[irrationalanalysis]] | NEUTRAL | n/a | Numbers fine but QTL growth capped by Huawei zero-compliance; Snapdragon X enterprise adoption weak |
+| 2025-02-26 | [[irrationalanalysis]] | SHORT | n/a | Loses Apple modem content and QTL royalties by March 2027 or earlier with no negotiating leverage |
+| 2025-03-03 | [[irrationalanalysis]] | SHORT | n/a | Zero iPhone 16e content; $25-30 content loss per C1 iPhone; Apple modem ramp threatens further share displacement in September |
+| 2025-03-05 | [[irrationalanalysis]] | SHORT | n/a | Apple modem ramp to ~80% internal share leaves no revenue offset beyond already-telegraphed 20% loss |
+| 2025-05-02 | [[irrationalanalysis]] | SHORT | n/a | Apple C1 modem ramp accelerated to 30% of September iPhone units; six-year diversification runway wasted; author covered short on earnings and plans to re-short |
+| 2025-05-17 | [[irrationalanalysis]] | SHORT | n/a | Slow-burn short: OEM in-sourcing, Samsung share recovery, sub-0.5% PC share, and dilutive auto margins |
+| 2025-05-22 | [[irrationalanalysis]] | LONG | n/a | Custom ARM CPU benefits from instant large-market access via NVLink Fusion partnership. |
+| 2025-06-15 | [[irrationalanalysis]] | MENTION | n/a | Alphawave acquisition viewed skeptically; datacenter CPU track record poor |
+| 2025-08-01 | [[irrationalanalysis]] | SHORT | n/a | Consumer electronics tariff headwinds plus incompetent management; active puts position |
+| 2025-09-18 | [[irrationalanalysis]] | SHORT | n/a | Failed diversification, imminent Apple chipset revenue loss, and April 2027 licensing cliff leave no credible EPS support |
+| 2025-09-19 | [[irrationalanalysis]] | MENTION | n/a | Cited as having unusable 3D integrated graphics, context for Nvidia laptop chiplet opportunity |
+| 2025-09-28 | [[irrationalanalysis]] | NEUTRAL | n/a | Skeptical of PC ramp; Snapdragon X Elite underperforms Intel in real-world use; in-package DRAM repeats Lunar Lake mistake |
+| 2025-10-28 | [[irrationalanalysis]] | SHORT | n/a | CEO insider selling, failed AI chip specs, China smartphone weakness, and quiet-period hype signal an earnings disaster; author holds puts |
+| 2025-12-21 | [[irrationalanalysis]] | SHORT | n/a | Out of time; Cloud AI announcement will amount to nothing |
+| 2026-01-04 | [[irrationalanalysis]] | MENTION | n/a | Navigating Samsung vs TSMC foundry economics; may use SF2 for 2027 Snapdragon DX derivatives |
+| 2026-01-08 | [[semianalysis]] | SHORT | n/a | Apple C1 modem shipped 2025 with full Qualcomm displacement targeted by 2027-2028, removing $1.2B+ in modem payments |
+| 2026-01-16 | [[irrationalanalysis]] | SHORT | n/a | OEM de-spec trend and rising DRAM costs compress premium-content narrative and threaten QCT gross margins |
+| 2026-01-31 | [[irrationalanalysis]] | SHORT | n/a | Small puts position; Android mid/low-end demand weak per QRVO read-through |
+| 2026-02-06 | [[irrationalanalysis]] | SHORT | n/a | Apple modem cliff, China share loss, DRAM price shock hurting smartphones, no credible datacenter offset |
+| 2026-03-05 | [[irrationalanalysis]] | SHORT | n/a | Double share loss: losing Apple modem socket and Android OEM share simultaneously |
+| 2026-04-30 | [[irrationalanalysis]] | SHORT | 177 | Smartphone guide unbelievable, memory chaos headwinds, Apple legal risk 2027, talent exodus undermine datacenter CPU bull case |
+| 2026-06-14 | [[semianalysis]] | MENTION | n/a | Flagship SoC vendor whose chips outperform Huawei Kirin 9030 Pro by 2.7x |
+
+## Thesis evolution
+The view on QCOM pivoted sharply in mid-2024. Early in the coverage period (Q1-Q2 2024), irrationalanalysis was cautiously constructive on the Snapdragon X Elite PC entry as a pressure point on Intel, with the May 2024 Dell leak briefly pushing the stance to outright LONG on margin and share-gain assumptions. That bull case collapsed between July and August 2024 when two compounding negatives arrived simultaneously: the Apple C1 modem timeline was revealed to be far more aggressive than consensus expected, threatening the single largest QCT revenue stream, and channel checks on X Elite sell-through were obscured by management evasion on earnings calls. From August 2024 onward irrationalanalysis maintained an essentially unbroken SHORT, using QCOM as a hedge leg against leveraged AVGO/TSM longs and eventually as a standalone conviction short. The two interruptions — a tactical LONG on ARM litigation resolution in October 2024 and a brief LONG on NVLink Fusion optionality in May 2025 — were both characterized as opportunistic and short-lived rather than thesis changes. Semianalysis converged on the same Apple modem displacement conclusion by early 2026, adding independent confirmation to the revenue-cliff thesis. Citrini was the sole persistent bull, but that call was made in July 2024 before the modem timeline accelerated and was never updated in this log.
+
+## Outcome tracking
+The only anchored px@call in the log is the October 2024 short at $163.08, which the author covered at a loss shortly after (October 20 entry), implying the stock moved higher from that level in the near term — a failed short on that specific entry. The April 2026 short was initiated at $177, above the 2024 entry, consistent with the stock having appreciated meaningfully despite the bear thesis; this suggests the market has not yet priced the Apple modem cliff or QTL licensing expiry. The live thesis would be falsified if QCOM announces a credible revenue offset to the ~$1.2B+ modem loss — most plausibly a large datacenter CPU design win or a QTL contract extension with Apple — or if the Apple modem ramp stalls materially beyond 2028.

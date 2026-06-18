@@ -1,0 +1,481 @@
+---
+type: overview
+title: "Wiki Index"
+created: 2026-06-17
+updated: 2026-06-17
+---
+
+# Wiki Index
+
+## Tickers
+
+- [[000660.KS]] — 000660.KS — SK Hynix
+- [[005930.KS]] — 005930.KS — Samsung Electronics
+- [[009150.KS]] — 009150.KS — Samsung Electro-Mechanics
+- [[2317.TW]] — 2317.TW — Foxconn / Hon Hai
+- [[2382.TW]] — 2382.TW — Quanta Computer
+- [[2454.TW]] — 2454.TW — MediaTek
+- [[268A.T]] — 268A.T — Rigaku
+- [[285A.T]] — 285A.T — Kioxia
+- [[3661.TW]] — 3661.TW — Alchip Technologies
+- [[5801.T]] — 5801.T — Furukawa Electric
+- [[6506.T]] — 6506.T — Yaskawa Electric
+- [[6723.JP]] — 6723.JP — Renesas Electronics
+- [[6762.JP]] — 6762.JP — TDK Corporation
+- [[6857.T]] — 6857.T — Advantest
+- [[6954.T]] — 6954.T — FANUC
+- [[6976.JP]] — 6976.JP — Taiyo Yuden
+- [[6981.JP]] — 6981.JP — Murata Manufacturing
+- [[6981.T]] — 6981.T — Murata Manufacturing
+- [[7220.T]] — 7220.T — Musashi Seimitsu
+- [[AAOI]] — Applied Optoelectronics
+- [[AAPL]] — Apple
+- [[ABB]] — ABB Ltd
+- [[ABBN.SW]] — ABB (Swiss listing)
+- [[ABBV]] — AbbVie
+- [[ADI]] — Analog Devices
+- [[AEHR]] — Aehr Test Systems
+- [[AIXA]] — Aixtron
+- [[AIXA.AS]] — Aixtron (Amsterdam listing)
+- [[AIXA.DE]] — Aixtron (Frankfurt listing)
+- [[ALAB]] — Astera Labs
+- [[AMAT]] — Applied Materials
+- [[AMD]] — Advanced Micro Devices
+- [[AMKR]] — Amkor Technology
+- [[AMZN]] — Amazon
+- [[ANET]] — Arista Networks
+- [[APH]] — Amphenol
+- [[ARM]] — Arm Holdings
+- [[ASML]] — ASML Holding
+- [[ASX]] — ASE Technology
+- [[AVGO]] — Broadcom
+- [[AXTI]] — AXT Inc.
+- [[BE]] — Bloom Energy
+- [[BESI]] — BE Semiconductor Industries
+- [[BESI.AS]] — BE Semiconductor Industries (Amsterdam listing)
+- [[CAMT]] — Camtek
+- [[CAT]] — Caterpillar
+- [[CBRS]] — Cerebras Systems
+- [[CDNS]] — Cadence
+- [[CEG]] — Constellation Energy
+- [[CEVA]] — CEVA Inc.
+- [[CGNX]] — Cognex
+- [[CIEN]] — Ciena Corporation
+- [[COHR]] — Coherent Corp
+- [[CRDO]] — Credo Technology
+- [[CRWV]] — CoreWeave
+- [[CSCO]] — Cisco Systems
+- [[DELL]] — Dell Technologies
+- [[ENPH]] — Enphase Energy
+- [[EQT]] — EQT Corporation
+- [[ETN]] — Eaton Corporation
+- [[FEIM]] — Frequency Electronics
+- [[FN]] — Fabrinet
+- [[FSLR]] — First Solar
+- [[GEV]] — GE Vernova
+- [[GFS]] — GlobalFoundries
+- [[GLW]] — Corning
+- [[GOOGL]] — Alphabet
+- [[HIMX]] — Himax Technologies
+- [[IFNNF]] — Infineon Technologies (OTC)
+- [[IFNNY]] — Infineon Technologies (ADR)
+- [[IFX]] — Infineon Technologies
+- [[INTC]] — Intel
+- [[IREN]] — IREN/Iris Energy
+- [[KEYS]] — Keysight Technologies
+- [[KLAC]] — KLA Corporation
+- [[LITE]] — Lumentum
+- [[LNG]] — Cheniere Energy
+- [[LRCX]] — Lam Research
+- [[LSCC]] — Lattice Semiconductor
+- [[LUMN]] — Lumen Technologies
+- [[MBLY]] — Mobileye Global
+- [[META]] — Meta Platforms
+- [[MP]] — MP Materials
+- [[MPWR]] — Monolithic Power Systems
+- [[MRVL]] — Marvell Technology
+- [[MSFT]] — Microsoft
+- [[MTSI]] — Macom Technology Solutions
+- [[MU]] — Micron Technology
+- [[MXL]] — MaxLinear
+- [[NBIS]] — Nebius
+- [[NOK]] — Nokia
+- [[NVDA]] — NVIDIA
+- [[NVMI]] — Nova
+- [[NVTS]] — Navitas Semiconductor
+- [[NXPI]] — NXP Semiconductors
+- [[ON]] — ON Semiconductor
+- [[ONTO]] — Onto Innovation
+- [[ORCL]] — Oracle
+- [[POET]] — POET Technologies
+- [[PSTG]] — Pure Storage
+- [[QCOM]] — Qualcomm
+- [[QRVO]] — Qorvo
+- [[RMBS]] — Rambus
+- [[ROK]] — Rockwell Automation
+- [[SEDG]] — SolarEdge Technologies
+- [[SEI]] — Solaris Energy Infrastructure
+- [[SIMO]] — Silicon Motion
+- [[SITE]] — SiTime Corporation
+- [[SITM]] — SiTime
+- [[SITS]] — SiTime Corporation
+- [[SKYT]] — Skywater Technology
+- [[SMCI]] — Super Micro Computer
+- [[SMH]] — VanEck Semiconductor ETF
+- [[SMNEY]] — Siemens Energy
+- [[SMTC]] — Semtech
+- [[SNDK]] — Sandisk
+- [[SNPS]] — Synopsys
+- [[SOI.PA]] — Soitec
+- [[SWKS]] — Skyworks Solutions
+- [[TER]] — Teradyne
+- [[TLN]] — Talen Energy
+- [[TSEM]] — Tower Semiconductor
+- [[TSLA]] — Tesla
+- [[TSM]] — Taiwan Semiconductor Manufacturing
+- [[TTMI]] — TTM Technologies
+- [[TXN]] — Texas Instruments
+- [[VICR]] — Vicor Corporation
+- [[VRT]] — Vertiv
+- [[VSH]] — Vishay Intertechnology
+- [[VST]] — Vistra Energy
+- [[VZ]] — Verizon
+- [[WDC]] — Western Digital
+- [[WOLF]] — Wolfspeed
+
+## Themes
+
+- [[advanced-packaging]] — Advanced Packaging
+- [[advanced-transistor-materials]] — Advanced Transistor & Materials Technology
+- [[ai-accelerator-competition]] — AI Accelerator Competition & Landscape
+- [[ai-infrastructure-capex]] — AI Infrastructure & Hyperscaler Capex
+- [[ai-software-models]] — AI Models, Software & Economics
+- [[arm-ecosystem]] — ARM Architecture & Ecosystem
+- [[automotive-semiconductor]] — Automotive & ADAS Semiconductors
+- [[co-packaged-optics]] — Co-Packaged Optics
+- [[custom-silicon-asic]] — Custom Silicon & ASICs
+- [[datacenter-power]] — Datacenter Power & Cooling
+- [[eda-chip-design]] — EDA & Chip Design Tools
+- [[energy-grid-infrastructure]] — Energy Grid & Power Infrastructure
+- [[foundry-process-node]] — Foundry & Process Node Competition
+- [[geopolitics-export-controls]] — Semiconductor Geopolitics & Export Controls
+- [[hbm-memory]] — HBM Memory Supply & Demand
+- [[intel-foundry-decline]] — Intel Foundry & Competitive Decline
+- [[intellectual-property-licensing]] — Semiconductor IP & Licensing
+- [[memory-dram-cycle]] — DRAM & Memory Cycle
+- [[memory-supply-chain-forensics]] — Memory Supply Chain & Forensics
+- [[nand-flash-storage]] — NAND Flash & Storage
+- [[newsletter-meta]] — Newsletter Meta & Personal Finance
+- [[nvidia-gpu-platform]] — Nvidia GPU Platform & Moat
+- [[power-semiconductors]] — Power Semiconductors & Wide Bandgap
+- [[qualcomm-mobile-rffe]] — Qualcomm & Mobile RF Front-End
+- [[robotics-embodied-ai]] — Robotics & Embodied AI
+- [[semiconductor-equipment]] — Semiconductor Capital Equipment
+- [[semiconductor-equities-trading]] — Semiconductor Equities & Trading
+- [[serdes-high-speed-connectivity]] — SerDes & High-Speed Connectivity
+- [[silicon-photonics-interconnects]] — Silicon Photonics & Optical Interconnects
+
+## Publications
+
+- [[citrini]] — Citrini Research
+- [[globalsemiresearch]] — Global Semi Research
+- [[irrationalanalysis]] — Irrational Analysis
+- [[semianalysis]] — SemiAnalysis
+- [[semidoped]] — Semi Doped
+
+## Sources
+
+### Citrini Research
+
+- [[citrini-2024-06-03-annual-review-ai-highlights]] — Annual Review: AI Thematic Highlights
+- [[citrini-2024-07-03-interconnects-101]] — Interconnects 101
+- [[citrini-2024-07-08-inference-on-device]] — Thematic Memo: Inference on Device
+- [[citrini-2024-07-15-in-conversation-credo-semiconductor]] — In Conversation: Credo Semiconductor
+- [[citrini-2024-08-26-can-you-hear-me-now]] — Can You Hear Me Now?
+- [[citrini-2025-09-18-single-stock-long-thesis]] — Single Stock Long Thesis
+- [[citrini-2025-11-27-carving-up-the-tpu]] — Carving Up the TPU
+- [[citrini-2026-01-26-semis-memo-muscle-memory]] — Semis Memo: Muscle Memory
+- [[citrini-2026-03-12-let-there-be-light]] — Let There Be Light
+- [[citrini-2026-05-12-supply-chain-inheritance]] — Semis Memo: Supply Chain Inheritance
+
+### Global Semi Research
+
+- [[globalsemiresearch-2026-03-06-broadcom-ai-asic-dominance]] — Broadcom's AI ASIC Dominance
+- [[globalsemiresearch-2026-03-07-openclaw-technological-egalitarianism]] — OpenClaw's Technological Egalitarianism
+- [[globalsemiresearch-2026-03-11-oracle-q3-fy2026-ai-explosion]] — Oracle Q3 FY2026: Full-Scale AI Explosion
+- [[globalsemiresearch-2026-03-17-samsung-biggest-winner-gtc-2026]] — Nvidia GTC 2026: Is Samsung the Biggest Winner?
+- [[globalsemiresearch-2026-03-18-chinese-openclaw-tech-frenzy-rationality]] — Chinese OpenClaw Products: Frenzy to Rationality
+- [[globalsemiresearch-2026-03-21-power-crunch-playbook-neoclouds-ai-infrastructure]] — The Power Crunch Playbook: Neoclouds in AI Infrastructure
+- [[globalsemiresearch-2026-03-26-memory-sector-plummeted-market-panic]] — Memory Sector Plummeted: What Is the Market Panicking About?
+- [[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]] — Why Memory Suppliers Hold All the Cards
+- [[globalsemiresearch-2026-04-09-memory-capex-too-little]] — Memory Chipmakers Spending Too Little
+- [[globalsemiresearch-2026-04-10-cxl-ai-era-revolution-hype]] — CXL in the AI Era: Revolution or Hype?
+- [[globalsemiresearch-2026-04-13-tsmc-advanced-process-expansion-2026]] — TSMC Advanced Process Expansion 2026-2027
+- [[globalsemiresearch-2026-04-16-marvell-next-chip-giant]] — Four Technologies Making Marvell the Next Chip Giant
+- [[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]] — AXT: Indium Phosphide Play for AI Optical Interconnects
+- [[globalsemiresearch-2026-04-25-intels-narrative-has-changed]] — Intel: From Laggard to Leverage
+- [[globalsemiresearch-2026-04-28-cpu-ai-misunderstood-proportioning]] — CPU and AI: Misunderstood Proportioning Logic
+- [[globalsemiresearch-2026-04-29-tpu-v8-boardfly-optical-copper-pcb]] — Google TPU v8 Boardfly Topology Deep Dive
+- [[globalsemiresearch-2026-05-10-china-opening-optical-chips]] — China's Opening in Optical Chips
+- [[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]] — China's Indium Phosphide Surge
+- [[globalsemiresearch-2026-05-19-nvidia-losing-touch-china-worry]] — Nvidia Losing Touch With China
+- [[globalsemiresearch-2026-05-25-huawei-tau-scaling-deep-dive]] — Huawei's Tau Scaling Law: Technical Deep Dive
+- [[globalsemiresearch-2026-05-30-five-year-contracts-30-prepayments]] — Five-Year Contracts and 30% Prepayments
+- [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] — Marvell: Strategic Transformation in the AI Data Center Era
+- [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] — Co-Packaged Optics Is Not Delayed
+
+### Irrational Analysis
+
+- [[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]] — Mobileye's Rancid Kitchen Sink
+- [[irrationalanalysis-2024-01-27-intels-terrifying-future]] — Intel's Terrifying Future
+- [[irrationalanalysis-2024-02-04-computer-architecture-guide]] — A Guide on Computer Architecture
+- [[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]] — ARM Short Squeeze, Fabrinet Sus
+- [[irrationalanalysis-2024-02-24-very-long-incoherent-writeup]] — Very Long Incoherent Writeup
+- [[irrationalanalysis-2024-03-08-q1-cy2024-marvell-broadcom]] — Q1 CY2024: Marvell and Broadcom
+- [[irrationalanalysis-2024-03-10-astera-labs-extinction-event]] — The Astera Labs Extinction Event
+- [[irrationalanalysis-2024-03-19-gtc-2024-keynote-recap]] — GTC 2024 Keynote Irrational Recap
+- [[irrationalanalysis-2024-03-23-broadcom-ai-infra-day]] — Broadcom 2024 AI Infrastructure Day
+- [[irrationalanalysis-2024-03-23-microns-hbm-party]] — Micron's HBM Party
+- [[irrationalanalysis-2024-03-30-gb200-nvl72-mainframe-doom]] — GB200 NVL72: The Mainframe of Doom
+- [[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]] — Everything is (not) fine at Intel
+- [[irrationalanalysis-2024-04-27-elite-x-hype-mediocre-impact]] — Elite X Hype, Mediocre Financial Impact
+- [[irrationalanalysis-2024-05-15-dell-mega-leak-analysis]] — Dell Mega Leak Analysis
+- [[irrationalanalysis-2024-05-20-ampere-computing-probably-dead]] — Ampere Computing is probably dead
+- [[irrationalanalysis-2024-05-23-arm-is-comically-undervalued]] — ARM is Comically Undervalued
+- [[irrationalanalysis-2024-06-01-dell-clown-fiesta]] — Dell Clown Fiesta
+- [[irrationalanalysis-2024-07-01-memory-is-still-commodity]] — Memory is Still a Commodity
+- [[irrationalanalysis-2024-07-08-nand-flash-hidden-ai-play]] — Is NAND Flash a Hidden AI Play?
+- [[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]] — Astera Labs: Impending Revenue Implosion
+- [[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]] — Electromigration, HTOL, AEHR, VICR, and INTC
+- [[irrationalanalysis-2024-07-25-maxlinear-implosion-apple-modem]] — MaxLinear Implosion, Apple Modem
+- [[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]] — Dell XPS (TributoQC) 13 Review
+- [[irrationalanalysis-2024-08-02-lscc-amd-arm-qcom-mbly-intc]] — LSCC AMD ARM QCOM MBLY INTC
+- [[irrationalanalysis-2024-08-04-blackwell-delay-packaging]] — Nvidia Blackwell Delay Note
+- [[irrationalanalysis-2024-08-09-obfuscation-inside]] — Obfuscation Inside
+- [[irrationalanalysis-2024-08-17-background-proof-guide-on-ai]] — A Background-Proof Guide on AI
+- [[irrationalanalysis-2024-08-21-screaming-buy-keys]] — Screaming Buy: KEYS
+- [[irrationalanalysis-2024-08-23-harlan-sur-jpm-massive-avgo-scoop]] — Harlan Sur's (JPM) Massive AVGO Scoop
+- [[irrationalanalysis-2024-09-02-hot-chips-2024-irrational-recap]] — Hot Chips 2024: Irrational Recap
+- [[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]] — AVGO NVDA MRVL + INTC Chaos Update
+- [[irrationalanalysis-2024-09-14-september-portfolio-update]] — September 2024 Portfolio Update
+- [[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]] — Gelsinger's Heroic Amputations
+- [[irrationalanalysis-2024-09-20-how-much-ampere-worth]] — How Much is Ampere Computing Worth?
+- [[irrationalanalysis-2024-09-22-qualcomm-should-not-buy-intel]] — Qualcomm Should Not Buy Any Subset of Intel
+- [[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]] — Micron Q4 FY2024 Earnings, Intel Meme Buyout Offers
+- [[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]] — Cerebras S-1 Initial Analysis
+- [[irrationalanalysis-2024-10-11-amd-ai-astera-pcie-switch-overhype]] — AMD AI 2024 and Astera Labs PCIe Switch Over-hype
+- [[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]] — Cerebras (CBRS) Equity Research Report
+- [[irrationalanalysis-2024-10-20-asml-tsmc-earnings]] — Extrapolating ASML and TSMC Earnings
+- [[irrationalanalysis-2024-10-23-arms-chernobyl-moment]] — ARM's Chernobyl Moment
+- [[irrationalanalysis-2024-11-01-qorvo-onto-amd-intel]] — Qorvo, Onto, AMD, Intel
+- [[irrationalanalysis-2024-11-04-recommended-books-and-resources]] — Recommended Books and Resources
+- [[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]] — ARM, Qualcomm, Astera Labs, Fabrinet, Wolfspeed, Supermicro
+- [[irrationalanalysis-2024-11-15-switching-regulators-and-vrms]] — Primer: Switching Regulators and VRMs
+- [[irrationalanalysis-2024-11-20-keysight-fq4-2024]] — Keysight FQ4 2024
+- [[irrationalanalysis-2024-11-23-qualcomm-investor-day-arm-cerebras]] — Qualcomm Investor Day; ARM Trial Preview; Cerebras Hoax Benchmarks
+- [[irrationalanalysis-2024-12-02-communication-systems-guide]] — A Background-Proof Guide on Communication Systems
+- [[irrationalanalysis-2024-12-06-gelsingers-last-supper]] — Gelsinger's Last Supper
+- [[irrationalanalysis-2024-12-08-brief-intel-18a-yield-note]] — Brief Intel 18A Yield Note
+- [[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]] — Tenstorrent and the State of AI Hardware Startups
+- [[irrationalanalysis-2024-12-20-marvell-broadcom-micron]] — Marvell, Broadcom, Micron
+- [[irrationalanalysis-2024-12-27-2025-irrational-ideas]] — 2025 Irrational Ideas
+- [[irrationalanalysis-2024-12-31-year-end-portfolio-performance]] — 2024 Year-End Portfolio and Performance Update
+- [[irrationalanalysis-2025-01-05-long-mrdimm-short-nand-flash]] — Long MRDIMM, Short NAND Flash
+- [[irrationalanalysis-2025-01-09-death-of-intel]] — CES 2025: The Death of Intel Products
+- [[irrationalanalysis-2025-01-12-datacenter-gpu-h1-outlook]] — Datacenter GPU H1 2025 Outlook
+- [[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]] — Intel 4Q2024 Preview: The Piranha's Smell Blood
+- [[irrationalanalysis-2025-01-24-pdk-guide-semiconductors]] — A Background-Proof Guide on Process Development Kits
+- [[irrationalanalysis-2025-01-28-emergency-deepseek-note]] — Emergency DeepSeek Note
+- [[irrationalanalysis-2025-02-02-marvell-pcie7-existential-threat-astera]] — Marvell PCIe 7 Switch: Existential Threat to Astera Labs
+- [[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]] — 1QCY25 Earnings Roundup
+- [[irrationalanalysis-2025-02-13-high-bandwidth-flash-sandisk]] — High Bandwidth Flash and Sandisk Investor Day 2025
+- [[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]] — Optical Illusions: FN CIEN SITM LITE
+- [[irrationalanalysis-2025-02-20-isscc-2025-serdes]] — ISSCC 2025: Ultra High-Speed SerDes
+- [[irrationalanalysis-2025-02-26-ceva-apple-modem-yolo]] — CEVA — Apple Modem YOLO
+- [[irrationalanalysis-2025-03-03-iphone-16e-sitm-qcom-out]] — iPhone 16e Teardown: SITM maybe back, QCOM out
+- [[irrationalanalysis-2025-03-05-panther-lake-delay]] — Panther Lake Delay
+- [[irrationalanalysis-2025-03-13-make-intel-great-again]] — MAKE INTEL GREAT AGAIN
+- [[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]] — Macro, Mobile, Markets, and Mercy for Intel
+- [[irrationalanalysis-2025-03-19-gtc-2025-co-packaged-optics]] — GTC 2025: Co-Packaged Optics Switching
+- [[irrationalanalysis-2025-03-22-tales-from-gtc-week]] — Tales from GTC Week
+- [[irrationalanalysis-2025-04-05-a-falling-knife-no-handle]] — A Falling Knife Has No Handle
+- [[irrationalanalysis-2025-04-12-co-packaged-optics-guide]] — A Background-Proof Guide on Co-Packaged Optics
+- [[irrationalanalysis-2025-04-18-dreambig-super-nic-chiplet]] — DreamBig Semi: Crazy Super-NIC and Chiplet Hub
+- [[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]] — Logic Foundry Slash and Burn
+- [[irrationalanalysis-2025-04-25-napalm-kitchen-sink]] — Intel Q1 FY25 Earnings: Napalm Kitchen Sink
+- [[irrationalanalysis-2025-05-02-apple-modem-timeline]] — Qualcomm Q2 FY25: Apple Modem Timeline Accelerated
+- [[irrationalanalysis-2025-05-08-marvell-losers-arm-bagholding]] — Marvell Losers Folding, ARM Shareholders Bagholding
+- [[irrationalanalysis-2025-05-11-onto-innovation-implosion]] — Onto Innovation Implosion
+- [[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]] — SMH Favorite Names Coverage: Q2 2025 Edition
+- [[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]] — NVLink Fusion: Jensen Murders UALink
+- [[irrationalanalysis-2025-05-24-navitas-dangerous-specialty-switching]] — Navitas: Dangerous and Obscure Specialty Switching Regulator
+- [[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]] — Marvell Management Bluffing Bank of America Securities
+- [[irrationalanalysis-2025-07-06-marvell-intel-catch-up-note]] — Marvell and Intel Catch-Up Note
+- [[irrationalanalysis-2025-07-19-aehr-micron-catch-up]] — Aehr and Micron Catch-Up Note
+- [[irrationalanalysis-2025-07-25-seppuku-inside]] — Seppuku Inside
+- [[irrationalanalysis-2025-08-01-august-1st-portfolio-update]] — August 1st 2025 Portfolio Update
+- [[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]] — Tower Semi, Fabrinet, and the Incredible Nvidia 1.6T Transceiver Ramp
+- [[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]] — Masa's Rocket-Powered Merry-Go-Round and Intel Murder Synopsys
+- [[irrationalanalysis-2025-09-13-hot-chips-2025-recap]] — Hot Chips 2025: Irrational Recap
+- [[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]] — Synopsys is probably a buy
+- [[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]] — Qualcomm is out of time
+- [[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]] — Brief Thoughts: Intel+Nvidia Deal, Nvidia+Enfabrica Deal
+- [[irrationalanalysis-2025-09-26-protest-too-much-hbm4-base-die]] — Micron FQ4 2025: Protest Too Much on HBM4 Base Die
+- [[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]] — SMH Favorite Names++ Coverage: Q3 2025 Edition
+- [[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]] — Partial Mea Culpa: Sandisk and Marvell
+- [[irrationalanalysis-2025-10-10-inferencemax-launch-surprising-data]] — Semianalysis InferenceMAX Launch: Surprising Data
+- [[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]] — OCP Global Summit 2025: Irrational Recap
+- [[irrationalanalysis-2025-10-28-qualcomm-q4-2025-earnings-preview]] — Qualcomm Q4 2025 Earnings Preview
+- [[irrationalanalysis-2025-11-07-practical-optical-comms]] — Practical Optical Communication Systems
+- [[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]] — Thanksgiving Thoughts: TPU VS NVDA, AVGO, MediaTek, Intel Foundry
+- [[irrationalanalysis-2025-12-02-marvell-buy-celestial-rumor]] — Marvell Maybe Buy Celestial Rumor Note
+- [[irrationalanalysis-2025-12-07-celestial-ai-marvell-deep-dive]] — Celestial AI // Marvell Deep Dive
+- [[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]] — SerDes Wars: Maybe MediaTek TPU Can Be Salvaged by Semtech
+- [[irrationalanalysis-2025-12-21-2026-irrational-ideas]] — 2026 Irrational Ideas
+- [[irrationalanalysis-2025-12-24-nvidia-groq-deal]] — Truly Irrational: Nvidia/Groq Deal
+- [[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]] — 2025 End-of-Year Portfolio Update
+- [[irrationalanalysis-2026-01-04-fabulous-failures]] — Fabulous Failures
+- [[irrationalanalysis-2026-01-16-memory-madness]] — Memory Madness
+- [[irrationalanalysis-2026-01-23-intels-agentic-dumpster-fire]] — Intel's Agentic Dumpster-Fire
+- [[irrationalanalysis-2026-01-24-practical-datacom-lasers]] — Practical Datacom Lasers
+- [[irrationalanalysis-2026-01-31-january-is-finally-over]] — Market Memo: January is finally over
+- [[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]] — Earnings Roundup: LITE COHR SITM QCOM ARM
+- [[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]] — Tower+GloFo Earnings, HBM4 Qualification Noise
+- [[irrationalanalysis-2026-02-19-isscc-2026-irrational-recap]] — ISSCC 2026 Irrational Recap
+- [[irrationalanalysis-2026-02-27-its-the-dataflow-stupid]] — It's the dataflow, stupid
+- [[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]] — AAOI Probably Worth Chasing
+- [[irrationalanalysis-2026-03-05-march-ms-tmt-madness]] — March Morgan Stanley TMT Madness
+- [[irrationalanalysis-2026-03-06-hilarious-short-squeeze]] — Marvell 3/5/2026 Earnings: Hilarious Short Squeeze
+- [[irrationalanalysis-2026-03-12-optics-basket-comments]] — Citrini 3/12/2026 Optics Basket Comments
+- [[irrationalanalysis-2026-03-24-passing-liquified-gas]] — Passing Liquified Gas
+- [[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]] — OFC 2026 Irrational Recap
+- [[irrationalanalysis-2026-04-01-q1-consolidated-holdings-performance]] — Q1 2026 Consolidated Holdings and Performance
+- [[irrationalanalysis-2026-04-05-its-just-money-made-up]] — It's just money. It's made up.
+- [[irrationalanalysis-2026-04-16-long-memory-short-android-smartphone]] — Long Memory, Short Android Smartphone
+- [[irrationalanalysis-2026-04-21-power-semis-800v-gan]] — Power Semis, 800V DC, and GaN Mini-Note
+- [[irrationalanalysis-2026-04-24-intel-cheap-price-book]] — Intel is still cheap on price/book value
+- [[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]] — Power Semis Part 2: SiC vs GaN, Wolfspeed 10KV
+- [[irrationalanalysis-2026-04-30-market-memo-semis]] — Market Memo: INTC QCOM WOLF ON NVTS ASML TER AXTI BE LITE COHR
+- [[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]] — Cerebras CBRS Equity Research Report — 2026 Edition
+- [[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]] — 5/8/26 Earnings Roundup: ON FN LITE NVTS AMD ARM COHR SITM AAOI CRWV GFS
+- [[irrationalanalysis-2026-05-17-high-voltage-low-competence]] — High Voltage, Low Competence
+- [[irrationalanalysis-2026-05-28-musashi-seimitsu-supercap-note]] — Musashi Seimitsu Supercap Note
+- [[irrationalanalysis-2026-05-31-hbm-high-bandwidth-mistake]] — HBM: High-Bandwidth Mistake
+- [[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]] — What's going on with Marvell?
+
+### SemiAnalysis
+
+- [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] — IEDM 2023: GenAI Yield, CFET
+- [[semianalysis-2024-01-11-neural-network-quantization-number-formats]] — Neural Network Quantization & Number Formats From First Principles
+- [[semianalysis-2024-02-09-hybrid-bonding-process-flow]] — Hybrid Bonding Process Flow
+- [[semianalysis-2024-02-21-groq-inference-tokenomics]] — Groq Inference Tokenomics: Speed, But At What Cost?
+- [[semianalysis-2024-03-13-ai-datacenter-energy-race]] — AI Datacenter Energy Dilemma
+- [[semianalysis-2024-03-16-cxl-is-dead-ai-era]] — CXL Is Dead In The AI Era
+- [[semianalysis-2024-03-17-astera-labs-ipo-connectivity]] — Astera Labs IPO: The Next Connectivity Superhero or Steamrolled?
+- [[semianalysis-2024-03-18-nvidia-blackwell-cogs-margins]] — Nvidia B200/GB200: COGS, Pricing, Margins, Ramp
+- [[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]] — Nvidia NVL72, Infiniband Scale Out, 800G & 1.6T Ramp
+- [[semianalysis-2024-04-02-intel-back-foundry-product-resurgence]] — Is Intel Back? Foundry & Product Resurgence Measured
+- [[semianalysis-2024-04-10-blackwell-b200-gb200-perf-tco]] — Nvidia Blackwell Perf TCO Analysis
+- [[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]] — Intel's 14A Magic Bullet: Directed Self-Assembly
+- [[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]] — OpenAI Is Doomed? Et tu, Microsoft?
+- [[semianalysis-2024-05-27-apple-ai-datacenter-strategy]] — Apple's AI Strategy: Datacenters, On-device, Cloud
+- [[semianalysis-2024-05-30-dell-beating-supermicro]] — How Dell Is Beating Supermicro
+- [[semianalysis-2024-06-03-openai-chip-team-serious]] — OpenAI Chip Team Is Now Serious
+- [[semianalysis-2024-06-17-100k-h100-cluster-power-network]] — 100,000 H100 Clusters: Power, Network Topology
+- [[semianalysis-2024-07-17-gb200-hardware-component-supply-chain-bom]] — GB200 Hardware Architecture: Component Supply Chain & BOM
+- [[semianalysis-2024-08-04-blackwell-reworked-shipment-delays-gb200a]] — Nvidia's Blackwell Reworked: Shipment Delays & GB200A
+- [[semianalysis-2024-09-03-memory-wall-past-present-future-dram]] — The Memory Wall: Past, Present, and Future of DRAM
+- [[semianalysis-2024-09-04-multi-datacenter-openai-google]] — Multi-Datacenter Training: OpenAI's Ambitious Plan
+- [[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]] — Clash of the Foundries: GAA + Backside Power at 2nm
+- [[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]] — AI Neocloud Playbook and Anatomy
+- [[semianalysis-2024-10-14-datacenter-electrical-systems]] — Datacenter Anatomy Part 1: Electrical Systems
+- [[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]] — Fab Whack-A-Mole: Chinese Companies Evading U.S. Sanctions
+- [[semianalysis-2024-12-03-trainium2-architecture-networking]] — Amazon Trainium2 Architecture & Networking
+- [[semianalysis-2024-12-09-intel-brink-death-culture-foundry]] — Intel on the Brink of Death
+- [[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]] — Scaling Laws, O1 Pro Architecture, Reasoning Training
+- [[semianalysis-2024-12-22-mi300x-cuda-moat-training]] — MI300X vs H100: Training — CUDA Moat Still Alive
+- [[semianalysis-2024-12-25-gb300-b300-reasoning-inference]] — GB300 & B300: Reasoning Inference
+- [[semianalysis-2025-01-15-ai-diffusion-export-controls]] — 2025 AI Diffusion Export Controls
+- [[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]] — OpenAI Stargate JV Demystified
+- [[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]] — DeepSeek Debates: Chinese Leadership on Cost
+- [[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]] — TSMC N2 + Next-Gen SoIC, Intel EMIB-T, CFET, 2D Materials
+- [[semianalysis-2025-02-13-datacenter-cooling-systems]] — Datacenter Anatomy Part 2: Cooling Systems
+- [[semianalysis-2025-03-11-america-missing-new-labor-economy-robotics]] — America Is Missing The New Labor Economy: Robotics Part 1
+- [[semianalysis-2025-03-19-nvidia-gtc-vera-rubin]] — Nvidia GTC 2025: Built For Reasoning, Vera Rubin
+- [[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]] — The GPU Cloud ClusterMAX Rating System
+- [[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]] — Tariff Armageddon? GPU Loopholes, Mexico Supply Chain
+- [[semianalysis-2025-04-14-high-na-euv-spie2025]] — High-NA is Here (for R&D), EUV Cost, Pattern Shaping
+- [[semianalysis-2025-04-16-huawei-cloudmatrix-china-nvidia-gb200]] — Huawei AI CloudMatrix 384: China's Answer to GB200 NVL72
+- [[semianalysis-2025-04-23-amd-mi450x-beat-nvidia]] — AMD 2.0: MI450X Chance to Beat Nvidia
+- [[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]] — Microsoft's Datacenter Freeze: 1.5GW Self-Build Slowdown
+- [[semianalysis-2025-05-16-ai-middle-east-uae-ksa]] — AI Arrives In The Middle East: UAE and KSA
+- [[semianalysis-2025-05-23-amd-vs-nvidia-inference]] — AMD vs NVIDIA Inference Benchmark: Who Wins?
+- [[semianalysis-2025-06-08-scaling-rl-environments-reward]] — Scaling Reinforcement Learning: Environments, Reward Hacking
+- [[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]] — The New AI Networks: Ultra Ethernet UEC
+- [[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]] — AMD Advancing AI: MI350X and MI400 UALoE72
+- [[semianalysis-2025-06-23-nvidia-tensor-core-volta-blackwell]] — NVIDIA Tensor Core Evolution: Volta To Blackwell
+- [[semianalysis-2025-06-25-ai-training-grid-blackout]] — AI Training Load Fluctuations at Gigawatt-scale
+- [[semianalysis-2025-06-30-oracle-winning-ai-compute-market]] — How Oracle Is Winning the AI Compute Market
+- [[semianalysis-2025-07-03-deepseek-debrief-128-days]] — DeepSeek Debrief: >128 Days Later
+- [[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]] — Meta Superintelligence: Leadership Compute, Talent, and Data
+- [[semianalysis-2025-07-21-intel-18a-dram-vlsi2025]] — Intel 18A Details & Cost, Future of DRAM, VLSI 2025
+- [[semianalysis-2025-07-30-robotics-levels-of-autonomy]] — Robotics Levels of Autonomy
+- [[semianalysis-2025-08-12-scaling-memory-wall-hbm]] — Scaling the Memory Wall: The Rise and Roadmap of HBM
+- [[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]] — GPT-5 Set the Stage for Ad Monetization and the SuperApp
+- [[semianalysis-2025-08-20-h100-gb200-nvl72-training-benchmarks]] — H100 vs GB200 NVL72 Training Benchmarks
+- [[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]] — Amazon's AI Resurgence: AWS & Anthropic's Trainium Expansion
+- [[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]] — Huawei Ascend Production Ramp: HBM is The Bottleneck
+- [[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]] — Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack
+- [[semianalysis-2025-09-16-xai-colossus-2-gigawatt]] — xAI's Colossus 2: First Gigawatt Datacenter
+- [[semianalysis-2025-10-09-inferencemax-open-source-inference-benchmarking]] — InferenceMAX: Open Source Inference Benchmarking
+- [[semianalysis-2025-10-20-quadruped-state-market-unitree-boston-dynamics]] — Quadruped State of The Market: Unitree, Boston Dynamics
+- [[semianalysis-2025-10-26-nil-stop-saying-replace-euv]] — Nanoimprint Lithography: Stop Saying It Will Replace EUV
+- [[semianalysis-2025-10-29-kill-2-monopolies-1-tool]] — How to Kill 2 Monopolies with 1 Tool
+- [[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]] — ClusterMAX 2.0: The Industry Standard GPU Cloud Rating System
+- [[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]] — Microsoft's AI Strategy Deconstructed: From Energy to Tokens
+- [[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]] — TPUv7: Google Takes a Swing at the King
+- [[semianalysis-2025-12-01-tsmc-overseas-fabs-success]] — TSMC Overseas Fabs: A Success?
+- [[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]] — AWS Trainium3 Deep Dive: A Potential Challenger Approaching
+- [[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]] — How AI Labs Are Solving the Power Crisis: Onsite Gas Deep Dive
+- [[semianalysis-2026-01-01-cpo-book-scaling-interconnect]] — Co-Packaged Optics Book Scaling with Light for Next-Wave Interconnect
+- [[semianalysis-2026-01-06-rl-environments-science-data-foundries]] — RL Environments and RL for Science: Data Foundries
+- [[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]] — Apple-TSMC: The Partnership That Built Modern Semiconductors
+- [[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]] — Interconnects Beyond Copper, 1,000 CFETs, SK Hynix Next-Gen NAND
+- [[semianalysis-2026-01-15-tokens-burgers-water-footprint]] — From Tokens to Burgers: A Water Footprint Face-Off
+- [[semianalysis-2026-02-05-claude-code-inflection-point]] — Claude Code is the Inflection Point
+- [[semianalysis-2026-02-06-memory-mania-shortage-boom]] — Memory Mania: How a Once-in-Four-Decades Shortage Is Fueling a Boom
+- [[semianalysis-2026-02-09-cpus-back-datacenter-landscape]] — CPUs are Back: The Datacenter CPU Landscape in 2026
+- [[semianalysis-2026-02-16-blackwell-vs-amd-hopper-inference]] — InferenceX v2: NVIDIA Blackwell vs AMD vs Hopper
+- [[semianalysis-2026-02-25-vera-rubin-extreme-co-design]] — Vera Rubin Extreme Co-Design: Evolution from Grace Blackwell
+- [[semianalysis-2026-03-03-ai-datacenters-electric-bills]] — Are AI Datacenters Increasing Electric Bills for American Households?
+- [[semianalysis-2026-03-12-great-ai-silicon-shortage]] — The Great AI Silicon Shortage
+- [[semianalysis-2026-03-24-nvidia-inference-kingdom-expands]] — Nvidia: The Inference Kingdom Expands
+- [[semianalysis-2026-03-31-blackwell-tensor-cores-ptx-sass]] — Dissecting Nvidia Blackwell: Tensor Cores, PTX, SASS
+- [[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]] — The Great GPU Shortage: H100 Rental Price Index
+- [[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]] — ISSCC 2026: Nvidia & Broadcom CPO, HBM4 & LPDDR6
+- [[semianalysis-2026-04-20-how-much-gpu-clusters-cost]] — How Much Do GPU Clusters Really Cost?
+- [[semianalysis-2026-04-24-coding-assistant-breakdown-more-tokens]] — The Coding Assistant Breakdown: More Tokens Please
+- [[semianalysis-2026-05-01-ai-value-capture-model-labs]] — AI Value Capture: The Shift To Model Labs
+- [[semianalysis-2026-05-12-eda-primer-rtl-silicon]] — The EDA Primer: From RTL to Silicon
+- [[semianalysis-2026-05-13-cerebras-faster-tokens]] — Cerebras: Faster Tokens Please
+- [[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]] — EDA Market Primer: Cadence, Synopsys, Siemens, China EDA
+- [[semianalysis-2026-05-26-800vdc-datacenter-revolution]] — Inside the 800VDC Revolution Part 1
+- [[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]] — Anthropic Growth and Bedrock Mix Drive AWS Margins Higher
+- [[semianalysis-2026-05-28-finding-miscompiles-compiler-bugs]] — Finding Miscompiles for Fun, Not Profit
+- [[semianalysis-2026-05-29-ai-dark-output-visible-cost]] — AI Dark Output: The Visible Cost of Invisible Output
+- [[semianalysis-2026-06-03-case-for-space-datacenters]] — To Boldly Go: The Case for Space Datacenters
+- [[semianalysis-2026-06-08-unitree-dominate-global-robotics]] — China's Unitree Will Dominate Global Robotics
+- [[semianalysis-2026-06-09-deepseekv4-day0-day43-hardware-performance]] — DeepSeekV4 1.6T Day 0 to Day 43 Performance Over Time
+- [[semianalysis-2026-06-11-intel-should-raise-capital]] — Intel Should Raise Capital
+- [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] — Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?
+- [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] — RL Systems Mind the Gap: Matching Trainer and Generator Throughput
+
+### Semi Doped
+
+- [[semidoped-2026-04-24-googles-networking-innovations]] — Google's Networking Innovations
+- [[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]] — CapEx is just Memory Tax Now, DeepSeek V4 NAND Impact
+- [[semidoped-2026-05-08-power-next-physics-wall-ai]] — Power as the Next Physics Wall for AI
+- [[semidoped-2026-05-15-cerebras-ipo]] — Cerebras IPO
+- [[semidoped-2026-05-22-masterclass-ic-lithography]] — A Masterclass on IC Lithography
+- [[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]] — Huawei's Tau Scaling Law: Is the 'EUV Killer' Real?
+- [[semidoped-2026-06-12-computex-optics-power]] — Computex Mania 2026: Optics and Power

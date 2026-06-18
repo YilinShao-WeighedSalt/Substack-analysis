@@ -1,0 +1,77 @@
+---
+type: ticker
+title: "MRVL — Marvell Technology"
+tags: []
+related: ["[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-02-21-groq-inference-tokenomics]]", "[[irrationalanalysis-2024-03-08-q1-cy2024-marvell-broadcom]]", "[[semianalysis-2024-03-16-cxl-is-dead-ai-era]]", "[[semianalysis-2024-03-17-astera-labs-ipo-connectivity]]", "[[irrationalanalysis-2024-03-23-broadcom-ai-infra-day]]", "[[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[citrini-2024-07-03-interconnects-101]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-07-17-gb200-hardware-component-supply-chain-bom]]", "[[irrationalanalysis-2024-07-25-maxlinear-implosion-apple-modem]]", "[[irrationalanalysis-2024-08-17-background-proof-guide-on-ai]]", "[[irrationalanalysis-2024-08-23-harlan-sur-jpm-massive-avgo-scoop]]", "[[irrationalanalysis-2024-09-02-hot-chips-2024-irrational-recap]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[irrationalanalysis-2024-09-22-qualcomm-should-not-buy-intel]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[irrationalanalysis-2024-12-20-marvell-broadcom-micron]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-02-marvell-pcie7-existential-threat-astera]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[semianalysis-2025-03-19-nvidia-gtc-vera-rubin]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-05-08-marvell-losers-arm-bagholding]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-07-06-marvell-intel-catch-up-note]]", "[[irrationalanalysis-2025-07-19-aehr-micron-catch-up]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-02-marvell-buy-celestial-rumor]]", "[[irrationalanalysis-2025-12-07-celestial-ai-marvell-deep-dive]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2026-01-01-cpo-book-scaling-interconnect]]", "[[irrationalanalysis-2026-02-19-isscc-2026-irrational-recap]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-06-hilarious-short-squeeze]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[irrationalanalysis-2026-05-31-hbm-high-bandwidth-mistake]]", "[[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]]", "[[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[semidoped-2026-06-12-computex-optics-power]]"]
+created: 2024-02-08
+updated: 2026-06-12
+ticker: MRVL
+current_stance: long
+conviction: medium
+last_review: 2026-06-12
+---
+## Call log
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2024-02-08 | [[irrationalanalysis]] | MENTION | n/a | Under investigation as optics replacement after exiting Fabrinet |
+| 2024-02-21 | [[semianalysis]] | MENTION | n/a | Supplies custom ASIC services to Groq and collects chip margin, beneficiary regardless of Groq's end-market success |
+| 2024-03-08 | [[irrationalanalysis]] | SHORT | n/a | Carrier revenue in structural decline as 5G capex cycle ends; enterprise share being lost to Broadcom |
+| 2024-03-16 | [[semianalysis]] | MENTION | n/a | Collaborating with Google on a custom CXL chip for a narrow niche application, not a broad AI validation |
+| 2024-03-17 | [[semianalysis]] | MENTION | n/a | Named primary retimer competitor; previously attempted to acquire Astera before its IPO |
+| 2024-03-23 | [[irrationalanalysis]] | MENTION | n/a | Confirmed as Amazon's custom-silicon partner, locking Amazon out of Broadcom's customer list |
+| 2024-03-25 | [[semianalysis]] | LONG | n/a | DSP and retimer silicon required for 800G/1.6T transceivers; scales with backend InfiniBand NIC attach rate |
+| 2024-06-01 | [[irrationalanalysis]] | SHORT | n/a | Dumpster fire outside Amazon ASICs and optics re-timers; Broadcom encroaching; Trainium/Inferentia doomed by Nvidia Blackwell/Rubin |
+| 2024-07-03 | [[citrini]] | LONG | n/a | Pushing 400G-per-lane PAM optics enabling 3.2T interconnect modules; custom silicon and optical exposure. |
+| 2024-07-16 | [[irrationalanalysis]] | MENTION | n/a | Cited alongside AVGO as AI ASIC vendor Nvidia does not want to prop up |
+| 2024-07-17 | [[semianalysis]] | MENTION | n/a | Losing 100% DSP share on Nvidia optics to Broadcom as GB200 ramps; faces additional pressure from Nvidia's internal DSP effort |
+| 2024-07-25 | [[irrationalanalysis]] | MENTION | n/a | Holds ~80% share in PAM4 optics DSP market; dominant incumbent MXL is challenging |
+| 2024-08-17 | [[irrationalanalysis]] | LONG | n/a | Small speculative OTM calls; Amazon Trainium/Inferentia ramp, optical DSP buildout, possible sandbagged guidance |
+| 2024-08-23 | [[irrationalanalysis]] | SHORT | n/a | Competing custom-silicon provider losing design-win momentum as AVGO's platform advantage widens; Trainium/Inferentia wins at risk |
+| 2024-09-02 | [[irrationalanalysis]] | SHORT | n/a | Broadcom CPO will eliminate oDSP revenue by 2026; exit by summer 2025 |
+| 2024-09-04 | [[semianalysis]] | LONG | n/a | Named subsystem supplier for coherent DSPs and networking silicon enabling high-baud-rate DCI links |
+| 2024-09-06 | [[irrationalanalysis]] | LONG | n/a | Holds March 2025 $90 calls; Amazon custom silicon ramp not yet hit, oDSP revenue going parabolic |
+| 2024-09-17 | [[irrationalanalysis]] | MENTION | n/a | Designer of Amazon AI ASICs that Intel's new fabric NIC will interface with |
+| 2024-09-22 | [[irrationalanalysis]] | MENTION | n/a | Named as winning O-RAN share from Intel with custom ASICs alongside Qualcomm |
+| 2024-10-20 | [[irrationalanalysis]] | LONG | n/a | High-risk tactical long; 2025 call options on Trainium 2 ramp |
+| 2024-12-02 | [[irrationalanalysis]] | MENTION | n/a | Near-term swing trade on Trainium 2 ramp; long-term loser as LPO/CPO erode oDSP business |
+| 2024-12-03 | [[semianalysis]] | MENTION | n/a | Sole supplier of Teralynx ASICs used in Trainium2 top-of-rack white-box switches |
+| 2024-12-20 | [[irrationalanalysis]] | SHORT | n/a | Toxic; Trainium 3 reportedly moved to Alchip, threatening a key customer ramp anchor |
+| 2024-12-27 | [[irrationalanalysis]] | SHORT | n/a | Skeptical 224G N3 SerDes supports LR/KR spec; concerns about Trainium 3 loss to Alchip |
+| 2025-02-02 | [[irrationalanalysis]] | LONG | n/a | Superior in-house SerDes and new AWS warrant position make it the likely winner of the AI PCIe switch socket. |
+| 2025-03-15 | [[irrationalanalysis]] | SHORT | n/a | Trainium 2 backplane yield ~25% and stability failures; Amazon pivoting to Trainium 3 via Alchip; only hope MSFT Maia 2 H2 2026 |
+| 2025-03-19 | [[semianalysis]] | MENTION | n/a | CPO networking strategy relevant backdrop to NVIDIA's CPO switch announcements |
+| 2025-03-22 | [[irrationalanalysis]] | SHORT | n/a | MediaTek/Nvidia IP agreement described as 'very bad for Marvell' |
+| 2025-04-12 | [[irrationalanalysis]] | SHORT | n/a | oDSP revenue from Inphi acquisition structurally eliminated by CPO; CPO solution is vaporware; attractive funding short |
+| 2025-05-08 | [[irrationalanalysis]] | SHORT | n/a | Botched N3P 224G SerDes port causes oDSP reliability failures and market share losses |
+| 2025-05-17 | [[irrationalanalysis]] | SHORT | n/a | Maia 2 ASIC win at risk from Broadcom NRE competition; Trainium 3 likely going to Alchip |
+| 2025-05-22 | [[irrationalanalysis]] | SHORT | n/a | 200G SerDes publicly admitted as inadequate; Trainium 3 IO die win is a consolation prize after failures. |
+| 2025-06-13 | [[semianalysis]] | MENTION | n/a | UALink switch delays contributed to AMD choosing Broadcom; Thor-2/3 NIC adoption also facing headwinds |
+| 2025-06-15 | [[irrationalanalysis]] | SHORT | n/a | 3nm DSP is a measurable regression vs. 5nm; SerDes competitive position deteriorating across optical and AEC markets |
+| 2025-07-06 | [[irrationalanalysis]] | SHORT | n/a | SerDes failures across Amazon Trainium and Microsoft Maia XPU programs undermine the custom silicon franchise |
+| 2025-07-19 | [[irrationalanalysis]] | MENTION | n/a | Briefly referenced as a bonus meme with no investment thesis |
+| 2025-08-01 | [[irrationalanalysis]] | SHORT | n/a | Ongoing short conviction; awaiting multi-sourced negative catalyst to publish detailed writeup |
+| 2025-08-22 | [[irrationalanalysis]] | SHORT | n/a | Ring modulators require a custom DSP; Nvidia using internal DSP cuts Marvell's gearbox business out of 1.6T transceiver stack |
+| 2025-09-13 | [[irrationalanalysis]] | SHORT | 72 | Lost Trainium 3 socket to Alchip, management obfuscating guidance, weak competitive position in networking |
+| 2025-10-01 | [[irrationalanalysis]] | LONG | n/a | 1.6T DSP re-spun and winning Nvidia socket; Alaska AEC wins Amazon; D2D PHY favored for Meta mini-ASIC |
+| 2025-10-24 | [[irrationalanalysis]] | LONG | n/a | Alaska AEC product superior to Credo; 800G transceiver cycle drives massive revenue growth; explicitly pitched long at conference |
+| 2025-12-02 | [[irrationalanalysis]] | LONG | n/a | Acquisition of Celestial AI fills a critical CPO technology gap after Marvell's DR-MZI approach showed no credible performance data at OCP 2025 |
+| 2025-12-07 | [[irrationalanalysis]] | NEUTRAL | n/a | Binary outcome: Celestial AI either transforms MRVL at Inphi+Mellanox scale or goes to zero on GR-468 germanium EAM qualification failure |
+| 2025-12-21 | [[irrationalanalysis]] | LONG | n/a | Binary high-variance bet; Celestial AI acquisition aimed at re-acquiring Amazon for Trainium 5+ |
+| 2026-01-01 | [[semianalysis]] | LONG | n/a | Acquisition of Celestial AI positions Marvell for ~$1B CPO revenue run rate by end of 2028 via Amazon Trainium 4 scale-up integration |
+| 2026-02-19 | [[irrationalanalysis]] | LONG | n/a | 100% of Marvell valuation should derive from Celestial; ISSCC EAM results excellent even accounting for favorable test conditions |
+| 2026-03-05 | [[irrationalanalysis]] | SHORT | n/a | Held MRVL puts; puts going to zero per trading snapshot (losing trade, still short-biased) |
+| 2026-03-06 | [[irrationalanalysis]] | SHORT | n/a | Author held puts into earnings; squeeze to zero was positioning-driven, not a fundamental re-rating; 5-year performance has only matched SPX |
+| 2026-03-27 | [[irrationalanalysis]] | SHORT | n/a | Optical DSP franchise under attack from LPO/XPO/CPO/NPO and new entrants; Celestial is the only offset |
+| 2026-04-15 | [[semianalysis]] | MENTION | n/a | Coherent-lite 800G transceiver targets campus datacenter links at half the power of full coherent |
+| 2026-04-16 | [[globalsemiresearch]] | LONG | n/a | Four-technology stack (UALink, CXL Structera, Google LPU ASIC, memory architecture) plus hyperscaler partnerships position Marvell to become the next AI chip giant |
+| 2026-05-31 | [[irrationalanalysis]] | MENTION | n/a | Custom HBM base die work and CXL position cited as partial solutions to the memory bandwidth problem |
+| 2026-06-02 | [[globalsemiresearch]] | LONG | n/a | End-to-end AI data center portfolio and custom silicon ramp position Marvell as next trillion-dollar AI infrastructure company |
+| 2026-06-03 | [[irrationalanalysis]] | NEUTRAL | n/a | Author declines to buy despite 60% week; Structera CXL and dense SRAM are real but underappreciated catalysts, motivation behind Jensen's $2B investment unclear |
+| 2026-06-10 | [[globalsemiresearch]] | MENTION | n/a | Spectrum-6 ASIC is central to the CPO yield debate; sold off on the SemiAnalysis note |
+| 2026-06-12 | [[semidoped]] | LONG | n/a | Jensen's public endorsement plus 102.4 Tbps Teralynx switch validates interconnect leadership; ASIC/optical cross-sell is underappreciated |
+
+## Thesis evolution
+The irrationalanalysis view on MRVL oscillated dramatically over the covered period, beginning as a short in early 2024 (5G carrier decline, Broadcom encroachment) before flipping tactically long in late 2024 on the Amazon custom-silicon ramp narrative, then crashing back to a sustained short through mid-2025 as SerDes failures at Trainium 2 and the confirmed loss of Trainium 3 to Alchip destroyed confidence in the custom-silicon franchise. The pivot to long came in October 2025 when the re-spun 1.6T DSP won a Nvidia socket and the Alaska AEC product proved superior to Credo in AEC; the Celestial AI acquisition in December 2025 then shifted the entire bull case to a CPO binary — if Celestial's germanium EAM passes GR-468 qualification, Marvell becomes the sole vertically-integrated CPO vendor at hyperscale; if it fails, the acquisition is worthless. SemiAnalysis has been more consistently constructive on specific product categories (DSP/retimer for 800G, Teralynx switching, Celestial CPO roadmap) while noting individual design-win losses. GlobalSemiResearch is the most broadly bullish outlet, framing Marvell in April and June 2026 as a potential next trillion-dollar AI infrastructure company on the strength of UALink, CXL Structera, Google LPU, and custom HBM work. Irrationalanalysis remains cautiously neutral-to-long as of June 2026, acknowledging the Structera and SRAM catalysts but expressing skepticism about Jensen Huang's $2B investment rationale and declining to add exposure after the sharp June 2026 rally.
+
+## Outcome tracking
+The only px@call with a recorded price is the September 2025 short at $72; the stock rallied sharply enough by Q4 2025 for the author to pivot to long by October 2025 and subsequently describe a 60% weekly move by June 2026, implying the short at $72 was ultimately a losing trade and that the stock moved well above that level. The thesis trajectory is now a binary on Celestial AI's GR-468 germanium EAM qualification: a pass would validate the bull case put forward by irrationalanalysis, SemiAnalysis, and GlobalSemiResearch and anchor a large CPO revenue ramp beginning with Trainium 4; a fail would remove the only credible offset to the ongoing structural erosion of the legacy oDSP business from LPO/CPO/XPO displacement. The live long view held by most tracked publications as of June 2026 would be falsified by GR-468 qualification failure, loss of the Nvidia 1.6T DSP socket, or further hyperscaler defections on custom silicon programs.

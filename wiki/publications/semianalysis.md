@@ -1,0 +1,26 @@
+---
+type: publication
+title: "SemiAnalysis"
+tags: []
+related: []
+created: 2024-01-03
+updated: 2026-06-16
+handle: semianalysis
+calls_logged: 173
+hit_rate: "n/a"
+---
+## Profile
+SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
+
+## Coverage
+104 analysis posts ingested (2024-01-03 -> 2026-06-16); ~173 ticker calls.
+
+## Notable calls & track record
+- **TSMC / CoWoS — LONG structural (2023–2024):** Identified CoWoS advanced packaging as the primary binding constraint on AI accelerator output ahead of consensus, with detailed capacity projections showing TSMC growing from ~13k wafers/month (end-2023) to 30–35k (end-2024). Thesis validated: CoWoS became the most-watched supply-chain bottleneck in semis and TSMC's packaging franchise re-rated sharply higher through 2024–2025.
+- **NVDA Blackwell GB200 supply chain (mid-2024):** Published a component-level BoM model for GB200 NVL72/NVL36 systems, mapping 50+ subcomponent categories and flagging power-delivery and liquid-cooling ramp risks. Called Blackwell shipment delays before they became widely reported; directionally correct on timing slippage through late 2024.
+- **MU / HBM skepticism (2024):** Expressed skepticism that Micron could deliver leading-edge HBM3 at high volume in early 2024, citing struggles ramping top-bin HBM2E and lagging pin-speed vs. SK Hynix. A subsequent SemiAnalysis report on NVIDIA reducing per-GPU memory capacity triggered a 13% single-day drop in MU; Micron's HBM ramp did trail SK Hynix in 2024, though Micron ultimately secured HBM4 certification. Full outcome mixed.
+- **Intel IFS — bearish (2024–2025):** Patel stated IFS cannot compete with TSMC and Samsung on cost, and that external customer traction remains insignificant. Intel cut 2024 CapEx by 20%+, and IFS remained negligible in external revenue through 2025; call directionally correct.
+- **NVDA AI accelerator dominance — persistent LONG (2024–2026):** Modeled NVIDIA commanding 86%+ data-center GPU market share through FY2025, with $115B+ in data-center revenue. Thesis has tracked: NVDA became the world's most valuable company by mid-2026. Market share projected to decline modestly to ~75% by 2026 as custom ASICs scale — outcome TBD.
+- **HBM Big Three capacity absorption (2025):** Projected that most incremental DRAM wafer capacity would be absorbed by HBM, consuming 3–4x the wafer area of commodity DRAM, structurally tightening the DRAM market. HBM demand has exceeded commodity DRAM growth expectations through 2025–2026; outcome broadly correct.
+- **Custom ASIC / hyperscaler silicon inflection (2024–2025):** Called the inflection in Google TPU, AWS Trainium, Microsoft Maia, and Meta MTIA earlier than most sell-side, projecting 44%+ CAGR for custom ASIC through 2033 and a structural share shift away from merchant GPU. ASIC buildouts have materially accelerated; full market-share impact still unfolding — outcome TBD.
+- **Samsung HBM vs. SK Hynix (2024):** Characterized SK Hynix as the clear leader in new-generation HBM technologies with Samsung working to catch up. SK Hynix retained pole position on HBM3E supply into NVIDIA through 2024–2025; call correct.
