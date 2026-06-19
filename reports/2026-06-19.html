@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Semiconductor Scan — June 19, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-muted: #64748b;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e2e8f0;
+    --green: #16a34a;
+    --green-bg: #dcfce7;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --gray: #6b7280;
+    --gray-bg: #f1f5f9;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --red: #dc2626;
+    --red-bg: #fef2f2;
+    --purple: #7c3aed;
+    --purple-bg: #f5f3ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+  h4 { font-size: 1.05rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+  p { margin-bottom: 0.75rem; }
+  .date-label { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); font-size: 0.9rem; }
+  .summary-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .summary-box h3 { margin-top: 0; color: var(--accent); }
+  .macro-context {
+    background: var(--purple-bg);
+    border-left: 4px solid var(--purple);
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0 2rem;
+    font-size: 0.92rem;
+  }
+  .macro-context strong { color: var(--purple); }
+  .scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+    font-size: 0.88rem;
+  }
+  .scoreboard th {
+    background: var(--text);
+    color: white;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .scoreboard td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+  .scoreboard .ticker-cell { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-mixed { background: var(--purple-bg); color: var(--purple); }
+  .pub-header {
+    font-size: 1.65rem;
+    font-weight: 800;
+    margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent);
+  }
+  .post-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .post-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  .analysis-box {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; font-size: 1.05rem; }
+  .ticker-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .ticker-card h4 { margin-top: 0; }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+  .metric-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    text-align: center;
+  }
+  .metric-box .metric-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .metric-box .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .prior-calls {
+    background: var(--accent-light);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    font-size: 0.88rem;
+  }
+  .prior-calls strong { color: var(--accent); }
+  .validation-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+  .v-strong { background: var(--green-bg); color: var(--green); }
+  .v-partial { background: var(--amber-bg); color: var(--amber); }
+  .v-limited { background: var(--gray-bg); color: var(--gray); }
+  .v-contra { background: var(--red-bg); color: var(--red); }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 0.75rem 0;
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--bg-alt);
+    border-radius: 0 6px 6px 0;
+  }
+  .confidence-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  .conf-high { background: var(--green-bg); color: var(--green); }
+  .conf-med { background: var(--amber-bg); color: var(--amber); }
+  .conf-low { background: var(--gray-bg); color: var(--gray); }
+  ul { margin: 0.5rem 0 0.75rem 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<h1>Substack Semiconductor Scan</h1>
+<p class="date-label">June 19, 2026 &mdash; Covering June 16&ndash;18</p>
+
+<!-- SUMMARY BOX -->
+<div class="summary-box">
+  <h3>Scan Summary</h3>
+  <p><strong>4 new posts</strong> from <strong>2 publications</strong> (SemiAnalysis, Semi Doped). Irrational Analysis, Global Semi Research, and Citrini had no new posts this window.</p>
+  <p><strong>Key themes:</strong> US datacenter capacity delays are vastly overblown per SemiAnalysis's satellite-verified model; HBM4E samples shipping from SK Hynix; Intel 18A-P hits risk production on schedule; TSMC choosing glass CoWoS over panel for largest AI chips; AMD acquires MEXT for flash-as-DRAM; Broadcom AI revenue could triple by FY28; VCSELs emerging as GaAs alternative for scale-up interconnect.</p>
+  <p><strong>Top actionable tickers:</strong> <span class="tag tag-long">LONG</span> VRT, AVGO, INTC, AMKR, AEHR &nbsp; <span class="tag tag-neutral">NEUTRAL</span> CRWV, NBIS, AMD (GPU bear / CPU bull)</p>
+</div>
+
+<!-- MACRO CONTEXT -->
+<div class="macro-context">
+  <strong>Macro Context (June 17):</strong> Fed held at 3.5&ndash;3.75% but 9/18 officials penciled in 2026 hikes. S&amp;P 500 &minus;1.2%, Nasdaq &minus;1.3%, 2Y yield +17bp to 4.22%. Apple flagged DRAM/NAND cost pressure. US-Iran interim pact pushed oil lower. Retail sales beat (+0.9% vs +0.5% expected). Risk-off tone across equities.
+</div>
+
+<!-- TICKER SCOREBOARD -->
+<h3>Ticker Scoreboard</h3>
+<table class="scoreboard">
+<thead>
+  <tr>
+    <th>Ticker</th>
+    <th>Stance</th>
+    <th>Price</th>
+    <th>Mkt Cap</th>
+    <th>P/E (TTM)</th>
+    <th>Source</th>
+    <th>Wiki Calls</th>
+    <th>Confidence</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="ticker-cell">VRT</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>$333.96</td>
+    <td>$128.2B</td>
+    <td>~75x</td>
+    <td>SemiAnalysis</td>
+    <td>9th call (8 prior)</td>
+    <td><span class="confidence-tag conf-high">HIGH</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">AVGO</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>$408.24</td>
+    <td>$1.94T</td>
+    <td>~65x (fwd ~25x)</td>
+    <td>Semi Doped</td>
+    <td>70th call (69 prior)</td>
+    <td><span class="confidence-tag conf-med">MEDIUM</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">INTC</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>~$99&ndash;122</td>
+    <td>$588B</td>
+    <td>fwd ~114x</td>
+    <td>Semi Doped</td>
+    <td>74th call (73 prior)</td>
+    <td><span class="confidence-tag conf-med">MEDIUM</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">AMD</td>
+    <td><span class="tag tag-mixed">MIXED</span></td>
+    <td>$507.29</td>
+    <td>$834B</td>
+    <td>~165x (fwd ~59x)</td>
+    <td>Semi Doped</td>
+    <td>68th call (67 prior)</td>
+    <td><span class="confidence-tag conf-low">LOW</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">AMKR</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>$91.00</td>
+    <td>$21.4B</td>
+    <td>~49x</td>
+    <td>Semi Doped</td>
+    <td>4th call (3 prior)</td>
+    <td><span class="confidence-tag conf-med">MEDIUM</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">AEHR</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>$103.03</td>
+    <td>~$1.4B</td>
+    <td>N/M</td>
+    <td>Semi Doped</td>
+    <td>8th call (7 prior)</td>
+    <td><span class="confidence-tag conf-med">MEDIUM</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">000660.KS</td>
+    <td><span class="tag tag-long">LONG</span></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>Semi Doped</td>
+    <td>19th call (18 prior)</td>
+    <td><span class="confidence-tag conf-high">HIGH</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">CRWV</td>
+    <td><span class="tag tag-neutral">NEUTRAL</span></td>
+    <td>$114.61</td>
+    <td>$54.8B</td>
+    <td>N/M</td>
+    <td>SemiAnalysis</td>
+    <td>7th call (6 prior)</td>
+    <td><span class="confidence-tag conf-low">LOW</span></td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">NBIS</td>
+    <td><span class="tag tag-neutral">NEUTRAL</span></td>
+    <td>$285.50</td>
+    <td>$72.2B</td>
+    <td>~73x</td>
+    <td>SemiAnalysis</td>
+    <td>2nd call (1 prior)</td>
+    <td><span class="confidence-tag conf-med">MEDIUM</span></td>
+  </tr>
+</tbody>
+</table>
+
+<!-- ==================== SEMIANALYSIS ==================== -->
+<h2 class="pub-header">SemiAnalysis</h2>
+
+<div class="post-card">
+  <div class="post-title">Stop Saying Half of 2026 US Datacenter Capacity Is Canceled</div>
+  <div class="post-meta">June 18, 2026 &bull; Reyk Knuhtsen, Maya Barkin, Jeremie Eliahou Ontiveros + 2 others &bull; ~5,200 words</div>
+
+  <h4>Summary</h4>
+  <p>SemiAnalysis directly refutes the widespread claim&mdash;originating from Bloomberg's April 1, 2026 article and amplified by TechRadar, Tom's Hardware, and others&mdash;that half of 2026 US datacenter capacity has been delayed or canceled. The team argues this narrative is built on fatally flawed data and methodology.</p>
+
+  <p><strong>The denominator problem:</strong> The "50% canceled" figure traces to Sightline Climate, which estimates ~12 GW expected and only ~5 GW under construction. SemiAnalysis says this is off by multiples: the top two hyperscalers alone exceed 5 GW of self-build under construction, before counting third-party developers. Sightline's dataset tracks only large, publicly announced projects&mdash;the very slice most prone to slipping&mdash;creating survivorship bias in the numerator.</p>
+
+  <p><strong>SemiAnalysis's own model:</strong> Over the last 6 months, their YE2026 NA Hyperscaler self-build forecast moved by only ~1%, and NA colocation by &lt;5%. They attribute the discrepancy to "vibecoded" (Claude-generated) datacenter models that take press releases at face value without critical judgment about construction timelines, equipment procurement, or grid interconnection realities.</p>
+
+  <p><strong>Three categories of "delay":</strong></p>
+  <ul>
+    <li><strong>Aggressive announcements by new entrants:</strong> Data City/Energy Abundance (5 GW campus, 300 MW by 2026&mdash;no physical progress on satellite), APR Energy (400 MW Texas, no customer, no news), Cloudburst (1.2 GW announced, 50 MW phase progressing but shell construction not started). These projects had unrealistic timelines from inception.</li>
+    <li><strong>Advanced projects with optimistic timelines:</strong> Detailed case studies of Nebius NJ (DataOne built shell fast but MEP/commissioning far exceeded timeline&mdash;25 MW by Oct 2025, 50 MW by ~Feb 2026, versus original targets of July and September 2025) and Core Scientific Denton (weather, transformer explosion, GB200 redesign delays). SemiAnalysis predicted CoreWeave's Q3 earnings delays and successfully forecast 1.7 GW active power by YE2026.</li>
+    <li><strong>Permitting and NIMBY:</strong> Oracle/STACK New Mexico detailed as the most consequential real delay. Two behind-the-meter gas microgrids squeezed under the 250 tpy NOx major-source threshold; NMED ordered public hearings; 7,155 public comments filed; Oracle withdrew turbine applications and switched to Bloom Energy fuel cells; but the binding constraint is a 400,000 Dth/d gas pipeline. Transwestern's Green Chile Pipeline hit NM State Land Office right-of-way denial, FERC Section 7 review, and no SHPO clearance. <strong>SemiAnalysis delays this site to 2029.</strong></li>
+  </ul>
+
+  <p><strong>Moratoriums are noise:</strong> 12+ states have filed moratorium bills, Indiana has four county-level enactments, and Maine's governor vetoed a statewide datacenter ban&mdash;but Maine has &lt;5 MW planned. These measures land in areas with minimal existing or planned datacenter activity.</p>
+
+  <p><strong>ERCOT reality check:</strong> 410 GW of large-load interconnection requests (87% from datacenters) versus Texas's 85 GW all-time peak. SemiAnalysis identifies 311 GW as "phantom datacenter demand." Texas SB 6 (site control documentation, $100K study fees, mandatory curtailment) is filtering out speculative filings as designed.</p>
+
+  <p><strong>Equipment suppliers are fine:</strong> Canceled projects never placed equipment orders. Prepayments of 10&ndash;15% are standard for queue position. Reinhausen tap-changer bushings are quoted 3&ndash;5 years; most critical SKUs 1+ year; GE Vernova, Hitachi Energy, Mitsubishi Electric booked 3&ndash;4 years. Queue depth means reallocated slots, not lost orders. Chinese OEMs (xAI likely uses Sieyuan transformers) are quietly alleviating bottlenecks. Modular/prefabricated builds compress supply-chain complexity and labor requirements.</p>
+
+  <p><strong>Leading operators' playbooks:</strong> Hyperscalers use political playbooks (land-use attorneys, utility relationships, community investment like Microsoft's $31M Quincy water reuse) and physical playbooks (behind-the-meter generation, powered land deals, long-lead procurement during scoping, prefab builds). When opposition kills a project, operators withdraw quietly and relocate.</p>
+
+  <blockquote>"The cancellations and delays cluster in a layer of the pipeline we already treat as structurally oversupplied. The veritable 2026 projects continue to progress on schedule."</blockquote>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Logic assessment:</strong> The argument is rigorous and well-evidenced. The distinction between announcement-stage projects (structurally oversupplied, never going to deliver in 2026) and execution-stage projects (site control, equipment orders, vertical construction) is the critical insight. The specific case studies with satellite imagery timestamps, FERC filings, and NMED documents give the claim far more credibility than the Bloomberg/Sightline methodology.</p>
+
+    <p><strong>Self-serving bias:</strong> This article is simultaneously a market analysis and a sales pitch for SemiAnalysis's Datacenter Industry Model, Energy Model, and Industrials Model. Every section ends with "check our model for details" or "contact us for more." The piece benefits commercially from debunking the Bloomberg narrative because it positions SemiAnalysis as the only reliable source. That said, the underlying argument doesn't require accepting their model as authoritative&mdash;the critique of Sightline's denominator is independently verifiable.</p>
+
+    <p><strong>What would need to be true for this to be WRONG:</strong> (1) If real, capitalized, equipment-ordered projects begin failing at rates similar to speculative ones&mdash;this would mean the supply chain constraints are binding even for well-prepared operators. (2) If the Chinese OEM workaround (Sieyuan transformers) gets shut down by tariffs or executive order. (3) If behind-the-meter generation faces broader regulatory pushback beyond the Oracle/STACK NM case. (4) If hyperscaler capex actually pulls back in H2 2026 (June 17 Fed hawkishness is a risk).</p>
+
+    <p><strong>Cherry-picking risk:</strong> The article focuses on speculative projects failing to prove delays are overblown, but the Oracle/STACK NM case&mdash;a well-capitalized, real project delayed to 2029&mdash;is buried as a third category. How many more Oracle-type delays are in the pipeline that haven't surfaced yet?</p>
+
+    <p><strong>Equipment supplier thesis:</strong> The VRT/Vertiv bull case (backlogs secure because canceled projects never placed orders) is logically sound but ignores margin risk from slowing order growth rates, even if existing backlogs are safe. A stock at 75x P/E needs growth acceleration, not just backlog protection.</p>
+
+    <p><strong>Memory check (wiki):</strong> SemiAnalysis has covered datacenter infrastructure extensively. Their April 2025 note correctly identified that Wall Street was misreading lease cancellations as VRT orderbook misses. Their October 2024 datacenter electrical systems piece, followed by the May 2025 datacenter freeze analysis, showed evolving and self-correcting analysis. They correctly predicted CoreWeave delays ahead of CRWV Q3 earnings. Track record on datacenter-specific calls: <strong>STRONG.</strong></p>
+
+    <p><strong>Confidence:</strong> <span class="confidence-tag conf-high">HIGH</span> on the core thesis that headline "50% delayed" is misleading. <span class="confidence-tag conf-med">MEDIUM</span> on the equipment supplier bull case (VRT valuation already bakes in structural demand).</p>
+  </div>
+</div>
+
+<!-- ==================== SEMI DOPED ==================== -->
+<h2 class="pub-header">Semi Doped</h2>
+
+<!-- DAILY UPDATE JUNE 18 -->
+<div class="post-card">
+  <div class="post-title">Daily Update &mdash; June 18, 2026</div>
+  <div class="post-meta">June 18, 2026 &bull; Austin Lyons &amp; Vik Sekar &bull; ~1,250 words</div>
+
+  <h4>Summary</h4>
+
+  <p><strong>1. ASML CEO on Terafab:</strong> Christophe Fouquet told Bloomberg that Elon Musk's proposed "Terafab" semiconductor project would be an extreme test for industry supply lines. ASML is the sole EUV scanner supplier, and a fab targeting wafer volumes an order of magnitude above today's largest facilities would strain tool output, materials, and skilled labor. Vik notes: "If Terafab comes online, we ain't seen nothin' yet regarding supply chain shortages. Big boost for semicap names."</p>
+
+  <p><strong>2. NOR Flash / SLC NAND prices surge 100%+ in 1H26:</strong> TrendForce reports contract prices increased over 100% in the first half of 2026 as major memory suppliers prioritize HBM and advanced-layer 3D NAND, constraining mature-node capacity. TrendForce projects continued increases in 2H26: high-density NOR Flash potentially +60&ndash;65%, SLC NAND +70&ndash;75%. Vik notes Kioxia phased out SLC NAND in favor of TLC/QLC, but SLC still has demand for KV cache applications due to lower latency.</p>
+
+  <p><strong>3. SK Hynix ships 12-layer HBM4E samples:</strong> Samples reach maximum speed of 16 Gbps per pin using Advanced MR-MUF packaging with 17% reduced heat resistance. Built on TSMC 3nm base die. Vik highlights 3nm for base die "really kicks up pin speeds a notch." Austin questions how much speed gain is node-dependent vs. architecture&mdash;if 3nm is the major contributor, competitors will follow.</p>
+
+  <p><strong>4. Samsung gains chip orders as TSMC capacity strains:</strong> BYD, Google, and AMD increasingly seeking Samsung for contract chipmaking as AI infrastructure demand strains TSMC's advanced node capacity. Vik notes TSMC's $56B capex may not be enough given years-long capacity build timelines; "TSMC's conservatism might be their own Achilles heel."</p>
+
+  <p><strong>5. Aehr Test secures follow-on order:</strong> FOX-XP wafer-level burn-in system for silicon photonics-based transceivers, configured to test 9 wafers in parallel, delivery within 6 months. Customer described as "global leader in networking products." Vik identifies customer as likely Broadcom. This is the second order after the April $41M initial order.</p>
+
+  <p><strong>6. Broadcom AI revenue could triple by FY28:</strong> Wolfe Research states AVGO's AI XPU volume could reach 15 GW by FY28, driving $250&ndash;300B in FY28 XPU revenue if Apollo/Blackstone XPV financing vehicle for Anthropic's FY26 Broadcom purchases is fully funded. JPMorgan confirmed no TPU delays or cancellations. Vik adds TPU v9 is not delayed but Google's CoT may be 18 months behind.</p>
+
+  <p><strong>7. Quick Takes:</strong> CoreWeave first to bring up Vera Rubin NVL72. China highlights 5 AI models trained on domestic chips. Infineon Malaysia draws 1,000+ applicants for production jobs.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>NOR/SLC pricing surge:</strong> This is a genuine supply-side constraint worth monitoring. When memory makers reallocate capacity to HBM and advanced NAND, the tail wags&mdash;legacy products in automotive, industrial, and KV cache applications face structurally tight supply. The 100%+ increase is not demand-driven euphoria; it's rational pricing in a capacity-constrained market. However, 2H26 projections of +60&ndash;75% additional increases seem aggressive&mdash;at some point, OEMs redesign around these components or secondary suppliers enter.</p>
+
+    <p><strong>HBM4E 16 Gbps/pin:</strong> Impressive but expected. SK Hynix has been the consistent leader in HBM generations and this tracks with the wiki's 18-call history of bullish calls on 000660.KS. The 3nm base die question Austin raises is sharp&mdash;if the speed gains are primarily node-dependent, Samsung's foundry overflow orders could enable faster competitive catch-up than expected.</p>
+
+    <p><strong>AVGO $250&ndash;300B FY28 revenue:</strong> This would represent a near-tripling from current levels. The Wolfe Research framing explicitly conditions this on Anthropic financing coming together, making it a scenario rather than a base case. The market is already pricing AVGO at $1.94T (~65x TTM P/E), so meaningful upside requires this scenario materializing AND no customer concentration risk from Google/Anthropic/Apple dependency. The "TPU v9 not delayed" JPM note removes a near-term risk.</p>
+
+    <p><strong>AEHR Broadcom speculation:</strong> Vik's identification of Broadcom as the "global leader in networking products" customer is plausible given Broadcom's silicon photonics transceiver push for CPO. Two orders in ~3 months signals production commitment, not just evaluation. At $103 and unprofitable, AEHR remains speculative but the wafer-level burn-in thesis for AI optics is gaining real traction&mdash;a meaningful upgrade from the wiki's March 2026 "exploratory/no conclusion" status.</p>
+
+    <p><strong>Samsung absorbing TSMC overflow:</strong> This is a structural story that validates the thesis multiple publications have been building: TSMC capacity constraints are real and persistent. Samsung's participation as an overflow valve introduces yield quality questions&mdash;historically Samsung foundry has lagged TSMC on advanced node yields. If BYD/Google/AMD are going to Samsung, it's out of necessity, not preference.</p>
+
+    <p><strong>Confidence:</strong> <span class="confidence-tag conf-med">MEDIUM</span> &mdash; Semi Doped daily updates aggregate and contextualize news rather than building primary theses; the analysis quality is in the practitioner commentary (Vik and Austin), not in original research.</p>
+  </div>
+</div>
+
+<!-- DAILY UPDATE JUNE 17 -->
+<div class="post-card">
+  <div class="post-title">Daily Update &mdash; June 17, 2026</div>
+  <div class="post-meta">June 17, 2026 &bull; Austin Lyons &amp; Vik Sekar &bull; ~1,160 words</div>
+
+  <h4>Summary</h4>
+
+  <p><strong>1. Intel 18A-P enters risk production:</strong> Intel Foundry announced at the 2026 VLSI Symposium that 18A-P&mdash;the first performance enhancement in the Intel 18A family&mdash;has entered risk production on schedule. This includes new transistor width options for power-sensitive circuits, a fifth voltage threshold (VT), and Power Boost dual contact on the widest transistors. Thermal improvements were co-developed with EDA vendors. Austin notes: "Each one is a new knob. More ways to trade power for performance&mdash;that's how mature foundry PDKs work." Vik: "The world needs an alternative to TSMC's 2nm/3nm which is vastly oversubscribed."</p>
+
+  <p><strong>2. TSMC picks glass CoWoS over panel:</strong> TSMC declared wafer-level CoWoS packaging will remain its preferred path for the largest AI processors, with panel-level packaging unlikely to replace it near-term. CoWoS scales to 58 dies in a single package with glass substrates (better thermal match to silicon than organic). Vik pushes back: "Does TSMC really think CoWoS will scale to 14x reticle size? I don't buy it. They're undermining the fact that Intel EMIB already is on rectangular panels."</p>
+
+  <p><strong>3. TSMC + Amkor 10-year US packaging pact:</strong> 10-year partnership to expand advanced semiconductor packaging and test capacity in the US, complementing TSMC's Arizona fab investments. Vik: "Amkor is the arms dealer for advanced packaging&mdash;partnerships with both TSMC for CoWoS and Intel for EMIB."</p>
+
+  <p><strong>4. AttoTude raises $52M Series C:</strong> Terahertz interconnect technology for AI infrastructure, addressing bandwidth bottlenecks. Uses THz RF for datacenter interconnects&mdash;an alternative to InP-based approaches alongside VCSELs and MicroLEDs.</p>
+
+  <p><strong>5. Nokia doubles Pennsylvania chip packaging footprint:</strong> Expansion of advanced test and packaging operations in Allentown, PA for optical networking components used in AI infrastructure. Nearly doubling workforce to 500+ with $500M+ economic impact over 5 years.</p>
+
+  <p><strong>6. Applied Materials + EssilorLuxottica partner on AR optics:</strong> JDA for smart eyewear and AR lens stacks. Vik skeptical: "I don't think these smart glasses will catch on."</p>
+
+  <p><strong>7. Stock movers June 16:</strong> CRWV +9.7%, WDC +4.2%, NBIS +1.9%. Down: MRVL &minus;9.8%, MU &minus;6.2%.</p>
+
+  <p><strong>8. Quick Hits:</strong> Coherent $50M CHIPS LOI for AI manufacturing. Vertiv acquires ThermoKey for heat rejection in AI data centers. Nvidia explores compute futures market. SK Hynix expands HBM4 packaging potentially with Nvidia. Semiconductor market surpassed $300B in Q1 2026 per Omdia.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>Intel 18A-P risk production:</strong> This is the single most important data point in this scan for the INTC thesis. The wiki documents 73 prior calls on Intel with the thesis arc moving from relentless SHORT (2024&ndash;early 2025) through the Lip-Bu Tan pivot (March 2025) to the current LONG on foundry optionality. IrrationalAnalysis and GlobalSemiResearch both initiated longs at ~$80 in April 2026; the stock has since rallied to ~$99&ndash;122, making them +25&ndash;50% on those calls. Risk production on schedule is necessary but not sufficient&mdash;parametric yield at production volumes is the real test. The EDA vendor co-development point is noteworthy because it signals genuine external customer engagement, not just internal development.</p>
+
+    <p><strong>TSMC glass CoWoS vs. panels:</strong> Vik's pushback is well-founded. TSMC saying CoWoS can scale to 58 dies sounds like institutional resistance to admitting panel-level is necessary. Intel's EMIB on rectangular panels IS a genuine competitive advantage for future generations. However, TSMC saying "glass substrates" rather than "organic substrates" is the real news&mdash;glass has better thermal expansion matching to silicon, enabling larger packages. This is a 2028+ story but positions Ibiden and Innolux as early suppliers to watch.</p>
+
+    <p><strong>Amkor 10-year pact:</strong> At $91 and near 52-week highs, AMKR is already pricing in significant advanced packaging demand. The 10-year commitment with TSMC is a moat-widening event that locks in Amkor as the primary US-based OSAT for TSMC's Arizona output. The wiki shows only 3 prior calls (all bullish). With a 49x P/E, valuation assumes sustained growth&mdash;the TSMC partnership de-risks the revenue trajectory but the premium is real.</p>
+
+    <p><strong>Vertiv ThermoKey acquisition:</strong> Incremental but directionally consistent with the SemiAnalysis thesis from the June 18 article. VRT is building out its heat-rejection portfolio specifically for AI datacenters. At $334 and 75x P/E, acquisitions need to deliver immediately.</p>
+
+    <p><strong>Confidence:</strong> <span class="confidence-tag conf-med">MEDIUM</span> on individual items; <span class="confidence-tag conf-high">HIGH</span> on the 18A-P milestone specifically.</p>
+  </div>
+</div>
+
+<!-- DAILY UPDATE JUNE 16 -->
+<div class="post-card">
+  <div class="post-title">Daily Update &mdash; June 16, 2026</div>
+  <div class="post-meta">June 16, 2026 &bull; Austin Lyons &amp; Vik Sekar &bull; ~1,450 words</div>
+
+  <h4>Summary</h4>
+
+  <p><strong>1. PicoJool introduces 200G VCSELs for scale-up AI data centers:</strong> Palo Alto startup announces 200G VCSEL products with &gt;37 GHz bandwidth, chip samples next quarter, high-volume production early 2027. Roadmap to 800G, 1.6T, 3.2T. Built on gallium arsenide (GaAs) supply chain via WIN Semiconductor partnership (shipped 1B+ VCSEL chips for 3D sensing). Pat Gelsinger (Playground Global) endorsed the combination of bandwidth and production scale. Vik emphasizes: "VCSELs are based on GaAs, not InP. They are not subject to the same supply chain constraints. If this has reach, data rate, and capacity, the tech is IN." Austin notes the DSP can be eliminated with slow-and-wide approach (32x 50G NRZ instead of 8x 200G PAM4).</p>
+
+  <p><strong>2. AMD acquires MEXT:</strong> MEXT developed AI-powered predictive memory technology that makes flash behave like DRAM, expanding usable memory capacity while maintaining performance. Austin explains the core loop: classify hot/cold DRAM pages, offload cold to flash (20x cheaper), predict which flash pages will be needed next, prefetch before the application asks. Software-only, no OS or app changes required. Vik: "Flash is becoming increasingly important as DRAM's price and lack of capacity fundamentally limits long-running agentic AI workloads."</p>
+
+  <p><strong>3. TSMC partners with Ibiden, Innolux on glass substrates:</strong> Chip-on-panel-on-substrate (CoPoS) packaging using glass substrates. Rectangular panels rather than round wafers. Glass offers improved dimensional stability for larger packages. Vik: "This is a 2028/29 story at earliest before production, but suppliers to this tech will start showing profits earlier."</p>
+
+  <p><strong>4. Qualcomm in talks to acquire Tenstorrent:</strong> RISC-V-based AI processor startup led by Jim Keller. Vik questions: "Why buy Tenstorrent when you're building your own accelerator?" Austin counters: "Wouldn't you want to acquihire Jim Keller?"</p>
+
+  <p><strong>5. TechInsights confirms SMIC N+3 in Kirin 9030:</strong> SMIC's third-generation advancement of 7nm-class node, narrowing gap with TSMC's 5nm despite no EUV access. Powers Huawei's latest smartphone lineup. Vik wonders what tau folding can do for transistor density going forward.</p>
+
+  <p><strong>6. Applied Materials launches 3D chip tools:</strong> Centris Spectral SiN ALD (microwave plasma for 3D logic/memory) and Producer Selectra Mo Etch (selective molybdenum removal). Targeting vertically stacked architectures.</p>
+
+  <p><strong>7. TSMC CoWoS shortfall halving:</strong> Supply-demand gap projected to narrow from ~20% to ~10% by end-2026 per TrendForce. TSMC ramping output for Nvidia, AMD, Broadcom. CoWoS has been a persistent bottleneck since 2023. Vik: "Good to have CoWoS expand capacity when people are looking to Intel EMIB due to shortages."</p>
+
+  <p><strong>8. Stock movers June 15:</strong> WDC +16.1%, MRAM +14.1%, AAOI +13.3%, NBIS +11.9%, POET +11.2%.</p>
+
+  <p><strong>9. Quick Hits:</strong> IQE + Tower Semiconductor multi-year InP epiwafer agreement for silicon photonics. Samsung Electro-Mechanics in talks with big tech for silicon capacitors for AI servers. AWS launches Graviton5-powered EC2 instances. Ericsson defends purpose-built 5G chip strategy after Nvidia's radio unit chip plans.</p>
+
+  <div class="analysis-box">
+    <h4>Critical Analysis</h4>
+    <p><strong>VCSELs for AI scale-up:</strong> This is a genuinely important development to watch. The GaAs supply chain advantage is real&mdash;InP capacity constraints are well-documented across the wiki's silicon-photonics theme, with multiple publications flagging InP wafer supply as a bottleneck. If VCSELs can achieve the data rates and reach needed for scale-up interconnects while avoiding InP supply constraints, this reprices the optical interconnect value chain. However: 200G per lane is behind the 200G per lane InP lasers already shipping, VCSELs have historically been limited to short-reach (&lt;100m), and the company is pre-revenue. Watch for hyperscaler qualification data, not just specs.</p>
+
+    <p><strong>AMD MEXT acquisition:</strong> This is smart strategically but won't move the needle financially for a $834B company. The flash-as-DRAM concept directly addresses the memory wall for agentic AI workloads (long-running sessions that accumulate context far beyond DRAM capacity). This aligns with the Semi Doped May 4 piece on "CapEx is just Memory Tax Now." However, it's a software acquisition&mdash;the value depends on whether MEXT's page prediction actually works at production scale with real workloads, not just benchmarks. AMD's GPU bear thesis in the wiki (zero production inference customers per SemiAnalysis) is more material than this acquisition.</p>
+
+    <p><strong>Qualcomm / Tenstorrent:</strong> The wiki's 51-call history on QCOM shows a sustained HIGH-conviction SHORT (current stance). QCOM acquiring Tenstorrent would be a desperation move confirming the bear thesis: QCOM can't build its own AI accelerator fast enough and is paying a premium for Jim Keller's talent and RISC-V IP. This doesn't fix the $1.2B Apple modem cliff. Vik's skepticism is warranted; Austin's "acquihire" argument has merit but the acquisition price likely makes this value-destructive for shareholders.</p>
+
+    <p><strong>SMIC N+3:</strong> The confirmed narrowing of the gap with TSMC N5 is geopolitically significant but not directly tradeable for our universe. Combined with the Huawei tau scaling discussion from the wiki, SMIC's multi-patterning approach is squeezing more from DUV than most expected&mdash;but at a significant cost-per-transistor penalty that limits commercial competitiveness outside Huawei.</p>
+
+    <p><strong>Confidence:</strong> <span class="confidence-tag conf-med">MEDIUM</span> &mdash; daily update with solid practitioner commentary; the VCSEL and MEXT items warrant deeper investigation.</p>
+  </div>
+</div>
+
+<!-- ==================== TICKER DEEP DIVES ==================== -->
+<h2>Ticker Deep Dives</h2>
+
+<!-- VRT -->
+<div class="ticker-card">
+  <h4>VRT &mdash; Vertiv Holdings <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$333.96</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$128.2B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E (TTM)</div><div class="metric-value">~75x</div></div>
+    <div class="metric-box"><div class="metric-label">YTD</div><div class="metric-value">Strong</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> SemiAnalysis argues datacenter equipment suppliers' backlogs are secure because canceled projects sit in the announcement layer that never placed equipment orders. Prepayments of 10&ndash;15% lock queue positions. Equipment lead times of 3&ndash;5 years on critical components (Reinhausen tap-changer bushings) mean reallocation, not order loss. VRT also acquired ThermoKey (heat rejection) per Semi Doped June 17.</p>
+
+  <p><strong>Analyst consensus:</strong> WSB DD from June 2 frames Eaton (ETN) as the re-rating opportunity in AI datacenter power, with VRT as benchmark. Liquid-cooling bottleneck thesis also references VRT. No dedicated VRT bear DD surfaced.</p>
+
+  <p><strong>News not covered by newsletters:</strong> Fed's hawkish June 17 stance (+17bp on 2Y yield) pressures high-multiple infrastructure names like VRT. At 75x P/E, the stock is priced for perfection.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 8 prior calls since Oct 2024. SemiAnalysis first flagged VRT as datacenter electrical infrastructure beneficiary (Oct 2024), upgraded to explicit LONG (Mar 2026), with the key analytical insight being the April 2025 orderbook-lag argument. IrrationalAnalysis was more cautious, admitting repeated buy-high/sell-low timing failures. Semi Doped joined with prefab AI infrastructure mention (Jun 2026). Consensus across all three publications: constructive. No px@call data available for outcome tracking.
+  </div>
+
+  <p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span> &mdash; Backlog security thesis is logically sound, but the stock's 75x multiple demands growth acceleration, not just backlog protection. Rate-sensitive at this valuation.</p>
+</div>
+
+<!-- AVGO -->
+<div class="ticker-card">
+  <h4>AVGO &mdash; Broadcom <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$408.24</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$1.94T</div></div>
+    <div class="metric-box"><div class="metric-label">P/E (TTM)</div><div class="metric-value">~65x</div></div>
+    <div class="metric-box"><div class="metric-label">Fwd P/E</div><div class="metric-value">~25x</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Wolfe Research says AI XPU volume could triple to 15 GW by FY28, driving $250&ndash;300B in FY28 XPU revenue, conditional on Apollo/Blackstone XPV financing for Anthropic's Broadcom purchases. JPMorgan confirmed no TPU delays or cancellations. TPU v9 on track. AEHR's follow-on optical order likely Broadcom.</p>
+
+  <p><strong>Analyst consensus:</strong> Strongly bullish consensus across sell-side. Forward P/E of ~25x is reasonable for a $2T company with this growth trajectory. Limited bear DD surfaced in WSB searches.</p>
+
+  <p><strong>Cross-reference:</strong> IrrationalAnalysis (Jun 13) covered "Coherent Lite Transceivers + AMD CPU Opportunity"&mdash;tangentially related to AVGO's optical ecosystem. GlobalSemiResearch (Mar 2026) called AVGO the dominant AI ASIC designer with &gt;60% market share and $100B+ FY2027 revenue guidance.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 69 prior calls &mdash; the most-discussed ticker in the wiki. Consensus LONG since early 2024 with only one brief tactical SHORT (Mar 2025, quickly reversed). IrrationalAnalysis held leveraged long with call options as #1 portfolio position. Wiki conviction: HIGH. Every catalyst identified in 2024 (CPO ramp, ASIC customer expansion, SerDes moat, Tomahawk incumbency) has been publicly confirmed or exceeded. Primary falsifier: credible SerDes competitor at hyperscaler qualification scale. This has NOT occurred.
+  </div>
+
+  <p><span class="validation-badge v-strong">STRONGLY VALIDATED</span> &mdash; The most consistently validated bull thesis in the wiki. FY28 $250&ndash;300B revenue scenario is a significant uplift but conditional on Anthropic financing. Forward P/E of ~25x makes this reasonably valued for the growth rate.</p>
+</div>
+
+<!-- INTC -->
+<div class="ticker-card">
+  <h4>INTC &mdash; Intel <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">~$99&ndash;122</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$588B</div></div>
+    <div class="metric-box"><div class="metric-label">Fwd P/E</div><div class="metric-value">~114x</div></div>
+    <div class="metric-box"><div class="metric-label">YTD</div><div class="metric-value">+230%</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> 18A-P enters risk production on schedule at VLSI 2026. New transistor width options, fifth voltage threshold, Power Boost dual contact. EDA vendor co-development signals external customer engagement. Semi Doped's Vik: "The world needs an alternative to TSMC's 2nm/3nm." Austin calls it evidence of "mature foundry PDK" behavior.</p>
+
+  <p><strong>Financial data:</strong> INTC rallied ~230% from ~$30 lows to ~$135 peak. 6 consecutive earnings beats. DC &amp; AI revenue up 22% YoY. Stock has pulled back to $99&ndash;122 range.</p>
+
+  <p><strong>Cross-reference:</strong> SemiAnalysis (Jun 11) argued Intel should raise ~$25B equity at peak valuation to fund Terafab. SemiAnalysis (Jun 14) noted Intel 18A retains architectural edge over SMIC N+3. Semi Doped (Jun 12) cited Clearwater Forest as evidence of foundry maturation.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 73 prior calls &mdash; the most complex ticker arc in the wiki. Three distinct phases: relentless SHORT (2024&ndash;early 2025, correct), LBT pivot LONG (Mar 2025), and foundry optionality LONG (late 2025&ndash;2026). Two px@call values: IrrationalAnalysis at $81.4 (Apr 24, 2026) and GlobalSemiResearch at $80 (Apr 25, 2026). Current price ~$99&ndash;122 = <strong>+25&ndash;50% gain in ~2 months</strong>. Both calls tracking well. Live thesis: pure foundry/packaging option on 18A-P success by 2027; products division written off by most bulls.
+  </div>
+
+  <p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span> &mdash; Risk production on schedule is necessary but not sufficient. The real test is parametric yield at volume. The $80&rarr;$99&ndash;122 move validates timing, but forward P/E of 114x demands massive foundry revenue that hasn't materialized yet. Position sizing should reflect optionality, not certainty.</p>
+</div>
+
+<!-- AMD -->
+<div class="ticker-card">
+  <h4>AMD &mdash; Advanced Micro Devices <span class="tag tag-mixed">MIXED</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$507.29</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$834B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E (TTM)</div><div class="metric-value">~165x</div></div>
+    <div class="metric-box"><div class="metric-label">Fwd P/E</div><div class="metric-value">~59x</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> MEXT acquisition adds flash-as-DRAM memory tiering (classify hot/cold pages, offload cold to flash, AI-predict and prefetch). Software-only, no OS changes. Also gaining Samsung foundry orders as TSMC overflows. Semi Doped frames AMD's flash strategy as critical for agentic AI workloads.</p>
+
+  <p><strong>Financial data:</strong> Up 130%+ YTD. Trading 23% above historical average P/E. At 165x trailing, the stock prices in significant earnings acceleration.</p>
+
+  <p><strong>Cross-reference:</strong> IrrationalAnalysis (Jun 3) described AMD CPU resurgence as "more interesting than Marvell." SemiAnalysis (Jun 9) noted MI355X achieved 100x throughput improvement by Day 26 but started non-deployable; ATOM engine serves zero production tokens.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 67 prior calls with the sharpest bifurcation in the wiki. CPU thesis (LONG across all pubs): Turin/Bergamo/Venice crushing Intel in datacenter. GPU thesis (SHORT across pubs): ROCm immaturity, zero production inference customers as of early 2026, aggressive discounting. The MEXT acquisition addresses the memory wall for agentic workloads but is immaterial to the core GPU bear thesis. Net: CPU LONG is well-validated, GPU SHORT is unresolved but SemiAnalysis maintains AMD has zero production inference customers.
+  </div>
+
+  <p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span> &mdash; CPU bull intact and strengthening. MEXT is strategically smart but financially immaterial for an $834B company. The stock at 165x P/E prices in both CPU dominance AND GPU success, but the wiki consensus says GPU success hasn't arrived. <span class="confidence-tag conf-low">LOW confidence</span> at this valuation.</p>
+</div>
+
+<!-- AMKR -->
+<div class="ticker-card">
+  <h4>AMKR &mdash; Amkor Technology <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$91.00</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$21.4B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E (TTM)</div><div class="metric-value">~49x</div></div>
+    <div class="metric-box"><div class="metric-label">52W Range</div><div class="metric-value">$19.79&ndash;$96.68</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> 10-year partnership with TSMC to expand US advanced packaging and test capacity. Complements TSMC's Arizona fab investments. Semi Doped's Vik: "Amkor is the arms dealer&mdash;partnerships with both TSMC for CoWoS and Intel for EMIB."</p>
+
+  <p><strong>Financial data:</strong> Trading near 52-week highs ($91 vs $96.68 high). Massive move from $19.79 low. At 49x P/E, pricing in significant growth.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 3 prior calls, all bullish. Citrini initiated as owned position (Jul 2024) for on-device AI packaging theme. Citrini validated as second-order AI infrastructure call (Jan 2026). SemiAnalysis added CoWoS capacity-relief angle (Mar 2026). Unanimous bull consensus. The 10-year TSMC pact is the strongest catalyst yet, locking in Amkor as the primary US-based OSAT. No px@call data.
+  </div>
+
+  <p><span class="validation-badge v-strong">STRONGLY VALIDATED</span> &mdash; The 10-year TSMC partnership is a moat-widening event. Trading near 52-week highs reflects market recognition. Risk: valuation assumes sustained advanced packaging demand acceleration.</p>
+</div>
+
+<!-- AEHR -->
+<div class="ticker-card">
+  <h4>AEHR &mdash; Aehr Test Systems <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$103.03</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">~$1.4B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E</div><div class="metric-value">N/M (loss)</div></div>
+    <div class="metric-box"><div class="metric-label">Status</div><div class="metric-value">Growth</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Second FOX-XP wafer-level burn-in order for silicon photonics transceivers (likely Broadcom). Configured for 9-wafer parallel testing, delivery in 6 months. First order was $41M in April. This signals production commitment for AI data center optical interconnects.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 7 prior calls. Dramatic reversal: SHORT in Jul 2024 (Incal acquisition called "contrived revenue bridge"), reversed to LONG in Jul 2025 when CEO disclosed two hyperscalers evaluating wafer-level burn-in. Called "GameStop of semiconductors with real substance." Position closed by Dec 2025. This new order represents the first CONCRETE validation of the AI optical burn-in thesis&mdash;a material upgrade from the March 2026 "exploratory" status.
+  </div>
+
+  <p><span class="validation-badge v-partial">PARTIALLY VALIDATED</span> &mdash; Two orders in 3 months is real traction, but at $103 and unprofitable, this remains speculative. The wafer-level burn-in for AI optics thesis is gaining traction but hasn't hit the production scale needed to drive profitability.</p>
+</div>
+
+<!-- 000660.KS -->
+<div class="ticker-card">
+  <h4>000660.KS &mdash; SK Hynix <span class="tag tag-long">LONG</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Stance</div><div class="metric-value">LONG</div></div>
+    <div class="metric-box"><div class="metric-label">Conviction</div><div class="metric-value">HIGH</div></div>
+    <div class="metric-box"><div class="metric-label">Wiki Calls</div><div class="metric-value">18 prior</div></div>
+    <div class="metric-box"><div class="metric-label">Status</div><div class="metric-value">Confirming</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> Shipped 12-layer HBM4E samples to major customers at 16 Gbps/pin with Advanced MR-MUF packaging (17% reduced heat resistance) on TSMC 3nm base die. Speed records far past JEDEC spec.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 18 prior calls with unusually consistent bull case. Wiki shows: MR-MUF packaging gives durable yield/reliability advantage, ~70% Rubin HBM4 allocation, $8B+ EUV commitment. IrrationalAnalysis recommended long 000660.KS / short MU pair trade. Technical advantages claimed in 2024 have translated into reported allocations by 2026. HBM4E sample shipment is the latest in a continuous series of confirmations. <strong>The most consistently validated individual ticker thesis in the HBM theme.</strong>
+  </div>
+
+  <p><span class="validation-badge v-strong">STRONGLY VALIDATED</span> &mdash; HBM4E at 16 Gbps/pin on 3nm base die extends SK Hynix's generational lead. Falsifiers: Samsung HBM4 qualification catch-up rebalancing Nvidia allocation, or KV cache compression reducing per-GPU HBM content.</p>
+</div>
+
+<!-- CRWV -->
+<div class="ticker-card">
+  <h4>CRWV &mdash; CoreWeave <span class="tag tag-neutral">NEUTRAL</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$114.61</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$54.8B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E</div><div class="metric-value">N/M (~&minus;37x)</div></div>
+    <div class="metric-box"><div class="metric-label">Nasdaq-100</div><div class="metric-value">Jun 22</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> SemiAnalysis documented Core Scientific Denton delays (weather, transformer explosion, GB200 redesign) and predicted 1.7 GW of active power by YE2026 (matched company guidance). CoreWeave is first cloud provider to bring up Vera Rubin NVL72. Joining Nasdaq-100 on June 22.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 6 prior calls with a <strong>genuine unresolved disagreement</strong>. IrrationalAnalysis: consistently SHORT (S-1 "radioactive garbage," Microsoft concentration risk, "platinum dogshit"). SemiAnalysis: consistently LONG (sole Platinum-rated GPU cloud, SUNK architecture moat, mispriced vs. GPU rental tightening). The two have NOT converged. The Nasdaq-100 inclusion and Vera Rubin validation are positive data points, but the CRWV bull/bear debate remains the most sharply contested in the wiki.
+  </div>
+
+  <p><span class="validation-badge v-limited">LIMITED VALIDATION</span> &mdash; Operational milestones are real (Vera Rubin, Nasdaq-100), but profitability and customer concentration remain unresolved. Not enough data to resolve the SA/IA disagreement.</p>
+</div>
+
+<!-- NBIS -->
+<div class="ticker-card">
+  <h4>NBIS &mdash; Nebius <span class="tag tag-neutral">NEUTRAL</span></h4>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$285.50</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">$72.2B</div></div>
+    <div class="metric-box"><div class="metric-label">P/E</div><div class="metric-value">~73x</div></div>
+    <div class="metric-box"><div class="metric-label">YTD</div><div class="metric-value">+220%</div></div>
+  </div>
+
+  <p><strong>Newsletter thesis:</strong> SemiAnalysis documented Nebius NJ datacenter delays in detail: DataOne built shell fast but MEP/commissioning lagged significantly. First 25 MW ~Oct 2025, full 50 MW by ~Feb 2026, vs targets of Jul/Sep 2025. Despite this, Nebius hit ATH of $297.93 on Jun 17 and is up 220%+ YTD. Aschenbrenner Fund disclosed 5.6% stake per WSB DD.</p>
+
+  <div class="prior-calls">
+    <strong>Prior calls / Track record:</strong> 1 prior call (SemiAnalysis, Apr 2026, LONG as public-market neocloud pricing power play). The delay documentation in this week's article is NOT bearish per se &mdash; SemiAnalysis is using Nebius as an example of "advanced projects with optimistic timelines" rather than as a fundamental short. The Aschenbrenner stake is a strong smart-money endorsement. At $285 and +220% YTD, significant execution risk is embedded.
+  </div>
+
+  <p><span class="validation-badge v-limited">LIMITED VALIDATION</span> &mdash; Delay documentation is informational, not directional. The stock's YTD performance suggests the market is pricing in eventual capacity delivery. Falsifier: sustained GPU rental rate decline or NJ site further delays.</p>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<div class="footer">
+  <p>Generated by Substack Semiconductor Scanner &bull; Data sources: SemiAnalysis, Semi Doped, sellthenews MCP, WebSearch &bull; Wiki version: 2026-06-19</p>
+  <p>Prices as of approximately June 18, 2026. This is not investment advice.</p>
+</div>
+
+</body>
+</html>

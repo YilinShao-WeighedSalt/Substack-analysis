@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-06-17
+updated: 2026-06-19
 ---
 
 # Wiki Index
@@ -469,6 +469,7 @@ updated: 2026-06-17
 - [[semianalysis-2026-06-11-intel-should-raise-capital]] — Intel Should Raise Capital
 - [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] — Is SMIC N+3's Metal Pitch Smaller than Intel 18A's?
 - [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] — RL Systems Mind the Gap: Matching Trainer and Generator Throughput
+- [[semianalysis-2026-06-18-datacenter-capacity-not-canceled]] — Stop Saying Half of 2026 US Datacenter Capacity Is Canceled
 
 ### Semi Doped
 
@@ -479,3 +480,6 @@ updated: 2026-06-17
 - [[semidoped-2026-05-22-masterclass-ic-lithography]] — A Masterclass on IC Lithography
 - [[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]] — Huawei's Tau Scaling Law: Is the 'EUV Killer' Real?
 - [[semidoped-2026-06-12-computex-optics-power]] — Computex Mania 2026: Optics and Power
+- [[semidoped-2026-06-16-daily-update]] — Daily Update — June 16, 2026
+- [[semidoped-2026-06-17-daily-update]] — Daily Update — June 17, 2026
+- [[semidoped-2026-06-18-daily-update]] — Daily Update — June 18, 2026

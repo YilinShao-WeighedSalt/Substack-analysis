@@ -4,9 +4,9 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-16
+updated: 2026-06-19
 handle: semianalysis
-calls_logged: 173
+calls_logged: 177
 hit_rate: "n/a"
 ---
 ## Profile
