@@ -13,7 +13,7 @@ not RAG. Prefer appending over rewriting; do not destroy history.
 | source | wiki/sources/ | One ingested Substack post: full summary, extracted calls, link to original |
 | ticker | wiki/tickers/ | Per-ticker dossier: call log, thesis evolution, outcome tracking |
 | publication | wiki/publications/ | Per-publication track record, style, and hit-rate |
-| theme | wiki/themes/ | Narrative / thesis timelines across posts and publications |
+| theme | wiki/themes/ | Plain-language concept explanations + narrative / thesis timelines across posts |
 | synthesis | wiki/synthesis/ | Cross-cutting conclusions (consensus vs. contrarian, sector reads) |
 | query | wiki/queries/ | Open questions and unresolved contradictions being tracked |
 | overview | wiki/ | One-page overview of the wiki and current high-level market read (one per project) |
@@ -69,6 +69,13 @@ calls_logged: 0
 hit_rate: "n/a"
 ```
 
+`hit_rate` is computed from *resolved* calls only — those with a numeric `px@call` at
+least 30 days old. A call is a **win** if the price moved in the called direction (LONG:
+current > px@call; SHORT: current < px@call), a **loss** otherwise; NEUTRAL/HEDGE calls are
+excluded. Format: `"W/L (pct%), N open"` — e.g. `"7/3 (70%), 12 open"`. Keep `"n/a"` only
+while a publication has zero resolved calls. Calls without a `px@call` (all pre-2026-06
+history) are unresolved and excluded from the ratio.
+
 Theme pages also include:
 
 ```yaml
@@ -113,8 +120,11 @@ A markdown table; append the newest row each run, never rewrite prior rows:
 |------|-------------|--------|---------|-----------------|
 ```
 
-`stance` ∈ LONG / SHORT / NEUTRAL / HEDGE. `px@call` is the price at the time of
-the call (number, or `n/a` if unknown).
+`stance` ∈ LONG / SHORT / NEUTRAL / HEDGE. `px@call` is the price at the time of the
+call. **Fetch the current price (yfinance) for every call when you log it** and record the
+number; use `n/a` only when the symbol is genuinely unresolvable. Rows back-dated before
+2026-06 predate this convention and are permanently `n/a` (no price source); do not backfill
+them.
 
 ### Thesis evolution
 
@@ -122,7 +132,10 @@ Prose: how the narrative changed over time; who is bullish/bearish and why.
 
 ### Outcome tracking
 
-Prose: `px@call` vs. current price; is the thesis playing out; what would falsify it.
+Prose: for each priced prior call, the return since `px@call` and a grade — ✓ tracking
+(moved in the called direction) / ✗ wrong / – open (<30 days). Then: is the thesis playing
+out, and what would falsify it. Rows with `px@call: n/a` cannot be graded — note them as
+unscored history.
 
 ## Maintenance conventions (for the unattended agent)
 
