@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-14
+updated: 2026-06-22
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -49,6 +49,8 @@ first_seen: 2024-01-03
 - 2026-05-29 — [[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]] (semidoped)
 - 2026-05-29 — [[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]] (semidoped)
 - 2026-06-14 — [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] (semianalysis)
+- 2026-06-19 — [[semidoped-2026-06-19-daily-update-june-19]] (semidoped)
+- 2026-06-19 — [[semidoped-2026-06-19-advanced-packaging]] (semidoped)
 
 ## Narrative
 Advanced packaging emerged as a central theme in early 2024, initially driven by SemiAnalysis coverage of hybrid bonding process flows and CFET yield considerations at IEDM 2023, with IrrationalAnalysis picking it up around Intel's structural problems and Blackwell's packaging-related shipment delays in mid-2024. The theme broadened through 2025 to encompass co-packaged optics, chiplet interconnects (EMIB, UCIe), and HBM scaling, with IrrationalAnalysis becoming the most prolific contributor — covering everything from GTC 2025 CPO announcements to DreamBig's Super NIC chiplet architecture. By late 2025 and into 2026, coverage shifted toward HBM4, TSMC vs. Intel packaging competition, and the geopolitical dimension via Huawei's Tau scaling approach and SMIC's N3 progress, suggesting advanced packaging has matured from a niche process topic into a central battleground for AI infrastructure competitiveness. The theme now commands consistent multi-publication attention with no sign of fading, but consensus is still forming on which interconnect and integration approaches will dominate at scale.

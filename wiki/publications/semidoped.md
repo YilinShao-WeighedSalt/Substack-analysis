@@ -4,16 +4,16 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-06-19
+updated: 2026-06-22
 handle: semidoped
-calls_logged: 19
+calls_logged: 26
 hit_rate: "n/a"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
-7 analysis posts ingested (2026-04-24 -> 2026-06-12); ~8 ticker calls.
+9 analysis posts ingested (2026-04-24 -> 2026-06-19); ~15 ticker calls.
 
 ## Notable calls & track record
 - **SNDK — LONG** (2026-05-04): Structural bull case built on multi-year supply contracts ($42B+ remaining obligations), gross margin expansion from 51% to 78%+ in one quarter, and a new SSD-centric inference thesis from DeepSeek V4 architecture. Outcome TBD.
@@ -24,3 +24,7 @@ Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotatin
 - **MRVL — LONG** (2026-06-12): Jensen Huang's public endorsement at Computex plus Teralynx 102.4 Tbps switch validates Marvell's interconnect leadership; publication flagged the cross-sell between ASIC and optical businesses as underappreciated at the time of writing. Outcome TBD.
 - **CBRS — NEUTRAL** (2026-05-15): Acknowledged genuine engineering achievement on Cerebras' Wafer-Scale Engine at IPO ($185/share), but expressed skepticism about TAM (latency-critical workloads only) and execution risk from the dual burden of silicon design plus data-center operations. Outcome TBD.
 - **INTC — LONG** (2026-06-12): Clearwater Forest (Xeon 6 Plus) cited as evidence that Intel Foundry's advanced packaging stack (EMIB, Foveros Direct 3D, PowerVia, RibbonFET) is maturing into a credible strategic alternative to TSMC CoWoS capacity constraints. Outcome TBD.
+- **INTC — LONG** (2026-06-19): Apple foundry deal + Google 3M TPU EMIB commitment validate IFS turnaround; px@call $134. Outcome TBD.
+- **TSEM — LONG** (2026-06-19): 5M coherent photonic ICs shipped with Marvell; volume leadership flex vs GloFo; px@call $287. Outcome TBD.
+- **MRVL — LONG** (2026-06-19): 5M coherent photonic ICs shipped with Tower validates coherent optics volume position; px@call $309. Outcome TBD.
+- **2454.TW — LONG** (2026-06-19): Google 3M TPU order through MediaTek using Intel EMIB; increasing threat to Broadcom; px@call 4,390 TWD. Outcome TBD.

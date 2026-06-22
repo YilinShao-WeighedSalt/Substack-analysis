@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # Wiki Index
@@ -483,3 +483,5 @@ updated: 2026-06-19
 - [[semidoped-2026-06-16-daily-update]] — Daily Update — June 16, 2026
 - [[semidoped-2026-06-17-daily-update]] — Daily Update — June 17, 2026
 - [[semidoped-2026-06-18-daily-update]] — Daily Update — June 18, 2026
+- [[semidoped-2026-06-19-daily-update-june-19]] — Daily Update — June 19, 2026
+- [[semidoped-2026-06-19-advanced-packaging]] — Semi Doped Podcast: Advanced Packaging

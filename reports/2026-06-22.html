@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Semiconductor Scan — June 22, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-muted: #64748b;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e2e8f0;
+    --green: #16a34a;
+    --green-bg: #dcfce7;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --gray: #6b7280;
+    --gray-bg: #f1f5f9;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --red: #dc2626;
+    --red-bg: #fef2f2;
+    --purple: #7c3aed;
+    --purple-bg: #f5f3ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+  h4 { font-size: 1.05rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+  p { margin-bottom: 0.75rem; }
+  .date-label { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); font-size: 0.9rem; }
+  .summary-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .summary-box h3 { margin-top: 0; color: var(--accent); }
+  .macro-context {
+    background: var(--purple-bg);
+    border-left: 4px solid var(--purple);
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0 2rem;
+    font-size: 0.92rem;
+  }
+  .macro-context strong { color: var(--purple); }
+  .scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+    font-size: 0.88rem;
+  }
+  .scoreboard th {
+    background: var(--text);
+    color: white;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .scoreboard td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+  .scoreboard .ticker-cell { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-mixed { background: var(--purple-bg); color: var(--purple); }
+  .pub-header {
+    font-size: 1.65rem;
+    font-weight: 800;
+    margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent);
+  }
+  .post-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .post-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .post-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  .analysis-box {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; font-size: 1.05rem; }
+  .ticker-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .ticker-card h4 { margin-top: 0; }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+  .metric-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.6rem 0.75rem;
+    text-align: center;
+  }
+  .metric-box .metric-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .metric-box .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .prior-calls {
+    background: var(--accent-light);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin: 0.75rem 0;
+    font-size: 0.88rem;
+  }
+  .prior-calls strong { color: var(--accent); }
+  .validation-badge {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+  .v-strong { background: var(--green-bg); color: var(--green); }
+  .v-partial { background: var(--amber-bg); color: var(--amber); }
+  .v-limited { background: var(--gray-bg); color: var(--gray); }
+  .v-contra { background: var(--red-bg); color: var(--red); }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 0.75rem 0;
+    color: var(--text-muted);
+    font-style: italic;
+    background: var(--bg-alt);
+    border-radius: 0 6px 6px 0;
+  }
+  .confidence-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+  }
+  .conf-high { background: var(--green-bg); color: var(--green); }
+  .conf-med { background: var(--amber-bg); color: var(--amber); }
+  .conf-low { background: var(--gray-bg); color: var(--gray); }
+  ul { margin: 0.5rem 0 0.75rem 1.25rem; }
+  li { margin-bottom: 0.35rem; }
+  .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<h1>Substack Semiconductor Scan</h1>
+<p class="date-label">June 22, 2026 &mdash; Covering June 19&ndash;21</p>
+
+<!-- SUMMARY BOX -->
+<div class="summary-box">
+  <h3>Scan Summary</h3>
+  <p><strong>2 substantive posts</strong> from <strong>1 publication</strong> (Semi Doped). Irrational Analysis, SemiAnalysis, Global Semi Research, and Citrini had no new posts this window.</p>
+  <p><strong>Key themes:</strong> The Apple&ndash;Intel chip deal sends Intel shares to an all-time high, validating the foundry turnaround thesis two years in the making. Semi Doped publishes an educational deep-dive on advanced packaging &mdash; explaining what CoWoS and EMIB actually are, why they matter, and how Google&rsquo;s 3-million TPU order through MediaTek using Intel&rsquo;s EMIB may reshape the competitive landscape. Tower Semiconductor and Marvell cross a milestone of five million photonic chips shipped. Samsung claims a best-paper CFET transistor at VLSI 2026.</p>
+  <p><strong>Tickers this scan:</strong>
+    <span class="tag tag-long">INTC LONG</span>
+    <span class="tag tag-long">TSEM LONG</span>
+    <span class="tag tag-long">MRVL LONG</span>
+    <span class="tag tag-long">2454.TW LONG</span>
+    <span class="tag tag-neutral">005930.KS NEUTRAL</span>
+    <span class="tag tag-neutral">AMKR NEUTRAL</span>
+  </p>
+</div>
+
+<!-- BACKGROUND / STATE OF THE BOOK -->
+<h2>Background: State of the Book</h2>
+
+<p>For a reader coming in fresh, here is what you need to know about the semiconductor landscape heading into this scan &mdash; explained from the ground up.</p>
+
+<h3>What is a "foundry" and why does it matter?</h3>
+<p>Most companies that design computer chips do not actually manufacture them. They send their designs to a <strong>foundry</strong> &mdash; a specialized factory that turns those designs into physical silicon chips. <strong>TSMC</strong> (Taiwan Semiconductor Manufacturing Company, traded as <span style="font-family:'JetBrains Mono',monospace">TSM</span>, ~$462) is by far the world's dominant foundry: it makes chips for Apple, Nvidia, AMD, and nearly every other leading tech company. Its dominance means that if TSMC's factories are full (which they are), every other chip company has a problem.</p>
+
+<p><strong>Intel</strong> (<span style="font-family:'JetBrains Mono',monospace">INTC</span>, ~$134) is historically different: it both designs <em>and</em> manufactures its own chips. For years, Intel's manufacturing fell behind TSMC, and its stock languished. But under CEO Lip-Bu Tan (appointed March 2025), Intel has been trying to reinvent itself as a foundry that makes chips for <em>other</em> companies too &mdash; not just its own. This "Intel Foundry Services" (IFS) turnaround is the single most tracked story across the five newsletters we follow.</p>
+
+<h3>Advanced Packaging: The new bottleneck</h3>
+<p><strong>"Advanced packaging"</strong> is the technology that connects multiple chips together into one larger system. Think of it as the wiring and plumbing that lets several chips &mdash; say, a computing chip and a memory chip &mdash; talk to each other at extremely high speed. In the AI era, chips have become so complex and power-hungry that how you package them together matters just as much as how you build the individual chips.</p>
+
+<p>The two dominant approaches are:</p>
+<ul>
+  <li><strong>CoWoS</strong> (Chip on Wafer on Substrate) &mdash; TSMC's method. It places chips on a large silicon "interposer" (a middle layer with very fine wiring) that sits on a base layer. CoWoS is proven and widely used for every major AI chip today (Nvidia, Google, AMD), but it is expensive and capacity-limited because it uses actual silicon wafers.</li>
+  <li><strong>EMIB</strong> (Embedded Multi-Die Interconnect Bridge) &mdash; Intel's approach. Instead of a full silicon middle layer, Intel embeds tiny silicon "bridges" directly into a cheaper organic base, only placing high-precision silicon where chips need to connect. This is potentially cheaper, more scalable (not limited by silicon wafer size), and can be done on larger rectangular panels rather than round wafers. Intel has used EMIB in its own products for a decade.</li>
+</ul>
+
+<p>The key debate: EMIB has worked inside Intel for years, but hasn't been proven at scale for <em>other</em> companies' chips. That is changing &mdash; Google's reported 3-million TPU order through MediaTek using EMIB packaging at Intel's fabs is the first major external validation.</p>
+
+<h3>Where key theses stand heading into this scan</h3>
+<ul>
+  <li><strong>Intel (<span style="font-family:'JetBrains Mono',monospace">INTC</span>):</strong> The foundry turnaround bull case has been strengthening since Lip-Bu Tan took over in March 2025. Prior calls from Irrational Analysis ($81.4, April 2026) and Global Semi Research ($80, April 2026) have been tracking strongly &mdash; the stock was ~$134 at scan time, up 65%+ from those call prices. The remaining test is whether Intel's next-generation "18A-P" manufacturing process can prove itself with production-quality yields by 2027.</li>
+  <li><strong>Tower Semiconductor (<span style="font-family:'JetBrains Mono',monospace">TSEM</span>, ~$287):</strong> A smaller, specialized chipmaker based in Israel that has become the go-to factory for "silicon photonics" chips &mdash; components that use light instead of electricity to move data, critical for AI data center connections. Irrational Analysis has been persistently bullish since late 2024, calling it a core "do not touch" position.</li>
+  <li><strong>Marvell (<span style="font-family:'JetBrains Mono',monospace">MRVL</span>, ~$309):</strong> A chip designer whose story swings between two forces: its struggling legacy businesses (networking chips being displaced) and its potential to dominate "co-packaged optics" (CPO) &mdash; a next-generation way of embedding optical connections directly into chips &mdash; through its acquisition of a startup called Celestial AI. The one prior priced call was a short at $72 in September 2025; that was wrong, as the stock subsequently rallied over 300%.</li>
+</ul>
+
+<div class="macro-context">
+  <strong>Market Context (June 19&ndash;21):</strong> Semiconductor stocks surged broadly on June 18 after President Trump announced the Apple&ndash;Intel chip manufacturing deal, sending the SOXX (the main semiconductor ETF) up 6.6%. Intel hit an all-time high. Broader macro concerns include Hormuz Strait shipping uncertainty and an expected hotter PCE inflation reading.
+</div>
+
+<!-- SCOREBOARD -->
+<h3>Ticker Scoreboard &mdash; This Scan</h3>
+<table class="scoreboard">
+  <tr>
+    <th>Ticker</th><th>Company</th><th>Price</th><th>Stance</th><th>Source</th><th>Key Catalyst</th>
+  </tr>
+  <tr>
+    <td class="ticker-cell">INTC</td><td>Intel</td><td>$134</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>Apple foundry deal; EMIB packaging; new EVP hire</td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">TSEM</td><td>Tower Semiconductor</td><td>$287</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>5M photonic ICs shipped with Marvell</td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">MRVL</td><td>Marvell Technology</td><td>$309</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>5M photonic ICs shipped with Tower</td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">2454.TW</td><td>MediaTek</td><td>4,390 TWD</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>Google 3M TPU order via MediaTek + Intel EMIB</td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">005930.KS</td><td>Samsung Electronics</td><td>354,000 KRW</td><td><span class="tag tag-neutral">NEUTRAL</span></td><td>Semi Doped</td><td>CFET best paper at VLSI 2026; foundry expansion talks</td>
+  </tr>
+  <tr>
+    <td class="ticker-cell">AMKR</td><td>Amkor Technology</td><td>$91</td><td><span class="tag tag-neutral">NEUTRAL</span></td><td>Semi Doped</td><td>Mentioned as OSAT aspiring to advanced packaging</td>
+  </tr>
+</table>
+
+<!-- PUBLICATION: SEMI DOPED -->
+<div class="pub-header">Semi Doped</div>
+<p style="font-size:0.9rem; color:var(--text-muted);">Podcast &amp; newsletter hosted by Vik Sekar and Austin Lyons. Deep technical fluency across packaging, lithography, and supply-chain economics. 19 calls logged, hit rate not yet calculable (no resolved priced calls older than 30 days).</p>
+
+<!-- POST 1: DAILY UPDATE -->
+<div class="post-card">
+  <div class="post-title">Daily Update &mdash; June 19th, 2026</div>
+  <div class="post-meta">2026-06-19 &bull; semidoped.substack.com &bull; ~1,400 words</div>
+
+  <h4>Summary</h4>
+
+  <p><strong>1. Apple&ndash;Intel Chip Manufacturing Deal (INTC, AAPL).</strong> President Trump announced on June 18 that Apple will have chips manufactured by Intel in the United States. This is a historic milestone: Apple's partnership with TSMC is what originally made TSMC the global leader, so Apple choosing to also work with Intel signals a major validation of Intel's foundry ambitions. Intel shares surged to an all-time high ($135.48 intraday), and the SOXX semiconductor ETF jumped 6.6%.</p>
+
+  <p>No financial details, specific chip types, manufacturing process nodes, or production timelines were disclosed. Semi Doped's Vik Sekar offered this framing:</p>
+
+  <blockquote>&ldquo;Apple made TSMC as much as TSMC made Apple &mdash; never forget their deep relationship. Intel getting involved with Apple now is a historic win for Intel Foundry Services.&rdquo;</blockquote>
+
+  <p><strong>2. Intel Hires Seok-Hee Lee as Foundry EVP (INTC).</strong> Intel appointed Seok-Hee Lee &mdash; a semiconductor industry veteran who previously served as CEO of SK Hynix (the world's second-largest memory chipmaker) &mdash; as Executive Vice President of Intel Foundry, reporting directly to CEO Lip-Bu Tan. Lee will oversee advanced packaging, system integration, and back-end manufacturing. Notably, Lee worked at Intel earlier in his career, fitting CEO Tan's pattern of recruiting former "Team Blue" talent back.</p>
+
+  <p><strong>3. Tower &amp; Marvell Cross 5 Million Coherent Photonic ICs (TSEM, MRVL).</strong> Tower Semiconductor and Marvell announced they have shipped over five million "coherent photonic integrated circuits" &mdash; chips that use light instead of electrical signals to move data between AI servers at very high speeds. Tower manufactures these chips at its Israeli fabs using a specialized "silicon photonics" process, while Marvell integrates them into its optical networking products. Semi Doped's commentary: this is a deliberate "flex" aimed at GlobalFoundries (a competing specialty chipmaker), demonstrating that Tower is the volume leader in this space.</p>
+
+  <p><strong>4. Samsung CFET Transistor (005930.KS).</strong> Samsung unveiled what it calls the world's smallest 3D stacked transistor &mdash; a "CFET" (Complementary Field-Effect Transistor). In plain terms, current advanced transistors sit side by side; a CFET stacks them vertically, saving space and potentially improving performance. This is a research milestone, not a shipping product: Samsung's prototype achieved a 42-nanometer "gate pitch" (the spacing between transistors), 6 nanometers tighter than what TSMC and imec (a Belgian research lab) have previously demonstrated. Samsung won the best-paper award at VLSI 2026 (a top semiconductor conference) for this work.</p>
+
+  <p><strong>5. Architect Labs Raises $24M.</strong> A startup called Architect Labs raised $24 million in seed funding to compete with Broadcom and Marvell in the custom chip design business. Their goal: make designing custom chips as accessible as TSMC has made manufacturing them. Currently, designing a custom AI chip requires massive teams and deep expertise &mdash; Broadcom CEO Hock Tan has staked his company's moat on the claim that "no one knows how to design chips like we do." If Architect Labs succeeds, it could democratize access to custom chips for more companies.</p>
+
+  <p><strong>Sector headlines also mentioned:</strong> Nvidia's Vera CPU straining LPDDR supply (phone-type memory now being used in AI servers); AMD partnering with Rackspace on 30MW AI infrastructure; AMD acquiring MEXT for AI memory optimization; Samsung Foundry in expansion talks with AMD and Google; TSMC exploring glass substrates for CoWoS packaging; TSMC and Amkor announcing a long-term advanced packaging partnership.</p>
+
+  <div class="analysis-box">
+    <h4>Analysis &amp; Context</h4>
+
+    <p><strong>Explaining the backstory (from wiki knowledge):</strong> Intel's path to this moment has been one of the most dramatic turnaround stories in the semiconductor industry. Through early 2025, Intel was widely considered a failing company: its chip manufacturing had fallen years behind TSMC, its CEO was fired, and newsletter authors like Irrational Analysis were writing posts with titles like "Intel's Terrifying Future" and "Death of Intel." The pivot came in March 2025 when Lip-Bu Tan &mdash; a respected semiconductor investor &mdash; was appointed CEO and began an aggressive restructuring. The bull thesis since then has rested on three pillars: (1) a fixed version of Intel's "18A" manufacturing process called 18A-P, (2) Intel's advanced packaging technology EMIB as a differentiated asset, and (3) a rock-bottom stock valuation as a margin of safety. The Apple deal validates pillar #2 &mdash; and signals that at least one of the world's most demanding customers trusts Intel's factories enough to commit.</p>
+
+    <p><strong>Track-record note:</strong> The two priced LONG calls on Intel in the wiki are both tracking exceptionally well. Irrational Analysis called LONG at $81.4 on April 24, 2026 &mdash; now at $134, up ~65%. Global Semi Research called LONG at $80 on April 25, 2026 &mdash; now at $134, up ~68%. Semi Doped's own LONG call on June 12, 2026 (citing Clearwater Forest packaging maturation) and June 17 (18A-P risk production on schedule) also preceded this surge.</p>
+
+    <p><strong>Critique:</strong> The Apple deal is genuinely significant, but critical details are missing: which chips, which process node, what volume, and when? Apple currently uses TSMC's most advanced nodes (N3); Intel's competitive offering would be 18A-P, which is still in risk production. If this deal is for older, less cutting-edge chips (say, connectivity or power management), the revenue impact could be far smaller than the stock's 10% pop implies. The lack of disclosed terms is a yellow flag. Additionally, Intel at $134 and a $570B+ market cap is no longer cheap on price-to-book &mdash; the "margin of safety" pillar that underpinned the original bull thesis at $80 is now gone.</p>
+
+    <p><strong>Falsifier:</strong> If Apple's Intel volume turns out to be small or for non-leading-edge chips, the stock premium unwinds. If 18A-P parametric yield fails at production volumes, the foundry thesis collapses entirely regardless of this deal.</p>
+
+    <p><span class="confidence-tag conf-med">MEDIUM confidence</span> &mdash; The deal is real and symbolically massive, but we lack the specifics to assess financial materiality.</p>
+  </div>
+</div>
+
+<!-- POST 2: ADVANCED PACKAGING PODCAST -->
+<div class="post-card">
+  <div class="post-title">Semi Doped Podcast: Advanced Packaging</div>
+  <div class="post-meta">2026-06-19 &bull; semidoped.substack.com &bull; ~8,700 words (podcast transcript)</div>
+
+  <h4>Summary</h4>
+
+  <p>This is a comprehensive educational episode where Vik Sekar and Austin Lyons explain advanced packaging from first principles, then build to the investment-relevant punchline about Google's EMIB order through MediaTek. Here are the key points:</p>
+
+  <p><strong>Simple Packaging (the old way):</strong> After chips are manufactured on silicon wafers, they need to be "packaged" &mdash; cut apart, connected to power and data lines, and enclosed in a protective casing. The oldest method is <strong>wire bonding</strong> (literally soldering thin metal wires from the chip to a circuit board), which is cheap but creates long, slow connections. A better method is <strong>flip chip</strong>: turn the chip upside down and use tiny solder balls to connect directly, creating shorter, faster connections. This work was traditionally done by <strong>OSATs</strong> (Outsourced Semiconductor Assembly and Test companies like Amkor and ASE) &mdash; factories that specialize in packaging, not chip manufacturing.</p>
+
+  <p><strong>Why "advanced" packaging exists:</strong> Modern AI chips are so complex that a single chip can't be big enough. There's a physical limit called the <strong>reticle limit</strong> (~858mm&sup2;, about the size of a large postage stamp) &mdash; the maximum area a lithography machine can pattern in one shot. Nvidia's GPUs already hit this limit. To get more computing power, you need to connect multiple chips together and make them behave as one. Advanced packaging uses semiconductor-class manufacturing (the same precision as making chips themselves) to create extremely fine connections between chips &mdash; vastly better than crude wire bonds or even flip chips.</p>
+
+  <p><strong>CoWoS variants explained:</strong></p>
+  <ul>
+    <li><strong>CoWoS-S</strong> (Silicon interposer): The original. A big piece of silicon with fine metal wiring sits between the chips and the base. Excellent connection quality, but expensive (uses precious silicon wafers) and limited by the reticle size of the interposer itself.</li>
+    <li><strong>CoWoS-R</strong> (RDL / redistribution layer): Uses cheaper organic material instead of silicon for the middle layer. Much cheaper and not reticle-limited, but the wiring can't be as fine &mdash; not good enough for AI accelerators.</li>
+    <li><strong>CoWoS-L</strong> (Local silicon bridges): A hybrid. Uses cheap organic material for most of the middle layer, but places small silicon "bridges" only where chips need high-density connections. Gets most of the performance benefits of CoWoS-S with better cost and scalability.</li>
+  </ul>
+
+  <p><strong>EMIB explained:</strong> Intel's approach goes one step further than CoWoS-L. It eliminates the separate middle layer entirely &mdash; chips sit directly on a substrate (base layer), and tiny silicon bridges are <em>embedded</em> into that substrate wherever connections are needed. Key advantages:</p>
+  <ul>
+    <li><strong>Two layers vs. three:</strong> Fewer manufacturing steps, lower cost.</li>
+    <li><strong>Panel-based substrates:</strong> Intel uses large rectangular panels (500mm&times;500mm) instead of round wafers (300mm diameter), dramatically reducing material waste. (Analogy from the podcast: cutting square cookies from a square pancake wastes less than cutting them from a round one.)</li>
+    <li><strong>Scalability:</strong> Because each bridge is tiny and high-yield, you can tile bridges in any pattern &mdash; 2&times;4 grids, 3&times;3 grids, whatever your chip design needs. Current sizes: up to 8x reticle, targeting 12x+ by 2028.</li>
+    <li><strong>EMIB-T</strong> (with through-silicon vias): Allows power and signals to pass through the bridge, critical for AI accelerators.</li>
+    <li><strong>EMIB-M</strong> (with embedded capacitors): Includes tiny capacitors for clean power delivery to the chips.</li>
+  </ul>
+
+  <p><strong>The yield debate:</strong> Some analyst reports claim EMIB yield is "only 90%." At first glance this sounds terrible &mdash; losing 1 in 10 advanced AI chips (worth tens of thousands of dollars each) to a packaging defect would be unacceptable. But Semi Doped pushes back: Intel has shipped millions of chips using EMIB for a decade in its own products (Sapphire Rapids, Granite Rapids server CPUs). If yield were truly 90%, those products couldn't have shipped profitably. The hosts suspect the 90% figure refers to early EMIB-T/EMIB-M variants and may not reflect the current state.</p>
+
+  <p><strong>The Google TPU punchline:</strong> Google has reportedly committed to having ~3 million TPUs (its custom AI chips) packaged using Intel's EMIB, targeted for ~2028. The TPU chips themselves would be manufactured at TSMC and designed with <strong>MediaTek</strong> (traded as <span style="font-family:'JetBrains Mono',monospace">2454.TW</span>, ~4,390 TWD) &mdash; not Broadcom, which has historically been Google's primary chip design partner. Semi Doped frames this as a major competitive shift:</p>
+
+  <blockquote>&ldquo;MediaTek is becoming an increasing threat to Broadcom's custom ASIC model, especially with Google TPUs &mdash; something to really watch out for. That's why Broadcom stock has been low lately.&rdquo;</blockquote>
+
+  <p>Additionally, <strong>SK Hynix</strong> is reportedly testing EMIB for HBM (High Bandwidth Memory &mdash; the specialized fast memory stacked alongside AI chips) integration. And Semi Doped noted that Intel has a little-known capability in optical chip manufacturing that could make it a player in <strong>co-packaged optics</strong> (CPO &mdash; embedding light-based connections directly into chip packages, the next frontier beyond electrical wiring).</p>
+
+  <p><strong>Scaling roadmap:</strong> Today's most advanced packages are ~5.5x the reticle size (for Nvidia's Blackwell Ultra and upcoming Rubin chips). TSMC plans 9.5x next, with "System on Wafer" targeting 40x. Intel's EMIB is at ~8x today, targeting 12x+ by 2028. Long-term, wafer-scale computing (an entire wafer as one chip &mdash; what startup Cerebras already does) is on the horizon.</p>
+
+  <div class="analysis-box">
+    <h4>Analysis &amp; Context</h4>
+
+    <p><strong>Explaining &amp; contextualizing (from wiki knowledge):</strong> Advanced packaging has been a central theme tracked across all five newsletters since early 2024. It first emerged as a niche process engineering topic, but by 2025 became recognized as the binding bottleneck for AI chip production &mdash; TSMC's CoWoS capacity, not raw chip manufacturing, was often the factor limiting how many Nvidia GPUs could be built. Our wiki tracks 52 entries on this theme across SemiAnalysis, Irrational Analysis, Citrini, Global Semi Research, and Semi Doped. The competitive dynamic between CoWoS and EMIB has been building since SemiAnalysis covered Intel's EMIB-T progress at IEDM in February 2025, and Irrational Analysis began framing EMIB as Intel Foundry's "real moat" by late 2025. Semi Doped's educational deep-dive consolidates what the other newsletters have covered in fragments.</p>
+
+    <p>The MediaTek angle is particularly significant. Our wiki shows that Broadcom (AVGO, ~$411) has been considered near-untouchable as Google's TPU design partner since at least 2024, with Irrational Analysis holding it as a top position through the entire period. The only prior crack in Broadcom's armor was a brief March 2025 SHORT call from Irrational Analysis on the MediaTek/Nvidia IP agreement, which the author later reversed. If Google is genuinely shifting TPU design from Broadcom to MediaTek AND packaging from TSMC CoWoS to Intel EMIB, it's a double disruption that weakens two of the industry's strongest incumbents simultaneously.</p>
+
+    <p><strong>Track-record note:</strong> Semi Doped's prior INTC LONG call (June 12, 2026) on EMIB packaging maturation is being validated by this episode's discussion and the Apple deal. The publication is relatively new to our tracking (first ingested April 2026) with no resolved priced calls yet, so hit rate is not calculable.</p>
+
+    <p><strong>Critique:</strong> The 3-million TPU EMIB order is attributed to "news recently" and industry reports, but Semi Doped does not cite a specific primary source or confirm it with Google, MediaTek, or Intel. The ~2028 timeline means this is a commitment that can be revised. The yield discussion is fair-minded but relies on inference (Intel's internal shipping history) rather than disclosed data. And the entire episode is, by design, educational rather than investment-analytical &mdash; the hosts don't provide price targets or risk/reward frameworks.</p>
+
+    <p><strong>Falsifier:</strong> If the Google TPU EMIB order doesn't materialize at the reported scale, or if SK Hynix testing reveals yield issues with EMIB-T for HBM integration, the Intel packaging thesis weakens. If Broadcom retains the TPU socket and MediaTek's challenge fizzles, the competitive narrative here is overblown.</p>
+
+    <p><span class="confidence-tag conf-med">MEDIUM confidence</span> &mdash; The technology explanation is excellent and consistent with what other newsletters have covered. The Google/MediaTek/EMIB narrative is plausible and directionally consistent with prior reporting, but lacks primary-source confirmation.</p>
+  </div>
+</div>
+
+<!-- TICKER PROFILES -->
+<h2>Ticker Profiles</h2>
+
+<!-- INTC -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">INTC</span> &mdash; Intel Corporation <span class="tag tag-long">LONG</span></h4>
+  <p>Intel designs and manufactures computer chips. It is both a product company (selling processors for PCs and servers) and, under its new strategy, a foundry (making chips for other companies). This dual identity is the source of both its opportunity and its risk.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$134</div></div>
+    <div class="metric-box"><div class="metric-label">Mkt Cap</div><div class="metric-value">~$570B</div></div>
+    <div class="metric-box"><div class="metric-label">YTD Return</div><div class="metric-value">+260%</div></div>
+    <div class="metric-box"><div class="metric-label">From Apr Call</div><div class="metric-value">+65%</div></div>
+  </div>
+  <div class="prior-calls">
+    <strong>Prior calls tracking:</strong> Irrational Analysis LONG @ $81.4 (Apr 24) &rarr; $134 (+65%) <span class="validation-badge v-strong">TRACKING</span> &bull; Global Semi Research LONG @ $80 (Apr 25) &rarr; $134 (+68%) <span class="validation-badge v-strong">TRACKING</span> &bull; Semi Doped LONG (Jun 12, 17, 19 &mdash; unpriced) &bull; SemiAnalysis LONG (Jun 11 &mdash; raise capital thesis)
+  </div>
+  <p style="font-size:0.88rem;">The Apple deal, EMIB packaging commitments, and new leadership hires are cumulative evidence that the foundry turnaround is real. But the stock has tripled from where the original thesis was priced, and the deal's financial details are unknown. The live question is no longer "will Intel survive?" but "is all of this already in the price?"</p>
+</div>
+
+<!-- TSEM -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">TSEM</span> &mdash; Tower Semiconductor <span class="tag tag-long">LONG</span></h4>
+  <p>Tower Semiconductor is an Israeli specialty chipmaker that has become the leading factory for "silicon photonics" chips &mdash; components that use light to move data in AI data centers. Unlike TSMC (which makes cutting-edge logic chips), Tower serves niche markets where specialized manufacturing expertise matters more than raw transistor density.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$287</div></div>
+    <div class="metric-box"><div class="metric-label">Day Change</div><div class="metric-value">+7.3%</div></div>
+  </div>
+  <div class="prior-calls">
+    <strong>Prior calls:</strong> Irrational Analysis has been persistently LONG since late 2024, with 10+ logged calls describing it as a core "do not touch" position. No priced calls exist in the log (all pre-date our pricing convention), so hit rate cannot be calculated, but the author's disclosed sizing (second-largest trading-account position) implies strong conviction that has been rewarded.
+  </div>
+  <p style="font-size:0.88rem;">The 5-million photonic IC milestone with Marvell is a concrete volume data point confirming Tower's manufacturing leadership. The stock's 7% jump on the news suggests the market is paying attention. Falsifier: a competitor (TSMC or GlobalFoundries) wins meaningful silicon photonics volume away from Tower.</p>
+</div>
+
+<!-- MRVL -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">MRVL</span> &mdash; Marvell Technology <span class="tag tag-long">LONG</span></h4>
+  <p>Marvell designs networking chips, custom AI chips for cloud companies, and optical data-transfer products. Its story is bifurcated: legacy businesses facing erosion versus a potentially transformative bet on co-packaged optics via its Celestial AI acquisition.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">~$309</div></div>
+    <div class="metric-box"><div class="metric-label">12M Return</div><div class="metric-value">+570%</div></div>
+  </div>
+  <div class="prior-calls">
+    <strong>Prior calls:</strong> The only priced call in the log is Irrational Analysis SHORT @ $72 (Sep 2025) &mdash; the stock subsequently rallied over 300%, making this a clear losing trade <span class="validation-badge v-contra">WRONG</span>. Since Oct 2025, most tracked publications have shifted to LONG or cautiously constructive, anchored on the Celestial AI CPO thesis and Jensen Huang's $2B investment.
+  </div>
+  <p style="font-size:0.88rem;">The Tower partnership milestone validates Marvell's coherent optics business, which integrates Tower's photonic chips into Marvell's DSP-based optical products. This is the proven, shipping business &mdash; not the speculative Celestial AI bet. The live binary: Celestial's germanium EAM technology either passes qualification and creates a CPO monopoly, or fails and removes the bull case's centerpiece.</p>
+</div>
+
+<!-- 2454.TW -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">2454.TW</span> &mdash; MediaTek <span class="tag tag-long">LONG</span></h4>
+  <p>MediaTek is a Taiwanese chip designer traditionally known for smartphone processors. It has increasingly moved into AI chip design, reportedly winning the role of designing Google's next-generation TPU (Tensor Processing Unit &mdash; Google's custom AI chip) &mdash; a role previously held exclusively by Broadcom.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">4,390 TWD</div></div>
+    <div class="metric-box"><div class="metric-label">52W Range</div><div class="metric-value">1,130&ndash;4,970 TWD</div></div>
+  </div>
+  <div class="prior-calls">
+    <strong>Prior coverage:</strong> MediaTek has appeared in wiki sources primarily as a competitive threat to Broadcom and as a SerDes (high-speed data connection) challenger. Irrational Analysis has discussed MediaTek/Nvidia IP agreements and expressed concern about MediaTek's burst-error-prone SerDes design, while Semi Doped's Computex coverage (June 12) highlighted Google's 3M TPU EMIB order through MediaTek. No explicit priced calls exist in the wiki.
+  </div>
+  <p style="font-size:0.88rem;">The Google TPU shift from Broadcom to MediaTek &mdash; if confirmed at scale &mdash; would be one of the most significant competitive disruptions in the custom chip market. But execution risk is real: Irrational Analysis has previously flagged MediaTek's SerDes reliability issues, and the 2028 timeline gives Broadcom ample time to respond. Watch for MediaTek's SerDes qualification results as the key proof point.</p>
+</div>
+
+<!-- 005930.KS -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">005930.KS</span> &mdash; Samsung Electronics <span class="tag tag-neutral">NEUTRAL</span></h4>
+  <p>Samsung is a Korean conglomerate that makes everything from memory chips (DRAM and NAND flash) to smartphones. Its semiconductor foundry business competes with TSMC but has struggled with yield problems at advanced manufacturing nodes.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">354,000 KRW</div></div>
+    <div class="metric-box"><div class="metric-label">ATH (Jun 19)</div><div class="metric-value">374,500 KRW</div></div>
+  </div>
+  <p style="font-size:0.88rem;">Samsung's CFET best-paper at VLSI 2026 is impressive research, but CFET is a next-next-generation transistor architecture &mdash; years away from commercial production. The more immediately relevant Samsung news is its foundry being in expansion talks with AMD and Google. Stance is NEUTRAL: the CFET paper improves Samsung's R&D credibility, but the gap between a conference demo and volume manufacturing remains enormous.</p>
+</div>
+
+<!-- AMKR -->
+<div class="ticker-card">
+  <h4><span style="font-family:'JetBrains Mono',monospace; font-size:1.1rem;">AMKR</span> &mdash; Amkor Technology <span class="tag tag-neutral">NEUTRAL</span></h4>
+  <p>Amkor is one of the world's largest OSATs &mdash; companies that specialize in packaging and testing chips after they've been manufactured. Traditionally a lower-margin business, Amkor is trying to move up the value chain into advanced packaging.</p>
+  <div class="metrics-grid">
+    <div class="metric-box"><div class="metric-label">Price</div><div class="metric-value">$91</div></div>
+    <div class="metric-box"><div class="metric-label">ATH (Jun 16)</div><div class="metric-value">$86.55 close</div></div>
+  </div>
+  <p style="font-size:0.88rem;">Semi Doped mentioned Amkor as an OSAT aspiring to do advanced packaging, noting the TSMC&ndash;Amkor long-term partnership announcement. No explicit investment thesis was offered. The challenge: advanced packaging requires foundry-class equipment and expertise, which is precisely why TSMC and Intel dominate it. Amkor's earnings calls increasingly focus on advanced packaging ambitions, but whether an OSAT can truly compete with fabs remains unproven.</p>
+</div>
+
+<h2>What Was Quiet</h2>
+<p>Four of the five tracked publications &mdash; <strong>Irrational Analysis</strong>, <strong>SemiAnalysis</strong>, <strong>Global Semi Research</strong>, and <strong>Citrini Research</strong> &mdash; published no new posts during this window (June 19&ndash;21). This is the lightest scan since the wiki was bootstrapped. The lack of new posts from the major analytical outlets means this scan's investment signal is narrower than usual, driven entirely by Semi Doped's daily update and educational podcast.</p>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>Generated by the Substack Scanner routine. Data as of June 22, 2026. Stock prices are approximate, sourced via web search (Yahoo Finance blocked by network policy). This report is not investment advice.</p>
+  <p>Wiki knowledge base: 133 tickers, 29 themes, 5 publications tracked since January 2024. This is run #4 since the wiki was bootstrapped on June 17, 2026.</p>
+</div>
+
+</body>
+</html>

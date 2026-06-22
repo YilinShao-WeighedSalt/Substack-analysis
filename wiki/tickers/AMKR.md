@@ -2,9 +2,9 @@
 type: ticker
 title: "AMKR — Amkor Technology"
 tags: []
-related: ["[[citrini-2024-07-08-inference-on-device]]", "[[citrini-2026-01-26-semis-memo-muscle-memory]]", "[[semianalysis-2026-03-12-great-ai-silicon-shortage]]", "[[semidoped-2026-06-17-daily-update]]"]
+related: ["[[citrini-2024-07-08-inference-on-device]]", "[[citrini-2026-01-26-semis-memo-muscle-memory]]", "[[semianalysis-2026-03-12-great-ai-silicon-shortage]]", "[[semidoped-2026-06-17-daily-update]]", "[[semidoped-2026-06-19-daily-update-june-19]]"]
 created: 2024-07-08
-updated: 2026-06-19
+updated: 2026-06-22
 ticker: AMKR
 current_stance: long
 conviction: medium
@@ -17,6 +17,7 @@ last_review: 2026-06-19
 | 2026-01-26 | [[citrini]] | LONG | n/a | Chiplet architecture proliferation and advanced packaging demand drive OSAT volumes; validated second-order AI infrastructure call |
 | 2026-03-12 | [[semianalysis]] | MENTION | n/a | Cited as CoWoS-alternative OSAT providing advanced packaging capacity relief |
 | 2026-06-17 | [[semidoped]] | LONG | 91.00 | 10-year TSMC partnership locks in Amkor as primary US-based OSAT for Arizona output |
+| 2026-06-19 | [[semidoped]] | MENTION | 91 | TSMC–Amkor long-term advanced packaging partnership announced; OSAT aspiring to advanced packaging tier |
 
 ## Thesis evolution
 Citrini initiated AMKR as an owned position in mid-2024 as a direct beneficiary of the on-device AI and edge inference theme — advanced packaging is the enabling technology for shrinking multi-die AI SoCs into consumer form factors. By January 2026 the original thesis had broadened: AMKR was cited as a validated second-order AI infrastructure call, with chiplet architecture proliferation and OSAT volume growth now the primary driver rather than the iPhone replacement cycle alone. SemiAnalysis's March 2026 note adds a third angle — as CoWoS capacity at TSMC tightens relative to the N3 logic crunch, OSATs like Amkor and ASE absorb overflow advanced packaging demand, positioning AMKR as a capacity-relief play in a multi-year silicon shortage. All three publications are constructive; there is no meaningful disagreement between them, though SemiAnalysis treats AMKR as a supporting detail rather than a primary thesis name.

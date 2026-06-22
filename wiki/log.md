@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-06-19
+updated: 2026-06-22
 ---
 
 # Wiki Run Log
+
+## 2026-06-22
+- ingest | 2 posts from semidoped | tickers touched: INTC, TSEM, MRVL, 2454.TW, 005930.KS, AMKR
 
 ## 2026-06-19
 - ingest | 4 posts from semianalysis, semidoped | tickers: VRT, AVGO, INTC, AMD, AMKR, AEHR, CRWV, NBIS, 000660.KS, 005930.KS, ASML, QCOM, TSM, NOK, COHR, ORCL, TSEM
