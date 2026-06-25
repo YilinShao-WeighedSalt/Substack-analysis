@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Semiconductor Scan — June 25, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #fafbfc;
+    --text: #1a1a2e;
+    --text-muted: #64748b;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --border: #e2e8f0;
+    --green: #16a34a;
+    --green-bg: #dcfce7;
+    --amber: #d97706;
+    --amber-bg: #fef3c7;
+    --gray: #6b7280;
+    --gray-bg: #f1f5f9;
+    --orange: #ea580c;
+    --orange-bg: #fff7ed;
+    --red: #dc2626;
+    --red-bg: #fef2f2;
+    --purple: #7c3aed;
+    --purple-bg: #f5f3ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.65rem; font-weight: 700; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; }
+  h3 { font-size: 1.25rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+  h4 { font-size: 1.05rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+  p { margin-bottom: 0.75rem; }
+  .date-label { font-family: 'JetBrains Mono', monospace; color: var(--text-muted); font-size: 0.9rem; }
+  .summary-box {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .summary-box h3 { margin-top: 0; color: var(--accent); }
+  .macro-context {
+    background: var(--purple-bg);
+    border-left: 4px solid var(--purple);
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0 2rem;
+    font-size: 0.92rem;
+  }
+  .macro-context strong { color: var(--purple); }
+  .scoreboard {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem;
+    font-size: 0.88rem;
+  }
+  .scoreboard th {
+    background: var(--text);
+    color: white;
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  .scoreboard td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.85rem;
+  }
+  .scoreboard tr:nth-child(even) { background: var(--bg-alt); }
+  .scoreboard .ticker-cell { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+  .tag {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border-radius: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .tag-long { background: var(--green-bg); color: var(--green); }
+  .tag-short { background: var(--red-bg); color: var(--red); }
+  .tag-neutral { background: var(--gray-bg); color: var(--gray); }
+  .tag-cautious { background: var(--amber-bg); color: var(--amber); }
+  .tag-mixed { background: var(--purple-bg); color: var(--purple); }
+  .pub-header {
+    font-size: 1.65rem;
+    font-weight: 800;
+    margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent);
+  }
+  .post-title { font-size: 1.15rem; font-weight: 700; margin: 0.5rem 0; }
+  .post-meta { font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem; }
+  .analysis-box {
+    background: var(--orange-bg);
+    border-left: 4px solid var(--orange);
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+  }
+  .analysis-box h4 { color: var(--orange); margin-top: 0; }
+  .ticker-card {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin: 1.25rem 0;
+  }
+  .ticker-card h3 { margin-top: 0; font-family: 'JetBrains Mono', monospace; }
+  .ticker-card .financials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+  }
+  .ticker-card .fin-item {
+    background: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .ticker-card .fin-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+  .ticker-card .fin-value { font-weight: 700; font-size: 0.95rem; }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+    color: var(--text-muted);
+    background: var(--bg-alt);
+    border-radius: 0 6px 6px 0;
+  }
+  .confidence { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 0.85rem; }
+  .conf-high { color: var(--green); }
+  .conf-medium { color: var(--amber); }
+  .conf-low { color: var(--red); }
+  .toc { background: var(--bg-alt); padding: 1.25rem 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+  .toc ul { list-style: none; padding-left: 0; }
+  .toc li { margin: 0.35rem 0; }
+  .toc a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .toc a:hover { text-decoration: underline; }
+  a { color: var(--accent); }
+  .divider { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Substack Semiconductor Scan</h1>
+<p class="date-label">June 25, 2026 &mdash; Scan #7 (every 3 days)</p>
+
+<div class="macro-context">
+  <strong>Market Context (June 23):</strong> Nasdaq slid as a global chip rout deepened &mdash; the SOX (semiconductor index) lost 7.9%, Micron dropped 13% ahead of earnings, and Korean chip shares partially rebounded in late trading. The dollar hit its highest since November as markets priced in Fed rate hikes. DRAM pricing continues to surge.
+</div>
+
+<div class="toc">
+  <strong>Contents</strong>
+  <ul>
+    <li><a href="#background">Background / State of the Book</a></li>
+    <li><a href="#scoreboard">Ticker Scoreboard</a></li>
+    <li><a href="#irrational">Irrational Analysis: Cerebras June 2026 Earnings</a></li>
+    <li><a href="#semianalysis">SemiAnalysis: China's CXMT Is Set to Challenge DRAM Incumbents</a></li>
+    <li><a href="#semidoped">Semi Doped: Daily Updates (June 22&ndash;24)</a></li>
+    <li><a href="#citrini">Citrini Research: Small Themes &mdash; June 2026</a></li>
+    <li><a href="#tickers">Ticker Deep Dives</a></li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<h2 id="background">Background / State of the Book</h2>
+
+<p>If you're reading this for the first time, here's the essential context you need to follow the posts below.</p>
+
+<h3>The Memory Supercycle</h3>
+<p>The single most important theme across all five of our tracked publications is the <strong>DRAM memory shortage</strong>. DRAM (Dynamic Random-Access Memory) is the "working memory" that every computer uses to hold data it's actively processing &mdash; your phone, laptop, and the giant servers powering AI all need it. There are only three major manufacturers in the world: <strong>Samsung Electronics</strong> (South Korea), <strong>SK Hynix</strong> (South Korea), and <strong>Micron Technology</strong> (United States). A fourth Chinese challenger, <strong>CXMT</strong> (ChangXin Memory Technologies), is growing rapidly but still far smaller.</p>
+
+<p>Since late 2024, these newsletters have tracked what SemiAnalysis called a <strong>"once-in-four-decades shortage"</strong>: AI systems consume enormous amounts of memory (especially a specialized, faster variant called <strong>HBM</strong> &mdash; High Bandwidth Memory &mdash; which stacks multiple DRAM chips vertically to provide much faster data access for AI chips like Nvidia's GPUs). The demand is so intense that cloud computing companies like Microsoft, Google, and Amazon are signing <strong>multi-year contracts with 30&ndash;40% upfront payments</strong> just to lock in supply. Memory prices are surging &mdash; Jefferies projects 40&ndash;50% price increases in Q3 2026 alone.</p>
+
+<p>All five publications agree that DRAM is structurally undersupplied through at least 2027&ndash;2028. The debate is about <em>degree</em>: SemiAnalysis and Global Semi Research are most bullish on the shortage lasting, while Irrational Analysis has raised the contrarian question of whether HBM specifically might be the "wrong architecture" long-term.</p>
+
+<h3>The Foundry Race &mdash; Who Makes the Chips</h3>
+<p>A <strong>foundry</strong> is a factory that manufactures chips designed by other companies. TSMC (Taiwan Semiconductor Manufacturing Company) dominates this market, making chips for Apple, Nvidia, AMD, and others. <strong>Intel</strong> is trying to transform itself from just designing its own chips to also manufacturing chips for other companies &mdash; its "Intel Foundry Services" (IFS) division. Samsung also runs foundries but has struggled with quality. This scan period saw a major validation of Intel's foundry ambitions: a deal with Apple (announced by President Trump) to design and manufacture chips in the U.S., plus Google reportedly committing to use Intel's advanced packaging technology for ~3 million TPU (AI accelerator) units. Intel's stock hit near all-time highs at ~$134&ndash;135, up 65&ndash;68% from the $80&ndash;81 level where two of our publications called it a buy just two months ago.</p>
+
+<h3>Cerebras &mdash; The Wafer-Scale Maverick</h3>
+<p><strong>Cerebras Systems</strong> (ticker: CBRS) makes the world's largest computer chip &mdash; literally an entire silicon wafer turned into a single processor, called the WSE (Wafer-Scale Engine). Most chips are small rectangles cut from a larger wafer; Cerebras uses the <em>whole wafer</em>. This gives it enormous on-chip memory (using SRAM, a faster but more expensive type of memory than DRAM) and unmatched speed for certain AI tasks, especially <strong>inference</strong> (running a trained AI model to generate answers, as opposed to "training" which teaches the model in the first place). The company IPO'd in May 2026 at $185/share. Our tracker shows a contested view: Irrational Analysis flipped from SHORT to LONG in May 2026 after Cerebras secured a $20 billion inference deal with OpenAI, while Semi Doped remains cautious about the business model.</p>
+
+<h3>Open Tensions to Watch</h3>
+<ul style="margin: 0.75rem 0 0.75rem 1.5rem;">
+  <li><strong>CXMT vs. the Big Three:</strong> China's largest memory maker is about to IPO. How much market share it takes &mdash; and whether it floods the market with cheaper memory &mdash; is the key risk to the DRAM bull thesis.</li>
+  <li><strong>AI spending fatigue?</strong> Reports are emerging that AI customers are cutting costs by switching to cheaper, open-source models instead of premium offerings from Anthropic and OpenAI. If this accelerates, it could slow datacenter buildout.</li>
+  <li><strong>Qualcomm's strategic desperation:</strong> Qualcomm (QCOM) is reportedly trying to acquire both Tenstorrent and Modular ($4B) &mdash; Irrational Analysis interprets this as desperation to find growth as Apple pulls its modem business in-house.</li>
+</ul>
+
+<!-- ============================================================ -->
+<h2 id="scoreboard">Ticker Scoreboard</h2>
+<table class="scoreboard">
+<thead>
+<tr><th>Ticker</th><th>Company</th><th>Price</th><th>Stance</th><th>Source</th><th>Thesis (1&nbsp;line)</th></tr>
+</thead>
+<tbody>
+<tr><td class="ticker-cell">CBRS</td><td>Cerebras Systems</td><td>$226.72</td><td><span class="tag tag-long">LONG</span></td><td>Irrational Analysis</td><td>Activist campaign; enormous inference potential if packaging yield and I/O fixed</td></tr>
+<tr><td class="ticker-cell">MU</td><td>Micron Technology</td><td>$1,057.59</td><td><span class="tag tag-long">LONG</span></td><td>SemiAnalysis</td><td>DRAM supercycle; CXMT supply still too small to disrupt market through 2028</td></tr>
+<tr><td class="ticker-cell">000660.KS</td><td>SK Hynix</td><td>&#8361;2,580,000</td><td><span class="tag tag-long">LONG</span></td><td>Multiple</td><td>HBM leader; filing $29B US ADR listing; surpassed Samsung as most valuable Korean company</td></tr>
+<tr><td class="ticker-cell">005930.KS</td><td>Samsung Electronics</td><td>&#8361;340,500</td><td><span class="tag tag-long">LONG</span></td><td>Multiple</td><td>DRAM supercycle beneficiary; UFS 5.0 for mobile AI; gaining foundry overflow customers</td></tr>
+<tr><td class="ticker-cell">INTC</td><td>Intel</td><td>$131.65</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>Apple foundry deal + Google EMIB validate IFS turnaround; near all-time high</td></tr>
+<tr><td class="ticker-cell">QCOM</td><td>Qualcomm</td><td>$193.13</td><td><span class="tag tag-short">SHORT</span></td><td>Irrational Analysis</td><td>M&A spree (Modular $4B) signals desperation; Apple modem cliff looming</td></tr>
+<tr><td class="ticker-cell">2454.TW</td><td>MediaTek</td><td>TWD 4,285</td><td><span class="tag tag-long">LONG</span></td><td>Semi Doped</td><td>Secured Google TPU v9 orders with 336G SerDes; displacing Broadcom</td></tr>
+<tr><td class="ticker-cell">ASML</td><td>ASML</td><td>$1,803.52</td><td><span class="tag tag-cautious">CAUTIOUS</span></td><td>Semi Doped</td><td>US accuses ASML of EUV component shipments to China; regulatory overhang</td></tr>
+<tr><td class="ticker-cell">TSM</td><td>TSMC</td><td>$441.35</td><td><span class="tag tag-neutral">NEUTRAL</span></td><td>Context</td><td>Cutting 28nm output 25%+ to reallocate to advanced nodes; Apple volume shifting to Intel</td></tr>
+</tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2 class="pub-header" id="irrational">Irrational Analysis</h2>
+<p class="post-title">Cerebras June 2026 Earnings</p>
+<p class="post-meta">Jun 24, 2026 &bull; ~1,170 words &bull; Tickers: CBRS</p>
+
+<div class="summary-box">
+<h3>Summary</h3>
+<p>Irrational Analysis &mdash; a technically-oriented semiconductor newsletter known for blunt, engineering-driven analysis &mdash; covers Cerebras's first-ever earnings call with characteristic irreverence, calling it a "trainwreck transcript" while maintaining the stock is a compelling long. The author, who reversed from a multi-year bearish stance to bullish in May 2026 after the OpenAI inference deal, now positions himself as a shareholder and aspiring activist investor.</p>
+
+<p><strong>What is Cerebras?</strong> Cerebras makes the WSE (Wafer-Scale Engine), an AI chip the size of an entire silicon wafer &mdash; roughly the size of a dinner plate. Normal chips are small pieces cut from a wafer; Cerebras uses the whole thing, giving it a massive amount of ultra-fast on-chip memory (SRAM). This makes it exceptionally fast for <strong>inference</strong> &mdash; running AI models to generate answers &mdash; but introduces brutal manufacturing challenges.</p>
+
+<p><strong>Key corrections from the IPO report:</strong> The author revised several assumptions after reader feedback. The selling price of a single WSE-3 rack system is $700,000&ndash;$850,000 (previously assumed $300,000). The token-generation-per-user figure was corrected from 3,000 to 700 tokens/second. Both corrections matter for modeling the company's unit economics.</p>
+
+<p><strong>The yield problem &mdash; and why it matters:</strong> "Yield" refers to how many chips come out of the manufacturing process working correctly. Cerebras claims near-100% <em>wafer</em> yield (the chip design can route around defective sections), but the author argues the real bottleneck is <em>packaging</em> yield &mdash; the process of connecting the giant wafer to the rest of the system. The author models this at just 20%, meaning 4 out of 5 completed systems fail during assembly. At 20% packaging yield, gross margins are ~42%; if improved to 50%, margins would jump to Nvidia-like 72%. This is the central financial thesis: Cerebras's potential is enormous, but its profit margins are crippled by packaging failures.</p>
+
+<p><strong>The KV cache problem:</strong> When an AI model generates text, it builds up a running memory of the conversation called a <strong>KV cache</strong> (key-value cache). On Cerebras's chip, this cache competes with the AI model's own data (called "weights") for the same scarce SRAM memory. Other companies offload this cache to cheaper, slower storage (like NAND flash &mdash; the same technology in your phone's storage). Cerebras can't easily do this because its chip-to-outside-world data connections (I/O) are too limited. The author views this as a solvable but critical blocker.</p>
+
+<p><strong>Three things that matter for the investment:</strong></p>
+<ol style="margin: 0.5rem 0 0.75rem 1.5rem;">
+  <li><strong>WSE-4 number format:</strong> The current WSE-3 chip (from 2024) only supports FP16 math, meaning it uses 16 bits per number. Modern AI chips support FP8 (8 bits) or even FP4 (4 bits) &mdash; using fewer bits lets you fit more data on the chip and run faster. If WSE-4 doesn't at least support FP8, the company will fall further behind Nvidia.</li>
+  <li><strong>I/O improvements:</strong> Two sources told the author Cerebras is working on "face-to-face" I/O &mdash; a way to connect to the chip through the center of the wafer rather than just the edges, potentially solving the KV cache offload problem.</li>
+  <li><strong>Packaging yield roadmap:</strong> The author urges management to hold an investor day focused entirely on how they plan to improve the 20% packaging yield.</li>
+</ol>
+
+<p><strong>Nvidia/Groq connection:</strong> The author claims a third correlated source confirming that Nvidia's acquisition of Groq (a competing AI inference chip startup) is "highly linked" to Cerebras &mdash; implying Nvidia sees Cerebras's inference speed as a competitive threat worth neutralizing through the Groq deal. The author is 90% confident but wants a fourth source before publishing details.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Analysis</h4>
+
+<p><strong>Context from the wiki:</strong> Our tracker has followed Cerebras since its S-1 filing in October 2024. Irrational Analysis initially called it a SHORT three separate times, citing 97% revenue concentration from a single customer (G42, a UAE-based AI company), 36% gross margins, and what the author considered overstated technical claims. The reversal to LONG in May 2026 was driven by two concrete developments: a $20 billion inference deal with OpenAI and a distribution partnership with AWS. Semi Doped rated Cerebras NEUTRAL at its $185 IPO, acknowledging the engineering but questioning the business model. Today's $226.72 price represents a 22% gain from the IPO.</p>
+
+<p><strong>Track record note:</strong> Irrational Analysis has a pattern of high-conviction reversals that have tended to work &mdash; the author publicly corrects wrong calls (e.g., the Sandisk reversal in October 2025) and the INTC long at $81 in April 2026 is now up 65%. However, none of the prior CBRS calls have hard price anchors for scoring. Semi Doped's $185 NEUTRAL at IPO looks like a missed opportunity at current prices, though the business-model concerns (limited TAM, dual burden of chip design plus datacenter operations) haven't been resolved.</p>
+
+<p><strong>Critique:</strong> The packaging-yield argument is compelling engineering analysis but rests on an <em>assumption</em> &mdash; the author derives 20% packaging yield by reverse-engineering from published financial data, not from direct manufacturing data. Cerebras management has never confirmed or denied these yield numbers. The "face-to-face I/O" report comes from two non-technical sources, limiting its reliability. The Nvidia/Groq/Cerebras connection is tantalizing but explicitly withheld pending a fourth source &mdash; honest about the uncertainty but also a narrative hook for paid subscribers. The activist campaign angle is entertaining but the author holds a very small position ("a holder of share," singular), making any activist pressure symbolic rather than material.</p>
+
+<p><strong>What would make this wrong:</strong> WSE-4 ships without FP8 support; packaging yield fails to improve above 30%; the OpenAI deal proves one-time rather than recurring; or Nvidia's own inference optimization (through the Groq acquisition and NVLink improvements) eliminates the latency advantage Cerebras currently enjoys.</p>
+
+<p><span class="confidence conf-medium">Confidence: MEDIUM</span> &mdash; The engineering thesis is sound, but the investment case depends on unverifiable yield assumptions and an unproven management team's ability to execute on packaging improvements.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ============================================================ -->
+<h2 class="pub-header" id="semianalysis">SemiAnalysis</h2>
+<p class="post-title">China's CXMT Is Set to Challenge DRAM Incumbents</p>
+<p class="post-meta">Jun 23, 2026 &bull; ~5,700 words &bull; Tickers: MU, 000660.KS, 005930.KS (Samsung)</p>
+
+<div class="summary-box">
+<h3>Summary</h3>
+<p>SemiAnalysis &mdash; the most widely-read institutional semiconductor research newsletter, led by Dylan Patel &mdash; publishes an exhaustive deep dive on <strong>CXMT</strong> (ChangXin Memory Technologies), China's largest DRAM manufacturer, which is preparing for what could be the <strong>biggest semiconductor IPO in Chinese history</strong>.</p>
+
+<p><strong>What is CXMT?</strong> Founded in 2016 in Hefei, China, CXMT manufactures DRAM &mdash; the "working memory" chips used in virtually every electronic device. The global DRAM market has been dominated by just three companies (Samsung, SK Hynix, Micron) for decades. CXMT is trying to become a credible fourth player, backed by massive Chinese government funding.</p>
+
+<p><strong>How CXMT got its technology:</strong> CXMT's technology originated from <strong>Qimonda</strong>, a German memory company (formerly part of Siemens/Infineon) that went bankrupt in 2009. In 2019, CXMT licensed roughly 7,000 Qimonda patents and obtained 2.8 terabytes of technical documentation. The key technology was the "buried wordline" cell design &mdash; a way of constructing the tiny transistors in DRAM that allows smaller, denser chips. CXMT also recruited key engineers, including Karl-Heinz Kuesters (24-year DRAM veteran from Qimonda's German operations) and Ping Er-xuan (formerly of Micron, SanDisk, and Applied Materials).</p>
+
+<p><strong>Government backing &mdash; "patient state-venture capital":</strong> The Hefei municipal government funded ~80% of CXMT's first phase ($2.5 billion) and never sold down its stake despite CXMT accumulating losses of $5 billion over nearly a decade before turning profitable in 2025. This is a model Hefei has used before with display maker BOE and electric vehicle maker NIO &mdash; take a big equity stake in a strategic company and wait.</p>
+
+<p><strong>Financial explosion:</strong> CXMT's numbers are staggering:
+<ul style="margin: 0.5rem 0 0.75rem 1.5rem;">
+  <li>FY2025 revenue: ~$8.6 billion (up from $1.2B in 2023)</li>
+  <li>Q1 2026 revenue: $7.3 billion (nearly matching the entire prior year &mdash; 700% year-over-year growth)</li>
+  <li>Q1 2026 operating margin: ~70%</li>
+  <li>SemiAnalysis projects 2026 revenue could exceed <strong>$50 billion</strong></li>
+</ul>
+However, SemiAnalysis emphasizes this explosive growth is driven primarily by <strong>soaring DRAM prices</strong>, not market share gains. CXMT's bit shipments grew only 11% quarter-over-quarter, while its average selling prices rose 57%. In other words, the company is riding the same pricing wave as everyone else, not dramatically out-competing the incumbents.</p>
+
+<p><strong>The HBM gap:</strong> HBM (High Bandwidth Memory) is the premium, high-margin variant of DRAM used in AI accelerators. CXMT has barely entered this market &mdash; less than 1% of its revenue comes from HBM. It is struggling to stabilize production of even the older HBM3 8-stack variant, with estimated overall yield (combining wafer and packaging steps) of just ~25%. By contrast, SK Hynix leads with yields well above this and has ~70% of Nvidia's HBM4 allocation. SemiAnalysis believes CXMT may skip HBM3 entirely and focus on HBM3E, which would be more competitive when it ships in 2027.</p>
+
+<p><strong>Capacity trajectory:</strong> By end-2026, CXMT expects ~350,000 wafers per month &mdash; just below Micron's ~385,000. By 2028, CXMT could reach 500,000, representing ~17% of global DRAM capacity. Despite this growth, SemiAnalysis's model still shows DRAM as undersupplied by high-single-digit to low-teens percentages through 2028. New fabs (chip factories) take years to build, so CXMT cannot "irrationally accelerate" beyond its current expansion pace.</p>
+
+<p><strong>IPO structure concerns:</strong> CXMT's corporate structure is unusual: the parent company holds only ~30% of the economics of its two main fabs but controls 73&ndash;75% of the votes through agreements with state-linked entities. This means the company's consolidated revenue overstates what public shareholders actually receive by roughly four times. The company also claims to have "no controlling shareholder" despite state vehicles holding over 30% &mdash; a structure SemiAnalysis views as designed to manage foreign-investor perception.</p>
+
+<p><strong>Strategic investor:</strong> Alibaba Cloud is both CXMT's anchor customer and a ~4% shareholder, effectively guaranteeing domestic demand in a way the Korean incumbents never had at home.</p>
+
+<p><strong>Export controls &amp; HBM smuggling:</strong> U.S. export controls (enacted December 2024) restrict sales of HBM2E-equivalent or better memory products to China. SemiAnalysis reports that some Chinese companies continue obtaining HBM3 through re-export channels: foreign offices in third countries purchase the memory and ship it to China, sometimes as "partially assembled" modules that skirt the rules. The HBM is then recovered and repackaged onto domestic Chinese AI chips.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Analysis</h4>
+
+<p><strong>Context from the wiki:</strong> Our tracker has covered the DRAM cycle extensively since SemiAnalysis's February 2026 "Memory Mania" piece, which first called this a "once-in-four-decades shortage." That thesis has been consistently reinforced: Global Semi Research documented five-year contracts with 30% prepayments (May 2026), and Irrational Analysis, despite raising contrarian HBM concerns, agrees DRAM itself has "another double/triple" ahead on agentic AI demand. The CXMT deep dive adds a crucial new data layer: even the fastest-growing potential disruptor cannot materially alter the shortage through 2028.</p>
+
+<p><strong>Track record note:</strong> SemiAnalysis has been the most consistently correct publication on memory market dynamics in our tracker. Its early 2024 calls on SK Hynix's HBM leadership, Samsung's yield failures, and the structural tightness in DRAM have all played out. Its February 2026 "Memory Mania" forecast of a shortage-driven boom is tracking as prices continue to surge. The one partial miss was an overly bearish February 2026 call on Micron's HBM4 prospects (zero allocation), which may prove less dire if Micron catches up &mdash; though Micron remains the weakest of the Big Three on HBM.</p>
+
+<p><strong>Critique:</strong> The $50 billion 2026 revenue projection for CXMT is eye-popping but is largely an extrapolation of current pricing trends, which the article itself attributes to the cycle rather than CXMT's competitive position. If DRAM prices plateau or dip &mdash; even briefly &mdash; CXMT's revenue could fall far short. The 70% operating margin in Q1 2026 is almost certainly a cyclical peak; the company's cost-per-bit remains 30%+ above incumbents, so any pricing normalization would compress margins much more severely for CXMT than for Samsung or SK Hynix. The IPO governance structure (30% economics, 75% voting control) is a genuine red flag that the article appropriately highlights but perhaps understates &mdash; minority shareholders in Chinese state-influenced enterprises have historically had limited recourse.</p>
+
+<p><strong>The bull case for incumbents this implies:</strong> If even CXMT &mdash; expanding at maximum speed with unlimited government backing &mdash; cannot break the supply shortage, then the bull thesis for SK Hynix and Micron is even stronger. The article effectively argues that CXMT's growth is <em>additional evidence of how tight the market is</em>, not a threat to incumbents. The pricing data supports this: CXMT's ASPs are only 5&ndash;10% below the Big Three, not the deep discount bears feared.</p>
+
+<p><strong>What would make this wrong:</strong> A sudden demand slowdown in AI datacenter buildout (the AI spending fatigue signals Semi Doped covers are worth watching); CXMT's Shanghai Phase 2 fab ramps faster than modeled; or DRAM pricing drops sharply in H2 2027 as new capacity arrives.</p>
+
+<p><span class="confidence conf-high">Confidence: HIGH</span> &mdash; SemiAnalysis's memory coverage has been the most data-driven and accurate in our coverage universe. The CXMT supply data is derived from IPO filings (primary source) and their proprietary Memory Model.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ============================================================ -->
+<h2 class="pub-header" id="semidoped">Semi Doped</h2>
+<p class="post-title">Daily Updates &mdash; June 22, 23, &amp; 24</p>
+<p class="post-meta">Jun 22&ndash;24, 2026 &bull; Combined ~4,600 words &bull; Tickers: CBRS, MU, 000660.KS, 005930.KS, INTC, QCOM, ASML, 2454.TW, TSM</p>
+
+<div class="summary-box">
+<h3>Summary</h3>
+<p><strong>Semi Doped</strong> is a daily semiconductor newsletter and podcast hosted by industry experts Vik Sekar and Austin Lyons. They provide short, expert-level commentary on each day's news. Here are the most important items from the three days covered:</p>
+
+<h4>Cerebras Disappoints Despite Beating Estimates (June 24)</h4>
+<p>Cerebras reported Q1 revenue of $193.4 million (up 94% year-over-year) and guided 2026 revenue of $855&ndash;865 million, beating analyst estimates of $824.8 million. Despite the beat, <strong>shares fell ~10%</strong> as investors expected a larger share of the AI datacenter market. Vik Sekar echoed the concerns from Irrational Analysis &mdash; noting that with only 88GB of SRAM per rack, Cerebras needs many racks to run large AI models, which is a fundamental architectural constraint. The net loss was $14 million.</p>
+
+<h4>AI Customers Cutting Spending (June 24)</h4>
+<p>A significant report from The Information revealed that <strong>large AI customers are switching from premium AI models (like Anthropic's Claude and OpenAI's GPT) to cheaper alternatives</strong>, including open-source models. Open-source usage surged to 65% of tokens on OpenRouter (a platform that routes AI requests to different providers) in June, up from 34% in January. One company, Ensemble Health Partners, expects to save nearly $700,000/year by switching to cheaper models. Vik's take: this could slow the growth of companies like Anthropic and shift more AI compute to open-source infrastructure. Austin counters that frontier (most advanced) AI models will still grow for complex tasks, but cheaper models will dominate routine work.</p>
+
+<h4>SK Hynix Files $29B US ADR Listing (June 24)</h4>
+<p><strong>SK Hynix</strong>, the world's leading HBM manufacturer, announced plans to list American Depositary Receipts (ADRs &mdash; a way for foreign companies to trade on U.S. stock exchanges) <strong>raising up to $29 billion</strong>. This would be among the largest ADR offerings ever by an Asian company, with an expected listing date of July 10. The proceeds will fund AI-related investments. This comes after SK Hynix surpassed Samsung to become South Korea's most valuable company at a $1.362 trillion market cap.</p>
+
+<h4>MediaTek Secures Google TPU v9 Orders (June 23)</h4>
+<p><strong>MediaTek</strong> (Taiwan's largest chip designer, known mainly for smartphone processors) has reportedly won the primary orders for <strong>Google's TPU v9</strong> (codenamed "Triggerfish"). A TPU is Google's custom-designed AI chip &mdash; the in-house alternative to buying Nvidia GPUs. MediaTek won by using its <strong>336G SerDes</strong> technology (SerDes = Serializer/Deserializer, the high-speed communications circuits that allow chips to talk to each other at extreme speeds). Broadcom, which has historically dominated Google's custom chip business, reportedly faced delays with its more ambitious 448G SerDes design. This is a significant win for MediaTek's AI accelerator ASIC business, projected to reach $2 billion in 2026 revenue. Our tracker noted that Semi Doped called MediaTek LONG at TWD 4,390 on June 19 based on Google TPU momentum.</p>
+
+<h4>Micron-Anthropic Strategic Partnership (June 23)</h4>
+<p>Micron and Anthropic (the AI company behind Claude) signed a <strong>strategic agreement</strong> covering joint design of memory architectures for AI infrastructure, a long-term supply deal, and Micron becoming a strategic investor in Anthropic's latest funding round. Vik's observation: <em>"If a company with a steeply increasing ARR is going down the supply chain trying to secure memory, what's next? Is Anthropic going to acquire InP laser supply too?"</em> &mdash; highlighting how AI companies are now locking in semiconductor supply chains the way automakers once locked in steel.</p>
+
+<h4>ASML Accused of EUV Shipments to China (June 23)</h4>
+<p>The U.S. Commerce Department accused <strong>ASML</strong> (the Dutch company that makes the only machines in the world capable of printing the most advanced chip patterns, called EUV lithography machines) of shipping EUV-compatible components to Chinese customers, potentially breaching export controls. ASML denied the allegations, saying it has not delivered complete EUV systems to China. ASML has been barred from exporting its most advanced tools to Chinese fabs since 2019. The stock fell 6.5%.</p>
+
+<h4>Intel &amp; Apple Deal (June 22)</h4>
+<p>Intel shares rose ~9% after President Trump announced that Apple agreed to design and manufacture chips in the U.S. with Intel, <strong>shifting significant volume from TSMC</strong>. Semi Doped called this a validation of Intel's foundry strategy. Separately, Samsung is leveraging excess fab capacity to attract AMD as an advanced-node customer, carving share from TSMC.</p>
+
+<h4>Amazon Selling Trainium Externally (June 22)</h4>
+<p>Amazon plans to sell its <strong>Trainium</strong> AI chips (designed in-house for training and running AI models) directly to datacenter operators &mdash; no longer exclusively available through AWS cloud rentals. Google made a similar move in April with its TPUs. This positions both companies as <strong>direct competitors to Nvidia</strong> in AI chip hardware sales, not just cloud computing.</p>
+
+<h4>Memory Price Surge Forecast (June 23)</h4>
+<p>Jefferies (a major investment bank) predicts memory prices will rise <strong>40&ndash;50% quarter-over-quarter in Q3 2026</strong> and another 30&ndash;40% in Q4 2026, with further hikes into 2027. Cloud providers are securing 50% of total memory capacity through two-year agreements requiring 40% prepayment.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Analysis</h4>
+
+<p><strong>Context from the wiki:</strong> Semi Doped has been tracked in our system since April 2026. The publication provides valuable daily signal aggregation with expert commentary, though its daily format means calls are more reactive than thesis-driven. The MediaTek/TPU v9 news aligns with a broader theme our tracker has followed since Irrational Analysis's December 2025 coverage of SerDes competition: Broadcom's dominance in Google's custom chip program is not guaranteed, and MediaTek has been gaining ground on the strength of its more conservative but shippable SerDes designs.</p>
+
+<p><strong>The AI spending fatigue signal is the most important contrarian data point this cycle.</strong> Every publication in our tracker has been constructive on AI infrastructure spending. If large enterprises genuinely pull back from premium AI models in favor of cheaper open-source alternatives, it could reduce demand for the most expensive AI chips (Nvidia H100/H200/Blackwell, custom ASICs). However, this could also be <em>bullish</em> for memory &mdash; open-source models running on more distributed infrastructure may actually consume <em>more</em> total compute and memory, not less, even if per-query costs fall. The data point deserves monitoring but doesn't yet constitute a thesis change.</p>
+
+<p><strong>The SK Hynix ADR listing ($29B) is enormous.</strong> It gives U.S. investors direct access to the world's leading HBM manufacturer without navigating Korean stock exchanges. Combined with SK Hynix surpassing Samsung as Korea's most valuable company, this cements Hynix as the de facto "memory trade" for institutional investors. Our tracker shows unanimous bullish consensus on SK Hynix across all five publications &mdash; no one is bearish.</p>
+
+<p><strong>The ASML export-control accusation adds to the geopolitics theme</strong> our tracker has followed since SemiAnalysis's January 2025 "AI Diffusion Export Controls" coverage. If the U.S. moves to actual enforcement against ASML, it could restrict the company's ability to service existing DUV (older-generation) tools in China, which represented a significant portion of ASML's revenue. Semi Doped's prior call (May 29) was that Huawei's alternative lithography approach actually <em>increases</em> DUV demand; an ASML China ban would accelerate the domestic Chinese equipment replacement cycle.</p>
+
+<p><span class="confidence conf-medium">Confidence: MEDIUM</span> &mdash; Daily news aggregation is inherently reactive; the value is in the expert commentary rather than predictive calls.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ============================================================ -->
+<h2 class="pub-header" id="citrini">Citrini Research</h2>
+<p class="post-title">Small Themes: June 2026 &mdash; Five Big Trades in AI's Blind Spot</p>
+<p class="post-meta">Jun 24, 2026 &bull; Paid (limited preview) &bull; Non-semiconductor focus</p>
+
+<div class="summary-box">
+<h3>Summary</h3>
+<p><strong>Citrini Research</strong> is a thematic investment publication that covers semiconductors but also ranges into broader macro trades. This post is notable for what it <em>signals about AI sentiment</em> rather than for its specific picks, which are behind the paywall and mostly non-semiconductor.</p>
+
+<p>The core argument: <strong>"Attention" is the scarcest resource in the market right now.</strong> Every analyst (human and AI) is focused on the same AI infrastructure trade &mdash; memory shortages, datacenter power, HBM, optical interconnects. This creates an "attention tax" where other sectors are systematically under-researched and under-owned. Citrini argues the risk of <strong>"AI exhaustion"</strong> is high &mdash; not that AI is wrong, but that the trade is so crowded that even correct theses could suffer momentum unwinds.</p>
+
+<p>The five themes (behind paywall): senior housing, live entertainment venues, exchange competition, fintech resurgence, and airlines. The framing: <em>"Capital crowds into one theme, while names outside it get under-owned, under-modeled, and overlooked."</em></p>
+
+<p>Citrini's macro view: the market will go higher, but with <strong>significantly more frequent 10&ndash;15% sharp drawdowns</strong> driven by positioning rather than fundamentals. Their recommendation: keep semiconductor names but stop letting them be the only thing on the map. They've been progressively trimming their AI allocation over the past month.</p>
+</div>
+
+<div class="analysis-box">
+<h4>Analysis</h4>
+
+<p><strong>Context from the wiki:</strong> Citrini has historically been one of the earlier publications to identify thematic rotations. Their "26 Trades for 2026" watchlist scored well, with the drone basket doubling and several individual picks outperforming. The "attention tax" framing is intellectually interesting &mdash; and the timing is notable, arriving the same week that the SOX index dropped 7.9% and Micron fell 13%. When the most crowded trade sells off, under-owned sectors often benefit from rotation flows.</p>
+
+<p><strong>Track record note:</strong> Citrini's non-semi calls have been mixed &mdash; the drone basket and Allient worked, but a remittances short failed. On semiconductors, their early 2024 calls on DRAM and Intel were generally correct, though they were the sole persistent bull on QCOM (which has underperformed their semi picks). Their thematic rotation instincts have been better than their individual stock picks.</p>
+
+<p><strong>Critique:</strong> The preview is too short to evaluate the specific non-semi trades. The "AI exhaustion" thesis is a contrarian positioning call, not a fundamental one &mdash; Citrini explicitly says AI is still correct, just crowded. This is a valid risk management observation, not a bearish call on semiconductors. The 10&ndash;15% drawdown forecast is specific enough to be testable. Note that this post is <strong>not a semiconductor call</strong> &mdash; per our wiki policy, we do not create dossiers for the non-semi tickers discussed.</p>
+
+<p><span class="confidence conf-medium">Confidence: MEDIUM</span> &mdash; The rotation thesis has merit as a portfolio construction observation; the specific non-semi picks are behind the paywall and unverifiable.</p>
+</div>
+
+<hr class="divider">
+
+<!-- ============================================================ -->
+<h2 id="tickers">Ticker Deep Dives</h2>
+
+<div class="ticker-card">
+<h3>CBRS &mdash; Cerebras Systems <span class="tag tag-long">LONG</span></h3>
+<p>Cerebras makes the world's largest single computer chip, designed for ultra-fast AI inference (generating AI responses).</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">$226.72</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">$49.8B</div></div>
+  <div class="fin-item"><div class="fin-label">Q1 Revenue</div><div class="fin-value">$193.4M</div></div>
+  <div class="fin-item"><div class="fin-label">Q1 Rev Growth</div><div class="fin-value">+94% YoY</div></div>
+  <div class="fin-item"><div class="fin-label">FY26 Guide</div><div class="fin-value">$855&ndash;865M</div></div>
+  <div class="fin-item"><div class="fin-label">Q1 Net Loss</div><div class="fin-value">-$14M</div></div>
+  <div class="fin-item"><div class="fin-label">IPO Price (May)</div><div class="fin-value">$185</div></div>
+  <div class="fin-item"><div class="fin-label">Since IPO</div><div class="fin-value">+22.6%</div></div>
+</div>
+<p><strong>Track record:</strong> Semi Doped rated NEUTRAL at $185 IPO &mdash; stock now +22.6% (missed upside). Irrational Analysis was SHORT pre-IPO, reversed to LONG in May 2026 &mdash; the post-IPO call has tracked. The three 2024 SHORT calls have no price anchors to score.</p>
+<p><strong>News:</strong> Q1 earnings beat estimates but shares fell 10&ndash;15% on margin disappointment. Irrational Analysis launched "activist campaign." Analyst consensus: Strong Buy, average target $294.</p>
+</div>
+
+<div class="ticker-card">
+<h3>MU &mdash; Micron Technology <span class="tag tag-long">LONG</span></h3>
+<p>One of only three major manufacturers of DRAM memory chips. Also makes NAND flash storage.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">$1,057.59</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">$1.19T</div></div>
+  <div class="fin-item"><div class="fin-label">P/E</div><div class="fin-value">49.66</div></div>
+  <div class="fin-item"><div class="fin-label">Q3 EPS</div><div class="fin-value">$25.11</div></div>
+  <div class="fin-item"><div class="fin-label">Q3 Revenue</div><div class="fin-value">$41.46B</div></div>
+  <div class="fin-item"><div class="fin-label">Q4 Guide</div><div class="fin-value">$49&ndash;51B</div></div>
+  <div class="fin-item"><div class="fin-label">Dividend</div><div class="fin-value">$0.15 (0.05%)</div></div>
+  <div class="fin-item"><div class="fin-label">px@call (Jan 26)</div><div class="fin-value">$337</div></div>
+</div>
+<p><strong>Track record:</strong> Irrational Analysis re-entered LONG at $337 in January 2026 &mdash; stock now at $1,057.59, a return of +214% in five months &#10003;. The DRAM supercycle thesis has been overwhelmingly validated across all publications. However, SemiAnalysis's February 2026 report that Micron received zero initial HBM4 allocation (due to base-die failures) has also proven correct &mdash; Micron remains the weakest HBM play even as it benefits from the broader DRAM surge.</p>
+<p><strong>News:</strong> Q3 earnings massively beat expectations. Micron-Anthropic strategic partnership signed (memory supply pact + Micron investing in Anthropic). SemiAnalysis's CXMT analysis concludes CXMT cannot disrupt the shortage through 2028 &mdash; bullish for Micron.</p>
+</div>
+
+<div class="ticker-card">
+<h3>000660.KS &mdash; SK Hynix <span class="tag tag-long">LONG</span></h3>
+<p>South Korea's #2 memory chipmaker and the world's dominant supplier of HBM (High Bandwidth Memory for AI chips).</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">&#8361;2,580,000</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">$1.36T</div></div>
+  <div class="fin-item"><div class="fin-label">52W High</div><div class="fin-value">&#8361;2,945,000</div></div>
+  <div class="fin-item"><div class="fin-label">12M Return</div><div class="fin-value">~+900%</div></div>
+  <div class="fin-item"><div class="fin-label">ADR Filing</div><div class="fin-value">$29B (Jul 10)</div></div>
+  <div class="fin-item"><div class="fin-label">HBM4 Share</div><div class="fin-value">~70% (Nvidia)</div></div>
+</div>
+<p><strong>Track record:</strong> SK Hynix has been the <strong>unanimous consensus long</strong> across all five publications since early 2024. No publication has been bearish. SemiAnalysis's March 2024 call on HBM3E packaging leadership (MR-MUF technology) was the earliest and has proven completely correct &mdash; Hynix holds ~70% of Nvidia's HBM4 allocation. The stock is up roughly 900% in twelve months.</p>
+<p><strong>News:</strong> Filed $29B US ADR listing (July 10). Surpassed Samsung as most valuable Korean company ($1.362T vs Samsung's $1.36T). CXMT's growth does not threaten Hynix's HBM franchise.</p>
+</div>
+
+<div class="ticker-card">
+<h3>005930.KS &mdash; Samsung Electronics <span class="tag tag-long">LONG</span></h3>
+<p>The world's largest memory chipmaker (DRAM + NAND), also operates foundries and makes consumer electronics.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">&#8361;340,500</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">&#8361;2,162T</div></div>
+  <div class="fin-item"><div class="fin-label">52W Range</div><div class="fin-value">&#8361;59,800&ndash;374,500</div></div>
+  <div class="fin-item"><div class="fin-label">HBM4 Share</div><div class="fin-value">~30% (Nvidia)</div></div>
+  <div class="fin-item"><div class="fin-label">Div Yield</div><div class="fin-value">0.43%</div></div>
+</div>
+<p><strong>Track record:</strong> Samsung's coverage arc was the most volatile in our tracker: Irrational Analysis was SHORT in late 2024 (calling it worse than Intel's decline), SemiAnalysis was bearish through mid-2025, but both pivoted to LONG by early 2026 once the DRAM supercycle overwhelmed the company's HBM execution problems. The remaining consensus: Samsung benefits from DRAM pricing and is gaining foundry customers (AMD, BYD, Google overflow), but remains a #2 HBM supplier behind SK Hynix.</p>
+<p><strong>News:</strong> Announced first UFS 5.0 mobile storage for on-device AI. SemiAnalysis's CXMT analysis confirms Samsung's DRAM ASPs only 5&ndash;10% above CXMT, narrowing slightly as server DRAM mix favors incumbents.</p>
+</div>
+
+<div class="ticker-card">
+<h3>INTC &mdash; Intel <span class="tag tag-long">LONG</span></h3>
+<p>Historic American chipmaker attempting to become a foundry (manufacturing chips for other companies), alongside its own CPU business.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">$131.65</div></div>
+  <div class="fin-item"><div class="fin-label">px@call (Apr 24)</div><div class="fin-value">$81.40</div></div>
+  <div class="fin-item"><div class="fin-label">Return Since</div><div class="fin-value">+61.7% &#10003;</div></div>
+  <div class="fin-item"><div class="fin-label">px@call GSR</div><div class="fin-value">$80 (+64.6%) &#10003;</div></div>
+  <div class="fin-item"><div class="fin-label">px@call SD</div><div class="fin-value">$134 (Jun 19) &ndash;</div></div>
+  <div class="fin-item"><div class="fin-label">52W Range</div><div class="fin-value">$18&ndash;$135.48</div></div>
+</div>
+<p><strong>Track record:</strong> The <strong>best-performing call in the current tracker</strong>. Both Irrational Analysis ($81.40, Apr 24) and Global Semi Research ($80, Apr 25) called Intel LONG within a day of each other, both near the same price. Intel is now at $131.65 &mdash; up 62&ndash;65% in just two months. The thesis (foundry optionality at sub-book-value) has been validated by the Apple deal and Google EMIB commitment. However, at $131.65 and ~$570B market cap, the original "margin of safety" (cheap on price-to-book) is gone; the stock now trades purely on foundry execution.</p>
+<p><strong>News:</strong> Apple foundry deal (confirmed by White House). Google ~3M TPU EMIB commitment. Intel CEO betting on advanced packaging. Stock near all-time high ($135.48).</p>
+</div>
+
+<div class="ticker-card">
+<h3>QCOM &mdash; Qualcomm <span class="tag tag-short">SHORT</span></h3>
+<p>Dominant supplier of mobile phone processors and wireless modems, facing strategic threats from Apple insourcing and struggling to diversify.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">$193.13</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">$203.4B</div></div>
+  <div class="fin-item"><div class="fin-label">P/E</div><div class="fin-value">22.20</div></div>
+  <div class="fin-item"><div class="fin-label">Div Yield</div><div class="fin-value">1.74%</div></div>
+  <div class="fin-item"><div class="fin-label">px@call (Apr 30)</div><div class="fin-value">$177 (SHORT)</div></div>
+  <div class="fin-item"><div class="fin-label">Return Since</div><div class="fin-value">+9.1% (&#10007; for short)</div></div>
+</div>
+<p><strong>Track record:</strong> Irrational Analysis's SHORT on QCOM has been the <strong>most persistent bear call</strong> in the tracker &mdash; essentially unbroken since August 2024, with QCOM used as a hedge against leveraged longs in Broadcom and TSMC. The April 2026 short at $177 is currently tracking wrong at $193.13 (+9.1%). The October 2024 short at $163.08 was also covered at a loss. The structural bear thesis (Apple modem insourcing, no credible datacenter offset) has not yet fully materialized in the stock price.</p>
+<p><strong>News:</strong> Nearing $4B acquisition of Modular (AI chip software startup). Stock dropped 8% ahead of Investor Day on June 24. Irrational Analysis views M&A spree (Modular + rumored Tenstorrent) as confirmation that internal AI chip efforts have failed.</p>
+</div>
+
+<div class="ticker-card">
+<h3>2454.TW &mdash; MediaTek <span class="tag tag-long">LONG</span></h3>
+<p>Taiwan's largest chip designer, known for smartphone processors but increasingly winning AI accelerator custom-chip orders.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">TWD 4,285</div></div>
+  <div class="fin-item"><div class="fin-label">Market Cap</div><div class="fin-value">TWD 6.84T</div></div>
+  <div class="fin-item"><div class="fin-label">52W Range</div><div class="fin-value">TWD 1,130&ndash;4,970</div></div>
+  <div class="fin-item"><div class="fin-label">px@call (Jun 19)</div><div class="fin-value">TWD 4,390</div></div>
+  <div class="fin-item"><div class="fin-label">Return Since</div><div class="fin-value">-2.4% (open)</div></div>
+  <div class="fin-item"><div class="fin-label">AI ASIC Rev (26E)</div><div class="fin-value">$2B</div></div>
+</div>
+<p><strong>Track record:</strong> Semi Doped called MediaTek LONG at TWD 4,390 on June 19, citing the Google 3M TPU order using Intel EMIB packaging. The stock is slightly down (-2.4%) in the few days since. The Google TPU v9 win (336G SerDes, codename Triggerfish) is a significant validation of MediaTek's move from smartphones into AI custom silicon, directly challenging Broadcom's ASIC dominance.</p>
+<p><strong>News:</strong> Secured primary Google TPU v9 orders. Broadcom's 448G SerDes delayed. Analyst consensus: Strong Buy (21/0).</p>
+</div>
+
+<div class="ticker-card">
+<h3>ASML &mdash; ASML Holding <span class="tag tag-cautious">CAUTIOUS</span></h3>
+<p>The Dutch company with a global monopoly on EUV lithography &mdash; the machines that print the most advanced chip patterns.</p>
+<div class="financials">
+  <div class="fin-item"><div class="fin-label">Price</div><div class="fin-value">$1,803.52</div></div>
+  <div class="fin-item"><div class="fin-label">Day Change</div><div class="fin-value">-6.52%</div></div>
+  <div class="fin-item"><div class="fin-label">Earnings</div><div class="fin-value">Jul 15</div></div>
+</div>
+<p><strong>Track record:</strong> Semi Doped called ASML LONG on May 29 at an unrecorded price, arguing that Huawei's alternative lithography approach is actually bullish for ASML's older DUV machines. The June 23 U.S. accusation of EUV component shipments to China introduces new regulatory risk not priced into the prior call.</p>
+<p><strong>News:</strong> U.S. Commerce Department accusing ASML of shipping EUV-compatible components to China. ASML denies. Stock dropped 6.5%. Earnings report on July 15 will be closely watched for China revenue commentary.</p>
+</div>
+
+<!-- ============================================================ -->
+<h2>Key Themes This Cycle</h2>
+
+<div class="summary-box">
+<h3>1. DRAM Supercycle Intensifying</h3>
+<p>The SemiAnalysis CXMT analysis is the most important new data point: even China's fastest-growing memory maker, expanding at maximum capacity with unlimited government support, cannot break the supply shortage through 2028. Memory prices are forecast to rise 40&ndash;50% in Q3 2026. SK Hynix is filing a $29B ADR to fund further AI investment. The bull case for memory stocks has never been more data-supported, though the 7.9% SOX selloff on June 23 shows how crowded the trade has become.</p>
+</div>
+
+<div class="summary-box">
+<h3>2. AI Spending Fatigue &mdash; Early Warning</h3>
+<p>The shift toward cheaper, open-source AI models (65% of OpenRouter tokens in June vs. 34% in January) is the first concrete signal that enterprises are pushing back on AI costs. This could compress revenues at frontier AI labs (Anthropic, OpenAI) and slow the growth in premium GPU/ASIC demand. Citrini's "AI exhaustion" rotation thesis and the 7.9% SOX drop are consistent with this. Not yet a thesis change, but the most important bear signal to monitor.</p>
+</div>
+
+<div class="summary-box">
+<h3>3. Intel Foundry Validated &mdash; Now What?</h3>
+<p>Intel's Apple deal and Google EMIB commitment represent the strongest validation of the foundry turnaround since Lip-Bu Tan was appointed CEO in March 2025. Both the $80&ndash;81 calls from April 2026 are up 62&ndash;65%. But at $131.65, the margin of safety is gone &mdash; the stock now trades on pure execution risk. The 18A-P process entering risk production is the next milestone.</p>
+</div>
+
+<div class="summary-box">
+<h3>4. China Memory &amp; Geopolitics Escalating</h3>
+<p>Two related developments: CXMT's imminent IPO brings Chinese DRAM competition into public markets for the first time, and the U.S. accusation against ASML signals a potential escalation in semiconductor export controls. The SemiAnalysis report on HBM smuggling (re-export through third countries) adds fuel to the geopolitical fire. These dynamics reinforce the "semiconductor nationalism" theme that has been building for two years.</p>
+</div>
+
+<p style="text-align: center; color: var(--text-muted); font-size: 0.82rem; margin-top: 3rem;">
+  Generated by Substack Scanner &bull; June 25, 2026 &bull; Sources: Irrational Analysis, SemiAnalysis, Semi Doped, Citrini Research
+</p>
+
+</body>
+</html>

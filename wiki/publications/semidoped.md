@@ -4,16 +4,16 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-06-22
+updated: 2026-06-25
 handle: semidoped
-calls_logged: 26
+calls_logged: 34
 hit_rate: "n/a"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
-9 analysis posts ingested (2026-04-24 -> 2026-06-19); ~15 ticker calls.
+12 analysis posts ingested (2026-04-24 -> 2026-06-24); ~34 ticker calls.
 
 ## Notable calls & track record
 - **SNDK — LONG** (2026-05-04): Structural bull case built on multi-year supply contracts ($42B+ remaining obligations), gross margin expansion from 51% to 78%+ in one quarter, and a new SSD-centric inference thesis from DeepSeek V4 architecture. Outcome TBD.

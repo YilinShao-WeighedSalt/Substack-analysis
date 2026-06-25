@@ -4,7 +4,7 @@ title: "Citrini Research"
 tags: []
 related: []
 created: 2024-06-03
-updated: 2026-05-12
+updated: 2026-06-25
 handle: citrini
 calls_logged: 50
 hit_rate: "n/a"
@@ -13,7 +13,7 @@ hit_rate: "n/a"
 Citrini Research is a thematic macro and equity publication that builds basket-level trade ideas around secular investment themes — AI infrastructure, semiconductors, defense, robotics, healthcare innovation, natural gas, and geopolitical repositioning. The house style runs thesis-first: each piece constructs a macro or sector narrative, then surfaces specific baskets of longs and shorts designed to express it, with single-stock deep dives reserved for the highest-conviction names. Coverage sits at the intersection of top-down macro and bottom-up fundamentals, with a distinctive edge in early-cycle thematic identification and annual "N Trades for N+1" watchlists that have logged material outperformers.
 
 ## Coverage
-10 analysis posts ingested (2024-06-03 -> 2026-05-12); ~50 ticker calls.
+11 analysis posts ingested (2024-06-03 -> 2026-06-24); ~50 ticker calls.
 
 ## Notable calls & track record
 - **GOOGL — LONG (2025-08-18):** Featured as the headline call in "State of the Themes," arguing Google retains durable AI platform advantages that the market was underpricing. Called explicitly in the subtitle as "Long GOOGL." Outcome TBD.

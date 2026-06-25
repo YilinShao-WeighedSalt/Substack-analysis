@@ -4,16 +4,16 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-06-03
+updated: 2026-06-25
 handle: irrationalanalysis
-calls_logged: 534
+calls_logged: 535
 hit_rate: "n/a"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
-136 analysis posts ingested (2024-01-06 -> 2026-06-03); ~534 ticker calls.
+137 analysis posts ingested (2024-01-06 -> 2026-06-24); ~535 ticker calls.
 
 ## Notable calls & track record
 - **MBLY — SHORT (2024-01-06):** Flagged Mobileye's pre-announcement as a company-specific disaster, not a sector read-through — 50% Q1 revenue collapse, contradictory guidance, and CFO kitchen-sinking cited. MBLY continued to deteriorate significantly through 2024; call directionally correct.

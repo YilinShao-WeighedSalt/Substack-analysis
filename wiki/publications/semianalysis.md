@@ -4,16 +4,16 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-19
+updated: 2026-06-25
 handle: semianalysis
-calls_logged: 177
+calls_logged: 180
 hit_rate: "n/a"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
-104 analysis posts ingested (2024-01-03 -> 2026-06-16); ~173 ticker calls.
+105 analysis posts ingested (2024-01-03 -> 2026-06-23); ~180 ticker calls.
 
 ## Notable calls & track record
 - **TSMC / CoWoS — LONG structural (2023–2024):** Identified CoWoS advanced packaging as the primary binding constraint on AI accelerator output ahead of consensus, with detailed capacity projections showing TSMC growing from ~13k wafers/month (end-2023) to 30–35k (end-2024). Thesis validated: CoWoS became the most-watched supply-chain bottleneck in semis and TSMC's packaging franchise re-rated sharply higher through 2024–2025.

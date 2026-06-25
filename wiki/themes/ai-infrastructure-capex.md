@@ -4,7 +4,7 @@ title: "AI Infrastructure & Hyperscaler Capex"
 tags: []
 related: []
 created: 2024-01-27
-updated: 2026-06-16
+updated: 2026-06-25
 status: maturing
 first_seen: 2024-01-27
 ---
@@ -136,6 +136,10 @@ first_seen: 2024-01-27
 - 2026-06-12 — [[semidoped-2026-06-12-computex-optics-power]] (semidoped)
 - 2026-06-12 — [[semidoped-2026-06-12-computex-optics-power]] (semidoped)
 - 2026-06-16 — [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] (semianalysis)
+- 2026-06-22 — [[semidoped-2026-06-22-daily-update]] (semidoped)
+- 2026-06-23 — [[semidoped-2026-06-23-daily-update]] (semidoped)
+- 2026-06-24 — [[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]] (irrationalanalysis)
+- 2026-06-24 — [[semidoped-2026-06-24-daily-update]] (semidoped)
 
 ## Narrative
 The AI infrastructure capex theme emerged in early 2024 as IrrationalAnalysis and SemiAnalysis began mapping the supply chain consequences of hyperscaler GPU buildouts — initially focused on connectivity bottlenecks (PCIe, CXL, retimers) and the IPO of Astera Labs as a bellwether. SemiAnalysis drove early density with deep dives into datacenter energy, power delivery, and the 100k-H100-cluster era, while citrini and IrrationalAnalysis added equity angles on Broadcom, Marvell, Dell, and memory. The Stargate announcement in January 2025 and the DeepSeek shock that followed sharpened the debate around whether efficiency gains would compress or accelerate capex, with coverage broadening to cooling, electrical systems, neoclouds, and Middle East expansion. By late 2025 and into 2026, the theme matured into a multi-publication consensus: coverage expanded to power crises, silicon shortages, onsite gas generation, optical interconnects, and multi-year supply contracts, with newer voices (GlobalSemiResearch, SemiDoped) joining SemiAnalysis as primary contributors. The theme remains high-frequency and unresolved at the frontier — power constraints, custom silicon competition (TPUs, Trainium, Broadcom ASICs), and the question of who captures value in the stack are still actively debated as of mid-2026.

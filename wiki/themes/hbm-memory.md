@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-03
+updated: 2026-06-25
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -67,6 +67,7 @@ first_seen: 2024-01-03
 - 2026-05-31 — [[irrationalanalysis-2026-05-31-hbm-high-bandwidth-mistake]] (irrationalanalysis)
 - 2026-05-31 — [[irrationalanalysis-2026-05-31-hbm-high-bandwidth-mistake]] (irrationalanalysis)
 - 2026-06-03 — [[semianalysis-2026-06-03-case-for-space-datacenters]] (semianalysis)
+- 2026-06-23 — [[semianalysis-2026-06-23-cxmt-dram-challenge]] (semianalysis)
 
 ## Narrative
 SemiAnalysis and IrrationalAnalysis were among the earliest to frame HBM as a structural bottleneck for AI compute, with SemiAnalysis covering the memory wall and Blackwell cost structure as far back as early 2024 and IrrationalAnalysis tracking Micron's HBM ramp and the commodity-vs-scarcity debate through mid-2024. The thesis sharpened through 2025 as the supply/demand imbalance became undeniable — SemiAnalysis dedicated multiple deep dives to the scaling memory wall and Huawei's HBM constraints, while IrrationalAnalysis stressed the transition from HBM3e to HBM4 and the risks around base die yields. By early 2026 the theme reached peak coverage density, with GlobalSemiResearch entering with dedicated memory sector notes, SemiAnalysis publishing "Memory Mania" forecasting a shortage boom, and long-term supply contracts with prepayments emerging as a key market signal. The bearish counterpoint surfaced in May-June 2026 when IrrationalAnalysis questioned whether HBM was becoming a "high bandwidth mistake" as alternative architectures gain traction, suggesting the theme is transitioning from pure bull consensus toward a more contested debate around HBM4 economics and potential demand displacement.

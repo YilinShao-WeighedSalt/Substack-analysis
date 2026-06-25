@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-06-22
+updated: 2026-06-25
 ---
 
 # Wiki Run Log
+
+## 2026-06-25
+- ingest | 6 posts from irrationalanalysis, semianalysis, semidoped, citrini | tickers touched: CBRS, MU, 000660.KS, 005930.KS, INTC, QCOM, 2454.TW, ASML
 
 ## 2026-06-22
 - ingest | 2 posts from semidoped | tickers touched: INTC, TSEM, MRVL, 2454.TW, 005930.KS, AMKR

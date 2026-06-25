@@ -4,7 +4,7 @@ title: "Semiconductor Geopolitics & Export Controls"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-14
+updated: 2026-06-25
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -59,6 +59,8 @@ first_seen: 2024-01-03
 - 2026-06-11 — [[semianalysis-2026-06-11-intel-should-raise-capital]] (semianalysis)
 - 2026-06-14 — [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] (semianalysis)
 - 2026-06-14 — [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] (semianalysis)
+- 2026-06-23 — [[semianalysis-2026-06-23-cxmt-dram-challenge]] (semianalysis)
+- 2026-06-23 — [[semidoped-2026-06-23-daily-update]] (semidoped)
 
 ## Narrative
 The semiconductor geopolitics theme began with SemiAnalysis covering process technology and China's fab capabilities in early 2024, but escalated sharply in October 2024 with a detailed SemiAnalysis deep dive into Chinese fab sanctions evasion — establishing that export controls were being systematically circumvented and that the gap between policy intent and enforcement was wide. The January 2025 AI diffusion rules represented a policy inflection that SemiAnalysis covered extensively, while concurrent analysis of Huawei's CloudMatrix and Ascend ecosystem through mid-2025 reframed the narrative: China was not just evading controls but building credible indigenous alternatives, particularly in AI accelerators and advanced packaging. By late 2025 and into 2026, GlobalSemiResearch and SemiDoped joined SemiAnalysis as primary voices, with Huawei's Tau lithography claims, SMIC N3 process node advances, and Nvidia's eroding China market share becoming recurring focal points. The citrini supply-chain-inheritance piece and IrrationalAnalysis coverage of tariff and trade turbulence added equity and macro texture. As of mid-2026, the theme is maturing but unresolved: the core question of whether US export controls can sustainably constrain Chinese AI compute is actively contested across publications, with evidence accumulating on both sides.
