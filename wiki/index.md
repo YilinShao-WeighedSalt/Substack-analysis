@@ -172,8 +172,13 @@ updated: 2026-06-25
 - [[robotics-embodied-ai]] — Robotics & Embodied AI
 - [[semiconductor-equipment]] — Semiconductor Capital Equipment
 - [[semiconductor-equities-trading]] — Semiconductor Equities & Trading
+- [[semiconductor-specialty-gases]] — Semiconductor Specialty Gases & Materials Supply Shocks
 - [[serdes-high-speed-connectivity]] — SerDes & High-Speed Connectivity
 - [[silicon-photonics-interconnects]] — Silicon Photonics & Optical Interconnects
+
+## Queries
+
+- [[qcom-short-vs-edge-ai-turnaround]] — QCOM: persistent short vs. edge-AI turnaround
 
 ## Publications
 
@@ -224,6 +229,7 @@ updated: 2026-06-25
 - [[globalsemiresearch-2026-05-30-five-year-contracts-30-prepayments]] — Five-Year Contracts and 30% Prepayments
 - [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] — Marvell: Strategic Transformation in the AI Data Center Era
 - [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] — Co-Packaged Optics Is Not Delayed
+- [[globalsemiresearch-2026-06-29-tungsten-hexafluoride-wf6]] — Tungsten Hexafluoride: The Semiconductor Gas Nobody Can Get Enough Of
 
 ### Irrational Analysis
 
@@ -364,6 +370,7 @@ updated: 2026-06-25
 - [[irrationalanalysis-2026-05-31-hbm-high-bandwidth-mistake]] — HBM: High-Bandwidth Mistake
 - [[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]] — What's going on with Marvell?
 - [[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]] — Cerebras June 2026 Earnings
+- [[irrationalanalysis-2026-07-01-q2-consolidated-holdings]] — Q2 2026 Consolidated Holdings and Performance
 
 ### SemiAnalysis
 
@@ -473,6 +480,7 @@ updated: 2026-06-25
 - [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] — RL Systems Mind the Gap: Matching Trainer and Generator Throughput
 - [[semianalysis-2026-06-18-datacenter-capacity-not-canceled]] — Stop Saying Half of 2026 US Datacenter Capacity Is Canceled
 - [[semianalysis-2026-06-23-cxmt-dram-challenge]] — China's CXMT Is Set to Challenge DRAM Incumbents
+- [[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]] — TokenBudgeting: Our Conversations with Enterprises on Token Spend
 
 ### Semi Doped
 
@@ -491,3 +499,6 @@ updated: 2026-06-25
 - [[semidoped-2026-06-22-daily-update]] — Daily Update — June 22, 2026
 - [[semidoped-2026-06-23-daily-update]] — Daily Update — June 23, 2026
 - [[semidoped-2026-06-24-daily-update]] — Daily Update — June 24, 2026
+- [[semidoped-2026-06-29-daily-update]] — Daily Update — June 29, 2026
+- [[semidoped-2026-06-29-qualcomm-hbc-memory-alphawave]] — Semi Doped: Qualcomm's HBC Memory, Alphawave, Modular
+- [[semidoped-2026-06-30-daily-update]] — Daily Update — June 30, 2026

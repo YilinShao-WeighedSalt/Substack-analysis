@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-06-25
+updated: 2026-07-01
 ---
 
 # Wiki Run Log
+
+## 2026-07-01
+- ingest | 6 posts from irrationalanalysis, globalsemiresearch, semianalysis, semidoped | tickers: 005930.KS, LITE, SMTC, CIEN, NOK, INTC, TSEM, 2454.TW, QCOM, 7220.T, AMZN, AVGO | new theme: semiconductor-specialty-gases (WF6); new query: qcom-short-vs-edge-ai-turnaround. Citrini: no new posts.
 
 ## 2026-06-25
 - ingest | 6 posts from irrationalanalysis, semianalysis, semidoped, citrini | tickers touched: CBRS, MU, 000660.KS, 005930.KS, INTC, QCOM, 2454.TW, ASML

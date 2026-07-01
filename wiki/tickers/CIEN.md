@@ -2,13 +2,13 @@
 type: ticker
 title: "CIEN — Ciena Corporation"
 tags: []
-related: ["[[citrini-2024-08-26-can-you-hear-me-now]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]]"]
+related: ["[[citrini-2024-08-26-can-you-hear-me-now]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]"]
 created: 2024-08-26
-updated: 2026-06-03
+updated: 2026-07-01
 ticker: CIEN
 current_stance: long
 conviction: high
-last_review: 2026-06-03
+last_review: 2026-07-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,6 +23,7 @@ last_review: 2026-06-03
 | 2025-12-21 | [[irrationalanalysis]] | LONG | n/a | Best-in-class 400G SerDes and packaging ahead of DCI WDM upgrade wave |
 | 2026-03-12 | [[citrini]] | LONG | n/a | Original optics call with Nvidia-2023-style earnings revision cycle; rotate out of priced-for-perfection position |
 | 2026-06-03 | [[irrationalanalysis]] | LONG | n/a | Author intends to re-enter on any earnings-driven weakness, or FOMO in on strength |
+| 2026-07-01 | [[irrationalanalysis]] | LONG | 477.59 | Nvidia reportedly buying long-haul networking gear ("something is going on"); benefits Ciena |
 
 ## Thesis evolution
 Coverage originates with citrini's August 2024 framing of CIEN as the primary equity expression of a cyclical-trough-meets-secular-inflection setup: chronic telecom underinvestment colliding with AI-driven datacenter interconnect demand, explicitly analogized to Nvidia's August 2022 trough. SemiAnalysis reinforced the call one week later by naming CIEN as a systems-level winner in the DWDM/DCI infrastructure required for multi-datacenter AI training at 100,000+ GPU scale. Irrationalanalysis adopted the thesis in September 2024 as a high-risk/high-reward complement to Fabrinet, framing CIEN as a pure-play on dark-fiber monetization; by October 2024 it was labeled the author's "favorite current trade." The view held without meaningful dissent through early 2025, with the February 2025 Fabrinet earnings cited as a confirmatory read-through and the December 2025 update adding a technical angle — Ciena's in-house 400G SerDes capability as a product differentiation driver ahead of the WDM upgrade wave. The one note of friction came at OCP October 2025, where irrationalanalysis strongly disagreed with Ciena's Nubis-acquired DWDM-based CPO approach, preferring D2D clock-forwarded SerDes — a technical objection that did not overturn the long but introduced skepticism about Ciena's CPO strategic direction. Citrini's March 2026 update declared the original thesis had played out ("more than tripled"), drawing a direct Nvidia-2023 earnings revision cycle analogy, and recommended taking profits on what had become a crowded consensus trade. As of June 2026, irrationalanalysis is not in the position but explicitly intends to re-enter on earnings-driven weakness, indicating the thesis remains live rather than closed.

@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: []
 created: 2024-03-16
-updated: 2026-06-25
+updated: 2026-07-01
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -65,6 +65,9 @@ first_seen: 2024-03-16
 - 2026-06-23 — [[semianalysis-2026-06-23-cxmt-dram-challenge]] (semianalysis)
 - 2026-06-23 — [[semidoped-2026-06-23-daily-update]] (semidoped)
 - 2026-06-24 — [[semidoped-2026-06-24-daily-update]] (semidoped)
+- 2026-06-29 — [[semidoped-2026-06-29-qualcomm-hbc-memory-alphawave]] (semidoped)
+- 2026-06-29 — [[semidoped-2026-06-29-daily-update]] (semidoped)
+- 2026-06-30 — [[semidoped-2026-06-30-daily-update]] (semidoped)
 
 ## Narrative
-The DRAM and memory cycle theme emerged in early 2024 as SemiAnalysis questioned CXL's relevance in the AI era and framed HBM as the dominant bandwidth solution, with IrrationalAnalysis quickly picking up Micron's HBM opportunity as a specific investment angle. Through mid-2024 the debate centered on whether memory remained a commodity despite AI demand — a tension that SemiAnalysis's September 2024 "memory wall" deep-dive sharpened into a structural thesis about bandwidth constraints limiting AI scaling. Coverage accelerated sharply into 2026, with GlobalSemiResearch joining in force around the tariff-driven market panic of March 2026, ultimately converging on a supply-shortage narrative — supported by reports of five-year contracts and 30% prepayments — while IrrationalAnalysis simultaneously published a contrarian note questioning whether HBM was a "high bandwidth mistake," leaving the exact peak and duration of the cycle actively contested as of early June 2026.
+The DRAM and memory cycle theme emerged in early 2024 as SemiAnalysis questioned CXL's relevance in the AI era and framed HBM as the dominant bandwidth solution, with IrrationalAnalysis quickly picking up Micron's HBM opportunity as a specific investment angle. Through mid-2024 the debate centered on whether memory remained a commodity despite AI demand — a tension that SemiAnalysis's September 2024 "memory wall" deep-dive sharpened into a structural thesis about bandwidth constraints limiting AI scaling. Coverage accelerated sharply into 2026, with GlobalSemiResearch joining in force around the tariff-driven market panic of March 2026, ultimately converging on a supply-shortage narrative — supported by reports of five-year contracts and 30% prepayments — while IrrationalAnalysis simultaneously published a contrarian note questioning whether HBM was a "high bandwidth mistake," leaving the exact peak and duration of the cycle actively contested as of early June 2026. By end-June 2026 the super-cycle broke into the mainstream: **Apple raised Mac/iPad prices** blaming a "40-year memory cost spike" and sought a US waiver to buy DRAM from blacklisted CXMT, while **Korea pledged ~$880B** (Samsung + SK Hynix, ~5% of GDP) for two new fabs and SK Hynix moved to raise $29B via US ADRs — the demand-pull and supply-race the bulls (globalsemiresearch, semidoped) predicted. Qualcomm's **High Bandwidth Compute** (stacking cheaper LPDDR on logic instead of HBM) added a twist: even an "HBM-lite" architecture needs *more* DRAM wafers, so Semi Doped's takeaway was "MOAR memory" — near-memory compute grows the pie rather than killing HBM.

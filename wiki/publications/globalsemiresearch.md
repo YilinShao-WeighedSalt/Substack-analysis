@@ -4,7 +4,7 @@ title: "Global Semi Research"
 tags: []
 related: []
 created: 2026-03-06
-updated: 2026-06-10
+updated: 2026-07-01
 handle: globalsemiresearch
 calls_logged: 26
 hit_rate: "n/a"
@@ -13,7 +13,9 @@ hit_rate: "n/a"
 Global Semi Research publishes deep-dive semiconductor supply-chain analysis with a strong Asia/AI-infrastructure orientation, pulling from primary industry checks (fab contacts, customer contract structures, OFC conference channel checks) rather than sell-side consensus. The publication's edge is its willingness to take explicit contrarian stances against well-known research shops (e.g., directly rebutting SemiAnalysis) and to size out specific unit/revenue figures from upstream capacity data. Coverage spans memory (HBM/DRAM), optical interconnects (InP substrates, CPO), custom ASICs (Broadcom, Marvell, Google TPU), and CPU demand from agentic AI.
 
 ## Coverage
-23 analysis posts ingested (2026-03-06 -> 2026-06-10); ~26 ticker calls.
+24 analysis posts ingested (2026-03-06 -> 2026-06-29); ~26 ticker calls (no new priced equity call this run).
+
+- **WF6 specialty gas (2026-06-29):** Sized a sharp materials supply shock — tungsten hexafluoride up 5x since Jan 2026 as China's tungsten export controls starved Japanese gas makers of feedstock, erasing ~a quarter of global WF6 capacity from July 1, 2026. Signature "size the niche shock from upstream capacity" style; the concentrated (Chinese-producer) equity thesis was paywalled. Note it's a *time-limited* monopoly (new capacity ~mid-2027). Outcome TBD.
 
 ## Notable calls & track record
 - **INTC — Bullish, Jan 2026 (reiterated Apr 25, 2026).** Called a CPU shortage driven by agentic AI proliferation before it became consensus. Intel reported earnings on Apr 25 with stock surging >22% in after-hours to break $80; publication flagged it was "among the first in the market" to flag the looming shortage. Outcome: directionally confirmed near-term.

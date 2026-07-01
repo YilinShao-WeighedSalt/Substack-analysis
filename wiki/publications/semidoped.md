@@ -4,16 +4,18 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-06-25
+updated: 2026-07-01
 handle: semidoped
-calls_logged: 34
+calls_logged: 35
 hit_rate: "n/a"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
-12 analysis posts ingested (2026-04-24 -> 2026-06-24); ~34 ticker calls.
+15 analysis posts ingested (2026-04-24 -> 2026-06-30); ~35 ticker calls. hit_rate "n/a" — all priced calls (TSEM $287, INTC $134, MRVL $309, AVGO $408.24, MediaTek 4,390/4,285) are still <30 days old and unresolved as of 2026-07-01.
+
+- **QCOM — NEUTRAL** (2026-06-29): From Qualcomm's Investor Day, the HBC (LPDDR-on-logic) memory idea and edge-AI/robotics vision are credible long-term optionality, but the data-center entry is late and HBC is unproven slideware — a notable counterweight to Irrational Analysis's persistent SHORT (px@call $191.65). Outcome TBD.
 
 ## Notable calls & track record
 - **SNDK — LONG** (2026-05-04): Structural bull case built on multi-year supply contracts ($42B+ remaining obligations), gross margin expansion from 51% to 78%+ in one quarter, and a new SSD-centric inference thesis from DeepSeek V4 architecture. Outcome TBD.

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Substack Semiconductor Scan — 2026-07-01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --panel:#fafbfc; --ink:#1a1a2e; --muted:#5a6072;
+    --blue:#2563eb; --blue-soft:#eff4ff; --line:#e6e9f0;
+    --green:#15803d; --green-bg:#eafaf0; --amber:#b45309; --amber-bg:#fff5e6;
+    --gray:#6b7280; --gray-bg:#f1f2f5; --orange:#d9691a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 26px 96px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  header.top{border-bottom:3px solid var(--ink);padding-bottom:22px;margin-bottom:14px}
+  header.top .kicker{font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700}
+  header.top h1{font-size:2.15rem;line-height:1.12;margin:.35em 0 .1em;font-weight:800;letter-spacing:-.02em}
+  header.top .sub{color:var(--muted);font-size:1.02rem}
+  .meta-row{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--muted)}
+  .meta-row b{color:var(--ink)}
+  h2.section{font-size:1.0rem;font-family:'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:56px 0 6px;padding-top:10px;border-top:1px solid var(--line)}
+  .pub-head{font-size:1.65rem;font-weight:800;letter-spacing:-.015em;margin:40px 0 2px}
+  .pub-meta{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--muted);margin-bottom:4px}
+  .post-title{font-weight:600;color:var(--ink);font-size:1.06rem;margin:.2em 0 1em;color:var(--muted)}
+  p{margin:.85em 0}
+  .lead{font-size:1.06rem}
+  a{color:var(--blue);text-decoration:none;border-bottom:1px solid #c7d6f7}
+  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:2px 8px;border-radius:4px;vertical-align:middle;text-transform:uppercase}
+  .t-long{background:var(--green-bg);color:var(--green)}
+  .t-caution{background:var(--amber-bg);color:var(--amber)}
+  .t-neutral{background:var(--gray-bg);color:var(--gray)}
+  .t-short{background:#fdecec;color:#b91c1c}
+  .analysis{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:8px;padding:4px 22px 14px;margin:20px 0}
+  .analysis h4{color:var(--orange);font-family:'JetBrains Mono',monospace;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin:18px 0 4px}
+  blockquote{margin:18px 0;padding:8px 20px;border-left:3px solid var(--blue);background:var(--blue-soft);color:#28324a;font-style:italic;border-radius:0 6px 6px 0}
+  .term{background:#f4f7ff;border:1px solid #dde6fb;border-radius:6px;padding:2px 20px;margin:14px 0}
+  .term p{margin:.5em 0;font-size:.95rem}
+  .term b{color:var(--blue)}
+  .card{border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:16px 0;background:#fff;box-shadow:0 1px 2px rgba(20,20,50,.03)}
+  .card h3{margin:0 0 2px;font-size:1.15rem;font-weight:700}
+  .card .co{color:var(--muted);font-size:.9rem;margin-bottom:12px}
+  .fin{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:12px 0;font-family:'JetBrains Mono',monospace}
+  .fin div{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 10px}
+  .fin .lbl{font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .fin .val{font-size:1.0rem;font-weight:700;color:var(--ink)}
+  .trk{font-size:.9rem;color:#33405c;background:#f7faf8;border:1px solid #dfeee6;border-radius:6px;padding:8px 12px;margin-top:10px}
+  .xref{font-size:.86rem;color:var(--muted);margin-top:8px}
+  ul.clean{margin:.6em 0;padding-left:1.2em}
+  ul.clean li{margin:.35em 0}
+  .foot{margin-top:70px;padding-top:18px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
+  .pill{display:inline-block;background:var(--blue-soft);color:var(--blue);border-radius:20px;padding:1px 10px;font-size:.72rem;font-family:'JetBrains Mono',monospace;font-weight:600;margin-right:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="kicker">Substack Semiconductor Scan · 3-Day Loop</div>
+  <h1>Chaos June, Tungsten, and the Memory That Ate the World</h1>
+  <div class="sub">A plain-language digest of five semiconductor newsletters — written so a complete newcomer can follow every term.</div>
+  <div class="meta-row">
+    <span><b>Report date:</b> 2026-07-01</span>
+    <span><b>Window:</b> 2026-06-29 → 07-01</span>
+    <span><b>New posts:</b> 6</span>
+    <span><b>Tickers priced:</b> 12</span>
+    <span><b>Publications:</b> Irrational Analysis · Global Semi Research · SemiAnalysis · Semi Doped</span>
+  </div>
+</header>
+
+<p class="lead">This report reads several dense, jargon-heavy investment newsletters and rewrites them for someone with <em>zero</em> background in chips. Every technical term is explained the first time it appears. Nothing here is investment advice — it is a summary of what these writers argued, plus a skeptical read on whether their logic holds and whether their past calls have worked out.</p>
+
+<!-- ============ BACKGROUND ============ -->
+<h2 class="section">① Background — the state of the book</h2>
+
+<p>Before the new posts, here is the world these newsletters live in. Five ideas do most of the work; learn them once and the rest of the report is readable.</p>
+
+<div class="term">
+<p><b>Chip / semiconductor.</b> A tiny slab of silicon with billions of microscopic switches (transistors) etched into it. It does the actual computing inside every phone, car, and data-center server.</p>
+<p><b>Foundry.</b> A factory that manufactures chips <em>designed by other companies</em>. <b>TSMC</b> (Taiwan Semiconductor Manufacturing Company) is the dominant one — most advanced chips in the world are physically built by TSMC even though they carry Nvidia's or Apple's name. A <b>fab</b> is the building itself.</p>
+<p><b>Process node ("18A", "N3", "A14", "1.4nm").</b> A generation of manufacturing technology. Smaller numbers = newer, denser, faster, more efficient. It is roughly the chip industry's version of model years.</p>
+<p><b>DRAM &amp; HBM (memory).</b> <b>Memory</b> is the chip that temporarily holds the data a processor is working on. <b>DRAM</b> is the ordinary kind. <b>HBM</b> ("High-Bandwidth Memory") is a premium version where memory chips are stacked into towers and glued right next to the processor so data moves faster — it is the single most supply-constrained ingredient in AI hardware. The three companies that make it are <b>SK Hynix</b>, <b>Samsung</b>, and <b>Micron</b>.</p>
+<p><b>Advanced packaging (CoWoS) &amp; co-packaged optics (CPO).</b> <b>Packaging</b> is how separate chips are wired together into one module. <b>CoWoS</b> is TSMC's method for bolting HBM towers next to a processor; it is a notorious bottleneck. <b>CPO</b> means putting the laser/optical parts that shuttle data <em>between</em> chips right onto the chip package instead of in separate plug-in cables — faster, but hard to build.</p>
+</div>
+
+<p><b>Where the major theses stand (and whether they're working):</b></p>
+<ul class="clean">
+  <li><span class="pill">MEMORY</span> The loudest theme in the wiki all year has been a <b>memory super-cycle</b>: AI needs colossal amounts of DRAM and HBM, supply is tight, and prices are soaring. This week that thesis burst into the mainstream — <b>Apple raised the price of Macs and iPads</b> and openly blamed memory costs, and <b>South Korea pledged ~$880 billion</b> (about 5% of its entire annual economic output) to build two new memory fabs. Global Semi Research and Semi Doped have been early and <em>correct</em> on this tightness; the buyers panicking to lock up supply is exactly what they predicted.</li>
+  <li><span class="pill">HBM DEBATE</span> Irrational Analysis is the lone contrarian: it argues HBM is a clever short-term fix but the <em>wrong</em> long-term architecture, and prefers <b>Samsung</b> (ticker 005930.KS) as its memory play over Micron because Samsung also owns a foundry and optical-chip capability. That structural call is unresolved.</li>
+  <li><span class="pill">OPTICS</span> A long-running feud: SemiAnalysis published a note in June saying co-packaged optics (CPO) is running late; Global Semi Research fired back with order data showing it is on track. Irrational Analysis is emphatically bullish on <b>Lumentum</b> (LITE), the laser maker at the center of it, and this week doubled down.</li>
+  <li><span class="pill">INTEL</span> <b>Intel</b> (INTC) spent two years as the industry's punching bag (failing foundry, weak chips). Sentiment has flipped hard: the stock is up ~256% year-to-date and just hit a new high, and it is now handing test kits for its <b>14A</b> node to SpaceX and Apple. Multiple newsletters have moved from deep skepticism to cautious optimism.</li>
+  <li><span class="pill">QUALCOMM</span> The one genuine cross-publication fight this week (details below): Irrational Analysis has been a <em>persistent short-seller</em> of Qualcomm; Semi Doped came away from Qualcomm's investor day cautiously <em>impressed</em>. Both cannot be right.</li>
+</ul>
+
+<p>With that scaffolding in place, here is what actually got published in the last three days.</p>
+
+<!-- ============ POST 1: IRRATIONAL ANALYSIS ============ -->
+<h2 class="section">② New posts, explained</h2>
+
+<div class="pub-head">Irrational Analysis</div>
+<div class="pub-meta mono">2026-07-01 · portfolio update · ~1,200 words</div>
+<div class="post-title">"Q2 2026 Consolidated Holdings and Performance — Chaos June. Clown market. Super healthy."</div>
+
+<p>Irrational Analysis is a semiconductor investor who writes with an engineer's eye and a gambler's temperament. This is a quarterly self-report on his own portfolio plus a scatter of quick "hot takes." Two useful facts frame it:</p>
+<ul class="clean">
+  <li>He splits his money into a <b>"long-only" book</b> (his real savings — buy-and-hold, "how many years can I be unemployed") and a <b>"trading account"</b> he treats like a poker table ("numbers on a screen to feed my narcissism") that can swing ±$250,000 in a day.</li>
+  <li>He benchmarks himself against <b>SMH</b> — an index fund that holds the whole semiconductor sector — and aims to beat it by 30%. He says he is currently <b>+65.7%</b> ahead of it, "an acceptable outcome given the mistakes in June."</li>
+</ul>
+
+<p><b>What he is doing with real money:</b> He is happy with his long-only holdings <em>except</em> he wants <b>more</b> of two names — <b>Samsung</b> (005930.KS, the Korean memory/chip giant) and <b>Musashi Seimitsu</b> (7220.T, a Japanese company whose supercapacitors — fast-charging energy-buffer components — help smooth the wild power spikes of AI server racks). His day-job income is going straight into doubling Samsung. He is also slowly adding non-chip diversification (a starter position in miner <b>BHP</b>, and he is eyeing telecom <b>Verizon</b> for its dividend).</p>
+
+<p><b>The "hot takes" (his words: "quick low-quality takes," with fuller write-ups promised for the weekend):</b></p>
+<ul class="clean">
+  <li><b>Lumentum (LITE)</b> — his single most defiant call. Lumentum makes the specialized lasers that drive light-based data links between chips. Optics stocks are out of favor right now, which he blames on "idiot tourist analysts… who understand nothing about laser linewidth." His response: <em>"Go short Lumentum. I dare you. You can pry my Lumentum shares from my cold dead hands."</em> He trimmed Intel and Tower Semiconductor this quarter but refused to sell a single LITE share.</li>
+  <li><b>Nvidia is quietly buying long-haul networking gear.</b> A friend tipped him that <b>Nvidia</b> (the dominant AI-chip company) was buying lots of long-distance fiber-optic equipment weeks ago, and now Wall Street analysts are noticing too. "Something is going on." He thinks it benefits <b>Ciena (CIEN)</b> and <b>Nokia (NOK)</b> — two companies that make the equipment carrying data between far-apart data centers.</li>
+  <li><b>MediaTek vs. Broadcom.</b> <b>MediaTek</b> (2454.TW, a Taiwanese chip designer) is gaining buzz for helping <b>Google</b> build its own AI chips (called <b>TPUs</b>), which threatens <b>Broadcom</b> (AVGO), today's dominant maker of custom AI chips. His advice for playing this fight: own <b>Semtech (SMTC)</b> — a components maker whose signal-boosting parts get used no matter which side wins. <em>"The size of your Semtech position should scale with how MediaTek-pilled you are."</em></li>
+  <li><b>Power semiconductors.</b> He is debating whether to add to <b>Wolfspeed (WOLF)</b> or <b>Navitas (NVTS)</b> — makers of chips that handle the high-voltage electricity feeding AI data centers — as the industry shifts to a new "800-volt DC" power standard.</li>
+  <li><b>Speculative "degen" bets.</b> He flags <b>Fermi (FRMI)</b>, a data-center-power play he calls "flaming dogshit… a degen casino-level play," where he is holding lottery-ticket options. And <b>AXT (AXTI)</b>, whose recent price swings he attributes to Chinese hedge funds unwinding leveraged bets after a government crackdown.</li>
+  <li><b>Applied Materials (AMAT)</b> held an event on memory and packaging that he calls "excellent," with full coverage coming.</li>
+</ul>
+
+<div class="analysis">
+<h4>What this means (context from memory)</h4>
+<p>Strip away the bravado and this is mostly a <b>doubling-down</b> post: the writer is adding to his existing winners, not changing his mind. The wiki explains why each name matters. <b>Lumentum</b> is his highest-conviction "do-not-touch" holding: the thesis (tracked since late 2025) is that Lumentum's factory in Greensboro, NC is the <em>only</em> one making lasers pure enough ("narrow linewidth," i.e. a very clean single-color beam) for Nvidia's next-generation co-packaged-optics design. <b>Samsung</b> is his preferred memory bet because, unlike pure-memory rival Micron, Samsung also owns a foundry and optical-chip group — useful if memory and logic start merging. <b>Ciena</b> has been his "favorite trade" since 2024 on the idea that AI training now spans multiple far-apart data centers, which requires exactly the long-distance optical gear Nvidia is apparently now hoarding — so the Nvidia-buying tip <em>reinforces</em> a thesis he already held.</p>
+<h4>Track record (for what it's worth)</h4>
+<p>His optics calls (Lumentum, Ciena, Tower) have compounded well over 2024–2026 per the wiki — Ciena's original basket "more than tripled." His one clearly-graded miss is the opposite direction: his multi-year <b>short</b> against Qualcomm has been <em>wrong</em> (see the ticker section) as the stock kept rising. So the pattern is "long the optics/memory winners = right; short the laggards = often early or wrong."</p>
+<h4>The skeptical read</h4>
+<p>This is a personality-driven post, not analysis — by his own admission "there is largely no plan… I'm an agent of chaos." The Nvidia-buying-fiber story is a <b>single unverified friend's tip</b> ("industry check") dressed up as a signal; treat it as a rumor until orders show up in Ciena's or Nokia's revenue. The "own Semtech no matter who wins" logic is genuinely clever (a picks-and-shovels play) but note the wiki records that Semtech's original MediaTek-rescue story already <em>failed</em> once — the bull case survives on Semtech's dominance <em>everywhere else</em>, not on MediaTek specifically. And a +65.7% claim over the sector is self-reported with no audited statement attached this quarter. <b>Confidence in his conviction: HIGH; confidence the rumors pan out: LOW–MEDIUM.</b></p>
+</div>
+
+<!-- ============ POST 2: SEMI DOPED QUALCOMM ============ -->
+<div class="pub-head">Semi Doped</div>
+<div class="pub-meta mono">2026-06-29 · podcast transcript · ~9,300 words</div>
+<div class="post-title">"Qualcomm's HBC Memory, Alphawave, Modular, and more" — Austin Lyons &amp; Vik Sekar break down Qualcomm's Investor Day</div>
+
+<p>Semi Doped is a two-host technical podcast (Austin Lyons of Chipstrat and Vik Sekar). Here they dissect the investor day of <b>Qualcomm</b> (QCOM) — historically the chip company inside most Android phones. Qualcomm's message: <em>phones are a maturing business, and it is betting its future on data-center and automotive chips.</em> Its stated goal is for two-thirds of revenue to come from non-phone businesses by fiscal 2029.</p>
+
+<p><b>The headline technology — "High Bandwidth Compute" (HBC).</b> Recall that today's AI chips keep their memory (HBM) in towers <em>beside</em> the processor. The hosts use a kitchen analogy: it's like keeping your fridge out in the garage and walking back and forth for every ingredient — slow and power-hungry. Qualcomm's idea is to stack the memory <em>directly on top of</em> the processing logic, so data travels a tiny vertical distance through potentially 100,000 connections instead of ~2,000 out the side. And it uses cheaper, higher-capacity <b>LPDDR</b> memory (the low-power kind in laptops/phones) instead of expensive HBM. If it works, you get far more memory bandwidth <em>without</em> TSMC's bottlenecked CoWoS packaging.</p>
+
+<p><b>Why the hosts are intrigued but skeptical.</b> They note this is very similar to what a startup called <b>d-Matrix</b> already does ("in-memory compute"), so the innovation may be less novel than billed. And the hard problems don't vanish — they move. Stacking memory on a blazing-hot, dinner-plate-sized processor creates severe <b>thermal</b> (heat) and <b>planarity</b> (keeping the layers perfectly flat so the microscopic connections don't rip apart) challenges. As Vik put it, Qualcomm claims to have "solved packaging," but really "they moved it to a different place… from next to the [processor] to on top of it, which is even harder."</p>
+
+<p><b>The rest of the strategy:</b></p>
+<ul class="clean">
+  <li><b>Accelerator roadmap:</b> the AI200 chip samples in 2026 (no HBC yet); the <b>AI250</b> in 2027 is the first with HBC; the AI300 in 2028.</li>
+  <li><b>"Disaggregated inference"</b> is Qualcomm's opening. AI answering (called <b>inference</b>) is increasingly split into stages, so you can slot in a specialized rack for just one stage rather than buying all-Nvidia everything. That lets a latecomer get "a foot in the door."</li>
+  <li><b>Alphawave</b> (recently acquired) is described as "Qualcomm's Mellanox" — the networking/interconnect piece (the plumbing that moves data between chips) that turns a chip into a full rack-scale system. It also brought two unnamed hyperscaler custom-chip customers.</li>
+  <li><b>Modular</b> (also acquired) is the software layer — its "Mojo" language is pitched as an open alternative to Nvidia's <b>CUDA</b> (the software moat that locks developers into Nvidia). Modular's founder Chris Lattner is a genuine legend (created Swift, LLVM, Clang).</li>
+  <li><b>C1000</b> is a new data-center CPU (general-purpose processor) with <b>Meta</b> (Facebook's parent) named as a customer.</li>
+  <li><b>Edge AI &amp; robotics</b> — running AI locally in cars, phones, and eventually robots — is framed as Qualcomm's real long-term prize (a claimed "$1 trillion opportunity… in 2040").</li>
+</ul>
+
+<blockquote>"We're late, we've got a new approach, we think it can ultimately be competitive… but they do eventually need to follow up with technical details, especially if stuff's not shipping for a few years." — the hosts' summary of Qualcomm's pitch</blockquote>
+
+<div class="analysis">
+<h4>What this means (context from memory)</h4>
+<p>This matters because it is a <b>bull-ish (or at least fair) hearing for Qualcomm from technical people</b> — and that collides directly with the wiki's dominant view. Irrational Analysis has been <b>short Qualcomm for nearly two years</b> (the thesis: Apple is building its own modem chip and will strip Qualcomm of ~$1.2 billion in revenue, and Qualcomm's data-center ambitions are vapor). Semi Doped's hosts land somewhere gentler: the data-center entry is genuinely late and unproven, but the underlying edge-AI/memory technology is real and Qualcomm has the engineering pedigree, IP, and cash to matter eventually. The HBC concept also quietly <em>reinforces the memory super-cycle</em> — the hosts' punchline is "MOAR memory": even Qualcomm's HBM-lite approach needs <em>more</em> DRAM wafers, not fewer, so "don't let anyone DeepSeek you and tell you HBM's dead."</p>
+<h4>Track record (for what it's worth)</h4>
+<p>Semi Doped is a young voice in the wiki (first tracked April 2026) with calls still open. Irrational Analysis's Qualcomm short, by contrast, is one of the few <em>graded</em> calls in the wiki — and it has been <b>wrong</b>: entries at $163 (2024) and $177 (April 2026) are both underwater now that QCOM sits at ~$192 after popping ~23% on this very investor day.</p>
+<h4>The skeptical read</h4>
+<p>The hosts are appropriately skeptical <em>of Qualcomm</em>: HBC is a slide, not shipping silicon, and stacking hot logic under memory is an unsolved manufacturing problem they repeatedly flag. The Alphawave CEO's claim that Qualcomm's 2028 CPU "is still going to be the best" is called out by the hosts themselves as un-credible cheerleading. Net: this is a "credible long-term optionality, unproven near-term" read — which is why our ticker call below is <b>NEUTRAL/cautious</b>, not a buy. The genuine tension with Irrational Analysis is logged as an open contradiction. <b>Confidence: MEDIUM.</b></p>
+</div>
+
+<!-- ============ POST 3: SEMIANALYSIS TOKENBUDGETING ============ -->
+<div class="pub-head">SemiAnalysis</div>
+<div class="pub-meta mono">2026-06-30 · research note · ~2,100 words · Crystal Huang, Joey Brookhart, Dylan Patel</div>
+<div class="post-title">"TokenBudgeting: Our Conversations with Enterprises on Token Spend — Was Widespread TokenMaxxing Ever Really Here?"</div>
+
+<p>SemiAnalysis is the most influential research shop in the sector, known for granular supply-chain data. This note tackles a demand question rather than a chip: <b>are companies pulling back on AI spending?</b> First, two terms. A <b>token</b> is the unit AI models bill by — roughly a fraction of a word; every AI query consumes tokens, and companies pay per token. <b>"Tokenmaxxing"</b> was the early-2026 fad where firms told employees to burn as many tokens as possible for productivity; <b>"token budgeting"</b> is the newer trend of capping that spend.</p>
+
+<p>The team interviewed <b>50+ enterprises</b> (by Slack, phone, and at the Databricks AI Summit). Their conclusion: <b>the "budget blowout" headlines are overblown, and AI spending keeps growing.</b> Key findings:</p>
+<ul class="clean">
+  <li>The viral stories (Meta employees burning 60 trillion tokens/month with a "Claudeconomics" leaderboard; Uber blowing its annual budget in four months and imposing a $1,500/employee/month cap) came from <b>poor incentives and lax oversight</b>, not from AI failing to deliver value. The team didn't find that pattern elsewhere.</li>
+  <li>Even Meta, spending ~$50,000/year per employee on AI, is only a "3–5% customer" for <b>Anthropic</b> (the maker of the Claude AI models). The revenue is concentrated: top-1% enterprise customers spend ~$90,000/employee/year while the median tech-forward company spends ~$136 — meaning there is enormous room to grow as normal companies catch up.</li>
+  <li>Budgets are now normal but wildly inconsistent — from $250/month (an aerospace &amp; defense firm) to $2,000/month (Workday, Stripe) — and most employees never hit their cap.</li>
+  <li>Coding is the killer app: SemiAnalysis estimates <b>70%+ of Anthropic's and OpenAI's revenue comes from coding use cases</b> today, with cybersecurity and general office work expected to repeat that pattern.</li>
+  <li>Cost-saving tricks abound: companies downgrade the default model (one travel-tech firm with 800 engineers switched everyone from the pricey "Opus" model to the cheaper "Sonnet"; an aerospace firm turned off "Opus 4.8" and Fast-Mode), and employees game their free Microsoft Copilot allowance to avoid burning metered tokens.</li>
+</ul>
+
+<blockquote>"There is not a material risk present to 2H26 AI budgets and we expect Anthropic and OpenAI's API business to continue to grow at their current net new rates."</blockquote>
+
+<div class="analysis">
+<h4>What this means (context from memory)</h4>
+<p>Why does a note about software budgets belong in a chip report? Because <b>AI token demand is the ultimate source of demand for every chip in this report.</b> The bear case that haunts the whole sector — tracked in the wiki's "AI models &amp; economics" theme since the January-2025 DeepSeek shock — is that AI spending is a bubble that will pop, taking GPU, memory, and optics demand down with it. SemiAnalysis is planting a flag <em>against</em> that fear with primary data: enterprise usage is early on its growth curve, not late. If they are right, the memory super-cycle and the AI-infrastructure build-out have more room to run. This is bullish, indirectly, for essentially every long in this report — and directly supportive of <b>Amazon</b> (AMZN), whose AWS cloud rents out this compute (SemiAnalysis says AWS's AI-hosting business is running "well above street" estimates).</p>
+<h4>Track record (for what it's worth)</h4>
+<p>SemiAnalysis's structural calls (TSMC packaging bottleneck, HBM absorbing DRAM capacity, Nvidia's dominance) have tracked well over 2024–2026 per the wiki. Its demand-side reads are harder to grade but have generally leaned correct-and-early.</p>
+<h4>The skeptical read</h4>
+<p>The evidence is <b>qualitative and self-selected</b> — 50 conversations, many at an AI conference (Databricks) where attendees are AI enthusiasts, plus data from Ramp (a fintech whose customers skew tech-forward, which the authors admit). "Headlines are overblown" is also a conveniently bullish conclusion for a firm that sells an AI-forecasting model (the "Tokenomics Model" it advertises throughout). The falsifier to watch: if a hyperscaler's next earnings call shows AI-cloud revenue <em>decelerating</em>, this thesis breaks. For now it is a credible, well-sourced counter-narrative, not proof. <b>Confidence: MEDIUM.</b></p>
+</div>
+
+<!-- ============ POST 4: GSR TUNGSTEN ============ -->
+<div class="pub-head">Global Semi Research</div>
+<div class="pub-meta mono">2026-06-29 · deep-dive (partly paywalled) · ~950 words visible</div>
+<div class="post-title">"Tungsten Hexafluoride: The Semiconductor Gas Nobody Can Get Enough Of"</div>
+
+<p>Global Semi Research does supply-chain deep dives, often with a contrarian, Asia-focused angle. This one is about an obscure but critical <b>industrial gas</b>. Some terms: <b>tungsten hexafluoride (WF6)</b> is a toxic gas used to deposit ultra-thin layers of the metal <b>tungsten</b> inside chips — the tiny "wires" (called word-lines and contacts) that carry electricity between transistor layers. It is used in essentially every advanced memory and logic chip. There is no substitute at the required scale.</p>
+
+<p><b>The dislocation:</b> WF6 prices have risen <b>five-fold since January 2026</b>, and supply is short by roughly a quarter of global demand. Three things collided:</p>
+<ul class="clean">
+  <li><b>China's export controls.</b> China controls 80%+ of the world's raw tungsten. Aiming mainly at Japan's <em>military</em> industry (tungsten is used in armor-piercing munitions), Beijing throttled tungsten exports to Japan — and Japanese gas makers, who have almost no domestic tungsten, lost their raw material overnight. Japan's tungsten imports from China fell 50% in April 2026.</li>
+  <li><b>A factory fire.</b> Japan's Kanto Denka Kogyo had a 2025 fire damaging a related production line.</li>
+  <li><b>The result:</b> Japan's two big WF6 makers (Kanto Denka, ~1,200 tons/year; Central Glass, ~1,000 tons/year) told customers — Samsung, SK Hynix, TSMC — that WF6 production would <b>permanently stop from July 1, 2026</b>. That erases ~2,200 tons, nearly a quarter of global supply, and it cannot be quickly rebuilt outside China.</li>
+</ul>
+
+<p>The killer economic point: WF6 is <b>less than 1% of a memory chip's manufacturing cost</b>. A factory earning 70%+ profit margins on HBM will happily pay almost any price rather than scrap an entire wafer for lack of one gas. The article's blunt analogy: <em>"specialty gas is to a fab what oxygen is to a human."</em> That combination — utterly essential, negligible cost — gives WF6 pricing "almost no ceiling" while supply is short. New (mostly Chinese) capacity is expected to close the gap by mid-2027. The specific stock thesis was behind a paywall, but the clear beneficiaries are the Chinese producers consolidating the market; the losers are the exiting Japanese suppliers.</p>
+
+<div class="analysis">
+<h4>What this means (context from memory)</h4>
+<p>This is a fresh instance of a pattern the wiki has tracked all year under "geopolitics &amp; export controls": <b>China weaponizing its dominance of upstream materials.</b> The West spent years restricting China's access to chip <em>tools</em> (like ASML's lithography machines); China's counter is to squeeze the <em>raw inputs</em> — rare earths, and now tungsten and fluorine chemistry — that everyone else depends on. The article notes related gases (hydrofluoric acid, specialty fluorocarbons) are also up 2–3×. It's the same story as the krypton/xenon spike during the Russia-Ukraine war: a tiny, ignored input suddenly gates the whole industry. It reinforces why memory chips keep getting more expensive (feeding directly into this week's Apple price-hike news).</p>
+<h4>Track record (for what it's worth)</h4>
+<p>Global Semi Research's signature style is exactly this — sizing a niche supply shock from upstream capacity data — and its memory-tightness and InP-substrate scarcity calls have been directionally early per the wiki. No priced ticker call is attached here (the names are behind the paywall), so nothing to grade.</p>
+<h4>The skeptical read</h4>
+<p>The five-fold price move is real, but the investable conclusion is weak on the visible side: the named companies are the <em>losers</em> (exiting Japanese firms), and the winners are largely unlisted or hard-to-access Chinese producers — plus new capacity is explicitly expected to relieve the shortage by <b>mid-2027</b>, making this a <em>time-limited</em> monopoly, not a durable one. A ~1% cost input, even up 5×, is also not by itself a needle-mover for the big chipmakers' margins. Useful as macro color on why memory inflation is broad-based; thin as a standalone trade. <b>Confidence: MEDIUM (as a supply-chain observation), LOW (as an actionable equity idea from what's visible).</b></p>
+</div>
+
+<!-- ============ POST 5+6: DAILY UPDATES ============ -->
+<div class="pub-head">Semi Doped — Daily Updates</div>
+<div class="pub-meta mono">2026-06-29 &amp; 2026-06-30 · news roundups</div>
+<div class="post-title">The news the newsletters were reacting to — condensed</div>
+
+<p>Semi Doped's daily briefs are news digests, not theses, but they carry the events that frame everything above. The important ones:</p>
+<ul class="clean">
+  <li><span class="tag t-long">MEMORY</span> <b>Apple raised Mac and iPad prices</b>, blaming a "40-year memory cost spike," and separately <b>asked the US government for a waiver to buy memory from CXMT</b> — China's biggest DRAM maker, which sits on a US blacklist. Many read the leak as Apple pressuring Washington to loosen trade rules. This is the memory super-cycle hitting ordinary consumers for the first time.</li>
+  <li><span class="tag t-long">MEMORY</span> <b>South Korea pledged ~$880 billion</b> (Samsung + SK Hynix) for two new fabs — ~5% of the country's GDP — with the president calling the chipmakers "national heroes." <b>SK Hynix</b> is also listing US shares to raise $29 billion for a $194 billion capex plan. This is the supply side racing to catch demand.</li>
+  <li><span class="tag t-neutral">CPO</span> Foxconn subsidiary <b>ShunSin confirmed a TSMC "COUPE" co-packaged-optics partnership</b> — a data point on the CPO-is-happening side of the SemiAnalysis-vs-Global-Semi feud.</li>
+  <li><span class="tag t-neutral">INTEL</span> <b>Intel promised SpaceX and Apple a toolkit this fall to test its 14A node</b> — a concrete sign its foundry turnaround is attracting real prospective customers.</li>
+  <li><span class="tag t-neutral">CHINA</span> <b>Meituan</b> (a Chinese <em>food-delivery</em> company) open-sourced a 1.6-trillion-parameter AI model trained entirely on domestic Chinese chips — evidence China's home-grown AI hardware is closing the gap. <b>DeepSeek</b> released "DSpark," cutting AI response latency 85% (doing more inference with less hardware — a mild bear signal for chip demand). <b>Taiwan raided Super Micro (SMCI)</b> over alleged Nvidia-GPU smuggling to China; the stock fell ~7%.</li>
+  <li><span class="tag t-neutral">MISC</span> <b>Astera Labs (ALAB)</b> jumped +16% on entering the Nasdaq-100 index (forcing index funds to buy it). <b>Meta</b> deployed a custom memory-pooling chip to sidestep the HBM shortage. Anthropic's Claude models reached general availability on <b>Microsoft Azure</b>, running on Nvidia hardware — a new customer channel for Nvidia.</li>
+</ul>
+
+<!-- ============ TICKER PROFILES ============ -->
+<h2 class="section">③ Ticker profiles &amp; the calls we're logging</h2>
+<p>Every company that received a real call this run, with a one-line description, a financial snapshot (prices as of ~June 30–July 1, 2026), and whether prior calls have paid off. A <span class="tag t-long">LONG</span> means bullish, <span class="tag t-short">SHORT</span> bearish, <span class="tag t-neutral">NEUTRAL</span>/<span class="tag t-caution">CAUTIOUS</span> in between.</p>
+
+<div class="card">
+  <h3>005930.KS — Samsung Electronics <span class="tag t-long">LONG</span></h3>
+  <div class="co">Korea's giant — makes memory chips, phones, and (uniquely) runs its own chip foundry.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">₩334,000</div></div>
+    <div><div class="lbl">Move</div><div class="val">+3.4%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">~₩2,127T</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+  </div>
+  <p>Irrational Analysis is putting his day-job income into <b>doubling</b> this position — his top conviction memory name, preferred over Micron because Samsung also owns a foundry and optical-chip capability for the "post-HBM" era.</p>
+  <div class="trk"><b>Track record:</b> The wiki's most contested memory name — bearish 2024–mid-2025 (HBM yield failures), flipped bullish in 2026 as Samsung secured ~30% of Nvidia's HBM4 orders and huge hyperscaler prepayments. No prior priced calls, so nothing to grade yet; this ₩334k entry starts the clock. Thesis tracking on operating metrics.</div>
+  <div class="xref">Cross-ref: Global Semi Research (biggest-GTC-winner LONG), SemiAnalysis (LONG on DRAM cycle). No bears currently.</div>
+</div>
+
+<div class="card">
+  <h3>LITE — Lumentum <span class="tag t-long">LONG</span></h3>
+  <div class="co">Makes the high-purity lasers that send data as light between AI chips.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$862</div></div>
+    <div><div class="lbl">52wk high</div><div class="val">$1,086</div></div>
+    <div><div class="lbl">Analyst avg PT</div><div class="val">~$1,111 (Buy)</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+  </div>
+  <p>His most defiant hold — "cold dead hands." He trimmed other names but refused to sell a share as optics stocks sold off. Thesis: Lumentum's Greensboro fab is the sole source of lasers clean enough for Nvidia's co-packaged optics.</p>
+  <div class="trk"><b>Track record:</b> Uniformly LONG across the wiki since Nov 2025, conviction rising; Global Semi Research independently turned bullish in June on record laser orders. No priced history to grade; note the stock is volatile and ~20% below its May high. This ~$862 entry (late-June quote) starts the clock.</div>
+  <div class="xref">Cross-ref: Global Semi Research (LONG, "CPO not delayed"), SemiAnalysis (named Nvidia laser supplier). Contested only by the broader "optics is late" bear crowd.</div>
+</div>
+
+<div class="card">
+  <h3>SMTC — Semtech <span class="tag t-long">LONG</span></h3>
+  <div class="co">Makes signal-boosting analog components that keep high-speed data clean across chips and cables.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$161</div></div>
+    <div><div class="lbl">Move</div><div class="val">+2–4%</div></div>
+    <div><div class="lbl">52wk range</div><div class="val">$42 – $177</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+  </div>
+  <p>Pitched as the "own it no matter who wins" play on the MediaTek-vs-Broadcom AI-chip fight — its signal-conditioning parts get designed in across every architecture.</p>
+  <div class="trk"><b>Track record:</b> Entered mid-2025 as a speculative swing; the writer harvested "strong gains" by April 2026 (stock is up from a $42 low to ~$161). One sub-thesis (rescuing MediaTek's flawed chip) already failed, but the broader dominance thesis carried it higher. No priced entries yet; this ~$161 starts the clock.</div>
+  <div class="xref">Cross-ref: primarily an Irrational Analysis name; no contradicting calls in the wiki.</div>
+</div>
+
+<div class="card">
+  <h3>CIEN — Ciena <span class="tag t-long">LONG</span></h3>
+  <div class="co">Makes the long-distance fiber-optic gear that connects far-apart data centers.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$477.59</div></div>
+    <div><div class="lbl">Move</div><div class="val">-1.5%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">$67.6B</div></div>
+    <div><div class="lbl">52wk range</div><div class="val">$77 – $638</div></div>
+  </div>
+  <p>Beneficiary of the (unverified) tip that Nvidia is buying long-haul networking gear. Ciena has been Irrational Analysis's "favorite trade" since 2024 on multi-data-center AI training.</p>
+  <div class="trk"><b>Track record:</b> The original optics basket built around Ciena "more than tripled" from the 2024 entry (per Citrini, March 2026). The writer is currently out and watching for a re-entry — thesis intact, easy money likely done. No priced history; ~$477.59 starts the clock.</div>
+  <div class="xref">Cross-ref: SemiAnalysis, Citrini both LONG historically. Citrini flagged it as a crowded, priced-for-perfection trade.</div>
+</div>
+
+<div class="card">
+  <h3>NOK — Nokia <span class="tag t-long">LONG</span></h3>
+  <div class="co">Telecom-equipment maker; also owns one of only two 6-inch indium-phosphide laser fabs on Earth.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$13.10</div></div>
+    <div><div class="lbl">Move</div><div class="val">+1.5%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">$73.8B</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+  </div>
+  <p>Second beneficiary of the Nvidia-buying-networking-gear tip. The wiki's deeper thesis: Nokia's Infinera unit owns scarce optical-chip fab capacity, a structural moat.</p>
+  <div class="trk"><b>Track record:</b> Consistently LONG across SemiAnalysis (2024) and Irrational Analysis (2026), no bears. No priced history; ~$13.10 starts the clock.</div>
+  <div class="xref">Cross-ref: SemiAnalysis (DCI systems LONG). No contradicting calls.</div>
+</div>
+
+<div class="card">
+  <h3>INTC — Intel <span class="tag t-long">LONG (trimmed)</span></h3>
+  <div class="co">America's iconic chipmaker — designs chips AND runs fabs; spent years struggling, now sharply recovering.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$139.63</div></div>
+    <div><div class="lbl">YTD</div><div class="val">~+256%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">~$642B</div></div>
+    <div><div class="lbl">Cantor PT</div><div class="val">$150</div></div>
+  </div>
+  <p>Irrational Analysis trimmed Intel this quarter (taking profits) but keeps it as an "anchor position" to lever up on. Separately, Intel is giving SpaceX and Apple test kits for its 14A node — real foundry-customer interest.</p>
+  <div class="trk"><b>Track record:</b> A remarkable reversal — Intel was a consensus <em>short</em> across the wiki in 2024–2025 (those bear calls were right at the time), but sentiment flipped in 2026 and the stock is up ~256% YTD. Global Semi Research's early "CPU shortage" bull call (Jan 2026) has been vindicated. Wiki stance now "mixed." ~$139.63 starts the clock for the trimmed-long stance.</div>
+  <div class="xref">Cross-ref: Global Semi Research + Semi Doped now LONG (foundry turnaround); SemiAnalysis historically bearish on the foundry, now says raise capital. Genuinely rehabilitated.</div>
+</div>
+
+<div class="card">
+  <h3>TSEM — Tower Semiconductor <span class="tag t-long">LONG (trimmed)</span></h3>
+  <div class="co">Specialty foundry; the go-to fab for the silicon-photonics chips that carry light between processors.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$259.87</div></div>
+    <div><div class="lbl">Move</div><div class="val">+1.7%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">$30.9B</div></div>
+    <div><div class="lbl">52wk range</div><div class="val">$42 – $320</div></div>
+  </div>
+  <p>Trimmed this quarter alongside Intel, but a long-held core position. Thesis: Nvidia ported its optical-chip design to Tower, making it a critical node in the optics supply chain.</p>
+  <div class="trk"><b>Track record:</b> Long thesis has rewarded (second-largest trading position by Sept 2025, up from a $42 low to ~$260). Semi Doped logged a LONG at $287 on June 19; at ~$260 now that call is modestly underwater but still open (&lt;30 days). This is a small caution flag.</div>
+  <div class="xref">Cross-ref: Semi Doped LONG (June 19, $287, open). Primarily an Irrational Analysis conviction name.</div>
+</div>
+
+<div class="card">
+  <h3>2454.TW — MediaTek <span class="tag t-neutral">NEUTRAL</span></h3>
+  <div class="co">Taiwanese chip designer; makes Android phone chips and is helping Google build custom AI chips.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">4,245 TWD</div></div>
+    <div><div class="lbl">Move</div><div class="val">+8.6%</div></div>
+    <div><div class="lbl">Prev close</div><div class="val">3,910 TWD</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+  </div>
+  <p>The writer notes the "MediaTek is killing Broadcom" narrative is "in full swing" but recommends playing it via <em>Semtech</em>, not MediaTek directly — hence NEUTRAL on the stock itself.</p>
+  <div class="trk"><b>Track record:</b> Wiki stance is "mixed." Bull case (Google TPU wins) peaked early 2025, then broke on a chip-design failure (SerDes), then partially revived on a June-2026 Semi Doped report of a 3-million-TPU Google order. Semi Doped's LONG entries at 4,390 and 4,285 TWD (June 19/23) are ~open and roughly flat-to-down vs the ~4,245 current. Genuinely contested.</div>
+  <div class="xref">Cross-ref: Semi Doped LONG (packaging-driven TPU thesis); Irrational Analysis historically SHORT the data-center story, neutral on the stock here.</div>
+</div>
+
+<div class="card">
+  <h3>QCOM — Qualcomm <span class="tag t-caution">CAUTIOUS / NEUTRAL</span></h3>
+  <div class="co">The chip company inside most Android phones, now betting on data-center and automotive/edge AI.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$191.65</div></div>
+    <div><div class="lbl">Move</div><div class="val">~+23% (Investor Day)</div></div>
+    <div><div class="lbl">Analyst PTs</div><div class="val">$231 – $265</div></div>
+    <div><div class="lbl">DC rev target</div><div class="val">$15B by FY29</div></div>
+  </div>
+  <p>Semi Doped came away cautiously impressed by the "High Bandwidth Compute" memory idea and the edge-AI/robotics vision, while stressing the data-center entry is late and the technology unproven. The stock popped ~23% on the event.</p>
+  <div class="trk"><b>Track record — notable:</b> This is the wiki's clearest <em>graded</em> call, and it's a loss for the bears. Irrational Analysis's persistent SHORT (entries $163 in 2024 and $177 in April 2026) is <b>underwater</b> at ~$192 — the stock rose against the thesis, capped by this week's pop. The Apple-modem revenue-cliff worry is real but has not yet bitten. Marks a genuine bull/bear standoff (logged as an open query).</div>
+  <div class="xref">Cross-ref: Irrational Analysis + SemiAnalysis SHORT/bearish (Apple modem loss); Semi Doped now constructive on long-term tech. Direct contradiction.</div>
+</div>
+
+<div class="card">
+  <h3>7220.T — Musashi Seimitsu <span class="tag t-long">LONG</span></h3>
+  <div class="co">Japanese maker of supercapacitors — fast-charging components that smooth the violent power swings of AI server racks.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~¥5,520*</div></div>
+    <div><div class="lbl">Call by</div><div class="val">Irrational Analysis</div></div>
+    <div><div class="lbl">Conviction</div><div class="val">High</div></div>
+    <div><div class="lbl">*note</div><div class="val">quote volatile</div></div>
+  </div>
+  <p>One of only two names he wants <em>more</em> of. Thesis: Musashi's supercapacitors lead the world on energy density (3.8V per cell), an engineering moat in a fast-growing AI-power niche.</p>
+  <div class="trk"><b>Track record:</b> Held ~1 year; the writer reported being up ~57% from cost in May 2026 and adding despite limited cash. No priced history to grade; *the current quote (~¥5,520) is flagged as volatile across sources — treat as approximate. This entry starts the clock.</div>
+  <div class="xref">Cross-ref: sole coverage is Irrational Analysis; no other voice tracks it.</div>
+</div>
+
+<div class="card">
+  <h3>AMZN — Amazon <span class="tag t-neutral">NEUTRAL (supportive)</span></h3>
+  <div class="co">Runs AWS, the world's largest cloud — which rents out the AI compute all these chips go into.</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$243.06</div></div>
+    <div><div class="lbl">Move</div><div class="val">+5.4%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">$2.62T</div></div>
+    <div><div class="lbl">Call by</div><div class="val">SemiAnalysis</div></div>
+  </div>
+  <p>Not a direct call, but the TokenBudgeting note says AWS's AI-hosting (Bedrock) revenue is running "well above street" — a positive read-through on the cloud that monetizes AI token demand.</p>
+  <div class="trk"><b>Track record:</b> SemiAnalysis has been steadily constructive on AMZN since late 2024 (Anthropic/Bedrock partnership, Trainium in-house chips, multi-gigawatt buildout); no bear voice in the wiki. No priced history; ~$243.06 starts the clock.</div>
+  <div class="xref">Cross-ref: SemiAnalysis-dominated LONG; Global Semi Research neutral mention. No contradiction.</div>
+</div>
+
+<div class="card">
+  <h3>AVGO — Broadcom <span class="tag t-neutral">NEUTRAL (mention)</span></h3>
+  <div class="co">Today's dominant maker of custom AI chips for hyperscalers (Google, Meta, etc.).</div>
+  <div class="fin">
+    <div><div class="lbl">Price</div><div class="val">~$374.02</div></div>
+    <div><div class="lbl">Move</div><div class="val">+2.6%</div></div>
+    <div><div class="lbl">Mkt cap</div><div class="val">~$1.77T</div></div>
+    <div><div class="lbl">Note</div><div class="val">down ~7% on week</div></div>
+  </div>
+  <p>Referenced only via the "demise of Broadcom" narrative (MediaTek allegedly taking custom-AI-chip share). Irrational Analysis does not himself short it — he flags the narrative and steers readers to Semtech.</p>
+  <div class="trk"><b>Track record:</b> Irrational Analysis has been a <em>persistent, correct</em> LONG on Broadcom across 2024–2026 (custom silicon + optical DSP compounding). The "demise" narrative is a competitor's claim, not the wiki's base case. No new directional call; logged as a NEUTRAL mention at ~$374.</div>
+  <div class="xref">Cross-ref: Irrational Analysis LONG (structural); Global Semi Research cautiously bullish with a margin caveat. MediaTek is the challenger.</div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<div class="foot">
+  <p>Generated by the Substack Scanner 3-day memory loop · Report 2026-07-01 · Sources: Irrational Analysis, Global Semi Research, SemiAnalysis, Semi Doped (Citrini: no new posts this window).</p>
+  <p>Prices are point-in-time snapshots gathered ~June 30–July 1, 2026 via public search and may be delayed or approximate (foreign listings especially). Nothing here is investment advice. The "track record" notes reflect this wiki's logged prior calls, not audited performance. Terms are explained on first use; if a term slipped through, that's a gap to fill next loop.</p>
+</div>
+
+</div>
+</body>
+</html>

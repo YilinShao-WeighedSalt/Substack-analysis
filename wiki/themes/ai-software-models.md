@@ -4,7 +4,7 @@ title: "AI Models, Software & Economics"
 tags: []
 related: []
 created: 2024-05-07
-updated: 2026-06-16
+updated: 2026-07-01
 status: maturing
 first_seen: 2024-05-07
 ---
@@ -96,6 +96,7 @@ first_seen: 2024-05-07
 - 2026-06-11 — [[semianalysis-2026-06-11-intel-should-raise-capital]] (semianalysis)
 - 2026-06-16 — [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] (semianalysis)
 - 2026-06-16 — [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] (semianalysis)
+- 2026-06-30 — [[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]] (semianalysis)
 
 ## Narrative
-SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-model economics and OpenAI's dependency on Microsoft, framing the question of who would capture AI software value long before it became consensus. DeepSeek's January 2025 release was the pivotal shock: both SemiAnalysis and IrrationalAnalysis published emergency notes dissecting its training cost efficiency and the implied pressure on closed-model margins, accelerating the debate around open-source versus proprietary economics. Through 2025 the coverage broadened from model labs to the full software stack — RL scaling environments, inference benchmarking, coding assistants, and monetization models — with GlobalSemiResearch joining in early 2026 to add a China-competitive angle via the "OpenClaw" framing. By mid-2026 the theme has shifted toward value-capture specifics: which layer of the stack (model lab, cloud host, application) retains margin, and how token-cost deflation reshapes that split, as evidenced by the cluster-cost, coding-assistant, and Anthropic-Bedrock pieces running through May–June 2026.
+SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-model economics and OpenAI's dependency on Microsoft, framing the question of who would capture AI software value long before it became consensus. DeepSeek's January 2025 release was the pivotal shock: both SemiAnalysis and IrrationalAnalysis published emergency notes dissecting its training cost efficiency and the implied pressure on closed-model margins, accelerating the debate around open-source versus proprietary economics. Through 2025 the coverage broadened from model labs to the full software stack — RL scaling environments, inference benchmarking, coding assistants, and monetization models — with GlobalSemiResearch joining in early 2026 to add a China-competitive angle via the "OpenClaw" framing. By mid-2026 the theme has shifted toward value-capture specifics: which layer of the stack (model lab, cloud host, application) retains margin, and how token-cost deflation reshapes that split, as evidenced by the cluster-cost, coding-assistant, and Anthropic-Bedrock pieces running through May–June 2026. The June-30 **TokenBudgeting** note plants a flag against the AI-demand-bubble bear case with primary data: from 50+ enterprise interviews, SemiAnalysis argues the "token budget blowout" headlines (Meta, Uber) reflect poor incentives, not softening demand — enterprise AI spend is early on its S-curve (median tech-forward firm ~$136/employee/yr vs top-1% ~$90k), coding is 70%+ of Anthropic/OpenAI revenue today, and 2H26 AI budgets face no material risk. This is indirectly bullish for every AI-infra long and directly supportive of AWS/Bedrock ([[AMZN]]).

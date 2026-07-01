@@ -4,16 +4,18 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-25
+updated: 2026-07-01
 handle: semianalysis
-calls_logged: 180
+calls_logged: 181
 hit_rate: "n/a"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
-105 analysis posts ingested (2024-01-03 -> 2026-06-23); ~180 ticker calls.
+106 analysis posts ingested (2024-01-03 -> 2026-06-30); ~181 ticker calls. hit_rate still "n/a" — no resolved priced LONG/SHORT calls yet (AMZN 2026-07-01 read-through is open).
+
+- **TokenBudgeting (2026-06-30):** From 50+ enterprise interviews, argued the "token budget blowout" headlines are overblown and enterprise AI spend is early on its S-curve, with no material risk to 2H26 AI budgets — a primary-sourced counter to the AI-demand-bubble bear case. Bullish read-through for AWS/Bedrock (AMZN). Outcome TBD.
 
 ## Notable calls & track record
 - **TSMC / CoWoS — LONG structural (2023–2024):** Identified CoWoS advanced packaging as the primary binding constraint on AI accelerator output ahead of consensus, with detailed capacity projections showing TSMC growing from ~13k wafers/month (end-2023) to 30–35k (end-2024). Thesis validated: CoWoS became the most-watched supply-chain bottleneck in semis and TSMC's packaging franchise re-rated sharply higher through 2024–2025.
