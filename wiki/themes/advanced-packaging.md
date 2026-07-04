@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-22
+updated: 2026-07-04
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -51,6 +51,9 @@ first_seen: 2024-01-03
 - 2026-06-14 — [[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]] (semianalysis)
 - 2026-06-19 — [[semidoped-2026-06-19-daily-update-june-19]] (semidoped)
 - 2026-06-19 — [[semidoped-2026-06-19-advanced-packaging]] (semidoped)
+- 2026-07-02 — [[semianalysis-2026-07-02-ectc2026-packaging-roundup]] (semianalysis)
 
 ## Narrative
 Advanced packaging emerged as a central theme in early 2024, initially driven by SemiAnalysis coverage of hybrid bonding process flows and CFET yield considerations at IEDM 2023, with IrrationalAnalysis picking it up around Intel's structural problems and Blackwell's packaging-related shipment delays in mid-2024. The theme broadened through 2025 to encompass co-packaged optics, chiplet interconnects (EMIB, UCIe), and HBM scaling, with IrrationalAnalysis becoming the most prolific contributor — covering everything from GTC 2025 CPO announcements to DreamBig's Super NIC chiplet architecture. By late 2025 and into 2026, coverage shifted toward HBM4, TSMC vs. Intel packaging competition, and the geopolitical dimension via Huawei's Tau scaling approach and SMIC's N3 progress, suggesting advanced packaging has matured from a niche process topic into a central battleground for AI infrastructure competitiveness. The theme now commands consistent multi-publication attention with no sign of fading, but consensus is still forming on which interconnect and integration approaches will dominate at scale.
+
+**2026-07 — ECTC 2026 (the field's premier conference).** SemiAnalysis's roundup gave the year's clearest read on where packaging is going as AI packages hit size, I/O, and thermal limits. Key plain-language takeaways: (1) **Intel EMIB-T** — an embedded silicon bridge with through-silicon vias for direct power delivery (−68–80% voltage drop), validated to 36µm bump pitch on 2× reticle silicon and headed for **Google's TPU v9**; SemiAnalysis calls it the "most credible alternative to TSMC CoWoS," the packaging near-monopoly every AI chip currently waits in line for — but "still catching up." (2) **Custom HBM** (Marvell, plus Nvidia's Feynman and AMD's MI450) — replacing the standardized HBM base layer with a tailored one frees ~60% of the host chip's area; value keeps migrating into the memory layer. (3) **Microfluidic cooling** (TSMC, Microsoft) — pumping coolant through channels etched into the silicon itself, cutting thermal resistance ~50% on real GPUs. (4) On-package **optics** (Marvell OMIB/Photonic Fabric from Celestial, Lightmatter M1000) advancing but with manufacturability caveats (EAM modulators). Caveat throughout: nearly everything is test vehicles and roadmaps, not volume product — the "demonstrated at ECTC → in a data center" gap is routinely 2–4 years. This is the strongest concrete evidence yet for the optimist side of the [[intel-foundry-decline]] debate.

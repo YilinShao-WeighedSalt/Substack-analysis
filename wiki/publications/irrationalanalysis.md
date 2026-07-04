@@ -4,16 +4,18 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-07-01
+updated: 2026-07-04
 handle: irrationalanalysis
-calls_logged: 546
-hit_rate: "0/2 (0%), 8 open"
+calls_logged: 554
+hit_rate: "0/2 (0%), 10 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
-138 analysis posts ingested (2024-01-06 -> 2026-07-01); ~546 ticker calls.
+139 analysis posts ingested (2024-01-06 -> 2026-07-02); ~554 ticker calls.
+
+- **[Market Memo] Hot Summer Topics (2026-07-02):** Five engineering notes. Ridiculed Applied Materials' CPO optics claims as "nonsense numbers" (NEUTRAL AMAT $608.29); **softened a long-held HBF short-thesis** to "could work" now that SLC will be used (NEUTRAL SNDK $1,745); flagged the InP CW-laser shortage as an "unmitigated disaster" and named the VCSEL-CPO watch (AVGO/COHR/LITE NEUTRAL); reiterated the ASML long (EUV intensity rising in DRAM, $1,759.59); stayed skeptical on Navitas SiC (SHORT NVTS $14.11). Two new open priced LONG/SHORT calls (ASML, NVTS).
 
 **hit_rate note (2026-07-01):** Computed from the only *resolved* priced LONG/SHORT calls presently in the loaded dossiers — both QCOM shorts ($163.08 Oct-2024, $177 Apr-2026) are losses now that QCOM is ~$191.65 (popped ~23% on its June-29 Investor Day). Hence 0/2. Eight new LONG priced calls this run (Samsung ₩334k, LITE $862, SMTC $161.30, CIEN $477.59, NOK $13.10, INTC $139.63, TSEM $259.87, Musashi ¥5,520) are open (<30 days). Ratio will broaden as these season; it is not yet representative of the author's (strong, if unpriced) optics/memory track record.
 

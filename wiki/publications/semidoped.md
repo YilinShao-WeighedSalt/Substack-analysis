@@ -4,17 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-07-01
+updated: 2026-07-04
 handle: semidoped
-calls_logged: 35
+calls_logged: 55
 hit_rate: "n/a"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
-15 analysis posts ingested (2026-04-24 -> 2026-06-30); ~35 ticker calls. hit_rate "n/a" — all priced calls (TSEM $287, INTC $134, MRVL $309, AVGO $408.24, MediaTek 4,390/4,285) are still <30 days old and unresolved as of 2026-07-01.
+19 analysis posts ingested (2026-04-24 -> 2026-07-03); ~55 ticker calls. hit_rate "n/a" — all priced calls still <30 days old (earliest INTC $134, MRVL $309 from 2026-06-19).
 
+- **Micron's Record Profits podcast (2026-07-03):** Best plain-language explainer of the memory supercycle — Micron ~$41.5B quarter at 85% GM, booked/prepaid through 2027; consumer "shrinkflation" (Apple mid-cycle hikes, GoPro dying); Apple's unprecedented CXMT-entity-list plea; Korea's >$500B capacity push; the 3×-wafers HBM mechanism. LONGs: MU $975.56, 000660.KS ₩2.425M, 285A.T ¥83,300; AAPL CAUTIOUS $308.45. Outcome TBD.
+- **Daily updates (Jul 1–3):** Etched stealth-exit; ASML ships first High-NA EUV to Intel; CXMT $4.3B IPO + Tencent deal; SK Hynix $64B expansion; Anthropic↔Samsung custom-chip talks; Amazon→Alchip consumer silicon; Oracle "may not pay off" warning; AMD+Oriole photonic network. Priced: 3661.TW NEUTRAL NT$4,325, NOK NEUTRAL $12.44, SNDK LONG $1,745.
 - **QCOM — NEUTRAL** (2026-06-29): From Qualcomm's Investor Day, the HBC (LPDDR-on-logic) memory idea and edge-AI/robotics vision are credible long-term optionality, but the data-center entry is late and HBC is unproven slideware — a notable counterweight to Irrational Analysis's persistent SHORT (px@call $191.65). Outcome TBD.
 
 ## Notable calls & track record

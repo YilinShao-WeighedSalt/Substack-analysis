@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-06-25
+updated: 2026-07-04
 ---
 
 # Wiki Index
@@ -179,6 +179,7 @@ updated: 2026-06-25
 ## Queries
 
 - [[qcom-short-vs-edge-ai-turnaround]] — QCOM: persistent short vs. edge-AI turnaround
+- [[buildout-vs-monetization]] — AI buildout accelerates vs. buildout→monetization (Meta Compute)
 
 ## Publications
 
@@ -230,6 +231,7 @@ updated: 2026-06-25
 - [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] — Marvell: Strategic Transformation in the AI Data Center Era
 - [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] — Co-Packaged Optics Is Not Delayed
 - [[globalsemiresearch-2026-06-29-tungsten-hexafluoride-wf6]] — Tungsten Hexafluoride: The Semiconductor Gas Nobody Can Get Enough Of
+- [[globalsemiresearch-2026-07-03-ai-trade-buildout-to-monetization]] — The AI Trade Just Shifted From Buildout to Monetization — Meta Cloud
 
 ### Irrational Analysis
 
@@ -371,6 +373,7 @@ updated: 2026-06-25
 - [[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]] — What's going on with Marvell?
 - [[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]] — Cerebras June 2026 Earnings
 - [[irrationalanalysis-2026-07-01-q2-consolidated-holdings]] — Q2 2026 Consolidated Holdings and Performance
+- [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
 
@@ -481,6 +484,8 @@ updated: 2026-06-25
 - [[semianalysis-2026-06-18-datacenter-capacity-not-canceled]] — Stop Saying Half of 2026 US Datacenter Capacity Is Canceled
 - [[semianalysis-2026-06-23-cxmt-dram-challenge]] — China's CXMT Is Set to Challenge DRAM Incumbents
 - [[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]] — TokenBudgeting: Our Conversations with Enterprises on Token Spend
+- [[semianalysis-2026-07-02-meta-compute-neocloud]] — Meta Compute: Everyone Wants To Be A Neocloud
+- [[semianalysis-2026-07-02-ectc2026-packaging-roundup]] — ECTC 2026 Roundup: EMIB-T, Custom HBM, Microfluidic Cooling, Photonics
 
 ### Semi Doped
 
@@ -502,3 +507,7 @@ updated: 2026-06-25
 - [[semidoped-2026-06-29-daily-update]] — Daily Update — June 29, 2026
 - [[semidoped-2026-06-29-qualcomm-hbc-memory-alphawave]] — Semi Doped: Qualcomm's HBC Memory, Alphawave, Modular
 - [[semidoped-2026-06-30-daily-update]] — Daily Update — June 30, 2026
+- [[semidoped-2026-07-01-daily-update]] — Daily Update — July 1, 2026
+- [[semidoped-2026-07-02-daily-update]] — Daily Update — July 2, 2026
+- [[semidoped-2026-07-03-daily-update]] — Daily Update — July 3, 2026
+- [[semidoped-2026-07-03-microns-record-profits-memory-crisis]] — Micron's Record Profits, Apple's CXMT Plea (podcast)

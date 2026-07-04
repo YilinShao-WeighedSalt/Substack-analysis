@@ -1,0 +1,473 @@
+<title>Substack Semiconductor Scan — 2026-07-04</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+  :root{
+    --bg:#ffffff; --panel:#fafbfc; --ink:#1a1a2e; --muted:#5b6472; --line:#e6e9ee;
+    --blue:#2563eb; --blue-soft:#eef3ff; --orange:#d9730d; --green:#15803d; --green-soft:#e7f6ec;
+    --amber:#b45309; --amber-soft:#fdf3e3; --gray:#6b7280; --gray-soft:#eef0f3; --red:#b91c1c;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.62;margin:0;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:56px 24px 96px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);font-weight:700}
+  h1{font-size:2.35rem;line-height:1.12;font-weight:800;margin:.28em 0 .18em;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:1.06rem;margin-bottom:8px}
+  .meta-line{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--muted);margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  h2{font-size:1.06rem;font-family:'JetBrains Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin:56px 0 8px;font-weight:700}
+  h2.section{border-bottom:2px solid var(--blue);padding-bottom:8px}
+  .pub-head{font-size:1.65rem;font-weight:800;letter-spacing:-.01em;margin:14px 0 2px}
+  .pub-meta{font-family:'JetBrains Mono',monospace;font-size:.76rem;color:var(--muted);margin-bottom:14px}
+  h4{font-size:1.12rem;font-weight:700;margin:26px 0 6px}
+  p{margin:12px 0}
+  .lead{font-size:1.06rem}
+  a{color:var(--blue);text-decoration:none}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 26px;margin:20px 0}
+  .analysis{background:#fbf7f1;border:1px solid #f0e2cf;border-radius:14px;padding:20px 26px;margin:22px 0}
+  .analysis h4{color:var(--orange);margin-top:0;font-size:.95rem;font-family:'JetBrains Mono',monospace;letter-spacing:.05em;text-transform:uppercase}
+  .track{background:var(--blue-soft);border:1px solid #dce6ff;border-radius:12px;padding:14px 20px;margin:16px 0;font-size:.96rem}
+  .track b{color:var(--blue)}
+  blockquote{border-left:3px solid var(--blue);background:#f7f9ff;margin:18px 0;padding:12px 20px;color:#33405a;font-style:italic;border-radius:0 8px 8px 0}
+  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:20px;text-transform:uppercase;vertical-align:middle}
+  .long{background:var(--green-soft);color:var(--green)}
+  .cautious{background:var(--amber-soft);color:var(--amber)}
+  .neutral{background:var(--gray-soft);color:var(--gray)}
+  .short{background:#fde8e8;color:var(--red)}
+  .glo{border-bottom:1px dotted var(--muted);cursor:help}
+  .tickcard{border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin:18px 0;background:#fff}
+  .tickcard h4{margin-top:0;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .sym{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.15rem;color:var(--ink)}
+  .px{font-family:'JetBrains Mono',monospace;font-size:.9rem;color:var(--muted);font-weight:500}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:12px 0}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 12px}
+  .stat .k{font-family:'JetBrains Mono',monospace;font-size:.64rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .stat .v{font-weight:700;font-size:1rem;margin-top:2px}
+  ul{margin:12px 0;padding-left:22px}
+  li{margin:6px 0}
+  .tbl{width:100%;border-collapse:collapse;font-size:.86rem;margin:14px 0;overflow-x:auto;display:block}
+  .tbl th,.tbl td{border:1px solid var(--line);padding:7px 10px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:.8rem}
+  .tbl th{background:var(--panel);font-weight:700}
+  .foot{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+  .pill{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted)}
+  .down{color:var(--red);font-weight:600}
+  .up{color:var(--green);font-weight:600}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0f1115;--panel:#161a20;--ink:#e8eaed;--muted:#9aa3af;--line:#262b33;--blue:#6ea0ff;--blue-soft:#16202f;--orange:#e8944a;--green:#5fd08a;--green-soft:#13251a;--amber:#e0b165;--amber-soft:#2a2113;--gray:#9aa3af;--gray-soft:#20242b;--red:#f08a8a}
+    .analysis{background:#1c1913;border-color:#3a3122}
+    blockquote{background:#141b28}
+    .tickcard{background:#12151a}
+  }
+</style>
+
+<div class="wrap">
+
+<div class="kicker">Substack Semiconductor Scan · 3-Day Loop</div>
+<h1>The Week Memory Hit the Street — and Meta Broke the AI Trade</h1>
+<div class="sub">A record memory boom collides with the first real fear that the AI buildout has peaked. Written for a reader who knows nothing about chips — every term explained on first use.</div>
+<div class="meta-line">Report date 2026-07-04 · Window 2026-07-01 → 2026-07-04 · 7 new posts · 5 publications · 24 tickers priced · Prices as of Jul 1–3 close</div>
+
+<h2 class="section">Background — State of the Book</h2>
+<p class="lead">If you are new to this, start here. This report tracks five specialist newsletters that cover the <span class="glo" title="Companies that design and make the chips that run computers, phones, and AI">semiconductor</span> ("chip") industry. Everything below sits on top of two stories that have been building for over a year, and this week both reached a boiling point.</p>
+
+<p><b>Story one: the memory shortage.</b> "Memory" chips are where a computer temporarily stores the data it is actively working on. There are two main kinds. <span class="glo" title="Dynamic Random Access Memory — the fast working memory a processor reads and writes constantly">DRAM</span> is the fast scratchpad; <span class="glo" title="Flash memory that keeps data when the power is off — used in SSDs and phones">NAND flash</span> is the slower storage that keeps data when the power is off. Artificial-intelligence computers need enormous amounts of a premium type of DRAM called <span class="glo" title="High-Bandwidth Memory — DRAM chips stacked vertically and wired together to feed AI processors extremely fast">HBM (High-Bandwidth Memory)</span> — many DRAM chips stacked on top of each other and wired together so an AI processor can read them very fast. The catch, explained in detail below, is that making stacked HBM burns roughly <b>three times as many silicon wafers</b> as making the same amount of ordinary DRAM. AI is therefore vacuuming up the world's memory supply. Prices have exploded, and the three companies that make almost all the world's DRAM — America's <b>Micron (MU)</b>, and South Korea's <b>SK Hynix</b> and <b>Samsung</b> — are printing money. This scan captures the moment that shortage stopped being an industry story and became something ordinary people feel at the store.</p>
+
+<p><b>Story two: is the AI buildout overbuilt?</b> The AI boom runs on giant warehouses of computers called <span class="glo" title="A data center is a building full of computers; 'hyperscaler' means the biggest operators — Amazon, Microsoft, Google, Meta">data centers</span>. The largest technology companies — the <span class="glo" title="The largest cloud operators: Amazon, Microsoft, Google, Meta">hyperscalers</span> — have spent hundreds of billions of dollars filling them with AI chips. A whole second tier of companies called <span class="glo" title="'Neocloud' = a company that rents out AI computing power by the hour, like CoreWeave or Nebius, but isn't a giant like Amazon">neoclouds</span> (CoreWeave, Nebius) exists purely to rent that computing power out by the hour. The bull case for two years was simple: computing power is scarce, and scarcity is valuable. This week that assumption cracked. A single Bloomberg headline — that <b>Meta</b> (owner of Facebook, Instagram, WhatsApp) might rent out its <i>spare</i> AI computing power — was read by a jumpy market as an admission that even the most aggressive buyer has more capacity than it needs. The result was a violent one-day sell-off across AI and memory stocks.</p>
+
+<div class="track">
+<b>Where the major theses stand right now (from accumulated wiki memory):</b>
+<ul>
+<li><b>Memory supercycle — intact, but the tape got violent.</b> Our memory dossier has tracked a split view for months: the DRAM shortage is real and durable (bullish for all three makers), but on the very newest HBM generation, Micron is seen as the <i>second-best</i> supplier behind SK Hynix. SemiAnalysis logged a fresh Micron LONG at <b>$1,057.59</b> on Jun 23; the stock is <b>$975.56</b> today — down ~8% into the sell-off (still an open call).</li>
+<li><b>Neoclouds — the two-sided bet that just got tested.</b> The wiki has an unresolved standing disagreement: SemiAnalysis is structurally LONG CoreWeave/Nebius (durable operational moat), while Irrational Analysis has been SHORT CoreWeave for over a year (customer-concentration risk). SemiAnalysis's mid-June marks — CoreWeave NEUTRAL at $114.61, Nebius NEUTRAL at $285.50 — are now $81.75 and $215.89, <span class="down">down ~29% and ~24%</span>. The near-term tape has favored the bears; SemiAnalysis's new post argues the market has it exactly backwards.</li>
+<li><b>Marvell — the high-variance optics/custom-silicon bet.</b> Several pubs turned bullish over winter on Marvell's acquisition of a startup (Celestial AI) for optical technology. Semidoped's LONG at <b>$309</b> (Jun 19) is now <b>$245.29</b>, <span class="down">down ~21%</span> — the whole complex sold off this week.</li>
+<li><b>Intel foundry turnaround — the two-year debate inches toward evidence.</b> The wiki has tracked deep skepticism about Intel's ability to manufacture leading-edge chips, softening to cautious optimism through 2025. This week's packaging conference gave the first detailed, credible read on Intel's newest technology.</li>
+</ul>
+</div>
+
+<p><b>The open contradiction to watch.</b> The two biggest new posts this week — from Global Semi Research and SemiAnalysis — cover the exact same event (Meta's cloud plans) and reach <i>opposite</i> conclusions. Global Semi says it signals the AI trade shifting "from buildout to monetization," pressuring the buildout names. SemiAnalysis says the sell-off is flatly "erroneous" and Meta's spending will <i>accelerate</i>. That disagreement, and how it resolves, is the single most important thing in this report.</p>
+
+<!-- ============ POST 1 ============ -->
+<h2>New Post · 01</h2>
+<div class="pub-head">SemiAnalysis — "Meta Compute: Everyone Wants To Be A Neocloud"</div>
+<div class="pub-meta">Jul 02, 2026 · Jeremie Ontiveros, Max Kan, Joey Brookhart + 2 · ~2,000 words (paywalled after preview)</div>
+
+<p><b>Plain-language summary.</b> The news that set off the week: Bloomberg reported that Meta is exploring a business to sell its AI computing power to outside customers — both raw compute (like a neocloud) and hosted AI models (like renting access to a chatbot's brain). Markets panicked, dumping neocloud stocks CoreWeave and Nebius on fear that Meta will flood the market with cheap capacity, reviving "overcapacity" worries. SemiAnalysis says <b>both the panic and the overcapacity read are wrong</b>, and that Meta's spending will speed up, not slow down. Their evidence:</p>
+<ul>
+<li>In just the first six months of 2026, Meta has contracted <b>over 5 gigawatts</b> of capacity (a <span class="glo" title="A gigawatt (GW) is a billion watts — here it measures how much electrical power a data center campus draws, a proxy for how many AI chips it holds">gigawatt, GW</span>, measures how much electrical power a data-center campus draws — a rough proxy for how many chips it holds). Two of Meta's campuses alone are 2.5 GW under construction.</li>
+<li>Meta has <b>four</b> high-value ways to use all that compute, so it can keep buying aggressively no matter what: (1) <b>training frontier AI models</b> in its "Meta Superintelligence Labs" (MSL) unit; (2) <span class="glo" title="Recommendation systems — the AI that decides which posts and ads to show you. Bigger models = better ad targeting = more revenue">RecSys</span> — the ad-targeting AI that drives Meta's actual revenue, which they think they can make 10× more complex; (3) a "<span class="glo" title="Amazon Bedrock lets companies rent access to AI models inside a secure cloud. SemiAnalysis says Meta is in final talks with Anthropic to do the same with Claude">Bedrock</span>-type" service reselling other labs' models — SemiAnalysis's exclusive scoop is that <b>Meta is in final talks with Anthropic to host private instances of Claude</b>; and (4) "SpaceX-type" premium on-demand compute deals.</li>
+<li>The "SpaceX" point is the striking one. Elon Musk's SpaceX reportedly signed compute-rental deals with Anthropic and Google at prices <b>3–4× what everyone else charges</b> — inventing a new market of ultra-premium, short-notice compute worth ~$50B in annual revenue per gigawatt. At that math, allocating just 200 megawatts to one customer is $10B/year of high-margin revenue. Only two other companies can realistically play here: <b>Oracle</b> and <b>Meta</b>.</li>
+<li>The kicker for the neocloud debate: because Meta is now buying so much through third parties, SemiAnalysis expects it to be a <b>huge source of new bookings for CoreWeave and Nebius</b> — the exact opposite of the sell-off's logic.</li>
+</ul>
+
+<blockquote>"It is essentially a CFO's dream and makes it very easy to go all-in on compute — we bet Susan did a 180° flip when she saw the pricing of SpaceX compute deals!"</blockquote>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>What you need to know to follow this.</b> A "neocloud" is a company whose entire business is renting AI chips by the hour; CoreWeave and Nebius are the two biggest public ones. The fear this week was that if Meta — historically a <i>customer</i> of CoreWeave — starts <i>selling</i> compute instead, it eats the neoclouds' lunch. "<span class="glo" title="Remaining Performance Obligations — signed future revenue under contract but not yet delivered. A booked backlog.">RPO</span>" (remaining performance obligations) is the industry's word for signed-but-not-yet-delivered contract revenue — essentially the backlog. SemiAnalysis's whole argument hinges on Meta <i>adding</i> to that backlog by renting from neoclouds, not competing with them.</p>
+<p><b>Track record (for what it's worth).</b> SemiAnalysis has been the wiki's steady neocloud bull — LONG CoreWeave across three separate reports and LONG Nebius since April — versus Irrational Analysis, which has been SHORT CoreWeave from its IPO. Near-term, the bears have won: SemiAnalysis's own mid-June marks are down ~24–29% into today. That does not make the long thesis wrong — SemiAnalysis explicitly argues the price is lagging fundamentals — but it means this post is a bull defending a position that is currently losing on the tape, which is worth holding in mind. On Meta itself, SemiAnalysis has been LONG since July 2025 and that call has broadly tracked (Meta is up strongly and jumped ~10% on this very news).</p>
+<p><b>The critique.</b> The argument is internally strong and the 5 GW contracting figure is a hard, checkable fact that genuinely undercuts the "overcapacity" read. The soft spots: (1) the "SpaceX charges 3–4× everyone else" claim rests on SemiAnalysis's proprietary deal-tracking that no reader can verify. (2) The Anthropic-Claude scoop is unconfirmed by either company. (3) There is a survivorship flavor to the four-options framing — "Meta has so many ways to win it can't lose" is exactly what bulls say at every cycle top; it does not engage seriously with the scenario where <i>all four</i> options are simultaneously worth less because the whole industry over-ordered. The falsifier: if Meta's Q3/Q4 contracting actually decelerates, or if neocloud RPO growth stalls rather than accelerates, the core claim breaks. <b>Confidence: MEDIUM</b> — the buildout-continues thesis is well-argued and factually anchored, but the most load-bearing numbers are unverifiable industry checks, and it is being written in defense of positions currently down 20%+.</p>
+</div>
+
+<!-- ============ POST 2 ============ -->
+<h2>New Post · 02</h2>
+<div class="pub-head">Global Semi Research — "The AI Trade Just Shifted From Buildout to Monetization"</div>
+<div class="pub-meta">Jul 03, 2026 · ~360 words (mostly paywalled)</div>
+
+<p><b>Plain-language summary.</b> Same event, opposite read. Global Semi frames Meta's move to sell spare compute as the moment the AI cycle turns a corner: for two years the market rewarded companies for <i>securing</i> chips, power, and data centers on the assumption that compute scarcity itself creates value. That assumption "is now being tested." To a nervous market, the most aggressive AI buyer having <i>spare cycles to rent out</i> reads as an admission that capacity may be outrunning demand — so the memory and chips feeding those data centers may not stay as scarce as their prices assume. The market reaction proved the point: Meta jumped ~10%, but <b>Micron fell ~10%</b> in the US, and the sell-off spread to Asia the next day where <b>SK Hynix plunged as much as 14.6%</b> and <b>Samsung fell ~9%</b> — heavy enough to briefly halt trading on Korea's stock exchange — before both recouped part of the loss on Friday as analysts called the sell-off overdone. Global Semi's nuance: Meta isn't really trying to become Amazon Web Services; there's a big gap between renting out spare compute and building a real cloud platform. But the <i>signal</i> matters more than the strategy.</p>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>What the disagreement actually is.</b> Read side-by-side with Post 01, this is the central tension of the whole report. Both are describing the identical fact — Meta may rent out compute — but Global Semi treats it as a <i>demand-side warning</i> (the buyer is signaling satiety) while SemiAnalysis treats it as a <i>supply-side accelerant</i> (Meta will buy even more, through the neoclouds). They can't both be right about direction. Note that Global Semi is careful and hedged — it explicitly says Meta isn't becoming AWS and that Friday's bounce suggests the sell-off was overdone — so the gap is more about emphasis and framing than a hard bull-vs-bear war.</p>
+<p><b>Track record.</b> Global Semi has been a consistent memory <i>bull</i> in the wiki (multiple Micron LONGs through 2026 on the durable-shortage thesis), so this "buildout to monetization" post is a notable tonal shift toward caution for them — not a full reversal, but the first time they've foregrounded the peak risk rather than dismissing it. That shift is itself a mild signal worth logging.</p>
+<p><b>The critique.</b> The post is thin (most of it paywalled) and its core claim is really a claim about market <i>psychology</i>, not fundamentals — "reads, to a nervous market, as an admission." That's honest but also unfalsifiable in the short run: any price action can be retro-fitted to it. The stronger, checkable version of the bear case comes from the sell-off's own math (memory names down 10–15% in a day) and from the fact, noted in Post 05 below, that Micron's order book is prepaid and booked through 2027 — which actually <i>contradicts</i> the demand-satiety read. <b>Confidence: LOW-to-MEDIUM</b> — directionally plausible as a sentiment call, but the hard supply-chain facts (prepaid multi-year memory contracts) currently sit on the other side of the argument.</p>
+</div>
+
+<!-- ============ POST 3 ============ -->
+<h2>New Post · 03</h2>
+<div class="pub-head">Semi Doped — "Micron's Record Profits, Apple's CXMT Plea… AI is Eating All the Memory!"</div>
+<div class="pub-meta">Jul 03, 2026 · Austin Lyons + Vik Sekar (podcast transcript) · ~9,000 words</div>
+
+<p><b>Plain-language summary.</b> A long, accessible podcast that is the best single explainer of the memory story for a newcomer. The headline facts:</p>
+<ul>
+<li><b>Micron</b> — the one big American memory maker — booked <b>~$41.5 billion of revenue in a single quarter</b>, more than in any full year of its 50-year history, at an <b>85% gross margin</b> (higher than Nvidia's). <span class="glo" title="Gross margin = the share of revenue left after the direct cost of making the product. 85% means it costs ~$15 to make what sells for $100.">Gross margin</span> is the share of each sales dollar left after the direct cost of making the product; 85% means roughly $15 of cost per $100 of sales. For a brief moment Micron was worth more than Meta. Its margin path over four quarters: 45% → 56% → 75% → ~85%, with another ~85–86% guided for next quarter.</li>
+<li><b>The shortage has "hit the street."</b> Consumers now feel it: Apple has raised product prices <i>mid-cycle</i> for the first time (a price hike on an existing product, not a new model), musical synthesizers and routers cost more, and camera-maker <b>GoPro</b> is near penny-stock status partly because it can't afford memory. Low-end phones are being "de-specced" (same price, less memory) — the tech version of "<span class="glo" title="Shrinkflation = same price, smaller product. Here: same phone price, less RAM.">shrinkflation</span>." The hosts only half-joke that "AI is causing inflation."</li>
+<li><b>Apple's unprecedented move:</b> Apple has asked the US government whether it can buy DRAM from <b>CXMT</b>, China's largest DRAM maker — a company on the US "<span class="glo" title="A US government blacklist of companies (often tied to the Chinese military) that American firms may not freely sell to or buy from">entity list</span>" (a trade blacklist, because CXMT also supplies the Chinese military). A US company <i>asking</i> to buy from a blacklisted Chinese firm is a first, and shows how desperate the supply crunch is.</li>
+<li><b>Geopolitics:</b> the South Korean government is committing <b>over half a trillion dollars</b> to expand SK Hynix and Samsung memory capacity — aiming to "own" the memory business, since Korea makes ~two-thirds of the world's DRAM. SK Hynix has passed Samsung to become Korea's most valuable company for the first time in 25 years; Japan's <b>Kioxia</b> (a NAND-flash maker spun out of Toshiba) has passed Toyota as its country's most valuable company.</li>
+<li><b>The technical "why," explained simply:</b> HBM needs stacked DRAM chips, and stacking requires drilling holes through each chip (called <span class="glo" title="Through-Silicon Vias — vertical holes drilled through a chip so stacked chips can connect electrically">through-silicon vias</span>) to wire the layers together. You can't put memory cells near those holes, so bit-density drops — meaning <b>1 GB of HBM burns ~3× the wafers of 1 GB of ordinary DRAM</b>. On top of that, AI's new "<span class="glo" title="Agentic AI = AI that carries out multi-step tasks on its own, needing lots of memory to 'remember' long tasks">agentic</span>" workloads (AI that runs long multi-step tasks) need ordinary DRAM too — both for the <span class="glo" title="CPUs = general-purpose processors. Agentic AI needs many of them, and each needs DRAM.">CPUs</span> that run them and to hold the AI's working memory (the "<span class="glo" title="KV cache = the running memory of a conversation or task an AI keeps so it doesn't forget context">KV cache</span>," an AI's short-term memory of a long task). Data-center demand is <b>inelastic</b> — buyers want every wafer at any price — while consumer demand is elastic and getting crushed.</li>
+</ul>
+
+<blockquote>"When people start talking about the fact that memory prices from AI are affecting their day-to-day purchases, we are in trouble now."</blockquote>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>Why this matters for the two big posts above.</b> This podcast is the fundamental ballast under the Meta-panic debate. Austin's key point: Micron's capacity is <b>booked and prepaid through 2027</b> under long-term agreements with "take-or-pay" clauses (you pay whether or not you take the chips). That directly undercuts Global Semi's demand-satiety read — even if consumer demand softens, the freed-up wafers get "sucked up" by AI buyers who can't get enough. The one honest bear note the hosts raise themselves is the "merry-go-round": memory has <i>always</i> been a brutal boom-bust cycle, and betting "this time the cycle is repealed" is exactly what people say at every top. They land on "the cycle still exists, but so many new demand drivers keep it in the good quadrant far longer."</p>
+<p><b>Track record.</b> The wiki's memory read has been broadly bullish and has tracked well — the shortage and pricing power that were called through 2026 have plainly materialized (85% margins are the proof). The nuance the wiki adds that the podcast glosses over: on the newest <span class="glo" title="HBM4 = the next generation of stacked memory; HBM4E is an enhanced version. Both need faster signaling than prior generations.">HBM4</span> generation specifically, Micron has been seen as behind SK Hynix on the technical "pin speed" needed to qualify for Nvidia's next chips — so "Micron is minting money on DRAM" and "Micron may lose HBM4 share" are both true at once.</p>
+<p><b>The critique.</b> As investment analysis this is light — it's an accessible explainer, not a model, and the hosts say so ("we really only do hardware stuff"). The GoPro and synth anecdotes are vivid but are single-data-point color, not evidence of macro demand destruction. The genuinely useful, verifiable insight is the 3×-wafers mechanism and the take-or-pay contract structure, both of which are real and both of which argue the shortage is stickier than a normal cycle. The unanswered question the hosts flag honestly: if governments (Korea's half-trillion, plus CXMT coming online) are now pouring money into capacity, that is classically how a shortage becomes a glut 2–3 years later — Michael Burry is quoted calling government-level memory investment "the beginning of the end." <b>Confidence: MEDIUM-HIGH on the near-term shortage (booked through 2027), LOW on the 2028+ picture</b> (capacity being built now is the seed of the next down-cycle).</p>
+</div>
+
+<!-- ============ POST 4 ============ -->
+<h2>New Post · 04</h2>
+<div class="pub-head">SemiAnalysis — "ECTC 2026 Roundup: EMIB-T, Custom HBM, Microfluidic Cooling, Photonics"</div>
+<div class="pub-meta">Jul 02, 2026 · Afzal Ahmad, DC, Gerald Wong, Dylan Patel · ~6,700 words (technical, paywalled after preview)</div>
+
+<p><b>Plain-language summary.</b> A deep, technical roundup of the year's premier <span class="glo" title="Advanced packaging = the art of wiring multiple chips together into one module. As shrinking transistors gets harder, packaging is where the gains now come from.">advanced-packaging</span> conference. Background you need: for decades, chips got better by shrinking transistors. That is now slowing, so the industry's new frontier is <b>packaging</b> — how you wire multiple chips together into one module. This matters because AI accelerators have grown so large that the <i>package</i> itself is now the bottleneck. The highlights, translated:</p>
+<ul>
+<li><b>Intel's "EMIB-T."</b> An <span class="glo" title="A tiny silicon bridge embedded in the package that connects two chips with very dense, fast wiring">interposer/bridge</span> is a connector that links chips together. Intel's new EMIB-T adds vertical holes (TSVs) to its bridge so power can be delivered straight through it — cutting voltage drop by 68–80%. SemiAnalysis says this is "the most credible alternative" to <b>TSMC's CoWoS</b>, the dominant packaging platform that every big AI chip currently uses, and is why Intel's bridge is expected in <b>Google's next AI chip (TPU v9)</b>. But it stresses Intel is "still catching up to an ecosystem that has been executing in volume for years."</li>
+<li><b>Custom HBM (Marvell &amp; Nvidia).</b> Today HBM memory follows a rigid industry standard. <b>Marvell</b> showed "custom HBM" — replacing the standardized base layer of the memory stack with a tailored one, freeing up ~60% of the host chip's area and shortening wiring. Nvidia's future "Feynman" chip and AMD's MI450 are heading the same way. This is a genuine architecture shift.</li>
+<li><b>Cooling the un-coolable.</b> AI packages now dissipate multiple kilowatts of heat. <b>TSMC</b> and <b>Microsoft</b> both showed "<span class="glo" title="Etching tiny channels directly into the chip's silicon and pumping liquid coolant through them">microfluidic cooling</span>" — pumping liquid coolant through channels etched into the silicon itself. Microsoft tested it on a real Nvidia chip and cut thermal resistance ~50%.</li>
+<li><b>Optics onto the package (Marvell &amp; Lightmatter).</b> More below in Post 05's optics context, but Marvell (via its Celestial AI acquisition) and startup Lightmatter both showed ways to bring <span class="glo" title="Using light instead of electricity to move data between chips — faster and lower-power at scale">optical interconnects</span> — moving data with light instead of electricity — directly onto the chip package.</li>
+<li><b>Glass substrates, hybrid bonding, panel-level packaging</b> — a long menu of techniques to get around the size limits of today's round silicon wafers. Samsung, Intel, Amkor, and others all presented incremental progress; nothing is high-volume yet.</li>
+</ul>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>Why the "boring" packaging story is strategically huge.</b> The single most important competitive fact in AI chips is that <b>TSMC's CoWoS packaging is a near-monopoly</b> and a hard supply bottleneck — every Nvidia, AMD, and Google AI chip waits in line for it. Anything that credibly challenges CoWoS reshuffles the industry. That's why Intel's EMIB-T matters far beyond its technical detail: it feeds directly into the <b>Intel foundry-turnaround thesis</b> the wiki has tracked since 2024. For two years the debate was whether Intel could even manufacture competitively; a credible, Google-adopted packaging technology is concrete evidence for the optimist side — while SemiAnalysis's "still catching up" caveat keeps it honest.</p>
+<p><b>Track record.</b> On <b>Marvell</b>, the wiki holds a genuinely divided history: Irrational Analysis was SHORT for most of 2024–25 (and its Sep-2025 short at $72 was a big loss as the stock ran to $300+), then most pubs turned bullish on the Celestial AI optics acquisition. This ECTC data (Marvell's OMIB and Photonic Fabric papers) is the first hard technical validation of that acquisition — modestly supportive of the bull case, though the post notes Marvell's chosen optical modulator type (EAM) "will prove difficult to manufacture at scale." On <b>custom HBM</b>, this reinforces the memory dossier's theme that the memory layer is where more and more value and complexity is migrating.</p>
+<p><b>The critique.</b> This is reporting, not a directional call — its value is as evidence feeding other theses, and on that score it's high-quality and first-hand (conference papers, booth observations including "severe warpage" on Intel's large test vehicle). The main caveat for a non-expert: almost everything here is <i>test vehicles and roadmaps</i>, not shipping product. The gap between "demonstrated at ECTC" and "in a data center at volume" is routinely 2–4 years, and the post is careful to say so repeatedly (glass "supports manufacturing development rather than high-volume adoption," hybrid-bonding yield improvements "from 2027 onward"). <b>Confidence: HIGH as evidence</b> — Intel's packaging is real and Google-bound; <b>MEDIUM on timing</b> — the volume ramp is years out.</p>
+</div>
+
+<!-- ============ POST 5 ============ -->
+<h2>New Post · 05</h2>
+<div class="pub-head">Irrational Analysis — "[Market Memo] Hot Summer Topics"</div>
+<div class="pub-meta">Jul 02, 2026 · ~1,330 words · Applied Materials, Erock, HBF, VCSEL CPO, 800V DC</div>
+
+<p><b>Plain-language summary.</b> A grab-bag of five short, opinionated engineering notes from an author who invests based on hands-on chip knowledge:</p>
+<ul>
+<li><b>Applied Materials (AMAT) "master class."</b> AMAT — one of the giant companies that make the <span class="glo" title="The machines that etch, coat, and build chips layer by layer inside a fab">equipment</span> used to build chips — held a technical marketing event. The author liked the DRAM content (rising use of <span class="glo" title="Extreme Ultraviolet lithography — the most advanced way to print chip patterns, using ASML's machines">EUV</span> printing benefits equipment makers; a reason he owns <b>ASML</b>) but savaged AMAT's optics claims as "nonsense numbers" — e.g. an implied 0.05 <span class="glo" title="picojoules per bit — energy used to move one bit of data. Lower is better.">picojoules-per-bit</span> for optical links that physically should be 1–3 pJ/bit — accusing AMAT of being "optics tourists" who drew a light-coupling diagram "in the wrongest way possible."</li>
+<li><b>Erock (S-1).</b> A first look at a company filing to go public that makes fast-response natural-gas generators (for powering data centers directly). Verdict: "dogshit gross margins," a thin filing, and one patent. Conveniently omits rival <b>Bloom Energy (BE)</b> from comparisons.</li>
+<li><b>HBF (High-Bandwidth Flash) — a softened view.</b> HBF is a proposed NAND-flash cousin of HBM, pushed by <b>Sandisk (SNDK)</b> and <b>SK Hynix</b>. The author "hated" it over durability, but concedes that using a more robust flash type (SLC) fixes most of his objection — leaving heat (a ~10-watt logic layer) as the remaining unsolved problem. Stance moves from "I hate HBF" to "it could work, but thermals need solving."</li>
+<li><b>VCSEL co-packaged optics — a note to watch.</b> Two competing ways to build on-package optics: mainstream "<span class="glo" title="Silicon photonics — building optical components in silicon, using a laser fed in from outside">SiPho</span>" (silicon photonics, needs an externally-supplied laser) versus "<span class="glo" title="VCSEL — a tiny surface-emitting laser; an alternative optics approach, championed by Broadcom">VCSEL</span>" (tiny built-in lasers). Nvidia's Santa Clara team picked SiPho and locked the next 2–3 years industry-wide — but supply of the special <span class="glo" title="Indium Phosphide continuous-wave lasers — the light source SiPho optics need; currently in severe shortage">indium-phosphide lasers</span> SiPho needs is "an unmitigated disaster," with several major players "in a panic" to secure it. Meanwhile a senior Nvidia figure (ex-SiPho camp) just publicly backed VCSEL — a straw in the wind. VCSEL leaders: <b>Broadcom (AVGO)</b> ("king"), then <b>Coherent (COHR)</b>, with <b>Lumentum (LITE)</b> and <b>Furukawa</b> also decent.</li>
+<li><b>800V DC power limits.</b> A back-of-envelope calc on how far you can run high-voltage DC power lines from on-site generators (like Bloom) to a data center before resistive losses kill you: ~150 meters for &lt;10% loss. Notes 800V directly benefits <span class="glo" title="Gallium Nitride — a power-chip material that handles high voltage efficiently">GaN</span> chips and <b>Navitas (NVTS)</b>, while jabbing that "Navitas SiC is dogshit" and management over-sells its dual GaN/<span class="glo" title="Silicon Carbide — a rival power-chip material to GaN">SiC</span> story.</li>
+</ul>
+
+<blockquote>"InP CW driven SiPho is unstoppable for the next 2-3 years and there is a crippling panic spreading. Ask around. You will quickly find out who has secured supply and who is shitting themselves."</blockquote>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>Reading this through the wiki.</b> The author's optics view is unchanged from our prior tracking: the co-packaged-optics theme is real and ramping, but the near-term chokepoint is the indium-phosphide laser shortage, which the wiki has flagged repeatedly (this is the thesis behind names like AXT and the whole InP supply chain). The new, loggable shift is <b>HBF</b>: a persistent skeptic softening to neutral is a genuine change of view worth recording — it slightly de-risks the Sandisk/SK Hynix HBF optionality. The <b>Navitas</b> jab continues a long-standing skeptical stance the wiki holds on that name.</p>
+<p><b>Track record.</b> Irrational Analysis is the wiki's most technically credible and most contrarian voice, with a strong record on optics-supply-chain calls and on power-semiconductor skepticism (its Wolfspeed/Navitas caution has aged well). Its ASML long is a long-standing, low-drama position consistent with the "EUV intensity rising in DRAM" argument — and this week's memory boom is a second-order tailwind for ASML.</p>
+<p><b>The critique.</b> The strength here is first-hand technical BS-detection — calling out AMAT's physically-impossible optics numbers is exactly the kind of thing generalist analysts miss, and it's checkable against known SiPho energy figures. The weakness is that these are impressions, not theses: no price targets, and the VCSEL "vote of confidence" is one person's conference comment, explicitly framed as "nothing changes in my investment view… but I'm watching." The 800V calc is a useful sanity check but self-admittedly rough ("I must be missing something"). <b>Confidence: MEDIUM-HIGH on the optics-supply diagnosis</b> (well-established, multi-sourced), <b>LOW on VCSEL as an actionable shift</b> (author himself says it changes nothing yet).</p>
+</div>
+
+<!-- ============ POST 6 ============ -->
+<h2>New Posts · 06–08</h2>
+<div class="pub-head">Semi Doped — Daily Updates (July 1, 2, 3)</div>
+<div class="pub-meta">Jul 01–03, 2026 · Austin Lyons + Vik Sekar · news round-ups with commentary</div>
+
+<p><b>Plain-language summary.</b> Three fast daily news digests. The signal items:</p>
+<ul>
+<li><b>Etched emerges from stealth</b> (Jul 1) — a startup building a specialized AI chip came out of hiding with $1B+ in customer contracts, $800M raised (backers include Jane Street, TSMC's venture arm, and angels like Geoffrey Hinton and Peter Thiel). Its pitch: run the math at under half the usual voltage for better efficiency, and pool all memory across a cluster as if it were "one." First racks ship this summer — part of a wave of AI-chip startups challenging Nvidia.</li>
+<li><b>ASML ships its $400M High-NA EUV machine</b> (Jul 1) — the newest, bus-sized chip-printing tool that patterns features down to 8 nanometers (vs 13nm before). <b>Intel</b> bought the first one; <b>TSMC</b> is holding back, calling it only "30–50% better" and not obviously worth $400M until the 2030s. Challengers (China's EUV program, x-ray and helium-beam startups) are circling but ASML doubts any scale to volume.</li>
+<li><b>The memory land-grab intensifies</b> — <b>CXMT</b> (China's biggest DRAM maker) filed a $4.3B IPO and signed a $3B supply deal with Tencent (Jul 3); <b>SK Hynix</b> committed $64B to memory expansion (Jul 3); <b>Micron</b> became the single most-traded US stock at $70B daily turnover and signed a long-term supply deal with <b>General Motors</b> (Jul 2); <b>Kioxia and Sandisk</b> began sampling 10th-gen NAND, with an analyst calling Kioxia "two to four years ahead of rivals" (Jul 3).</li>
+<li><b>Custom-silicon and AI-cloud churn</b> — <b>Anthropic in talks with Samsung</b> to make a custom AI chip on Samsung's 2nm process (Jul 3); <b>Amazon</b> reportedly shifting its consumer-device chips (Kindle, Fire TV, Alexa) to a custom-tooling model with Taiwan's <b>Alchip</b>, ~40M units/year from 2027 (Jul 2); <b>SoftBank</b> plans a 10-GW US AI cloud (Jul 3); <b>Oracle</b> warned its AI data-center investment "may not pay off," listing customer non-payment as a risk on its $300B Stargate contract (Jul 2); <b>AMD</b> and UK startup Oriole deployed a first commercial all-optical AI network (Jul 3); <b>Nokia</b> won a sole-supplier optical deal with Orange Belgium (Jul 3).</li>
+<li><b>Brutal single-day sell-off</b> (Jul 2 close) — the Meta news and broad profit-taking hammered the complex: NBIS −17%, CRWV −13.9%, ALAB −10.8%, MU −10.6%, AEHR −17.1%, SITM −14.5%, SNDK −14.1%, AMKR −12.9%, KLAC −11.5%, VICR −19.2%, MXL −17.1%, AAOI −15.2%, AMAT ~−10%. Meta itself +8.8%.</li>
+</ul>
+
+<div class="analysis">
+<h4>Analysis — context first, then the critique</h4>
+<p><b>What the movers tell you.</b> The one-day carnage is the clearest read on this week's mood-shift: everything downstream of AI capex — memory (MU, SNDK), neoclouds (NBIS, CRWV), optics (AAOI, SITM), test/equipment (AEHR, KLAC, AMAT), power (VICR) — got sold hard, while Meta rose. That is the market pricing Global Semi's "buildout→monetization" fear in real time, regardless of whether SemiAnalysis is right that it's wrong. A few names had idiosyncratic reasons: <b>AEHR</b> was dropped from a stock index (forced fund selling); <b>Vicor (VICR)</b> fell on an insider sale.</p>
+<p><b>Track record &amp; context.</b> The <b>Oracle</b> "may not pay off" warning is notable given the wiki's high-conviction bullish ORCL history (SemiAnalysis and Global Semi both LONG on the Stargate/OpenAI buildout). It dovetails with SemiAnalysis's <i>own</i> Post-01 jab that Oracle "could've done a much better job monetizing its gigawatts" versus SpaceX — so two independent sources now flag Oracle-monetization risk in the same week, a small but real crack in a consensus long. The <b>Anthropic-Samsung</b> and <b>Amazon-Alchip</b> items both extend the wiki's custom-silicon theme (everyone wants their own chip). <b>Kioxia's</b> "2–4 years ahead in NAND" claim supports the premium-NAND thesis feeding the memory supercycle.</p>
+<p><b>The critique.</b> These are curated headlines with one-line hot-takes, not analysis — treat them as a well-filtered news feed. The hosts' own bias shows (Vik: "I still don't buy the overcapacity argument"), which is a useful counterweight to the panic but is a prior, not evidence. Several items are single-tweet-sourced (Amazon-Alchip via Ming-Chi Kuo; a "memory-efficiency breakthrough" rumor via one analyst) and should be treated as unconfirmed. <b>Confidence: HIGH as a factual event log, LOW on any individual rumor.</b></p>
+</div>
+
+<!-- ============ TICKERS ============ -->
+<h2 class="section">Ticker Profiles — Priced Calls This Run</h2>
+<p class="pill">Every stance below was priced at scan time (Jul 1–3 close). "Return since" figures compare to the most recent priced prior call in the wiki. No prices before 2026-06 exist, so older calls are unscored history. Foreign listings priced in local currency.</p>
+
+<div class="tickcard">
+<h4><span class="sym">MU</span> Micron Technology <span class="tag long">LONG (Semidoped)</span> <span class="tag neutral">NEUTRAL (Global Semi)</span> <span class="px">$975.56</span></h4>
+<p>The one big US memory (DRAM/HBM) maker. This week's protagonist: record ~$41.5B quarter at 85% gross margin, most-traded US stock, GM supply deal — and a ~10% one-day drop on the Meta panic.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$975.56</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">≈ −8% wk</div></div>
+<div class="stat"><div class="k">GM (rep.)</div><div class="v">~85%</div></div>
+<div class="stat"><div class="k">52w range</div><div class="v">$103–$1,255</div></div>
+</div>
+<p class="pill"><b>Track record:</b> SemiAnalysis LONG at $1,057.59 (Jun 23) → now −7.8%, open. The DRAM-shortage leg of the thesis has plainly played out (85% margins); the open risk in the wiki is HBM4 share loss to SK Hynix. Booked/prepaid through 2027 supports the near-term floor.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">META</span> Meta Platforms <span class="tag long">LONG (SemiAnalysis, Global Semi)</span> <span class="px">$584.88</span></h4>
+<p>Owner of Facebook/Instagram/WhatsApp; now a top-tier AI compute buyer. The Meta-cloud story cut both ways: the stock jumped ~10% while everything it buys from fell.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$584.88</div></div>
+<div class="stat"><div class="k">Mkt cap</div><div class="v">~$1.48T</div></div>
+<div class="stat"><div class="k">1H26 capacity</div><div class="v">5+ GW contracted</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v up">+8.8% (Jul 1)</div></div>
+</div>
+<p class="pill"><b>Track record:</b> SemiAnalysis LONG since Jul 2025 (no prior px) — has tracked well; Meta rose through the period and gained on this news. Both pubs LONG here even as they split on the read-through to suppliers.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">CRWV</span> CoreWeave <span class="tag long">LONG (SemiAnalysis)</span> <span class="px">$81.75</span></h4>
+<p>The largest pure "neocloud" — rents AI chips by the hour. Center of the overcapacity fear; SemiAnalysis argues Meta will <i>add</i> to its backlog, not eat it.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$81.75</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−13.9% (Jul 1)</div></div>
+<div class="stat"><div class="k">52w range</div><div class="v">$63.80–$163.66</div></div>
+<div class="stat"><div class="k">Stance split</div><div class="v">SA long / IA short</div></div>
+</div>
+<p class="pill"><b>Track record:</b> SemiAnalysis NEUTRAL at $114.61 (Jun 18) → now −29%. Irrational Analysis's year-long SHORT has been vindicated near-term. Genuine unresolved SA-vs-IA disagreement; the tape currently favors the bear.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">NBIS</span> Nebius <span class="tag long">LONG (SemiAnalysis)</span> <span class="px">$215.89</span></h4>
+<p>The other public pure-play neocloud; SemiAnalysis's preferred public way to bet on lasting GPU-rental pricing power.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$215.89</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−17% (Jul 1)</div></div>
+<div class="stat"><div class="k">Fell on</div><div class="v">Meta-cloud news</div></div>
+</div>
+<p class="pill"><b>Track record:</b> SemiAnalysis NEUTRAL at $285.50 (Jun 18) → now −24%. Same falsifier as CoreWeave: a sustained drop in GPU rental rates would confirm the bear; SemiAnalysis says the drop is sentiment, not fundamentals.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">ORCL</span> Oracle <span class="tag short">SHORT/critical (SemiAnalysis)</span> <span class="px">$141.01</span></h4>
+<p>Database giant turned major AI-cloud landlord via the $300B "Stargate" contract with OpenAI. Two negative flags landed this week.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$141.01</div></div>
+<div class="stat"><div class="k">Mkt cap</div><div class="v">~$416B</div></div>
+<div class="stat"><div class="k">P/E</div><div class="v">~24</div></div>
+</div>
+<p class="pill"><b>Track record:</b> The wiki's ORCL stance has been high-conviction LONG (SA + Global Semi, on Stargate). This week is a crack: SemiAnalysis frames Oracle as having under-monetized its gigawatts vs SpaceX, and Oracle itself warned its AI spend "may not pay off." First real two-source caution on a consensus long.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">MRVL</span> Marvell Technology <span class="tag long">LONG (SemiAnalysis, via ECTC)</span> <span class="px">$245.29</span></h4>
+<p>Designs custom AI chips and the optical/networking silicon around them. Its ECTC custom-HBM and on-package-optics papers are the first hard validation of its Celestial AI optics acquisition.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$245.29</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−10.3% (Jul 3)</div></div>
+<div class="stat"><div class="k">1y return</div><div class="v up">+231%</div></div>
+</div>
+<p class="pill"><b>Track record:</b> Semidoped LONG at $309 (Jun 19) → now −21%, open. Irrational Analysis's Sep-2025 SHORT at $72 was a large loss (stock ran to $300+). Thesis is a binary on Celestial's optical-modulator qualification; ECTC data is modestly supportive but flags EAM manufacturability risk.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">INTC</span> Intel <span class="tag neutral">NEUTRAL / constructive tech read (SemiAnalysis)</span> <span class="px">$120.35</span></h4>
+<p>The struggling US chip icon betting its turnaround on becoming a <span class="glo" title="A foundry makes chips for other companies. Intel wants to manufacture chips for rivals, not just itself.">foundry</span>. Two positive data points this week: EMIB-T packaging (Google TPU v9-bound) and buying ASML's first High-NA EUV tool.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$120.35</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−5.3% (Jul 3)</div></div>
+<div class="stat"><div class="k">52w range</div><div class="v">$18.97–$142.35</div></div>
+</div>
+<p class="pill"><b>Track record:</b> The wiki's Intel arc ran from deep 2024 yield skepticism → cautious 2025 optimism. This week adds concrete evidence for the optimist side (credible, Google-adopted packaging + first-mover High-NA), tempered by SemiAnalysis's "still catching up to TSMC." Stock has ~6×'d off its 52-week low.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">SNDK</span> Sandisk <span class="tag neutral">NEUTRAL / short softened (Irrational)</span> <span class="tag long">LONG (Semidoped)</span> <span class="px">$1,745</span></h4>
+<p>NAND-flash maker spun out of Western Digital. Author's long-standing HBF skepticism softened; sampling 10th-gen NAND into an AI-memory boom, but fell 14% in the sell-off.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$1,745</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−14.1% (Jul 3)</div></div>
+<div class="stat"><div class="k">ATH (Jun 25)</div><div class="v">$2,335</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced calls. Irrational's move from "I hate HBF" to "it could work" slightly de-risks a bear thesis; the NAND boom is real but the −14% day shows how stretched the whole memory complex had become.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">000660.KS</span> SK Hynix <span class="tag long">LONG (Semidoped)</span> <span class="px">₩2,425,000</span></h4>
+<p>The world's #1 HBM maker; now Korea's most valuable company for the first time in 25 years, committing $64B to expansion.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">₩2,425,000</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v up">+10.9% (rebound)</div></div>
+<div class="stat"><div class="k">Prior day</div><div class="v down">−14.6% intraday</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. Wiki view: structurally the preferred HBM4 supplier over Micron. Whipsawed hard — plunged on Meta news, rebounded as analysts called it overdone.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">005930.KS</span> Samsung Electronics <span class="tag neutral">NEUTRAL (Semidoped, SemiAnalysis)</span> <span class="px">₩309,500</span></h4>
+<p>Memory + foundry + phones, all in one. In talks with Anthropic to build a custom AI chip on its 2nm process; presented HBM4E interposer/thermal work at ECTC.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">₩309,500</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v up">+8.2% (rebound)</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. Uniquely vertically integrated (makes its own DRAM <i>and</i> phones). Anthropic-chip talks would be a foundry win if 2nm yield holds — the historical knock on Samsung.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">285A.T</span> Kioxia <span class="tag long">LONG (Semidoped)</span> <span class="px">¥83,300</span></h4>
+<p>Japanese NAND-flash maker spun out of Toshiba; just passed Toyota as Japan's most valuable company. An analyst calls it "2–4 years ahead" in NAND.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">¥83,300</div></div>
+<div class="stat"><div class="k">52w range</div><div class="v">¥2,270–¥112,700</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. A pure NAND play riding the AI-storage boom; the "spinning off Kioxia was a bad bet by Toshiba" line captures how far fortunes have turned.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">AAPL</span> Apple <span class="tag cautious">CAUTIOUS (Semidoped)</span> <span class="px">$308.45</span></h4>
+<p>The memory crunch's most prominent victim: first-ever <i>mid-cycle</i> price hikes, and an unprecedented request to the US government to buy from blacklisted Chinese maker CXMT.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$308.45</div></div>
+<div class="stat"><div class="k">Pressure</div><div class="v">Memory input costs</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. Premium tier can absorb costs but margins compress; the CXMT plea shows the crunch is severe enough to bend a 20-year no-compromise supply strategy.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">TSM</span> TSMC <span class="tag long">LONG (SemiAnalysis, via ECTC)</span> <span class="px">$446.68</span></h4>
+<p>The world's dominant contract chipmaker and packaging (CoWoS) near-monopoly. Q2 gross margins near 70%; showed leading microfluidic cooling at ECTC. Holding back on High-NA EUV.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 1)</div><div class="v">$446.68</div></div>
+<div class="stat"><div class="k">Q2 GM (rep.)</div><div class="v">~70%</div></div>
+<div class="stat"><div class="k">Q3 rev guide</div><div class="v">+10%+ q/q</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. CoWoS remains the industry's key bottleneck and TSMC's moat; the only cloud is credible challengers (Intel EMIB-T) finally appearing on the horizon.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">NVTS</span> Navitas <span class="tag short">SHORT / skeptical (Irrational)</span> <span class="px">$14.11</span></h4>
+<p>Small power-chip (GaN/SiC) maker. Author: 800V DC data-center power favors GaN and Navitas, but "Navitas SiC is dogshit" and management over-sells its dual-material story.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 2)</div><div class="v">$14.11</div></div>
+<div class="stat"><div class="k">Stance</div><div class="v">Skeptical</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call; continues a long-standing wiki skepticism on Navitas. The 800V tailwind is real but the author doubts execution.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">AVGO</span> Broadcom <span class="tag neutral">NEUTRAL / VCSEL leader (Irrational)</span> <span class="px">$369.34</span></h4>
+<p>AI-networking and custom-chip giant; named the "VCSEL king" for the alternative on-package-optics approach the author is watching.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$369.34</div></div>
+<div class="stat"><div class="k">Role</div><div class="v">VCSEL / CPO leader</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call this cycle. Positioned to win under <i>either</i> optics roadmap (SiPho or VCSEL) — a structural strength.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">COHR</span> Coherent <span class="tag neutral">NEUTRAL / VCSEL #2 (Irrational)</span> <span class="px">$333.28</span></h4>
+<p>Optical-components maker; the "close second" in VCSEL tech. Fell ~9% in the optics sell-off.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$333.28</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">~−9% (Jul 2)</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call this run. Leverage to the VCSEL-optics optionality; caught in the broad optics valuation reset.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">LITE</span> Lumentum <span class="tag neutral">NEUTRAL / VCSEL (Irrational)</span> <span class="px">$801.16</span></h4>
+<p>Optical-component maker with "decent" VCSEL tech and (separately) a key indium-phosphide laser supplier — the very component in short supply.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 1)</div><div class="v">$801.16</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−6.6% / −8% wk</div></div>
+</div>
+<p class="pill"><b>Track record:</b> Frequently covered in the wiki's optics complex; sits on the winning side of the InP-laser shortage but got sold with the group.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">BE</span> Bloom Energy <span class="tag neutral">NEUTRAL / positive momentum (Irrational)</span> <span class="px">$299.71</span></h4>
+<p>Makes on-site fuel-cell generators that power data centers directly (behind-the-meter), bypassing the strained electric grid. Up ~248% in 1H 2026.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 2)</div><div class="v">$299.71</div></div>
+<div class="stat"><div class="k">1H26</div><div class="v up">+248%</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. Cited approvingly as the momentum leader in behind-the-meter power; the 800V-DC note orbits Bloom's use case. No hard stance beyond "continued momentum."</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">ASML</span> ASML <span class="tag long">LONG (Irrational)</span> <span class="px">$1,759.59</span></h4>
+<p>Dutch monopoly on EUV chip-printing machines. Author owns it in the long-only book; shipped the first $400M High-NA tool to Intel this week. Rising EUV use in DRAM is a fresh tailwind.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 2, US)</div><div class="v">$1,759.59</div></div>
+<div class="stat"><div class="k">High-NA tool</div><div class="v">$400M each</div></div>
+</div>
+<p class="pill"><b>Track record:</b> Long-standing low-drama wiki long; the memory boom (more EUV per DRAM wafer) is a second-order beneficiary. TSMC's High-NA caution is the one demand question mark.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">AMAT</span> Applied Materials <span class="tag neutral">NEUTRAL / mixed (Irrational)</span> <span class="px">$608.29</span></h4>
+<p>Chip-making-equipment giant. Author liked its DRAM/etch story (a memory-boom beneficiary) but ridiculed its optics claims as "nonsense." Fell ~10% in the sell-off.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$608.29</div></div>
+<div class="stat"><div class="k">Day move</div><div class="v down">−10% (Jul 3)</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call this run. Real memory/etch tailwind; credibility dinged on optics. Also a stakeholder in packaging-equipment maker BESI.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">NOK</span> Nokia <span class="tag neutral">NEUTRAL (Semidoped)</span> <span class="px">$12.44</span></h4>
+<p>Finnish telecom-gear maker; won a sole-supplier optical-transport deal with Orange Belgium.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (Jul 2)</div><div class="v">$12.44</div></div>
+<div class="stat"><div class="k">52w range</div><div class="v">$4.00–$17.45</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. A single contract win, not a thesis — logged for completeness.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">3661.TW</span> Alchip <span class="tag neutral">NEUTRAL (Semidoped)</span> <span class="px">NT$4,325</span></h4>
+<p>Taiwanese custom-chip design house; reportedly winning Amazon's consumer-device silicon (Kindle/Fire/Alexa) under a custom-tooling model, ~40M units/year from 2027.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">NT$4,325</div></div>
+<div class="stat"><div class="k">New program</div><div class="v">Amazon CoT, 2027</div></div>
+</div>
+<p class="pill"><b>Track record:</b> First priced call. Also the firm that reportedly won Amazon's Trainium 3 AI chip from Marvell — a recurring name in the custom-silicon shuffle.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">NVDA</span> Nvidia <span class="tag neutral">MENTION (SemiAnalysis)</span> <span class="px">$194.44</span></h4>
+<p>The dominant AI-chip maker; referenced as adopting "custom HBM" in its future Feynman chip and shown on a Rubin GPU wafer at ECTC.</p>
+<div class="grid">
+<div class="stat"><div class="k">Price</div><div class="v">$194.44</div></div>
+<div class="stat"><div class="k">Context</div><div class="v">Custom HBM adopter</div></div>
+</div>
+<p class="pill"><b>Track record:</b> Passing packaging mention, not a directional call; priced for completeness. Rose modestly while the ecosystem sold off.</p>
+</div>
+
+<div class="tickcard">
+<h4><span class="sym">AMD</span> Advanced Micro Devices <span class="tag neutral">MENTION (Semidoped)</span> <span class="px">~$555</span></h4>
+<p>Nvidia's main AI-chip rival; deployed a first commercial all-optical AI network with startup Oriole, and its MI450 chip will use LPDDR memory (an ECTC custom-HBM theme).</p>
+<div class="grid">
+<div class="stat"><div class="k">Price (approx)</div><div class="v">~$555</div></div>
+<div class="stat"><div class="k">ATH (Jun 30)</div><div class="v">$584.73</div></div>
+</div>
+<p class="pill"><b>Track record:</b> Passing mentions (Oriole optics, MI450 LPDDR); priced approximately from same-week data. Near all-time highs.</p>
+</div>
+
+<div class="foot">
+<p><b>How to read this report.</b> Stances are what each newsletter argued, not recommendations. <span class="tag long">LONG</span> = bullish, <span class="tag cautious">CAUTIOUS</span> = mixed/hedged, <span class="tag neutral">NEUTRAL</span> = no directional bet, <span class="tag short">SHORT</span> = bearish. "Track record" notes whether a source's prior <i>priced</i> calls on the same name have moved in the called direction — informational only; a source being early or late is not the same as being wrong. Prices via web search, Jul 1–3 close (US July 3 was a half-holiday around July 4). This is not financial advice.</p>
+<p class="pill">Substack Semiconductor Scan · 3-day memory-loop · generated 2026-07-04 · sources: Irrational Analysis, Global Semi Research, SemiAnalysis, Semi Doped</p>
+</div>
+
+</div>
