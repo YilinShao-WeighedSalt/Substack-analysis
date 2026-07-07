@@ -1,0 +1,269 @@
+<title>Substack Semiconductor Scan — 2026-07-07</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+  :root{
+    --bg:#ffffff; --panel:#fafbfc; --ink:#1a1a2e; --muted:#5b6472; --line:#e6e9ee;
+    --blue:#2563eb; --blue-soft:#eff4ff; --orange:#d9730a;
+    --green:#15803d; --green-bg:#e8f6ec; --amber:#b45309; --amber-bg:#fdf3e3; --gray:#556; --gray-bg:#eef0f3;
+    --analysis:#f5f7fb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.68;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:56px 26px 96px}
+  .mono{font-family:'JetBrains Mono',monospace}
+  h1{font-size:2.35rem;line-height:1.12;font-weight:800;letter-spacing:-.02em;margin:0 0 10px}
+  h2.sec{font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);margin:64px 0 8px;padding-bottom:10px;border-bottom:2px solid var(--blue)}
+  .pub-head{font-size:1.65rem;font-weight:800;letter-spacing:-.015em;margin:14px 0 2px}
+  .dateline{font-size:.78rem;color:var(--muted);margin:0 0 18px;text-transform:uppercase;letter-spacing:.08em}
+  .lead{font-size:1.02rem;color:var(--muted)}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  p{margin:0 0 15px}
+  a{color:var(--blue);text-decoration:none;border-bottom:1px solid #cdd9f5}
+  .meta-top{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--muted);margin:20px 0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin:22px 0}
+  .analysis{background:var(--analysis);border:1px solid #dfe6f2;border-left:4px solid var(--orange);border-radius:10px;padding:18px 22px;margin:20px 0}
+  .analysis h4{color:var(--orange);font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin:0 0 10px;font-weight:700}
+  .analysis h4.second{margin-top:18px}
+  blockquote{margin:18px 0;padding:12px 20px;border-left:3px solid var(--blue);background:var(--blue-soft);border-radius:0 8px 8px 0;color:#23324e;font-size:.97rem}
+  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:5px;vertical-align:middle}
+  .LONG{background:var(--green-bg);color:var(--green)}
+  .CAUTIOUS{background:var(--amber-bg);color:var(--amber)}
+  .NEUTRAL{background:var(--gray-bg);color:var(--gray)}
+  .tk{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:18px 0}
+  .tk h3{margin:0;font-size:1.28rem;font-weight:800;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+  .tk .sym{font-family:'JetBrains Mono',monospace;color:var(--blue)}
+  .tk .px{font-family:'JetBrains Mono',monospace;font-size:.92rem;color:var(--ink);margin-left:auto;font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:16px 0}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 12px}
+  .stat .l{font-family:'JetBrains Mono',monospace;font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .stat .v{font-size:1.02rem;font-weight:700;margin-top:2px}
+  .track{font-size:.92rem;background:#fff;border:1px dashed #d6dbe4;border-radius:9px;padding:12px 15px;margin-top:12px}
+  .track b{color:var(--blue)}
+  .glo{border-bottom:1px dotted #9db0d6;cursor:help}
+  ul.tight{margin:6px 0 15px;padding-left:22px}
+  ul.tight li{margin:5px 0}
+  .foot{margin-top:70px;padding-top:20px;border-top:1px solid var(--line);font-size:.82rem;color:var(--muted)}
+  .pill{display:inline-block;background:var(--blue-soft);color:var(--blue);font-family:'JetBrains Mono',monospace;font-size:.68rem;padding:2px 8px;border-radius:20px;margin:0 2px}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0f1117;--panel:#161923;--ink:#e7e9ee;--muted:#9aa3b2;--line:#262b38;--blue:#6f9bff;--blue-soft:#182236;--analysis:#141824;--green:#5bd48b;--green-bg:#12301f;--amber:#f0b45e;--amber-bg:#332413;--gray:#9aa3b2;--gray-bg:#20242f;--orange:#f0954a}
+    .stat,.track{background:#0f1219}
+    a{border-bottom-color:#2f4272}
+  }
+  :root[data-theme="dark"]{--bg:#0f1117;--panel:#161923;--ink:#e7e9ee;--muted:#9aa3b2;--line:#262b38;--blue:#6f9bff;--blue-soft:#182236;--analysis:#141824;--green:#5bd48b;--green-bg:#12301f;--amber:#f0b45e;--amber-bg:#332413;--gray:#9aa3b2;--gray-bg:#20242f;--orange:#f0954a}
+  :root[data-theme="dark"] .stat,:root[data-theme="dark"] .track{background:#0f1219}
+  :root[data-theme="light"]{--bg:#ffffff;--panel:#fafbfc;--ink:#1a1a2e;--muted:#5b6472;--line:#e6e9ee;--blue:#2563eb;--analysis:#f5f7fb}
+</style>
+
+<div class="wrap">
+
+<div class="kicker">Substack Semiconductor Scan · 3-day loop</div>
+<h1>Who pays for the AI buildout?</h1>
+<p class="lead">This edition has one big idea running through it: after two years of arguing about <em>whether</em> the AI infrastructure boom is real, the newsletters have moved on to <em>how it gets financed</em> — and the surprising answer is that the chipmaker itself, Nvidia, is quietly becoming the lender of last resort.</p>
+
+<div class="meta-top">
+  <span>SCAN DATE: 2026-07-07</span>
+  <span>NEW POSTS: 3</span>
+  <span>PUBLICATIONS: SemiAnalysis · Semi&nbsp;Doped</span>
+  <span>TICKERS ANALYZED: 7</span>
+  <span>QUIET: Irrational&nbsp;Analysis · Global&nbsp;Semi · Citrini</span>
+</div>
+
+<h2 class="sec">Background — where the story stands (read this first)</h2>
+
+<p>If you have never read one of these before, here is the whole board in plain language. Everything below builds on it.</p>
+
+<p><strong>The players.</strong> A <span class="glo" title="A company that owns giant data centers and rents computing power — Amazon, Microsoft, Google, Meta, Oracle.">hyperscaler</span> is one of the handful of giants (Amazon, Microsoft, Google, Meta, Oracle) that own enormous data centers. A <strong>GPU</strong> ("graphics processing unit") is the specialized chip — Nvidia makes the dominant ones — that does the heavy math behind modern AI. A <span class="glo" title="A smaller cloud company whose entire business is renting out GPUs — CoreWeave, Nebius, Firmus, SharonAI.">neocloud</span> is a newer, smaller company whose <em>only</em> business is buying tens of thousands of these GPUs and renting them out by the hour — CoreWeave and Nebius are the listed examples. A <span class="glo" title="A factory that manufactures chips designed by other companies.">foundry</span> is a factory that physically manufactures chips; Taiwan's TSMC is the world leader, and Intel is trying to build a rival one.</p>
+
+<p><strong>The three theses this wiki has tracked for months.</strong></p>
+<ul class="tight">
+  <li><strong>The memory supercycle.</strong> AI needs vast amounts of a fast, expensive memory chip called <span class="glo" title="High-Bandwidth Memory: fast memory chips stacked next to a GPU. Each AI GPU needs a lot of it, so demand has vastly outrun supply.">HBM</span> (High-Bandwidth Memory). Demand has so outrun supply that memory makers — Micron, South Korea's SK Hynix and Samsung — are printing record profits (Micron booked an ~85% gross margin quarter). Consensus across the newsletters, and still intact.</li>
+  <li><strong>The Intel turnaround.</strong> Intel spent 2024 as everyone's favorite short — its factories were failing and it was losing to AMD. Since a March 2025 CEO change (Lip-Bu Tan), the story flipped to cautious optimism, and in June 2026 a White-House-announced deal for <em>Apple</em> to manufacture some chips at Intel gave the turnaround its strongest external endorsement yet. The stock ran from ~$80 to an all-time high of $135 before pulling back. <span class="pill">tracking ✓</span></li>
+  <li><strong>Buildout vs. monetization.</strong> The live argument. In early July a Bloomberg report that Meta might <em>rent out</em> spare AI compute spooked the market into thinking the buildout had peaked — neocloud and memory stocks fell 10–29%. Global Semi Research read it as the trade shifting "from buildout to monetization" (caution). SemiAnalysis called that flatly wrong, arguing Meta's spending will <em>accelerate</em> and Meta will become a big customer <em>of</em> the neoclouds. Unresolved. This run's headline post is the natural next chapter of that fight.</li>
+</ul>
+
+<p><strong>What's new this run.</strong> Only two publications posted (three posts; a fourth, a quiz, was skipped). But the main one is substantial and reframes the whole debate. The question is no longer "is demand real?" — it's "there aren't enough <em>investment-grade balance sheets</em> in the world to keep funding this, so who lends the trillions?" SemiAnalysis's answer: Nvidia itself has started guaranteeing its customers' revenue so that banks will lend to them. They call Nvidia the <strong>"Central Bank of AI."</strong></p>
+
+<!-- ========================= POST 1 ========================= -->
+<h2 class="sec">New posts</h2>
+
+<div class="card">
+  <div class="pub-head">SemiAnalysis</div>
+  <div class="dateline">Nvidia GPU Debt Backstop Unleashes the AI Project Trinity · 2026-07-06 · ~4,600 words (paid)</div>
+
+  <p><strong>The one-sentence version:</strong> The AI buildout is running out of easy money, so Nvidia has started personally guaranteeing a floor under its customers' GPU-rental income — which lets banks lend to small cloud companies they'd otherwise refuse, and could balloon "AI debt" into a $7 trillion market by 2029.</p>
+
+  <p><strong>Why financing is suddenly the bottleneck.</strong> SemiAnalysis has a running story about what limits AI growth. In 2025 the limit was <em>data-center space</em>. By early 2026 it was <em>chip supply</em>. Now, mid-2026, they say it's <strong>money</strong> — specifically, who is willing to lend it. Until recently the buildout was paid for out of the hyperscalers' own cash flow. That's changing: Oracle, then Meta, and now even Google have started borrowing. SemiAnalysis projects cumulative AI capital spending ("<span class="glo" title="Capital expenditure — money spent on long-lived equipment and buildings, here GPUs, networking, and data centers.">capex</span>") of ~$11.1 trillion from 2024–2029, with annual capex north of $2 trillion by 2028, and estimates <strong>~$7.1 trillion of AI-related debt outstanding by 2029</strong> — which would make it the second-largest "asset-backed" debt market in America after home mortgages (~$13T).</p>
+
+  <p><strong>The "Project Trinity."</strong> To actually build a GPU cluster, a neocloud needs three things at once, and each one requires the other two — a chicken-and-egg trap:</p>
+  <ul class="tight">
+    <li><strong>Capital</strong> — the money. But lenders won't provide it without…</li>
+    <li><strong>Offtake</strong> — a signed customer who promises to pay (an "<span class="glo" title="A take-or-pay contract: the customer commits to pay for the compute whether or not they actually use it — a guaranteed revenue stream lenders can underwrite.">offtake</span>" or "take-or-pay" deal). But to win a customer you need equity money for deposits, which requires…</li>
+    <li><strong>Datacenter</strong> — physical space and power, which landlords won't rent to you without a solid customer and financing already lined up.</li>
+  </ul>
+  <p>Historically the only version of this that banks would fund was a narrow template: a 5-year contract where a big investment-grade hyperscaler is on the hook. Lenders like it because they're really just betting on the hyperscaler's credit, not on the murky question of future AI demand. The problem: <strong>hyperscaler balance sheets are finite.</strong> Once they've backstopped all they can, the template runs out of road — and it leaves out everyone else (AI startups, inference providers) who want <em>short</em> contracts, not 5-year ones.</p>
+
+  <blockquote>"Neoclouds have so much demand for their GPUs that they are able to solve for a prepay amount that can entirely fund the cluster capex, meaning a theoretically infinite IRR as they can stand up a cluster with no cash out the door on their part!"</blockquote>
+  <p>(That line describes today's seller's market: some neoclouds demand up to 100% prepayment on 1-year rentals. <span class="glo" title="Internal Rate of Return — the annualized profit rate on an investment. 'Infinite' here means the customer's upfront cash covers the entire cost, so the operator risks none of its own money.">IRR</span> = the return on the money you put in; if you put in zero, the return is mathematically infinite.)</p>
+
+  <p><strong>Enter the Nvidia backstop.</strong> This is the heart of the piece. Nvidia now offers neoclouds a <strong>take-or-pay guarantee</strong>: a promise that Nvidia itself will rent the GPUs at a pre-agreed minimum price if the neocloud can't find enough other customers. In exchange, Nvidia takes a share of any rental revenue <em>above</em> that floor. Neither side expects the guarantee to ever be triggered — the point is simply that its existence makes the whole thing bankable. Because Nvidia carries a top-tier <span class="glo" title="A rating agency's grade of how likely a borrower is to repay. AA/Aa2 is very high ('investment grade'), so lenders treat Nvidia's guarantee as near-riskless.">AA credit rating</span>, a lender can look at an unknown neocloud, see Nvidia standing behind it, and lend as if it were lending to Nvidia. That instantly solves all three legs of the Trinity.</p>
+
+  <p><strong>The worked example.</strong> SemiAnalysis models a six-year backstop where Nvidia guarantees an average floor of ~$2.36/hour per GPU. In their scenario a neocloud rents a top GPU (a "GB300") at $6.75/hour in year one. It keeps 100% of revenue up to the $3.68 year-one floor; on the excess, Nvidia takes a cut (they model an 18% average "take rate" over six years). The upshot: renting on <strong>short, 1-year terms</strong> yields the best returns for the operator (~25% IRR with the backstop, ~41% without it) — while if the backstop actually gets triggered and the neocloud has to sell to Nvidia at the floor, its return is roughly zero. That "zero but survivable" floor is exactly what makes the loan safe: even in the worst case, the operator can still cover its debt payments.</p>
+
+  <p><strong>How banks size the loan.</strong> Lenders use a "<span class="glo" title="Debt Service Coverage Ratio — cash the project generates divided by its debt payments. 1.3x means 30% more cash than needed to pay the debt; higher is safer.">DSCR</span>" (debt service coverage ratio) — cash generated ÷ debt payments — and want at least 1.3x even in the backstop-triggered scenario, which works out to lending 70–80% of the asset's value. SemiAnalysis notes the pricing gap this closes: CoreWeave's unsecured 5-year bonds yield ~10%, but its Meta-backstopped term loan priced at just 5.9% — a ~90-basis-point premium over Meta's own borrowing cost, which is the market's price for CoreWeave's "execution risk." Nvidia-backstopped deals should land somewhere between those two.</p>
+
+  <p><strong>Real deals already signed (all in Asia-Pacific so far):</strong></p>
+  <ul class="tight">
+    <li><strong>SharonAI</strong> — a 72-megawatt "AI factory" in Australia scaling to 40,000 GB300 GPUs under a six-year backstop; disclosed backstop value $4.88B (an implied ~$2.33/hr/GPU floor).</li>
+    <li><strong>Firmus</strong> — a 360-megawatt cluster in Batam, Indonesia; the company projects $25–30B of customer revenue over six years and separately signed a 600MW clean-energy deal. SemiAnalysis says the backstop lets Firmus grow "by an order of magnitude."</li>
+  </ul>
+  <p>They also note <strong>AMD has been doing this since 2025</strong> (offering to rent back unsold capacity from AWS, Oracle, Crusoe and others), and that the section on what this does to Nvidia's own financial statements sits behind the paywall.</p>
+
+  <div class="analysis">
+    <h4>Analysis — what it means & how it connects</h4>
+    <p><strong>Plain-language context.</strong> This post is the direct sequel to two threads the wiki has been tracking. First, the <em>"buildout vs. monetization"</em> fight: bears worry demand can't keep up with all these GPUs, and the honest tell in SemiAnalysis's own model is that if a neocloud has to fall back on the Nvidia floor, its profit is roughly <em>zero</em> — the backstop is a safety net precisely because real end-demand is not yet guaranteed at these prices. Second, SemiAnalysis flagged back in January that Nvidia was becoming the <em>"Central Bank of AI"</em> — a lender that steps in when normal lenders won't. This piece is that idea made concrete. The elegant part of the structure is that Nvidia turns a GPU <em>sale</em> into a recurring revenue stream <em>and</em> expands the pool of buyers who can afford its chips — de-risking its own future demand.</p>
+    <p><strong>The circularity worth naming.</strong> There is a genuine critique the bulls should sit with: Nvidia guaranteeing its customers' income so they can buy more Nvidia chips is, structurally, the vendor financing its own sales. It is exactly the kind of arrangement that flatters revenue on the way up and can unwind quickly if rental prices fall — because the party ultimately absorbing the price risk is Nvidia. SemiAnalysis frames this as healthy market-building (and it may well be, given real GPU scarcity), but a skeptic would call $7T of AI debt underwritten partly by the chip vendor a concentration of risk, not a diversification of it.</p>
+    <h4 class="second">Track record — for what it's worth</h4>
+    <p>SemiAnalysis is the most authoritative source in this wiki on data-center economics, and its financing/TCO models are its single strongest franchise (it literally sells the GPU rental price index and cluster models referenced here). Its prior neocloud calls are still <em>open, not yet resolved</em>: its CoreWeave LONG from July 2 ($81.75) is roughly flat at $82.94, and its broader "buildout accelerates" thesis is the un-won half of the buildout-vs-monetization query. So: trust the mechanics of <em>how</em> the financing works; treat the implied bullishness on end-demand as an unproven house view, not a settled fact.</p>
+    <p><strong>Falsifier:</strong> if GPU rental rates roll over in H2 2026, backstops start getting triggered (operators actually renting to Nvidia at the floor), or the promised Neocloud RPO growth stalls — the "healthy market-building" read flips into "vendor propping up its own demand." <strong>Confidence: MEDIUM-HIGH on the facts, LOW-MEDIUM on the optimistic conclusion.</strong></p>
+  </div>
+</div>
+
+<!-- ========================= POST 2 ========================= -->
+<div class="card">
+  <div class="pub-head">Semi Doped</div>
+  <div class="dateline">Daily Update — July 6th, 2026 · news roundup (~1,200 words)</div>
+
+  <p>Semi Doped is a podcast+newsletter run by two industry hands (Vik Sekar and Austin Lyons) who translate the week's headlines and add a quick investor take. Their edge is plain-spoken technical fluency. This issue's items:</p>
+
+  <ul class="tight">
+    <li><strong>Nvidia "Kyber" rack delayed 12+ months to 2028 (from SemiAnalysis).</strong> A "rack" here is the fridge-sized cabinet holding dozens of GPUs wired together to act as one giant computer. Kyber NVL144 was demoed by Nvidia CEO Jensen Huang just three months ago; now it's pushed to 2028, and a related design ("NVL72×2") was cancelled, which limits how large Nvidia's next-gen "Rubin Ultra" systems can scale as a single unit. Semi Doped reads this as <strong>favorable for AMD</strong>, whose competing "Helios" rack (MI455X) ships in the second half of 2026 and MI500 in 2027.</li>
+    <li><strong>Nvidia's revenue-share financing</strong> — the same backstop story as Post 1, via <em>The Information</em>. Vik's angle: recurring revenue smooths Nvidia's financials (versus lumpy one-off chip orders), and compares it to how Qualcomm collected a royalty on phone sales for decades. Austin: financing is an underrated weapon against smaller AI-chip startups that can't offer it.</li>
+    <li><strong>$510B of AI startup investment in H1 2026</strong>, with OpenAI and Anthropic alone capturing 43% of all venture funding; US hyperscaler AI capex projected to hit 3.2% of GDP by 2027. Sixteen companies raised billion-dollar rounds in Q2 alone.</li>
+    <li><strong>Intel raised prices</strong> on some consumer and server CPUs — enthusiast chips up $30–50, some data-center Xeon chips up by hundreds to thousands of dollars, now priced above their late-2023 launch. A <strong>CPU</strong> is the general-purpose "brain" chip (versus a GPU's specialized math engine). Vik reads pricing power as a positive for Intel's financials; Austin notes it's inflation landing on consumers again "first memory, now CPUs."</li>
+    <li><strong>Hon Hai (Foxconn) Q2 beat on record AI-server revenue.</strong> Foxconn is the Taiwanese contract manufacturer that physically assembles Nvidia's servers; AI servers have now overtaken consumer electronics as its biggest revenue line. Vik calls it a clean proxy for real compute capacity being deployed — and "so far there is no slowdown even as there are fears of overcapacity."</li>
+    <li><strong>South Korea plans a growth fund seeded by chip-tax revenue.</strong> Samsung and SK Hynix have jointly committed at least ₩1,350 trillion (~$880B) to chips and data centers; Seoul wants to recycle the memory windfall into other industries.</li>
+    <li><strong>Intel "XBM" patent surfaced</strong> — a proposed "Cross-Batch Memory," described as an ultra-high-bandwidth memory that could compete with the next-gen HBM4 standard. (Semi Doped's wry warning: don't let it die like Intel's abandoned "Optane" memory did.)</li>
+  </ul>
+
+  <div class="analysis">
+    <h4>Analysis — what it means & how it connects</h4>
+    <p><strong>Two items reinforce this run's big theme.</strong> The Kyber delay is a rare crack in Nvidia's execution machine and lands right as Nvidia leans on financing to defend demand — a reminder that the moat is being defended on the balance sheet, not just in the lab. And the Foxconn beat is the closest thing to a hard, real-world reading on the buildout-vs-monetization fight: Foxconn assembles the actual servers, so record AI-server revenue with "no slowdown" is a data point <em>for</em> SemiAnalysis's "buildout accelerates" camp and against the overcapacity bears (see the open contradiction in the Background).</p>
+    <p><strong>On Intel, two positives — with a caveat.</strong> The wiki's Intel thesis has migrated to a pure "foundry option" — bulls write off the CPU-products business and bet only on the factories. This issue nudges <em>both</em>: pricing power on CPUs is a small products-side positive (the near-term earnings surprise the bulls stopped expecting), and XBM is intriguing but is, at this stage, a <em>patent</em> — slideware, not silicon. Recall Intel's "Optane" memory looked promising on paper too and was ultimately killed; treat XBM as optionality, not a thesis.</p>
+    <h4 class="second">Track record — for what it's worth</h4>
+    <p>Semi Doped's calls are all still young (nothing older than 30 days is priced yet, so no formal hit-rate). Its most-tracked live position is a series of <strong>Intel LONGs</strong> — the April-era Intel longs at ~$80 are up ~+50%, though its own June longs at $134 are modestly underwater at $120.94 after the early-July semi selloff. Its read on AMD's CPU strength has been directionally consistent with the broader wiki. These are reasonable, well-sourced daily takes rather than high-conviction deep dives — weight accordingly.</p>
+    <p><strong>Confidence: MEDIUM.</strong> The Foxconn and Kyber datapoints are solid facts; the equity conclusions are light-touch commentary.</p>
+  </div>
+</div>
+
+<!-- ========================= POST 3 ========================= -->
+<div class="card">
+  <div class="pub-head">Semi Doped</div>
+  <div class="dateline">TIL: Qualcomm Bet the Company on Trucks Before It Bet on Your Phone · 2026-07-04 · ~600 words</div>
+
+  <p>A short history piece, but with a present-day point. In 1989 <strong>Qualcomm</strong> — now the company that collects a fee on nearly every smartphone — made half its $32M revenue from <em>OmniTRACS</em>, satellite terminals bolted to truck cabs so dispatchers could track fleets. That unglamorous trucking money kept the lights on while Qualcomm pushed a radio idea the whole industry called impossible: <span class="glo" title="Code Division Multiple Access — a way to let many callers share one radio channel at once, each wrapped in a unique mathematical code. It became a foundation of 3G mobile networks.">CDMA</span>, which let every caller talk at once on the same channel, each wrapped in its own code. Engineers called it unworkable; the <em>Wall Street Journal</em> warned it could cost the industry billions. Qualcomm won anyway — CDMA became a 3G standard in 1993, and Qualcomm's patents rode along into 4G and 5G. The kicker: Qualcomm is now "reforming itself into an AI datacenter company," and Semi Doped asks whether its new <span class="glo" title="High Bandwidth Compute — Qualcomm's proposed way to stack memory directly on a logic chip, aiming to enter data-center AI without the standard HBM-plus-advanced-packaging approach.">HBC</span> (High Bandwidth Compute) memory idea, floated at its 2026 Investor Day, could be the next impossible-sounding bet that pays off.</p>
+
+  <div class="analysis">
+    <h4>Analysis — what it means & how it connects</h4>
+    <p><strong>Context.</strong> This is narrative color, not a fresh investment call — but it's on-thesis for a name the wiki actively tracks. Qualcomm is the subject of a standing disagreement (query <span class="mono">qcom-short-vs-edge-ai-turnaround</span>): Irrational Analysis has been a persistent <em>short</em> ("Qualcomm is out of time" — the phone business is mature and the data-center pivot is late), while Semi Doped has been more open to the long-term optionality. HBC — stacking memory straight onto a logic chip — is Qualcomm's attempt to enter AI data centers <em>without</em> the standard, capacity-constrained recipe of HBM memory plus TSMC's "CoWoS" packaging. The piece's framing (root for the underdog) leans gently sympathetic.</p>
+    <h4 class="second">Track record — for what it's worth</h4>
+    <p>On Qualcomm specifically, Irrational Analysis's bearish calls have broadly aged well — the stock has been a chronic underperformer versus AI names, and even <em>Intel</em> outran it at points in 2025. Semi Doped's own late-June take rated HBC as "credible long-term optionality but unproven slideware." Nothing here changes that: HBC remains a promise. <strong>Confidence: LOW</strong> (this is a history essay; treat the QCOM read as unchanged — neutral, wait for shipping product).</p>
+  </div>
+</div>
+
+<!-- ========================= TICKERS ========================= -->
+<h2 class="sec">Ticker profiles</h2>
+<p class="lead" style="margin-top:6px">Each card: what the company does in one line, a financial snapshot, and whether prior calls in this wiki have played out. Prices are the July 6, 2026 close (via web search — no live price feed was reachable this run).</p>
+
+<div class="tk">
+  <h3><span class="sym">NVDA</span> NVIDIA <span class="tag LONG">LONG (SemiAnalysis)</span> <span class="tag NEUTRAL">MIXED (Semi Doped)</span> <span class="px">$195.84</span></h3>
+  <p>Makes the dominant AI GPUs and, increasingly, the whole rack-scale system around them. The most valuable company in the world and the pivot of this entire report — now also acting as lender-of-last-resort to its own customers.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$195.84</div></div>
+    <div class="stat"><div class="l">Market cap</div><div class="v">~$4.72T</div></div>
+    <div class="stat"><div class="l">52-wk range</div><div class="v">$157–$237</div></div>
+    <div class="stat"><div class="l">This run</div><div class="v">Backstop + Kyber delay</div></div>
+  </div>
+  <p><strong>The two-sided news.</strong> Bullish: the backstop program expands who can afford Nvidia GPUs and converts sales into recurring, revenue-shared income. Bearish: the flagship Kyber rack slipped 12+ months to 2028 — a real execution stumble that helps AMD. Net, the structural demand story is intact but no longer flawless.</p>
+  <div class="track"><b>Track record:</b> The wiki's longest-running LONG. Split-adjusted 2024 entries (~$16) have compounded enormously; the July-2 anchor at $194.44 is ~+0.7% to $195.84. Prior bears' warnings (China revenue collapsing to ~5%; hyperscaler custom chips) are partly playing out but haven't dented the core. <b>Verdict: LONG thesis still tracking; watch rental prices as the new tell.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">AMD</span> Advanced Micro Devices <span class="tag LONG">LONG (Semi Doped)</span> <span class="px">$552.05</span></h3>
+  <p>Nvidia's main rival in both AI GPUs and general-purpose CPUs. The wiki's split view: a widely-endorsed CPU comeback story bolted to a still-doubted GPU business.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$552.05</div></div>
+    <div class="stat"><div class="l">Market cap</div><div class="v">~$845B</div></div>
+    <div class="stat"><div class="l">P/E</div><div class="v">~170x</div></div>
+    <div class="stat"><div class="l">YTD</div><div class="v">+154%</div></div>
+  </div>
+  <p><strong>This run:</strong> Semi Doped reads the Nvidia Kyber delay as a window for AMD's Helios (MI455X, 2H26) and MI500 (2027) racks. SemiAnalysis separately noted AMD has run its own smaller "rent-back" backstops since 2025. AMD's "Advancing AI" event is two weeks out.</p>
+  <div class="track"><b>Track record:</b> The Semi Doped LONG from June 16 ($507.29) is <b>+8.8%</b> at $552.05 ✓ (open). The wiki's CPU-bull thesis has tracked well; the GPU-bear thesis (SemiAnalysis: "zero production inference customers" as of early 2026) is the unresolved half. At ~170x earnings after a 154% YTD run, the stock now prices in a lot of the GPU optimism the bears still doubt. <b>Verdict: momentum ✓, valuation rich.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">INTC</span> Intel <span class="tag LONG">LONG (Semi Doped)</span> <span class="px">$120.94</span></h3>
+  <p>The former CPU king, now a turnaround bet on its <em>foundry</em> (contract chip-manufacturing) business as a US-based alternative to Taiwan's TSMC.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$120.94</div></div>
+    <div class="stat"><div class="l">ATH (Jun 18)</div><div class="v">$135.48</div></div>
+    <div class="stat"><div class="l">This run</div><div class="v">Price hikes + XBM</div></div>
+    <div class="stat"><div class="l">Stance</div><div class="v">mixed / med conviction</div></div>
+  </div>
+  <p><strong>This run:</strong> two products-side positives — CPU price increases (pricing power in a supply-tight market) and an "XBM" ultra-high-bandwidth-memory patent that could someday rival HBM4. Both are minor relative to the foundry thesis, and XBM is a patent, not a product.</p>
+  <div class="track"><b>Track record:</b> One of the wiki's best resolved calls — April longs at ~$80–81 (Irrational Analysis, Global Semi) are <b>~+50%</b> at $120.94 ✓. The June Semi Doped longs at $134 are <b>−9.7%</b> and open after the early-July selloff. The Apple-foundry deal remains the strongest validation. <b>Verdict: original longs strongly tracking; the easy margin-of-safety is gone, thesis now rests on 18A-P factory execution.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">2317.TW</span> Hon Hai / Foxconn <span class="tag LONG">LONG (Semi Doped)</span> <span class="px">~NT$255</span></h3>
+  <p>The Taiwanese contract manufacturer that physically assembles Nvidia's AI servers (and, historically, iPhones). A clean, real-world proxy for how much AI hardware is actually being deployed.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">~NT$255</div></div>
+    <div class="stat"><div class="l">Market cap</div><div class="v">~$106B</div></div>
+    <div class="stat"><div class="l">Analyst target</div><div class="v">~NT$313</div></div>
+    <div class="stat"><div class="l">Ratings</div><div class="v">19 buy / 0 sell</div></div>
+  </div>
+  <p><strong>This run:</strong> Q2 revenue beat estimates on <em>record</em> AI-server sales, which have now overtaken consumer electronics as Foxconn's biggest line, with Oracle's capex cited as a demand driver. "No slowdown" despite overcapacity fears.</p>
+  <div class="track"><b>Track record:</b> New to the call log this run (px@call ~NT$255; recent quotes ranged NT$239–258, so treat as approximate). First Foxconn entry — no prior calls to grade. <b>Verdict: a hard-data vote for the "buildout accelerates" side.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">CRWV</span> CoreWeave <span class="tag NEUTRAL">CASE STUDY (SemiAnalysis)</span> <span class="px">$82.94</span></h3>
+  <p>The largest listed <em>neocloud</em> — a company whose whole business is renting out Nvidia GPUs. It's the textbook example in the backstop piece: its Meta-backstopped loan priced at 5.9% versus ~10% on its unsecured bonds.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$82.94</div></div>
+    <div class="stat"><div class="l">Market cap</div><div class="v">~$44.6B</div></div>
+    <div class="stat"><div class="l">Day range (Jul 6)</div><div class="v">$80.6–$88.5</div></div>
+    <div class="stat"><div class="l">Stance</div><div class="v">mixed (SA long / IA short)</div></div>
+  </div>
+  <p><strong>Why it's here:</strong> not a fresh call, but the living illustration of how backstopped financing changes a neocloud's cost of capital — the mechanism the whole report turns on.</p>
+  <div class="track"><b>Track record:</b> A genuine two-sided name. Irrational Analysis's year-long SHORT was vindicated on the −29% June selloff. SemiAnalysis's July-2 LONG at $81.75 is <b>+1.5%</b> at $82.94 (open), betting Meta becomes a customer, not a competitor. <b>Verdict: unresolved — the single best barometer for the buildout-vs-monetization query.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">META</span> Meta Platforms <span class="tag NEUTRAL">CONTEXT</span> <span class="px">$601.00</span></h3>
+  <p>Facebook/Instagram's parent — a hyperscaler whose rumored plan to rent out spare compute triggered the whole buildout-vs-monetization scare. It backstops CoreWeave's loan, making it both a customer and a credit anchor in this run's story.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$601.00</div></div>
+    <div class="stat"><div class="l">This run</div><div class="v">credit backstop role</div></div>
+    <div class="stat"><div class="l">Stance</div><div class="v">LONG (SemiAnalysis)</div></div>
+  </div>
+  <div class="track"><b>Track record:</b> SemiAnalysis's July-2 LONG at $584.88 is <b>+2.8%</b> at $601.00 ✓ (open). Its bull thesis (Meta capex accelerates, Meta as RPO source for neoclouds) is the un-won half of the central contradiction. <b>Verdict: modestly tracking; the thesis is early.</b></div>
+</div>
+
+<div class="tk">
+  <h3><span class="sym">QCOM</span> Qualcomm <span class="tag NEUTRAL">NEUTRAL (Semi Doped)</span> <span class="px">$177.40</span></h3>
+  <p>The dominant smartphone-modem-and-chip licensor, now trying to reinvent itself as an AI data-center player via its unproven "HBC" stacked-memory idea.</p>
+  <div class="grid">
+    <div class="stat"><div class="l">Price</div><div class="v">$177.40</div></div>
+    <div class="stat"><div class="l">Day range (Jul 6)</div><div class="v">$172–$186</div></div>
+    <div class="stat"><div class="l">Stance</div><div class="v">short (IA) vs neutral (SD)</div></div>
+  </div>
+  <div class="track"><b>Track record:</b> Irrational Analysis's persistent SHORT (px@call $191.65 in late June) is <b>tracking</b> — QCOM at $177.40 is ~−7% since. The data-center pivot remains a promise. <b>Verdict: bears still ahead; wait for HBC to ship before re-rating.</b></div>
+</div>
+
+<div class="foot">
+  <p><strong>How to read this:</strong> stances are the newsletters' views, not advice. "px@call" is the price when a call was logged, so the wiki can grade it later. Glossed terms have a dotted underline — hover for the definition. This report is generated by an unattended 3-day scanner that reads five semiconductor Substacks through an accumulated knowledge wiki.</p>
+  <p class="mono" style="font-size:.72rem">Generated 2026-07-07 · Sources this run: SemiAnalysis (2026-07-06), Semi Doped (2026-07-06, 2026-07-04). Quiet: Irrational Analysis, Global Semi Research, Citrini. Prices via web search, July 6 2026 close.</p>
+</div>
+
+</div>

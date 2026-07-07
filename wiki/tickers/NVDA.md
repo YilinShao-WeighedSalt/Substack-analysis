@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: NVDA
 current_stance: long
 conviction: high
-last_review: 2026-07-04
+last_review: 2026-07-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -150,9 +150,13 @@ last_review: 2026-07-04
 | 2026-06-12 | [[semidoped]] | MENTION | n/a | Jensen Huang cited as dominant market-moving figure in AI infrastructure; no direct stock call made |
 | 2026-06-16 | [[semianalysis]] | MENTION | n/a | H200 and GB300 GPUs are the hardware substrate across all RL training case studies; central to RL infrastructure build-out but no explicit investment stance taken |
 | 2026-07-02 | [[semianalysis]] | MENTION | 194.44 | ECTC: Feynman adopts custom HBM; Rubin GPU ~16% die area is HBM logic that custom HBM offloads |
+| 2026-07-06 | [[semianalysis]] | LONG | 195.84 | GPU debt backstop ("Central Bank of AI") broadens compute TAM beyond hyperscalers; revenue-share upside above a ~$2.36/hr floor |
+| 2026-07-06 | [[semidoped]] | NEUTRAL | 195.84 | Mixed: Kyber NVL144 delayed >12mo to 2028 + NVL72x2 cancelled (limits Rubin Ultra scale-up) vs bullish revenue-share financing moat |
 
 ## Thesis evolution
 The bull thesis began with CUDA lock-in and datacenter GPU dominance in early 2024 and has only deepened since. [[irrationalanalysis]] established the core framework — 17 years of CUDA ecosystem accumulation creates switching costs no hardware advantage can overcome in the medium term — and has held Nvidia as a 40-50% portfolio position throughout, rarely wavering even during Blackwell packaging delays (Aug 2024) and the DeepSeek shock (Jan 2025). [[semianalysis]] started equally bullish on the hardware moat (Blackwell margins, NVL72 TCO, GB300 for reasoning) but has introduced the most substantive bearish notes: Huawei CloudMatrix 384 eroding the China TAM (Apr 2025), TPUv7 threatening hyperscaler accounts on TCO (Nov 2025), and three-front competitive pressure building through 2025. [[citrini]] has drifted from outright LONG to NEUTRAL/lower-conviction by late 2025 and into 2026, arguing the easy alpha is gone and supply-chain names now offer more asymmetry. The key evolution is that competitive risk has migrated from "implausible" to "real but medium-term" — the bear case is no longer dismissed, it is time-bounded to H2 2026+ when hyperscaler ASICs and Huawei Ascend take meaningful share. NVLink Fusion, CPO (COUPE/Quantum-X), the Groq acquihire, and the Vera Rubin full-stack CPU+GPU pod have each extended the moat narrative just as each preceding concern peaked.
 
 ## Outcome tracking
 The two entries with concrete px@call data are [[irrationalanalysis]] at $16.53 (Oct 2024) and $16 (Dec 2024), both split-adjusted figures consistent with the stock trading in the $130–140 pre-split range at the time; the stock subsequently ran well past the author's $150 H2 2025 price target, confirming the LONG thesis. The irrationalanalysis author noted in Oct 2025 that he held approximately $240K in shares plus call options and described the stock as "comically undervalued," indicating continued unrealized gains relative to the 2024 entry. The primary falsifying condition for the live LONG view is accelerating hyperscaler ASIC substitution or Huawei Ascend ecosystem maturity compressing Nvidia's revenue concentration; neither has materialized at scale through mid-2026, though China revenue has collapsed to ~5% of total, validating the bears on that specific vector.
+
+**Update 2026-07-06:** two-sided run. SemiAnalysis's GPU-debt-backstop piece is structurally bullish — Nvidia guaranteeing neocloud rental revenue ("Central Bank of AI") expands the buyer base and converts sales into revenue-shared recurring income; logged LONG $195.84. Same day, Semi Doped relayed SemiAnalysis's own reporting that the flagship **Kyber NVL144 rack slipped 12+ months to 2028** and the NVL72x2 design was cancelled (limiting Rubin Ultra's single-unit scale-up) — a rare execution stumble that helps AMD; logged NEUTRAL $195.84. The prior Jul-2 anchor $194.44 is ~+0.7% at $195.84 (open). New nuance to the falsifier: the moat is now partly defended on the *balance sheet* (backstops), so **GPU rental rates rolling over** — which would trigger backstops and expose Nvidia to the price risk — becomes a key new tell to watch alongside ASIC substitution.

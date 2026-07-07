@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: AMD
 current_stance: mixed
 conviction: low
-last_review: 2026-07-04
+last_review: 2026-07-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -82,9 +82,13 @@ last_review: 2026-07-04
 | 2026-06-09 | [[semianalysis]] | MENTION | n/a | MI355X achieved 100x throughput improvement by Day 26 but started non-deployable; ATOM engine serves zero production tokens |
 | 2026-06-16 | [[semidoped]] | LONG | 507.29 | MEXT acquisition adds flash-as-DRAM memory tiering for agentic AI workloads |
 | 2026-07-03 | [[semidoped]] | MENTION | 555 | First commercial photonic AI network with Oriole (UK ARIA); MI450 to use LPDDR (ECTC custom-HBM theme) |
+| 2026-07-06 | [[semianalysis]] | MENTION | 552.05 | Cited as already running its own rent-back backstop program since 2025 (AWS/OCI/DigitalOcean/Vultr/Tensorwave/Crusoe) |
+| 2026-07-06 | [[semidoped]] | LONG | 552.05 | Nvidia Kyber delay opens a competitive window; Helios (MI455X) ships 2H26, MI500 in 2027 |
 
 ## Thesis evolution
 The view on AMD across these publications has bifurcated sharply into two non-overlapping theses that have rarely converged. Both irrationalanalysis and semianalysis opened 2024 broadly constructive on AMD's CPU renaissance — Turin/Bergamo/Strix crushing Intel and validating the fabless-chiplet model — and that CPU bull case has only strengthened over time, culminating in the Venice server CPU thesis of early 2026. The GPU story followed the opposite arc: an initial window of MI300X opportunity (H1 2024) quickly collapsed as Blackwell ramped, and by late 2024 both publications were independently short the datacenter GPU segment on the same structural grounds — ROCm software immaturity, aggressive hardware discounting, Samsung HBM yield problems, and no rack-scale solution. The two publications diverge most in 2025-2026 on whether the MI450X/Helios roadmap closes the gap: semianalysis acknowledges cultural progress but maintains AMD is 6+ months behind on inference composability and has zero production inference customers as of early 2026, while irrationalanalysis points to the OpenAI warrant deal and CPU margin tailwinds as reasons to own the stock regardless of GPU execution. The net result is a stock with a well-established CPU long that both camps endorse and a GPU short that semianalysis sustains while irrationalanalysis periodically covers and re-enters around catalysts.
 
 ## Outcome tracking
 No px@call values are recorded across the log, so price-based verification is not possible. The CPU bull thesis — datacenter share gains on Turin/Venice, enterprise laptop wins from Intel's reliability failures — has been directionally confirmed by the consistent flow of calls reiterating server CPU outperformance through 2026. The datacenter GPU bear thesis was the dominant near-term call through H2 2024 and into 2025; the predicted MI300X/MI325X margin deterioration and Blackwell-driven volume erosion appear to have materialized given the sustained short positioning and absence of any call marking a GPU inflection. The live bull case rests on Venice CPU adoption and the OpenAI warrant arrangement; the primary falsifier would be evidence of sustained MI350X/MI450X production inference wins at hyperscalers, which semianalysis as of June 2026 says has not occurred. As of June 2026, AMD trades at $507.29 ($834B mkt cap, ~165x P/E, +130% YTD). The MEXT acquisition addresses the memory wall but is financially immaterial at this scale. CPU bull thesis remains intact; GPU bear thesis (zero production inference customers per SA) unresolved.
+
+**Update 2026-07-06:** the Semi Doped Jun-16 LONG at $507.29 is now **+8.8% at $552.05 ✓** (open); the Jul-3 MENTION at $555 is ~flat. This run adds two datapoints, both GPU-side positives: Semi Doped reads Nvidia's Kyber rack delay (>12mo to 2028) as a window for AMD's Helios/MI455X (2H26) and MI500 (2027), and SemiAnalysis notes AMD has run its own rent-back backstops since 2025 (a financing tool that helps place GPUs). Neither resolves the core GPU-bear thesis (production inference wins). Caveat: at ~$552 (~170x P/E, +154% YTD) the stock now prices in substantial GPU optimism; the risk/reward has shifted from cheap-optionality toward priced-for-perfection. Watch AMD's Advancing AI event (mid-July) for MI500 roadmap detail.

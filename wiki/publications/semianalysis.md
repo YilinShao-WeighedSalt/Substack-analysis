@@ -4,17 +4,18 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-04
+updated: 2026-07-07
 handle: semianalysis
-calls_logged: 191
+calls_logged: 195
 hit_rate: "n/a"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
-108 analysis posts ingested (2024-01-03 -> 2026-07-02); ~191 ticker calls. hit_rate still "n/a" — all priced LONG/SHORT calls are <30 days old (earliest MU LONG $1,057.59 on 2026-06-23, now ~$976).
+109 analysis posts ingested (2024-01-03 -> 2026-07-06); ~195 ticker calls. hit_rate still "n/a" — all priced LONG/SHORT calls are <30 days old (earliest MU LONG $1,057.59 on 2026-06-23, now ~$976).
 
+- **Nvidia GPU Debt Backstop (2026-07-06):** The financing bottleneck thesis — after datacenter space (2025) and chip supply (early 2026), *money* is now the constraint. Nvidia backstops neocloud rental revenue ("Central Bank of AI"), unlocking bank lending; ~$7.1T AI debt by 2029. Deep, model-driven, and squarely in SA's strongest franchise (TCO/financing). Structurally bullish [[NVDA]] $195.84; uses [[CRWV]] (Meta-backstopped 5.9% loan) as the case study. New concept page [[ai-debt-financing]]. Feeds the bull side of [[buildout-vs-monetization]], though the model's own ~zero-IRR floor scenario is an implicit nod to demand risk.
 - **Meta Compute / neocloud rebuttal (2026-07-02):** Contrarian take on the Bloomberg "Meta becomes a neocloud" panic — argued the overcapacity read is *erroneous* and Meta capex will accelerate (5+ GW contracted 1H26), that Meta will be a *source* of RPO growth for CoreWeave/Nebius, and that Oracle under-monetized its gigawatts vs SpaceX's premium pricing. Priced LONGs: META $584.88, CRWV $81.75, NBIS $215.89; ORCL SHORT/critical $141.01. Directly opposes Global Semi's same-week "buildout→monetization" caution (see [[buildout-vs-monetization]]). Outcome TBD.
 - **ECTC 2026 packaging roundup (2026-07-02):** First hard technical read on Intel EMIB-T ("most credible CoWoS alternative," Google TPU v9-bound, but "still catching up to TSMC"), Marvell custom HBM + OMIB optics (Celestial validation, EAM scale risk), and TSMC/Microsoft microfluidic cooling. Feeds the [[intel-foundry-decline]] and [[advanced-packaging]] arcs. INTC NEUTRAL $120.35, MRVL LONG $245.29, TSM LONG $446.68.
 - **TokenBudgeting (2026-06-30):** From 50+ enterprise interviews, argued the "token budget blowout" headlines are overblown and enterprise AI spend is early on its S-curve, with no material risk to 2H26 AI budgets — a primary-sourced counter to the AI-demand-bubble bear case. Bullish read-through for AWS/Bedrock (AMZN). Outcome TBD.

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-07-04
+updated: 2026-07-07
 ---
 
 # Wiki Index
@@ -147,6 +147,7 @@ updated: 2026-07-04
 
 - [[advanced-packaging]] — Advanced Packaging
 - [[advanced-transistor-materials]] — Advanced Transistor & Materials Technology
+- [[ai-debt-financing]] — AI Debt Financing & Neocloud Economics
 - [[ai-accelerator-competition]] — AI Accelerator Competition & Landscape
 - [[ai-infrastructure-capex]] — AI Infrastructure & Hyperscaler Capex
 - [[ai-software-models]] — AI Models, Software & Economics
@@ -486,6 +487,7 @@ updated: 2026-07-04
 - [[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]] — TokenBudgeting: Our Conversations with Enterprises on Token Spend
 - [[semianalysis-2026-07-02-meta-compute-neocloud]] — Meta Compute: Everyone Wants To Be A Neocloud
 - [[semianalysis-2026-07-02-ectc2026-packaging-roundup]] — ECTC 2026 Roundup: EMIB-T, Custom HBM, Microfluidic Cooling, Photonics
+- [[semianalysis-2026-07-06-nvidia-gpu-debt-backstop]] — Nvidia GPU Debt Backstop Unleashes the AI Project Trinity
 
 ### Semi Doped
 
@@ -511,3 +513,5 @@ updated: 2026-07-04
 - [[semidoped-2026-07-02-daily-update]] — Daily Update — July 2, 2026
 - [[semidoped-2026-07-03-daily-update]] — Daily Update — July 3, 2026
 - [[semidoped-2026-07-03-microns-record-profits-memory-crisis]] — Micron's Record Profits, Apple's CXMT Plea (podcast)
+- [[semidoped-2026-07-04-til-qualcomm-trucks-cdma]] — TIL: Qualcomm Bet the Company on Trucks Before It Bet on Your Phone
+- [[semidoped-2026-07-06-daily-update]] — Daily Update — July 6, 2026
