@@ -4,9 +4,9 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-07-07
+updated: 2026-07-10
 handle: semidoped
-calls_logged: 61
+calls_logged: 76
 hit_rate: "n/a"
 ---
 ## Profile
@@ -21,6 +21,7 @@ Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotatin
 - **Daily updates (Jul 1–3):** Etched stealth-exit; ASML ships first High-NA EUV to Intel; CXMT $4.3B IPO + Tencent deal; SK Hynix $64B expansion; Anthropic↔Samsung custom-chip talks; Amazon→Alchip consumer silicon; Oracle "may not pay off" warning; AMD+Oriole photonic network. Priced: 3661.TW NEUTRAL NT$4,325, NOK NEUTRAL $12.44, SNDK LONG $1,745.
 - **QCOM — NEUTRAL** (2026-06-29): From Qualcomm's Investor Day, the HBC (LPDDR-on-logic) memory idea and edge-AI/robotics vision are credible long-term optionality, but the data-center entry is late and HBC is unproven slideware — a notable counterweight to Irrational Analysis's persistent SHORT (px@call $191.65). Outcome TBD.
 
+- **Daily Updates (2026-07-07/08/09):** News digests corroborating the run's custom-silicon and AI-capex/debt themes from many directions. Custom silicon: DeepSeek + Zhipu both weighing bespoke chips; Apple↔Broadcom extended to 2031 ($30B, but RF/FBAR for phones, not AI). Capex/debt: TeraWulf ([[WULF]]) 20-yr $19B Anthropic lease; Amazon ([[AMZN]]) $25B AI bonds (soft demand); SK Hynix ([[000660.KS]]) $28B ADR oversubscribed. Power/legal: Wolfspeed ([[WOLF]]) sues Navitas ([[NVTS]]) across its entire SiC/GaN portfolio; ADI closes Empower (vertical power). China: Nvidia ([[NVDA]]) H200 cleared for Chinese buyers. Short scare: Hunterbrook alleges Bloom ([[BE]]) depends on Chinese scandium ("off switch") — activist-short-sourced, panel flags conflicts. Priced marks (07-01→07-06, live egress-blocked this run): NVDA ~195.84, AVGO ~369.34, BE ~299.71, NVTS ~14.11, AAPL ~308.45, AMZN ~243.06, TSM ~446.68, 000660.KS ₩2.425M, 285A.T ¥83,300. Outcome TBD.
 ## Notable calls & track record
 - **SNDK — LONG** (2026-05-04): Structural bull case built on multi-year supply contracts ($42B+ remaining obligations), gross margin expansion from 51% to 78%+ in one quarter, and a new SSD-centric inference thesis from DeepSeek V4 architecture. Outcome TBD.
 - **COHR — LONG** (2026-05-08): Aggressive six-inch InP wafer ramp at two parallel sites (including Järfälla), with yields on six-inch matching mature three-inch production and unit economics improving sharply (4x die per wafer at <2x cost). Outcome TBD.

@@ -8,7 +8,7 @@ updated: 2026-07-01
 ticker: AMZN
 current_stance: long
 conviction: medium
-last_review: 2026-07-01
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -32,6 +32,8 @@ last_review: 2026-07-01
 | 2026-05-27 | [[semianalysis]] | LONG | n/a | Bedrock TaaS model, Trainium silicon, and 2 GW capacity buildout drive sustained AWS margin expansion |
 | 2026-07-01 | [[semianalysis]] | NEUTRAL | 243.06 | TokenBudgeting note: AWS Bedrock running "well above street"; enterprise token demand early not late (read-through LONG) |
 
+| 2026-07-08 | [[semidoped]] | MENTION | 243.06 | $25B AI bonds (soft demand) — AI-debt buildout |
+| 2026-07-08 | [[semianalysis]] | MENTION | 243.06 | Anthropic-IPO read-through: profitable Anthropic on AWS Bedrock lifts AWS margins |
 ## Thesis evolution
 Coverage opened in early 2024 as a series of mentions, primarily framing AWS as a power-hungry infrastructure buyer and warrant-issuing hyperscaler customer rather than a standalone investment. The first explicit directional calls emerged in late 2024, when semianalysis took a cautious NEUTRAL on Trainium2's frontier-training readiness in December, but simultaneously turned LONG on AMZN as a primary GB300 hyperscaler beneficiary. From 2025 onward, semianalysis built a progressively more constructive view around three compounding pillars: the Anthropic/Bedrock partnership locking in model-lab workloads, the Trainium silicon roadmap (T2 to T3) providing owned-silicon TCO leverage, and the multi-GW capacity buildout anchoring long-duration AWS revenue. The November 2025 ClusterMax rating introduced a mild negative nuance — AWS sits at silver tier, trailing neoclouds on operational maturity — but semianalysis treated this as a current limitation rather than a structural ceiling. By May 2026, the thesis had crystallized into AWS as a TaaS (Training-as-a-Service) platform, with Bedrock monetizing Anthropic's models and Trainium cost advantages expanding cloud margins. No publication has issued a bear call; irrationalanalysis coverage is purely incidental (warrant mechanics on ALAB), and the live view is semianalysis-dominated and unambiguously long.
 

@@ -4,7 +4,7 @@ title: "AI Models, Software & Economics"
 tags: []
 related: []
 created: 2024-05-07
-updated: 2026-07-01
+updated: 2026-07-10
 status: maturing
 first_seen: 2024-05-07
 ---
@@ -98,5 +98,9 @@ first_seen: 2024-05-07
 - 2026-06-16 — [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] (semianalysis)
 - 2026-06-30 — [[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]] (semianalysis)
 
+- 2026-07-08 — [[semianalysis-2026-07-08-anthropic-ipo-financials]] (semianalysis)
+- 2026-07-09 — [[semianalysis-2026-07-09-meta-superintelligence-1yr-update]] (semianalysis)
 ## Narrative
 SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-model economics and OpenAI's dependency on Microsoft, framing the question of who would capture AI software value long before it became consensus. DeepSeek's January 2025 release was the pivotal shock: both SemiAnalysis and IrrationalAnalysis published emergency notes dissecting its training cost efficiency and the implied pressure on closed-model margins, accelerating the debate around open-source versus proprietary economics. Through 2025 the coverage broadened from model labs to the full software stack — RL scaling environments, inference benchmarking, coding assistants, and monetization models — with GlobalSemiResearch joining in early 2026 to add a China-competitive angle via the "OpenClaw" framing. By mid-2026 the theme has shifted toward value-capture specifics: which layer of the stack (model lab, cloud host, application) retains margin, and how token-cost deflation reshapes that split, as evidenced by the cluster-cost, coding-assistant, and Anthropic-Bedrock pieces running through May–June 2026. The June-30 **TokenBudgeting** note plants a flag against the AI-demand-bubble bear case with primary data: from 50+ enterprise interviews, SemiAnalysis argues the "token budget blowout" headlines (Meta, Uber) reflect poor incentives, not softening demand — enterprise AI spend is early on its S-curve (median tech-forward firm ~$136/employee/yr vs top-1% ~$90k), coding is 70%+ of Anthropic/OpenAI revenue today, and 2H26 AI budgets face no material risk. This is indirectly bullish for every AI-infra long and directly supportive of AWS/Bedrock ([[AMZN]]).
+
+**Update 2026-07-10.** Two SemiAnalysis pieces sharpen the value-capture and competitive-position map. (1) **Anthropic IPO financials (Jul 8):** Anthropic confidentially filed Jun 1; SA's Tokenomics model estimates a **>$1B Q3-2026 profit** (rare for an AI lab), ~$100B combined Anthropic+OpenAI ARR, Anthropic the clear leader in *profitable* B2B AI vs an "unfocused, money-burning" OpenAI — and floats a **$6T** base-case valuation. Read-through LONG for [[AMZN]] (Anthropic on AWS Bedrock lifts margins). Treat the numbers as SA's construction and note SA's pro-Anthropic tilt. (2) **Meta MSL 1-yr update (Jul 9):** bullish on Meta's *slope* — world-class on data (in-house RL-environment org: ~3,000 engineers on RL tasks + employee screen-tracking), compute (five 1GW+ titan clusters, more than OpenAI/Anthropic by year-end), and talent; product (Muse Spark) still behind. Both pieces reinforce the run's meta-thesis that **inference economics** now decide who captures AI value — the same force pushing model makers into custom silicon ([[custom-silicon-asic]]).

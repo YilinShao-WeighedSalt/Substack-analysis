@@ -4,9 +4,9 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-07
+updated: 2026-07-10
 handle: semianalysis
-calls_logged: 195
+calls_logged: 199
 hit_rate: "n/a"
 ---
 ## Profile
@@ -20,6 +20,8 @@ SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grad
 - **ECTC 2026 packaging roundup (2026-07-02):** First hard technical read on Intel EMIB-T ("most credible CoWoS alternative," Google TPU v9-bound, but "still catching up to TSMC"), Marvell custom HBM + OMIB optics (Celestial validation, EAM scale risk), and TSMC/Microsoft microfluidic cooling. Feeds the [[intel-foundry-decline]] and [[advanced-packaging]] arcs. INTC NEUTRAL $120.35, MRVL LONG $245.29, TSM LONG $446.68.
 - **TokenBudgeting (2026-06-30):** From 50+ enterprise interviews, argued the "token budget blowout" headlines are overblown and enterprise AI spend is early on its S-curve, with no material risk to 2H26 AI budgets — a primary-sourced counter to the AI-demand-bubble bear case. Bullish read-through for AWS/Bedrock (AMZN). Outcome TBD.
 
+- **Meta Superintelligence 1-yr update (2026-07-09):** Reaffirmed the MSL bull case on *slope not intercept* — Meta world-class on data (in-house RL-env org: ~3,000 engineers + employee screen-tracking), compute (five 1GW+ titan clusters; more than OpenAI/Anthropic by year-end), and talent. LONG [[META]] $601.00 (prior $584.88 +2.8%); [[GOOGL]] NEUTRAL/softening ("faded from big-3"). Product still behind; falsifiers explicitly listed. Outcome TBD.
+- **Anthropic IPO financials (2026-07-08):** Bottom-up Tokenomics build (WSJ-validated method) estimates Anthropic >$1B Q3-26 profit, the profitable B2B leader vs money-burning OpenAI; $6T base-case valuation floated. Read-through LONG [[AMZN]] ~$243.06 (Bedrock margins). Note pro-Anthropic tilt; numbers are modeled, company disclosed nothing. Outcome TBD.
 ## Notable calls & track record
 - **TSMC / CoWoS — LONG structural (2023–2024):** Identified CoWoS advanced packaging as the primary binding constraint on AI accelerator output ahead of consensus, with detailed capacity projections showing TSMC growing from ~13k wafers/month (end-2023) to 30–35k (end-2024). Thesis validated: CoWoS became the most-watched supply-chain bottleneck in semis and TSMC's packaging franchise re-rated sharply higher through 2024–2025.
 - **NVDA Blackwell GB200 supply chain (mid-2024):** Published a component-level BoM model for GB200 NVL72/NVL36 systems, mapping 50+ subcomponent categories and flagging power-delivery and liquid-cooling ramp risks. Called Blackwell shipment delays before they became widely reported; directionally correct on timing slippage through late 2024.

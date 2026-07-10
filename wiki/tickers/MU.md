@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: MU
 current_stance: mixed
 conviction: medium
-last_review: 2026-07-04
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -67,6 +67,7 @@ last_review: 2026-07-04
 | 2026-07-03 | [[semidoped]] | LONG | 975.56 | Record ~$41.5B quarter at 85% GM; booked/prepaid through 2027; supercycle intact near-term |
 | 2026-07-03 | [[globalsemiresearch]] | NEUTRAL | 975.56 | Meta-cloud selloff framed as demand-satiety signal (−10% day); analysts call it overdone |
 
+| 2026-07-07 | [[globalsemiresearch]] | MENTION | 975.56 | Thematic NAND beneficiary: molybdenum word-lines let the NAND stacking leg keep scaling |
 ## Thesis evolution
 The initial 2024 bull case rested on Samsung's HBM3E disqualification from Nvidia supply chains, which handed Micron and SK Hynix a windfall: HBM sold out 21-24 months forward, non-HBM DRAM prices lifted via supply cannibalization, and Micron's FeRAM R&D gave it a credible long-term roadmap differentiation. irrationalanalysis oscillated tactically — entering on Samsung weakness, trimming when HBM upside appeared priced in, and re-entering on new disqualification evidence — while semianalysis maintained a steadier structural long predicated on Micron's NAND node density advantage and HBM3E yield progress. The thesis fractured in early 2026 when semianalysis reported Micron received zero initial HBM4 Rubin allocation due to pin-speed failures on its internal-process base die, a sharp reversal from the prior Samsung-out-Micron-in narrative; globalsemiresearch and irrationalanalysis remained constructive on the broader DRAM/LTA cycle even as they acknowledged the HBM4 execution gap. As of mid-2026 the consensus has split into two non-contradictory views: DRAM supercycle intact and Micron a long on that vector, but SK Hynix structurally preferred for HBM4 exposure, making Micron a second-best HBM play with a strong DRAM/LTA floor.
 
@@ -74,3 +75,5 @@ The initial 2024 bull case rested on Samsung's HBM3E disqualification from Nvidi
 **Update 2026-07-04:** first gradable anchor beyond the Jan-2026 $337 is the semianalysis LONG at $1,057.59 (2026-06-23), now $975.56 — **−7.8%, open** (<30 days) after the July 1–2 Meta-cloud memory selloff. The DRAM-supercycle leg is now hard-confirmed: Micron printed ~$41.5B revenue at 85% gross margin, booked/prepaid through 2027 via take-or-pay LTAs — directly undercutting the "demand satiety" read behind the selloff. The open HBM4 share risk (behind SK Hynix on pin speed) is unchanged. New 2027+ risk to watch: Korea's >$500B capacity commitment + CXMT's IPO/Tencent deal seed a future glut (Burry: "beginning of the end").
 
 The only hard price anchor in the log is the irrationalanalysis January 2026 re-entry at $337; no subsequent px@call values exist to measure performance against. The thesis trajectory suggests the early 2024 long calls played out directionally — Samsung's sustained HBM disqualification and the memory upcycle materialized as predicted — but the 2026 HBM4 disqualification news introduced a new bifurcation: the DRAM/LTA leg remains intact and is validated by the reported five-year LTA, while the HBM share-gain thesis has been partially falsified. The live view would be fully falsified if Samsung or Micron achieves HBM4 qualification parity with SK Hynix ahead of the Rubin production ramp, or if CXMT DDR5 flooding breaks DRAM pricing before agentic-AI demand absorbs new capacity.
+
+**Update 2026-07-10:** Global Semi's molybdenum-vs-tungsten piece adds a fresh, physics-driven reason the NAND leg can keep scaling (molybdenum word-lines replace tungsten past 300 layers: >50% lower resistance, no fluorine corrosion, ~1/25th leakage per Kioxia data) — MENTION @ $975.56 (mark 07-03), thematic beneficiary not a fresh call. The DRAM supercycle stays hard-confirmed (record ~$41.5B quarter, 85% GM, booked through 2027). SemiAnalysis's 06-23 LONG $1,057.59 still −7.8% (open) post the early-July Meta-cloud selloff. Open risks unchanged: HBM4 speed lag vs SK Hynix; 2027+ glut from Korea's >$500B push + China CXMT.

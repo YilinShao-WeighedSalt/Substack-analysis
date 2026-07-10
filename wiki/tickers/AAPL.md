@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: AAPL
 current_stance: long
 conviction: medium
-last_review: 2026-07-04
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,6 +23,7 @@ last_review: 2026-07-04
 | 2026-06-14 | [[semianalysis]] | MENTION | n/a | Efficiency cores deliver 20% higher integer performance at 4.5x lower power vs. Huawei prime core |
 | 2026-07-03 | [[semidoped]] | CAUTIOUS | 308.45 | First-ever mid-cycle price hikes + margin pressure from memory crunch; unprecedented plea to USG to buy DRAM from blacklisted CXMT |
 
+| 2026-07-08 | [[semidoped]] | CAUTIOUS | 308.45 | Testing blacklisted CXMT DRAM for China devices; memory-cost pressure; $30B Broadcom RF deal |
 ## Thesis evolution
 The bull case opened in mid-2024 with two distinct but complementary angles: [[semianalysis]] focused on the supply-side — Apple's proprietary M2 Ultra server buildout as a cost-and-privacy substitute for third-party GPU cloud — while [[citrini]] focused on the demand-side, swapping out GOOGL for AAPL and arguing Apple's closed ecosystem and consumer trust position it to own the agentic AI last mile and catalyze the first major iPhone replacement cycle in a decade. [[irrationalanalysis]] reinforced the consumer angle by 2024-07-27, treating Microsoft and Qualcomm's bungled Copilot+ launch as direct evidence that Apple would capture on-device AI by default. By 2026, [[semianalysis]] shifted the thesis to silicon economics: $7B+ in annual chip savings from displacing Intel, Qualcomm, and Broadcom, plus 11pp Mac gross-margin expansion, make the vertical integration story increasingly durable. [[irrationalanalysis]] added a competitive-dynamics dimension in April 2026, framing Apple's aggressive LPDDR purchasing as a deliberate strategy to crowd out Android OEMs rather than merely a demand signal. No publication has expressed a bearish view; the closest is the June 2026 [[semianalysis]] SMIC teardown, which treats Apple's process lead over Huawei as a benchmark reference rather than a directional call.
 

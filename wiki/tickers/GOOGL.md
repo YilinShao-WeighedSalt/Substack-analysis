@@ -8,7 +8,7 @@ updated: 2026-05-27
 ticker: GOOGL
 current_stance: mixed
 conviction: medium
-last_review: 2026-05-27
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,6 +30,7 @@ last_review: 2026-05-27
 | 2026-04-16 | [[globalsemiresearch]] | MENTION | n/a | Anchor customer for Marvell's custom LPU ASIC and likely CXL Structera deployment partner |
 | 2026-05-27 | [[semianalysis]] | SHORT | n/a | Google Cloud margin optics flattered by excluding $5.4B DeepMind training costs from segment reporting |
 
+| 2026-07-09 | [[semianalysis]] | NEUTRAL | n/a | "Faded dramatically" from AI big-3; models trail on real-world coding (relative knock, not fundamental short) |
 ## Thesis evolution
 Coverage opened with uniform bullishness on Google's infrastructure lead — semianalysis praised the TPU stack, Pathways, and Borg orchestration as a multi-year moat that no hyperscaler could quickly replicate. Citrini diverged sharply in mid-2024, removing GOOGL from its AI basket after repeated Gemini execution failures, introducing the first explicit bear signal. Semianalysis maintained a constructive view on the cloud/silicon side throughout 2025, turning LONG again on UVEU regulatory tailwinds and then doubling down via the TPUv7 deep dive, which framed vertical silicon integration as a durable TCO and customer-lock-in advantage; citrini converged on this view in November 2025. The primary bear thread, distinct from execution risk, is the Search revenue model: semianalysis issued a SHORT in August 2025 on the thesis that agentic AI purchasing funnels structurally disintermediate high-intent commercial queries. The May 2026 accounting concern — DeepMind training costs excluded from GCP segment — adds a separate financial-integrity bear leg. The result is a genuinely split picture: semianalysis and citrini are constructive on GCP/TPU as infrastructure, but semianalysis carries an active SHORT on Search monetization and questions the reported margin quality of the cloud segment itself.
 

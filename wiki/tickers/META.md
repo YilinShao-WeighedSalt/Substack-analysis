@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: META
 current_stance: long
 conviction: high
-last_review: 2026-07-07
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,6 +30,7 @@ last_review: 2026-07-07
 | 2026-07-03 | [[globalsemiresearch]] | LONG | 584.88 | Cloud plan gives financial optionality; stock rewarded +10% while suppliers sold off |
 | 2026-07-06 | [[semianalysis]] | MENTION | 601.00 | Cited as the investment-grade credit anchor backstopping CoreWeave's DDTL 4.0 ($8.5B at 5.9%) in the GPU-financing piece |
 
+| 2026-07-09 | [[semianalysis]] | LONG | 601.00 | MSL 1-yr update: world-class on data/compute/talent; 5 titan clusters; out-computes OpenAI/Anthropic by year-end |
 ## Thesis evolution
 Coverage began in early 2024 with semianalysis treating Meta primarily as an infrastructure reference point — its AI-optimized datacenter pivot and 650K H100-equivalent target established it as a serious compute spender, and its 32,000-GPU island architecture became a canonical cluster design cited by the industry. Through mid-2024, the framing remained descriptive rather than directional: Meta's open-source Llama strategy and 3B+ user distribution moat were noted as meaningful structural advantages, but no explicit stance was taken. The first directional call arrived in July 2025, when semianalysis issued a LONG grounded in the combination of Zuckerberg's personal leadership intensity, unprecedented AI talent spend, 1GW+ training cluster buildout, and $100B in annual cashflow providing durable self-funding capacity — a thesis centered on Meta as a credible superintelligence contender with an unmatched proprietary data moat (~100x public internet volume). Bearish qualifications are limited but present: the January 2025 DeepSeek note flagged Meta as losing the open reasoning model race despite resource superiority, and the September 2025 MTIA custom silicon review found the chip program too constrained to compete with NVIDIA at scale. Neither publication has issued an explicit SHORT. The live view is LONG driven primarily by semianalysis, with irrationalanalysis providing a supporting margin-expansion angle via AI-driven OPEX dilution; the main tension is execution risk on the custom silicon roadmap and the open-model competitive position against well-resourced Chinese labs.
 
@@ -39,3 +40,5 @@ No px@call values are recorded across any entry, so quantitative P&L assessment 
 **Update 2026-07-04:** first priced calls logged — two LONGs at $584.88 (SemiAnalysis, Global Semi) around the Meta-cloud news, on which META jumped ~10%. Conviction bumped to high: SemiAnalysis's four-option monetization framing (MSL training, RecSys 10× scaling, Bedrock/Claude reselling, SpaceX-type premium compute) makes aggressive compute contracting a "CFO's dream" and the buildout self-reinforcing. Note the cross-publication split is not on META itself (both LONG) but on the *read-through to suppliers* — see [[ai-infrastructure-capex]] and the neocloud dossiers. New falsifier: Meta's Q3/Q4 contracting actually decelerating, which would validate the "buildout→monetization/overcapacity" bear read.
 
 **Update 2026-07-06:** the Jul-2/Jul-3 LONGs at $584.88 are **+2.8% at $601.00 ✓** (open). In SemiAnalysis's GPU-backstop piece Meta appears in a new role — the investment-grade credit anchor behind CoreWeave's DDTL 4.0 term loan (backstopping it at 5.9%). This reinforces the "Meta as neocloud customer/enabler, not competitor" thesis: Meta isn't just contracting compute, its balance sheet is directly financing neocloud growth. Logged MENTION $601.00.
+
+**Update 2026-07-10:** SemiAnalysis's MSL 1-year update reaffirms the LONG (logged $601.00, mark 07-06). Deepens the *data* pillar (Meta reassigned ~3,000 engineers to full-time RL-task creation + started screen/keyboard/mouse tracking = a top-tier RL-environment shop spun up in-house) and hard-quantifies *compute* (five simultaneous 1GW+ "titan" clusters; projected more AI compute than OpenAI or Anthropic by end-2026). The Jul-2/3 LONGs at $584.88 remain ~+2.8% at the last $601 mark ✓ (open). Falsifiers unchanged and now explicitly enumerated by SA: a no-clawback compute-sale deal, disbanding the RL-task org, or losing top researchers — plus any Q3/Q4 contracting deceleration. Product (Muse Spark 1.1) still admittedly behind Anthropic/OpenAI — thesis is on *slope*, which is unfalsifiable short-term.

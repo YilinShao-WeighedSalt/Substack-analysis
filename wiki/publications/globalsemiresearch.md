@@ -4,9 +4,9 @@ title: "Global Semi Research"
 tags: []
 related: []
 created: 2026-03-06
-updated: 2026-07-04
+updated: 2026-07-10
 handle: globalsemiresearch
-calls_logged: 29
+calls_logged: 35
 hit_rate: "n/a"
 ---
 ## Profile
@@ -18,6 +18,8 @@ Global Semi Research publishes deep-dive semiconductor supply-chain analysis wit
 - **Buildout → monetization (2026-07-03):** Read the Meta-cloud news as a demand-side warning — the AI trade shifting from rewarding buildout to testing whether scarcity still creates value; noted the memory whipsaw (Micron −10%, SK Hynix −14.6% intraday) but hedged that Meta "isn't really becoming AWS" and Friday's bounce suggests the selloff was overdone. A tonal shift toward caution for a publication that has been a steady 2026 memory bull; directly opposes SemiAnalysis's same-week rebuttal (see [[buildout-vs-monetization]]). META LONG $584.88, MU NEUTRAL $975.56. Outcome TBD.
 - **WF6 specialty gas (2026-06-29):** Sized a sharp materials supply shock — tungsten hexafluoride up 5x since Jan 2026 as China's tungsten export controls starved Japanese gas makers of feedstock, erasing ~a quarter of global WF6 capacity from July 1, 2026. Signature "size the niche shock from upstream capacity" style; the concentrated (Chinese-producer) equity thesis was paywalled. Note it's a *time-limited* monopoly (new capacity ~mid-2027). Outcome TBD.
 
+- **Model makers going custom (2026-07-09):** Argued the DeepSeek/OpenAI/Anthropic move into their own inference chips is **not** "short Nvidia" — it reflects inference overtaking training as the labs's dominant cost. Custom ASICs take the stable/high-volume slice; GPUs keep the volatile frontier. NEUTRAL (defended) [[NVDA]] ~$195.84; implied LONG [[AVGO]] ~$369.34 (Jalapeno builder / Anthropic partner). Bearish Huawei on the China margin. See [[custom-silicon-asic]]. Outcome TBD.
+- **Molybdenum vs tungsten in NAND (2026-07-07):** All three NAND makers replacing tungsten word-lines with molybdenum past 300 layers (>50% lower resistance, fluorine-free, ~1/25th leakage per Kioxia). A *durable technology transition* (vs the WF6 *shortage*); investable angle upstream in precursors/delivery-hardware/qualification moat (no clean pure-play surfaced). MENTIONs: [[285A.T]] ¥83,300, [[MU]] ~$975.56, [[005930.KS]], [[000660.KS]]. See [[nand-flash-storage]]. Outcome TBD.
 ## Notable calls & track record
 - **INTC — Bullish, Jan 2026 (reiterated Apr 25, 2026).** Called a CPU shortage driven by agentic AI proliferation before it became consensus. Intel reported earnings on Apr 25 with stock surging >22% in after-hours to break $80; publication flagged it was "among the first in the market" to flag the looming shortage. Outcome: directionally confirmed near-term.
 - **MRVL — Bullish, Apr 16, 2026.** Argued Marvell would become "the next chip giant" via four AI infrastructure technologies: UALink switch, CXL (Structera), Google LPU/TPU ASIC, and memory architecture. Supported by claimed industry checks showing CXL chips deployed at major hyperscalers. Outcome TBD.

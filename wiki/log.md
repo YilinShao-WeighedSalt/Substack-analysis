@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-07-07
+updated: 2026-07-10
 ---
 
 # Wiki Run Log
+
+## 2026-07-10
+- ingest | 7 posts from globalsemiresearch (x2), semianalysis (x2), semidoped (x3) | tickers: NVDA, AVGO, META, GOOGL, MU, 285A.T, 000660.KS, 005930.KS, BE, WOLF, NVTS, WULF (new), AMZN, AAPL, TSM, 009150.KS, ADI | DOMINANT THEME: model makers going custom (DeepSeek/OpenAI-Jalapeno/Anthropic/Zhipu/Apple-Broadcom) — Global Semi reframes it as inference-cost economics, NOT short-Nvidia (defends NVDA, bullish AVGO enabler, bearish Huawei). New: molybdenum-for-tungsten NAND word-line transition (durable, added to nand-flash-storage + specialty-gases themes). SemiAnalysis: Meta MSL 1-yr LONG (META +2.8% ✓) + Anthropic IPO (>$1B Q3 profit, $6T base case, AMZN read-through). New ticker WULF (TeraWulf $19B Anthropic lease). buildout-vs-monetization tilts near-term to bulls. NOTE: live market feeds egress-blocked this run — px@call = most recent wiki marks (early July), none invented, n/a where no source. hit_rate still n/a for all pubs (earliest priced call ~22 days old, <30).
 
 ## 2026-07-07
 - ingest | 3 posts from semianalysis, semidoped | tickers: NVDA, AMD, INTC, 2317.TW, CRWV, META, QCOM, 005930.KS, 000660.KS | new theme: ai-debt-financing (Nvidia GPU backstop / "Central Bank of AI" / AI Project Trinity — ~$7T AI debt by 2029). Backstop piece feeds buildout-vs-monetization (bull financing unlock, but ~zero-IRR floor = implicit demand-risk admission). Kyber NVL144 delayed to 2028 (NVDA product neg / AMD pos); Foxconn Q2 record AI-server beat (bull datapoint); Intel CPU price hikes + XBM patent. Quiet: irrationalanalysis, globalsemiresearch, citrini. Gradable moves: INTC April longs ~+50% ✓, AMD semidoped Jun-16 +8.8% ✓, META Jul-2 +2.8% ✓, CRWV Jul-2 +1.5%, QCOM IA shorts round-tripped back in-the-money.

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-07-07
+updated: 2026-07-10
 ---
 
 # Wiki Index
@@ -142,6 +142,7 @@ updated: 2026-07-07
 - [[VZ]] — Verizon
 - [[WDC]] — Western Digital
 - [[WOLF]] — Wolfspeed
+- [[WULF]] — WULF — TeraWulf
 
 ## Themes
 
@@ -233,6 +234,9 @@ updated: 2026-07-07
 - [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] — Co-Packaged Optics Is Not Delayed
 - [[globalsemiresearch-2026-06-29-tungsten-hexafluoride-wf6]] — Tungsten Hexafluoride: The Semiconductor Gas Nobody Can Get Enough Of
 - [[globalsemiresearch-2026-07-03-ai-trade-buildout-to-monetization]] — The AI Trade Just Shifted From Buildout to Monetization — Meta Cloud
+
+- [[globalsemiresearch-2026-07-07-molybdenum-vs-tungsten-nand]] — Molybdenum vs. Tungsten: The Metal Swap Rewiring the Memory Supply Chain
+- [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
 
@@ -489,6 +493,9 @@ updated: 2026-07-07
 - [[semianalysis-2026-07-02-ectc2026-packaging-roundup]] — ECTC 2026 Roundup: EMIB-T, Custom HBM, Microfluidic Cooling, Photonics
 - [[semianalysis-2026-07-06-nvidia-gpu-debt-backstop]] — Nvidia GPU Debt Backstop Unleashes the AI Project Trinity
 
+- [[semianalysis-2026-07-08-anthropic-ipo-financials]] — Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peek
+- [[semianalysis-2026-07-09-meta-superintelligence-1yr-update]] — The Future of Meta Superintelligence: A 1 Year Progress Update
+
 ### Semi Doped
 
 - [[semidoped-2026-04-24-googles-networking-innovations]] — Google's Networking Innovations
@@ -515,3 +522,6 @@ updated: 2026-07-07
 - [[semidoped-2026-07-03-microns-record-profits-memory-crisis]] — Micron's Record Profits, Apple's CXMT Plea (podcast)
 - [[semidoped-2026-07-04-til-qualcomm-trucks-cdma]] — TIL: Qualcomm Bet the Company on Trucks Before It Bet on Your Phone
 - [[semidoped-2026-07-06-daily-update]] — Daily Update — July 6, 2026
+- [[semidoped-2026-07-07-daily-update]] — Daily Update — July 7, 2026
+- [[semidoped-2026-07-08-daily-update]] — Daily Update — July 8, 2026
+- [[semidoped-2026-07-09-daily-update]] — Daily Update — July 9, 2026

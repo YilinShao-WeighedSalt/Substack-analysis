@@ -8,7 +8,7 @@ updated: 2026-07-04
 ticker: TSM
 current_stance: mixed
 conviction: high
-last_review: 2026-07-04
+last_review: 2026-07-10
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -59,6 +59,7 @@ last_review: 2026-07-04
 | 2026-07-01 | [[semidoped]] | MENTION | 446.68 | Q2 GM ~70%, Q3 rev +10%+ q/q on 3nm/5nm AI demand; skeptical on High-NA EUV ("30–50% better"); fast-tracking CoPoS under NDA |
 | 2026-07-02 | [[semianalysis]] | LONG | 446.68 | ECTC: CoWoS remains dominant packaging platform, leads microfluidic direct-to-silicon cooling; challengers (Intel EMIB-T) only now appearing |
 
+| 2026-07-07 | [[semidoped]] | MENTION | 446.68 | "Second fleet" localizing suppliers to secure CoWoS/CoPoS packaging supply |
 ## Thesis evolution
 From 2024 through mid-2025, the view was near-unanimously bullish: irrationalanalysis treated TSMC as its highest-conviction long, anchored on the collapse of Samsung 3nm yields and Intel Foundry's structural failure leaving TSMC as the only viable advanced-node supplier; semianalysis framed TSMC as the apex predator extending dominance into the GAA era via N2, A16, and CoWoS packaging compounding its ecosystem moat. By late 2025 and into 2026, semianalysis began layering in short-framed arguments — first a hypothetical XRL domestic-fab displacement scenario, then the pointed observation that N3 is running above 100% utilization yet TSMC's pricing discipline is leaving substantial economic rent on the table, and most recently framing TSMC capacity saturation as a binding constraint on global AI buildout rather than a pure pricing windfall. irrationalanalysis remained structurally long but acknowledged TSMC's own pricing power as a systemic risk to the broader AI supply chain it anchors. The resulting mixed stance reflects a consensus on TSMC's irreplaceable technology lead alongside a growing debate over whether the company is monetizing that monopoly adequately — and whether capacity concentration in N3 creates systemic fragility rather than pure upside.
 

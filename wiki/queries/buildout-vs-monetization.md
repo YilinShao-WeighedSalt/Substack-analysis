@@ -4,7 +4,7 @@ title: "AI buildout accelerates vs. buildout→monetization (Meta Compute)"
 tags: [ai-infrastructure-capex, neocloud, overcapacity]
 related: ["[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[globalsemiresearch-2026-07-03-ai-trade-buildout-to-monetization]]", "[[META]]", "[[CRWV]]", "[[NBIS]]", "[[ORCL]]", "[[MU]]", "[[ai-infrastructure-capex]]"]
 created: 2026-07-04
-updated: 2026-07-07
+updated: 2026-07-10
 ---
 
 # Query: does Meta's cloud plan mean the AI buildout has peaked?
@@ -38,3 +38,6 @@ SemiAnalysis reframed the debate one level down: the bottleneck is now **who fun
 - Nvidia **Kyber rack delayed** to 2028 — a supply-side wrinkle, orthogonal to the demand debate but a rare Nvidia execution stumble.
 
 **Best financing-side barometer:** GPU rental rates (SemiAnalysis GPU Rental Price Index) and whether Nvidia backstops start getting *triggered*. Triggered backstops = demand undershooting = bear confirmation. [[CRWV]] is the cleanest listed proxy.
+
+## Update 2026-07-10
+This run's evidence tilts near-term toward the **buildout bulls**, without resolving the debate. A flood of concrete demand commitments landed in 72 hours: TeraWulf's 20-yr **$19B Anthropic** data-center lease, SK Hynix's **oversubscribed $28B ADR**, Amazon's **$25B AI bond** raise, and SemiAnalysis's Meta MSL update quantifying **five simultaneous 1GW+ titan clusters**. SemiAnalysis's Anthropic-IPO piece (>$1B quarterly profit, profitable B2B leader) supplies the *monetization* proof-point the bears say is missing — inference can be a real, profitable business. Global Semi's own custom-silicon piece is, notably, *not* bearish here — it defends Nvidia and reframes the story as inference-cost economics. Caveat flagged by both camps: Amazon's bond demand was reportedly **soft** (macro recap), and the first sign the debate turns would be **GPU rental rates rolling over** or **Meta Q3/Q4 contracting decelerating**. Still genuinely open; watch those two tells.

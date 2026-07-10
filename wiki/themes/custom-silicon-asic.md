@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-06-02
+updated: 2026-07-10
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -64,5 +64,11 @@ first_seen: 2024-02-04
 - 2026-06-02 — [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] (globalsemiresearch)
 - 2026-06-02 — [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] (globalsemiresearch)
 
+- 2026-07-07 — [[semidoped-2026-07-07-daily-update]] (semidoped)
+- 2026-07-08 — [[semidoped-2026-07-08-daily-update]] (semidoped)
+- 2026-07-09 — [[globalsemiresearch-2026-07-09-model-makers-own-chips]] (globalsemiresearch)
+- 2026-07-09 — [[semidoped-2026-07-09-daily-update]] (semidoped)
 ## Narrative
 The custom silicon and ASIC theme emerged in early 2024 primarily through irrationalanalysis and semianalysis, who framed Broadcom and Marvell as the key ASIC design partners for hyperscalers seeking to reduce dependence on Nvidia GPUs. SemiAnalysis and irrationalanalysis led early coverage, tracking Google TPU lineage, Groq's inference architecture, and the nascent OpenAI chip program, while citrini and globalsemiresearch joined meaningfully in 2024-2025 as the hyperscaler custom silicon buildout became undeniable. Coverage accelerated sharply through 2025 with deep dives into TPUv7, AWS Trainium2 and Trainium3, and Nvidia's NVLink Fusion response, reflecting the transition from speculative thesis to active capital deployment. By 2026 the theme is maturing — globalsemiresearch has become a dominant voice covering Broadcom ASIC dominance and Marvell's structural positioning — with the competitive dynamics between merchant silicon (Nvidia) and custom ASICs (Broadcom/Marvell-enabled hyperscaler designs) now a central organizing question across all major semiconductor publications.
+
+**Update 2026-07-10 — the model makers themselves go custom.** The theme reached a new stage: it is no longer only *hyperscalers* (Google/AWS/Meta) designing ASICs, but the pure-play *AI model labs*. In one 72-hour window (Jul 7–9 2026): DeepSeek confirmed developing its own inference chip; Zhipu (z.ai) is weighing one; OpenAI's Broadcom-built "Jalapeno" inference chip (unveiled Jun 24, deploys late 2026) advanced; Anthropic's Broadcom exploration resurfaced; and Apple extended its Broadcom custom-chip deal to 2031. Global Semi Research's framing (2026-07-09) is the key lens: this is **not** a "short Nvidia" trade — it is driven by *inference* becoming the labs' largest variable cost ("training is a capex event, inference is the electricity bill"), so labs write their proprietary workload knowledge into hard-wired silicon for the *stable, high-volume* slice while the GPU keeps the *volatile frontier*. Net read: bullish the ASIC **enablers** (Broadcom especially, Marvell), Nvidia's moat now partly *financial* (backstops) rather than purely technical, and bearish Huawei on the China margin (DeepSeek's domestic chip displaces Ascend, not the already-banned Nvidia).

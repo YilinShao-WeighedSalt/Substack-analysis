@@ -1,0 +1,300 @@
+<title>Substack Semiconductor Scan — 2026-07-10</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  :root{
+    --bg:#ffffff; --panel:#fafbfc; --ink:#1a1a2e; --muted:#5b6172; --line:#e6e8ee;
+    --blue:#2563eb; --blue-soft:#eef3ff; --orange:#d9660a;
+    --green:#15803d; --green-bg:#e9f7ee; --amber:#b45309; --amber-bg:#fdf4e3; --gray:#6b7280; --gray-bg:#f1f2f5;
+    --red:#b91c1c;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.62;margin:0;font-size:16.5px}
+  .wrap{max-width:860px;margin:0 auto;padding:46px 22px 90px}
+  h1{font-size:2.15rem;font-weight:800;letter-spacing:-.02em;margin:0 0 6px}
+  h2{font-size:1.35rem;font-weight:700;letter-spacing:-.01em;margin:2.4em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+  .pub-header{font-size:1.65rem;font-weight:800;letter-spacing:-.015em;margin:1.9em 0 .1em;color:var(--ink)}
+  h3{font-size:1.12rem;font-weight:700;margin:1.5em 0 .35em}
+  h4{font-weight:700;margin:0 0 .5em;color:var(--orange);font-size:.83rem;text-transform:uppercase;letter-spacing:.06em;font-family:'JetBrains Mono',monospace}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .date,.label{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+  .subtitle{color:var(--muted);font-size:1.05rem;margin:0 0 10px}
+  p{margin:.7em 0}
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .lead{background:var(--blue-soft);border:1px solid #d5e2ff;border-radius:12px;padding:20px 22px;margin:20px 0}
+  .lead p:first-child{margin-top:0}.lead p:last-child{margin-bottom:0}
+  .analysis{background:#fbf7f2;border:1px solid #f0e2d2;border-left:4px solid var(--orange);border-radius:8px;padding:16px 20px;margin:16px 0}
+  .analysis p:first-of-type{margin-top:0}.analysis p:last-child{margin-bottom:0}
+  blockquote{border-left:3px solid var(--blue);background:var(--panel);margin:14px 0;padding:10px 18px;color:#33384a;font-style:italic}
+  .tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;padding:2px 8px;border-radius:5px;letter-spacing:.04em;vertical-align:middle}
+  .long{background:var(--green-bg);color:var(--green)}
+  .cautious{background:var(--amber-bg);color:var(--amber)}
+  .neutral{background:var(--gray-bg);color:var(--gray)}
+  .short{background:#fdecec;color:var(--red)}
+  .card{border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;background:var(--panel)}
+  .card h3{margin-top:0}
+  .fin{display:flex;flex-wrap:wrap;gap:8px 14px;margin:10px 0;font-family:'JetBrains Mono',monospace;font-size:.82rem}
+  .fin span{background:#fff;border:1px solid var(--line);border-radius:6px;padding:4px 9px;color:#33384a}
+  .fin b{color:var(--ink);font-weight:600}
+  .track{font-size:.92rem;color:#33384a;border-top:1px dashed var(--line);padding-top:9px;margin-top:9px}
+  .callout{background:#fff8f0;border:1px solid #f3e0c6;border-radius:8px;padding:12px 16px;font-size:.9rem;margin:14px 0}
+  ul{margin:.6em 0;padding-left:1.3em}li{margin:.28em 0}
+  .foot{color:var(--muted);font-size:.82rem;margin-top:34px;border-top:1px solid var(--line);padding-top:14px}
+  .gloss{border-bottom:1px dotted var(--muted);cursor:help}
+  table.mini{border-collapse:collapse;width:100%;font-size:.82rem;margin:12px 0;font-family:'JetBrains Mono',monospace}
+  table.mini th,table.mini td{border:1px solid var(--line);padding:6px 9px;text-align:left}
+  table.mini th{background:var(--blue-soft);font-weight:600}
+  .scroll{overflow-x:auto}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0f1117;--panel:#161923;--ink:#e8eaf0;--muted:#9aa2b5;--line:#272b38;--blue:#6ea0ff;--blue-soft:#16203a;--orange:#f0932b;--green:#4ade80;--green-bg:#12291b;--amber:#fbbf24;--amber-bg:#2a2110;--gray:#9ca3af;--gray-bg:#20242e;--red:#f87171}
+    .lead{border-color:#22345c}.analysis{background:#1b1712;border-color:#3a2e1f}
+    .fin span{background:#0f1117}.callout{background:#1b1712;border-color:#3a2e1f}.card h3{color:var(--ink)}
+  }
+  :root[data-theme="dark"]{--bg:#0f1117;--panel:#161923;--ink:#e8eaf0;--muted:#9aa2b5;--line:#272b38;--blue:#6ea0ff;--blue-soft:#16203a;--orange:#f0932b;--green:#4ade80;--green-bg:#12291b;--amber:#fbbf24;--amber-bg:#2a2110;--gray:#9ca3af;--gray-bg:#20242e;--red:#f87171}
+  :root[data-theme="light"]{--bg:#ffffff;--panel:#fafbfc;--ink:#1a1a2e;--muted:#5b6172;--line:#e6e8ee;--blue:#2563eb;--blue-soft:#eef3ff;--orange:#d9660a}
+</style>
+
+<div class="wrap">
+
+<div class="date">Substack Semiconductor Scan · 3-Day Loop</div>
+<h1>The Model Makers Come for Their Own Chips</h1>
+<p class="subtitle">7 new posts · 17 tickers touched · covering 2026-07-07 → 2026-07-09</p>
+
+<div class="callout">
+<b>How to read this report.</b> It is written for someone with <i>zero</i> background in chips or AI. Every technical term is explained in plain English the first time it appears. The goal is that you never need to open the original posts. <br><br>
+<b>Pricing note for this run:</b> the market-data feeds this routine normally uses were blocked by the network policy today, so we could not pull live stock quotes. Every price below is the <i>most recent real mark</i> already on file from the last few days (early July), clearly dated. None are invented; where no recent mark existed, the price is shown as <span class="mono">n/a</span>.
+</div>
+
+<!-- ============ BACKGROUND ============ -->
+<h2>Background — the state of the book (read this first)</h2>
+
+<div class="lead">
+<p>The semiconductor industry is the business of making the tiny electronic "brains" — <b>chips</b> — inside every phone, car, and computer. Right now the whole sector is being reshaped by one force: the buildout of <b>artificial intelligence</b>. To understand this week's posts you need five running storylines that this wiki has tracked for months. Here they are in plain language.</p>
+</div>
+
+<h3>1. Training vs. inference — where the money actually goes now</h3>
+<p>Building an AI model happens in two phases. <b>Training</b> is teaching the model — a huge, one-time, painfully expensive computing project. <b>Inference</b> is <i>running</i> the finished model to answer each user's question. For years the market obsessed over training ("who has the biggest computer?"). The quiet shift of 2026 is that inference — the perpetual electricity-and-hardware bill that grows with every user and every chat — is now the dominant cost. This one fact drives the biggest story in today's scan.</p>
+
+<h3>2. Nvidia's GPU vs. "custom silicon"</h3>
+<p>A <b>GPU</b> (graphics processing unit) is a general-purpose parallel-computing chip; <b>Nvidia</b> makes the ones that run almost all AI and is, as of mid-2026, the most valuable company on earth. The alternative is a <b>custom ASIC</b> (application-specific integrated circuit) — a chip hard-wired for exactly one job, which makes it cheaper and more power-efficient than a flexible GPU <i>for that one job</i>. Big tech companies increasingly design their own ASICs, usually with <b>Broadcom</b> (ticker AVGO) or <b>Marvell</b> as the engineering partner. SemiAnalysis and Global Semi Research have tracked this "merchant GPU vs. custom chip" contest as the central question in the sector since 2024. Today it takes a dramatic new turn: the <i>AI model companies themselves</i> are now designing chips.</p>
+
+<h3>3. The memory supercycle</h3>
+<p>Chips need <b>memory</b> to hold data. Two kinds matter: <b>DRAM</b> (fast working memory, like a desk you spread papers on) and <b>NAND flash</b> (slower long-term storage, like a filing cabinet). A special stacked form of DRAM called <b>HBM</b> (high-bandwidth memory) sits right next to an AI chip and feeds it data at enormous speed. AI has created a memory shortage so severe that the three big makers — America's <b>Micron</b> (MU), and South Korea's <b>SK Hynix</b> and <b>Samsung</b> — are sold out through 2027 at record profits. This wiki's sources are almost uniformly bullish memory near-term, with a nagging worry about oversupply arriving in late 2027.</p>
+
+<h3>4. The AI data-center capex &amp; debt boom — and the one open argument</h3>
+<p>Running all this requires <b>data centers</b>: warehouses of chips that draw as much power as a small city (measured in <b>gigawatts, GW</b> — one GW is roughly a million homes' worth). Spending on them is now so large it is being funded with record borrowing. The single live disagreement in this wiki is <b>"buildout vs. monetization"</b>: <b>SemiAnalysis</b> argues the spending is rational and demand is real and early; <b>Global Semi Research</b> has turned more cautious, warning the market may stop rewarding raw buildout and start asking whether it earns money. Both, notably, are <i>bullish</i> on Meta itself — they disagree only on the read-through to Meta's <i>suppliers</i>.</p>
+
+<h3>5. Materials &amp; geopolitics — the squeeze from below</h3>
+<p>Making a chip needs dozens of ultra-pure gases and metals that investors never hear about, most refined in China. The West restricts China's access to chip-making <i>tools</i>; China retaliates by squeezing the raw <i>inputs</i> (rare earths, tungsten, fluorine). Last month this wiki logged a 5× spike in <b>tungsten hexafluoride</b>, a gas no memory fab can run without, after Chinese export controls. Today's molybdenum post is the sequel to that story.</p>
+
+<div class="callout"><b>This week's macro weather:</b> the tape was risk-off. Per the 2026-07-08 market recap, renewed US strikes on Iran sent oil up ~6%, pulling forward interest-rate-hike fears; Amazon's giant AI bond sale drew soft demand, and Korean chip stocks sold off before rebounding. A jumpy backdrop for a sector that lives on cheap capital.</div>
+
+<!-- ============ GLOBAL SEMI 1 ============ -->
+<div class="pub-header">Global Semi Research</div>
+<p class="date">Post 1 · 2026-07-09 · "Why the Model Makers Are Coming for Their Own Chips"</p>
+<p class="label">Tickers: NVDA (neutral) · AVGO (long, implied)</p>
+
+<h3>Full summary</h3>
+<p>On July 7, Reuters reported that <b>DeepSeek</b> — a Chinese AI lab, backed by the quant hedge fund High-Flyer, famous for building strong models cheaply — is developing its own AI <b>inference chip</b> to cut its reliance on both Nvidia and China's national champion <b>Huawei</b>. It was the third such signal in months: on June 24, <b>OpenAI</b> (maker of ChatGPT) and Broadcom unveiled "Jalapeno," which OpenAI calls its first "Intelligence Processor," a chip purpose-built to <i>run</i> large language models, due to deploy in late 2026; and in April, Reuters reported <b>Anthropic</b> (maker of Claude) was exploring its own chip designs.</p>
+<p>Three frontier AI labs, three announcements, one direction. The author's core claim: the reflexive market read — "the model companies are coming to dethrone Nvidia, so short Nvidia" — is <b>wrong, or at least premature</b>. The real story is that <b>the cost structure of the AI business has flipped</b>, and the companies that understand their own workloads best are starting to bake that knowledge directly into hardware.</p>
+<blockquote>"Training is a capex event. Inference is the electricity bill."</blockquote>
+<p>The logic: training is a bounded, one-time investment; inference is a perpetual operating cost that scales with revenue. Every chat message, code completion, and agent step forces the model to re-read its context and generate tokens, each consuming compute, memory, interconnect, and power. Cruelly, success makes it worse — the more capable a model is, the longer the documents and codebases users trust it with, and the more each request costs to serve. For OpenAI, Anthropic, and DeepSeek, the chip bill now sits directly under gross margin, latency, and pricing power. That is the kind of cost a serious company eventually refuses to leave entirely in a supplier's hands.</p>
+<p><b>Why inference chips specifically, and why now?</b> The author uses DeepSeek's own trajectory. In December 2024, DeepSeek's V3 model trained on 2,048 Nvidia H800 GPUs (the export-compliant chip Nvidia was allowed to sell into China). By April 2026, DeepSeek's newer V4 had been adapted to run on Huawei's Ascend chips. The key technical point is about the <b>KV cache</b> — think of it as the model's short-term memory of everything said so far in a conversation. DeepSeek's latest V4-Pro model carries 1.6 trillion "parameters" (its learned settings) and supports a one-million-token context window (roughly a 1,500-page document held in mind at once). At that scale the bottleneck is no longer raw arithmetic — it is moving enormous amounts of data in and out of memory. V4-Pro's technical report claims it needs only ~27% of the per-token computing and just 10% of the memory cache of the prior version. Once a lab knows <i>exactly</i> which operations dominate and which context lengths its users actually send, a flexible, general-purpose GPU starts to look like paying for versatility you no longer need. A hard-wired chip can drop the rest.</p>
+<p>The same logic underlies OpenAI's Jalapeno, whose design emphasizes memory movement and serving patterns over headline compute. The strategic inversion: for a decade, model builders adapted their <i>software</i> to whatever the GPU offered; now the frontier labs are defining what the <i>chip</i> should optimize. The piece stops (paywall) before its "three companies, three levels of commitment" ranking, but frames DeepSeek, OpenAI, and Anthropic as very different degrees of real hardware investment, not one uniform threat.</p>
+
+<div class="analysis">
+<h4>Analysis — what it means &amp; whether to believe it</h4>
+<p><b>Context from the wiki (teach-first).</b> This is the "custom silicon" theme reaching its logical endpoint. For two years the story was <i>hyperscalers</i> (Google, Amazon, Microsoft, Meta) building ASICs with Broadcom/Marvell to reduce Nvidia dependence — Google's TPU, Amazon's Trainium, Meta's MTIA. The new wrinkle is that the pure-play <i>model labs</i> — who don't own cloud businesses — are now doing it too, because inference has become their single largest variable cost. Note how this dovetails with SemiAnalysis's parallel framing that inference is "the electricity bill": both publications, from different angles, are telling you the center of gravity in AI economics has moved from training to serving. That is the meta-story of this entire scan.</p>
+<p><b>Why Nvidia is not simply "shorted" here.</b> A custom inference chip does not replace the GPU for training, for research, or for any workload whose shape keeps changing — and AI workloads change constantly (the author notes a good coding task today involves orchestrating sub-agents, which "didn't exist 7 months ago"). Custom silicon wins where the workload is <i>stable and huge</i>; the GPU keeps the volatile frontier. That is exactly why the wiki's SemiAnalysis dossier still models Nvidia holding ~75% of the data-center chip market even as ASICs scale.</p>
+<p><b>Track record (secondary).</b> Global Semi Research is the wiki's most committed custom-silicon voice (deep dives on Broadcom's &gt;60% ASIC share and Marvell as "the next chip giant"). Its calls here are recent and unresolved, but its earlier, non-consensus INTC "CPU shortage" call was directionally right within months, which lends some credibility to its habit of spotting demand-side shifts early. It is <i>not</i> a reflexive Nvidia bear — this piece actively defends Nvidia against the lazy short.</p>
+<p><b>Critique &amp; falsifier.</b> The soft spot is timing and magnitude. "Model makers designing chips" and "model makers <i>successfully deploying chips at volume that dents Nvidia orders</i>" are years apart — designing silicon is brutally hard, and none of these labs has disclosed a working chip at scale. DeepSeek and Zhipu face the added handicap of US export controls limiting their access to leading-edge manufacturing. The thesis would be <i>falsified</i> if, say, Jalapeno slips badly or underperforms, showing the labs can't actually out-design a merchant GPU vendor for their own workloads. <b>Confidence: MEDIUM</b> — the directional read (inference cost is the new battleground; Nvidia is defended, ASIC enablers benefit) is well-argued and cross-confirmed; the investable timing is fuzzy and paywalled.</p>
+</div>
+
+<!-- ============ GLOBAL SEMI 2 ============ -->
+<div class="pub-header">Global Semi Research</div>
+<p class="date">Post 2 · 2026-07-07 · "Molybdenum vs. Tungsten: The Metal Swap Rewiring the Memory Supply Chain"</p>
+<p class="label">Tickers: 285A.T / MU / 005930.KS / 000660.KS (NAND makers — thematic)</p>
+
+<h3>Full summary</h3>
+<p>This is the sequel to last month's tungsten-gas shock. The subject is a quiet materials change inside <b>3D NAND</b> — the flash-memory chips in every SSD and phone. To pack more storage into the same silicon area, NAND makers stack memory cells vertically, and the industry has now pushed past <b>300 layers</b>. Running through every layer are horizontal wires called <b>word lines</b> that electrically address each memory cell.</p>
+<p>For twenty years those wires were made of <b>tungsten</b>, a metal. At 300-plus layers, tungsten hits a wall for two compounding reasons. First, as the wires get thinner each generation, tungsten's electrical resistance climbs sharply, and it needs a "barrier layer" (titanium nitride) to stick to its surroundings — a liner that eats the shrinking space left for the actual conductor. Second, tungsten is deposited using a gas (WF6) that releases <b>fluorine</b>, which corrodes the surrounding insulation and creates leakage paths. Manageable at 100 layers; a hard cap at 300-plus.</p>
+<p><b>Molybdenum</b>, another metal, fixes both at once: in ultra-thin dimensions it conducts far better (resistance drops &gt;50% at 300-plus layers), it needs <i>no</i> barrier layer (so the whole cross-section conducts and each layer can be thinner, reducing stack height and wafer warping), and its leading feedstock chemical (molybdenum dichloride dioxide) contains <b>no fluorine at all</b>, eliminating the corrosion problem at the source. Engineering data from <b>Kioxia</b> (the Japanese NAND maker, ticker 285A.T) at a 2024 industry symposium showed molybdenum word lines cutting leakage failures to ~1/25th of tungsten's, while tolerating tighter shrink. It also programs and reads faster — increasingly valuable as AI prices NAND on performance.</p>
+<blockquote>"Molybdenum is what lets NAND makers keep stacking, and stacking is the whole business model."</blockquote>
+<p>All three major NAND makers have now put molybdenum on their production roadmaps, with the first mass-production lines converting this year. The author's investable angle (paywalled before the details) sits <b>upstream</b>: not the memory makers themselves, but the suppliers of the molybdenum <b>precursors</b> (the specialty feedstock chemicals), the <b>delivery hardware</b> that pipes those chemicals into the deposition tools, and — crucially — the "qualification moat" around them (once a fab certifies a specific supplier's chemistry, switching is slow and risky, which protects incumbents' pricing).</p>
+
+<div class="analysis">
+<h4>Analysis — what it means &amp; whether to believe it</h4>
+<p><b>Context from the wiki (teach-first).</b> This is the third entry in the wiki's young "specialty gases &amp; materials supply shocks" theme, and it rhymes with the WF6 story: a cheap-per-wafer, non-substitutable input whose economics are outsized because a &gt;70%-margin memory fab will pay almost anything rather than idle a line. But note the important <i>difference</i> from the tungsten shock. WF6 was a <b>supply squeeze</b> (China cut off feedstock, prices spiked 5×) — a time-limited monopoly that new capacity relieves by mid-2027. Molybdenum is a <b>deliberate technology transition</b> — a durable, multi-year design win driven by physics, not politics. The moat here is qualification lock-in, which is stickier than a temporary shortage.</p>
+<p><b>Track record (secondary).</b> Global Semi's signature move is "size a niche shock from upstream capacity data," and its WF6 call from two weeks ago is the direct predecessor. Those calls are too new to grade, but the analytical method — following the money to the un-glamorous chemical/equipment layer rather than the famous chip names — is consistent and differentiated.</p>
+<p><b>Critique &amp; falsifier.</b> The frustrating part for a reader is that the actual beneficiaries are paywalled and, in practice, tend to be hard-to-trade: molybdenum precursors are dominated by a handful of specialty-chemical firms (often divisions of larger European/US/Japanese conglomerates or private players), so there may be no clean listed pure-play. The <i>NAND makers</i> named here — Kioxia, Micron, Samsung, SK Hynix — are beneficiaries only indirectly (molybdenum lets them keep scaling), so this is not a fresh equity call on them; it is a supply-chain map. The thesis would weaken if molybdenum adoption stalls on yield problems at volume, or if the precursor supply base turns out to be more competitive (less moaty) than claimed. <b>Confidence: MEDIUM</b> on the technology transition (well-sourced, industry-wide, physics-driven); <b>LOW</b> on there being an easily investable public name for a non-expert to act on.</p>
+</div>
+
+<!-- ============ SEMIANALYSIS 1 ============ -->
+<div class="pub-header">SemiAnalysis</div>
+<p class="date">Post 1 · 2026-07-09 · "The Future of Meta Superintelligence: A 1-Year Progress Update"</p>
+<p class="label">Tickers: META (long) · GOOGL (bearish) · NVDA (compute substrate)</p>
+
+<h3>Full summary</h3>
+<p>A year ago, a disastrous launch of Meta's "Llama 4" open-source model pushed CEO Mark Zuckerberg to tear down and rebuild Meta's entire AI organization into <b>MSL</b> (Meta Superintelligence Labs). The rebuild was extravagant: a $14.3B "investment" in the data-labeling startup Scale AI, structured largely to poach its founder Alexandr Wang and top staff; pay packages of hundreds of millions (sometimes $1B+) for individual researchers; and a new fast-to-build "Tent" data-center design. SemiAnalysis's verdict one year on: MSL's first public model, "Muse Spark," was underwhelming (it lagged open-source models from China's DeepSeek and Kimi), <b>but that misses the point</b>. What matters is the <i>slope, not the intercept</i> — the trajectory, not today's snapshot. The interesting question is where MSL will be in six months.</p>
+<p>The argument rests on the three ingredients of a frontier model — <b>data, talent, and compute</b> — and the claim that <b>Meta is the only company on track to be world-class at all three</b>, giving it the best shot at catching the two current leaders, OpenAI and Anthropic. (Google, the piece argues, has faded: its models trail on real-world coding despite a brief moment of buzz.)</p>
+<ul>
+<li><b>Data.</b> The overlooked advantage. Today's most important training method is <b>reinforcement learning (RL)</b> — instead of just predicting the next word, you teach the model to complete whole tasks (e.g. fix a bug) inside an "environment," with "verifiers" that grade the result. A whole supply chain of "human data" startups (Mercor, Surge, Handshake) has sprung up at $1B+ in annual revenue to produce these RL tasks. The prize everyone wants is <b>real screen recordings of white-collar work</b>, because tasks built from them are realistic by definition. Meta's twist: it has started tracking its own employees' screens, keyboards, and mouse movements — "quite literally some of the most valuable data in the world" — and reassigned ~3,000 engineers to make RL tasks full-time. SemiAnalysis calls this Meta effectively spawning a top-tier RL-environment company in-house, an underappreciated edge.</li>
+<li><b>Compute.</b> Meta has a hyperscaler's balance sheet, no cloud-rental business pulling chips away, and a CEO willing to run cash-flow-negative. SemiAnalysis's new "Tokenomics Model" projects Meta will have <b>more AI computing power than either OpenAI or Anthropic by end of 2026</b>. It is building <b>five 1-gigawatt-plus "titan" clusters simultaneously</b> (named Prometheus in Ohio, Hyperion in Louisiana, plus unnamed sites in El Paso, Iowa, Indiana) — including the world's largest single buildings at 400MW each. "Never in history" have two full-GW campuses been under construction at once; Meta has that now.</li>
+<li><b>Networking ("scale-across").</b> Because you can't cool or power a single giant building indefinitely, Meta spreads a cluster across many data centers and links them so they act as one. Its "AI-Backbone" design pushes ~22 petabits/second of bandwidth across the Prometheus constellation (27 data centers over 6 campuses). The catch is <b>latency</b>: sites 100km apart can't communicate faster than ~500 microseconds (limited by the speed of light in fiber), forcing "asynchronous" training tricks. Future titans will connect campuses up to <b>2,000km apart</b>.</li>
+<li><b>Talent.</b> A recruiting blitz: ex-OpenAI, ex-Anthropic, ex-Google researchers, Thinking Machines co-founders, plus a finance/infrastructure leadership team poached from OpenAI's compute org.</li>
+</ul>
+<p>SemiAnalysis is "overall bullish" but stresses Meta is "basically at step 1." It flags concrete falsifiers: if Meta signs a long-term deal to <i>sell</i> its compute with no clawback, disbands the RL-task org, or lets top researchers walk, "we would be materially less bullish" — any one could be "a death sentence for MSL." The just-released Muse Spark 1.1 is judged roughly on par with a mid-tier Anthropic/Chinese model — improving, but SemiAnalysis won't move its own usage onto it yet.</p>
+
+<div class="analysis">
+<h4>Analysis — what it means &amp; whether to believe it</h4>
+<p><b>Context from the wiki (teach-first).</b> SemiAnalysis has run this MSL thesis since July 2025, and the wiki's META dossier has been LONG throughout on three pillars: compute scale, proprietary data, cashflow self-funding. This update deepens the "data" pillar (the screen-tracking / RL-environment insight is genuinely new) and hard-quantifies the "compute" pillar (five titans; more compute than OpenAI/Anthropic by year-end). It also connects to a second wiki thread: SemiAnalysis's June-30 "TokenBudgeting" note argued enterprise AI demand is <i>early</i>, not peaking — the demand-side foundation under this supply-side buildout.</p>
+<p><b>Track record (secondary).</b> This is SemiAnalysis's strongest franchise: it tracks data-center construction via satellite imagery months before it's public, and the wiki notes its META LONGs from July 2–3 at $584.88 are already <b>+2.8%</b> (last mark $601, July 6). Its custom-silicon and CoWoS-bottleneck calls have a strong prior hit history. When SemiAnalysis makes a granular, building-level infrastructure claim, it has earned the benefit of the doubt on the facts.</p>
+<p><b>Critique &amp; falsifier.</b> Two honest weaknesses. (1) <b>The thesis is about slope, which is unfalsifiable in the short run</b> — "wait six months" can always be repeated, and the actual product (Muse Spark) is still admittedly behind. (2) <b>Compute ≠ frontier models.</b> Having the most GPUs and the best data pipeline has not, historically, guaranteed the best model — organizational focus and research luck matter, and SemiAnalysis itself concedes Meta "is still a big tech company with lots of competing opinions." The screen-tracking edge also carries real regulatory/PR/employee-morale risk the piece waves off as "minor." Falsifier: watch Meta's Q3/Q4 actions against SemiAnalysis's own list — any compute-selling deal, org disbandment, or researcher exodus flips the thesis. <b>Confidence: MEDIUM-HIGH</b> on the infrastructure facts (SA's core competency); <b>MEDIUM</b> on the leap from "world-class inputs" to "catches Anthropic/OpenAI."</p>
+</div>
+
+<!-- ============ SEMIANALYSIS 2 ============ -->
+<div class="pub-header">SemiAnalysis</div>
+<p class="date">Post 2 · 2026-07-08 · "Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peek"</p>
+<p class="label">Tickers: none listed directly (private company) · read-through: AMZN, AVGO</p>
+
+<h3>Full summary</h3>
+<p><b>Anthropic</b> — the AI lab founded in 2021 by Dario Amodei after he left OpenAI, maker of the Claude models and of "Claude Code," which took the software-developer world by storm in 2026 — <b>confidentially filed for an IPO on June 1</b>. (An IPO, initial public offering, is a private company selling shares to the public for the first time.) A confidential filing means no numbers are public, so SemiAnalysis's "Tokenomics" team reconstructs the financials from the bottom up — modeling revenue by product, pricing tier, and customer type. (A recent Wall Street Journal piece reportedly confirmed the accuracy of this method.)</p>
+<p>The headline claims: SemiAnalysis estimates <b>Anthropic turned a &gt;$1B quarterly profit in Q3 2026</b> — remarkable because AI labs are famous for burning cash. Together Anthropic and OpenAI now generate ~$100B of annualized revenue. SemiAnalysis frames Anthropic as the <b>clear leader in the profitable business-to-business (B2B) market</b>, monetizing efficiently while OpenAI is characterized as "unfocused and money-burning." Because Anthropic has superior margins and a real business model, SemiAnalysis argues it can plow profits into better models and extend its lead — floating a <b>$6T valuation as a "base-case possibility"</b> if execution continues. The strategic point: by filing first, Anthropic puts pressure on OpenAI (which reportedly pushed its own IPO to 2027) to open its books and raise the capital needed to keep up. Two Chinese labs (Zhipu, Minimax) have already IPO'd this year, but Anthropic would be the first Western lab of this scale. (The financial deep-dive itself is paywalled.)</p>
+
+<div class="analysis">
+<h4>Analysis — what it means &amp; whether to believe it</h4>
+<p><b>Context from the wiki (teach-first).</b> Anthropic is a recurring character across this wiki even though you can't buy its stock, because <i>how</i> it makes money shapes the whole chip supply chain. Two threads matter: (1) the wiki's "Claude Code inflection point" (Feb 2026) established coding as the killer app driving 70%+ of both Anthropic's and OpenAI's revenue; and (2) Anthropic runs heavily on <b>Amazon's AWS cloud</b> via a service called Bedrock — SemiAnalysis's May and June notes argued Anthropic is driving AWS margins higher, making Anthropic's success a read-through <i>long</i> for <b>AMZN</b>. A profitable, soon-public Anthropic also validates the entire "inference is the business" story from the Global Semi post above — and explains why Anthropic is exploring its own inference chip (with Broadcom, per April reports) to protect those very margins.</p>
+<p><b>Track record (secondary).</b> The Tokenomics team's bottom-up lab financials were externally validated by the WSJ, which is a genuine credibility marker for exactly this kind of estimate. SemiAnalysis's business-model reads (e.g. AWS/Bedrock margin uplift) have been internally consistent across months.</p>
+<p><b>Critique &amp; falsifier.</b> This is a <b>modeled</b> profit number for a company that has disclosed nothing — treat "&gt;$1B profit" and especially "$6T valuation" as SemiAnalysis's construction, not fact, and note the piece's clear pro-Anthropic / anti-OpenAI tilt (worth remembering that Dylan Patel's shop is culturally close to Anthropic — the Meta post above cheerfully notes an Anthropic researcher is the author's roommate). The $6T figure is a "base case" headline that will attract clicks; it assumes flawless execution against a well-funded rival. Falsifier: OpenAI's next model decisively out-competing Claude on coding, or Anthropic's margins compressing as it's forced to cut prices, would puncture the "theirs to lose" framing. <b>Confidence: MEDIUM</b> on the direction (Anthropic is winning profitable B2B AI); <b>LOW</b> on the specific valuation number. For a non-expert: the actionable, tradeable takeaway is the AMZN read-through, not the private valuation.</p>
+</div>
+
+<!-- ============ SEMIDOPED ============ -->
+<div class="pub-header">Semi Doped</div>
+<p class="date">Posts 5–7 · Daily Updates, 2026-07-07 / 08 / 09 · news digest, panelists Vik Sekar &amp; Austin Lyons</p>
+<p class="label">Tickers: NVDA · AVGO · AAPL · 000660.KS · MU · AMZN · BE · WOLF · NVTS · WULF · TSM · 009150.KS · ADI · BESI</p>
+
+<p>Semi Doped is a fast, high-signal daily news roundup with two industry insiders reacting. Rather than one thesis, it delivers many small ones. Here are this run's items that matter, grouped and explained.</p>
+
+<h3>The custom-silicon wave keeps spreading (the run's dominant theme)</h3>
+<p>Semi Doped independently corroborates the Global Semi post above and pushes it further. In three days: <b>DeepSeek</b> confirmed developing its own AI chip; <b>Zhipu AI</b> (a Chinese lab behind the open-source "GLM" models, now branded z.ai) is <i>also</i> weighing a custom chip due to demand and export controls; and <b>Apple extended its custom-chip partnership with Broadcom to 2031</b> at $30B+. Panelist Vik's framing: <i>"Each model maker is teaming up with a chip design house to make their own chips… The hardware and model layer is coalescing. Pay attention."</i> One important nuance the panel caught: the July-9 Apple–Broadcom headline ($30B) is specifically about <b>RF components and FBAR filters</b> — the radio-frequency chips and signal filters inside iPhones — <i>not</i> AI chips, and reads partly as an "American Manufacturing Program" publicity move (a $1.5B Broadcom facility expansion in Colorado). So it's a real long-term Broadcom revenue commitment, just in phones, not AI. Austin's read on DeepSeek's chip: it's "bearish Huawei, not Nvidia" — since Nvidia can't sell into China anyway, the domestic chip most directly displaces Huawei's Ascend.</p>
+
+<h3>China, Nvidia, and the H200</h3>
+<p>China reportedly plans to <b>let its domestic AI firms buy Nvidia's H200</b> — a high-end (but not top-tier) AI chip. This is a policy reversal after years of tightening. The panel split: Vik thinks it may be "too little, too late" since China is already building domestic compute (and worries the Chinese model GLM 5.2 is capable enough to break cybersecurity defenses); Austin thinks momentum shifts back to Nvidia because it's easier to buy the best than to bootstrap. Either way, Nvidia CEO Jensen Huang got what he publicly wanted: keeping China "hooked on American AI accelerators."</p>
+
+<h3>Korea's memory giants go to Wall Street</h3>
+<p><b>SK Hynix</b> (the world's HBM memory leader, ticker 000660.KS in Seoul) launched a <b>$28B American Depositary Receipt (ADR) offering</b> — a mechanism that lets US investors buy a foreign stock directly on US markets — and it was <b>oversubscribed</b> (more demand than shares). Marquee funds Coatue and "Situational Awareness Partners" indicated interest in up to $7B combined. The motive: Seoul's market allegedly under-values SK Hynix, so a US listing seeks a valuation premium. The panel's caution: recent oversubscribed IPOs (Cerebras, SpaceX) later disappointed — "never underestimate the power of get-rich-quick schemes."</p>
+
+<h3>The "off switch" scare — Bloom Energy</h3>
+<p><b>Bloom Energy</b> (BE) makes fuel cells that generate electricity <b>on-site</b> ("behind the meter"), bypassing the slow, congested power grid — a pitch aimed squarely at power-starved AI data centers. Activist short-seller <b>Hunterbrook</b> published an investigation alleging that a critical input for Bloom's cells, the rare metal <b>scandium</b>, is sourced from China and requires Chinese-government approval per shipment — meaning "China has an OFF switch to US datacenters" — while Bloom's CEO has repeatedly denied any China supply chain. The panel's balanced caveat: Hunterbrook is <i>short</i> BE (it profits if the stock falls), Bloom says the cells "supplement grid power" rather than run data centers off-grid, and most of those data centers aren't built yet. "Take it all with a grain of salt."</p>
+
+<h3>Power-chip lawsuit; other notable moves</h3>
+<ul>
+<li><b>Wolfspeed (WOLF) sued Navitas (NVTS)</b> for patent infringement across Navitas's entire <b>silicon-carbide (SiC) and gallium-nitride (GaN)</b> portfolio — these are "wide-bandgap" power semiconductors that convert electricity far more efficiently than ordinary silicon, increasingly vital as AI data centers move to high-voltage power delivery. Wolfspeed, a leading SiC maker, seeks damages and a sales injunction. Vik: going after the "entire Navitas portfolio… not a good look" for Navitas.</li>
+<li><b>TeraWulf (WULF)</b>, a former Bitcoin miner turned AI-data-center landlord ("neocloud"), signed a <b>20-year, ~$19B lease with Anthropic</b> for a 401MW Kentucky campus (live H2 2027) — a huge demand commitment.</li>
+<li><b>Amazon (AMZN)</b> raised <b>$25B in bonds</b> — one of the largest US corporate debt sales ever — to fund AI infrastructure (demand was reportedly soft, per the macro recap).</li>
+<li><b>Apple (AAPL)</b> is testing DRAM from China's blacklisted memory maker <b>CXMT</b> for China-market devices — a sign Chinese memory is gaining ground on the Samsung/SK Hynix/Micron trio, at least in consumer (not cutting-edge AI) applications.</li>
+<li><b>Analog Devices (ADI)</b> closed its acquisition of Empower Semiconductor, extending into "vertical power delivery" — feeding power straight up into the chip, a rising need as Nvidia's chips pull ~11× the current of three generations ago.</li>
+<li><b>TSMC</b> (the world's dominant contract chip manufacturer) is building a resilient "second fleet" of localized suppliers to protect its <b>CoWoS</b> advanced-packaging supply chain — the technique that stitches a GPU to its HBM memory and remains the key bottleneck on AI chip output.</li>
+<li><b>Samsung Electro-Mechanics (009150.KS)</b> is forming a glass-core-substrate joint venture (a next-gen chip-packaging base material) with a Sumitomo unit, targeting 2H27 production.</li>
+<li><b>BE Semiconductor / Besi (BESI)</b> — the equipment leader in "hybrid bonding" (a way to stack chips with direct copper-to-copper bonds) — faces intensifying competition crowding into its once-uncontested market.</li>
+</ul>
+
+<div class="analysis">
+<h4>Analysis — reading the digest through the wiki</h4>
+<p><b>The through-line.</b> Nearly every item above is a facet of two wiki themes already in motion: <b>custom silicon</b> (DeepSeek, Zhipu, Apple–Broadcom, TeraWulf-for-Anthropic) and the <b>AI capex/debt boom</b> (Amazon's $25B bonds, SK Hynix's $28B ADR, TeraWulf's $19B lease). Semi Doped's value this run is <i>corroboration</i>: the custom-silicon-proliferation story is not one publication's pet thesis — it's showing up as hard news from multiple independent directions in the same 72 hours. That materially raises confidence in the meta-narrative even if any single chip never ships.</p>
+<p><b>Track record &amp; stance (secondary).</b> Semi Doped is a technically fluent digest, not a high-conviction call machine; most items here are MENTION-grade context rather than fresh theses. Its recent priced LONGs (Micron, Kioxia, Intel) are all still open (&lt;30 days). Where it does lean, this run: mildly constructive on Nvidia's China re-entry, positive on SK Hynix's ADR demand, negative on Navitas (the sued party), and pointedly skeptical-but-fair on the Bloom Energy short.</p>
+<p><b>Critique.</b> A digest inevitably amplifies whatever is loud; the Bloom "off switch" item is the cautionary example — it's a <i>short-seller's</i> framing, and the panel rightly flags the conflict, the "supplements grid power" rebuttal, and that the data centers aren't even built. Treat single-source activist claims as hypotheses, not findings. <b>Confidence in the corroborated custom-silicon theme: MEDIUM-HIGH; in any individual news item's stock impact: LOW-MEDIUM.</b></p>
+</div>
+
+<!-- ============ TICKERS ============ -->
+<h2>Ticker profiles &amp; track records</h2>
+<p class="date">px@call = most recent real mark on file (live quotes egress-blocked this run); dates shown</p>
+
+<div class="card">
+<h3>NVDA — Nvidia <span class="tag neutral">NEUTRAL (this run)</span></h3>
+<p><b>What it does:</b> designs the GPUs that run the overwhelming majority of the world's AI; the most valuable company on earth by mid-2026.</p>
+<div class="fin"><span>px@call ≈ <b>$195.84</b> (mark 07-06)</span><span>run stance: <b>defended vs. short</b></span></div>
+<p><b>This run:</b> Global Semi Research explicitly <i>rebuts</i> the reflexive "short Nvidia on custom silicon" trade — custom inference chips attack the stable, high-volume slice of the workload, not the volatile frontier where GPUs win. Separately, China may reopen to Nvidia's H200, a modest positive for China revenue (which had collapsed to ~5% of total).</p>
+<p class="track"><b>Track record:</b> the wiki's persistent NVDA LONG (SemiAnalysis, IrrationalAnalysis) has tracked well for two years — the stock ran past old price targets. The current watch-items (falsifiers): accelerating ASIC substitution, and — newer — GPU <i>rental rates rolling over</i>, which would trigger Nvidia's own financing backstops. This run's news cuts both ways but nets neutral-to-slightly-positive.</p>
+</div>
+
+<div class="card">
+<h3>AVGO — Broadcom <span class="tag long">LONG (implied)</span></h3>
+<p><b>What it does:</b> the leading engineering partner that helps big tech design custom AI chips (&gt;60% ASIC share), plus networking and RF chips.</p>
+<div class="fin"><span>px@call ≈ <b>$369.34</b> (mark 07-02)</span><span>~$1.9T mkt cap</span><span>fwd P/E ~25×</span></div>
+<p><b>This run:</b> the quiet winner of the custom-silicon wave. Broadcom built OpenAI's "Jalapeno" inference chip and is the reported partner for Anthropic's exploration — the more model makers design their own silicon, the more they need Broadcom. Separately locked a $30B+ Apple deal through 2031 (RF/phone chips, not AI).</p>
+<p class="track"><b>Track record:</b> the wiki's AVGO thesis has been "unambiguously self-consistent" — every 2024 catalyst (CPO optics, ASIC customer expansion to OpenAI/Apple, SerDes moat) has confirmed or exceeded. Global Semi's one caveat is margin pressure from hyperscaler bargaining power. Falsifier: a credible rival (MediaTek) reaching hyperscaler qualification at scale — hasn't happened yet.</p>
+</div>
+
+<div class="card">
+<h3>META — Meta Platforms <span class="tag long">LONG</span></h3>
+<p><b>What it does:</b> Facebook/Instagram/WhatsApp; now spending hyperscaler-level sums to build frontier AI (MSL).</p>
+<div class="fin"><span>px@call ≈ <b>$601.00</b> (mark 07-06)</span><span>entry $584.88 (07-02) → <b>+2.8% ✓</b></span></div>
+<p><b>This run:</b> SemiAnalysis's year-one MSL update reaffirms the LONG — best-in-class on all three model ingredients (data via in-house screen-recording RL, compute via five simultaneous 1GW+ "titan" clusters, talent via a poaching blitz). Projected to out-compute OpenAI and Anthropic by year-end.</p>
+<p class="track"><b>Track record:</b> the LONG dates to July 2025 and both SemiAnalysis and Global Semi are on the same side (they split only on suppliers). The July 2–3 priced LONGs are already +2.8%. Falsifiers to watch, per SemiAnalysis's own list: Meta signing a no-clawback compute-sale deal, disbanding its RL-task org, or losing top researchers — plus any Q3/Q4 deceleration in contracting.</p>
+</div>
+
+<div class="card">
+<h3>GOOGL — Alphabet / Google <span class="tag neutral">NEUTRAL / softening</span></h3>
+<p><b>What it does:</b> search, cloud, and the Gemini AI models + TPU custom chips.</p>
+<div class="fin"><span>px@call <b>n/a</b> (no recent mark; egress-blocked)</span></div>
+<p><b>This run:</b> collateral damage in the MSL post — SemiAnalysis argues Google "faded dramatically" from the AI big-3, with models trailing on real-world coding despite the Gemini 3 buzz, and offers Google "some advice" (paywalled). A relative-positioning knock, not a fundamental short.</p>
+<p class="track"><b>Track record:</b> the wiki's only prior GOOGL stance is a May-2026 SemiAnalysis SHORT on <i>cloud-margin optics</i> (excluding DeepMind training costs from segment reporting) — unpriced. Consistent skeptical tone from SemiAnalysis; no hard price anchor exists to grade.</p>
+</div>
+
+<div class="card">
+<h3>MU / 285A.T / 000660.KS / 005930.KS — the memory complex <span class="tag long">LONG (near-term)</span></h3>
+<p><b>What they do:</b> the DRAM + NAND memory makers — Micron (US), Kioxia (Japan, NAND), SK Hynix &amp; Samsung (Korea).</p>
+<div class="scroll"><table class="mini">
+<tr><th>Name</th><th>px@call (mark date)</th><th>this run</th></tr>
+<tr><td>MU (Micron)</td><td>$975.56 (07-03)</td><td>NAND molybdenum enabler; record $41.5B qtr, 85% margin, booked through 2027</td></tr>
+<tr><td>285A.T (Kioxia)</td><td>¥83,300 (07-03)</td><td>cited as molybdenum leader (1/25th leakage data); "2–4 yrs ahead" on premium NAND</td></tr>
+<tr><td>000660.KS (SK Hynix)</td><td>₩2,425,000 (07-03)</td><td>$28B US ADR oversubscribed; HBM leader</td></tr>
+<tr><td>005930.KS (Samsung)</td><td>₩309,500 (07-02)</td><td>NAND scaling via molybdenum; CXL memory delayed pending CPUs</td></tr>
+</table></div>
+<p class="track"><b>Track record:</b> the memory supercycle is <i>hard-confirmed</i> near-term — Micron's ~$41.5B quarter at 85% gross margin, sold out through 2027 on take-or-pay contracts, directly refutes the "demand satiety" read behind early-July's Meta-cloud memory selloff. SemiAnalysis's June-23 MU LONG at $1,057.59 is −7.8% (open) after that selloff. The molybdenum transition is a fresh reason the NAND leg can keep scaling. Open risks: Micron's HBM4 lag behind SK Hynix on speed, and a possible 2027+ glut from Korea's &gt;$500B capacity push and China's CXMT.</p>
+</div>
+
+<div class="card">
+<h3>BE — Bloom Energy <span class="tag cautious">CAUTIOUS</span></h3>
+<p><b>What it does:</b> on-site fuel cells pitched as fast, grid-bypassing power for AI data centers.</p>
+<div class="fin"><span>px@call ≈ <b>$299.71</b> (mark 07-02)</span></div>
+<p><b>This run:</b> short-seller Hunterbrook alleges Bloom's cells depend on Chinese scandium requiring per-shipment CCP approval — an "off switch" risk the CEO has denied. Unverified single-source activist claim; Bloom counters the cells "supplement" grid power and the target data centers aren't built yet.</p>
+<p class="track"><b>Track record:</b> the wiki's BE calls are all unpriced (px@call n/a historically); IrrationalAnalysis has treated it as a high-conviction-but-highest-risk holding (force-sold in a Jan-2026 deleveraging). This run adds a genuine new bear vector (China input dependency) to an already volatile name — hence CAUTIOUS pending verification.</p>
+</div>
+
+<div class="card">
+<h3>WOLF &amp; NVTS — power-chip lawsuit <span class="tag short">NVTS negative</span></h3>
+<p><b>What they do:</b> Wolfspeed (WOLF) — silicon-carbide power chips; Navitas (NVTS) — SiC + gallium-nitride power chips.</p>
+<div class="fin"><span>WOLF px@call <b>n/a</b></span><span>NVTS px@call ≈ <b>$14.11</b> (mark 07-02)</span></div>
+<p><b>This run:</b> Wolfspeed sued Navitas over its <i>entire</i> SiC/GaN portfolio — a broad legal overhang for the smaller Navitas. Power semiconductors matter because AI data centers are shifting to high-voltage (800V) power delivery, which needs these efficient wide-bandgap chips.</p>
+<p class="track"><b>Track record:</b> IrrationalAnalysis is already SHORT NVTS (px@call $14.11, "Navitas SiC is dogshit," mgmt over-sells the dual GaN/SiC story) — this lawsuit corroborates that bear case. WOLF has a prior SemiAnalysis LONG (10kV SiC as an 800V enabler), unpriced.</p>
+</div>
+
+<div class="card">
+<h3>WULF · AMZN · AAPL · TSM · others — capex &amp; supply-chain mentions</h3>
+<div class="scroll"><table class="mini">
+<tr><th>Name</th><th>px@call (mark)</th><th>this run (MENTION)</th></tr>
+<tr><td>WULF (TeraWulf)</td><td>n/a</td><td>20-yr, $19B Anthropic data-center lease — big demand commitment for a neocloud</td></tr>
+<tr><td>AMZN (Amazon)</td><td>$243.06 (07-01)</td><td>$25B AI bonds (soft demand); Anthropic-on-AWS read-through stays constructive</td></tr>
+<tr><td>AAPL (Apple)</td><td>$308.45 (07-03)</td><td>testing China's CXMT DRAM; $30B Broadcom RF deal to 2031</td></tr>
+<tr><td>TSM (TSMC)</td><td>$446.68 (07-02)</td><td>"second fleet" to secure CoWoS packaging supply</td></tr>
+<tr><td>009150.KS (Samsung E-M)</td><td>n/a</td><td>glass-substrate JV with Sumitomo, 2H27 target</td></tr>
+<tr><td>ADI (Analog Devices)</td><td>n/a</td><td>closed Empower Semi buy — vertical power delivery</td></tr>
+</table></div>
+<p class="track">These are context/mention-grade items this run, not fresh high-conviction theses. AMZN carries the cleanest actionable read-through (a profitable, IPO-bound Anthropic runs on AWS/Bedrock and lifts its margins). TSMC's CoWoS remains the wiki's canonical AI-chip bottleneck.</p>
+</div>
+
+<!-- ============ SYNTHESIS ============ -->
+<h2>Bottom line</h2>
+<div class="lead">
+<p><b>One theme dominated all three publications this run: the AI model makers are moving down into their own hardware.</b> DeepSeek, OpenAI (Jalapeno/Broadcom), Anthropic (exploring, Broadcom), Zhipu, and Apple (Broadcom RF) all appeared in the same 72 hours — because <b>inference</b>, the cost of <i>running</i> models, has overtaken training as the dominant AI expense, and whoever controls that cost controls their own margins. The correct read, per Global Semi, is <i>not</i> "short Nvidia" — GPUs keep the shifting frontier — but "custom-silicon enablers (Broadcom) win, and Nvidia's moat is now partly financial."</p>
+<p><b>Two supporting stories:</b> (1) Meta is making a credible, fully-resourced run at the AI frontier (SemiAnalysis LONG, already +2.8%), and Anthropic is emerging as the <i>profitable</i> AI leader heading toward an IPO — validating that inference can be a real business (AMZN read-through). (2) The memory supercycle is hard-confirmed near-term (Micron's record margins), and molybdenum-for-tungsten is a fresh, physics-driven reason NAND can keep scaling — a durable transition, unlike last month's temporary tungsten-gas squeeze.</p>
+<p><b>The one open argument</b> — Global Semi's "buildout may stop being rewarded" caution vs. SemiAnalysis's "demand is early, not late" — stays unresolved, but this run's flood of real demand commitments (TeraWulf's $19B Anthropic lease, SK Hynix's oversubscribed $28B raise, Meta's five titans) tilts the near-term evidence toward the buildout bulls. Watch GPU rental rates and Meta's Q3/Q4 contracting for the first sign it turns.</p>
+</div>
+
+<p class="foot">
+Generated by the Substack Scanner 3-day memory loop · 2026-07-10 · sources: Global Semi Research (×2), SemiAnalysis (×2), Semi Doped daily updates (×3). Analysis is written from the persistent wiki knowledge base and is for information only — not investment advice. Prices are the most recent marks on file; live market feeds were unavailable to this run due to network egress policy, so no live quotes were pulled and none were invented.
+</p>
+
+</div>
