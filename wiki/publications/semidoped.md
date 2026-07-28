@@ -4,15 +4,21 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-07-10
+updated: 2026-07-28
 handle: semidoped
-calls_logged: 76
-hit_rate: "n/a"
+calls_logged: 80
+hit_rate: "0/3 (0%), 12 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update — July 27 (2026-07-27):** CXMT STAR debut +470% (China's largest A-share; pricing DDR5 above Samsung); Korea $950B AI summit (**$200B Broadcom-Samsung foundry/HBM MoU**, >$500B Nvidia-SK, $1B Nvidia-Naver); SK Hynix concedes **"HBM is not the answer"** to the memory wall; Infineon raises FY guide + opens world's-largest Dresden power fab; SK Hynix now Kioxia's de facto #2 holder (Bain $17B sale). Priced: [[000660.KS]] LONG ₩1,622,000, [[005930.KS]] LONG ₩231,000, [[285A.T]] NEUTRAL ¥44,560, [[IFX.DE]] LONG €61.49.
+- **Datacenter Interconnects podcast (2026-07-25):** Concept episode (scale-up/out/across, copper vs optics, CPO, NVLink vs UALink, 400G→1.6T). No calls — feeds [[co-packaged-optics]] / [[serdes-high-speed-connectivity]].
+- **TIL: A Longer Memory (2026-07-25):** History of Zhilin Yang / Moonshot AI / Kimi (Transformer-XL → long-context KV-cache). Concept color, no calls.
+
+**hit_rate note (2026-07-28):** first resolved calls — three June longs crossed 30 days into the memory rout: [[AMD]] (Jun-16 $507.29 → $494.95), [[AVGO]] (Jun-18 $408.24 → $383.22), [[000660.KS]] (Jun-24 ₩2.58M → ₩1.62M), all **LOSS** → **0/3 (0%)**. Additional June longs (INTC $134, MRVL $309, TSEM $287, 2454.TW ₩4,390) have also aged past 30 days but were not re-priced this run — the ratio is a floor pending their marks. The late-July memory/AI-hardware de-rating is doing the damage, not thesis breakage.
 21 analysis posts ingested (2026-04-24 -> 2026-07-06); ~61 ticker calls. hit_rate "n/a" — all priced calls still <30 days old (earliest INTC $134, MRVL $309 from 2026-06-19).
 
 - **Daily Update (2026-07-06):** News roundup. Nvidia Kyber NVL144 delayed >12mo to 2028 (bearish [[NVDA]] product, bullish [[AMD]] window); Nvidia revenue-share financing (= SA backstop); Intel CPU price hikes + XBM patent ([[INTC]] LONG $120.94); Foxconn Q2 record AI-server revenue ([[2317.TW]] LONG ~NT$255); Korea chip-tax growth fund; $510B H1 AI VC. Priced: NVDA NEUTRAL $195.84, AMD LONG $552.05, INTC LONG $120.94, 2317.TW LONG ~255.

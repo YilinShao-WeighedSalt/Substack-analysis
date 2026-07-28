@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-07-10
+updated: 2026-07-28
 ---
 
 # Wiki Run Log
+
+## 2026-07-28
+- ingest | 4 posts from irrationalanalysis (x1), semianalysis (x1), semidoped (x2) | tickers: AXTI, LITE, AAOI, AEVA (new), AMD, AVGO, NVDA, CBRS, 000660.KS, 005930.KS, 285A.T, IFX.DE | DOMINANT TENSION: bullish narratives vs a bearish tape — semianalysis's 3rd AMD re-rating ("great chance" at cracking the CUDA moat; MI455X leads on silicon; AVGO the retimer/switch arms-dealer) and semidoped's Korea $950B / custom-HBM lock-in stories land amid a **violent memory/AI-hardware de-rating**: SK Hynix -33%, Samsung -31%, Kioxia -47%, CBRS -17% since their early-July marks. irrationalanalysis: InP shortage "worse than DRAM" (80% of InP to AI, no consumer fallback) — AXTI substrate long; AAOI **flips from May short to disclosed holding**; AEVA new (SOA-via-Seivers optionality). First resolved priced calls arrived: semidoped 0/3 (AMD/AVGO/000660 June longs all crossed 30d into losses), semianalysis 0/1 (MU), irrationalanalysis 0/3 (CBRS joins the QCOM shorts). SK Hynix concedes "HBM is not the answer." Bright spot: Infineon (IFX.DE) raises FY guide on datacenter power semis. Live Yahoo chart API worked (fc.yahoo.com crumb host blocked → analyst-consensus bars approximated).
 
 ## 2026-07-10
 - ingest | 7 posts from globalsemiresearch (x2), semianalysis (x2), semidoped (x3) | tickers: NVDA, AVGO, META, GOOGL, MU, 285A.T, 000660.KS, 005930.KS, BE, WOLF, NVTS, WULF (new), AMZN, AAPL, TSM, 009150.KS, ADI | DOMINANT THEME: model makers going custom (DeepSeek/OpenAI-Jalapeno/Anthropic/Zhipu/Apple-Broadcom) — Global Semi reframes it as inference-cost economics, NOT short-Nvidia (defends NVDA, bullish AVGO enabler, bearish Huawei). New: molybdenum-for-tungsten NAND word-line transition (durable, added to nand-flash-storage + specialty-gases themes). SemiAnalysis: Meta MSL 1-yr LONG (META +2.8% ✓) + Anthropic IPO (>$1B Q3 profit, $6T base case, AMZN read-through). New ticker WULF (TeraWulf $19B Anthropic lease). buildout-vs-monetization tilts near-term to bulls. NOTE: live market feeds egress-blocked this run — px@call = most recent wiki marks (early July), none invented, n/a where no source. hit_rate still n/a for all pubs (earliest priced call ~22 days old, <30).

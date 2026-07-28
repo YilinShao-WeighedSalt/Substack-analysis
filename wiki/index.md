@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-07-10
+updated: 2026-07-28
 ---
 
 # Wiki Index
@@ -35,6 +35,7 @@ updated: 2026-07-10
 - [[ABBV]] — AbbVie
 - [[ADI]] — Analog Devices
 - [[AEHR]] — Aehr Test Systems
+- [[AEVA]] — Aeva Technologies (LiDAR / SOA-InP optionality)
 - [[AIXA]] — Aixtron
 - [[AIXA.AS]] — Aixtron (Amsterdam listing)
 - [[AIXA.DE]] — Aixtron (Frankfurt listing)
@@ -525,3 +526,7 @@ updated: 2026-07-10
 - [[semidoped-2026-07-07-daily-update]] — Daily Update — July 7, 2026
 - [[semidoped-2026-07-08-daily-update]] — Daily Update — July 8, 2026
 - [[semidoped-2026-07-09-daily-update]] — Daily Update — July 9, 2026
+- [[irrationalanalysis-2026-07-25-stranded-indium-phosphide]] — Stranded Indium-Phosphide (InP shortage worse than DRAM; SOA/CPO)
+- [[semianalysis-2026-07-25-amd-cuda-moat-advancing-ai]] — Can AMD break the CUDA Moat? AMD Advancing AI 2026
+- [[semidoped-2026-07-25-datacenter-interconnects-pod]] — Podcast: Datacenter Interconnects (scale-up/out/across, CPO)
+- [[semidoped-2026-07-27-daily-update-july-27]] — Daily Update — July 27, 2026 (CXMT IPO, Korea $950B summit, HBM 'ugly baby')

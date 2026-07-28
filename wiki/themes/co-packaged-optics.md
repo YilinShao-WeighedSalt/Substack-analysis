@@ -4,7 +4,7 @@ title: "Co-Packaged Optics"
 tags: []
 related: []
 created: 2024-03-23
-updated: 2026-06-12
+updated: 2026-07-28
 status: maturing
 first_seen: 2024-03-23
 ---
@@ -49,6 +49,10 @@ first_seen: 2024-03-23
 - 2026-06-02 — [[globalsemiresearch-2026-06-02-marvell-ai-data-center-transformation]] (globalsemiresearch)
 - 2026-06-10 — [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] (globalsemiresearch)
 - 2026-06-12 — [[semidoped-2026-06-12-computex-optics-power]] (semidoped)
+- 2026-07-25 — [[irrationalanalysis-2026-07-25-stranded-indium-phosphide]] (irrationalanalysis)
+- 2026-07-25 — [[semidoped-2026-07-25-datacenter-interconnects-pod]] (semidoped)
 
 ## Narrative
 Co-packaged optics (CPO) — integrating optical transceivers directly onto switch or AI accelerator packages to cut power and latency — first appeared in this corpus at Broadcom's AI Infra Day and SemiAnalysis's NVL72 coverage in early 2024, making irrationalanalysis and semianalysis the earliest trackers. Coverage remained sporadic through mid-2024 before accelerating sharply in early 2025 around NVIDIA GTC, where CPO was positioned as a key enabler for next-generation AI cluster interconnect at scale. By 2026 the theme dominates optical coverage across every publication in the corpus — semianalysis published a dedicated CPO book, irrationalanalysis ran a full guide and recurring basket commentary, and globalsemiresearch entered the conversation with China-angle coverage on indium phosphide supply and Marvell's Celestial platform. The theme is actively contested: a June 2026 globalsemiresearch piece directly rebuts a semianalysis timeline claim, signaling a maturing debate rather than early-stage evangelism. CPO is now squarely in the maturing phase — broad publication coverage, public disagreements on deployment timelines, and visible stock-market positioning around a basket of optical names.
+
+**Update 2026-07-28 — the InP-supply chokepoint sharpens.** irrationalanalysis's *Stranded Indium-Phosphide* reframes the CPO bottleneck as a raw-materials one: **indium phosphide (InP)** — the compound-semiconductor substrate for datacenter lasers — has ~80% of its output already committed to AI and, unlike DRAM, *no consumer market to raid*, making its squeeze structurally worse than the memory shortage. A second angle: the high-power **SOA (Semiconductor Optical Amplifier)** — a laser without gratings, used to boost light in an ELSFP module — can only be built by a few ex-LiDAR firms (Aeva via Seivers' InP fab), an unexpected supply path as LiDAR-as-an-end-market dies. Cost model: the SOA route yields ~17% GM vs ~51% for discrete DFB, but big low-margin revenue still appeals. Names: [[AXTI]] (substrate), [[LITE]]/[[AAOI]] (lasers/transceivers, but *not* high-power SOA), [[AEVA]] (SOA optionality). Semi Doped's interconnects podcast supplies the plain-language scaffolding (scale-up/out/across, copper-vs-optics reach, pluggable→CPO, NVLink vs UALink).

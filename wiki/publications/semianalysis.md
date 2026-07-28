@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-10
+updated: 2026-07-28
 handle: semianalysis
-calls_logged: 199
-hit_rate: "n/a"
+calls_logged: 203
+hit_rate: "0/1 (0%), 12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Can AMD break the CUDA Moat? (2026-07-25):** Third AMD re-rating in a year — from 0% → non-zero → **"great chance of success"** at closing the CUDA gap, contingent on fixing Helios rack-ramp and internal GPU-cluster/CI shortage. MI455X leads on silicon (2nm, 432GB HBM4, largest CoWoS-L, active LSI). Priced LONGs: [[AMD]] $494.95, [[AVGO]] $383.22 (550+ retimers + 12 Tomahawk-6 per rack off AMD's weak SerDes), [[NVDA]] $196.51 (still leads; Rubin ships first), [[CBRS]] $188.61 (AMD PD-disagg deal).
+
+**hit_rate note (2026-07-28):** first *resolved* SemiAnalysis priced call — the MU LONG ($1,057.59, 2026-06-23) has crossed 30 days at ~$976 → **LOSS**, so hit_rate moves off "n/a" to **0/1 (0%)**. All four new AMD-article longs are open. Ratio is a single data point and not yet meaningful.
 109 analysis posts ingested (2024-01-03 -> 2026-07-06); ~195 ticker calls. hit_rate still "n/a" — all priced LONG/SHORT calls are <30 days old (earliest MU LONG $1,057.59 on 2026-06-23, now ~$976).
 
 - **Nvidia GPU Debt Backstop (2026-07-06):** The financing bottleneck thesis — after datacenter space (2025) and chip supply (early 2026), *money* is now the constraint. Nvidia backstops neocloud rental revenue ("Central Bank of AI"), unlocking bank lending; ~$7.1T AI debt by 2029. Deep, model-driven, and squarely in SA's strongest franchise (TCO/financing). Structurally bullish [[NVDA]] $195.84; uses [[CRWV]] (Meta-backstopped 5.9% loan) as the case study. New concept page [[ai-debt-financing]]. Feeds the bull side of [[buildout-vs-monetization]], though the model's own ~zero-IRR floor scenario is an implicit nod to demand risk.

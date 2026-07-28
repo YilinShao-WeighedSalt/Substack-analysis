@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-07-04
+updated: 2026-07-28
 handle: irrationalanalysis
-calls_logged: 554
-hit_rate: "0/2 (0%), 10 open"
+calls_logged: 558
+hit_rate: "0/3 (0%), 12 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Stranded Indium-Phosphide (2026-07-25):** InP-shortage-worse-than-DRAM thesis (80% of InP output already to AI, zero consumer fallback). Cost-models the discrete-DFB vs high-power-SOA ELSFP paths (51% vs 17% GM). New priced calls: [[AXTI]] LONG $47.88 (pure InP substrate), [[LITE]] LONG $711.96 (owns it; but concedes LITE can't make the niche SOA), [[AAOI]] LONG $97.82 (**flips his May short — now discloses he owns it**), [[AEVA]] NEUTRAL $15.53 (most interesting SOA play via Seivers InP fab, but not positioned).
+
+**hit_rate note (2026-07-28):** [[CBRS]] LONG (Jun-24 $226.72) has now crossed 30 days and **resolved at $188.61, -16.8% → LOSS**, joining the two QCOM shorts → **0/3 (0%)**. The Jul-1 LONGs (LITE $862, Samsung ₩334k, etc.) are 27 days — still open, not yet resolved. Three new priced longs added this run. Ratio remains dominated by the memory/optics late-July sell-off and is not yet representative of the author's (strong, unpriced) optics track record.
 139 analysis posts ingested (2024-01-06 -> 2026-07-02); ~554 ticker calls.
 
 - **[Market Memo] Hot Summer Topics (2026-07-02):** Five engineering notes. Ridiculed Applied Materials' CPO optics claims as "nonsense numbers" (NEUTRAL AMAT $608.29); **softened a long-held HBF short-thesis** to "could work" now that SLC will be used (NEUTRAL SNDK $1,745); flagged the InP CW-laser shortage as an "unmitigated disaster" and named the VCSEL-CPO watch (AVGO/COHR/LITE NEUTRAL); reiterated the ASML long (EUV intensity rising in DRAM, $1,759.59); stayed skeptical on Navitas SiC (SHORT NVTS $14.11). Two new open priced LONG/SHORT calls (ASML, NVTS).
