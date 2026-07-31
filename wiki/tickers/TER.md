@@ -2,13 +2,13 @@
 type: ticker
 title: "TER — Teradyne"
 tags: []
-related: ["[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-01-26-semis-memo-muscle-memory]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]"]
+related: ["[[semidoped-2026-07-29-daily-update]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-01-26-semis-memo-muscle-memory]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]"]
 created: 2024-07-08
-updated: 2026-05-12
+updated: 2026-07-31
 ticker: TER
 current_stance: long
 conviction: medium
-last_review: 2026-05-12
+last_review: 2026-07-31
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-05-12
 | 2026-01-31 | [[irrationalanalysis]] | LONG | n/a | Holds position in semicap basket |
 | 2026-04-30 | [[irrationalanalysis]] | LONG | n/a | Liked for CPO double-sided EIC+PIC test; waiting for $280 entry after guidance disappointment |
 | 2026-05-12 | [[semianalysis]] | MENTION | n/a | ATE supplier for post-silicon validation; every chip tapeout is a downstream demand event |
+| 2026-07-29 | [[semidoped]] | LONG | 365.49 | Beat + upbeat guide in the test/inspection sweep (with KLA/Advantest/ASM) |
 
 ## Thesis evolution
 The TER view has undergone a full arc across these publications: citrini established a long from mid-2024 on the straightforward premise that expanded AI chip production drives semiconductor test equipment demand, a thesis that matured by January 2026 into a more specific HBM memory-testing tailwind underwriting both the AI supply chain and robotics angles. Irrationalanalysis ran the most volatile path — neutral-to-cautious in early 2025 (investor day disaster, structurally inferior ATE product versus Advantest in HPC, mobile SoC weakness), then sharply bullish by September 2025 on four independent industry sources reporting Rubin ATE share gains from Advantest, then retreating to neutral by year-end before re-entering as part of a semicap basket in January 2026 and adding a specific CPO double-sided test catalyst by April 2026. Semianalysis provides structural background support without taking a directional view: its framing of every chip tapeout as a downstream ATE demand event confirms the secular demand story but offers no competitive differentiation between TER and Advantest. The two active bulls diverge on catalyst emphasis — citrini focuses on memory/HBM testing and robotics as compounding second-order AI trades, while irrationalanalysis is more focused on CPO test capability and the contested Nvidia share question — but are not in disagreement on direction.

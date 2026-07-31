@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-28
+updated: 2026-07-31
 handle: semianalysis
-calls_logged: 203
-hit_rate: "0/1 (0%), 12 open"
+calls_logged: 209
+hit_rate: "0/1 (0%), 17 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **The Wild Wild West of LEGO Datacenters (2026-07-29):** Definitive deep dive on modular/prefab datacenter construction (full body served unauthenticated). Trade-labor shortage (electricians, 2027) forces factory-built shells/power-skids/CDUs/white-space bolted together on site; bottom-up model = ~36% faster / ~8% cheaper/MW, but speed=revenue is the real prize. 80+ vendor universe; three integration models (operator/EPC/OEM); Nvidia DSX standardizes the AI-factory. New theme [[modular-datacenter-construction]]. Priced LONGs: [[FIX]] $1,697.84, [[STRL]] $580.73, [[VRT]] $227.50, [[PWR]] $657.98, [[FLEX]] $111.91, [[SU.PA]] EUR 284.60.
+
+**hit_rate note (2026-07-31):** still only one *resolved* priced call — the MU LONG ($1,057.59, Jun-23) sits at ~$875 → **LOSS**, so hit_rate holds at **0/1 (0%)**. The 2026-07-02 batch (META/CRWV/NBIS/ORCL/TSM/MRVL/INTC) is 29 days — resolves next run; the 07-25 AMD-article longs and the six new modular longs are open.
 
 - **Can AMD break the CUDA Moat? (2026-07-25):** Third AMD re-rating in a year — from 0% → non-zero → **"great chance of success"** at closing the CUDA gap, contingent on fixing Helios rack-ramp and internal GPU-cluster/CI shortage. MI455X leads on silicon (2nm, 432GB HBM4, largest CoWoS-L, active LSI). Priced LONGs: [[AMD]] $494.95, [[AVGO]] $383.22 (550+ retimers + 12 Tomahawk-6 per rack off AMD's weak SerDes), [[NVDA]] $196.51 (still leads; Rubin ships first), [[CBRS]] $188.61 (AMD PD-disagg deal).
 

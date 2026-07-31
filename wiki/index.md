@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-07-28
+updated: 2026-07-31
 ---
 
 # Wiki Index
@@ -144,6 +144,12 @@ updated: 2026-07-28
 - [[WDC]] — Western Digital
 - [[WOLF]] — Wolfspeed
 - [[WULF]] — WULF — TeraWulf
+- [[FIX]] — FIX — Comfort Systems USA (modular MEP integrator)
+- [[FLEX]] — FLEX — Flex Ltd (Anord Mardix modular power)
+- [[PWR]] — PWR — Quanta Services (Cupertino Electric integrator)
+- [[STRL]] — STRL — Sterling Infrastructure (modular E-infra)
+- [[SU.PA]] — SU.PA — Schneider Electric (EcoStruxure modular)
+- [[UMC]] — UMC — United Microelectronics (mature-node AI re-rate)
 
 ## Themes
 
@@ -178,6 +184,7 @@ updated: 2026-07-28
 - [[semiconductor-specialty-gases]] — Semiconductor Specialty Gases & Materials Supply Shocks
 - [[serdes-high-speed-connectivity]] — SerDes & High-Speed Connectivity
 - [[silicon-photonics-interconnects]] — Silicon Photonics & Optical Interconnects
+- [[modular-datacenter-construction]] — factory-built 'LEGO' datacenters; labor shortage + speed=revenue
 
 ## Queries
 
@@ -530,3 +537,9 @@ updated: 2026-07-28
 - [[semianalysis-2026-07-25-amd-cuda-moat-advancing-ai]] — Can AMD break the CUDA Moat? AMD Advancing AI 2026
 - [[semidoped-2026-07-25-datacenter-interconnects-pod]] — Podcast: Datacenter Interconnects (scale-up/out/across, CPO)
 - [[semidoped-2026-07-27-daily-update-july-27]] — Daily Update — July 27, 2026 (CXMT IPO, Korea $950B summit, HBM 'ugly baby')
+- [[irrationalanalysis-2026-07-30-apple-qualcomm-war]]
+- [[semianalysis-2026-07-29-lego-datacenters]]
+- [[semidoped-2026-07-28-daily-update]]
+- [[semidoped-2026-07-29-daily-update]]
+- [[semidoped-2026-07-29-news-take-pod]]
+- [[semidoped-2026-07-30-daily-update]]

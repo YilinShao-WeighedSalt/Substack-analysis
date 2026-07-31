@@ -2,13 +2,13 @@
 type: ticker
 title: "KLAC — KLA Corporation"
 tags: []
-related: ["[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2025-05-11-onto-innovation-implosion]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]"]
+related: ["[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2025-05-11-onto-innovation-implosion]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]"]
 created: 2024-01-03
-updated: 2026-01-31
+updated: 2026-07-31
 ticker: KLAC
 current_stance: long
 conviction: high
-last_review: 2026-01-31
+last_review: 2026-07-31
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,6 +20,7 @@ last_review: 2026-01-31
 | 2025-05-17 | [[irrationalanalysis]] | LONG | n/a | Preferred semicap name; process control intensity scales disproportionately with node complexity |
 | 2025-08-01 | [[irrationalanalysis]] | LONG | n/a | Wants to re-enter but believes Intel capex cuts are not yet priced in |
 | 2026-01-31 | [[irrationalanalysis]] | LONG | n/a | Would buy the dip caused by LRCX guidance misread; max leverage prevents adding |
+| 2026-07-29 | [[semidoped]] | LONG | 180.33 | Beat across the board; leading-edge inspection demand undimmed by the selloff |
 
 ## Thesis evolution
 The irrationalanalysis view on KLAC has moved in one direction — from cautious positive to high-conviction long — with the thesis becoming sharper and more differentiated at each step. Early mentions in 2024 frame KLAC as a generic WFE beneficiary of AI-driven capex, but the October 2024 call introduces the key structural argument: process-control intensity scales disproportionately with node complexity, giving KLAC a structural growth tailwind that is not simply cyclical. The May 2025 ONTO piece sharpens this into a specific competitive win: KLA re-purposed wafer process-control tools to dominate CoWoS-L advanced packaging inspection at TSMC, displacing ONTO on its home turf and forcing ONTO to compete with KLAC on process control — a fight ONTO cannot win. By Q2 2025 KLAC is irrationalanalysis's single preferred semicap name over AMAT. The only bearish datapoint across the log is the January 2024 semianalysis mention of CXMT export-control exposure, which is a downside risk rather than a negative thesis, and the August 2025 caution about Intel capex cuts not yet being priced in — a timing hedge, not a conviction shift. No other publication has published a bearish view on KLAC.

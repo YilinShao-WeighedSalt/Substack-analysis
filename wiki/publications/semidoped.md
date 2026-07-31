@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-07-28
+updated: 2026-07-31
 handle: semidoped
-calls_logged: 80
-hit_rate: "0/3 (0%), 12 open"
+calls_logged: 92
+hit_rate: "0/8 (0%), 9 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily updates Jul 28-30 + News-Take podcast (2026-07-28..30):** The late-July rout, read as overreaction. China domestic immersion DUV (~2008-class, ~5 tools 2026 vs ASML ~160) spooks Asia into circuit-breakers — hosts say 20 yrs behind ([[ASML]] NEUTRAL $1,651.44). SK Hynix record Q2 but -19% on a consensus miss ([[000660.KS]] LONG ₩1,651,000 — 'skittish consensus'); Samsung chip profit +250x, shortage to 2028 ([[005930.KS]] LONG ₩248,000). Passives bottleneck: SEMCO MLCC +30% ([[009150.KS]] LONG ₩1,142,000). Optics: Corning -20% on a fiber capacity ceiling not demand ([[GLW]] LONG $135.22). Power: Bloom first $1B qtr ([[BE]] LONG $207.12). Equipment sweep beats+raises: [[6857.T]] ¥32,830, [[KLAC]] $180.33, [[TER]] $365.49; [[CDNS]] $332.82 (EDA); [[UMC]] $18.94 (mature-node AI re-rate); [[NVTS]] $11.01 (GaN/SiC). Podcast: hyperscaler CDS/circular-financing worry vs Gavin Baker's ROI counter-take.
+
+**hit_rate note (2026-07-31): the June AI-hardware longs all resolved into the memory crash.** Eight priced June longs have crossed 30 days, every one a loss in the de-rating: AMD $507.29->485, AVGO $408.24->388, 000660.KS ₩2.58M->1.651M, INTC $134->91, MRVL $309->183, TSEM $287->211, 2454.TW 4,390->3,235 and 4,285->3,235 → **0 wins / 8 resolved = 0/8 (0%)**. The takes were fundamentally reasonable; timing into a top was brutal. Open: the 12 new calls above plus the Jul-3/06 longs (000660 ₩2.425M, 285A.T, SNDK, 2317.TW, INTC $120.94).
 
 - **Daily Update — July 27 (2026-07-27):** CXMT STAR debut +470% (China's largest A-share; pricing DDR5 above Samsung); Korea $950B AI summit (**$200B Broadcom-Samsung foundry/HBM MoU**, >$500B Nvidia-SK, $1B Nvidia-Naver); SK Hynix concedes **"HBM is not the answer"** to the memory wall; Infineon raises FY guide + opens world's-largest Dresden power fab; SK Hynix now Kioxia's de facto #2 holder (Bain $17B sale). Priced: [[000660.KS]] LONG ₩1,622,000, [[005930.KS]] LONG ₩231,000, [[285A.T]] NEUTRAL ¥44,560, [[IFX.DE]] LONG €61.49.
 - **Datacenter Interconnects podcast (2026-07-25):** Concept episode (scale-up/out/across, copper vs optics, CPO, NVLink vs UALink, 400G→1.6T). No calls — feeds [[co-packaged-optics]] / [[serdes-high-speed-connectivity]].

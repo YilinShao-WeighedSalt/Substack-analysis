@@ -1,0 +1,582 @@
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Substack Semi Brief — Jul 30, 2026</title>
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+ -webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:1080px;margin:0 auto;padding:22px 18px 60px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:26px;letter-spacing:-.02em;margin:0 0 3px}
+h2{font-size:15px;letter-spacing:.02em;text-transform:uppercase;color:var(--sec);margin:34px 0 12px;
+ font-weight:700;display:flex;align-items:center;gap:8px}
+h2::before{content:"";width:4px;height:15px;background:var(--accent);border-radius:2px;display:inline-block}
+a{color:var(--accent)}
+/* masthead */
+.mast{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:10px;
+ border-bottom:1px solid var(--border);padding-bottom:14px}
+.sub{color:var(--sec);font-size:13.5px}
+.srcs{display:flex;gap:14px;flex-wrap:wrap}
+.src{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--sec)}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.status{margin-top:12px;font-size:12.5px;color:var(--sec);background:var(--surface);border:1px solid var(--border);
+ border-radius:8px;padding:9px 12px}
+.status b{color:var(--ink)}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:6px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 15px}
+.tnum{font-size:32px;font-weight:750;letter-spacing:-.02em;line-height:1}
+.tlabx{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-top:6px}
+.biasbar{display:flex;height:10px;border-radius:5px;overflow:hidden;margin-top:9px;gap:2px}
+.biasbar span{display:block}
+.blegend{display:flex;gap:10px;font-size:11px;color:var(--sec);margin-top:6px;flex-wrap:wrap}
+.blegend b{color:var(--ink)}
+/* table */
+.board{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);
+ padding:9px 12px;border-bottom:1px solid var(--border);font-weight:700;background:var(--surface-2)}
+.tbl td{padding:9px 12px;border-bottom:1px solid var(--grid);vertical-align:middle}
+.tbl tr:last-child td{border-bottom:none}
+.tk{font-weight:700;font-size:13px;white-space:nowrap}
+.th{color:var(--sec);font-size:12.5px;line-height:1.4;min-width:240px}
+.px{white-space:nowrap;font-size:12.5px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:800;letter-spacing:.02em;white-space:nowrap}
+.chip .ic{font-size:9px}
+.pub{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--sec);white-space:nowrap}
+.spk{width:96px} .spk svg{display:block;width:96px;height:30px}
+.d3{font-size:11.5px;font-weight:700;white-space:nowrap}
+.gain{color:var(--gain)} .loss{color:var(--loss)}
+.note{font-size:11.5px;color:var(--muted);margin-top:8px}
+/* resolved */
+.resgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.rescard{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--base);border-radius:10px;padding:10px 12px}
+.rescard.gain{border-left-color:var(--gain)} .rescard.loss{border-left-color:var(--loss)}
+.resh{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:12px}
+.resb{display:flex;justify-content:space-between;align-items:baseline;margin-top:6px;font-size:12px;gap:8px}
+.pnl{font-weight:800;font-size:13px}
+.resn{font-size:11px;color:var(--muted);margin-top:4px}
+/* spotlights */
+.spots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:15px}
+.spoth{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.spott{font-weight:650;font-size:13.5px;color:var(--sec)}
+.tag{margin-left:auto;font-size:10px;font-weight:800;border:1px solid;border-radius:6px;padding:2px 7px;letter-spacing:.03em}
+.spotrow{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 4px}
+.spotprice{font-size:24px;font-weight:750;letter-spacing:-.02em}
+.spotprice .d3{font-size:12px;font-weight:700;margin-left:2px}
+.spotspk{flex:1;max-width:230px} .spotspk svg{display:block;width:100%;height:52px}
+.rangewrap{display:flex;align-items:center;gap:9px;margin-top:10px}
+.rl{font-size:11px;color:var(--muted);white-space:nowrap}
+.range{position:relative;flex:1;height:6px}
+.rfill{position:absolute;inset:0;background:var(--surface-2);border:1px solid var(--border);border-radius:3px}
+.rdot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--accent);
+ border:2px solid var(--surface);transform:translate(-50%,-50%)}
+.rcap{font-size:11px;color:var(--muted);margin-top:6px}
+.bullets{margin:10px 0 0;padding-left:16px;font-size:12.5px;color:var(--sec)}
+.bullets li{margin:5px 0}
+.bullets b{color:var(--ink)}
+/* source cards */
+.scards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.scard{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.sch{display:flex;align-items:center;gap:7px;font-size:14px;margin-bottom:9px}
+.meter{height:8px;background:var(--surface-2);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.mfill{height:100%;background:var(--accent);border-radius:4px}
+.mlab{font-size:11px;color:var(--muted);margin:5px 0 10px}
+.plist{list-style:none;margin:0;padding:0}
+.plist li{padding:8px 0;border-top:1px solid var(--grid)}
+.pt{font-size:12.5px;line-height:1.35}
+.pm{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:5px}
+.pd{font-size:10.5px;color:var(--muted)}
+.pchip{font-size:11px;color:var(--sec);display:inline-flex;align-items:center;gap:3px}
+.mc{font-size:8px}
+/* jargon */
+.jrow{display:grid;grid-template-columns:180px 1fr;gap:14px;padding:8px 0;border-top:1px solid var(--grid);font-size:12.5px}
+.jterm{font-weight:700;color:var(--ink)}
+.jdef{color:var(--sec)}
+/* themes */
+.themes{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.trow{display:grid;grid-template-columns:1fr 220px 26px;align-items:center;gap:12px;padding:5px 0}
+.tlab{font-size:12.5px;color:var(--sec)}
+.ttrack{height:14px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.tbar{height:100%;background:var(--accent);border-radius:4px}
+.tcount{font-size:12px;color:var(--muted);text-align:right}
+@media(max-width:820px){
+ .tiles{grid-template-columns:repeat(2,1fr)}
+ .spots,.scards,.resgrid{grid-template-columns:1fr}
+ .jrow{grid-template-columns:1fr;gap:2px}
+ .trow{grid-template-columns:1fr 90px 22px}
+ .th{min-width:0}
+ .tblwrap{overflow-x:auto} .tbl{min-width:660px}
+}
+</style>
+<div class="wrap">
+
+<div class="mast">
+ <div><h1>Substack Semi Intelligence Brief</h1>
+ <div class="sub">Scan window · Jul 28–30, 2026 &nbsp;|&nbsp; generated 2026-07-31</div></div>
+ <div class="srcs">
+  <span class="src"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span>
+  <span class="src"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span>
+  <span class="src"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span>
+ </div>
+</div>
+
+<div class="status"><b>Run status:</b> All 3 sources fetched OK — 6 new posts (IA ×1, SemiAnalysis ×1 full-body, Semi Doped ×4 incl. podcast). 20 tickers priced live via Yahoo chart API. <b>Analyst-consensus bars omitted</b> — Yahoo crumb host (fc.yahoo.com) 401-blocked by network policy; 52-wk range + sparklines shown instead. No fabricated data.</div>
+
+<h2>The state of play</h2>
+<div class="tiles">
+ <div class="tile"><div class="tnum">6</div><div class="tlabx">Posts scanned</div></div>
+ <div class="tile"><div class="tnum">20</div><div class="tlabx">Tickers priced</div></div>
+ <div class="tile"><div class="tnum">20</div><div class="tlabx">Calls logged</div>
+   <div class="biasbar"><span style="background:var(--long);flex:18" title="18 LONG"></span><span style="background:var(--neutral);flex:1"></span><span style="background:var(--short);flex:1"></span></div>
+   <div class="blegend"><span>▲ <b>18</b> Long</span><span>● <b>1</b> Neutral</span><span>▼ <b>1</b> Short</span></div>
+ </div>
+ <div class="tile"><div class="tnum loss">0/9</div><div class="tlabx">Bull calls resolved green*</div>
+   <div class="note" style="margin-top:6px">*late-July memory/AI de-rating; only IA's QCOM short (×2) won</div></div>
+</div>
+
+<h2>Call board — this run</h2>
+<div class="board tblwrap"><table class="tbl">
+<thead><tr><th>Ticker</th><th>Call</th><th>Source</th><th>Thesis</th><th>px@call</th><th>3-mo</th><th>Δ3mo</th></tr></thead>
+<tbody>
+<tr>
+<td class="mono tk">QCOM</td>
+<td><span class="chip" style="color:var(--short)"><span class="ic">▼</span>SHORT</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></td>
+<td class="th">Apple accelerating full modem design-out into the Apr-2027 QTL cliff; memory crisis gutting Android; 'Dragonfly' DC play is RTL-only slideware</td>
+<td class="mono px">$151.60</td>
+<td class="spk" data-sym="QCOM" data-color="var(--short)"></td>
+<td class="mono d3 loss">▼16%</td>
+</tr>
+<tr>
+<td class="mono tk">2454.TW</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></td>
+<td class="th">The datacenter counter to QCOM — 'real scale, real accretive GM' TPU/ASIC business vs Qualcomm's vaporware</td>
+<td class="mono px">NT$3,235</td>
+<td class="spk" data-sym="2454.TW" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲24%</td>
+</tr>
+<tr>
+<td class="mono tk">FIX</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">MEP integrator turning others' gear into factory modules — 'Modular Capex is the moat'; 3.5M+ sq ft of shop floor</td>
+<td class="mono px">$1,697.84</td>
+<td class="spk" data-sym="FIX" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼8%</td>
+</tr>
+<tr>
+<td class="mono tk">STRL</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">Modular infra pure-play: quadrupled TAM (TX/PNW/Midwest), ~2× content/MW via CEC attach, ~$6B run-rate in view</td>
+<td class="mono px">$580.73</td>
+<td class="spk" data-sym="STRL" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲13%</td>
+</tr>
+<tr>
+<td class="mono tk">VRT</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">OEM-led full-stack (OneCore/MegaMod) lifts content from ~$3.5M to ~$7M per MW; 12-mo lead times = pricing power</td>
+<td class="mono px">$227.50</td>
+<td class="spk" data-sym="VRT" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼31%</td>
+</tr>
+<tr>
+<td class="mono tk">PWR</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">Owns Cupertino Electric, prime integrator for AWS Project Houdini prefab white-space skids</td>
+<td class="mono px">$657.98</td>
+<td class="spk" data-sym="PWR" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼10%</td>
+</tr>
+<tr>
+<td class="mono tk">FLEX</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">Anord Mardix modular power pods + white-space factory line — a core subsystem-modular beneficiary</td>
+<td class="mono px">$111.91</td>
+<td class="spk" data-sym="FLEX" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲22%</td>
+</tr>
+<tr>
+<td class="mono tk">SU.PA</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></td>
+<td class="th">EcoStruxure pods (40 racks, 30+ Nvidia ref designs) + turnkey; captures double-margin as OEM-integrator</td>
+<td class="mono px">€284.60</td>
+<td class="spk" data-sym="SU.PA" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼4%</td>
+</tr>
+<tr>
+<td class="mono tk">000660.KS</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Record Q2 (₩60.5T op profit, +257% rev, 76% margin) + 5-yr LTAs incl Nvidia; -19% selloff is skittish consensus, not thesis breakage</td>
+<td class="mono px">₩1651k</td>
+<td class="spk" data-sym="000660.KS" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲28%</td>
+</tr>
+<tr>
+<td class="mono tk">005930.KS</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Chip profit +250×; sees shortage to 2028; signing multi-year hyperscaler supply locks</td>
+<td class="mono px">₩248k</td>
+<td class="spk" data-sym="005930.KS" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲12%</td>
+</tr>
+<tr>
+<td class="mono tk">009150.KS</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">MLCC +30% Aug-1 hike; the 47µF bottleneck part with 7× demand growth — 'bottleneck trade at new heights'</td>
+<td class="mono px">₩1142k</td>
+<td class="spk" data-sym="009150.KS" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲37%</td>
+</tr>
+<tr>
+<td class="mono tk">GLW</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Fiber capacity ceiling, not demand — 'like TSMC': revenue = how fast capacity adds × ASP; buy the fundamentals</td>
+<td class="mono px">$135.22</td>
+<td class="spk" data-sym="GLW" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼18%</td>
+</tr>
+<tr>
+<td class="mono tk">BE</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">First $1B quarter (~2× est), raised guide; behind-the-meter fuel cells beat multi-year grid interconnect queues</td>
+<td class="mono px">$207.12</td>
+<td class="spk" data-sym="BE" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼27%</td>
+</tr>
+<tr>
+<td class="mono tk">6857.T</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Record profit + raised FY on AI test demand — 'don't let the pullback fool you'</td>
+<td class="mono px">¥32,830</td>
+<td class="spk" data-sym="6857.T" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲16%</td>
+</tr>
+<tr>
+<td class="mono tk">TER</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Beat + upbeat guide in the test/inspection sweep alongside KLA/Advantest/ASM</td>
+<td class="mono px">$365.49</td>
+<td class="spk" data-sym="TER" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲6%</td>
+</tr>
+<tr>
+<td class="mono tk">KLAC</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Beat across the board; leading-edge inspection demand undimmed by the selloff</td>
+<td class="mono px">$180.33</td>
+<td class="spk" data-sym="KLAC" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲3%</td>
+</tr>
+<tr>
+<td class="mono tk">CDNS</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Beat + raise; EDA duopoly's AI-design tailwind (tape-out volume) intact — 'EDA isn't dead because of AI'</td>
+<td class="mono px">$332.82</td>
+<td class="spk" data-sym="CDNS" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲1%</td>
+</tr>
+<tr>
+<td class="mono tk">UMC</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Mature-node foundry lifts capex to $5B, targets $1B AI rev, silicon photonics already in production</td>
+<td class="mono px">$18.94</td>
+<td class="spk" data-sym="UMC" data-color="var(--long)"></td>
+<td class="mono d3 gain">▲45%</td>
+</tr>
+<tr>
+<td class="mono tk">NVTS</td>
+<td><span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">Q2 rev +22% QoQ, high-power +50% YoY — GaN/SiC demand from AI/DC confirmed</td>
+<td class="mono px">$11.01</td>
+<td class="spk" data-sym="NVTS" data-color="var(--long)"></td>
+<td class="mono d3 loss">▼33%</td>
+</tr>
+<tr>
+<td class="mono tk">ASML</td>
+<td><span class="chip" style="color:var(--neutral)"><span class="ic">●</span>NEUTRAL</span></td>
+<td><span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></td>
+<td class="th">China's domestic immersion DUV (≈2008 NXT:1950i-class, ~5 tools '26 vs ASML's ~160) is 20 yrs behind — no near-term threat</td>
+<td class="mono px">$1,651.44</td>
+<td class="spk" data-sym="ASML" data-color="var(--neutral)"></td>
+<td class="mono d3 gain">▲15%</td>
+</tr>
+</tbody></table></div>
+<div class="note">px@call = live price at log time (calls are 1–3 days old, so P&L-to-call ≈ 0 — the sparkline + Δ3mo show the trend the call is stepping into). Book is overwhelmingly long the buildout / buy-the-dip, with IA's lone QCOM short the contrarian.</div>
+
+<h2>Resolved this cycle — how the last calls played out</h2>
+<div class="resgrid">
+<div class="rescard gain">
+<div class="resh"><span class="mono tk">QCOM</span> <span class="chip" style="color:var(--short)"><span class="ic">▼</span>SHORT</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$177.00 → $151.60</span>
+<span class="mono pnl gain">✓ +14%</span></div>
+<div class="resn">Apr-26 short — Apple cliff finally biting</div>
+</div>
+<div class="rescard gain">
+<div class="resh"><span class="mono tk">QCOM</span> <span class="chip" style="color:var(--short)"><span class="ic">▼</span>SHORT</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$163.08 → $151.60</span>
+<span class="mono pnl gain">✓ +7%</span></div>
+<div class="resn">Oct-24 short — ~2yr thesis vindicated</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">CBRS</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$226.72 → $203.07</span>
+<span class="mono pnl loss">✗ -10%</span></div>
+<div class="resn">Jun-24 WSE long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">005930.KS</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">₩334k → ₩248k</span>
+<span class="mono pnl loss">✗ -26%</span></div>
+<div class="resn">Jul-1 Samsung DRAM long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">LITE</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$862.00 → $693.24</span>
+<span class="mono pnl loss">✗ -20%</span></div>
+<div class="resn">Jul-1 optics 'cold dead hands'</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">CIEN</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$477.59 → $372.07</span>
+<span class="mono pnl loss">✗ -22%</span></div>
+<div class="resn">Jul-1 Nvidia long-haul tip</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">INTC</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">$139.63 → $91.13</span>
+<span class="mono pnl loss">✗ -35%</span></div>
+<div class="resn">Jul-1 held core</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">7220.T</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-irrational)"></span>irrationalanalysis</span></div>
+<div class="resb"><span class="mono">¥5,520 → ¥3,355</span>
+<span class="mono pnl loss">✗ -39%</span></div>
+<div class="resn">Jul-1 Musashi supercap add</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">MU</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semianalysis)"></span>semianalysis</span></div>
+<div class="resb"><span class="mono">$1,057.59 → $874.66</span>
+<span class="mono pnl loss">✗ -17%</span></div>
+<div class="resn">Jun-23 memory long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">AMD</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">$507.29 → $485.39</span>
+<span class="mono pnl loss">✗ -4%</span></div>
+<div class="resn">Jun-16 CUDA-crack long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">AVGO</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">$408.24 → $387.84</span>
+<span class="mono pnl loss">✗ -5%</span></div>
+<div class="resn">Jun-18 arms-dealer long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">000660.KS</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">₩2580k → ₩1651k</span>
+<span class="mono pnl loss">✗ -36%</span></div>
+<div class="resn">Jun-24 HBM long</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">INTC</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">$134.00 → $91.13</span>
+<span class="mono pnl loss">✗ -32%</span></div>
+<div class="resn">Jun-19 IFS turnaround</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">MRVL</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">$309.00 → $183.30</span>
+<span class="mono pnl loss">✗ -41%</span></div>
+<div class="resn">Jun-19 coherent optics</div>
+</div>
+<div class="rescard loss">
+<div class="resh"><span class="mono tk">2454.TW</span> <span class="chip" style="color:var(--long)"><span class="ic">▲</span>LONG</span> <span class="pub"><span class="dot" style="background:var(--pub-semidoped)"></span>semidoped</span></div>
+<div class="resb"><span class="mono">NT$4,390 → NT$3,235</span>
+<span class="mono pnl loss">✗ -26%</span></div>
+<div class="resn">Jun-19 TPU/EMIB long</div>
+</div>
+</div>
+<div class="note">Sign-flipped so ▲green = the call worked. The late-July memory/optics/AI-hardware crash turned nearly every June–July <i>long</i> into a 30-day loss; the standout winner is IA's multi-year QCOM <b>short</b>, finally in the money as Qualcomm broke to −42% from its high.</div>
+
+<h2>Ticker spotlights</h2>
+<div class="spots">
+<div class="spot">
+<div class="spoth"><span class="mono tk">QCOM</span><span class="spott">Qualcomm — the short finally bites</span>
+<span class="tag" style="border-color:var(--pub-irrational);color:var(--pub-irrational)">IA · SHORT</span></div>
+<div class="spotrow"><div class="spotprice mono">$151.60<span class="d3 loss"> ▼16% 3mo</span></div>
+<div class="spotspk" data-sym="QCOM" data-color="var(--pub-irrational)" data-ref="1"></div></div>
+<div class="rangewrap"><span class="mono rl">$122</span>
+<div class="range"><div class="rfill"></div><div class="rdot" style="left:21.5%"></div></div>
+<span class="mono rl">$260</span></div>
+<div class="rcap mono">21% of 52-wk range · -42% vs high</div>
+<ul class="bullets"><li>IA's ~2-yr persistent SHORT is <b>in the money at last</b>: both priced entries ($163, $177) now green as QCOM sits −42% from its high.</li><li>Falsifier: a real datacenter design-win or an Apple QTL extension. Confidence <b>HIGH</b> — Akash conceded the modem-margin hit on the call.</li></ul></div><div class="spot">
+<div class="spoth"><span class="mono tk">000660.KS</span><span class="spott">SK Hynix — record quarter, record one-day drop</span>
+<span class="tag" style="border-color:var(--pub-semidoped);color:var(--pub-semidoped)">SD · LONG</span></div>
+<div class="spotrow"><div class="spotprice mono">₩1651k<span class="d3 gain"> ▲28% 3mo</span></div>
+<div class="spotspk" data-sym="000660.KS" data-color="var(--pub-semidoped)" data-ref="1"></div></div>
+<div class="rangewrap"><span class="mono rl">₩245k</span>
+<div class="range"><div class="rfill"></div><div class="rdot" style="left:51.3%"></div></div>
+<span class="mono rl">₩2987k</span></div>
+<div class="rcap mono">51% of 52-wk range · -45% vs high</div>
+<ul class="bullets"><li>76% op-margin, +257% rev, 5-yr LTAs incl Nvidia — yet −19% on a <i>consensus</i> miss. SD reads it as skittish positioning, not demand.</li><li>Watch: at the same summit Hynix's own exec said <b>'HBM is not the answer'</b>; CXMT + Korea's capacity-doubling are the 2027 oversupply tail. Confidence MEDIUM.</li></ul></div><div class="spot">
+<div class="spoth"><span class="mono tk">VRT</span><span class="spott">Vertiv — modular content grab</span>
+<span class="tag" style="border-color:var(--pub-semianalysis);color:var(--pub-semianalysis)">SA · LONG</span></div>
+<div class="spotrow"><div class="spotprice mono">$227.50<span class="d3 loss"> ▼31% 3mo</span></div>
+<div class="spotspk" data-sym="VRT" data-color="var(--pub-semianalysis)" data-ref="1"></div></div>
+<div class="rangewrap"><span class="mono rl">$119</span>
+<div class="range"><div class="rfill"></div><div class="rdot" style="left:41.6%"></div></div>
+<span class="mono rl">$380</span></div>
+<div class="rcap mono">42% of 52-wk range · -40% vs high</div>
+<ul class="bullets"><li>The 'LEGO datacenter' thesis names VRT the OEM-led winner: full-stack modules push captured content from ~$3.5M to ~$7M/MW.</li><li>But VRT is −40% from its high and 12-mo lead times cut both ways. SA prior LONG ($334, Jun-18) is <b>underwater −32%</b>. Confidence MEDIUM.</li></ul></div><div class="spot">
+<div class="spoth"><span class="mono tk">FIX</span><span class="spott">Comfort Systems — 'modular capex is the moat'</span>
+<span class="tag" style="border-color:var(--pub-semianalysis);color:var(--pub-semianalysis)">SA · LONG</span></div>
+<div class="spotrow"><div class="spotprice mono">$1,697.84<span class="d3 loss"> ▼8% 3mo</span></div>
+<div class="spotspk" data-sym="FIX" data-color="var(--pub-semianalysis)" data-ref="1"></div></div>
+<div class="rangewrap"><span class="mono rl">$656</span>
+<div class="range"><div class="rfill"></div><div class="rdot" style="left:73.5%"></div></div>
+<span class="mono rl">$2,074</span></div>
+<div class="rcap mono">73% of 52-wk range · -18% vs high</div>
+<ul class="bullets"><li>Vendor-agnostic MEP integrator: hyperscalers keep their own designs, hand FIX the factory build. 3.5M+ sq ft shop floor = the scarce asset.</li><li>Most resilient of the modular names (−18% from high vs −40%+ for peers). Thesis holds if factory capacity, not demand, stays the binding constraint. Confidence MEDIUM.</li></ul></div></div>
+
+<h2>Source scorecards</h2>
+<div class="scards">
+<div class="scard" style="border-top:3px solid var(--pub-irrational)">
+<div class="sch"><span class="dot" style="background:var(--pub-irrational)"></span><b>irrationalanalysis</b></div>
+<div class="meter"><div class="mfill" style="width:18%"></div></div><div class="mono mlab">2 / 11 (18%) resolved</div>
+<ul class="plist"><li><div class="pt">Preview of a new war between Apple and Qualcomm</div><div class="pm"><span class="mono pd">Jul 30</span><span class="mono pchip"><span class="mc" style="color:var(--short)">▼</span>QCOM</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>2454.TW</span></div></li></ul></div><div class="scard" style="border-top:3px solid var(--pub-semianalysis)">
+<div class="sch"><span class="dot" style="background:var(--pub-semianalysis)"></span><b>semianalysis</b></div>
+<div class="meter"><div class="mfill" style="width:0%"></div></div><div class="mono mlab">0 / 1 (0%) resolved</div>
+<ul class="plist"><li><div class="pt">The Wild Wild West of LEGO Datacenters</div><div class="pm"><span class="mono pd">Jul 29</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>FIX</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>STRL</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>VRT</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>PWR</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>FLEX</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>SU.PA</span></div></li></ul></div><div class="scard" style="border-top:3px solid var(--pub-semidoped)">
+<div class="sch"><span class="dot" style="background:var(--pub-semidoped)"></span><b>semidoped</b></div>
+<div class="meter"><div class="mfill" style="width:0%"></div></div><div class="mono mlab">0 / 8 (0%) resolved</div>
+<ul class="plist"><li><div class="pt">Daily Update — Jul 30</div><div class="pm"><span class="mono pd">Jul 30</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>009150.KS</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>6857.T</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>UMC</span></div></li><li><div class="pt">News Take podcast: CDS, Hynix, China DUV</div><div class="pm"><span class="mono pd">Jul 29</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>000660.KS</span><span class="mono pchip"><span class="mc" style="color:var(--neutral)">●</span>ASML</span></div></li><li><div class="pt">Daily Update — Jul 29</div><div class="pm"><span class="mono pd">Jul 29</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>GLW</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>BE</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>TER</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>KLAC</span></div></li><li><div class="pt">Daily Update — Jul 28</div><div class="pm"><span class="mono pd">Jul 28</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>CDNS</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>NVTS</span><span class="mono pchip"><span class="mc" style="color:var(--long)">▲</span>005930.KS</span></div></li></ul></div></div>
+<div class="note">hit_rate = resolved priced calls (≥30 days old) that moved in the called direction ÷ resolved. NEUTRAL excluded. Ratios are dominated by the late-July sell-off and thin sample — not yet representative of these authors' longer (largely unpriced) track records.</div>
+
+<h2>Jargon decoder</h2>
+<div class="jargon">
+<div class="jrow"><div class="jterm">HBM (High-Bandwidth Memory)</div><div class="jdef">DRAM stacked vertically next to a GPU for huge bandwidth; the scarcest, highest-margin AI memory. SK Hynix leads via MR-MUF packaging.</div></div>
+<div class="jrow"><div class="jterm">LTA (Long-Term Agreement)</div><div class="jdef">Multi-year supply-and-price contract; SK Hynix/Samsung signing them with hyperscalers to lock in shortage-era pricing to ~2028.</div></div>
+<div class="jrow"><div class="jterm">MLCC</div><div class="jdef">Multi-layer ceramic capacitor — tiny passive part; AI servers need thousands. The 47µF/1005 unit is the current bottleneck (7× demand growth).</div></div>
+<div class="jrow"><div class="jterm">Immersion DUV</div><div class="jdef">Deep-ultraviolet lithography using a water lens; prints 28nm single-pass, ~7nm via multi-patterning. China's new domestic tool ≈ ASML's 2008 model.</div></div>
+<div class="jrow"><div class="jterm">QTL</div><div class="jdef">Qualcomm's patent-licensing arm — its highest-margin cash engine. The Apple licensing deal expires Apr-1-2027, the crux of the modem 'war'.</div></div>
+<div class="jrow"><div class="jterm">Modem design-out</div><div class="jdef">A phone maker replacing Qualcomm's cellular modem with its own; Apple's C1 ramp is the multi-year QCOM revenue cliff.</div></div>
+<div class="jrow"><div class="jterm">Modular / prefab DC</div><div class="jdef">Building datacenters from factory-made blocks (power skids, cooling CDUs, white-space pods) bolted together on-site — ~36% faster, ~8% cheaper.</div></div>
+<div class="jrow"><div class="jterm">Content per MW</div><div class="jdef">Dollars a vendor captures per megawatt of datacenter. Vertiv's full-stack modular push doubles it from ~$3.5M to ~$7M/MW.</div></div>
+<div class="jrow"><div class="jterm">BTM (behind-the-meter)</div><div class="jdef">On-site power (fuel cells, gas) that skips the multi-year grid-interconnect queue; Bloom Energy's core AI-datacenter pitch.</div></div>
+<div class="jrow"><div class="jterm">CDS (credit default swap)</div><div class="jdef">Insurance on a borrower's debt; widening hyperscaler CDS spreads = debt markets nervous about AI-capex 'circular financing'.</div></div>
+<div class="jrow"><div class="jterm">EDA</div><div class="jdef">Electronic design automation (Cadence/Synopsys duopoly) — the software to design chips; revenue tracks tape-out volume, rising with the AI-ASIC boom.</div></div>
+<div class="jrow"><div class="jterm">Nvidia DSX</div><div class="jdef">Nvidia's reference blueprint for an entire AI-factory (compute+power+cooling+civil) as a digital twin — standardizes the modular datacenter.</div></div>
+</div>
+
+<h2>Themes in play</h2>
+<div class="themes">
+<div class="trow"><div class="tlab">Memory supercycle / HBM–DRAM shortage → 2028</div>
+<div class="ttrack"><div class="tbar" style="width:100.0%"></div></div>
+<div class="mono tcount">9</div></div>
+<div class="trow"><div class="tlab">Semiconductor equipment upcycle (test/etch/litho)</div>
+<div class="ttrack"><div class="tbar" style="width:88.9%"></div></div>
+<div class="mono tcount">8</div></div>
+<div class="trow"><div class="tlab">Modular / prefab 'LEGO' datacenter construction</div>
+<div class="ttrack"><div class="tbar" style="width:77.8%"></div></div>
+<div class="mono tcount">7</div></div>
+<div class="trow"><div class="tlab">Datacenter power & behind-the-meter generation</div>
+<div class="ttrack"><div class="tbar" style="width:55.6%"></div></div>
+<div class="mono tcount">5</div></div>
+<div class="trow"><div class="tlab">Optics & fiber capacity ceiling</div>
+<div class="ttrack"><div class="tbar" style="width:44.4%"></div></div>
+<div class="mono tcount">4</div></div>
+<div class="trow"><div class="tlab">China DUV & export controls</div>
+<div class="ttrack"><div class="tbar" style="width:44.4%"></div></div>
+<div class="mono tcount">4</div></div>
+<div class="trow"><div class="tlab">Apple–Qualcomm modem war / IP licensing</div>
+<div class="ttrack"><div class="tbar" style="width:33.3%"></div></div>
+<div class="mono tcount">3</div></div>
+<div class="trow"><div class="tlab">Hyperscaler debt / CDS / circular financing</div>
+<div class="ttrack"><div class="tbar" style="width:33.3%"></div></div>
+<div class="mono tcount">3</div></div>
+<div class="trow"><div class="tlab">Passive components / MLCC / glass substrates</div>
+<div class="ttrack"><div class="tbar" style="width:33.3%"></div></div>
+<div class="mono tcount">3</div></div>
+</div>
+
+<div class="note" style="margin-top:26px">Not investment advice. Newsletter opinions are the authors'; prices are live Yahoo Finance closes. Built by an automated 3-day scan loop with persistent wiki memory.</div>
+</div>
+
+<script>
+const PRICES = {
+  "QCOM": {"price":151.6,"hi52":259.92,"lo52":121.99,"cur":"USD","closes":[179.58,177.01,168.38,186.55,192.57,202.55,219.09,237.53,210.31,213.17,200.08,201.49,203.64,195.61,202.51,213.41,238.16,248.82,233.4,243.29,251.02,228.99,240.84,250.01,242.57,215.94,217.77,205.42,191.2,202.96,211.72,220.81,214.07,212.97,226.11,221.9,204.13,197.41,204.9,189.39,188.72,184.79,181.92,176.25,186.48,182.97,186.56,191.11,189.16,183.98,178.1,177.98,170.61,171.78,170.32,173.5,175.63,171.11,166.97,170.04,162.88,155.68,151.6]},
+  "2454.TW": {"price":3235.0,"hi52":4970.0,"lo52":1130.0,"cur":"TWD","closes":[2610.0,2870.0,3155.0,3430.0,3420.0,3630.0,3880.0,3700.0,3495.0,3405.0,3260.0,3400.0,3155.0,3230.0,3550.0,3860.0,4245.0,4265.0,4640.0,4410.0,4310.0,4555.0,4525.0,4545.0,4430.0,4300.0,4070.0,4475.0,4155.0,4085.0,4180.0,4470.0,4560.0,4460.0,4390.0,4465.0,4535.0,4285.0,4310.0,3880.0,3910.0,4245.0,4335.0,4345.0,4195.0,4125.0,4030.0,3995.0,3925.0,3925.0,3825.0,3660.0,3740.0,3700.0,3370.0,3340.0,3670.0,3850.0,3875.0,3750.0,3680.0,3315.0,3150.0,3235.0]},
+  "FIX": {"price":1697.84,"hi52":2073.99,"lo52":655.96,"cur":"USD","closes":[1840.25,1867.02,1891.95,1967.24,2011.49,1942.02,1952.37,2032.98,2016.31,2034.63,2042.36,1992.74,1854.43,1825.5,1835.51,1835.33,1828.25,1883.56,1867.09,1855.15,1828.21,1787.88,1883.26,1850.04,1914.65,1843.94,1852.03,1831.56,1719.48,1843.42,1877.61,1952.02,1913.94,1931.77,1967.41,2066.51,1908.07,1954.47,2017.57,1854.23,1948.69,1981.95,1865.15,1741.3,1793.03,1683.44,1684.94,1781.42,1756.09,1732.03,1775.1,1736.7,1680.6,1674.06,1712.18,1773.51,1791.06,1831.15,1733.6,1730.42,1626.32,1519.96,1697.84]},
+  "STRL": {"price":580.73,"hi52":1005.68,"lo52":244.02,"cur":"USD","closes":[515.62,532.67,529.49,806.0,886.22,811.41,844.8,868.18,851.35,854.28,889.03,848.84,770.76,728.29,752.0,733.77,732.94,783.53,782.12,842.96,860.84,845.39,875.52,957.03,993.74,882.43,891.86,842.01,770.25,838.55,858.99,866.67,857.76,838.21,861.88,932.75,892.25,867.23,881.92,804.76,813.77,839.36,776.55,700.75,717.11,674.39,660.72,707.17,682.29,660.04,679.62,668.82,641.35,638.56,650.22,694.4,719.34,717.34,660.94,634.63,538.09,494.24,580.73]},
+  "VRT": {"price":227.5,"hi52":379.935,"lo52":118.7,"cur":"USD","closes":[328.49,328.31,330.97,341.02,358.92,340.01,339.97,367.92,367.13,369.99,376.23,370.94,339.73,322.63,315.67,323.4,327.46,323.91,319.78,314.18,315.71,323.39,334.49,331.44,323.92,300.51,300.57,289.52,280.98,297.88,302.87,311.93,299.6,317.58,333.05,357.96,318.32,316.43,325.57,303.95,306.97,334.82,311.42,300.53,318.47,305.58,317.81,323.92,318.86,305.87,303.58,304.57,294.11,289.56,291.67,304.5,301.16,304.04,290.36,287.6,269.56,223.04,227.5]},
+  "PWR": {"price":657.98,"hi52":788.75,"lo52":363.01,"cur":"USD","closes":[727.77,742.21,757.34,771.61,785.24,750.73,745.0,781.38,765.81,773.72,780.08,769.99,723.03,714.13,709.93,716.91,723.44,742.18,733.62,730.1,711.73,687.48,706.06,715.67,719.17,695.11,693.81,691.95,650.92,683.29,707.74,724.35,719.29,714.85,702.25,740.14,702.29,701.88,718.59,687.87,714.45,720.04,691.4,668.31,674.04,656.79,666.33,668.17,658.56,646.7,660.94,648.84,631.02,628.53,632.56,639.2,643.14,653.8,625.84,620.28,588.36,561.14,657.98]},
+  "FLEX": {"price":111.91,"hi52":166.86,"lo52":47.83,"cur":"USD","closes":[91.55,91.7,91.84,96.45,134.73,133.01,142.17,145.07,139.69,143.8,143.6,137.86,129.73,126.29,131.52,131.07,132.47,143.24,145.79,144.85,150.78,148.01,159.43,161.94,159.51,151.92,150.83,147.21,139.49,151.99,149.71,149.22,146.93,143.13,147.61,155.81,151.85,150.72,161.28,146.7,159.56,162.07,153.53,136.86,138.65,131.52,133.37,139.94,135.8,129.5,132.24,128.72,121.12,119.25,119.91,127.39,127.0,127.94,118.51,116.07,113.28,103.02,111.91]},
+  "SU.PA": {"price":284.6,"hi52":293.7,"lo52":208.8,"cur":"EUR","closes":[268.6,260.55,272.95,282.7,275.2,272.6,274.65,265.3,268.4,270.95,263.75,260.95,255.8,264.6,264.6,269.05,277.3,273.2,268.95,267.25,269.95,276.2,287.15,283.45,281.85,269.05,270.5,263.45,257.7,264.3,265.3,270.15,276.95,282.75,291.0,289.25,292.75,279.5,280.5,279.55,276.05,278.1,285.4,276.65,275.9,280.1,278.35,268.0,263.8,270.0,269.65,268.55,273.1,270.15,264.35,262.45,264.7,268.8,269.0,265.4,268.05,265.6,262.0,256.8]},
+  "000660.KS": {"price":1651000.0,"hi52":2987000.0,"lo52":245000.0,"cur":"KRW","closes":[1286000.0,1447000.0,1601000.0,1654000.0,1686000.0,1880000.0,1835000.0,1976000.0,1970000.0,1819000.0,1840000.0,1745000.0,1745000.0,1940000.0,1941000.0,2052000.0,2243000.0,2289000.0,2333000.0,2363000.0,2360000.0,2298000.0,2070000.0,1911000.0,2215000.0,2048000.0,2101000.0,2150000.0,2288000.0,2382000.0,2521000.0,2685000.0,2764000.0,2919000.0,2555000.0,2621000.0,2917000.0,2673000.0,2628000.0,2650000.0,2560000.0,2187000.0,2425000.0,2343000.0,2201000.0,2076000.0,2186000.0,2180000.0,1845000.0,1913000.0,2082000.0,1842000.0,1764000.0,1836000.0,1830000.0,1919000.0,1759000.0,1816000.0,1550000.0,1401000.0,1322000.0,1651000.0]},
+  "005930.KS": {"price":248000.0,"hi52":374500.0,"lo52":67500.0,"cur":"KRW","closes":[220500.0,232500.0,266000.0,271500.0,268500.0,285500.0,279000.0,284000.0,296000.0,270500.0,281000.0,275500.0,276000.0,299500.0,292500.0,299000.0,307000.0,299500.0,317000.0,349000.0,360500.0,351500.0,329000.0,295500.0,322000.0,302500.0,299000.0,322500.0,337000.0,343000.0,346500.0,362500.0,354000.0,353500.0,310000.0,340500.0,358500.0,339500.0,323000.0,334000.0,314500.0,286000.0,309500.0,318000.0,296000.0,277500.0,278000.0,285000.0,254500.0,263000.0,279500.0,255000.0,244000.0,259000.0,260500.0,270000.0,249500.0,254000.0,220000.0,208500.0,207000.0,248000.0]},
+  "009150.KS": {"price":1142000.0,"hi52":2417000.0,"lo52":142600.0,"cur":"KRW","closes":[832000.0,918000.0,912000.0,917000.0,914000.0,900000.0,958000.0,1029000.0,1024000.0,1010000.0,1031000.0,987000.0,1061000.0,1204000.0,1340000.0,1572000.0,1630000.0,1849000.0,2127000.0,2005000.0,1813000.0,1716000.0,1757000.0,1664000.0,1970000.0,1805000.0,1805000.0,1714000.0,1999000.0,2048000.0,2032000.0,2200000.0,2270000.0,2228000.0,1990000.0,1964000.0,1997000.0,1993000.0,2038000.0,2184000.0,2205000.0,1926000.0,1989000.0,1828000.0,1648000.0,1479000.0,1493000.0,1584000.0,1289000.0,1260000.0,1413000.0,1277000.0,1275000.0,1310000.0,1345000.0,1448000.0,1326000.0,1325000.0,1114000.0,1029000.0,879000.0,1142000.0]},
+  "GLW": {"price":135.22,"hi52":271.78,"lo52":61.44,"cur":"USD","closes":[164.24,158.26,159.96,162.1,181.57,182.4,186.94,207.39,198.24,206.51,208.28,191.81,178.55,175.83,180.69,191.89,194.05,196.17,190.89,182.97,181.16,176.7,200.4,200.76,197.7,177.58,187.54,173.94,168.17,176.55,179.2,187.88,177.42,175.4,194.92,209.83,194.07,205.83,228.01,221.05,255.69,255.43,220.63,196.79,194.8,185.38,184.03,192.38,190.89,183.11,187.64,174.41,158.39,154.61,153.1,162.41,154.06,156.06,146.65,143.36,126.01,124.05,135.22]},
+  "BE": {"price":207.12,"hi52":351.28,"lo52":32.52,"cur":"USD","closes":[283.36,290.52,288.64,295.25,285.47,258.64,261.03,283.92,280.69,289.76,303.41,275.95,258.71,261.34,282.31,307.88,302.49,302.4,293.8,290.01,285.0,273.51,302.85,287.32,291.37,263.61,253.57,259.61,234.23,248.88,260.22,274.5,280.88,284.99,328.91,345.85,321.98,326.19,309.18,252.02,275.01,302.7,289.5,270.89,295.05,269.57,254.29,257.02,244.61,233.49,243.4,239.38,206.73,214.96,197.06,226.26,218.22,217.3,184.89,188.18,166.84,163.75,207.12]},
+  "ASML": {"price":1651.44,"hi52":1999.96,"lo52":683.48,"cur":"USD","closes":[1438.99,1427.02,1386.21,1442.92,1544.74,1516.6,1592.02,1565.81,1520.94,1581.58,1584.51,1501.81,1472.39,1459.44,1550.13,1592.0,1632.9,1632.03,1597.87,1605.77,1612.76,1628.57,1705.37,1726.36,1757.47,1641.74,1749.04,1777.77,1734.19,1899.48,1863.55,1892.66,1803.89,1867.83,1929.68,1929.25,1778.46,1762.77,1841.18,1794.62,1883.11,1989.44,1843.04,1769.32,1825.07,1747.28,1768.65,1804.25,1797.32,1726.04,1775.64,1815.27,1784.87,1747.58,1739.02,1801.51,1801.86,1803.0,1757.09,1655.26,1582.95,1550.69,1651.44]},
+  "6857.T": {"price":32830.0,"hi52":35940.0,"lo52":9744.0,"cur":"JPY","closes":[28260.0,27815.0,29715.0,29885.0,28780.0,28705.0,28290.0,28615.0,26360.0,26150.0,25290.0,25625.0,26745.0,26845.0,27755.0,26075.0,27130.0,26340.0,26170.0,25675.0,26320.0,27660.0,28170.0,26765.0,25235.0,26330.0,25235.0,25175.0,27325.0,29420.0,30340.0,30060.0,30300.0,31740.0,32170.0,31430.0,31200.0,35900.0,32440.0,31950.0,32340.0,32000.0,28815.0,29345.0,29565.0,28900.0,27545.0,29160.0,29830.0,28820.0,29775.0,31510.0,29640.0,27505.0,29630.0,29585.0,30800.0,28945.0,28380.0,25510.0,25200.0,27935.0,32830.0]},
+  "KLAC": {"price":180.33,"hi52":307.37,"lo52":83.224,"cur":"USD","closes":[175.04,172.63,171.33,173.29,181.63,176.32,186.92,184.52,181.13,184.97,189.29,180.43,175.65,174.06,182.95,184.22,188.84,201.14,195.72,192.76,192.17,194.0,204.52,212.51,213.11,192.92,210.81,213.94,213.56,241.16,254.54,256.42,237.33,238.73,259.56,269.16,244.49,240.48,258.8,248.64,278.39,301.71,266.19,235.55,233.31,216.47,221.18,229.52,231.52,222.25,230.37,224.5,219.37,212.75,207.6,217.56,214.69,218.73,210.52,203.36,190.8,170.19,180.33]},
+  "TER": {"price":365.49,"hi52":487.91,"lo52":102.42,"cur":"USD","closes":[343.47,345.42,337.44,357.1,382.48,354.11,359.77,366.64,358.45,363.38,356.55,337.88,321.05,321.52,344.34,353.44,358.44,389.14,375.83,382.65,374.31,369.47,392.62,409.67,406.86,357.93,374.69,369.21,347.59,381.4,403.2,432.41,409.35,408.56,437.92,457.0,420.12,427.2,471.96,436.86,463.21,483.84,427.34,369.09,379.52,343.11,351.57,362.75,359.6,341.11,353.23,342.12,322.3,322.36,333.76,374.04,369.46,373.75,349.92,334.77,320.65,319.41,365.49]},
+  "CDNS": {"price":332.82,"hi52":416.69,"lo52":262.75,"cur":"USD","closes":[329.59,340.94,349.51,353.63,354.9,356.9,362.7,364.2,358.04,354.55,352.84,347.24,345.99,338.12,350.89,358.46,373.59,381.75,374.05,373.85,374.93,414.16,416.39,408.0,411.68,376.19,394.24,390.9,385.13,383.74,384.96,394.5,387.85,389.6,387.39,389.04,379.06,372.4,368.23,377.27,372.72,375.32,377.73,373.14,375.77,371.06,374.06,385.95,384.17,377.92,376.8,371.5,364.65,330.11,329.93,344.64,337.01,330.46,326.24,338.61,344.72,332.76,332.82]},
+  "NVTS": {"price":11.01,"hi52":34.17,"lo52":5.44,"cur":"USD","closes":[16.5,17.45,15.92,17.55,16.68,15.79,18.2,22.65,19.25,21.17,22.32,21.32,19.67,19.43,22.99,24.38,29.25,31.79,28.88,28.51,26.6,24.86,25.86,30.84,30.67,25.08,24.48,22.85,20.5,22.21,23.39,23.73,22.09,22.34,24.02,23.7,21.4,18.32,17.7,17.3,17.74,17.92,16.53,14.46,15.23,13.99,13.36,14.18,13.47,12.87,13.09,13.27,11.76,11.46,11.54,12.82,12.67,12.03,10.92,11.41,10.01,9.73,11.01]},
+  "UMC": {"price":18.94,"hi52":28.96,"lo52":6.56,"cur":"USD","closes":[13.06,13.05,12.98,14.01,15.23,15.16,15.42,15.59,16.06,15.92,17.13,17.2,17.12,17.58,17.56,18.35,18.22,21.08,22.22,22.68,22.18,22.89,22.46,21.42,20.79,19.7,20.0,19.88,18.9,20.68,21.63,23.08,21.62,21.76,24.08,27.5,26.2,28.01,27.73,25.58,26.84,27.21,25.71,24.54,25.83,23.83,24.73,24.86,24.34,23.46,23.84,24.92,22.29,21.25,20.3,21.19,21.29,20.87,19.48,19.08,17.36,17.11,18.94]}
+};
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+document.querySelectorAll(".spk").forEach(el=>{
+  const d=PRICES[el.dataset.sym]; if(!d)return;
+  el.innerHTML=sparkSVG(d.closes,96,30,el.dataset.color);
+});
+document.querySelectorAll(".spotspk").forEach(el=>{
+  const d=PRICES[el.dataset.sym]; if(!d)return;
+  el.innerHTML=sparkSVG(d.closes,230,52,el.dataset.color,{ci:d.closes.length-1,refline:true});
+});
+</script>

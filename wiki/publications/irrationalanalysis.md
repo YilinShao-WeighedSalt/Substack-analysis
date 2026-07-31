@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-07-28
+updated: 2026-07-31
 handle: irrationalanalysis
-calls_logged: 558
-hit_rate: "0/3 (0%), 12 open"
+calls_logged: 560
+hit_rate: "2/11 (18%), 6 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Preview of a new war between Apple and Qualcomm (2026-07-30):** From QCOM Q3-2026 earnings — Apple silently starting FCC qualification of a next-gen iPhone lineup giving Qualcomm low-single-digit (foldable-only) modem share vs the prior ~20%, timed to the Apr-1-2027 QTL cliff and sprung last-minute to maximize pain; Verizon C-band complete = path to a global Apple modem. Memory crisis down-speccing Android structurally dilutes QCT; the datacenter 'Dragonfly' play exposed as RTL/Virtuoso sim with no test silicon. Priced: [[QCOM]] SHORT $151.60 (author holds puts); [[2454.TW]] LONG NT$3,235 (relative — QCOM should trade below MediaTek).
+
+**hit_rate note (2026-07-31): the QCOM short is vindicated — but the Jul-1 dip-buys got crushed.** QCOM broke to $151.60 (~-42% from high), flipping **both** priced IA shorts to WINS: Oct-2024 $163.08 (short +7.0% ✓) and Apr-2026 $177 (short +14.4% ✓). Offsetting: the 2026-07-01 Q2-holdings LONG batch has now crossed 30 days into the late-July memory/optics rout and all resolve as losses — Samsung ₩334k->248k, LITE $862->693, CIEN $477.59->372, INTC $139.63->91, SMTC $161.30->115, NOK $13.10->9.09, TSEM $259.87->211, Musashi ¥5,520->3,355 — plus the earlier CBRS $226.72->203 loss. Net **2 wins / 11 resolved = 2/11 (18%)**. Open: AXTI/LITE/AAOI (Jul-25), ASML (Jul-2), QCOM new short, 2454.TW. The ratio understates a genuinely correct multi-year QCOM thesis clobbered in the log by one bad dip-buying day at a market top.
 
 - **Stranded Indium-Phosphide (2026-07-25):** InP-shortage-worse-than-DRAM thesis (80% of InP output already to AI, zero consumer fallback). Cost-models the discrete-DFB vs high-power-SOA ELSFP paths (51% vs 17% GM). New priced calls: [[AXTI]] LONG $47.88 (pure InP substrate), [[LITE]] LONG $711.96 (owns it; but concedes LITE can't make the niche SOA), [[AAOI]] LONG $97.82 (**flips his May short — now discloses he owns it**), [[AEVA]] NEUTRAL $15.53 (most interesting SOA play via Seivers InP fab, but not positioned).
 

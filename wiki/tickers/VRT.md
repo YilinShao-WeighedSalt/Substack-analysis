@@ -2,13 +2,13 @@
 type: ticker
 title: "VRT — Vertiv"
 tags: []
-related: ["[[semianalysis-2024-10-14-datacenter-electrical-systems]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-06-12-computex-optics-power]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-17-daily-update]]"]
+related: ["[[semianalysis-2026-07-29-lego-datacenters]]", "[[semianalysis-2024-10-14-datacenter-electrical-systems]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-06-12-computex-optics-power]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-17-daily-update]]"]
 created: 2024-10-14
-updated: 2026-06-19
+updated: 2026-07-31
 ticker: VRT
 current_stance: long
 conviction: medium
-last_review: 2026-06-19
+last_review: 2026-07-31
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-06-19
 | 2026-05-17 | [[irrationalanalysis]] | MENTION | n/a | Named as diversified incumbent positioned to benefit from SST buildout |
 | 2026-06-12 | [[semidoped]] | MENTION | n/a | Named among prefab AI infrastructure block vendors cutting data center deployment time by ~50% |
 | 2026-06-18 | [[semianalysis]] | LONG | 333.96 | Equipment supplier backlogs secure; datacenter capacity delays cluster in speculative announcement layer, not execution-stage projects |
+| 2026-07-29 | [[semianalysis]] | LONG | 227.50 | OEM-led modular full-stack (OneCore/MegaMod) lifts captured content ~$3.5M -> ~$7M/MW; 12-mo lead times = pricing power |
 
 ## Thesis evolution
 SemiAnalysis established the foundational bull case in October 2024: Vertiv is the primary electrical and thermal infrastructure vendor for hyperscaler datacenters and sits in the direct path of AI-driven power density escalation. The view deepened in April 2025 when SemiAnalysis made the important analytical point that Wall Street was misreading lease cancellations as Vertiv orderbook misses — procurement lags construction activation by 12–24 months, meaning the 5GW pre-leased Microsoft pipeline represents latent demand not yet visible in reported backlog. IrrationalAnalysis arrived at VRT from the opposite direction: initial interest in liquid cooling and datacenter electrical equipment was tempered by margin concerns, and the 2024 year-end review was a candid admission of repeated buy-high/sell-low timing failures with no net thesis. By late 2025 and into 2026, both publications converged on a constructive stance — IrrationalAnalysis citing VRT as a beneficiary of the Oracle/Stargate CapEx wave, SemiAnalysis explicitly naming it a winner from the structural datacenter buildout and elevated power complexity, and both noting its position in the emerging SST and prefabricated AI infrastructure block markets. No meaningful disagreement exists between publications on the directional call; IrrationalAnalysis is simply more cautious about margin quality and has demonstrated poor execution. The June 2026 SemiAnalysis article further strengthens the bull case by arguing that canceled datacenter projects never placed equipment orders, and that prepayments and 3-5 year lead times create a reallocation queue rather than order loss. VRT's ThermoKey acquisition (noted by Semi Doped Jun 17) extends the heat-rejection portfolio.
