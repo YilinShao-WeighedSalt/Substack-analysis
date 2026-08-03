@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-07-31
+updated: 2026-08-03
 handle: semidoped
-calls_logged: 92
-hit_rate: "0/8 (0%), 9 open"
+calls_logged: 99
+hit_rate: "0/15 (0%), ~20 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update — July 31 (+ Pub Quiz / TIL Jerry Sanders, no calls) (2026-07-31):** Hyperscaler earnings silence AI-capex skeptics — MSFT Azure $100B annualized (+43%), AWS +37%, Amazon capex→$220B; SK Hynix +25% / Samsung +20% on the day. Samsung Q2 chip profit **~250x YoY** (HBM+NAND), 60-70% output to LTAs, tightness to 2028; Kioxia 45x but missed + cool 3:1 split; Qualcomm weak on the mobile-memory barbell (raising prices Sept). TSMC building an **EMIB-like bridge with Kinsus** vs Intel/CoWoS tightness; **CXMT $590B debut** (~7.7% of DRAM), Senate warns Apple off it. Bloom +25.3%; MPWR +54% EPS. Priced LONGs: [[005930.KS]] ₩242,500, [[000660.KS]] ₩1,596,000, [[MU]] $823.03, [[BE]] $205.81, [[MPWR]] $1,426.03; NEUTRAL [[285A.T]] ¥49,430, [[QCOM]] $147.61.
+
+**hit_rate note (2026-08-03): the Jul-3/06 batch resolved — all losses into the memory de-rating.** Seven more priced longs crossed 30 days as **LOSSES ✗**: [[MU]] $975.56→823, [[000660.KS]] ₩2.425M→1.596M, [[285A.T]] ¥83,300→49,430, [[SNDK]] $1,745→1,215, [[INTC]] $120.94→90.20, [[AMD]] $552.05→476, [[2317.TW]] ~255→250.5. Combined with the prior 8 → **0 wins / 15 resolved = 0/15 (0%)**. The theses were reasonable; every entry was into the top just before the SALP-liquidation flush. The Jul-31 memory re-marks are ~flat vs late-July after the Jul-31 bounce faded — the pattern is a round-trip, not thesis breakage, but the log is punishing.
 
 - **Daily updates Jul 28-30 + News-Take podcast (2026-07-28..30):** The late-July rout, read as overreaction. China domestic immersion DUV (~2008-class, ~5 tools 2026 vs ASML ~160) spooks Asia into circuit-breakers — hosts say 20 yrs behind ([[ASML]] NEUTRAL $1,651.44). SK Hynix record Q2 but -19% on a consensus miss ([[000660.KS]] LONG ₩1,651,000 — 'skittish consensus'); Samsung chip profit +250x, shortage to 2028 ([[005930.KS]] LONG ₩248,000). Passives bottleneck: SEMCO MLCC +30% ([[009150.KS]] LONG ₩1,142,000). Optics: Corning -20% on a fiber capacity ceiling not demand ([[GLW]] LONG $135.22). Power: Bloom first $1B qtr ([[BE]] LONG $207.12). Equipment sweep beats+raises: [[6857.T]] ¥32,830, [[KLAC]] $180.33, [[TER]] $365.49; [[CDNS]] $332.82 (EDA); [[UMC]] $18.94 (mature-node AI re-rate); [[NVTS]] $11.01 (GaN/SiC). Podcast: hyperscaler CDS/circular-financing worry vs Gavin Baker's ROI counter-take.
 

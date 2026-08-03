@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-07-31
+updated: 2026-08-03
 ---
 
 # Wiki Index
@@ -538,8 +538,10 @@ updated: 2026-07-31
 - [[semidoped-2026-07-25-datacenter-interconnects-pod]] — Podcast: Datacenter Interconnects (scale-up/out/across, CPO)
 - [[semidoped-2026-07-27-daily-update-july-27]] — Daily Update — July 27, 2026 (CXMT IPO, Korea $950B summit, HBM 'ugly baby')
 - [[irrationalanalysis-2026-07-30-apple-qualcomm-war]]
+- [[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]] — A tale of two heroes (SALP/Aschenbrenner blowup explainer + book)
 - [[semianalysis-2026-07-29-lego-datacenters]]
 - [[semidoped-2026-07-28-daily-update]]
 - [[semidoped-2026-07-29-daily-update]]
 - [[semidoped-2026-07-29-news-take-pod]]
 - [[semidoped-2026-07-30-daily-update]]
+- [[semidoped-2026-07-31-daily-update]] — Daily Update July 31 (hyperscaler earnings; Samsung +250x; CXMT $590B; TSMC-Kinsus EMIB)

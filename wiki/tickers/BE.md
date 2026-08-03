@@ -2,13 +2,13 @@
 type: ticker
 title: "BE — Bloom Energy"
 tags: []
-related: ["[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]"]
+related: ["[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]"]
 created: 2025-10-24
-updated: 2026-07-31
+updated: 2026-08-03
 ticker: BE
 current_stance: long
 conviction: medium
-last_review: 2026-07-31
+last_review: 2026-08-03
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,8 +27,12 @@ last_review: 2026-07-31
 | 2026-07-29 | [[semidoped]] | LONG | 207.12 | First $1B quarter (~2x est), raised guide; behind-the-meter fuel cells beat multi-year grid interconnect queues |
 ## Thesis evolution
 The BE bull case originated in October 2025 at irrationalanalysis when the author initiated a position after identifying a specific technical edge: Bloom Energy's solid-oxide fuel cells can deliver 800V DC power directly to datacenter loads, bypassing combustion and the grid interconnection queue entirely. This time-to-power advantage became the central thesis, with irrationalanalysis repeatedly noting the wash-sale constraint that forced a temporary exit rather than a change of view. SemiAnalysis reinforced the thesis from a structural supply angle in late 2025, quantifying the $3,000-4,000/kW premium commanded by solid-oxide fuel cells over combustion alternatives and projecting a 2 GW/year production target by end of 2026 — grounding the irrationalanalysis enthusiasm in unit economics. By early 2026 irrationalanalysis treated BE as its highest-conviction speculative name (adding it to a "do not touch" list), while SemiAnalysis continued citing fuel cells as a core onsite-generation beneficiary alongside gas turbines. Both publications have been consistently long with no meaningful disagreement; the only bearish signal in the record is the forced panic sale in January 2026, which the author framed as a portfolio-risk event rather than a thesis change.
+| 2026-08-01 | [[irrationalanalysis]] | LONG | 205.81 | Core; fuel cells for AI datacenters (behind-the-meter power). |
+| 2026-07-31 | [[semidoped]] | LONG | 205.81 | +25.3% on Q2 beat + raised guide; fuel-cell contracts with AI-DC operators. |
 
 ## Outcome tracking
 No entry prices were recorded at any call date (all px@call = n/a), so precise mark-to-market assessment is not possible. The thesis trajectory has been directionally consistent: the core 800V DC direct-supply and permitting-speed advantages were identified in October 2025 and remained intact through April 2026 without any retraction or downgrade. The January 2026 forced sale — described explicitly as panic deleveraging from the "highest-risk holding" — is notable as a risk-sizing signal rather than a thesis falsification. The live bull case would be falsified by hyperscalers abandoning onsite generation in favor of grid-tied power, a regulatory shift that eliminates the permitting-speed advantage for no-combustion fuel cells, Bloom Energy failing to hit the 2 GW/year production ramp, or a sustained compression in the $/kW premium that erodes the economics relative to gas turbine alternatives.
 
 **Update 2026-07-10:** Semi Doped relayed a **Hunterbrook activist-short report** alleging Bloom's fuel cells depend on Chinese **scandium** requiring per-shipment CCP approval — "China has an OFF switch to US datacenters" — while the CEO has repeatedly denied any China supply chain. Logged CAUTIOUS @ $299.71 (mark 07-02). Material *new bear vector* (input-chain geopolitics) on an already highest-risk name, but note the conflicts/caveats: Hunterbrook is short BE, Bloom says the cells "supplement" grid power (not off-grid datacenter primary), and the target datacenters aren't built yet. Single-source, unverified — a hypothesis to watch, not a confirmed falsifier. (Also this run: Brookfield expanded its AI-power deal with Bloom to $25B per the Jul-6 closes — a bullish demand counterpoint.)
+
+**Update 2026-08-03:** Two fresh LONGs (IA core + semidoped) at $205.81 after a +25.3% Q2 earnings pop (beat + raised guide) on fuel-cell contracts with AI-datacenter operators — the standout non-memory name in IA's book. Watch item: the July Hunterbrook activist-short allegation (Chinese-scandium dependency 'off switch') remains unresolved.

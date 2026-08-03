@@ -4,7 +4,7 @@ title: "Semiconductor Equities & Trading"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-06-10
+updated: 2026-08-03
 status: maturing
 first_seen: 2024-01-06
 ---
@@ -79,6 +79,17 @@ first_seen: 2024-01-06
 - 2026-05-04 — [[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]] (irrationalanalysis)
 - 2026-05-15 — [[semidoped-2026-05-15-cerebras-ipo]] (semidoped)
 - 2026-06-10 — [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] (globalsemiresearch)
+- 2026-08-01 — [[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]] (irrationalanalysis)
 
 ## Narrative
 Irrational Analysis established this theme in early 2024 through event-driven equity analysis of individual semiconductor names — Mobileye's kitchen-sink quarter, ARM's short squeeze, and Astera Labs' IPO and subsequent revenue implosion set the template of tracking hype-versus-fundamentals divergences. Through 2024 and into 2025, coverage expanded to short-squeeze dynamics, options positioning, and portfolio-level performance tracking across names like Qualcomm, Cerebras, Intel, and AMD, with SemiAnalysis contributing supply-chain and IPO-framing context. The DeepSeek shock in January 2025 and subsequent tariff-driven selloffs in April 2025 stress-tested positions and produced some of the densest multi-entry coverage in the timeline, reflecting high-conviction trading moments under macro pressure. By late 2025 and into 2026, the theme has broadened to include new entrants (Citrini, SemiDoped, GlobalSemiResearch) and recurring quarterly roundups, signaling institutional depth rather than episodic coverage. The theme sits at maturing status: the analytical framework is well-established across publications, with ongoing coverage cycling through earnings, IPOs, and sector rotations rather than discovering the theme anew.
+
+## The SALP leveraged-unwind (Aug 2026) — anatomy of a semi-tape flush
+The late-July 2026 "bubble-pop-level" violence in memory/AI-hardware equities was, per Irrational Analysis's *A tale of two heroes* (2026-08-01), the **forced liquidation of Situational Awareness LP (SALP)** — Leopold Aschenbrenner's AGI-thesis fund. The plain-language mechanics (for the Jargon Decoder / future briefs):
+
+- **The setup.** SALP was long AI winners (memory: Kioxia, SK Hynix; Bloom) and short "AI losers" (traditional SaaS), but the shorts were *anti-correlated with the longs* — i.e. not factor-neutral, so they added leverage on the AI factor rather than hedging it. IA estimates ~4-5x leverage — "pod leverage with a psychotic family-office's risk rules."
+- **Total return swaps (TRS).** As with Archegos/Bill Hwang (2021), a TRS lets a bank hold the shares while the client takes the levered gain/loss with **no disclosure**; concentration is invisible across prime brokers who don't talk to each other. It is unconfirmed whether SALP used TRS or owned shares.
+- **The unwind.** Rumors built the week of Jul 22; the whole hedge-fund community knew SALP was massively long **Kioxia (285A.T)** and **SK Hynix (000660.KS)**. Kioxia cratered Mon Jul 27; SK Hynix printed a record Q2 but *missed consensus* Jul 28 and convulsed; an FT article Jul 29 (then CNBC/WSJ) confirmed steep losses. Citadel bought the book ("hedge-fund seppuku"). WSJ: **SALP -67% in July**.
+- **The bounce.** Jul 31 hyperscaler earnings (MSFT Azure $100B +43%, AWS +37%, Amazon capex→$220B) + Samsung's +~250x chip profit flipped the tape: SK Hynix +25%, Samsung +20% intraday. Net, memory names round-tripped rather than re-rated.
+- **Trading lesson (IA):** prime brokerage lacks the cross-lender concentration check that consumer credit has — a single phone call between banks would have caught it. IA's own account +56.8% YTD vs large-cap-semi index +50.1%; de-levered a bit after Jul 31.
+

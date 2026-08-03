@@ -2,13 +2,13 @@
 type: ticker
 title: "AAOI — Applied Optoelectronics"
 tags: []
-related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]"]
+related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]"]
 created: 2024-12-02
-updated: 2026-07-28
+updated: 2026-08-03
 ticker: AAOI
 current_stance: long
 conviction: low
-last_review: 2026-07-28
+last_review: 2026-08-03
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,6 +27,7 @@ last_review: 2026-07-28
 | 2026-05-17 | [[irrationalanalysis]] | MENTION | n/a | Cited alongside LITE as domestic transceiver vendor hyperscalers are supporting over Chinese alternatives |
 | 2026-06-10 | [[globalsemiresearch]] | MENTION | n/a | Sold off on SemiAnalysis note; cited as collateral damage from the delay narrative |
 | 2026-07-28 | [[irrationalanalysis]] | LONG | 97.82 | Now disclosed as owned (flips the author's May SHORT); held alongside LITE/AXTI as the InP-shortage basket. |
+| 2026-08-01 | [[irrationalanalysis]] | LONG | 94.32 | US-based transceivers, 'lots of torque' but violent. |
 
 ## Thesis evolution
 The view on AAOI moved through three distinct phases. From late 2024 into early 2025, [[irrationalanalysis]] held it at arm's length — acknowledging the vertical integration advantage (internal InP laser capacity) while flagging PRC manufacturing concentration as too hard a geopolitical call. The stance turned constructively long in Q1 2026 after qualification milestones were hit and the interop firmware issue was characterized as routine; the internal CW laser asset was framed as a differentiating wildcard against the CPO transition, with a direct rebuttal to the Citrini bear case. The turn to short came in May 2026 when AAOI failed to disclose linewidth/RIN specs and the 6-inch wafer ramp slipped to late 2027, converting an execution-risk story into an outright negative. [[globalsemiresearch]] has only a tangential mention, treating the June 2026 selloff as sector-level noise from the SemiAnalysis CPO-delay note rather than a fundamental view on AAOI specifically.

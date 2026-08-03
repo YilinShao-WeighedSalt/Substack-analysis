@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-07-31
+updated: 2026-08-03
 handle: irrationalanalysis
-calls_logged: 560
-hit_rate: "2/11 (18%), 6 open"
+calls_logged: 572
+hit_rate: "3/13 (23%), 7 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **[Market Memo] A tale of two heroes (2026-08-01):** Attributes late-July's "bubble-pop-level" semi violence to the forced liquidation of **Leopold Aschenbrenner's Situational Awareness LP (SALP, -67% July, book bought by Citadel)** — ~4-5x leverage, long memory (Kioxia/SK Hynix)/Bloom with anti-correlated (non-hedging) SaaS shorts. Uses the Archegos/TRS template as backstory. Reaffirms the book: ultra-core [[LITE]]/[[INTC]]/[[TSEM]], core [[BE]]/[[SMTC]], "giga-long" [[AXTI]], plus [[AEHR]]/[[CIEN]]/[[NOK]]/[[AAOI]] and a one-share [[CBRS]] activist stake; wants "a lot more" [[005930.KS]] (prefers it over SK Hynix on HBM4 base-die co-design). Own account +56.8% YTD vs semi index +50.1%. Priced LONGs at spot for all above (₩242,500 / $713.94 / $90.20 / $219.67 / $205.81 / $117.82 / $60.43 / $79.98 / $377.05 / $9.14 / $94.32); CBRS NEUTRAL $198.71.
+
+**hit_rate note (2026-08-03): two Jul-2 calls resolved, splitting.** [[ASML]] LONG ($1,759.59, Jul-2) → $1,629 = **LOSS ✗**; [[NVTS]] SHORT ($14.11, Jul-2) → $10.86 = **WIN ✓** (-23%). Net **3 wins / 13 resolved = 3/13 (23%)** (prior 2/11 + NVTS win + ASML loss). The QCOM short stays a win ($147.61 < both short marks). Open: AXTI/LITE/AAOI/AEVA (Jul-25), QCOM new short (Jul-30), 2454.TW, plus this run's Aug-1 batch (all logged at spot, ≈0 at entry). AXTI's Jul-25 long ($47.88→$60.43, +26%) is the standout open tracker — InP bucked the memory rout.
 
 - **Preview of a new war between Apple and Qualcomm (2026-07-30):** From QCOM Q3-2026 earnings — Apple silently starting FCC qualification of a next-gen iPhone lineup giving Qualcomm low-single-digit (foldable-only) modem share vs the prior ~20%, timed to the Apr-1-2027 QTL cliff and sprung last-minute to maximize pain; Verizon C-band complete = path to a global Apple modem. Memory crisis down-speccing Android structurally dilutes QCT; the datacenter 'Dragonfly' play exposed as RTL/Virtuoso sim with no test silicon. Priced: [[QCOM]] SHORT $151.60 (author holds puts); [[2454.TW]] LONG NT$3,235 (relative — QCOM should trade below MediaTek).
 

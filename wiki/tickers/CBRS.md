@@ -2,13 +2,13 @@
 type: ticker
 title: "CBRS — Cerebras Systems"
 tags: []
-related: ["[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]"]
+related: ["[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]"]
 created: 2024-10-01
-updated: 2026-07-28
+updated: 2026-08-03
 ticker: CBRS
 current_stance: mixed
 conviction: medium
-last_review: 2026-07-28
+last_review: 2026-08-03
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -21,6 +21,7 @@ last_review: 2026-07-28
 | 2026-06-24 | [[irrationalanalysis]] | LONG | 226.72 | Q1 beat but packaging yield (modeled 20%) caps margins at ~42%; activist campaign for WSE-4 FP8 and face-to-face I/O |
 | 2026-06-24 | [[semidoped]] | NEUTRAL | 226.72 | Q1 revenue $193.4M (+94% YoY), guided $855–865M; shares fell 10% on margin disappointment; 88GB SRAM per rack limits large models |
 | 2026-07-28 | [[semianalysis]] | LONG | 188.61 | AMD-Cerebras PD-disaggregation inference deal (Groq-like) validates the wafer-scale inference niche. |
+| 2026-08-01 | [[irrationalanalysis]] | NEUTRAL | 198.71 | One share for an activist campaign; 'deserves a dedicated post' — coverage TBD. |
 
 ## Thesis evolution
 irrationalanalysis opened with a consistently bearish view across three calls spanning late 2024, citing fatal customer concentration (G42 as near-sole buyer), structurally weak gross margins around 36%, and a wafer-scale architecture it viewed as technically overblown. By mid-2026 the same publication reversed to bullish after Cerebras secured an OpenAI $20B inference deal and AWS distribution, arguing the company found a defensible niche in ultra-low-latency inference where wafer-scale die actually delivers differentiated speed. The June 2026 earnings call reinforced the LONG: despite calling the transcript a "trainwreck," irrationalanalysis deepened its conviction by modeling the packaging yield problem (20% estimated) as the central financial variable — improvement from 20% to 50% would lift gross margins from ~42% to ~72%. The author initiated a symbolic "activist campaign" focused on three catalysts: WSE-4 with FP8 support, face-to-face I/O to solve KV cache offload, and a packaging yield investor day. semidoped maintained NEUTRAL at first earnings, noting shares fell 10% despite the beat and flagging the 88GB SRAM-per-rack constraint for large models. The two publications continue to disagree on conviction — irrationalanalysis sees solvable engineering bottlenecks, semidoped sees structural TAM and business model risks.

@@ -2,10 +2,13 @@
 type: overview
 title: "Wiki Run Log"
 created: 2026-06-17
-updated: 2026-07-28
+updated: 2026-08-03
 ---
 
 # Wiki Run Log
+
+## 2026-08-03
+- ingest | 2 call-bearing posts (+2 educational) from irrationalanalysis (x1), semidoped (x3 incl pub-quiz + TIL) | semianalysis had NO new post in window (last Jul 29) | tickers: 005930.KS, 000660.KS, MU, 285A.T, LITE, INTC, TSEM, BE, SMTC, AXTI, AEHR, CIEN, NOK, AAOI, MPWR, CBRS, QCOM | DOMINANT STORY: **the crash had a name — and hyperscalers reversed it.** Irrational Analysis's *A tale of two heroes* attributes late-July's "bubble-pop" semi violence to the forced liquidation of **Leopold Aschenbrenner's Situational Awareness LP (SALP, -67% July, bought by Citadel)** — ~4-5x leverage, long Kioxia/SK Hynix/Bloom with anti-correlated (non-hedging) SaaS shorts; TRS/Archegos template. Then **Jul 31 flipped the tape**: MSFT Azure $100B annualized (+43%), AWS +37%, Amazon capex→$220B, Samsung chip profit ~250x YoY → SK Hynix +25%, Samsung +20% intraday (a round-trip, not a re-rate — memory names ~flat vs late-July marks by Aug 1). New wiki content: SALP leveraged-unwind anatomy added to [[semiconductor-equities-trading]]; Samsung-250x/barbell/LTA note to [[memory-dram-cycle]]. Hit-rate resolutions: IA 3/13 (23%) — Jul-2 NVTS short WIN, ASML long LOSS; semidoped 0/15 (0%) — Jul-3/06 memory/AI longs all crossed 30d into losses; semianalysis 1/7 (14%) — Jul-2 ORCL short WIN, neocloud longs lost. AXTI open tracker +26% (Jul-25 $47.88→$60.43). Yahoo chart API live; crumb host fc.yahoo.com blocked → analyst-consensus bars omitted (not fabricated).
 
 ## 2026-07-31
 - ingest | 6 posts from irrationalanalysis (x1), semianalysis (x1), semidoped (x4 incl podcast) | tickers: QCOM, 2454.TW, FIX(new), STRL(new), VRT, PWR(new), FLEX(new), SU.PA(new), 000660.KS, 005930.KS, 009150.KS, GLW, BE, ASML, 6857.T, KLAC, TER, CDNS, NVTS, UMC(new) | DOMINANT STORY: **the tape broke the bulls, and vindicated the one bear.** A violent late-July memory/AI-hardware de-rating (SK Hynix record Q2 but -19% one-day on a consensus miss; China domestic DUV panic snapping KOSPI circuit-breakers; Corning -20% on a fiber capacity ceiling) turned nearly every recent bullish call into a 30-day loss: semidoped 0/8 (0%), semianalysis 0/1 (0%). The lone winner: irrationalanalysis's ~2-yr QCOM SHORT, finally in the money as Qualcomm broke to $151.60 (~-42% from high) on Apple's accelerated modem design-out into the Apr-2027 QTL cliff — both priced IA shorts ($163.08, $177) flip to WINS (IA 2/11, 18%). New theme [[modular-datacenter-construction]] from SemiAnalysis's 'LEGO Datacenters' deep dive (FIX/STRL/PWR/FLEX/SU.PA/VRT beneficiaries; ~36% faster, ~8% cheaper/MW, speed=revenue). Memory bulls (semidoped) frame the crash as skittish positioning, not demand breakage; LTAs incl Nvidia lock ~5 yrs. Yahoo chart API live (crumb host fc.yahoo.com 401-blocked -> analyst-consensus bars omitted, not fabricated).

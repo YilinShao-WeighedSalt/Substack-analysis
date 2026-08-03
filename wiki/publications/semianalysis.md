@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-31
+updated: 2026-08-03
 handle: semianalysis
 calls_logged: 209
-hit_rate: "0/1 (0%), 17 open"
+hit_rate: "1/7 (14%), ~14 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **No new post in scan window (Jul 31 – Aug 3, 2026).** Latest is *The Wild Wild West of LEGO Datacenters* (Jul 29, below).
+
+**hit_rate note (2026-08-03): the Jul-2 batch resolved — one short saves the ratio.** Six Jul-2 priced calls crossed 30 days: [[ORCL]] SHORT ($141.01→$129.87) = **WIN ✓**; losses on [[META]] $584.88→557, [[CRWV]] $81.75→72, [[NBIS]] $215.89→190, [[TSM]] $446.68→404, [[MRVL]] $245.29→188. With the prior MU loss → **1 win / 7 resolved = 1/7 (14%)**. The ORCL critical/short (SA argued Oracle under-monetized its gigawatts) is the lone winner; the neocloud/Meta-compute longs were caught in the same late-July de-rating. Open: Jul-25 AMD-article longs (AMD/AVGO/NVDA/CBRS), Jul-29 modular longs, Jul-08/09 (META $601, AMZN, GOOGL).
 
 - **The Wild Wild West of LEGO Datacenters (2026-07-29):** Definitive deep dive on modular/prefab datacenter construction (full body served unauthenticated). Trade-labor shortage (electricians, 2027) forces factory-built shells/power-skids/CDUs/white-space bolted together on site; bottom-up model = ~36% faster / ~8% cheaper/MW, but speed=revenue is the real prize. 80+ vendor universe; three integration models (operator/EPC/OEM); Nvidia DSX standardizes the AI-factory. New theme [[modular-datacenter-construction]]. Priced LONGs: [[FIX]] $1,697.84, [[STRL]] $580.73, [[VRT]] $227.50, [[PWR]] $657.98, [[FLEX]] $111.91, [[SU.PA]] EUR 284.60.
 
