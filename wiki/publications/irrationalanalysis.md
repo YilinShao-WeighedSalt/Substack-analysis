@@ -4,15 +4,20 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-03
+updated: 2026-08-06
 handle: irrationalanalysis
-calls_logged: 572
-hit_rate: "3/13 (23%), 7 open"
+calls_logged: 580
+hit_rate: "3/13 (23%), 13 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **[Market Memo] Orange Man Attempted Chinese Transceiver Ban (2026-08-05):** Emergency memo on the Reuters/FCC draft ban of *new-model* Chinese optical transceivers. Calls the security rationale bogus (a transceiver is a PHY behind CMIS signed-key auth; encrypted end-to-end) and reads it as prodding hyperscalers already de-coupling. Key engineering point: **active (six-axis) alignment** is China's real, hard-to-reshore edge; EML->SiPho pivot cuts InP ~50% but adds alignment content; [[TSEM]] Openlight InP-on-SiPho PDK is the pick-and-shovel (LITE/COHR/AAOI all route PICs through Tower). Priced LONGs at spot: [[AXTI]] $68.61 (2-4x, sold tactically today on retaliation risk), [[LITE]] $826.26, [[COHR]] $328.22, [[AAOI]] $128.56 ("fun degen play"), [[FN]] $522.22, [[TSEM]] $211.14; NEUTRAL [[CIEN]] $408.83 and [[NOK]] $9.58 (long-haul, outside the ban).
+
+**hit_rate note (2026-08-06): no new resolutions — ratio holds 3/13 (23%).** The nearest unresolved priced call (2454.TW Jul-30) is 30d next run; the SALP-era Aug-1 batch resolves late Aug. The standout is the **open InP/optical basket working ahead of the ban**: AXTI +43% (Jul-25 $47.88), AAOI +31% (Jul-28 $97.82), LITE +16% (Jul-28 $711.96) — all still <30d/open. QCOM multi-year short remains the anchor win.
+
 
 - **[Market Memo] A tale of two heroes (2026-08-01):** Attributes late-July's "bubble-pop-level" semi violence to the forced liquidation of **Leopold Aschenbrenner's Situational Awareness LP (SALP, -67% July, book bought by Citadel)** — ~4-5x leverage, long memory (Kioxia/SK Hynix)/Bloom with anti-correlated (non-hedging) SaaS shorts. Uses the Archegos/TRS template as backstory. Reaffirms the book: ultra-core [[LITE]]/[[INTC]]/[[TSEM]], core [[BE]]/[[SMTC]], "giga-long" [[AXTI]], plus [[AEHR]]/[[CIEN]]/[[NOK]]/[[AAOI]] and a one-share [[CBRS]] activist stake; wants "a lot more" [[005930.KS]] (prefers it over SK Hynix on HBM4 base-die co-design). Own account +56.8% YTD vs semi index +50.1%. Priced LONGs at spot for all above (₩242,500 / $713.94 / $90.20 / $219.67 / $205.81 / $117.82 / $60.43 / $79.98 / $377.05 / $9.14 / $94.32); CBRS NEUTRAL $198.71.
 

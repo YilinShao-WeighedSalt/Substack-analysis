@@ -2,13 +2,13 @@
 type: ticker
 title: "ON — ON Semiconductor"
 tags: []
-related: ["[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]"]
+related: ["[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-08-04-daily-update]]"]
 created: 2024-01-06
-updated: 2026-05-17
+updated: 2026-08-06
 ticker: ON
 current_stance: neutral
 conviction: low
-last_review: 2026-05-17
+last_review: 2026-08-06
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -21,9 +21,12 @@ last_review: 2026-05-17
 | 2026-04-30 | [[irrationalanalysis]] | LONG | n/a | Small starter position for 800V EV power semi architecture exposure |
 | 2026-05-08 | [[irrationalanalysis]] | NEUTRAL | n/a | Vertical GaN interesting but no data; Treo analog looks like fab-capacity fill |
 | 2026-05-17 | [[irrationalanalysis]] | NEUTRAL | n/a | Sold out at 15% profit; SiC and lateral GaN both mediocre; vertical GaN is slides-only speculation |
+| 2026-08-04 | [[semidoped]] | LONG | 76.91 | AI-datacenter revenue to more than double in 2026; GaNEXUS launch, Nvidia MGX, FCF x4. |
 
 ## Thesis evolution
 The view on ON started as a defensive exit in January 2024 — the Mobileye inventory shock prompted a clean-out of auto semi exposure, with ON characterized as "flu-level sick" rather than structurally broken. The bullish re-entry in late 2025 was driven by the hypothesis that ON's vertical GaN development program represented asymmetric optionality in a segment (800V datacenter and EV power delivery) where genuine performance differentiation commands pricing power. Through March and April 2026 this remained a speculative long: ON was credited as one of only two non-commodity power semi names alongside STM, and the vertical GaN program was purchased as a call option alongside the more technically validated NVTS position. The bear case hardened materially in May 2026: a detailed LTSpice-driven datasheet comparison found ON's SiC and lateral GaN both mediocre relative to Infineon and Navitas/TI, and the vertical GaN program produced no public datasheet or shipping silicon — only promotional materials. The position was sold at a 15% profit with no current conviction, leaving the vertical GaN story as an unverified long-dated option.
 
 ## Outcome tracking
 No px@call values are available for any entry point across the call log, so direct price-based assessment is not possible. The thesis trajectory tells a clear story: the initial re-entry in late 2025 on vertical GaN optionality played out favorably enough to yield a 15% realized gain by May 2026, but the conviction behind the exit was stronger than the conviction behind the entry. The live view would be falsified positively if ON publishes a credible vertical GaN datasheet with competitive Rds_on and breakdown voltage data, or ships a vertical GaN product into a hyperscaler power supply design; it would be falsified negatively if the vertical GaN program is quietly shelved or if ON loses additional SiC market share to Infineon in the 1200V class.
+
+**Update 2026-08-06:** first *priced* ON anchor — SD LONG $76.91 (Aug-4), a different (fundamental datacenter-power) angle than IA's prior vertical-GaN option thesis (IA sold at +15% in May, stance neutral). SD cites AI-datacenter revenue to more than double in 2026, GaNEXUS (40-650V GaN) launch, expanded Nvidia MGX role, FCF quadrupled. Open, <30d; note the covering publications now diverge (SD constructive on the datacenter-power ramp vs IA's lapsed vertical-GaN skepticism).

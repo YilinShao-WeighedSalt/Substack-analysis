@@ -4,7 +4,7 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-03
+updated: 2026-08-06
 handle: semianalysis
 calls_logged: 209
 hit_rate: "1/7 (14%), ~14 open"
@@ -13,6 +13,11 @@ hit_rate: "1/7 (14%), ~14 open"
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Kimi K3, The Manos, The Mythos (2026-08-03) — educational, no equity call.** Architecture deep-dive on Moonshot's open frontier model: Kimi Delta Attention (linear attention that compresses context into a fixed memory state), FlashKDA kernels, latent expert routing + Quantile Balancing. Serving: real Claude-Code traces; $3/$15 per-M floor; Nvidia+AMD Day-0; fits one B300 node. Reinforces the inference-economics -> custom-silicon thread; no ticker priced.
+
+**hit_rate note (2026-08-06): unchanged 1/7 (14%).** No new post with a call and no priced call crossed 30d (the Jul-8/09 META/AMZN/GOOGL longs are 29d — resolve next run). ORCL Jul-2 short stays the lone win.
+
 
 - **No new post in scan window (Jul 31 – Aug 3, 2026).** Latest is *The Wild Wild West of LEGO Datacenters* (Jul 29, below).
 

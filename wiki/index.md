@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-03
+updated: 2026-08-06
 ---
 
 # Wiki Index
@@ -545,3 +545,9 @@ updated: 2026-08-03
 - [[semidoped-2026-07-29-news-take-pod]]
 - [[semidoped-2026-07-30-daily-update]]
 - [[semidoped-2026-07-31-daily-update]] — Daily Update July 31 (hyperscaler earnings; Samsung +250x; CXMT $590B; TSMC-Kinsus EMIB)
+- [[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]] — [Market Memo] Orange Man Attempted Chinese Transceiver Ban
+- [[semianalysis-2026-08-03-kimi-k3-architecture]] — Kimi K3 architecture (KDA, educational)
+- [[semidoped-2026-08-03-daily-update]] — Daily Update Aug 3 (AWS fastest since 2021; CXMT LPDDR6; SiCarrier DUV; Kioxia 80% GM)
+- [[semidoped-2026-08-04-daily-update]] — Daily Update Aug 4 (first OCP HBF spec; Tower record + $3.6B 2028 model; onsemi AI-DC 2x)
+- [[semidoped-2026-08-04-astera-labs-pod]] — Podcast: Astera Labs (retimers/Scorpio/Leo, educational)
+- [[semidoped-2026-08-05-daily-update]] — Daily Update Aug 5 (transceiver-ban whipsaw; AMD Q2 beat/weak guide; FMS NAND density)

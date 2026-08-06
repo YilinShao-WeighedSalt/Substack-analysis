@@ -4,15 +4,20 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-03
+updated: 2026-08-06
 handle: semidoped
-calls_logged: 99
-hit_rate: "0/15 (0%), ~20 open"
+calls_logged: 105
+hit_rate: "0/15 (0%), ~23 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Updates Aug 3-5 + Astera Labs podcast (2026-08-03..05):** Transceiver-ban whipsaw (Western optical up, Innolight down; ban also hits AVGO/MRVL DSP volume inside the modules); **AWS fastest growth since 2021**, Amazon capex->$220B, Meta $130-145B + BlackRock JV; **AMD Q2 record +50%** (DC 58%) but weak AI guide; Anthropic $10B to 6-month-old Volta Infra; **first OCP HBF spec** (SK Hynix+SanDisk, Google/Tenstorrent); Tower record + 2028 model raised to $3.6B/$1.2B; onsemi AI-DC rev to >2x; CXMT LPDDR6 12.8 Gbps + SiCarrier DUV in production; Kioxia 80% GM but slower-NAND guide. Astera pod = educational (retimers/Scorpio/Leo). Priced: [[TSEM]] LONG $211.14, [[ON]] LONG $76.91, [[GLW]] LONG $156.70, [[MRVL]] NEUTRAL $211.02, [[AMD]] NEUTRAL $482.05, [[285A.T]] NEUTRAL Y49,290.
+
+**hit_rate note (2026-08-06): no new resolutions — holds 0/15 (0%).** The July batch resolved last run; the new calls are all open. Standout open tracker: **[[GLW]] +16%** since the Jul-29 long ($135.22), round-tripping its fiber-ceiling -20% drop on the substitution trade.
+
 
 - **Daily Update — July 31 (+ Pub Quiz / TIL Jerry Sanders, no calls) (2026-07-31):** Hyperscaler earnings silence AI-capex skeptics — MSFT Azure $100B annualized (+43%), AWS +37%, Amazon capex→$220B; SK Hynix +25% / Samsung +20% on the day. Samsung Q2 chip profit **~250x YoY** (HBM+NAND), 60-70% output to LTAs, tightness to 2028; Kioxia 45x but missed + cool 3:1 split; Qualcomm weak on the mobile-memory barbell (raising prices Sept). TSMC building an **EMIB-like bridge with Kinsus** vs Intel/CoWoS tightness; **CXMT $590B debut** (~7.7% of DRAM), Senate warns Apple off it. Bloom +25.3%; MPWR +54% EPS. Priced LONGs: [[005930.KS]] ₩242,500, [[000660.KS]] ₩1,596,000, [[MU]] $823.03, [[BE]] $205.81, [[MPWR]] $1,426.03; NEUTRAL [[285A.T]] ¥49,430, [[QCOM]] $147.61.
 
