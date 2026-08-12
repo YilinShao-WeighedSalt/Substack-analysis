@@ -2,13 +2,13 @@
 type: ticker
 title: "AAOI — Applied Optoelectronics"
 tags: []
-related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]"]
+related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-12-02
-updated: 2026-08-06
+updated: 2026-08-12
 ticker: AAOI
-current_stance: long
+current_stance: neutral
 conviction: low
-last_review: 2026-08-06
+last_review: 2026-08-12
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,6 +30,8 @@ last_review: 2026-08-06
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 94.32 | US-based transceivers, 'lots of torque' but violent. |
 | 2026-08-05 | [[irrationalanalysis]] | LONG | 128.56 | "Fun degen play," better ST risk/reward than AXTI on big transceiver-capacity ramp; owned. |
 
+| 2026-08-09 | [[irrationalanalysis]] | NEUTRAL | 134.33 | Done trading the chaos ticker; calls the CEO's bluff on 300mW DWDM/CPO laser (no phase-noise/linewidth data; "2-3 years away") |
+
 ## Thesis evolution
 The view on AAOI moved through three distinct phases. From late 2024 into early 2025, [[irrationalanalysis]] held it at arm's length — acknowledging the vertical integration advantage (internal InP laser capacity) while flagging PRC manufacturing concentration as too hard a geopolitical call. The stance turned constructively long in Q1 2026 after qualification milestones were hit and the interop firmware issue was characterized as routine; the internal CW laser asset was framed as a differentiating wildcard against the CPO transition, with a direct rebuttal to the Citrini bear case. The turn to short came in May 2026 when AAOI failed to disclose linewidth/RIN specs and the 6-inch wafer ramp slipped to late 2027, converting an execution-risk story into an outright negative. [[globalsemiresearch]] has only a tangential mention, treating the June 2026 selloff as sector-level noise from the SemiAnalysis CPO-delay note rather than a fundamental view on AAOI specifically.
 
@@ -39,3 +41,5 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 **Update 2026-07-28:** *stance flip.* The dossier carried irrationalanalysis SHORT (May-8, px n/a). In this InP post the same author discloses he now **owns AAOI** ("I only own Lumentum, AXTI, and AAOI"), reversing to LONG at $97.82 (open). Reason implied: AAOI's internal InP/CW-laser capacity is an asset in the acute InP shortage. The May short (no px) cannot be graded. Conviction low given the round-trip and the author's own history of poor AAOI timing.
 
 **Update 2026-08-06:** IA LONG $128.56 (Aug-5). The highest-torque name in the basket: prior IA longs Jul-28 $97.82 -> **+31.4% ✓ (open)** and Aug-1 $94.32 -> **+36.3%**. IA frames it as a 'fun degen play' with better near-term risk/reward than AXTI on a massive transceiver-capacity expansion, and now discloses ownership (the May-8 short is fully unwound). Also the most violent — a round-trip risk if China retaliates. Conviction stays low given the author's own documented history of poor AAOI timing.
+
+**Update 2026-08-12:** IA moves to NEUTRAL ($134.33) — steps back from the trade after the earnings call. Credits the CEO on Chinese-transceiver-decoupling and that most Chinese players can't do 300mW DWDM, but calls AAOI's own high-power-CPO-laser claims a bluff (demands phase-noise/linewidth data, says AAOI is 2-3yr away). The Aug-5 IA LONG ($128.56) is +4.5% open. Downgrade, not a short.

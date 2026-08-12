@@ -4,15 +4,20 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-06
+updated: 2026-08-12
 handle: semianalysis
-calls_logged: 209
-hit_rate: "1/7 (14%), ~14 open"
+calls_logged: 213
+hit_rate: "2/9 (22%), ~12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Three posts, Aug 7–10 2026 (all paywalled, full bodies served):** *Gemini is Cooked but GCP is Cooking* (Aug-7), *SpaceX 10GW in 2027* (Aug-7), *TileRT InferenceX* (Aug-10). New priced calls: [[GOOGL]] LONG $343.80 — DeepMind "no longer a frontier lab" (Jeff Dean → neolab Discovery Loop) but GCP *won* the compute fight; TPU-system sales (~$35B/GW to SPVs like Anthropic) drive GCP growth to mid-100s vs 64% consensus, ~+$3 EPS 2027. [[MSFT]] LONG $503.81 — SpaceX 10GW offtaker; 10GW contracted YTD (~$300B); post-April OpenAI rev-share removal unlocks a ~$100M/MW inference prize → Azure 42%→100%+. [[NVDA]] LONG $217.50 — SpaceX Nvidia-exclusive on vendor financing. [[CBRS]] NEUTRAL $234.76 — TileRT (persistent-kernel GPU software, ~3× GB300 interactivity at BS1) reframes ultra-low-latency as a rentable "speed tier," structurally pressuring the specialist inference-ASIC TAM. TileRT itself is educational (no ticker beyond the CBRS read-through).
+
+**hit_rate note (2026-08-12): the Jul-8/09 batch resolved, splitting → 2/9 (22%).** [[AMZN]] LONG ($243.06, Jul-8) → **$272.27 = +12.0% WIN ✓** (first long-side win in the set); [[META]] LONG ($601.00, Jul-9) → **$599.12 = −0.3% LOSS ✗**; GOOGL Jul-9 was NEUTRAL (excluded). With the prior ORCL short win → **2 wins / 9 resolved = 2/9 (22%)**. Open: Jul-25 AMD-article longs (AMD/AVGO/NVDA/CBRS — NVDA +10.7%, CBRS +24.5% both tracking), Jul-29 modular longs, plus this run's four. Standout: the Jul-25 CBRS LONG is +24.5% even as SA's own TileRT note turns cautious on the CBRS TAM — see [[cbrs-yield-short-vs-inference-tam]].
+
 
 - **Kimi K3, The Manos, The Mythos (2026-08-03) — educational, no equity call.** Architecture deep-dive on Moonshot's open frontier model: Kimi Delta Attention (linear attention that compresses context into a fixed memory state), FlashKDA kernels, latent expert routing + Quantile Balancing. Serving: real Claude-Code traces; $3/$15 per-M floor; Nvidia+AMD Day-0; fits one B300 node. Reinforces the inference-economics -> custom-silicon thread; no ticker priced.
 

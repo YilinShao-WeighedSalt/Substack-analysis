@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-06
+updated: 2026-08-12
 ---
 
 # Wiki Index
@@ -190,6 +190,7 @@ updated: 2026-08-06
 
 - [[qcom-short-vs-edge-ai-turnaround]] — QCOM: persistent short vs. edge-AI turnaround
 - [[buildout-vs-monetization]] — AI buildout accelerates vs. buildout→monetization (Meta Compute)
+- [[cbrs-yield-short-vs-inference-tam]] — CBRS: parametric-yield short vs. working tape vs. TileRT TAM erosion
 
 ## Publications
 
@@ -551,3 +552,8 @@ updated: 2026-08-06
 - [[semidoped-2026-08-04-daily-update]] — Daily Update Aug 4 (first OCP HBF spec; Tower record + $3.6B 2028 model; onsemi AI-DC 2x)
 - [[semidoped-2026-08-04-astera-labs-pod]] — Podcast: Astera Labs (retimers/Scorpio/Leo, educational)
 - [[semidoped-2026-08-05-daily-update]] — Daily Update Aug 5 (transceiver-ban whipsaw; AMD Q2 beat/weak guide; FMS NAND density)
+- [[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]] — CBRS activist short (parametric yield), WOLF/NVTS suit, HBF spec, Aeva SOA, Taalas, micro-LED jihad
+- [[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]] — Gemini cooked, GCP cooking (GOOGL LONG on TPU-system financialization)
+- [[semianalysis-2026-08-07-spacex-10gw-microsoft]] — SpaceX 10GW in 2027 (MSFT/NVDA LONG; $100M/MW inference prize)
+- [[semianalysis-2026-08-10-tilert-inferencex]] — TileRT InferenceX (persistent-kernel GPU inference; CBRS/inference-ASIC TAM pressure)
+- [[semidoped-2026-08-10-11-optical-ban-daily-newstake]] — Dailies + News Take (Intel $20B raise, TSMC record, AMD Q2, Volta $10B, optical ban debunk)

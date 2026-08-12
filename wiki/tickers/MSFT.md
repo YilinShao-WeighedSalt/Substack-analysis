@@ -2,13 +2,13 @@
 type: ticker
 title: "MSFT — Microsoft"
 tags: []
-related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]]", "[[semianalysis-2025-05-16-ai-middle-east-uae-ksa]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]"]
+related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]]", "[[semianalysis-2025-05-16-ai-middle-east-uae-ksa]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-spacex-10gw-microsoft]]"]
 created: 2024-03-13
-updated: 2026-05-27
+updated: 2026-08-12
 ticker: MSFT
-current_stance: mixed
+current_stance: long
 conviction: medium
-last_review: 2026-05-27
+last_review: 2026-08-12
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -33,8 +33,12 @@ last_review: 2026-05-27
 | 2026-04-16 | [[globalsemiresearch]] | MENTION | n/a | Developing custom AI chips; UALink alliance member and potential Marvell customer |
 | 2026-05-27 | [[semianalysis]] | SHORT | n/a | Azure's IaaS-heavy mix, construction pause, and OpenAI capacity lock-in compress margins vs. AWS |
 
+| 2026-08-07 | [[semianalysis]] | LONG | 503.81 | SpaceX 10GW-in-2027 offtaker; Azure accel 42%→100%+; the $100M/MW inference prize on OpenAI models (post-April rev-share removal) |
+
 ## Thesis evolution
 Coverage opened in early 2024 with semianalysis framing Microsoft as a co-leader in the gigawatt-scale AI buildout, albeit already showing operational cracks relative to Google (PUE, density, fault tolerance). The May 2024 NEUTRAL was the first directional signal: semianalysis viewed MAI-1 as a rational hedge against OpenAI's AGI carve-out clause, but not a bullish catalyst in isolation. A brief LONG emerged in January 2025 on regulatory tailwinds — the UVEU framework effectively codified Microsoft's global footprint as compliant infrastructure — but this was immediately offset by a SHORT just days later when Stargate's equity structure revealed OpenAI actively diversifying away from Azure to Oracle. From mid-2025 onward, semianalysis moved to a structurally cautious stance: the April 2025 capacity pause was characterized charitably as recalibration, but the November 2025 deep-dive quantified the cost of the pause as ~$150B in foregone gross profit that accrued to Oracle instead. By May 2026, semianalysis turned explicitly SHORT, arguing Azure's IaaS-heavy mix and OpenAI lock-in create margin compression relative to AWS's Bedrock/Trainium model. irrationalanalysis has been peripheral — one tactical LONG into the January 2025 earnings print and one critical MENTION of Copilot+ — and does not meaningfully contest the semianalysis bear thesis. The live view is therefore mixed-to-short: strong enterprise footprint acknowledged, but structural margin and moat erosion is the dominant concern.
 
 ## Outcome tracking
 No px@call values are recorded for any entry, making quantitative P&L assessment impossible. Thesis trajectory is the primary basis for evaluation: the January 2025 LONG on UVEU regulatory capture was almost immediately superseded by the Stargate SHORT, suggesting that structural moat erosion via OpenAI diversification was the more durable signal. The April 2025 capacity pause and November 2025 ~$150B gross-profit cost estimate directionally validate the SHORT thesis as it had developed by that point. The live SHORT as of May 2026 would be falsified by evidence of OpenAI re-concentrating workloads back onto Azure, Azure shifting materially toward a PaaS/managed-cluster revenue mix that expands margins, or Maia silicon winning external customers beyond Microsoft's captive inference fleet.
+
+**Update 2026-08-12:** SA LONG ($503.81). Thesis: Microsoft 'finally woke up' — 10GW of contracts YTD (~$300B), and with the April-2026 OpenAI rev-share removed, Azure can monetize OpenAI models at ~$100M/MW/yr (60-85% inference GM), pushing Azure growth from ~42% toward 100%+. SpaceX's 3-5 month clusters are the near-term fill. New spot entry.

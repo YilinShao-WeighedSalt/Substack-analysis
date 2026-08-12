@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-06-12
+updated: 2026-08-12
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -110,3 +110,5 @@ Irrational Analysis ([[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]
 - Long-haul/DCI names ([[CIEN]], [[NOK]]) are *outside* the blast radius — IA calls their sell-off "stupidity."
 
 Status: still maturing, now with a live **geopolitical catalyst** layered on the InP-shortage thesis (see [[geopolitics-export-controls]]).
+
+**Update 2026-08-12 — micro-LED vs micro-VCSEL, SOA scarcity, Openlight:** Irrational Analysis drew a hard line between two chip-scale light sources. **Micro-VCSEL** is viable at the optimal "slow-and-wide" 32–64G NRZ (Coherent's 106G-PAM4 demo shows capability; ~50% cost cut vs DFB/SiPho). **Micro-LED** is dismissed as "a hoax" — LEDs emit *incoherent* light, so catastrophic phase noise + jitter cap them well below the 1e-12 BER needed for no-FEC links (Avicina fails at 4G); electrical crosstalk and chromatic dispersion (reach ~1-2m) finish the job. Separately, the **high-power SOA (semiconductor optical amplifier)** is the scarce enabler for CPO/NPO — Aeva's first optical-connectivity customer (likely Innolight/Amazon) validates the shortage, and IA frames it as a Broadcom+Lumentum duopoly (Coherent ~18mo away via MOPA; AAOI "has nothing"). **Openlight/Tower** InP-on-SiPho becomes more attractive as InP tightens (higher InP-area efficiency), and Tower dunks GloFo on waveguide insertion loss. 300mm SiGe expansion at Tower is a bullish read for Semtech's discrete amplifiers.

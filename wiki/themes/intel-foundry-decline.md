@@ -4,7 +4,7 @@ title: "Intel Foundry & Competitive Decline"
 tags: []
 related: []
 created: 2024-01-27
-updated: 2026-06-12
+updated: 2026-08-12
 status: maturing
 first_seen: 2024-01-27
 ---
@@ -92,3 +92,5 @@ first_seen: 2024-01-27
 
 ## Narrative
 IrrationalAnalysis sounded the alarm earliest, framing Intel's process lag and foundry ambitions as existential threats as far back as January 2024; SemiAnalysis reinforced this with deep dives into 18A yield struggles and cultural dysfunction through late 2024. The arc runs from skepticism about Gelsinger's turnaround strategy through his ouster in December 2024, then into a post-Gelsinger period marked by asset sales, capital questions, and continued process node delays into 2025-2026. By early 2026 the narrative shifted subtly from pure decline toward strategic optionality debates — whether Intel's foundry assets could attract external capital or partnerships — as reflected in pieces like "Intel's Narrative Has Changed" and SemiAnalysis's capital-raise argument. Coverage has remained dense and multi-publication throughout, with no sign of resolution, making this one of the most persistently tracked themes in the corpus.
+
+**Update 2026-08-12 — the $20B raise + MediaTek $5B commit.** Intel priced its first public equity sale since its 1971 listing — upsized from $15B to **$20B** at $95/share on oversubscribed demand — to fund AI-foundry capex (physical AI, external wafer demand). Dilution knocked the stock ~4-5% but it priced into a rally, not a hole. Paired with **MediaTek committing $5B to Intel Foundry** (Aug-10), the external-customer proof point the turnaround narrative needed is starting to accumulate. Semi Doped frames the dilution as a VC-style "build baby build" moment.

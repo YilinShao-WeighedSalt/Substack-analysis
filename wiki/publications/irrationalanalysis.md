@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-06
+updated: 2026-08-12
 handle: irrationalanalysis
-calls_logged: 580
-hit_rate: "3/13 (23%), 13 open"
+calls_logged: 592
+hit_rate: "3/13 (23%), ~27 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **CBRS Update, WOLF/NVTS Lawsuit, HBF Spec, Aeva, Taalas, AAOI, TSEM, uLED Jihad (2026-08-09):** Grab-bag of engineering notes. **Cerebras**: running an activist SHORT — reads WSE4 as a "gen 3.5" power/clock refresh and Feldman's "doubling clocks" brag as a tell that *parametric yield* was never solved (final yield ~20%); holds one uncovered share + covered calls. **Optics**: "HINT HINT LONG LUMENTUM" — Aeva's first optical-connectivity customer (SOA, likely Innolight/Amazon) confirms the high-power-laser shortage; Tower earnings-call flex (Openlight PDK, dunks GloFo on insertion loss, 300mm SiGe → "hyper bullish" Semtech). **Power**: Wolfspeed's suit vs Navitas looks weak (expiring GaN patent) but Navitas SiC is "dogshit" anyway. **Micro-LED Jihad**: a scorched-earth teardown of a SemiAnalysis note — micro-VCSEL viable (32–64G NRZ), micro-LED "a hoax" (incoherent light → catastrophic phase noise, fails at 4G). **HBF**: softens from "garbage" to "solution looking for a problem." AMD/Taalas read as FPGA/embedded IP. Priced: LONG [[LITE]] $820.59, [[TSEM]] $249.58, [[SMTC]] $131.18, [[WOLF]] $30.14, [[AEHR]] $117.18, [[AXTI]] $73.78; SHORT [[CBRS]] $234.76, [[NVTS]] $13.60; NEUTRAL [[AAOI]] $134.33, [[COHR]] $328.57, [[AMD]] $474.32, [[NVDA]] $217.50.
+
+**hit_rate note (2026-08-12): no new resolutions — holds 3/13 (23%).** The Jul-25 InP/optics batch resolves ~Aug-24 and is running hot: [[AXTI]] +54.1%, [[LITE]] +15.3%, [[NVDA]] n/a, and the Jul-2 [[NVTS]] SHORT stays a WIN (short +3.6%). Newer open trackers: [[TSEM]] Aug-5 +18.2%, [[AAOI]] Aug-5 +4.5%, [[COHR]] Aug-5 flat. The book is heavily long optics/InP + short CBRS into a tape that is finally cooperating with the optics thesis.
 
 - **[Market Memo] Orange Man Attempted Chinese Transceiver Ban (2026-08-05):** Emergency memo on the Reuters/FCC draft ban of *new-model* Chinese optical transceivers. Calls the security rationale bogus (a transceiver is a PHY behind CMIS signed-key auth; encrypted end-to-end) and reads it as prodding hyperscalers already de-coupling. Key engineering point: **active (six-axis) alignment** is China's real, hard-to-reshore edge; EML->SiPho pivot cuts InP ~50% but adds alignment content; [[TSEM]] Openlight InP-on-SiPho PDK is the pick-and-shovel (LITE/COHR/AAOI all route PICs through Tower). Priced LONGs at spot: [[AXTI]] $68.61 (2-4x, sold tactically today on retaliation risk), [[LITE]] $826.26, [[COHR]] $328.22, [[AAOI]] $128.56 ("fun degen play"), [[FN]] $522.22, [[TSEM]] $211.14; NEUTRAL [[CIEN]] $408.83 and [[NOK]] $9.58 (long-haul, outside the ban).
 

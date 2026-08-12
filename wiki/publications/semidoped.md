@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-06
+updated: 2026-08-12
 handle: semidoped
-calls_logged: 105
-hit_rate: "0/15 (0%), ~23 open"
+calls_logged: 108
+hit_rate: "0/15 (0%), ~26 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Updates Aug 10-11 + "News Take" podcast (2026-08-10..11):** Big-picture financing + foundry run. **Intel** priced an upsized **$20B** equity raise (first since 1971) at $95 to fund AI-foundry capex — Austin: "build baby build," Vik: upsizing is positive, dilution -4-5% priced into a rally; **MediaTek commits $5B to Intel Foundry** ([[INTC]] LONG $97.71). **TSMC** record July rev +44.7% YoY, 2nm sold out through 2028 at $30k/wafer, CoWoS near-balance ([[TSM]] LONG $422.06). **Nvidia** formalizes a $500B third-party "banker" platform (Apollo/BlackRock/Blackstone/Brookfield/GS/KKR) — Vik: "getting out of hand." News-Take pod: the Chinese-transceiver ban is technically bogus (a transceiver is "just a USB cable"), won't stick, and wouldn't immediately help LITE/COHR (fixed supply); **AMD** Q2 record +50% (DC 58%) but stock fell on an $800M capex surprise + GPU-accel-cadence doubts ([[AMD]] NEUTRAL $474.32); Anthropic's $10B deal with 6-month-old **Volta Infrastructure** as an infra-debt/token-factory template. Also: Apple testing CXMT DRAM; Anthropic chip team (Samsung foundry); SK Hynix–SanDisk first HBF spec; Navitas sues Renesas over GaN. Pub-quiz (Aug-9) = no calls.
+
+**hit_rate note (2026-08-12): no new resolutions — holds 0/15 (0%).** The next batch to resolve is the Jul-27/28 Korea/memory longs (000660.KS ₩1.62M, 005930.KS, GLW $135.22), crossing 30d ~Aug-26/27. GLW remains the standout open tracker (+16% since Jul-29). New calls all opened at spot.
 
 - **Daily Updates Aug 3-5 + Astera Labs podcast (2026-08-03..05):** Transceiver-ban whipsaw (Western optical up, Innolight down; ban also hits AVGO/MRVL DSP volume inside the modules); **AWS fastest growth since 2021**, Amazon capex->$220B, Meta $130-145B + BlackRock JV; **AMD Q2 record +50%** (DC 58%) but weak AI guide; Anthropic $10B to 6-month-old Volta Infra; **first OCP HBF spec** (SK Hynix+SanDisk, Google/Tenstorrent); Tower record + 2028 model raised to $3.6B/$1.2B; onsemi AI-DC rev to >2x; CXMT LPDDR6 12.8 Gbps + SiCarrier DUV in production; Kioxia 80% GM but slower-NAND guide. Astera pod = educational (retimers/Scorpio/Leo). Priced: [[TSEM]] LONG $211.14, [[ON]] LONG $76.91, [[GLW]] LONG $156.70, [[MRVL]] NEUTRAL $211.02, [[AMD]] NEUTRAL $482.05, [[285A.T]] NEUTRAL Y49,290.
 

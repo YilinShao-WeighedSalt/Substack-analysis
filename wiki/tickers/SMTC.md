@@ -2,13 +2,13 @@
 type: ticker
 title: "SMTC — Semtech"
 tags: []
-related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]"]
+related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2025-06-15
-updated: 2026-08-03
+updated: 2026-08-12
 ticker: SMTC
 current_stance: long
 conviction: medium
-last_review: 2026-08-03
+last_review: 2026-08-12
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,8 +23,12 @@ last_review: 2026-08-03
 | 2026-07-01 | [[irrationalanalysis]] | LONG | 161.30 | "Own Semtech to play" MediaTek-vs-Broadcom; sole-source CTLE works whoever wins the custom-AI-chip fight |
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 117.82 | Core; 'own it whoever wins' MediaTek-vs-Broadcom SerDes play. |
 
+| 2026-08-09 | [[irrationalanalysis]] | LONG | 131.18 | "Hyper bullish readthrough" — Tower 300mm SiGe TIA/driver/CTLE expansion benefits Semtech's best-in-class discrete amplifiers |
+
 ## Thesis evolution
 The irrationalanalysis view on SMTC began in June 2025 as an undeveloped speculative swing trade (CEO credibility damaged after NVL36x2 cancellation, but a large upside window noted) and turned mildly negative by September 2025 as ACC rack architecture changes suppressed Catalina cable volumes. The thesis flipped materially bullish in December 2025 when the author argued Semtech's CTLE is a sole-source enabling layer for any hyperscaler pursuing a non-Broadcom SerDes path — specifically the theory that MediaTek's flawed N4 TPU SerDes (dual DFE tap, excess ADC gain) could be rescued by blanketing PCB and ACC channels with Semtech linear equalizers, with Google's confirmed 200G/lane 2027 design win as supporting evidence. By the December 2026 ideas post the author was buying both SMTC and MACOM, calling SMTC's analog CTLE best-in-class at 200G/lane PAM4 with broad applicability across ACC, LPO, XPO, NPO, and re-timed transceivers. At OFC 2026 in March the author acknowledged the MediaTek TPU rescue theory had failed (the CTLE lacks sufficient tuning range) but explicitly treated this as immaterial to the long thesis, since SMTC's dominance across every other optics architecture segment more than compensates; Macom is characterized as clearly inferior. The position was ultimately trimmed from the "do not touch" core list in April 2026 following strong gains and an Edgewater note flagging MediaTek TPU risk, suggesting the author harvested profits rather than abandoned conviction.
 
 ## Outcome tracking
 No px@call prices are recorded across any of the seven entries, so precise return attribution is not possible. The qualitative trajectory is clear: the author entered with a speculative, undeveloped thesis in mid-2025 and exited a significant position after "strong gains" by April 2026, implying the stock moved meaningfully higher over the roughly ten-month holding period. The live thesis as of the final entry rests on SMTC's structural dominance as sole-source analog CTLE across the proliferating LPO/XPO/NPO/ACC/re-timed optics ecosystem; it would be falsified by a credible Macom competitive win at 200G/lane, by hyperscalers adopting fully retimed architectures that bypass external CTLE, or by further evidence that the Google 200G/lane 2027 design win has slipped.
+
+**Update 2026-08-12:** IA LONG $131.18 (Aug-9) — reiterates Semtech as the discrete-amplifier winner off Tower's 300mm SiGe capacity build. Prior IA marks (Jul-1 $161.30 resolved LOSS in the late-July rout) predate the recovery; new spot entry.
