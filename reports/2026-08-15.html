@@ -1,0 +1,304 @@
+<title>Substack Semi Scan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:960px;margin:0 auto;padding:22px 18px 60px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em;font-weight:700}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--sec);
+  margin:34px 0 12px;font-weight:700}
+.sub{color:var(--sec);font-size:13.5px;margin:0}
+.dots{display:flex;flex-wrap:wrap;gap:14px;margin:12px 0 0;font-size:12.5px;color:var(--sec)}
+.src{display:inline-flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.d-ir{background:var(--pub-irrational)}.d-sa{background:var(--pub-semianalysis)}.d-sd{background:var(--pub-semidoped)}
+.status{margin-top:14px;padding:9px 12px;background:var(--surface-2);border-radius:8px;
+  font-size:12.5px;color:var(--sec);border:1px solid var(--border)}
+.status b{color:var(--ink)}
+/* hero tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:6px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.tile .n{font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.tile .l{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:6px}
+.distbar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-top:10px;gap:2px;background:transparent}
+.distbar span{display:block}
+.distbar .l1{background:var(--long)}.distbar .s1{background:var(--short)}.distbar .n1{background:var(--neutral)}
+.legend{display:flex;gap:10px;margin-top:7px;font-size:11px;color:var(--sec)}
+.legend i{font-style:normal}
+.bias{font-size:20px;font-weight:700;letter-spacing:-.01em}
+/* call board */
+.board{width:100%;border-collapse:collapse;font-size:13px}
+.board th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;
+  color:var(--muted);font-weight:600;padding:0 8px 8px;border-bottom:1px solid var(--border)}
+.board td{padding:10px 8px;border-bottom:1px solid var(--border);vertical-align:middle}
+.board tr:last-child td{border-bottom:none}
+.tk{font-weight:700}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;
+  padding:2px 7px;border-radius:20px;white-space:nowrap}
+.c-long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.c-short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.c-neut{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.th{color:var(--sec);font-size:12.5px;max-width:320px}
+.pnl{font-weight:700;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.up{color:var(--gain)}.down{color:var(--loss)}.flat{color:var(--muted)}
+.newm{color:var(--muted);font-size:11px;font-weight:600}
+.srcdot{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--sec);white-space:nowrap}
+/* spotlights */
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.spot .head{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.spot .px{font-size:20px;font-weight:700}
+.spot .cur{font-size:11px;color:var(--muted)}
+.spot .chart{margin:8px 0 4px}
+.spot .rng{font-size:10.5px;color:var(--muted);display:flex;justify-content:space-between;margin-top:4px}
+.rangebar{position:relative;height:5px;background:var(--grid);border-radius:3px;margin:4px 0 2px}
+.rangebar .fill{position:absolute;height:5px;border-radius:3px;background:var(--base)}
+.rangebar .mk{position:absolute;top:-3px;width:11px;height:11px;border-radius:50%;
+  background:var(--surface);border:2px solid var(--accent);transform:translateX(-50%)}
+.bull{margin:9px 0 0;padding-left:16px;font-size:12px;color:var(--sec)}
+.bull li{margin:3px 0}
+.trk{font-size:11.5px;font-weight:700;margin-top:8px}
+/* scorecards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;border-top:3px solid var(--base)}
+.card.t-ir{border-top-color:var(--pub-irrational)}
+.card.t-sa{border-top-color:var(--pub-semianalysis)}
+.card.t-sd{border-top-color:var(--pub-semidoped)}
+.card .nm{font-weight:700;font-size:14px;display:flex;align-items:center;gap:6px}
+.meter{height:7px;background:var(--grid);border-radius:4px;margin:9px 0 3px;overflow:hidden}
+.meter .m{height:7px;border-radius:4px;background:var(--accent)}
+.hr{font-size:11.5px;color:var(--sec);font-family:var(--mono)}
+.plist{list-style:none;padding:0;margin:10px 0 0;font-size:12px}
+.plist li{padding:5px 0;border-top:1px solid var(--border);display:flex;gap:7px;align-items:flex-start}
+.plist .mchip{flex:none;margin-top:1px}
+/* jargon */
+.jargon{columns:2;column-gap:22px;font-size:12.5px}
+.jargon dt{font-weight:700;font-family:var(--mono);color:var(--ink);break-after:avoid}
+.jargon dd{margin:0 0 10px;color:var(--sec);break-before:avoid;break-inside:avoid}
+/* themes */
+.themes{display:grid;gap:6px}
+.trow{display:grid;grid-template-columns:150px 1fr 30px;align-items:center;gap:8px;font-size:12px}
+.trow .tb{height:16px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
+.trow .tc{color:var(--sec);text-align:right;font-family:var(--mono)}
+.foot{margin-top:36px;font-size:11px;color:var(--muted);text-align:center;line-height:1.7}
+@media(max-width:720px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .spots,.cards{grid-template-columns:1fr}
+  .jargon{columns:1}
+  .th{max-width:none}
+  .board .hidem{display:none}
+  .trow{grid-template-columns:110px 1fr 28px}
+}
+</style>
+
+<div class="wrap">
+
+<h1>Substack Semi Scan</h1>
+<p class="sub">Visual intelligence brief · <span class="mono">Aug 12 – Aug 15, 2026</span> · every-3-days memory loop</p>
+<div class="dots">
+  <span class="src"><span class="dot d-ir"></span>Irrational Analysis</span>
+  <span class="src"><span class="dot d-sa"></span>SemiAnalysis</span>
+  <span class="src"><span class="dot d-sd"></span>Semi Doped</span>
+</div>
+
+<div class="status">
+  <b>Run status:</b> Irrational Analysis ✓ 2 posts (Lumentum + Coherent earnings) ·
+  Semi Doped ✓ 3 daily updates (Aug 12–14) ·
+  SemiAnalysis — no new post in window (latest Aug 10, already ingested).
+  All bodies full, no truncation. Yahoo chart API live; analyst-consensus feed (crumb host) still 403-blocked → consensus bars omitted, not fabricated.
+</div>
+
+<h2>The state of play</h2>
+<div class="tiles">
+  <div class="tile"><div class="n">5</div><div class="l">Posts scanned</div></div>
+  <div class="tile"><div class="n">11</div><div class="l">Tickers priced</div></div>
+  <div class="tile">
+    <div class="n">10</div><div class="l">Calls logged</div>
+    <div class="distbar"><span class="l1" style="flex:7"></span><span class="s1" style="flex:1"></span><span class="n1" style="flex:2"></span></div>
+    <div class="legend"><i>▲ 7 long</i><i>▼ 1 short</i><i>● 2 neutral</i></div>
+  </div>
+  <div class="tile"><div class="bias" style="color:var(--long)">▲ Long-heavy</div><div class="l" style="margin-top:8px">Book bias — optics / InP / AI-infra</div></div>
+</div>
+<p class="sub" style="margin-top:12px"><b style="color:var(--ink)">Dominant story:</b> Earnings crack the optics duopoly split wide open. Lumentum's call was "ultra-bullish" — 80–90% gross-margin high-power lasers, <em>no real competition</em>, cavity shrunk again at the same linewidth — while Coherent "financially self-immolates in the greatest optics bull market since the telco bubble," hiding CPO-laser yield data because (Irrational's read) it's <em>garbage</em>. The open InP/optics book is running hot: <span class="mono">AXTI +70%</span>, <span class="mono">LITE +30%</span> since late-July marks. Semi Doped's dailies fill the backdrop — CoWoS yield clears 99%, CXMT hits 90% DDR5 yield, Applied posts a record quarter, Cerebras misses and drops 17%.</p>
+
+<h2>Call board — this run</h2>
+<table class="board">
+  <thead><tr>
+    <th>Ticker</th><th>Dir</th><th class="hidem">Source</th><th class="hidem">Thesis</th>
+    <th>px@call</th><th>3-mo</th><th>Tracker</th>
+  </tr></thead>
+  <tbody id="board"></tbody>
+</table>
+<p class="sub" style="font-size:11.5px;margin-top:8px">Tracker = running P&amp;L of the position since the <em>same source's</em> most recent prior priced call on the name (green = the call working; shorts sign-flipped). "new" = source's first priced call on the name. This run's entries are marked at today's close.</p>
+
+<h2>Ticker spotlights</h2>
+<div class="spots" id="spots"></div>
+
+<h2>Source scorecards</h2>
+<div class="cards">
+  <div class="card t-ir">
+    <div class="nm"><span class="dot d-ir"></span>Irrational Analysis</div>
+    <div class="meter"><div class="m" style="width:23%"></div></div>
+    <div class="hr">hit-rate 3/13 (23%) · ~27 open</div>
+    <ul class="plist">
+      <li><span class="chip c-long mchip">▲ LITE</span> Lumentum call "so damn bullish" — 80–90% GM UHP lasers, cavity shrunk again, mode-hop-free moat.</li>
+      <li><span class="chip c-short mchip">▼ COHR</span> Coherent hides CPO-laser yield data "because it's garbage"; 200G-PAM4 VCSEL fails GR-468.</li>
+      <li><span class="chip c-long mchip">▲ AXTI</span> 6-inch InP thread: bad Coherent yield may be Sumitomo's wafer uniformity — AXTI 6-in fixes it.</li>
+    </ul>
+  </div>
+  <div class="card t-sd">
+    <div class="nm"><span class="dot d-sd"></span>Semi Doped</div>
+    <div class="meter"><div class="m" style="width:2%"></div></div>
+    <div class="hr">hit-rate 0/15 (0%) · ~26 open</div>
+    <ul class="plist">
+      <li><span class="chip c-long mchip">▲ AMAT·CAMT</span> WFE supercycle — Applied record $9.12B, Camtek orders &gt;$600M, 8-quarter visibility to 2030.</li>
+      <li><span class="chip c-long mchip">▲ CRWV·NBIS</span> Neocloud strength — CoreWeave $104B backlog +25% price hike; Nebius +514% rev.</li>
+      <li><span class="chip c-neut mchip">● CBRS</span> Cerebras −17% after miss; hardware revenue contracted QoQ — a data point <em>for</em> the yield bears.</li>
+    </ul>
+  </div>
+  <div class="card t-sa">
+    <div class="nm"><span class="dot d-sa"></span>SemiAnalysis</div>
+    <div class="meter"><div class="m" style="width:22%"></div></div>
+    <div class="hr">hit-rate 2/9 (22%) · ~12 open</div>
+    <ul class="plist">
+      <li><span class="newm">No new post in window.</span></li>
+      <li>Latest is the Aug-10 <span class="mono">TileRT</span> note (already ingested) — reframes ultra-low-latency inference as a rentable GPU "speed tier," pressuring the inference-ASIC TAM Cerebras depends on.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Jargon decoder</h2>
+<dl class="jargon">
+  <dt>CPO / NPO</dt><dd>Co-/Near-Package Optics — lasers moved onto (or beside) the switch/GPU package to cut power &amp; latency vs pluggable transceivers. The prize both LITE and COHR are chasing.</dd>
+  <dt>InP</dt><dd>Indium Phosphide — the III-V substrate lasers are grown on; ~80% of output now feeds AI with no consumer fallback, so it's the binding shortage behind the whole optics squeeze.</dd>
+  <dt>EML</dt><dd>Externally-Modulated Laser — the high-power, narrow-linewidth datacom laser Lumentum dominates for CPO.</dd>
+  <dt>VCSEL</dt><dd>Cheap surface-emitting laser for short reach. Irrational's core dig: running it at 200G-PAM4/lane can't pass reliability — best case is 32–64G NRZ.</dd>
+  <dt>ELS / ELSFP</dt><dd>External Laser Source — laser kept in a swappable module instead of soldered into the optical engine; if one dies you swap a part, not the whole board. Lumentum's winning path.</dd>
+  <dt>Mode hop</dt><dd>A laser wavelength "flicker" that drops the link. A wide mode-hop-free range is Lumentum's hidden, datasheet-invisible moat.</dd>
+  <dt>RIN</dt><dd>Relative Intensity Noise — laser amplitude-noise spec (lower is better). Lumentum ≈ −155 dBc/Hz vs a −145 industry spec = 10× quieter.</dd>
+  <dt>GR-468</dt><dd>The Telcordia laser reliability qualification a 200G-PAM4 VCSEL, per Irrational, will fail.</dd>
+  <dt>MOPA</dt><dd>Master-Oscillator-Power-Amplifier laser architecture Coherent is pivoting to — but ~18 months from stability.</dd>
+  <dt>CoWoS</dt><dd>TSMC's 2.5D GPU packaging. Yield just cleared 99%, so ABF substrate &amp; memory are now the next bottlenecks.</dd>
+  <dt>ABF substrate</dt><dd>Ajinomoto Build-up Film package substrate — ~$100M/line, 18–24 months to add, no EUV needed; clears before memory does.</dd>
+  <dt>HBF</dt><dd>High-Bandwidth Flash — the NAND analog of HBM; first OCP spec came from SK Hynix + SanDisk.</dd>
+  <dt>CXMT</dt><dd>China's DRAM champion — DDR5 yield ~90% (2 pts behind Samsung), now ~$524B market cap, briefly China's most valuable listed company.</dd>
+  <dt>Active alignment</dt><dd>Precise six-axis laser-to-fiber alignment; the hard-to-reshore edge that keeps Chinese optics competitive.</dd>
+</dl>
+
+<h2>Themes in play</h2>
+<div class="themes" id="themes"></div>
+
+<div class="foot">
+  Generated by the Substack Scanner memory loop · report is analysis of third-party newsletters, <b>not investment advice</b>.<br>
+  Prices via Yahoo chart API at run time (Aug 15, 2026). Hit-rates are of resolved priced calls only (px@call ≥ 30 days old).
+</div>
+
+</div>
+
+<script>
+const PRICES={"LITE":{"price":926.14,"hi52":1085.68,"lo52":111.2,"cur":"USD","closes":[970.7,884.98,890.09,868.07,964.5,946.9,910.81,902.31,860.62,854.96,905.0,1029.15,938.0,945.08,863.66,895.4,821.76,853.26,889.59,921.56,957.24,875.36,869.98,850.0,893.93,827.92,842.53,861.97,816.98,851.4,858.06,801.16,728.32,731.25,698.91,707.1,785.77,802.01,768.15,814.8,752.0,706.23,732.82,765.55,837.56,829.7,833.64,762.99,711.96,651.93,602.35,693.24,713.94,779.89,849.47,826.26,838.06,890.17,813.51,820.59,932.47,880.41,926.14]},"COHR":{"price":325.83,"hi52":440.0,"lo52":84.35,"cur":"USD","closes":[382.45,362.83,353.63,358.5,378.0,377.57,381.35,380.18,376.95,361.47,362.9,426.89,417.43,421.9,376.99,401.93,355.94,354.77,363.58,385.03,413.84,382.81,378.85,389.57,425.48,381.22,392.5,407.25,380.56,391.22,394.47,368.65,333.36,335.7,314.13,317.05,327.24,324.5,307.39,310.77,299.38,276.96,277.6,285.4,317.22,312.19,313.22,282.39,271.31,243.33,222.05,249.06,262.89,288.14,323.73,328.22,334.22,379.13,325.15,328.57,355.64,327.23,325.83]},"AXTI":{"price":81.64,"hi52":143.16,"lo52":2.05,"cur":"USD","closes":[123.78,105.88,112.88,104.61,121.02,140.83,132.6,122.77,115.7,103.16,109.55,110.85,106.7,105.99,89.04,90.78,78.36,85.29,88.34,97.18,110.74,93.04,92.11,84.57,92.44,77.91,70.14,69.06,70.15,71.46,72.08,65.03,56.62,63.52,58.15,60.12,62.55,57.21,50.46,57.57,53.42,45.57,45.86,48.83,56.51,52.98,52.93,47.23,47.88,42.76,36.97,46.94,60.43,68.67,65.27,68.61,75.17,88.58,73.81,73.78,78.47,77.45,81.64]},"TSM":{"price":426.35,"hi52":479.0,"lo52":223.7,"cur":"USD","closes":[404.35,395.95,392.61,401.62,407.15,404.52,412.32,422.73,424.86,418.45,435.63,446.69,436.69,444.92,415.17,426.8,427.92,408.75,421.07,423.93,441.4,425.83,432.15,462.12,467.67,436.39,440.83,434.99,432.35,455.1,477.57,444.23,434.16,451.79,432.57,436.98,436.96,434.11,421.58,420.39,419.48,409.74,398.37,402.3,424.61,421.21,415.58,403.41,399.09,392.31,374.67,403.31,404.25,406.11,417.17,414.0,418.2,420.04,418.47,422.06,429.15,430.49,426.35]},"2317.TW":{"price":259.5,"hi52":314.0,"lo52":187.5,"cur":"TWD","closes":[244.5,248.5,248.5,245.0,240.0,247.5,250.0,261.0,259.0,264.0,263.0,289.0,293.5,301.5,309.0,293.0,284.5,269.5,277.5,263.0,258.5,260.5,267.5,269.0,272.0,268.5,268.5,259.5,256.0,257.5,248.5,246.5,251.0,248.0,239.0,240.5,242.0,237.0,237.5,237.5,237.5,236.5,235.5,239.0,242.5,234.0,234.5,246.0,251.5,257.5,252.5,253.0,238.0,237.0,229.5,250.5,253.0,250.0,258.5,264.5,260.0,264.5,263.0,270.0,262.0,259.5]},"CAMT":{"price":165.38,"hi52":215.99,"lo52":75.75,"cur":"USD","closes":[168.35,155.74,151.31,159.37,160.59,167.37,174.73,169.62,174.78,171.66,163.09,187.52,183.45,181.16,164.21,168.67,168.15,166.69,184.15,193.27,197.75,182.24,178.14,195.16,195.72,169.39,166.9,168.06,153.72,157.32,163.12,155.48,142.5,141.84,133.26,140.05,145.36,143.79,136.78,149.9,147.31,147.92,146.15,147.09,156.15,156.79,155.19,147.79,151.46,140.06,126.97,137.23,132.46,139.79,151.62,147.6,149.67,155.35,158.1,164.41,174.2,172.81,165.38]},"CRWV":{"price":105.26,"hi52":153.2,"lo52":60.55,"cur":"USD","closes":[107.3,103.77,99.81,101.28,107.58,105.49,105.89,104.27,106.86,109.53,124.82,119.27,110.93,108.03,100.39,102.37,98.45,95.61,95.74,100.55,106.71,117.03,115.21,117.95,111.29,105.72,100.88,98.76,96.58,95.51,99.54,85.68,81.75,86.46,83.53,90.0,89.7,88.88,83.31,79.94,77.12,72.91,73.21,73.06,79.58,82.64,81.1,71.88,70.79,67.3,60.82,73.9,71.77,85.76,91.9,89.89,85.33,90.67,88.19,90.32,107.73,106.29,105.26]},"NBIS":{"price":277.68,"hi52":299.86,"lo52":62.01,"cur":"USD","closes":[219.94,199.86,197.73,191.82,219.93,214.77,208.06,208.37,226.34,231.09,264.51,260.58,251.68,259.67,227.81,218.0,220.12,211.69,222.24,232.36,260.07,265.1,280.91,286.69,283.61,275.25,259.66,256.63,240.3,261.15,276.17,229.18,215.62,213.02,195.19,216.48,216.2,219.65,210.51,194.09,199.51,171.77,177.71,182.62,216.92,218.16,220.97,187.77,187.88,169.69,148.22,188.43,190.41,212.58,225.74,218.99,189.88,187.97,184.11,193.23,259.2,255.04,277.68]},"SNDK":{"price":1641.11,"hi52":2354.39,"lo52":42.82,"cur":"USD","closes":[1407.61,1333.01,1383.29,1392.56,1542.24,1478.69,1589.55,1589.94,1641.64,1694.98,1761.43,1716.36,1831.5,1759.68,1559.32,1642.0,1646.54,1643.23,1881.51,1980.1,2107.86,1991.55,1958.8,2184.75,2273.73,1963.6,1914.46,2335.0,2090.71,2050.39,2273.73,2032.22,1745.0,1744.43,1617.7,1727.18,1858.27,1915.92,1673.97,1757.82,1615.0,1411.08,1354.82,1390.95,1589.4,1599.27,1610.33,1436.56,1278.23,1096.1,1015.89,1279.96,1214.83,1288.03,1427.62,1350.5,1258.58,1212.21,1237.92,1271.05,1344.29,1528.11,1641.11]},"AMAT":{"price":507.18,"hi52":739.67,"lo52":154.47,"cur":"USD","closes":[436.62,413.57,406.91,426.85,427.36,432.16,454.89,448.25,449.68,450.06,458.17,490.05,500.77,501.7,453.01,492.17,499.21,497.01,552.64,567.25,585.78,568.23,592.92,617.11,640.18,585.88,588.97,668.0,626.84,694.64,723.0,650.91,603.04,592.79,554.5,570.5,588.66,602.5,575.39,595.7,579.43,560.93,529.66,525.7,564.55,553.92,562.8,536.25,516.89,476.46,436.45,501.77,507.67,518.21,546.62,534.24,527.48,539.14,522.12,525.61,548.15,534.54,507.18]},"CBRS":{"price":218.98,"hi52":386.34,"lo52":160.81,"cur":"USD","closes":[279.72,296.65,303.63,290.69,281.86,256.78,241.71,266.9,242.59,236.99,213.28,236.52,214.94,215.4,201.01,237.83,226.82,237.33,226.55,214.0,218.03,212.25,213.67,234.71,224.43,226.72,182.26,168.52,181.59,216.16,221.0,221.27,204.86,192.01,176.61,181.72,198.53,215.08,204.62,203.81,184.01,180.46,172.86,176.88,208.57,209.8,220.0,199.12,188.61,192.72,169.39,203.07,198.71,219.97,227.15,214.3,211.3,226.73,230.01,234.76,262.06,231.01,218.98]}};
+
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+
+const PUBHUE={ir:'var(--pub-irrational)',sa:'var(--pub-semianalysis)',sd:'var(--pub-semidoped)'};
+const PUBNAME={ir:'Irrational',sa:'SemiAnalysis',sd:'Semi Doped'};
+
+// This run's logged calls. tracker: {pct, dir} for running P&L since same-source prior priced call; null = new.
+const CALLS=[
+ {s:'LITE',dir:'long',pub:'ir',th:'"So damn bullish" call — 80–90% GM UHP lasers, no real competition, cavity shrunk again at same linewidth.',trk:{pct:30.1,ok:true},cd:'7/28'},
+ {s:'COHR',dir:'short',pub:'ir',th:'Hides CPO-laser yield data "because it\'s garbage"; 200G VCSEL fails GR-468; sells low-margin isolators/FAU.',trk:null},
+ {s:'AXTI',dir:'long',pub:'ir',th:'6-in InP: Coherent\'s bad yield may be Sumitomo wafer uniformity — AXTI 6-in wafers fix it. Pure InP play.',trk:{pct:70.5,ok:true},cd:'7/25'},
+ {s:'2317.TW',dir:'long',pub:'sd',th:'Foxconn +35% profit; AI servers now >50% of revenue; CoWoS the binding 2027 constraint.',trk:{pct:1.8,ok:true},cd:'7/6'},
+ {s:'CAMT',dir:'long',pub:'sd',th:'Advanced-packaging inspection: orders >$600M, adv-packaging revenue set to grow 70% Q1→Q4.',trk:null},
+ {s:'CRWV',dir:'long',pub:'sd',th:'Backlog $104B +$25B new; raised prices 25% while sold out; A100 contracts to 2029. Debt $35.6B the risk.',trk:null},
+ {s:'NBIS',dir:'long',pub:'sd',th:'+514% YoY revenue, deferred rev ~$6B; shares +34%. Neocloud pricing power holding as capacity grows.',trk:null},
+ {s:'SNDK',dir:'long',pub:'sd',th:'Investor Day: mid-to-high-teens rev growth FY28–30, NAND roadmap, 100% excess cash returned.',trk:{pct:-6.0,ok:false},cd:'7/3'},
+ {s:'AMAT',dir:'neutral',pub:'sd',th:'Record $9.12B quarter, EPS +41%, 8-quarter visibility to 2030 — but shares "sold the news."',trk:null},
+ {s:'CBRS',dir:'neutral',pub:'sd',th:'Missed; hardware revenue contracted QoQ, stock −17%. Raised FY guide on inference-services mix.',trk:null},
+];
+
+const CH={long:['c-long','▲'],short:['c-short','▼'],neutral:['c-neut','●']};
+const board=document.getElementById('board');
+CALLS.forEach(c=>{
+  const p=PRICES[c.s], [cls,ic]=CH[c.dir];
+  const cur=p.cur==='TWD'?'NT$':'$';
+  const scolor=c.dir==='short'?'var(--short)':c.dir==='neutral'?'var(--neutral)':'var(--long)';
+  let trk;
+  if(!c.trk){trk=`<span class="newm">new</span>`;}
+  else{const cl=c.trk.ok?'up':'down';const sg=c.trk.pct>0?'+':'';trk=`<span class="pnl ${c.dir==='neutral'?'flat':cl}">${sg}${c.trk.pct.toFixed(1)}%</span><br><span class="newm">since ${PUBNAME[c.pub]} ${c.cd}</span>`;}
+  board.insertAdjacentHTML('beforeend',`<tr>
+    <td class="tk mono">${c.s}</td>
+    <td><span class="chip ${cls}">${ic} ${c.dir.toUpperCase()}</span></td>
+    <td class="hidem"><span class="srcdot"><span class="dot" style="background:${PUBHUE[c.pub]}"></span>${PUBNAME[c.pub]}</span></td>
+    <td class="hidem th">${c.th}</td>
+    <td class="mono">${cur}${p.price.toLocaleString()}</td>
+    <td style="width:96px">${sparkSVG(p.closes,90,26,scolor)}</td>
+    <td>${trk}</td>
+  </tr>`);
+});
+
+// Spotlights: LITE, COHR, AXTI
+const SPOTS=[
+ {s:'LITE',pub:'ir',ci:49,dir:'long',bull:['Lumentum call "ultra-bullish": UHP-laser GM 80–90%, ELS module 50–60%; hiking prices with Broadcom also sold out.','Cavity length cut <em>again</em> at the same linewidth; wide mode-hop-free range = a qual-only moat rivals can\'t show on a datasheet.']},
+ {s:'COHR',pub:'ir',ci:55,dir:'short',bull:['Call "crap"; every sell-side analyst circling the same question — the numbers only make sense if 6-in InP yield is bad.','Could prove Irrational wrong in a day by publishing the same RIN/noise plots Lumentum did. Chooses not to.']},
+ {s:'AXTI',pub:'ir',ci:47,dir:'long',bull:['Best InP substrate maker; 6-inch wafers still in R&D — once they ship, the whole optics chain\'s yield lifts.','~80% of InP output already feeds AI with zero consumer fallback — a tighter squeeze than DRAM. Standout open tracker.']},
+];
+const spots=document.getElementById('spots');
+SPOTS.forEach(o=>{
+  const p=PRICES[o.s];const color=o.dir==='short'?'var(--short)':'var(--long)';
+  const pos=((p.price-p.lo52)/((p.hi52-p.lo52)||1)*100).toFixed(1);
+  const trkC=CALLS.find(c=>c.s===o.s&&c.trk);
+  let trkHTML='';
+  if(trkC){const cl=trkC.trk.ok?'up':'down';const sg=trkC.trk.pct>0?'+':'';
+    trkHTML=`<div class="trk ${cl}">${sg}${trkC.trk.pct.toFixed(1)}% <span style="color:var(--muted);font-weight:600">since ${PUBNAME[trkC.pub]} ${trkC.cd} call ●</span></div>`;}
+  spots.insertAdjacentHTML('beforeend',`<div class="spot">
+    <div class="head">
+      <div><span class="tk mono" style="font-size:15px">${o.s}</span> <span class="srcdot"><span class="dot" style="background:${PUBHUE[o.pub]}"></span></span></div>
+      <div><span class="px mono">$${p.price.toLocaleString()}</span></div>
+    </div>
+    <div class="chart">${sparkSVG(p.closes,300,66,color,{ci:o.ci,refline:true})}</div>
+    <div class="rangebar"><div class="fill" style="left:0;width:${pos}%"></div><div class="mk" style="left:${pos}%"></div></div>
+    <div class="rng"><span>52w lo $${p.lo52.toLocaleString()}</span><span>hi $${p.hi52.toLocaleString()}</span></div>
+    ${trkHTML}
+    <ul class="bull">${o.bull.map(b=>`<li>${b}</li>`).join('')}</ul>
+  </div>`);
+});
+
+// Themes by mention count this run
+const THEMES=[
+ ['Optics / CPO / lasers',9],['Memory & DRAM cycle',8],['AI-infra capex / neocloud',7],
+ ['Advanced packaging',6],['Semi capital equipment',5],['InP substrate shortage',4],
+ ['Datacenter power',4],['China domestic stack',4]];
+const mx=Math.max(...THEMES.map(t=>t[1]));
+const th=document.getElementById('themes');
+THEMES.forEach(([n,v])=>th.insertAdjacentHTML('beforeend',
+  `<div class="trow"><span>${n}</span><div class="tb" style="width:${(v/mx*100).toFixed(0)}%"></div><span class="tc">${v}</span></div>`));
+</script>

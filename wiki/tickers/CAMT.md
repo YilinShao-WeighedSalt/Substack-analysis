@@ -2,13 +2,13 @@
 type: ticker
 title: "CAMT — Camtek"
 tags: []
-related: ["[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-01-05-long-mrdimm-short-nand-flash]]", "[[irrationalanalysis-2025-05-11-onto-innovation-implosion]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]"]
+related: ["[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-01-05-long-mrdimm-short-nand-flash]]", "[[irrationalanalysis-2025-05-11-onto-innovation-implosion]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[semidoped-2026-08-12-daily-update]]"]
 created: 2024-07-01
-updated: 2026-01-31
+updated: 2026-08-15
 ticker: CAMT
 current_stance: long
 conviction: medium
-last_review: 2026-01-31
+last_review: 2026-08-15
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-01-31
 | 2025-12-21 | [[irrationalanalysis]] | LONG | n/a | Preferred advanced packaging inspection play; Israeli firm sells freely into China |
 | 2026-01-16 | [[irrationalanalysis]] | LONG | n/a | Semicap positioning; bought as part of HBM-adjacent equipment basket |
 | 2026-01-31 | [[irrationalanalysis]] | LONG | n/a | Holds position; bullish on process control in advanced packaging |
+| 2026-08-12 | [[semidoped]] | LONG | 165.38 | Advanced-packaging inspection beneficiary: orders top $600M, adv-packaging revenue set +70% Q1→Q4 as CoWoS/3DIC ramp accelerates |
 
 ## Thesis evolution
 The author established a long position in mid-2024 anchored on CAMT's exposure to HBM inspection demand — specifically the optical metrology and inspection steps required for advanced packaging and die stacking. The thesis strengthened through late 2024 as TSMC's capex trajectory validated spending on advanced packaging infrastructure, while CAMT's China sales provided insulation from the Intel/Samsung slowdown. By mid-2025 the conviction sharpened into a pair trade — long CAMT, short ONTO — premised on CAMT's ability to offset KLA competition through aggressive China volume, whereas ONTO was seen as disadvantaged in that market. Into year-end 2025 and early 2026, CAMT remained the author's preferred advanced packaging inspection name, with the Israel-domiciled structure viewed as a competitive advantage for accessing China demand that US-listed peers increasingly cannot serve.

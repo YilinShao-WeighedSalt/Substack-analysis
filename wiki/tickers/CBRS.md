@@ -2,13 +2,13 @@
 type: ticker
 title: "CBRS — Cerebras Systems"
 tags: []
-related: ["[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]"]
+related: ["[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]"]
 created: 2024-10-01
-updated: 2026-08-12
+updated: 2026-08-15
 ticker: CBRS
 current_stance: mixed
 conviction: medium
-last_review: 2026-08-12
+last_review: 2026-08-15
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -25,6 +25,7 @@ last_review: 2026-08-12
 
 | 2026-08-09 | [[irrationalanalysis]] | SHORT | 234.76 | Activist campaign vs Feldman; WSE4 is 'gen 3.5' (power/clocks, not yield); suspects unsolved parametric yield caps final yield ~20%; covered-call short |
 | 2026-08-10 | [[semianalysis]] | NEUTRAL | 234.76 | TileRT (persistent-kernel GPU software) reframes ultra-low-latency as a rentable 'speed tier' — structural pressure on specialist inference-ASIC TAM |
+| 2026-08-13 | [[semidoped]] | NEUTRAL | 218.98 | Q2 miss, hardware revenue contracted QoQ, stock −17%; raised FY guide on inference-services mix. A datapoint for the yield-short / TAM-pressure bears |
 
 ## Thesis evolution
 irrationalanalysis opened with a consistently bearish view across three calls spanning late 2024, citing fatal customer concentration (G42 as near-sole buyer), structurally weak gross margins around 36%, and a wafer-scale architecture it viewed as technically overblown. By mid-2026 the same publication reversed to bullish after Cerebras secured an OpenAI $20B inference deal and AWS distribution, arguing the company found a defensible niche in ultra-low-latency inference where wafer-scale die actually delivers differentiated speed. The June 2026 earnings call reinforced the LONG: despite calling the transcript a "trainwreck," irrationalanalysis deepened its conviction by modeling the packaging yield problem (20% estimated) as the central financial variable — improvement from 20% to 50% would lift gross margins from ~42% to ~72%. The author initiated a symbolic "activist campaign" focused on three catalysts: WSE-4 with FP8 support, face-to-face I/O to solve KV cache offload, and a packaging yield investor day. semidoped maintained NEUTRAL at first earnings, noting shares fell 10% despite the beat and flagging the 88GB SRAM-per-rack constraint for large models. The two publications continue to disagree on conviction — irrationalanalysis sees solvable engineering bottlenecks, semidoped sees structural TAM and business model risks.
@@ -35,3 +36,5 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 **Update 2026-07-28:** SemiAnalysis flags an **AMD-Cerebras PD-disaggregation deal** (Cerebras wafer-scale for ultra-fast interactive decode alongside AMD GPUs), a Groq-Nvidia-style arrangement that validates the inference-niche pivot. New LONG at $188.61. But the tape is brutal: irrationalanalysis's Jun-24 LONG at $226.72 has now **resolved at $188.61, -16.8% → LOSS** (>30d); semidoped's Jun-24 NEUTRAL at $226.72 (excluded) looks prescient. CBRS is ~51% off its 52-wk high. Deal is a real catalyst but does not fix the margin/packaging-yield overhang.
 
 **Update 2026-08-12:** a genuine three-way split now sits on CBRS. (1) SemiAnalysis's Jul-25 LONG ($188.61) is **+24.5% ✓ (open)** — the AMD PD-disagg deal thesis is working on the tape. (2) IA reiterates an activist SHORT ($234.76), arguing WSE4 is a 'gen 3.5' power/clock refresh and that Feldman's 'doubling clocks' brag betrays an *unsolved parametric-yield* problem (final yield ~20%). (3) SemiAnalysis's OWN new TileRT note ($234.76 NEUTRAL) is structurally cautionary on the inference-ASIC TAM Cerebras depends on. Bull tape vs bear fundamentals — see [[cbrs-yield-short-vs-inference-tam]].
+
+**Update 2026-08-15:** SD NEUTRAL $218.98 (Aug-13). Cerebras missed and fell ~17%, with **hardware revenue contracting QoQ** — a concrete datapoint on the bear side of [[cbrs-yield-short-vs-inference-tam]] (IA's parametric-yield activist short + SA's own TileRT TAM-pressure note). CBRS raised FY guide on inference-services mix, shifting away from hardware. IA's Aug-9 SHORT ($234.76) is +6.7% (short working, open). The SA Jul-25 LONG ($188.61, +16.1%) remains the bull counter, open, resolves ~Aug-24.

@@ -4,7 +4,7 @@ title: "CBRS: parametric-yield short vs. working tape vs. software-eroded infere
 tags: [cerebras, inference, contradiction]
 related: ["[[CBRS]]", "[[irrationalanalysis]]", "[[semianalysis]]", "[[semidoped]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[ai-accelerator-competition]]"]
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-15
 status: open
 ---
 # Cerebras (CBRS) — a genuine three-way disagreement
@@ -18,3 +18,5 @@ As of 2026-08-12 three distinct views sit on the same name at ~$235:
 3. **The tape — bullish.** SemiAnalysis's *own* Jul-25 CBRS LONG ($188.61, off the AMD PD-disaggregation deal) is **+24.5%** and open; semidoped's IPO-era NEUTRAL ($185) tracked wrong on the way up.
 
 **Resolution watch:** does CBRS's next disclosure show packaging/parametric yield improving above ~30% (IA falsifier), and does TileRT-style GPU software visibly compress Cerebras's inference win-rate/ASP (SA falsifier)? The SA Jul-25 long resolves the price question ~late Aug; the yield question needs the WSE4 event + an earnings print. Bull tape vs bear fundamentals — unresolved.
+
+**Update 2026-08-15 — the earnings print lands on the bear side.** Semi Doped (Aug-13 daily) reports **Cerebras missed and fell ~17%, with hardware revenue *contracting* QoQ** ("lumpy" demand); it raised FY guidance but is shifting the revenue mix toward **inference services** rather than wafer-scale hardware sales. This is the first hard datapoint since the split opened, and it cuts toward IA's yield short and SA's TAM-pressure note: a hardware business that shrinks sequentially and pivots to services is exactly what a yield-constrained, TAM-squeezed accelerator maker looks like. Marks: IA's Aug-9 SHORT ($234.76) is **+6.7%** (working, open); SA's Jul-25 LONG ($188.61) is **+16.1%** (still positive but off its highs, open, resolves ~Aug-24). The bull tape has cooled toward the bear fundamentals — still unresolved, but the momentum shifted this run.

@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-12
+updated: 2026-08-15
 handle: irrationalanalysis
-calls_logged: 592
-hit_rate: "3/13 (23%), ~27 open"
+calls_logged: 595
+hit_rate: "3/13 (23%), ~30 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Lumentum + Coherent Q4/FY26 earnings — the twin note (2026-08-12 & 08-14):** The author's clearest expression yet of the optics duopoly thesis, delivered as a paired earnings teardown. **Lumentum call "ultra-bullish"** — 80–90% GM UHP lasers, no real competition (Broadcom also sold out), cavity length cut *again* at the same linewidth; the winning architecture is disaggregated ELS/ELSFP (integration only happens because of the InP shortage and worsens mode-hop reliability + single-point failure), and the datasheet-invisible moat is a wide mode-hop-free range across temperature. **Coherent call "crap"** — "financially self-immolates in the greatest optics bull market since the telco bubble"; hides CPO-laser yield/noise data "because it's garbage"; 200G-PAM4 VCSEL (PhotonLink) will fail GR-468; stuck selling low-margin isolators/FAU (~30–40%) vs Lumentum's ~80% on the laser. Praises Lumentum's public RIN (<−155 dBc/Hz vs −145 spec)/WPE/PCE plots as the transparency Coherent won't match. 6-inch-InP conspiracy: Coherent's yield may be Sumitomo wafer-uniformity, fixable once [[AXTI]] ships good 6-in substrate. Priced: LONG [[LITE]] $926.14, [[AXTI]] $81.64; **SHORT [[COHR]] $325.83** (first outright COHR short since the 2026 run).
+
+**hit_rate note (2026-08-15): no new resolutions — holds 3/13 (23%).** The Jul-25/28 InP/optics batch resolves ~Aug-24/27 and is running very hot: [[AXTI]] Jul-25 $47.88 → **+70.5%**, [[LITE]] Jul-28 $711.96 → **+30.1%**; the Aug-9 [[CBRS]] activist SHORT ($234.76) is +6.7% (working). The book is heavily long optics/InP + short Coherent + short Cerebras into a tape finally cooperating with the optics thesis.
 
 - **CBRS Update, WOLF/NVTS Lawsuit, HBF Spec, Aeva, Taalas, AAOI, TSEM, uLED Jihad (2026-08-09):** Grab-bag of engineering notes. **Cerebras**: running an activist SHORT — reads WSE4 as a "gen 3.5" power/clock refresh and Feldman's "doubling clocks" brag as a tell that *parametric yield* was never solved (final yield ~20%); holds one uncovered share + covered calls. **Optics**: "HINT HINT LONG LUMENTUM" — Aeva's first optical-connectivity customer (SOA, likely Innolight/Amazon) confirms the high-power-laser shortage; Tower earnings-call flex (Openlight PDK, dunks GloFo on insertion loss, 300mm SiGe → "hyper bullish" Semtech). **Power**: Wolfspeed's suit vs Navitas looks weak (expiring GaN patent) but Navitas SiC is "dogshit" anyway. **Micro-LED Jihad**: a scorched-earth teardown of a SemiAnalysis note — micro-VCSEL viable (32–64G NRZ), micro-LED "a hoax" (incoherent light → catastrophic phase noise, fails at 4G). **HBF**: softens from "garbage" to "solution looking for a problem." AMD/Taalas read as FPGA/embedded IP. Priced: LONG [[LITE]] $820.59, [[TSEM]] $249.58, [[SMTC]] $131.18, [[WOLF]] $30.14, [[AEHR]] $117.18, [[AXTI]] $73.78; SHORT [[CBRS]] $234.76, [[NVTS]] $13.60; NEUTRAL [[AAOI]] $134.33, [[COHR]] $328.57, [[AMD]] $474.32, [[NVDA]] $217.50.
 

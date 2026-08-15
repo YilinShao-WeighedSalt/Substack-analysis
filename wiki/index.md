@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-12
+updated: 2026-08-15
 ---
 
 # Wiki Index
@@ -557,3 +557,8 @@ updated: 2026-08-12
 - [[semianalysis-2026-08-07-spacex-10gw-microsoft]] — SpaceX 10GW in 2027 (MSFT/NVDA LONG; $100M/MW inference prize)
 - [[semianalysis-2026-08-10-tilert-inferencex]] — TileRT InferenceX (persistent-kernel GPU inference; CBRS/inference-ASIC TAM pressure)
 - [[semidoped-2026-08-10-11-optical-ban-daily-newstake]] — Dailies + News Take (Intel $20B raise, TSMC record, AMD Q2, Volta $10B, optical ban debunk)
+- [[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]] — Lumentum Q4/FY26 "ultra-bullish": 80-90% GM UHP lasers, ELS>integrated, mode-hop-free moat (LONG LITE)
+- [[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]] — Coherent Q4/FY26 "crap": hides CPO-laser yield, 200G VCSEL fails GR-468 (SHORT COHR, LONG LITE/AXTI)
+- [[semidoped-2026-08-12-daily-update]] — Daily Aug 12 (CoWoS 99% yield, CXMT 90% DDR5, Foxconn +35%, Camtek >$600M)
+- [[semidoped-2026-08-13-daily-update]] — Daily Aug 13 (CoreWeave $104B backlog, Nebius +514%, Cerebras -17% miss, YMTC #3 NAND)
+- [[semidoped-2026-08-14-daily-update]] — Daily Aug 14 (AMAT record $9.12B, SanDisk NAND to 2030, SMIC >$3B, CXMT $524B)

@@ -2,13 +2,13 @@
 type: ticker
 title: "AXTI — AXT Inc."
 tags: []
-related: ["[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
+related: ["[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]"]
 created: 2026-04-18
-updated: 2026-08-12
+updated: 2026-08-15
 ticker: AXTI
 current_stance: long
 conviction: high
-last_review: 2026-08-12
+last_review: 2026-08-15
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,6 +20,7 @@ last_review: 2026-08-12
 | 2026-08-05 | [[irrationalanalysis]] | LONG | 68.61 | Transceiver-ban leg on the InP 2-4x thesis; sold tactically today on China-retaliation risk. |
 
 | 2026-08-09 | [[irrationalanalysis]] | LONG | 73.78 | Adding into the InP shortage; pure indium-phosphide substrate play |
+| 2026-08-14 | [[irrationalanalysis]] | LONG | 81.64 | 6-in InP thread: Coherent's yield woes may be Sumitomo wafer-uniformity — once AXTI ships good 6-in InP substrate, the whole optics chain's yield lifts. Pure-play InP. |
 
 ## Thesis evolution
 The April 2026 initiation was unambiguously bullish: AXT was framed as the most direct pure-play on a structural InP supercycle, with the bear case (low capex barriers) explicitly rejected in favor of a yield and certification moat that Chinese competitors could not quickly replicate. By May 2026, the same publication retained the LONG stance but materially shaded the conviction: a detailed analysis of Chinese capacity ramp drew an explicit SiC industry parallel, where Western incumbents were systematically displaced once domestic producers closed the process-control gap. The view shifted from "durable moat" to "near-term beneficiary with a medium-term overhang," reflecting growing evidence that the structural pieces for Chinese InP yield catch-up are falling into place faster than the market recognizes. Both publications are from the same author ([[globalsemiresearch]]), so the disagreement is temporal rather than cross-source — a single analyst upgrading the risk profile of a position they remain long.
@@ -34,3 +35,5 @@ No price data was recorded at either call (both px@call are n/a), so mark-to-mar
 **Update 2026-08-06:** IA LONG at $68.61 (Aug-5 transceiver-ban memo). The prior IA priced longs are both **tracking ✓** and still open (<30d): Jul-25 $47.88 -> $68.61 = **+43.3%**, Aug-1 $60.43 -> $68.61 = **+13.5%**. AXT bucked/led the tape — it fell a month early on the China TRS-ban forced unwind and rebounded on the InP-shortage + transceiver-substitution thesis. IA is now *tactically flat* (sold today) but the 2-4x thesis is intact; the falsifier is a China InP-export retaliation that resets the whole optics complex 15-20% in a day.
 
 **Update 2026-08-12:** IA LONG $73.78 (Aug-9). The Jul-25 IA LONG ($47.88) is the run's standout open tracker at **+54.1% ✓ (open, resolves ~Aug-24)** — InP substrate demand bucked everything. IA still adding. Falsifier: China InP-export retaliation or an AI-optics air-pocket.
+
+**Update 2026-08-15:** IA LONG $81.64 off the Coherent earnings note (6-in InP conspiracy angle: AXTI's absence in 6-in is *why* Coherent may be stuck with worse Sumitomo wafers — a demand pull once AXTI's 6-in R&D ships). The Jul-25 IA LONG ($47.88) is now the run's runaway open tracker at **+70.5% ✓ (open, resolves ~Aug-24)**; Aug-1 $60.43 → +35.1%, Aug-5 $68.61 → +19.0%, Aug-9 $73.78 → +10.7%, all tracking. Structural thesis (80% of InP to AI, no consumer fallback) reinforced by the earnings-season optics data. Falsifier unchanged: credible Chinese 6-in/single-crystal yield catch-up, or a China InP-export retaliation.

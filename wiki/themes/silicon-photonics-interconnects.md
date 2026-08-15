@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-08-12
+updated: 2026-08-15
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -96,6 +96,9 @@ first_seen: 2024-02-08
 - 2026-06-10 — [[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]] (globalsemiresearch)
 - 2026-06-12 — [[semidoped-2026-06-12-computex-optics-power]] (semidoped)
 
+- 2026-08-12 — [[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]] (irrationalanalysis)
+- 2026-08-14 — [[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]] (irrationalanalysis)
+
 ## Narrative
 Silicon photonics and optical interconnects emerged as an investable theme in early 2024, initially surfacing through Fabrinet coverage and SemiAnalysis's deep dives on NVL72 800G optical cabling requirements. Citrini built foundational educational content through mid-2024 (Interconnects 101, Can You Hear Me Now), establishing the bandwidth-per-watt imperative that drives the shift from copper to optics at scale. IrrationalAnalysis became the dominant voice through 2025, tracking the co-packaged optics (CPO) transition in granular detail — from GTC 2025 announcements to a dedicated CPO guide — while also surfacing skepticism around Marvell's SerDes execution and the Celestial AI acquisition rumors. By late 2025 and into 2026 the theme broadened: GlobalSemiResearch added China-side coverage (InP substrate supply, domestic optical chip ramps), semidoped connected optics to power constraints, and a mid-2026 dispute between GlobalSemiResearch and SemiAnalysis over CPO deployment timelines signals the theme has entered a phase of competing, detailed forecasts rather than directional consensus. Coverage frequency and recency through June 2026 indicate the theme is actively maturing with real deployment decisions now under way.
 
@@ -112,3 +115,10 @@ Irrational Analysis ([[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]
 Status: still maturing, now with a live **geopolitical catalyst** layered on the InP-shortage thesis (see [[geopolitics-export-controls]]).
 
 **Update 2026-08-12 — micro-LED vs micro-VCSEL, SOA scarcity, Openlight:** Irrational Analysis drew a hard line between two chip-scale light sources. **Micro-VCSEL** is viable at the optimal "slow-and-wide" 32–64G NRZ (Coherent's 106G-PAM4 demo shows capability; ~50% cost cut vs DFB/SiPho). **Micro-LED** is dismissed as "a hoax" — LEDs emit *incoherent* light, so catastrophic phase noise + jitter cap them well below the 1e-12 BER needed for no-FEC links (Avicina fails at 4G); electrical crosstalk and chromatic dispersion (reach ~1-2m) finish the job. Separately, the **high-power SOA (semiconductor optical amplifier)** is the scarce enabler for CPO/NPO — Aeva's first optical-connectivity customer (likely Innolight/Amazon) validates the shortage, and IA frames it as a Broadcom+Lumentum duopoly (Coherent ~18mo away via MOPA; AAOI "has nothing"). **Openlight/Tower** InP-on-SiPho becomes more attractive as InP tightens (higher InP-area efficiency), and Tower dunks GloFo on waveguide insertion loss. 300mm SiGe expansion at Tower is a bullish read for Semtech's discrete amplifiers.
+
+**Update 2026-08-15 — the LITE-vs-COHR earnings split teaches CPO-laser yield.** Irrational Analysis's twin Q4/FY26 earnings notes turned the abstract "laser moat" into concrete, measurable physics — the plain-language toolkit for reading any CPO-laser story:
+- **Disaggregated (ELS/ELSFP) beats integrated.** A ring-modulated single-λ PIC split 6× needs ~2 mW/ring → 400 mW external vs 250 mW integrated. Integration saves scarce InP area (400 mW lasers are only ~65% as area-efficient) but is a *bad* idea: harder to keep drive-current/temperature clean → more **mode hops** (a wavelength "flicker" that drops the link), and any dead laser kills the whole optical engine vs swapping an ELSFP module. People only integrate because the photon/InP shortage forces it — "hilariously bullish for Lumentum."
+- **The datasheet-invisible moat = wide mode-hop-free range across temperature.** Only shows up in 1K-sample stress qual; drives customer yield. Lumentum leads it (and cut cavity length *again* at the same linewidth).
+- **Measurable laser specs:** **RIN** (Relative Intensity Noise) — amplitude noise, lower = better; Lumentum <−155 dBc/Hz vs −145 spec = >10× quieter. **WPE** (wall-plug efficiency) ~10–11% realistic (40 °C die / 50 °C coldplate) vs 10% target. **PCE** 21–24% (target 25–30%). **Thermal tuning:** ~0.1 nm/K to hit DWDM's ±30 GHz (±0.17 nm) accuracy, but tuning can push the TEC into inefficient reverse/heating mode near the coldplate temp — which is why high-power CPO-laser yield is "a nightmare" and a real moat.
+- **VCSEL limit:** 200G-PAM4 on a VCSEL (Coherent's PhotonLink) will fail **GR-468** reliability; the optimal VCSEL NPO/CPO datarate is 32/64G NRZ. At 200G you can't drop FEC, killing the no-FEC/direct-drive CPO dream.
+- **6-inch InP conspiracy:** Coherent's bad yield may be *input goods* — poor 6-in InP wafer uniformity from Sumitomo, since [[AXTI]] (the best substrate maker) doesn't yet have 6-in InP (still R&D). Once AXTI ships good 6-in, chain-wide yield could lift. Names: [[LITE]] (near-monopoly high-power laser, ~80% GM), [[COHR]] (IA now outright SHORT), [[AXTI]] (substrate pull).

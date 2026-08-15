@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-12
+updated: 2026-08-15
 handle: semidoped
-calls_logged: 108
-hit_rate: "0/15 (0%), ~26 open"
+calls_logged: 116
+hit_rate: "0/15 (0%), ~34 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Updates Aug 12-14 (2026-08-12..14):** Three news-heavy dailies mapping the AI-supercycle backdrop. **Packaging/foundry:** TSMC CoWoS yield clears 99% (bottleneck moves to ABF substrate + memory), 3DIC cycle to 1yr, +$29.44B capex, pursuing AUO fabs for FOPLP/CoPoS ([[TSM]] LONG $426.35); Camtek orders >$600M, adv-packaging rev +70% Q1→Q4 ([[CAMT]] LONG $165.38); Foxconn +35% profit, AI servers >50% of rev ([[2317.TW]] LONG $259.50). **Equipment:** Applied record $9.12B quarter (+25%), EPS +41%, 8-quarter visibility to 2030 — but "sold the news" ([[AMAT]] NEUTRAL $507.18); Lam +$3B lab expansion. **Memory:** CXMT DDR5 yield >90% (2pts behind Samsung), overtakes Tencent to ~$524B mktcap; YMTC #3 in NAND (14%); SanDisk Investor Day (mid-high-teens growth FY28–30, 100% cash return) ([[SNDK]] LONG $1,641.11). **Neocloud:** CoreWeave $104B+$25B backlog, +25% price hike, A100s to 2029 ([[CRWV]] LONG $105.26); Nebius +514% rev, shares +34% ([[NBIS]] LONG $277.68); **Cerebras −17% on a miss, hardware rev contracted QoQ** ([[CBRS]] NEUTRAL $218.98). **Power:** record US consumption 2026/27, data-center moratoriums (Chicago/Salix), Amazon 7.65GW gas plant, 800V-DC standard (Google/MSFT/Nvidia). Anthropic eyeing Decart AI ($6B), targeting a $2T IPO.
+
+**hit_rate note (2026-08-15): no new resolutions — holds 0/15 (0%).** The next batch to resolve is the Jul-27/29 Korea/memory/optics longs (000660.KS ₩1.62M, 005930.KS, GLW $135.22), crossing 30d ~Aug-26/28. All eight new calls opened at spot. Note the CBRS miss ([[CBRS]] hardware contracting QoQ) is a fresh datapoint for the yield-short side of [[cbrs-yield-short-vs-inference-tam]].
 
 - **Daily Updates Aug 10-11 + "News Take" podcast (2026-08-10..11):** Big-picture financing + foundry run. **Intel** priced an upsized **$20B** equity raise (first since 1971) at $95 to fund AI-foundry capex — Austin: "build baby build," Vik: upsizing is positive, dilution -4-5% priced into a rally; **MediaTek commits $5B to Intel Foundry** ([[INTC]] LONG $97.71). **TSMC** record July rev +44.7% YoY, 2nm sold out through 2028 at $30k/wafer, CoWoS near-balance ([[TSM]] LONG $422.06). **Nvidia** formalizes a $500B third-party "banker" platform (Apollo/BlackRock/Blackstone/Brookfield/GS/KKR) — Vik: "getting out of hand." News-Take pod: the Chinese-transceiver ban is technically bogus (a transceiver is "just a USB cable"), won't stick, and wouldn't immediately help LITE/COHR (fixed supply); **AMD** Q2 record +50% (DC 58%) but stock fell on an $800M capex surprise + GPU-accel-cadence doubts ([[AMD]] NEUTRAL $474.32); Anthropic's $10B deal with 6-month-old **Volta Infrastructure** as an infra-debt/token-factory template. Also: Apple testing CXMT DRAM; Anthropic chip team (Samsung foundry); SK Hynix–SanDisk first HBF spec; Navitas sues Renesas over GaN. Pub-quiz (Aug-9) = no calls.
 
