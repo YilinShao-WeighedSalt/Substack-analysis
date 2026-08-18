@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-15
+updated: 2026-08-18
 handle: semidoped
-calls_logged: 116
-hit_rate: "0/15 (0%), ~34 open"
+calls_logged: 128
+hit_rate: "2/15 (13%), ~40 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update Aug-17 (2026-08-17):** A news-dense daily carrying 12 calls. **China stack matures:** SMIC beats, China rev +22%, signals wafer price hikes, eyes capacity add ([[0981.HK]] LONG HK$75.15); Morningstar FV raise on both China foundries ([[1347.HK]] LONG HK$139.90); CXMT past $500B (rejects Apple price-cut, DDR5 9,000 MT/s). **Inference:** OpenAI ships Ultrafast GPT-5.6 "Sol" on Cerebras wafer-scale, 14× speed, +287% cloud rev ([[CBRS]] LONG $251.98 — the hardest bull datapoint yet on [[cbrs-yield-short-vs-inference-tam]]); Google-AMD next-gen TPU co-design talks ([[AMD]] LONG $506). **AI power/land:** Nvidia backstops 4.25/8 IT-GW at OpenAI's Ohio campus + $1.5B SB Energy, but cut the guarantee >50% ([[NVDA]] LONG $225.01); miner-to-AI pivots — Riot/Anthropic 20-yr ~$9B ([[RIOT]] LONG $20.04), Core Scientific $444M Polaris → 1.5 GW ([[CORZ]] LONG $20.13). **NAND/memory:** Phison shortage-to-2030 + 1 PB SSD ([[SNDK]] LONG $1,786.85); YMTC overtakes Kioxia #3, SK Hynix now top Kioxia holder ([[285A.T]] NEUTRAL ¥60,920); TSMC Arizona H1 profit doubles ([[TSM]] LONG $430.97); SK Hynix NAND-tight ([[000660.KS]] LONG ₩1,779,000); Micron wins YMTC suit dismissal ([[MU]] NEUTRAL $1,011.75). Aug-16 pub-quiz (answer: Qualcomm) + Aug-15 TIL (Russell Ohl / p-n junction) — educational, no calls.
+
+**hit_rate note (2026-08-18): 0/15 → 2/15 (13%) on re-price.** With the memory tape recovering, two July supercycle longs that were counted as losses in early August have crossed back above water: **[[MU]] Jul-3 LONG ($975.56) → $1,011.75 = +3.7% WIN ✓** and **[[SNDK]] Jul-3 LONG ($1,745) → $1,786.85 = +2.4% WIN ✓**. **[[AMD]] Jul-6 LONG ($552.05) → $506 = -8.3%** stays a LOSS. (Hit-rate re-evaluates ≥30-day priced calls at current price, so wins/losses can flip as the tape moves.) The Korea/HBM batch ([[000660.KS]] Jul-28 +9.7%, Jul-31 +11.5%) resolves ~Aug-27.
 
 - **Daily Updates Aug 12-14 (2026-08-12..14):** Three news-heavy dailies mapping the AI-supercycle backdrop. **Packaging/foundry:** TSMC CoWoS yield clears 99% (bottleneck moves to ABF substrate + memory), 3DIC cycle to 1yr, +$29.44B capex, pursuing AUO fabs for FOPLP/CoPoS ([[TSM]] LONG $426.35); Camtek orders >$600M, adv-packaging rev +70% Q1→Q4 ([[CAMT]] LONG $165.38); Foxconn +35% profit, AI servers >50% of rev ([[2317.TW]] LONG $259.50). **Equipment:** Applied record $9.12B quarter (+25%), EPS +41%, 8-quarter visibility to 2030 — but "sold the news" ([[AMAT]] NEUTRAL $507.18); Lam +$3B lab expansion. **Memory:** CXMT DDR5 yield >90% (2pts behind Samsung), overtakes Tencent to ~$524B mktcap; YMTC #3 in NAND (14%); SanDisk Investor Day (mid-high-teens growth FY28–30, 100% cash return) ([[SNDK]] LONG $1,641.11). **Neocloud:** CoreWeave $104B+$25B backlog, +25% price hike, A100s to 2029 ([[CRWV]] LONG $105.26); Nebius +514% rev, shares +34% ([[NBIS]] LONG $277.68); **Cerebras −17% on a miss, hardware rev contracted QoQ** ([[CBRS]] NEUTRAL $218.98). **Power:** record US consumption 2026/27, data-center moratoriums (Chicago/Salix), Amazon 7.65GW gas plant, 800V-DC standard (Google/MSFT/Nvidia). Anthropic eyeing Decart AI ($6B), targeting a $2T IPO.
 

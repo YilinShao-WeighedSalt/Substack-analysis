@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-15
+updated: 2026-08-18
 ---
 
 # Wiki Index
@@ -150,6 +150,10 @@ updated: 2026-08-15
 - [[STRL]] — STRL — Sterling Infrastructure (modular E-infra)
 - [[SU.PA]] — SU.PA — Schneider Electric (EcoStruxure modular)
 - [[UMC]] — UMC — United Microelectronics (mature-node AI re-rate)
+- [[0981.HK]] — 0981.HK — SMIC (China foundry, mature-node pricing power)
+- [[1347.HK]] — 1347.HK — Hua Hong (China foundry)
+- [[CORZ]] — Core Scientific (bitcoin-miner → AI datacenter)
+- [[RIOT]] — Riot Platforms (bitcoin-miner → Anthropic AI-infra)
 
 ## Themes
 
@@ -504,6 +508,7 @@ updated: 2026-08-15
 
 - [[semianalysis-2026-07-08-anthropic-ipo-financials]] — Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peek
 - [[semianalysis-2026-07-09-meta-superintelligence-1yr-update]] — The Future of Meta Superintelligence: A 1 Year Progress Update
+- [[semianalysis-2026-08-16-pjm-ratepayers-model]] — PJM RRS reverse-engineered: ~4GW capacity undercount → ~$12B ratepayer waste (policy, no call)
 
 ### Semi Doped
 
@@ -562,3 +567,5 @@ updated: 2026-08-15
 - [[semidoped-2026-08-12-daily-update]] — Daily Aug 12 (CoWoS 99% yield, CXMT 90% DDR5, Foxconn +35%, Camtek >$600M)
 - [[semidoped-2026-08-13-daily-update]] — Daily Aug 13 (CoreWeave $104B backlog, Nebius +514%, Cerebras -17% miss, YMTC #3 NAND)
 - [[semidoped-2026-08-14-daily-update]] — Daily Aug 14 (AMAT record $9.12B, SanDisk NAND to 2030, SMIC >$3B, CXMT $524B)
+
+- [[semidoped-2026-08-17-daily-update]] — Daily Aug 17 (SMIC pricing power, NVDA Ohio 4.25 IT-GW backstop, OpenAI×Cerebras Ultrafast, Phison NAND-to-2030, RIOT/CORZ miner-pivot)

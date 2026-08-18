@@ -4,7 +4,7 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-15
+updated: 2026-08-18
 handle: irrationalanalysis
 calls_logged: 595
 hit_rate: "3/13 (23%), ~30 open"
@@ -13,6 +13,8 @@ hit_rate: "3/13 (23%), ~30 open"
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **No new post 2026-08-15..18** (last: Coherent Q4 FY26 earnings, Aug-14). Open-book note: the Aug-9 activist SHORT on [[CBRS]] ($234.76) has **flipped to -7.3% underwater** after OpenAI put GPT-5.6 "Sol" live on Cerebras wafer-scale (14×) — the parametric-yield thesis faces its first flagship-production counter-datapoint (see [[cbrs-yield-short-vs-inference-tam]]). The InP/optics longs ([[AXTI]] Jul-25, [[LITE]] Jul-28) resolve ~Aug-24/27; not re-priced this run. Hit-rate unchanged 3/13 (23%).
 
 - **Lumentum + Coherent Q4/FY26 earnings — the twin note (2026-08-12 & 08-14):** The author's clearest expression yet of the optics duopoly thesis, delivered as a paired earnings teardown. **Lumentum call "ultra-bullish"** — 80–90% GM UHP lasers, no real competition (Broadcom also sold out), cavity length cut *again* at the same linewidth; the winning architecture is disaggregated ELS/ELSFP (integration only happens because of the InP shortage and worsens mode-hop reliability + single-point failure), and the datasheet-invisible moat is a wide mode-hop-free range across temperature. **Coherent call "crap"** — "financially self-immolates in the greatest optics bull market since the telco bubble"; hides CPO-laser yield/noise data "because it's garbage"; 200G-PAM4 VCSEL (PhotonLink) will fail GR-468; stuck selling low-margin isolators/FAU (~30–40%) vs Lumentum's ~80% on the laser. Praises Lumentum's public RIN (<−155 dBc/Hz vs −145 spec)/WPE/PCE plots as the transparency Coherent won't match. 6-inch-InP conspiracy: Coherent's yield may be Sumitomo wafer-uniformity, fixable once [[AXTI]] ships good 6-in substrate. Priced: LONG [[LITE]] $926.14, [[AXTI]] $81.64; **SHORT [[COHR]] $325.83** (first outright COHR short since the 2026 run).
 

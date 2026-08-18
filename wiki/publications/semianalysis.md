@@ -4,7 +4,7 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-12
+updated: 2026-08-18
 handle: semianalysis
 calls_logged: 213
 hit_rate: "2/9 (22%), ~12 open"
@@ -13,6 +13,8 @@ hit_rate: "2/9 (22%), ~12 open"
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **PJM ratepayer/energy-model deep-dive (2026-08-16):** Reverse-engineered PJM's black-box Reserve Requirement Study; argues a ~4 GW capacity undercount wasted ~$12B of ratepayer money 2025–27 and that the capacity market structurally fails to procure new supply. **Policy/grid piece — no ticker call** (ingested as domain context in [[energy-grid-infrastructure]]). No change to hit-rate. Open book still tracking: the Jul-25 [[CBRS]] LONG ($188.61) is **+33.6%** after OpenAI's Ultrafast-on-Cerebras win, [[NVDA]] Aug-7 LONG +3.5%; the Jul-2 [[TSM]] LONG ($446.68) resolved -3.5% LOSS (>30d).
 
 - **Three posts, Aug 7–10 2026 (all paywalled, full bodies served):** *Gemini is Cooked but GCP is Cooking* (Aug-7), *SpaceX 10GW in 2027* (Aug-7), *TileRT InferenceX* (Aug-10). New priced calls: [[GOOGL]] LONG $343.80 — DeepMind "no longer a frontier lab" (Jeff Dean → neolab Discovery Loop) but GCP *won* the compute fight; TPU-system sales (~$35B/GW to SPVs like Anthropic) drive GCP growth to mid-100s vs 64% consensus, ~+$3 EPS 2027. [[MSFT]] LONG $503.81 — SpaceX 10GW offtaker; 10GW contracted YTD (~$300B); post-April OpenAI rev-share removal unlocks a ~$100M/MW inference prize → Azure 42%→100%+. [[NVDA]] LONG $217.50 — SpaceX Nvidia-exclusive on vendor financing. [[CBRS]] NEUTRAL $234.76 — TileRT (persistent-kernel GPU software, ~3× GB300 interactivity at BS1) reframes ultra-low-latency as a rentable "speed tier," structurally pressuring the specialist inference-ASIC TAM. TileRT itself is educational (no ticker beyond the CBRS read-through).
 

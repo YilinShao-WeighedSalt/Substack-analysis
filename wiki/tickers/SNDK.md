@@ -2,13 +2,13 @@
 type: ticker
 title: "SNDK — Sandisk"
 tags: []
-related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]"]
+related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-08-17-daily-update]]"]
 created: 2025-10-01
-updated: 2026-08-15
+updated: 2026-08-18
 ticker: SNDK
 current_stance: long
 conviction: medium
-last_review: 2026-08-15
+last_review: 2026-08-18
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-08-15
 | 2026-07-02 | [[irrationalanalysis]] | NEUTRAL | 1745 | HBF opposition softened ("I hate HBF"→"could work") on SLC use; base-die thermals (~10W) still unsolved |
 | 2026-07-03 | [[semidoped]] | LONG | 1745 | BiCS10 10th-gen NAND sampling (4.8 Gb/s, +59% bit density), record quarter; −14.1% in broad selloff |
 | 2026-08-14 | [[semidoped]] | LONG | 1641.11 | Investor Day: mid-to-high-teens rev growth FY28–30, leading NAND roadmap (BiCS10 332-layer 2Tb QLC), 100% excess-cash return; HBF roadmap optionality |
+| 2026-08-17 | [[semidoped]] | LONG | 1786.85 | Phison: NAND shortage to 2030; 1 PB SSD demo; SSD prices structurally elevated |
 
 ## Thesis evolution
 The initial October 2025 irrationalanalysis call was a reversal of a prior short, with the bull case anchored on SNDK's QLC co-design advantage with Kioxia and the structural need for high-density NAND in AI video storage applications; the author backed conviction with call options. The view briefly went neutral in late 2025 after a profitable trade, with irrationalanalysis citing NAND's inherent cyclicality as a reason to step aside rather than a structural bear thesis. By early 2026 the bull case re-engaged: irrationalanalysis reframed SNDK as the preferred NAND expression over DRAM names on engineering differentiation grounds, and globalsemiresearch added supply-scarcity corroboration via new long-term agreement signings. semidoped extended the thesis into May 2026, pointing to multi-year supply contracts, SSD-driven inference demand, and gross margin expansion above 80% as evidence that the structural tailwinds are compounding. No publication has taken a bear or short stance across the full period, though irrationalanalysis's December 2025 neutral pause signals awareness of cycle risk.
@@ -32,3 +33,5 @@ No px@call values are recorded across any entry, so quantitative performance tra
 **Update 2026-07-04:** first priced calls, both at $1,745 (after a −14.1% Jul 3 selloff from a $2,335 ATH on Jun 25 — the whole memory complex had gotten stretched). Notable: Irrational Analysis, long an HBF (High-Bandwidth Flash) skeptic, softened from "I hate HBF" to "it could work" once told SLC (not TLC/QLC) will be used — modestly de-risking a bear angle on the Sandisk/SK Hynix HBF optionality; the unsolved piece is ~10W base-die thermals. Semidoped stays LONG on BiCS10 momentum. These $1,745 marks are the first gradable anchors for future runs.
 
 **Update 2026-08-15:** SD LONG $1,641.11 (Aug-14 Investor Day). The Jul-3 SD LONG ($1,745) already resolved as a loss (Aug-3, into the memory flush) but has since round-tripped most of the way back ($1,641, −6.0% vs entry). Investor-Day model (mid-to-high-teens rev growth FY28–30, 100% excess-cash return) extends the NAND-boom-through-decade thesis; HBF roadmap is the new optionality. Open.
+
+**Update 2026-08-18:** SD's **Jul-3 LONG ($1,745) resolved at $1,786.85 = +2.4% WIN ✓** (>30d; the July memory selloff has fully retraced). SD Aug-14 Investor-Day LONG ($1,641.11) is **+8.9%** (open). New SD Aug-17 LONG on Phison's NAND-shortage-to-2030 warning + the SanDisk/Kioxia 1 PB SSD demo. YMTC passing Kioxia for #3 NAND is the geopolitical wrinkle, not a demand hit.

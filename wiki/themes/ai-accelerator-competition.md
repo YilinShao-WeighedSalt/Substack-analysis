@@ -4,7 +4,7 @@ title: "AI Accelerator Competition & Landscape"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-07-28
+updated: 2026-08-18
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -92,8 +92,11 @@ first_seen: 2024-01-11
 - 2026-06-09 — [[semianalysis-2026-06-09-deepseekv4-day0-day43-hardware-performance]] (semianalysis)
 - 2026-06-16 — [[semianalysis-2026-06-16-rl-trainer-generator-throughput]] (semianalysis)
 - 2026-07-25 — [[semianalysis-2026-07-25-amd-cuda-moat-advancing-ai]] (semianalysis)
+- 2026-08-17 — [[semidoped-2026-08-17-daily-update]] (semidoped)
 
 ## Narrative
 The AI accelerator competition theme emerged in early 2024 as SemiAnalysis and IrrationalAnalysis began systematically covering Nvidia's Blackwell launch, rival inference chips (Groq, Cerebras, AMD MI300X), and hyperscaler custom silicon (AWS Trainium, Google TPU). SemiAnalysis led coverage on architecture economics — cost-per-token, CUDA moat durability, and TCO comparisons — while IrrationalAnalysis contributed event-driven takes from Hot Chips, GTC keynotes, and earnings calls. The January 2025 DeepSeek shock injected urgency into the narrative, reframing the question from raw compute supply to training efficiency and inference cost structure, with multiple publications issuing rapid-response notes. By 2026 the theme has broadened to include rack-level disaggregation (CXL, SerDes, NVL72 clusters), open-source inference benchmarking via InferenceMax, and the competitive positioning of Cerebras post-IPO — reflecting a landscape that has moved from "who can ship GPUs" to "who can win the inference efficiency war."
 
 **Update 2026-07-28 — SemiAnalysis's third AMD re-rating: the CUDA moat is now 'crackable.'** After going 0% → non-zero, SemiAnalysis now gives [[AMD]] a **"great chance of success"** at closing the CUDA gap, contingent on two fixes: (1) Helios rack-ramp (no cableless trays; AMD's weak SerDes forces 550+ Broadcom retimers per rack); (2) a chronic internal GPU-cluster/CI shortage throttling ROCm/vLLM software velocity (agentic coding makes it worse — each agent needs GPUs to test against). On silicon AMD leads: MI455X is first 2nm datacenter silicon, largest CoWoS-L (5.5× reticle), 12 HBM4 stacks = 432GB, and first with **active LSI** bridges. Customer proof points: Anthropic 2GW, Microsoft MI455X Helios (OpenAI end-customer), and an AMD-[[CBRS]] PD-disaggregation inference deal. Economics: ~105% OpenAI/Meta equity-rebate structure makes cost-per-token "practically negative." Net: bullish AMD *and* still bullish [[NVDA]] ("the pie grows for everyone"; Rubin ships tokens at scale first; AMD lacks Rubin's 3-bit LUT tensor cores). [[AVGO]] is the arms-dealer winner (retimers + Tomahawk-6 switches).
+
+**2026-08-17 — a live commercial win outside Nvidia, and a Google-AMD TPU flirtation.** Semi Doped Sector Watch: **OpenAI launches an Ultrafast inference mode for GPT-5.6 "Sol" powered by Cerebras wafer-scale, a 14× speedup** — a *live commercial* deployment outside Nvidia's GPU stack (CBRS +19% on the day, cloud rev +287%). This is the hardest bull datapoint yet for the [[cbrs-yield-short-vs-inference-tam]] split, flipping momentum back toward the tape ([[CBRS]] LONG; SA's Jul-25 long +33.6%, IA's Aug-9 activist short now underwater). Separately, **Google is reportedly in talks with AMD to co-design its next-gen TPU** (on-package CPU cores for RL) — a break from Google's in-house-only ASIC discipline and a credibility marker for AMD's datacenter roadmap ([[AMD]] LONG). China's **Biren** projects ~22× H1-2026 revenue.
