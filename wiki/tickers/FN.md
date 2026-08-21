@@ -4,11 +4,11 @@ title: "FN — Fabrinet"
 tags: []
 related: ["[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]"]
 created: 2024-02-08
-updated: 2026-08-06
+updated: 2026-08-21
 ticker: FN
 current_stance: long
 conviction: medium
-last_review: 2026-08-06
+last_review: 2026-08-21
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,6 +30,8 @@ last_review: 2026-08-06
 | 2025-12-21 | [[irrationalanalysis]] | LONG | n/a | Only credible non-Chinese optical manufacturer matching Chinese quality/yield |
 | 2026-05-08 | [[irrationalanalysis]] | MENTION | n/a | Uneventful earnings; no new thesis or view expressed |
 | 2026-08-05 | [[irrationalanalysis]] | LONG | 522.22 | Only viable non-Chinese optical CM; wins the de-coupling trend. |
+
+| 2026-08-18 | [[semidoped]] | LONG | 444.87 | Record Q4 & full-year FY2026; annual sales +36% YoY — the only credible non-Chinese optical contract manufacturer in the de-coupling trend |
 
 ## Thesis evolution
 The view on FN passed through three distinct phases. In early 2024 [[irrationalanalysis]] exited a profitable long after management gave evasive, repetitive answers about an Intel 100G headwind, treating the opacity as a red flag rather than a fundamental deterioration. By September 2024, re-entry was driven by the AI multi-datacenter optics build-out thesis — the same structural demand that [[semianalysis]] identified for ZR/ZR+ optical subsystems — and the position was rebuilt aggressively through Q4 2024 on post-earnings dips, with the author characterizing FN as the "TSMC of optical integration" holding 100% of Nvidia's first-party module assembly. The thesis deepened structurally from late 2024 onward: the December 2024 communication-systems guide and the April 2025 CPO guide articulated why CPO's IP sensitivity and manufacturing complexity entrench Fabrinet specifically — its cleanroom segregation model and trusted-partner status are barriers a commodity EMS cannot replicate. By August 2025 the author had further refined the thesis to Nvidia's 1.6T transceiver ramp with Fabrinet as assembler, and the 2025-12-21 ideas post framed FN as the only credible western alternative to Chinese optical manufacturers on quality and yield. Irrationalanalysis is the sole covering publication and has been persistently bullish since the September 2024 re-entry, with conviction remaining intact even as near-term supply-chain noise (Tower SiPho shortage, leveraged trader volatility) caused temporary price dislocations.

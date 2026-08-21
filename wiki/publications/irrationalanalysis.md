@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-18
+updated: 2026-08-21
 handle: irrationalanalysis
-calls_logged: 595
-hit_rate: "3/13 (23%), ~30 open"
+calls_logged: 600
+hit_rate: "3/13 (23%), ~31 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Cerebras Supernova recap (2026-08-19) + Intel CPO / NVDA-LITE-AEVA papers (2026-08-18):** Two optics/wafer-scale technical teardowns. **Cerebras**: the one-share activist SHORT continues — CS-4/Supernova is a 'gen 3.5' power+clock refresh; I/O 'meaningfully improved' and the doubled clock *implies* better parametric yield, but IA holds its ~20% compound-yield GM model until Hot Chips gives real detail. **Intel CPO** is "maybe not dead" but its multi-λ SOA four-wave-mixing gives a "C+" BER vs Nvidia's clock-forwarded A+ — accuses Intel of clipping spectra to hide FWM tones. **The Nvidia/Lumentum ELSFP paper is "massive alpha"**: a monolithic DFB+per-channel-SOA (MOPA) array with 0.5 dB coupling and a *single* isolator (huge alignment/cost savings) but "unusable" RIN — which *validates* Lumentum's disaggregated-laser moat rather than threatening it. Priced: SHORT [[CBRS]] $209.85; LONG [[LITE]] $879.28; NEUTRAL [[INTC]] $92.13, [[AEVA]] $18.87, [[NVDA]] $216.85.
+
+**hit_rate note (2026-08-21): no new resolutions — holds 3/13 (23%).** The Jul-25 InP/optics batch (AXTI/LITE/AEVA) resolves ~Aug-24, the Jul-30 QCOM short + 2454.TW ~Aug-29. QCOM ($160.74) keeps both multi-year shorts as wins. Standout open trackers: [[LITE]] Jul-28 $711.96 → **+23.5%** (resolves ~Aug-27); the Aug-9 [[CBRS]] activist SHORT ($234.76) is **short +10.6% ✓ working** even after the OpenAI-Sol pop faded back to $209.85. Book: long optics/InP + short Cerebras, into a tape that mostly cooperated this run.
 
 - **No new post 2026-08-15..18** (last: Coherent Q4 FY26 earnings, Aug-14). Open-book note: the Aug-9 activist SHORT on [[CBRS]] ($234.76) has **flipped to -7.3% underwater** after OpenAI put GPT-5.6 "Sol" live on Cerebras wafer-scale (14×) — the parametric-yield thesis faces its first flagship-production counter-datapoint (see [[cbrs-yield-short-vs-inference-tam]]). The InP/optics longs ([[AXTI]] Jul-25, [[LITE]] Jul-28) resolve ~Aug-24/27; not re-priced this run. Hit-rate unchanged 3/13 (23%).
 

@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-08-15
+updated: 2026-08-21
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -122,3 +122,5 @@ Status: still maturing, now with a live **geopolitical catalyst** layered on the
 - **Measurable laser specs:** **RIN** (Relative Intensity Noise) — amplitude noise, lower = better; Lumentum <−155 dBc/Hz vs −145 spec = >10× quieter. **WPE** (wall-plug efficiency) ~10–11% realistic (40 °C die / 50 °C coldplate) vs 10% target. **PCE** 21–24% (target 25–30%). **Thermal tuning:** ~0.1 nm/K to hit DWDM's ±30 GHz (±0.17 nm) accuracy, but tuning can push the TEC into inefficient reverse/heating mode near the coldplate temp — which is why high-power CPO-laser yield is "a nightmare" and a real moat.
 - **VCSEL limit:** 200G-PAM4 on a VCSEL (Coherent's PhotonLink) will fail **GR-468** reliability; the optimal VCSEL NPO/CPO datarate is 32/64G NRZ. At 200G you can't drop FEC, killing the no-FEC/direct-drive CPO dream.
 - **6-inch InP conspiracy:** Coherent's bad yield may be *input goods* — poor 6-in InP wafer uniformity from Sumitomo, since [[AXTI]] (the best substrate maker) doesn't yet have 6-in InP (still R&D). Once AXTI ships good 6-in, chain-wide yield could lift. Names: [[LITE]] (near-monopoly high-power laser, ~80% GM), [[COHR]] (IA now outright SHORT), [[AXTI]] (substrate pull).
+
+**Update 2026-08-21 (Intel CPO teardown + Nvidia/Lumentum paper + SK Hynix roadmap).** Three CPO datapoints. (1) **Intel's CPO** amplifies 8 wavelengths with one **SOA** → **four-wave-mixing (FWM)**: every pair of wavelengths spawns noise tones that raise **RIN**; IA grades Intel's un-clock-forwarded BER a "C+" vs Nvidia's clock-forwarded "A+" bathtub curve. Lesson: a single SOA fed many wavelengths is a noise trap; per-wavelength SOAs avoid it. (2) The **Nvidia/Lumentum ELSFP paper** builds a **MOPA array** — one **DFB laser + its own SOA per channel** (amplify *and* beam-shape, no FWM), claiming **0.5 dB coupling** and a *single isolator* (big active-alignment/BOM savings); but the *monolithic* array's RIN is "unusable," reinforcing that **disaggregated** laser modules (Lumentum's ELS/ELSFP) beat integration on reliability. (3) **SK Hynix published a CPO roadmap in Nature Electronics** — memory-bandwidth→optical-interconnect through HBM4/HBM5, enabling optically-pooled memory (set compute:memory ratio at design time).

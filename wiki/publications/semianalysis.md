@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-18
+updated: 2026-08-21
 handle: semianalysis
-calls_logged: 213
+calls_logged: 214
 hit_rate: "2/9 (22%), ~12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Cerebras CS-4 teardown (2026-08-19):** Detailed read on CS-4 — same 5nm WSE-3, **double clock/BW** via ~2x power (125-135 kW/rack), 3 wafers/rack, backpack modularity, field-upgradeable Wafer-I/O for **disaggregated inference** (pair with HBM XPUs / AWS Trainium). The customer pitch — ~2x interactivity (~4,000 tok/s/user) at similar TCO — is "a no-brainer," but SA is measured: **perf/W barely improves**, the "2,000x-vs-Rubin BW" marketing nets a real ~20-40x interactivity, and the **3µs fat-tree latency** (vs ns-class rivals) still blocks expert-parallel across wafers. Explicitly ties to its own **TileRT** GPU "speed tier" TAM-pressure note. NEUTRAL [[CBRS]] $209.85.
+
+**hit_rate note (2026-08-21): no new resolutions — holds 2/9 (22%).** The Jul-25 AMD-article longs (AMD/AVGO/NVDA/CBRS) resolve ~Aug-24. Open standouts: the **own Jul-25 [[CBRS]] LONG ($188.61) is +11.3%** (resolves this week) even as SA's TileRT note frames a headwind on the same name — the tension tracked on [[cbrs-yield-short-vs-inference-tam]]; [[NVDA]] Jul-25 $196.51 → +10.4%.
 
 - **PJM ratepayer/energy-model deep-dive (2026-08-16):** Reverse-engineered PJM's black-box Reserve Requirement Study; argues a ~4 GW capacity undercount wasted ~$12B of ratepayer money 2025–27 and that the capacity market structurally fails to procure new supply. **Policy/grid piece — no ticker call** (ingested as domain context in [[energy-grid-infrastructure]]). No change to hit-rate. Open book still tracking: the Jul-25 [[CBRS]] LONG ($188.61) is **+33.6%** after OpenAI's Ultrafast-on-Cerebras win, [[NVDA]] Aug-7 LONG +3.5%; the Jul-2 [[TSM]] LONG ($446.68) resolved -3.5% LOSS (>30d).
 

@@ -4,11 +4,11 @@ title: "AEVA — Aeva Technologies"
 tags: [lidar, soa, inp, optics, cpo]
 related: ["[[irrationalanalysis-2026-07-25-stranded-indium-phosphide]]", "[[irrationalanalysis]]", "[[co-packaged-optics]]", "[[silicon-photonics-interconnects]]"]
 created: 2026-07-28
-updated: 2026-07-28
+updated: 2026-08-21
 ticker: AEVA
 current_stance: neutral
 conviction: low
-last_review: 2026-07-28
+last_review: 2026-08-21
 ---
 
 # AEVA — Aeva Technologies
@@ -26,6 +26,7 @@ theme generally), while noting Seivers will make more money off Aeva than it eve
 | date | publication | stance | px@call | thesis (1 line) |
 |------|-------------|--------|---------|-----------------|
 | 2026-07-25 | [[irrationalanalysis]] | NEUTRAL | 15.53 | Most interesting SOA play (via Seivers InP fab), but author is not positioned; LiDAR dead, SOA revenue optionality. |
+| 2026-08-18 | [[irrationalanalysis]] | NEUTRAL | 18.87 | Aeva SOA paper: per-channel SOA/MOPA laser array (amplify + beam-shape; one wavelength per SOA avoids FWM) = SOA optionality; author still not positioned. |
 
 ### Thesis evolution
 

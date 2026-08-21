@@ -4,11 +4,11 @@ title: "ADI — Analog Devices"
 tags: []
 related: ["[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2025-03-11-america-missing-new-labor-economy-robotics]]"]
 created: 2024-07-08
-updated: 2025-03-11
+updated: 2026-08-21
 ticker: ADI
 current_stance: mixed
 conviction: medium
-last_review: 2026-07-10
+last_review: 2026-08-21
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -18,6 +18,8 @@ last_review: 2026-07-10
 | 2025-03-11 | [[semianalysis]] | SHORT | n/a | Standardized analog products increasingly exposed as Chinese competitors offer tailored alternatives |
 
 | 2026-07-08 | [[semidoped]] | MENTION | n/a | Closed Empower Semiconductor buy — vertical power delivery / IVR IP for AI power |
+| 2026-08-19 | [[semidoped]] | LONG | 370.24 | Record $4.02B quarter on datacenter+industrial; Empower ($1.5B, closed Jul-7) positions in-package power delivery for sub-1V kilo-amp AI chips (rev +40%, EPS +163% YoY) |
+
 ## Thesis evolution
 Citrini's July 2024 long was a picks-and-shovels play on the edge AI / on-device inference supercycle: ADI's power management IP — inherited from the 2021 Maxim Integrated acquisition — was seen as a structural beneficiary as AI smartphones and edge devices demanded tighter, more efficient power delivery. Irrational Analysis did not take a view on ADI directly, mentioning it only as a peer to Vicor in the DC-DC power components space. By March 2025 the thesis had inverted at SemiAnalysis, which argued that ADI's analog product lines are increasingly standardized and therefore vulnerable to cost-competitive, application-tailored Chinese entrants targeting industrial and robotics end-markets. The result is a split record: one publication bullish on ADI's premium analog/power IP in AI edge hardware, one publication bearish on the same analog franchise's defensibility in the faster-moving robotics and industrial automation segments where Chinese localization is accelerating.
 

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-18
+updated: 2026-08-21
 ---
 
 # Wiki Index
@@ -509,6 +509,7 @@ updated: 2026-08-18
 - [[semianalysis-2026-07-08-anthropic-ipo-financials]] — Anthropic 3Q26 Profit Over $1B: The Anthropic IPO Financials Sneak Peek
 - [[semianalysis-2026-07-09-meta-superintelligence-1yr-update]] — The Future of Meta Superintelligence: A 1 Year Progress Update
 - [[semianalysis-2026-08-16-pjm-ratepayers-model]] — PJM RRS reverse-engineered: ~4GW capacity undercount → ~$12B ratepayer waste (policy, no call)
+- [[semianalysis-2026-08-19-cerebras-cs4]] — CS-4 teardown: double clock/BW on same WSE-3; "modest" perf/W, 3µs net bottleneck (NEUT CBRS)
 
 ### Semi Doped
 
@@ -564,8 +565,14 @@ updated: 2026-08-18
 - [[semidoped-2026-08-10-11-optical-ban-daily-newstake]] — Dailies + News Take (Intel $20B raise, TSMC record, AMD Q2, Volta $10B, optical ban debunk)
 - [[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]] — Lumentum Q4/FY26 "ultra-bullish": 80-90% GM UHP lasers, ELS>integrated, mode-hop-free moat (LONG LITE)
 - [[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]] — Coherent Q4/FY26 "crap": hides CPO-laser yield, 200G VCSEL fails GR-468 (SHORT COHR, LONG LITE/AXTI)
+- [[irrationalanalysis-2026-08-18-intel-cpo-group-alive]] — Intel CPO alive? SOA FWM = C+ vs Nvidia A+; Nvidia/Lumentum ELSFP paper "massive alpha" (LONG LITE, NEUT INTC/AEVA/NVDA)
+- [[irrationalanalysis-2026-08-19-cerebras-supernova]] — Cerebras Supernova/CS-4 recap; activist SHORT continues (parametric yield unproven)
 - [[semidoped-2026-08-12-daily-update]] — Daily Aug 12 (CoWoS 99% yield, CXMT 90% DDR5, Foxconn +35%, Camtek >$600M)
 - [[semidoped-2026-08-13-daily-update]] — Daily Aug 13 (CoreWeave $104B backlog, Nebius +514%, Cerebras -17% miss, YMTC #3 NAND)
 - [[semidoped-2026-08-14-daily-update]] — Daily Aug 14 (AMAT record $9.12B, SanDisk NAND to 2030, SMIC >$3B, CXMT $524B)
 
 - [[semidoped-2026-08-17-daily-update]] — Daily Aug 17 (SMIC pricing power, NVDA Ohio 4.25 IT-GW backstop, OpenAI×Cerebras Ultrafast, Phison NAND-to-2030, RIOT/CORZ miner-pivot)
+- [[semidoped-2026-08-18-daily-update]] — Daily Aug 18 (Nvidia $105B OpenAI-Ohio guarantee, Anthropic +14x, Groq down-round, Fabrinet record) (LONG NVDA/FN)
+- [[semidoped-2026-08-18-tensordyne-podcast]] — Tensordyne pod (logarithmic-math inference, Juniper fabric) — educational, no calls
+- [[semidoped-2026-08-19-daily-update]] — Daily Aug 19 (ADI record + Empower, SK Hynix $29B buyback, Google-Marvell $12.2B option, Samsung foundry +15%, CS-4)
+- [[semidoped-2026-08-20-daily-update]] — Daily Aug 20 (SK Hynix CPO roadmap, Waymo custom chip, Micron $10B Boise + #3 NAND, Cerebras Q2 loss)
