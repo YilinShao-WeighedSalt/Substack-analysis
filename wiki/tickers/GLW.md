@@ -4,11 +4,11 @@ title: "GLW — Corning"
 tags: []
 related: ["[[semidoped-2026-07-29-daily-update]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[semidoped-2026-08-05-daily-update]]", "[[semidoped-2026-08-03-daily-update]]"]
 created: 2024-07-08
-updated: 2026-08-06
+updated: 2026-08-24
 ticker: GLW
 current_stance: mixed
 conviction: low
-last_review: 2026-08-06
+last_review: 2026-08-24
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -18,6 +18,7 @@ last_review: 2026-08-06
 | 2026-06-10 | [[globalsemiresearch]] | MENTION | n/a | Sold off on SemiAnalysis note; cited as collateral damage from the delay narrative |
 | 2026-07-29 | [[semidoped]] | LONG | 135.22 | Fiber capacity ceiling not demand ('like TSMC': rev = capacity-add rate x ASP); buy the fundamentals through the -20% drop |
 | 2026-08-05 | [[semidoped]] | LONG | 156.70 | Surged on the transceiver-substitution trade; $20B run-rate reaffirmed. |
+| 2026-08-21 | [[semidoped]] | LONG | 149.84 | Zayo locks a long-term Corning fiber reserve (committed strand inventory) ahead of US AI-datacenter builds |
 
 ## Thesis evolution
 Citrini's original 2024 long was premised on an iPhone supercycle driving display glass and specialty fiber demand — a replacement-cycle bet rather than a direct CPO play. By April 2025, irrationalanalysis had reframed GLW's relevance around its optical fiber exposure in the communications segment, treating it as a passive infrastructure beneficiary of CPO buildout alongside Japan's Nittobo, with no strong conviction in either direction. The June 2026 globalsemiresearch note marks a step back: GLW is mentioned only as collateral damage from SemiAnalysis's disputed CPO delay thesis, not as an active call. The publications are not in disagreement so much as talking past each other — Citrini was buying a consumer hardware cycle, irrationalanalysis was acknowledging a fiber adjacency, and globalsemiresearch was noting an indiscriminate sell-off. No publication has issued a dedicated bear case on GLW.

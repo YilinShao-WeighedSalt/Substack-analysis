@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-21
+updated: 2026-08-24
 handle: semianalysis
-calls_logged: 214
-hit_rate: "2/9 (22%), ~12 open"
+calls_logged: 216
+hit_rate: "4/13 (31%), ~10 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **AgentX — InferenceXv3 (2026-08-24) + Are Open Models Catching Up? (2026-08-21):** Two benchmark/analysis posts. **AgentX 1.0** (open-sourced, Apache 2.0) is the first 1M-context multi-turn *agentic-coding* inference benchmark — the right way to measure hardware now that Claude-Code-style traffic dominates. Verdict: **the CUDA moat holds on agentic workloads.** Across Kimi K3, MiniMax M3, Qwen3.5, GLM 5.3, DeepSeek V4, Nvidia beats AMD on realistic multi-turn serving; the moat is *software* (aggressive KV-offload to CPU DRAM, Dynamo/TRT-LLM/vLLM tuning), and "even if AMD compute were free, $/token stays cheaper on Nvidia." AMD (MI355X/ATOM) is closing fast (M3 FP4 day-0 vs months-late on R1) but competitive only in the ultra-high-throughput corner. NEUTRAL [[NVDA]] $214.72 (moat-holds/favorable), NEUTRAL [[AMD]] $473.25. *Open Models* (no call): open-vs-closed capability gap **halves each era** (Kimi K2.6 passed Opus 4.5 in 4.8mo), but SemiAnalysis still prefers Fable 5 day-to-day — the harness/productization edge survives even as raw-benchmark gaps compress → [[ai-software-models]].
+
+**hit_rate note (2026-08-24): the Jul-25 AMD-article batch resolved 2-2 → 4/13 (31%) from 2/9.** [[NVDA]] LONG ($196.51) → **$214.72 = +9.3% WIN ✓** (first resolved NVDA long-side win); [[CBRS]] LONG ($188.61) → **$196.13 = +4.0% WIN ✓**; [[AMD]] LONG ($494.95) → **$473.25 = -4.4% LOSS ✗**; [[AVGO]] LONG ($383.22) → **$368.45 = -3.9% LOSS ✗**. Prior 2 wins (ORCL short, AMZN long) + these 2 = **4 wins / 13 resolved**. Open next: Jul-29 modular longs (FIX/STRL/VRT/PWR/FLEX/SU.PA) cross 30d ~Aug-28; Aug-7 GOOGL/MSFT/NVDA longs.
 
 - **Cerebras CS-4 teardown (2026-08-19):** Detailed read on CS-4 — same 5nm WSE-3, **double clock/BW** via ~2x power (125-135 kW/rack), 3 wafers/rack, backpack modularity, field-upgradeable Wafer-I/O for **disaggregated inference** (pair with HBM XPUs / AWS Trainium). The customer pitch — ~2x interactivity (~4,000 tok/s/user) at similar TCO — is "a no-brainer," but SA is measured: **perf/W barely improves**, the "2,000x-vs-Rubin BW" marketing nets a real ~20-40x interactivity, and the **3µs fat-tree latency** (vs ns-class rivals) still blocks expert-parallel across wafers. Explicitly ties to its own **TileRT** GPU "speed tier" TAM-pressure note. NEUTRAL [[CBRS]] $209.85.
 

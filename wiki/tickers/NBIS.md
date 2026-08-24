@@ -4,11 +4,11 @@ title: "NBIS — Nebius"
 tags: []
 related: ["[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]"]
 created: 2026-04-02
-updated: 2026-08-15
+updated: 2026-08-24
 ticker: NBIS
 current_stance: long
 conviction: medium
-last_review: 2026-08-15
+last_review: 2026-08-24
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -17,6 +17,7 @@ last_review: 2026-08-15
 | 2026-06-18 | [[semianalysis]] | NEUTRAL | 285.50 | NJ datacenter delays documented in detail but framed as inexperienced-developer timeline miss, not fundamental failure |
 | 2026-07-02 | [[semianalysis]] | LONG | 215.89 | Meta-RPO tailwind for pure-play neocloud; sell-off is sentiment not fundamentals |
 | 2026-08-13 | [[semidoped]] | LONG | 277.68 | +514% YoY revenue, deferred rev ~$6B, H1 infra spend >$8.1B; shares +34%; neocloud pricing power holding as capacity grows |
+| 2026-08-21 | [[semidoped]] | LONG | 219.13 | Upsizes AI-infrastructure convertible to $5B (from $4.5B) on strong institutional demand; accelerating EU/US datacenter deployment |
 
 ## Thesis evolution
 SemiAnalysis introduced Nebius as the primary public-market way to express the neocloud pricing power thesis. The argument is that GPU rental rates (particularly H100) are staying elevated longer than the market expects, and Nebius — as a pure-play GPU cloud operator — captures that pricing tailwind directly on its income statement. No competing publication surfaces in the call log, so the view is uncontested as of the last review date. The conviction is medium rather than high because the thesis depends on a prolonged shortage that could compress faster than anticipated if hyperscalers or rival neoclouds add capacity aggressively.

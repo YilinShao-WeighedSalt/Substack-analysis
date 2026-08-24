@@ -4,7 +4,7 @@ title: "AI Accelerator Competition & Landscape"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-08-21
+updated: 2026-08-24
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -102,3 +102,5 @@ The AI accelerator competition theme emerged in early 2024 as SemiAnalysis and I
 **2026-08-17 — a live commercial win outside Nvidia, and a Google-AMD TPU flirtation.** Semi Doped Sector Watch: **OpenAI launches an Ultrafast inference mode for GPT-5.6 "Sol" powered by Cerebras wafer-scale, a 14× speedup** — a *live commercial* deployment outside Nvidia's GPU stack (CBRS +19% on the day, cloud rev +287%). This is the hardest bull datapoint yet for the [[cbrs-yield-short-vs-inference-tam]] split, flipping momentum back toward the tape ([[CBRS]] LONG; SA's Jul-25 long +33.6%, IA's Aug-9 activist short now underwater). Separately, **Google is reportedly in talks with AMD to co-design its next-gen TPU** (on-package CPU cores for RL) — a break from Google's in-house-only ASIC discipline and a credibility marker for AMD's datacenter roadmap ([[AMD]] LONG). China's **Biren** projects ~22× H1-2026 revenue.
 
 **Update 2026-08-21 (Cerebras CS-4 / wafer-scale inference).** Cerebras shipped **CS-4**: the *same* 5nm WSE-3, but **3 wafers/rack** (was 2) at **double the clock** (fed by ~2x power, 125-135 kW/rack) → ~2x memory bandwidth and **~2x tokens/sec/user** (~4,000 vs a GPU's realistic ~100) at similar BOM/TCO. Unchanged: **44 GB SRAM/wafer** — the low-memory tradeoff. A new **field-upgradeable Wafer-I/O** module (FPGA NIC → ethernet) enables **disaggregated inference** — pairing wafers with HBM boxes (or AWS Trainium) to cover the SRAM shortfall, mirroring how Nvidia positions Groq LPUs. SemiAnalysis reads it as a *modest* systems iteration (perf/W barely moves; 3µs fabric still blocks expert-parallel); IA reads doubled clocks as a hint parametric yield improved; both want Hot Chips detail. See [[cbrs-yield-short-vs-inference-tam]].
+
+**Update 2026-08-24 (the moat is software — AgentX).** SemiAnalysis open-sourced **AgentX** (Apache 2.0), the first 1M-context multi-turn *agentic-coding* inference benchmark (~2 MW / 1000+ chips). Headline: on realistic agentic workloads the **CUDA moat holds** — Nvidia beats AMD on most frontier open models (Kimi K3, MiniMax M3, Qwen3.5, GLM 5.3, DeepSeek V4), and "even if AMD compute were free, $/token stays cheaper on Nvidia." Crucially the edge is *software*, not silicon: aggressive KV-cache offload to CPU DRAM, Dynamo/TRT-LLM/vLLM/SGLang tuning, DCP/PCP kernels AMD hasn't optimized. AMD (MI355X + its ATOM engine) is closing fast (MiniMax M3 FP4 disaggregation landed *day-zero* vs months-late on DeepSeek-R1) and wins the narrow ultra-high-throughput/low-interactivity corner, but AI labs won't run non-upstream ATOM in production. NEUTRAL [[NVDA]] (favorable), NEUTRAL [[AMD]].

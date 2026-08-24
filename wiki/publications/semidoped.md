@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-21
+updated: 2026-08-24
 handle: semidoped
-calls_logged: 139
-hit_rate: "0/15 (0%), ~48 open"
+calls_logged: 147
+hit_rate: "0/15 (0%), ~55 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update Aug-21 (2026-08-21):** News-dense daily (Aug-22 TIL / Aug-23 pub-quiz educational, no calls). **Marquee item: Broadcom's off-balance-sheet SPV eyes $60–100B in debt to fund Anthropic's custom AI chips** — the largest single ASIC-financing datapoint yet ([[AVGO]] LONG $368.45); *Vik: custom-ASIC business still booming as people flee Nvidia.* **Memory buyback wave:** Samsung plans record ₩110T ($79B) shareholder returns — largest in Korean history ([[005930.KS]] LONG ₩263,000) — SK Hynix running a comparable program ([[000660.KS]] LONG ₩1,743,000). **Foundry/packaging:** TSMC wraps 1.6nm (A16), Q4 volume; CoWoS still constrained → LG enters with maskless LDI, Japan +$940M to Rapidus ([[TSM]] LONG $418.95). **Memory/optics/infra:** Micron $10B decade-long US AI-memory hub ([[MU]] LONG $966.78); Zayo locks long-term Corning fiber reserve ([[GLW]] LONG $149.84); Nebius upsizes convert to $5B ([[NBIS]] LONG $219.13). **Nvidia** flatly denies a China-legal Groq-based "LPU" report; in early talks to buy Korea's Rebellions ([[NVDA]] NEUTRAL $214.72). Also: YMTC $4.9B Shanghai IPO filing; Flex+Cerebras scale CS-4; Supermicro fires staff over $2.5B GPU-to-China scheme; Infineon 40V GaN.
+
+**hit_rate note (2026-08-24): no new 30-day resolutions — holds 0/15 (0%).** The Jul-27 Korea batch (000660.KS ₩1.622M, 005930.KS ₩231k, IFX.DE €61.49) crosses 30d ~Aug-27. On re-price the two swing names sit back under water: **[[MU]] Jul-3 ($975.56) → $966.78 = -0.9% LOSS ✗** and **[[SNDK]] Jul-3 ($1,745) → $1,596.08 = -8.5% LOSS ✗** (both had flipped to wins on the mid-Aug bounce). This run's 8 new calls opened at spot.
 
 - **Daily Updates Aug 18-20 (2026-08-18..20):** Three news-dense dailies + an educational Tensordyne podcast (logarithmic-math inference, no calls). **AI power/financing:** Nvidia's **$105B guarantee + $1.5B equity** backs OpenAI's 10 GW Ohio campus for exclusive chip placement (circular-finance scrutiny) ([[NVDA]] LONG $216.85); Anthropic Q2 +14x YoY (>$65B run-rate); Groq raises at half its valuation, pivots to Nvidia neocloud. **Custom silicon:** **Google's $12.2B option on Marvell** tied to TPU supply (~$18B/yr, +CXL) ([[MRVL]] LONG $251.01); Waymo custom robotaxi chip; Cadence 45% rev from own-chip designers; Etched → $21B. **Foundry/packaging:** Samsung hikes foundry prices up to 15% as TSMC CoWoS fills ([[005930.KS]] LONG ₩273,500, [[TSM]] LONG $416.00), Socionext taps Intel 18A-P + EMIB-T wins ([[INTC]] LONG $92.13). **Memory:** ADI record $4.02B + Empower power delivery ([[ADI]] LONG $370.24); SK Hynix $29B buyback + Nature-Electronics CPO roadmap ([[000660.KS]] LONG ₩1,745,000); Micron $10B Boise campus + overtakes Kioxia #3 NAND ([[MU]] LONG $974.33, [[285A.T]] NEUTRAL ¥53,790); Fabrinet record FY ([[FN]] LONG $444.87). **Cerebras** CS-4 = "systems iteration, not architectural"; Q2 loss but raised guide ([[CBRS]] NEUTRAL $209.85).
 

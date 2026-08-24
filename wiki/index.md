@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-21
+updated: 2026-08-24
 ---
 
 # Wiki Index
@@ -576,3 +576,6 @@ updated: 2026-08-21
 - [[semidoped-2026-08-18-tensordyne-podcast]] — Tensordyne pod (logarithmic-math inference, Juniper fabric) — educational, no calls
 - [[semidoped-2026-08-19-daily-update]] — Daily Aug 19 (ADI record + Empower, SK Hynix $29B buyback, Google-Marvell $12.2B option, Samsung foundry +15%, CS-4)
 - [[semidoped-2026-08-20-daily-update]] — Daily Aug 20 (SK Hynix CPO roadmap, Waymo custom chip, Micron $10B Boise + #3 NAND, Cerebras Q2 loss)
+- [[semianalysis-2026-08-21-open-models-catching-up]] — Open models: open-vs-closed capability gap halves each era (Kimi/GLM); harness moat survives (no call)
+- [[semianalysis-2026-08-24-agentx-inferencexv3-cuda-moat]] — AgentX 1M-context agentic benchmark: CUDA moat holds vs AMD on realistic inference (NEUT NVDA/AMD)
+- [[semidoped-2026-08-21-daily-update]] — Daily Aug 21 (Broadcom $70B Anthropic SPV, Samsung ₩110T buyback, TSMC 1.6nm, Micron $10B hub) (LONG AVGO/Samsung/SKH/TSM/MU/GLW/NBIS)
