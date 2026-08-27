@@ -1,0 +1,290 @@
+<title>Jalapeño Lands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;font-size:15px}
+.wrap{max-width:1120px;margin:0 auto;padding:22px 18px 60px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:30px;line-height:1.12;margin:0 0 6px;letter-spacing:-.02em;font-weight:750}
+h2{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--sec);margin:34px 0 12px;font-weight:700}
+.sub{color:var(--sec);font-size:15.5px;margin:2px 0 0;max-width:78ch}
+.dots{display:flex;flex-wrap:wrap;gap:16px;margin:14px 0 0;align-items:center}
+.dot{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--sec);font-weight:600}
+.dot i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.status{margin:16px 0 0;padding:10px 13px;background:var(--surface-2);border:1px solid var(--border);
+  border-radius:9px;font-size:13px;color:var(--sec);display:flex;gap:9px;align-items:flex-start}
+.status b{color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:15px 15px 14px}
+.tile .k{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.tile .v{font-size:34px;font-weight:750;letter-spacing:-.02em;margin-top:4px}
+.tile .n{font-size:12.5px;color:var(--sec);margin-top:3px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:9px;gap:2px;background:transparent}
+.distbar span{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+.tblwrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--border);vertical-align:middle;white-space:nowrap}
+th{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700;position:sticky;top:0;background:var(--surface)}
+td.thesis{white-space:normal;min-width:230px;color:var(--sec);font-size:13px}
+tr:last-child td{border-bottom:none}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:20px;font-family:var(--sans)}
+.chip.long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.chip.short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.chip.neutral{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.pubtag{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--sec)}
+.pubtag i{width:9px;height:9px;border-radius:50%}
+.new{font-size:11px;color:var(--muted);font-weight:600}
+.spot{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.scard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 17px}
+.scard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.scard .sym{font-size:20px;font-weight:750}
+.scard .nm{font-size:12.5px;color:var(--muted);margin-top:1px}
+.scard .px{font-size:22px;font-weight:750;text-align:right}
+.scard .pxsub{font-size:11.5px;color:var(--muted);text-align:right}
+.rangebar{margin:13px 0 4px;height:6px;background:var(--surface-2);border-radius:4px;position:relative}
+.rangebar .fill{position:absolute;top:0;bottom:0;background:var(--base);border-radius:4px}
+.rangebar .mk{position:absolute;top:-4px;width:3px;height:14px;border-radius:2px;background:var(--accent)}
+.rlabel{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+.bullets{margin:11px 0 0;padding:0;list-style:none;font-size:13px;color:var(--sec)}
+.bullets li{padding:3px 0 3px 16px;position:relative}
+.bullets li:before{content:"";position:absolute;left:2px;top:10px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+.scards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pcard{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:0 16px 14px;border-top:3px solid var(--base)}
+.pcard.p-semianalysis{border-top-color:var(--pub-semianalysis)}
+.pcard.p-semidoped{border-top-color:var(--pub-semidoped)}
+.pcard.p-irrational{border-top-color:var(--pub-irrational)}
+.pcard h3{font-size:15px;margin:14px 0 3px;font-weight:700}
+.pcard .hr{font-size:12px;color:var(--muted);margin-bottom:9px}
+.meter{height:8px;background:var(--surface-2);border-radius:5px;overflow:hidden;margin:8px 0 12px}
+.meter span{display:block;height:100%;background:var(--accent);border-radius:5px}
+.plist{list-style:none;margin:0;padding:0;font-size:12.5px}
+.plist li{display:flex;gap:8px;align-items:flex-start;padding:5px 0;border-top:1px solid var(--border);color:var(--sec)}
+.plist li:first-child{border-top:none}
+.jd{columns:2;column-gap:24px}
+.jd div{break-inside:avoid;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px}
+.jd b{color:var(--ink);font-family:var(--mono);font-weight:700}
+.themebar{display:flex;flex-direction:column;gap:8px}
+.trow{display:grid;grid-template-columns:180px 1fr 34px;align-items:center;gap:10px;font-size:13px}
+.trow .tb{height:16px;background:var(--accent);border-radius:0 4px 4px 0;min-width:3px}
+.trow .tn{color:var(--muted);font-family:var(--mono);text-align:right;font-size:12px}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:12px;color:var(--muted)}
+@media(max-width:820px){.tiles{grid-template-columns:repeat(2,1fr)}.spot{grid-template-columns:1fr}.scards{grid-template-columns:1fr}.jd{columns:1}.trow{grid-template-columns:120px 1fr 30px}}
+</style>
+
+<div class="wrap">
+
+<h1>Jalapeño Lands — the custom-ASIC wave gets its proof point</h1>
+<p class="sub">OpenAI's first inference chip arrives at Hot Chips 2026 beating Blackwell on perf/W and running level with Rubin nine months after tapeout — flanked by Meta MTIA 300, Google TPU v10, and a fresh Anthropic silicon team. The signal every model lab is now designing away from merchant GPUs, and a direct shot at Nvidia's datacenter margins.</p>
+
+<div class="dots">
+  <span class="dot"><i style="background:var(--pub-irrational)"></i>Irrational Analysis</span>
+  <span class="dot"><i style="background:var(--pub-semianalysis)"></i>SemiAnalysis</span>
+  <span class="dot"><i style="background:var(--pub-semidoped)"></i>Semi Doped</span>
+  <span class="dot" style="margin-left:auto;color:var(--muted)">Scan window · Aug 24–27, 2026</span>
+</div>
+
+<div class="status">
+  <span>●</span>
+  <span><b>Run status:</b> SemiAnalysis ✓ (1 new call-bearing post — <i>OpenAI Jalapeño</i>, Aug-25; Aug-24 AgentX already ingested). Semi Doped ✓ (3 dailies Aug 24–26; Aug-24 podcast educational). Irrational Analysis — no new post in window (latest Aug-19, already ingested). Prices &amp; 3-mo history live via Yahoo chart API; analyst-consensus crumb host still 403 → consensus bars omitted, not fabricated.</span>
+</div>
+
+<h2>State of play</h2>
+<div class="tiles">
+  <div class="tile"><div class="k">Posts scanned</div><div class="v">4</div><div class="n">2 pubs · 3 call-bearing · IA quiet</div></div>
+  <div class="tile"><div class="k">Tickers priced</div><div class="v">16</div><div class="n">all resolved on Yahoo · 0 n/a</div></div>
+  <div class="tile"><div class="k">Calls logged</div><div class="v">16</div>
+    <div class="distbar" title="9 long · 7 neutral · 0 short">
+      <span style="width:56%;background:var(--long)"></span>
+      <span style="width:44%;background:var(--neutral)"></span>
+    </div>
+    <div class="n">▲ 9 long · ● 7 neutral · ▼ 0 short</div></div>
+  <div class="tile"><div class="k">Book bias</div><div class="v" style="color:var(--long)">Long</div><div class="n">ASIC enablers &amp; memory; no shorts</div></div>
+</div>
+
+<h2>Call board — this run</h2>
+<div class="tblwrap">
+<table id="board">
+<thead><tr><th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis</th><th>Price</th><th>3-mo</th><th>P&amp;L→call</th></tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<h2>Ticker spotlights</h2>
+<div class="spot" id="spot"></div>
+
+<h2>Source scorecards</h2>
+<div class="scards">
+  <div class="pcard p-semianalysis">
+    <h3>SemiAnalysis <span class="new">· Dylan Patel</span></h3>
+    <div class="hr">hit-rate <b class="mono">4 / 13</b> resolved · 31% · ~10 open</div>
+    <div class="meter"><span style="width:31%;background:var(--pub-semianalysis)"></span></div>
+    <ul class="plist">
+      <li><span class="pubtag"><i style="background:var(--pub-semianalysis)"></i></span> <b class="mono">Aug-25</b>&nbsp; OpenAI Jalapeño — <span class="chip long">▲ LONG AVGO</span> <span class="chip neutral">● NVDA</span> <span class="chip neutral">● AMD</span> <span class="chip neutral">● CBRS</span> <span class="chip long">▲ Samsung</span></li>
+      <li>No new 30-day resolutions — Jul-29 modular longs cross 30d next run. Jul-25 CBRS long (+4%) &amp; NVDA long (+9%) already booked as wins.</li>
+    </ul>
+  </div>
+  <div class="pcard p-semidoped">
+    <h3>Semi Doped <span class="new">· Vik &amp; Austin</span></h3>
+    <div class="hr">hit-rate <b class="mono">2 / 18</b> resolved · 11% · ~55 open</div>
+    <div class="meter"><span style="width:11%;background:var(--pub-semidoped)"></span></div>
+    <ul class="plist">
+      <li><span class="pubtag"><i style="background:var(--pub-semidoped)"></i></span> <b class="mono">Aug 24–26</b>&nbsp; Hot Chips dailies — <span class="chip long">▲ MU</span> <span class="chip long">▲ META</span> <span class="chip long">▲ GOOGL</span> <span class="chip long">▲ MediaTek</span> <span class="chip long">▲ IFX</span> <span class="chip long">▲ NVTS</span> <span class="chip long">▲ MPWR</span> +4 neutral</li>
+      <li><b>First wins on the board:</b> Jul-27 Korea longs resolved — Samsung +14.7% ✓, SK Hynix +6.8% ✓; IFX.DE −10.2% ✗ (0/15 → 2/18).</li>
+    </ul>
+  </div>
+  <div class="pcard p-irrational">
+    <h3>Irrational Analysis</h3>
+    <div class="hr">hit-rate <b class="mono">3 / 13</b> resolved · 23% · unchanged</div>
+    <div class="meter"><span style="width:23%;background:var(--pub-irrational)"></span></div>
+    <ul class="plist">
+      <li>No new post in window (latest Aug-19 Cerebras Supernova, already ingested).</li>
+      <li>Open InP/optics book still hot — its Jul-25 AXTI (+36%) &amp; LITE longs resolve on the next involved scan.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Jargon decoder</h2>
+<div class="jd">
+  <div><b>Jalapeño</b> — OpenAI's first custom inference ASIC (built with Broadcom); N3P, HBM4, MXFP4 math. First non-TPU/Trainium ASIC to beat merchant GPUs on a third-party benchmark.</div>
+  <div><b>perf/W · tokens/MW</b> — throughput per watt. In a power-limited datacenter, "throughput per watt <i>is</i> revenue" (Jensen) — the metric OpenAI designed Jalapeño around.</div>
+  <div><b>Vera Rubin</b> — Nvidia's next-gen HBM4 platform, shipping to customers now. The fair comparison for Jalapeño (not the older HBM3e Blackwell/GB300).</div>
+  <div><b>HBM4</b> — 4th-gen high-bandwidth memory; ~15.4 TB/s per stack on Jalapeño. SemiAnalysis believes the stacks are Samsung's — a rare Samsung HBM design-win.</div>
+  <div><b>PDD (prefill-decode disaggregation)</b> — splitting inference into separate prompt-reading vs token-generating pools. Jalapeño skips it, keeping a fungible fleet that never strands idle chips.</div>
+  <div><b>MTIA 300 / TPU v10</b> — Meta's and Google's newest in-house accelerators. MTIA moves the network fabric onto the chip; TPU v10 goes multi-vendor via MediaTek for the first time.</div>
+  <div><b>Codex-written kernels</b> — Jalapeño's low-level kernels are authored by OpenAI's own model, not humans. Proof AI is now compressing chip bring-up from years to months.</div>
+  <div><b>zHBM / 3D-DRAM</b> — memory stacked directly on/into the compute die (Samsung zHBM; d-Matrix bonds DRAM face-to-face at 36µm). Attacks the bandwidth wall past conventional HBM.</div>
+  <div><b>chipflation</b> — memory-cost inflation bleeding into consumer prices; Amazon raised Echo/Kindle/Fire TV up to 60%, blaming memory.</div>
+  <div><b>YMTC / CXMT</b> — China's NAND and DRAM champions. YMTC targets top-3 NAND share by 2027; CXMT just qualified LPDDR6 for Xiaomi — direct pressure on Micron/SK Hynix.</div>
+  <div><b>SIVR / VPD / IVR</b> — on-package voltage regulation (Infineon's C2i buy; Navitas' Claros buy) delivering power right at the GPU to survive AI rack densities.</div>
+  <div><b>Groq 3 LPX</b> — Nvidia's inference rack now in mass production <i>at Samsung Foundry</i> (4nm) — a credibility win for Samsung's foundry recovery.</div>
+</div>
+
+<h2>Themes in play — this run</h2>
+<div class="themebar" id="themes"></div>
+
+<div class="foot">
+Generated by the Substack Scanner routine · report date 2026-08-27 · prices via Yahoo Finance chart API (intraday, may lag). Not investment advice. Directional calls are the newsletters' views, contextualized against the accumulated wiki; P&amp;L→call is 0% for calls opened at spot this run.
+</div>
+</div>
+
+<script>
+const PRICES = {"AVGO": {"price": 355.59, "hi52": 495.0, "lo52": 287.17, "cur": "USD", "closes": [421.86, 426.58, 446.77, 459.97, 481.57, 479.23, 418.91, 385.73, 396.6, 392.16, 372.1, 385.57, 382.07, 393.94, 376.71, 392.9, 411.35, 392.13, 380.15, 382.07, 378.91, 365.02, 372.45, 377.75, 369.34, 360.45, 373.9, 370.78, 388.69, 401.11, 399.97, 384.05, 389.11, 394.28, 374.45, 370.83, 378.16, 386.5, 396.81, 392.47, 381.92, 383.22, 380.91, 370.32, 387.84, 389.28, 392.23, 418.16, 418.28, 420.57, 427.76, 422.4, 416.08, 416.05, 417.82, 392.99, 392.43, 380.0, 362.48, 364.03, 368.45, 358.76, 356.74, 355.59]}, "NVDA": {"price": 209.66, "hi52": 236.54, "lo52": 164.07, "cur": "USD", "closes": [212.6, 214.25, 211.14, 224.36, 222.82, 214.75, 218.66, 205.1, 208.64, 208.19, 200.42, 204.87, 205.19, 212.45, 207.41, 204.65, 210.69, 208.65, 200.04, 199.0, 195.74, 192.53, 194.97, 200.09, 197.58, 194.83, 195.55, 196.93, 204.12, 202.78, 210.96, 203.53, 211.8, 212.5, 207.4, 202.81, 203.28, 207.29, 212.06, 208.76, 206.84, 196.51, 197.01, 190.01, 195.04, 200.75, 206.64, 211.94, 219.22, 218.99, 223.96, 217.55, 217.5, 224.09, 225.3, 225.16, 225.01, 219.74, 217.56, 216.85, 214.72, 208.48, 213.05, 209.66]}, "AMD": {"price": 480.93, "hi52": 584.73, "lo52": 149.22, "cur": "USD", "closes": [495.54, 518.09, 516.1, 510.13, 521.54, 542.52, 523.2, 466.38, 490.33, 475.51, 452.4, 488.45, 511.57, 547.26, 507.29, 512.48, 537.37, 551.63, 519.85, 519.74, 532.57, 521.58, 539.49, 580.91, 540.88, 517.82, 552.05, 516.11, 517.41, 546.72, 557.89, 534.39, 548.13, 529.14, 500.94, 495.76, 503.57, 544.43, 552.33, 539.69, 521.95, 494.95, 454.62, 429.56, 485.39, 476.15, 484.64, 518.58, 482.05, 489.28, 483.36, 469.56, 474.32, 482.93, 483.01, 514.39, 506.0, 484.39, 466.42, 469.46, 473.25, 456.75, 479.18, 480.93]}, "CBRS": {"price": 182.15, "hi52": 386.34, "lo52": 160.81, "cur": "USD", "closes": [266.9, 242.59, 236.99, 213.28, 236.52, 214.94, 215.4, 201.01, 237.83, 226.82, 237.33, 226.55, 214.0, 218.03, 212.25, 213.67, 234.71, 224.43, 226.72, 182.26, 168.52, 181.59, 216.16, 221.0, 221.27, 204.86, 192.01, 176.61, 181.72, 198.53, 215.08, 204.62, 203.81, 184.01, 180.46, 172.86, 176.88, 208.57, 209.8, 220.0, 199.12, 188.61, 192.72, 169.39, 203.07, 198.71, 219.97, 227.15, 214.3, 211.3, 226.73, 230.01, 234.76, 262.06, 231.01, 218.98, 251.98, 220.01, 215.69, 209.85, 196.13, 185.43, 183.92, 182.15]}, "005930.KS": {"price": 265000.0, "hi52": 374500.0, "lo52": 67500.0, "cur": "KRW", "closes": [307000.0, 299500.0, 317000.0, 349000.0, 360500.0, 351500.0, 329000.0, 295500.0, 322000.0, 302500.0, 299000.0, 322500.0, 337000.0, 343000.0, 346500.0, 362500.0, 354000.0, 353500.0, 310000.0, 340500.0, 358500.0, 339500.0, 323000.0, 334000.0, 314500.0, 286000.0, 309500.0, 318000.0, 296000.0, 277500.0, 278000.0, 285000.0, 254500.0, 263000.0, 279500.0, 255000.0, 244000.0, 259000.0, 260500.0, 270000.0, 249500.0, 254000.0, 220000.0, 208500.0, 207000.0, 262500.0, 239500.0, 240000.0, 246000.0, 230500.0, 231000.0, 230000.0, 239500.0, 255500.0, 268000.0, 274500.0, 268500.0, 247500.0, 271000.0, 281500.0, 257000.0, 257000.0, 261500.0, 265000.0]}, "MU": {"price": 938.4, "hi52": 1255.0, "lo52": 114.25, "cur": "USD", "closes": [928.41, 923.52, 971.0, 1035.5, 1064.1, 1079.57, 996.0, 864.01, 949.28, 935.89, 891.88, 995.87, 981.61, 1087.99, 1020.76, 1043.19, 1133.99, 1211.38, 1051.77, 1048.51, 1213.56, 1132.33, 1145.28, 1154.29, 1032.28, 975.56, 984.75, 938.38, 948.8, 991.64, 979.3, 937.0, 983.12, 904.28, 853.2, 848.95, 865.46, 970.82, 959.48, 990.21, 920.95, 900.2, 820.53, 739.0, 874.66, 823.03, 829.5, 892.67, 893.19, 881.47, 877.57, 861.0, 868.52, 911.29, 949.83, 971.66, 1011.75, 940.76, 937.11, 974.33, 966.78, 910.43, 932.97, 938.4]}, "IFX.DE": {"price": 55.19, "hi52": 88.83, "lo52": 30.82, "cur": "EUR", "closes": [77.55, 76.73, 80.11, 81.11, 80.35, 88.0, 88.0, 85.05, 77.3, 78.24, 75.66, 75.1, 77.06, 80.06, 80.75, 79.28, 77.06, 82.01, 81.97, 85.94, 80.56, 79.56, 82.01, 78.3, 78.24, 81.67, 77.9, 76.35, 77.38, 77.21, 70.83, 70.3, 73.35, 72.48, 70.37, 71.82, 67.31, 64.71, 63.66, 64.0, 67.54, 69.8, 65.49, 64.41, 61.49, 57.77, 54.48, 59.47, 61.67, 61.47, 63.72, 60.08, 60.32, 62.08, 62.53, 62.85, 63.09, 62.5, 61.73, 61.97, 57.24, 54.98, 55.41, 55.97, 54.16, 54.85]}, "NVTS": {"price": 12.67, "hi52": 34.17, "lo52": 5.44, "cur": "USD", "closes": [28.88, 28.51, 26.6, 24.86, 25.86, 30.84, 30.67, 25.08, 24.48, 22.85, 20.5, 22.21, 23.39, 23.73, 22.09, 22.34, 24.02, 23.7, 21.4, 18.32, 17.7, 17.3, 17.74, 17.92, 16.53, 14.46, 15.23, 13.99, 13.36, 14.18, 13.47, 12.87, 13.09, 13.27, 11.76, 11.46, 11.54, 12.82, 12.67, 12.03, 10.92, 11.41, 10.01, 9.73, 11.01, 10.86, 11.52, 12.69, 12.35, 12.4, 13.89, 13.17, 13.6, 13.93, 13.66, 14.45, 14.58, 13.17, 12.83, 12.97, 12.97, 12.23, 12.44, 12.67]}, "MPWR": {"price": 1303.88, "hi52": 1714.09, "lo52": 800.97, "cur": "USD", "closes": [1620.17, 1633.17, 1566.21, 1542.39, 1624.99, 1689.89, 1652.6, 1481.05, 1559.18, 1531.98, 1473.04, 1589.55, 1577.32, 1652.29, 1498.77, 1448.21, 1563.7, 1537.88, 1423.76, 1434.95, 1438.3, 1313.32, 1312.77, 1382.36, 1331.73, 1288.16, 1346.13, 1272.81, 1315.51, 1374.13, 1352.74, 1291.38, 1376.41, 1352.66, 1305.65, 1312.0, 1328.8, 1383.26, 1398.45, 1397.15, 1333.81, 1339.08, 1282.01, 1248.76, 1316.18, 1426.03, 1344.37, 1335.03, 1345.46, 1359.08, 1401.54, 1381.1, 1402.11, 1425.01, 1362.55, 1402.01, 1415.99, 1333.18, 1300.14, 1310.6, 1316.28, 1285.03, 1304.15, 1303.88]}, "META": {"price": 576.14, "hi52": 790.8, "lo52": 520.26, "cur": "USD", "closes": [635.26, 635.29, 632.51, 600.47, 597.63, 622.98, 627.57, 593.0, 585.39, 584.59, 570.98, 568.43, 566.98, 593.48, 600.21, 567.58, 577.22, 563.85, 562.2, 557.67, 542.87, 550.25, 562.6, 563.29, 612.91, 582.9, 600.29, 615.58, 603.12, 631.48, 669.21, 656.73, 661.04, 681.31, 664.54, 646.01, 645.85, 643.81, 627.17, 606.1, 595.19, 593.87, 593.41, 585.61, 539.03, 556.71, 590.24, 587.94, 588.77, 589.9, 592.1, 594.92, 599.12, 578.85, 594.97, 589.85, 568.97, 543.67, 546.03, 545.83, 549.9, 559.02, 570.05, 576.14]}, "GOOGL": {"price": 342.0, "hi52": 408.61, "lo52": 205.65, "cur": "USD", "closes": [388.83, 390.13, 380.34, 376.37, 361.85, 358.99, 372.19, 368.53, 363.31, 364.26, 356.38, 357.77, 359.68, 369.35, 373.25, 363.79, 368.03, 349.68, 346.13, 345.29, 343.71, 337.39, 353.65, 357.37, 361.21, 359.91, 366.46, 367.03, 361.92, 358.89, 357.18, 352.51, 359.51, 370.92, 354.46, 346.77, 351.99, 347.15, 342.09, 317.69, 319.74, 326.56, 333.71, 336.71, 333.66, 356.13, 373.51, 377.65, 362.43, 357.75, 354.3, 357.52, 343.8, 343.54, 346.36, 345.9, 344.0, 344.2, 344.72, 340.67, 344.82, 348.06, 346.96, 342.0]}, "2454.TW": {"price": 3945.0, "hi52": 4970.0, "lo52": 1130.0, "cur": "TWD", "closes": [4640.0, 4410.0, 4310.0, 4555.0, 4525.0, 4545.0, 4430.0, 4300.0, 4070.0, 4475.0, 4155.0, 4085.0, 4180.0, 4470.0, 4560.0, 4460.0, 4390.0, 4465.0, 4535.0, 4285.0, 4310.0, 3880.0, 3910.0, 4245.0, 4335.0, 4345.0, 4195.0, 4125.0, 4030.0, 3995.0, 3925.0, 3925.0, 3825.0, 3660.0, 3740.0, 3700.0, 3370.0, 3340.0, 3670.0, 3850.0, 3875.0, 3750.0, 3680.0, 3315.0, 3150.0, 3235.0, 3555.0, 3910.0, 3865.0, 4000.0, 3920.0, 3900.0, 3960.0, 4020.0, 4015.0, 4225.0, 4210.0, 4050.0, 3885.0, 3845.0, 3700.0, 3790.0, 3765.0, 3735.0, 3945.0]}, "TSM": {"price": 417.69, "hi52": 479.0, "lo52": 225.63, "cur": "USD", "closes": [422.73, 424.86, 418.45, 435.63, 446.69, 436.69, 444.92, 415.17, 426.8, 427.92, 408.75, 421.07, 423.93, 441.4, 425.83, 432.15, 462.12, 467.67, 436.39, 440.83, 434.99, 432.35, 455.1, 477.57, 444.23, 434.16, 451.79, 432.57, 436.98, 436.96, 434.11, 421.58, 420.39, 419.48, 409.74, 398.37, 402.3, 424.61, 421.21, 415.58, 403.41, 399.09, 392.31, 374.67, 403.31, 404.25, 406.11, 417.17, 414.0, 418.2, 420.04, 418.47, 422.06, 429.15, 430.49, 426.35, 430.97, 413.41, 412.09, 416.0, 418.95, 410.12, 417.41, 417.69]}, "QCOM": {"price": 163.72, "hi52": 259.92, "lo52": 121.99, "cur": "USD", "closes": [233.4, 243.29, 251.02, 228.99, 240.84, 250.01, 242.57, 215.94, 217.77, 205.42, 191.2, 202.96, 211.72, 220.81, 214.07, 212.97, 226.11, 221.9, 204.13, 197.41, 204.9, 189.39, 188.72, 184.79, 181.92, 176.25, 186.48, 182.97, 186.56, 191.11, 189.16, 183.98, 178.1, 177.98, 170.61, 171.78, 170.32, 173.5, 175.63, 171.11, 166.97, 170.04, 162.88, 155.68, 151.6, 147.61, 151.57, 162.67, 157.53, 160.39, 167.86, 162.17, 162.68, 163.07, 164.79, 165.79, 162.18, 160.19, 161.91, 160.74, 160.75, 158.53, 160.56, 163.72]}, "INTC": {"price": 88.24, "hi52": 142.35, "lo52": 23.68, "cur": "USD", "closes": [121.77, 120.89, 114.68, 109.33, 107.93, 112.71, 111.78, 99.17, 110.27, 107.92, 107.04, 116.96, 124.57, 127.86, 117.05, 121.1, 133.99, 140.94, 132.28, 131.65, 132.87, 128.32, 131.72, 139.63, 127.02, 120.35, 122.2, 110.39, 110.24, 112.54, 109.84, 103.12, 107.76, 102.99, 96.98, 95.04, 97.06, 105.45, 102.62, 100.23, 92.32, 91.67, 86.3, 81.88, 91.13, 90.2, 91.0, 100.86, 101.06, 99.81, 101.65, 97.52, 97.71, 100.95, 104.56, 102.5, 103.49, 96.69, 92.8, 92.13, 90.07, 87.26, 87.48, 88.24]}, "AAPL": {"price": 313.45, "hi52": 344.57, "lo52": 225.95, "cur": "USD", "closes": [310.85, 312.51, 312.06, 306.31, 315.2, 310.26, 311.23, 307.34, 301.54, 290.55, 291.58, 295.63, 291.13, 296.42, 299.24, 295.95, 298.01, 297.01, 294.3, 293.08, 275.15, 283.78, 281.74, 289.36, 294.38, 308.63, 312.66, 310.66, 313.39, 316.22, 315.32, 317.31, 314.86, 327.5, 333.26, 333.74, 326.59, 327.74, 325.89, 321.66, 333.02, 336.91, 340.08, 338.19, 333.43, 308.91, 303.42, 309.38, 311.0, 312.41, 313.33, 308.26, 304.91, 302.25, 305.26, 305.93, 305.59, 310.03, 316.83, 311.3, 309.35, 310.34, 309.9, 313.45]}};
+
+const NAMES = {AVGO:"Broadcom",NVDA:"NVIDIA",AMD:"Advanced Micro Devices",CBRS:"Cerebras Systems","005930.KS":"Samsung Electronics",MU:"Micron Technology","IFX.DE":"Infineon","NVTS":"Navitas Semiconductor",MPWR:"Monolithic Power",META:"Meta Platforms",GOOGL:"Alphabet","2454.TW":"MediaTek",TSM:"TSMC",QCOM:"Qualcomm",INTC:"Intel",AAPL:"Apple"};
+const CUR = {KRW:"₩",EUR:"€",TWD:"NT$",USD:"$",JPY:"¥"};
+function fmt(sym){const p=PRICES[sym];const c=CUR[p.cur]||"$";
+  let v=p.price; let s = v>=1000? Math.round(v).toLocaleString() : v.toFixed(2);
+  return c+s;}
+
+const CALLS = [
+ {s:"AVGO",dir:"long",pub:"semianalysis",th:"OpenAI's Jalapeño ASIC partner + Tomahawk-6 scale-up switches — the biggest merchant winner of the custom-silicon wave."},
+ {s:"NVDA",dir:"neutral",pub:"semianalysis",th:"Jalapeño is a real threat to DC gross margins, but Rubin ships today & leads; Groq 3 LPX now in production. Moat pressured, not breached."},
+ {s:"AMD",dir:"neutral",pub:"semianalysis",th:"EPYC Turin hosts every Jalapeño rack — but SemiAnalysis flags 'AMD's kernel team should be worried' as ASICs undercut on perf/W."},
+ {s:"CBRS",dir:"neutral",pub:"semianalysis",th:"Jalapeño's arrival puts Cerebras' 1.25 GW option-beyond-OpenAI's-firm-750 MW 'in question'; CS-4's 30× claim meets a faster rival."},
+ {s:"005930.KS",dir:"long",pub:"semianalysis",th:"Believed to be Jalapeño's near-exclusive HBM4 supplier (10 Gbps pin) + Groq 3 LPX foundry win — a rare Samsung memory & foundry double."},
+ {s:"MU",dir:"long",pub:"semidoped",th:"Chipflation: Amazon hikes hardware up to 60% on memory cost; Micron's AI-packaging roadmap at Hot Chips. Falsifier: YMTC/CXMT China ramp."},
+ {s:"IFX.DE",dir:"long",pub:"semidoped",th:"Buys Bangalore's C2i (SIVR IP) for AI-rack power delivery; issues record Q3 guidance alongside the deal."},
+ {s:"NVTS",dir:"long",pub:"semidoped",th:"Acquires Claros for vertical power delivery / integrated voltage regulators — grid-to-xPU AI-infra power stack."},
+ {s:"MPWR",dir:"long",pub:"semidoped",th:"Q2 tops consensus and raises full-year targets on strong AI power-management demand."},
+ {s:"META",dir:"long",pub:"semidoped",th:"MTIA 300 moves the network fabric onto the chip — custom silicon co-designed for the recommendation models that pay the bills."},
+ {s:"GOOGL",dir:"long",pub:"semidoped",th:"TPU v10 goes multi-vendor for the first time, distributing production risk and deepening the in-house accelerator lead."},
+ {s:"2454.TW",dir:"long",pub:"semidoped",th:"MediaTek's ASIC role deepens as Google's TPU v10 second source — the merchant beneficiary of hyperscaler custom silicon."},
+ {s:"TSM",dir:"neutral",pub:"semidoped",th:"Apple M6/M5 Ultra + Xiaomi 3nm volume, but HBM packaging-yield struggles draw analyst attention to Intel's packaging opening."},
+ {s:"QCOM",dir:"neutral",pub:"semidoped",th:"Xiaomi Xring O3 (3nm, LPDDR6) + Exynos 2700 claims squeeze the high end; offset by Snapdragon breaking 5 GHz."},
+ {s:"INTC",dir:"neutral",pub:"semidoped",th:"TSMC HBM packaging-yield problems could reroute advanced-packaging customers to Intel — a modest turnaround tailwind."},
+ {s:"AAPL",dir:"neutral",pub:"semidoped",th:"M6 & M5 Ultra launch pushes on-device AI compute, but 'not hobby-grade' — a DGX-Spark-class desktop, not a mass inference play."},
+];
+
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+const ICON={long:"▲",short:"▼",neutral:"●"};
+const PUBLBL={semianalysis:"SemiAnalysis",semidoped:"Semi Doped",irrational:"Irrational"};
+
+// Call board
+const tb=document.querySelector("#board tbody");
+CALLS.forEach(c=>{
+  const p=PRICES[c.s];
+  const col = c.dir=="long"?"var(--long)":c.dir=="short"?"var(--short)":"var(--neutral)";
+  const tr=document.createElement("tr");
+  tr.innerHTML=`
+   <td class="mono" style="font-weight:700">${c.s}</td>
+   <td><span class="chip ${c.dir}">${ICON[c.dir]} ${c.dir.toUpperCase()}</span></td>
+   <td><span class="pubtag"><i style="background:var(--pub-${c.pub})"></i>${PUBLBL[c.pub]}</span></td>
+   <td class="thesis">${c.th}</td>
+   <td class="mono">${fmt(c.s)}</td>
+   <td>${sparkSVG(p.closes,84,26,col)}</td>
+   <td class="new">±0.0% · new</td>`;
+  tb.appendChild(tr);
+});
+
+// Spotlights
+const SPOT=[
+ {s:"AVGO",dir:"long",b:["Named OpenAI's Jalapeño co-designer <b>and</b> the Tomahawk-6 scale-up switch (2,048-chip fabric) — paid on both the ASIC and the network.","Every model lab going custom (OpenAI, Anthropic's new team, Meta, Google) routes through Broadcom's franchise; SPV-funded Anthropic chips add to the pipe."]},
+ {s:"NVDA",dir:"neutral",b:["First non-TPU/Trainium ASIC to beat merchant GPUs on a 3rd-party bench — CNBC frames it as pressure on DC gross margins.","But Rubin ships to customers <b>now</b> while Jalapeño is engineering samples; SemiAnalysis says the fair fight is vs Rubin, where GPUs still hold. Earnings Wed."]},
+ {s:"005930.KS",dir:"long",b:["SemiAnalysis + Jukan believe Samsung is Jalapeño's near-exclusive HBM4 source (10 Gbps pin > Rubin's 9.6) — a genuine HBM design-win after years of yield lag.","Groq 3 LPX now mass-produced on Samsung Foundry 4nm. Offsetting: record ₩90–110T buyback oddly sent shares lower on execution doubt."]},
+ {s:"CBRS",dir:"neutral",b:["Jalapeño reframes the inference-ASIC field: SemiAnalysis says Cerebras' 1.25 GW option beyond OpenAI's firm 750 MW is now 'in question.'","CS-4's 30×-vs-GPU claim lands the same week a faster, HBM4-class rival appears. IA's activist parametric-yield short still open; stock −13% since CS-4."]},
+];
+const spot=document.getElementById("spot");
+SPOT.forEach(o=>{
+  const p=PRICES[o.s]; const col=o.dir=="long"?"var(--long)":o.dir=="neutral"?"var(--neutral)":"var(--short)";
+  const lo=p.lo52,hi=p.hi52,cur=p.price;
+  const pos=Math.max(0,Math.min(100,(cur-lo)/((hi-lo)||1)*100));
+  const el=document.createElement("div"); el.className="scard";
+  el.innerHTML=`
+   <div class="top">
+     <div><div class="sym mono">${o.s} <span class="chip ${o.dir}" style="vertical-align:2px">${ICON[o.dir]} ${o.dir.toUpperCase()}</span></div><div class="nm">${NAMES[o.s]}</div></div>
+     <div><div class="px mono">${fmt(o.s)}</div><div class="pxsub mono">52w ${CUR[p.cur]}${p.lo52>=1000?Math.round(p.lo52).toLocaleString():p.lo52} – ${CUR[p.cur]}${p.hi52>=1000?Math.round(p.hi52).toLocaleString():p.hi52}</div></div>
+   </div>
+   <div style="margin-top:10px">${sparkSVG(p.closes,Math.min(560,el.clientWidth||520),64,col,{ci:p.closes.length-1,refline:true})}</div>
+   <div class="rangebar"><div class="fill" style="left:0;width:${pos}%"></div><div class="mk" style="left:calc(${pos}% - 1px)"></div></div>
+   <div class="rlabel"><span>52-wk low</span><span>52-wk high</span></div>
+   <ul class="bullets">${o.b.map(x=>`<li>${x}</li>`).join("")}</ul>`;
+  spot.appendChild(el);
+});
+// re-render spotlight sparks at full width after layout
+requestAnimationFrame(()=>{document.querySelectorAll("#spot .scard").forEach((el,i)=>{
+  const o=SPOT[i],p=PRICES[o.s];const col=o.dir=="long"?"var(--long)":o.dir=="neutral"?"var(--neutral)":"var(--short)";
+  const w=el.querySelector(".bullets").clientWidth||520;
+  el.querySelector("svg").outerHTML=sparkSVG(p.closes,w,64,col,{ci:p.closes.length-1,refline:true});
+});});
+
+// Themes
+const THEMES=[
+ ["Custom silicon / ASIC",9],["AI accelerator competition",7],["HBM & memory tech",6],
+ ["Memory cycle / chipflation",5],["Foundry & process node",5],["Power semiconductors",4],
+ ["EDA & AI chip design",3],["Silicon photonics",3]];
+const mx=Math.max(...THEMES.map(t=>t[1]));
+const tc=document.getElementById("themes");
+THEMES.forEach(([n,v])=>{
+  const d=document.createElement("div");d.className="trow";
+  d.innerHTML=`<span style="color:var(--sec)">${n}</span><span class="tb" style="width:${v/mx*100}%"></span><span class="tn">${v}</span>`;
+  tc.appendChild(d);
+});
+</script>

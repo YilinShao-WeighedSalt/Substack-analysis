@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-24
+updated: 2026-08-27
 ---
 
 # Wiki Index
@@ -578,4 +578,8 @@ updated: 2026-08-24
 - [[semidoped-2026-08-20-daily-update]] — Daily Aug 20 (SK Hynix CPO roadmap, Waymo custom chip, Micron $10B Boise + #3 NAND, Cerebras Q2 loss)
 - [[semianalysis-2026-08-21-open-models-catching-up]] — Open models: open-vs-closed capability gap halves each era (Kimi/GLM); harness moat survives (no call)
 - [[semianalysis-2026-08-24-agentx-inferencexv3-cuda-moat]] — AgentX 1M-context agentic benchmark: CUDA moat holds vs AMD on realistic inference (NEUT NVDA/AMD)
+- [[semianalysis-2026-08-25-openai-jalapeno]] — OpenAI Jalapeño ASIC beats Blackwell on perf/W, level w/ Rubin; HBM4 (Samsung); Codex kernels (LONG AVGO/Samsung, NEUT NVDA/AMD/CBRS)
 - [[semidoped-2026-08-21-daily-update]] — Daily Aug 21 (Broadcom $70B Anthropic SPV, Samsung ₩110T buyback, TSMC 1.6nm, Micron $10B hub) (LONG AVGO/Samsung/SKH/TSM/MU/GLW/NBIS)
+- [[semidoped-2026-08-24-daily-update]] — Daily Aug 24 (Hot Chips: CS-4 30x, d-Matrix Raptor, Amazon +60% chipflation, Samsung buyback, Infineon C2i) (LONG MU/IFX)
+- [[semidoped-2026-08-25-daily-update]] — Daily Aug 25 (Jalapeño recap, Groq 3 LPX @Samsung Foundry, Anthropic silicon team, Apple M6/M5 Ultra) (LONG Samsung/NVTS)
+- [[semidoped-2026-08-26-daily-update]] — Daily Aug 26 (Jalapeño vs GB300, Meta MTIA 300, Google TPU v10 multi-vendor, YMTC/CXMT, MPWR beat) (LONG META/GOOGL/MediaTek/MPWR)

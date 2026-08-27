@@ -4,15 +4,19 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-24
+updated: 2026-08-27
 handle: semidoped
-calls_logged: 147
-hit_rate: "0/15 (0%), ~55 open"
+calls_logged: 159
+hit_rate: "2/18 (11%), ~55 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Hot Chips 2026 dailies, Aug 24-26 (2026-08-24..26):** Three news-dense dailies (Aug-24 podcast on Grok bots / CPUs-in-agentic-AI = educational). **Custom silicon takes over Hot Chips:** OpenAI **Jalapeño** claims perf/W & speed edge over GB300 (recaps SemiAnalysis; HBM4 believed Samsung; "1.25 GW Cerebras option in question," "AMD kernel team should be worried"); **Meta MTIA 300** (network fabric on-chip, for recommendation models) → [[META]] LONG $576.14; **Google TPU v10 multi-vendor via MediaTek** → [[GOOGL]] LONG $342.00, [[2454.TW]] LONG NT$3,945; **d-Matrix Raptor** (100 TB/s face-to-face DRAM) + **SambaNova SN50** memory-compute fusion in working silicon. **Anthropic builds a custom-silicon team** (hired Google TPU founder). **Foundry/inference:** Nvidia **Groq 3 LPX into mass production at Samsung Foundry 4nm** → [[005930.KS]] LONG ₩265,000, [[NVDA]] NEUTRAL $209.66; TSMC HBM-packaging-yield woes could help Intel → [[INTC]] NEUTRAL $88.24, [[TSM]] NEUTRAL $417.69. **Memory/chipflation:** Amazon +60% hardware hikes; YMTC top-3-NAND-by-2027; CXMT LPDDR6 for Xiaomi → [[MU]] LONG $938.40. **Power semis:** Infineon buys C2i (SIVR) → [[IFX]] LONG €55.19; Navitas buys Claros (VPD/IVR) → [[NVTS]] LONG $12.67; MPWR Q2 beat+raise → [[MPWR]] LONG $1,303.88. **Mobile:** Xiaomi Xring O3 (3nm, LPDDR6) + Exynos-2700 claims vs Snapdragon-5GHz → [[QCOM]] NEUTRAL $163.72; Apple M6/M5 Ultra → [[AAPL]] NEUTRAL $313.45.
+
+**hit_rate note (2026-08-27): first wins — 0/15 → 2/18 (11%).** The Jul-27 Korea batch resolved: **[[005930.KS]] LONG (₩231,000) → ₩265,000 = +14.7% WIN ✓** and **[[000660.KS]] LONG (₩1,622,000) → ₩1,732,000 = +6.8% WIN ✓** — the memory supercycle longs finally cash. The one loss: **[[IFX]] LONG (€61.49) → €55.19 = -10.2% LOSS ✗**. Prior 15 all-loss set unchanged at current marks (MU Jul-3 -3.8%, SNDK Jul-3 -14.1% both stay under water). The Jul-28..30 memory/optics batch (000660.KS, GLW $135.22, BE, 009150.KS — all currently green) resolves ~Aug-28/29. This run's 12 new calls opened at spot.
 
 - **Daily Update Aug-21 (2026-08-21):** News-dense daily (Aug-22 TIL / Aug-23 pub-quiz educational, no calls). **Marquee item: Broadcom's off-balance-sheet SPV eyes $60–100B in debt to fund Anthropic's custom AI chips** — the largest single ASIC-financing datapoint yet ([[AVGO]] LONG $368.45); *Vik: custom-ASIC business still booming as people flee Nvidia.* **Memory buyback wave:** Samsung plans record ₩110T ($79B) shareholder returns — largest in Korean history ([[005930.KS]] LONG ₩263,000) — SK Hynix running a comparable program ([[000660.KS]] LONG ₩1,743,000). **Foundry/packaging:** TSMC wraps 1.6nm (A16), Q4 volume; CoWoS still constrained → LG enters with maskless LDI, Japan +$940M to Rapidus ([[TSM]] LONG $418.95). **Memory/optics/infra:** Micron $10B decade-long US AI-memory hub ([[MU]] LONG $966.78); Zayo locks long-term Corning fiber reserve ([[GLW]] LONG $149.84); Nebius upsizes convert to $5B ([[NBIS]] LONG $219.13). **Nvidia** flatly denies a China-legal Groq-based "LPU" report; in early talks to buy Korea's Rebellions ([[NVDA]] NEUTRAL $214.72). Also: YMTC $4.9B Shanghai IPO filing; Flex+Cerebras scale CS-4; Supermicro fires staff over $2.5B GPU-to-China scheme; Infineon 40V GaN.
 

@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-24
+updated: 2026-08-27
 handle: semianalysis
-calls_logged: 216
+calls_logged: 221
 hit_rate: "4/13 (31%), ~10 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **OpenAI Jalapeño: Better Than Nvidia Blackwell (2026-08-25):** SemiAnalysis was invited into OpenAI's lab to run **InferenceX** on **Jalapeño**, OpenAI's first custom inference ASIC (built with [[AVGO|Broadcom]], unveiled June 24). Verdict: **it beats every Nvidia/AMD/Google chip SemiAnalysis has tested on tokens per MW**, across nearly the whole latency curve, with single-token prediction, no spec-decode, no PDD. Reticle-sized **N3P** die, 13.4 PFLOPs MXFP4 @700W (B0), **HBM4 @15.4 TB/s (believed Samsung)**, Codex-written Gluon kernels, ~16-month hiring-to-tape-out. Caveats: OpenAI-supplied numbers, 8k/1k only (no AgentX yet), fair comp is **Rubin (ships now) not Blackwell**, volume late-2027. Priced calls: **[[AVGO]] LONG $355.59** (ASIC partner + Tomahawk-6 switches + Celestica integration), **[[NVDA]] NEUTRAL $209.66** (DC-margin threat but Rubin leads today), **[[AMD]] NEUTRAL $480.93** (EPYC hosts it, but "kernel team should be worried"), **[[CBRS]] NEUTRAL $182.15** (1.25 GW option "in question"), **[[005930.KS]] LONG ₩265,000** (near-exclusive HBM4). Deepens [[custom-silicon-asic]], [[ai-accelerator-competition]], [[eda-chip-design]] (AI-accelerated tape-out).
+
+**hit_rate note (2026-08-27): no new resolutions — holds 4/13 (31%).** The Jul-29 modular longs (FIX/STRL/VRT/PWR/FLEX/SU.PA) cross 30d next run (~Aug-28); Aug-7 GOOGL/MSFT/NVDA longs are <30d. This run's 5 new Jalapeño calls opened at spot. The Jul-25 CBRS long (+4% resolved WIN) and NVDA long (+9% WIN) are already booked in the 4/13.
 
 - **AgentX — InferenceXv3 (2026-08-24) + Are Open Models Catching Up? (2026-08-21):** Two benchmark/analysis posts. **AgentX 1.0** (open-sourced, Apache 2.0) is the first 1M-context multi-turn *agentic-coding* inference benchmark — the right way to measure hardware now that Claude-Code-style traffic dominates. Verdict: **the CUDA moat holds on agentic workloads.** Across Kimi K3, MiniMax M3, Qwen3.5, GLM 5.3, DeepSeek V4, Nvidia beats AMD on realistic multi-turn serving; the moat is *software* (aggressive KV-offload to CPU DRAM, Dynamo/TRT-LLM/vLLM tuning), and "even if AMD compute were free, $/token stays cheaper on Nvidia." AMD (MI355X/ATOM) is closing fast (M3 FP4 day-0 vs months-late on R1) but competitive only in the ultra-high-throughput corner. NEUTRAL [[NVDA]] $214.72 (moat-holds/favorable), NEUTRAL [[AMD]] $473.25. *Open Models* (no call): open-vs-closed capability gap **halves each era** (Kimi K2.6 passed Opus 4.5 in 4.8mo), but SemiAnalysis still prefers Fable 5 day-to-day — the harness/productization edge survives even as raw-benchmark gaps compress → [[ai-software-models]].
 
