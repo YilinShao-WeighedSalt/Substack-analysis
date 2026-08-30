@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-27
+updated: 2026-08-30
 ---
 
 # Wiki Index
@@ -583,3 +583,7 @@ updated: 2026-08-27
 - [[semidoped-2026-08-24-daily-update]] — Daily Aug 24 (Hot Chips: CS-4 30x, d-Matrix Raptor, Amazon +60% chipflation, Samsung buyback, Infineon C2i) (LONG MU/IFX)
 - [[semidoped-2026-08-25-daily-update]] — Daily Aug 25 (Jalapeño recap, Groq 3 LPX @Samsung Foundry, Anthropic silicon team, Apple M6/M5 Ultra) (LONG Samsung/NVTS)
 - [[semidoped-2026-08-26-daily-update]] — Daily Aug 26 (Jalapeño vs GB300, Meta MTIA 300, Google TPU v10 multi-vendor, YMTC/CXMT, MPWR beat) (LONG META/GOOGL/MediaTek/MPWR)
+- [[semidoped-2026-08-27-daily-update]] — Daily Aug 27 (Nvidia 70% FY27 guide, NVHBM, AWS +2M GPUs, Kioxia+SanDisk $31B NAND, Synopsys beat) (LONG NVDA/SNDK/SNPS, NEUT 285A.T)
+- [[semidoped-2026-08-28-daily-update]] — Daily Aug 28 (Jalapeño 1.5-1.9× perf/W benchmarks, SK Hynix $4B Indiana HBM fab, Marvell/Google timing, TSMC +29% foundry) (LONG AVGO/TSM/000660, NEUT MRVL/005930)
+- [[semidoped-2026-08-27-jalapeno-podcast]] — Jalapeño Hot Chips teardown podcast (NUMA HBM slices, ESUN scale-up, 9-mo tapeout) — educational, no calls
+- [[semidoped-2026-08-29-til-mosfet-kahng]] — TIL: Dawon Kahng & the first MOSFET (1959) — educational history, no calls

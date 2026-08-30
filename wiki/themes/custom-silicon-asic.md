@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-08-27
+updated: 2026-08-30
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -81,3 +81,8 @@ The custom silicon and ASIC theme emerged in early 2024 primarily through irrati
 The custom-silicon thesis crossed from roadmap to hard evidence. **OpenAI Jalapeño** (built with Broadcom, unveiled Jun-24) is the **first non-TPU/Trainium ASIC to beat merchant GPUs on a third-party benchmark** — SemiAnalysis' InferenceX shows it beating Blackwell on tokens/MW and running level with Rubin, on a reticle-sized N3P die with HBM4 (believed Samsung's) and Codex-written kernels, ~16 months hiring-to-tape-out. The cadence itself is the story: **AI-accelerated EDA compressed a 3–4-year ASIC into ~16 months** with a small team.
 
 Plain-language why it matters: in a **power-limited** datacenter, "throughput per watt is revenue" (Jensen) — so a chip designed purely around perf/W, that skips prefill-decode disaggregation to keep a fungible fleet, directly attacks Nvidia's DC gross margins. The same week, **Meta MTIA 300** (network fabric on-chip, for recommendation/ads), **Google TPU v10** (multi-vendor via MediaTek for the first time), a new **Anthropic silicon team** (hired Google's TPU founder), and **d-Matrix/SambaNova** memory-compute-fusion silicon all landed — every model lab now designing away from merchant GPUs. Merchant winners: **Broadcom** (co-design + Tomahawk-6 switches), **MediaTek** (TPU v10 second source), **Celestica** (system integration), **Samsung** (HBM4 + Groq-LPX foundry). The tension: Rubin ships to customers *today* while Jalapeño is engineering samples (volume late-2027), and none of these ASICs has posted AgentX 1M-context results — where the CUDA software moat still holds (see [[ai-accelerator-competition]]).
+
+### 2026-08-27..28 — Jalapeño's independent proof point + NVHBM's counter-move
+- **Jalapeño (OpenAI's first inference ASIC, co-designed with [[AVGO|Broadcom]])** cleared *independent* benchmarks (EE Times) at **1.5–1.9× efficiency-per-watt vs Nvidia's current inference silicon** — a clean-sheet general-purpose accelerator, so the figures are not the usual apples-to-oranges marketing. Semidoped's teardown adds the architecture: designed for **user experience (end-to-end latency) + energy-per-request** (Pareto curves, not single numbers), **NUMA-style local HBM slices**, **ESUN** open scale-up networking with Broadcom, "**dark silicon is cheaper than idle accelerators**," and a ~**9-month RTL-to-tapeout** using AI-assisted EDA. Reinforces [[AVGO]] LONG (co-design + Tomahawk-6/ESUN switching).
+- **NVHBM (Nvidia's counter):** Nvidia extends **NVLink Fusion** with a custom HBM variant that puts its **memory controller into the HBM base die** (+30% BW / −15% power / +25% freed XPU area vs HBM4E), standardized across memory vendors, **Amazon Annapurna first (Trainium4)**. The XPU-friendly on-ramp is also a content-sell — Nvidia monetizes even the custom-ASIC wave.
+- **Anthropic's build-vs-buy verdict:** locking **$45B/6-yr GPU capacity via [[Nscale]]** let it **walk away from a ~$7B MatX acquisition** into a partnership — capacity access beat vertical integration this round.

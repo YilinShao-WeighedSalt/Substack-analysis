@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-08-18
+updated: 2026-08-30
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -43,3 +43,6 @@ IrrationalAnalysis originated the NAND-as-AI-play thesis in mid-2024, arguing th
 Second-source race + the real blocker (Austin's read): Samsung has the motive (behind on HBM), YMTC has bonding tech + a domestic market barred from HBM, Micron has the pieces but may prefer to point TSV capacity at HBM4. The bottleneck isn't NAND supply — it's **CoWoS/packaging allocation** (HBF sits on the accelerator interposer). **Intel EMIB-T** (power through the bridge) fits an HBM4-class stack; SK Hynix is already testing EMIB, and Google (an HBF backer) has reportedly booked Intel to package TPUs — so HBF could be built at Intel Foundry. Density also jumped at FMS: **Kioxia+SanDisk 332-layer QLC @ 4,800 MT/s** (claimed highest bit density), Kioxia **CM10** (PCIe Gen6, 61.44 TB), Samsung **zHBM/zNAND-O** concepts. Kioxia's 80% GM quarter came with a **slower-AI-NAND-growth** guide (see [[285A.T]]).
 
 **2026-08-17 — shortage-to-2030 and a #3 reshuffle.** Semi Doped: **Phison CEO Khein-Seng Pua warns NAND supply won't catch demand until 2030** — a four-year shortfall keeping SSD prices structurally elevated ([[SNDK]] LONG). **YMTC overtook Kioxia for #3** in global NAND shipments for the first time. **SK Hynix is now Kioxia's largest shareholder** (via a record Japanese buyback wave, though short of operational control given cross-shareholdings) — Korea's grip on NAND tightens ([[285A.T]] NEUTRAL: buyback + top-holder support vs the lost #3 rank). Density milestones: Kioxia+SanDisk demoed a chip enabling the **first 1 PB SSD** and a PCIe Gen6 SSD at **10M IOPS**, fragmenting NAND into performance vs storage tiers (with HBF as the emerging capacity-tier bridge to AI memory).
+
+### 2026-08-27 — Kioxia + SanDisk commit $31B against YMTC
+- **[[SNDK|SanDisk]] + [[285A.T|Kioxia]] announced a joint >$31B NAND investment** in Japan, centered on a **new Fab3 at Kioxia's Kitakami plant** (third building at the complex). Framed explicitly by Korean press as a **response to [[YMTC]]** — the Chinese state-backed maker publicly targeting a **top-3 NAND position by 2027** (though still constrained on US-controlled equipment). Reads bullish-supply-discipline for SanDisk but defensive-catch-up for Kioxia (semidoped: SNDK LONG, 285A.T NEUTRAL).

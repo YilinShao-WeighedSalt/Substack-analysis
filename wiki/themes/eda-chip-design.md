@@ -4,7 +4,7 @@ title: "EDA & Chip Design Tools"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-05-29
+updated: 2026-08-30
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -40,3 +40,6 @@ first_seen: 2024-01-11
 
 ## Narrative
 EDA and chip design tools emerged as a peripheral topic in early 2024, initially surfacing through quantization and number-format discussions tied to AI silicon, before irrationalanalysis began probing PDK fundamentals and the competitive dynamics around Intel's foundry decline in 2025. SemiAnalysis catalyzed a step-change in coverage density with a multi-part EDA primer in May 2026, followed immediately by a dedicated market analysis of Cadence, Synopsys, and Siemens — signaling the theme had crossed from background context into an investable thesis in its own right. The September 2025 cluster of Synopsys coverage by irrationalanalysis foreshadowed this shift, framing EDA vendors as direct beneficiaries of the AI-driven custom silicon boom. As of late May 2026, coverage spans the full stack from RTL-to-silicon flows and PDK access to competitive EDA vendor positioning, with semidoped adding a geopolitical angle via Huawei's TAU scaling efforts. The theme is maturing rapidly: breadth and depth of analysis are both expanding, but it has not yet reached the saturation level of established themes like HBM or NVIDIA GPU.
+
+### 2026-08-27 — Synopsys beat/raise on the custom-ASIC wave
+- **[[SNPS|Synopsys]] Q3 rev $2.477B / GAAP EPS $2.84** beat and **raised FY2026 guide**. The tell: accelerating **hyperscaler custom-ASIC + chiplet adoption** front-loads intensive **front-end EDA** work before every tapeout — the same AI-accelerated design cycle (Codex-written kernels, ~9-mo tapeouts) that makes labs like OpenAI viable chip designers is a *demand* pull for EDA franchises, not a threat.

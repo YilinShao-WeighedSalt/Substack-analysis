@@ -7,12 +7,17 @@ created: 2024-01-03
 updated: 2026-08-27
 handle: semianalysis
 calls_logged: 221
-hit_rate: "4/13 (31%), ~10 open"
+hit_rate: "6/19 (32%), ~4 open"
+updated: 2026-08-30
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **No new post in window (Aug 27-30, 2026) — track record re-priced only.** Latest post is the Aug-25 Jalapeño article (below), ingested last run.
+
+**hit_rate note (2026-08-30): 4/13 → 6/19 (32%) — the Jul-29 "LEGO Datacenters" modular longs crossed 30d and split.** [[VRT]] ($227.50→257.08 **+13.0% WIN ✓**), SU.PA (€284.60→301.75 **+6.0% WIN ✓**); losses on STRL ($580.73→470.52 -19.0% ✗), FIX ($1,697.84→1,518.73 -10.5% ✗), PWR ($657.98→602.70 -8.4% ✗), FLEX ($111.91→110.50 -1.3% ✗). Net **2 wins / 6 resolved** in the batch → running **6 wins / 19 resolved**. The power/electrical names (VRT) held; the mechanical-EPC contractors (STRL/FIX/PWR) gave back. Open next: the Aug-7 GOOGL/MSFT/NVDA-SpaceX longs and the Aug-24/25 AgentX/Jalapeño calls.
 
 - **OpenAI Jalapeño: Better Than Nvidia Blackwell (2026-08-25):** SemiAnalysis was invited into OpenAI's lab to run **InferenceX** on **Jalapeño**, OpenAI's first custom inference ASIC (built with [[AVGO|Broadcom]], unveiled June 24). Verdict: **it beats every Nvidia/AMD/Google chip SemiAnalysis has tested on tokens per MW**, across nearly the whole latency curve, with single-token prediction, no spec-decode, no PDD. Reticle-sized **N3P** die, 13.4 PFLOPs MXFP4 @700W (B0), **HBM4 @15.4 TB/s (believed Samsung)**, Codex-written Gluon kernels, ~16-month hiring-to-tape-out. Caveats: OpenAI-supplied numbers, 8k/1k only (no AgentX yet), fair comp is **Rubin (ships now) not Blackwell**, volume late-2027. Priced calls: **[[AVGO]] LONG $355.59** (ASIC partner + Tomahawk-6 switches + Celestica integration), **[[NVDA]] NEUTRAL $209.66** (DC-margin threat but Rubin leads today), **[[AMD]] NEUTRAL $480.93** (EPYC hosts it, but "kernel team should be worried"), **[[CBRS]] NEUTRAL $182.15** (1.25 GW option "in question"), **[[005930.KS]] LONG ₩265,000** (near-exclusive HBM4). Deepens [[custom-silicon-asic]], [[ai-accelerator-competition]], [[eda-chip-design]] (AI-accelerated tape-out).
 

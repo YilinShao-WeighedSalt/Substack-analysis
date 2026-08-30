@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: []
 created: 2024-03-16
-updated: 2026-08-18
+updated: 2026-08-30
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -89,3 +89,8 @@ Semi Doped's Jul-31 daily crystallizes the supercycle's two-sided nature. **Sams
 Semi Doped's Aug-12/14 dailies mark how fast China's DRAM challenger is closing the gap. **CXMT DDR5 yield now exceeds 90%** on its 17nm node — just **2 percentage points behind Samsung** (per Chosun Ilbo/Digitimes) — and it entered the MSCI index in a record 14 days. By Aug-14, CXMT had **overtaken Tencent as China's most valuable listed company (~$524B, 17 days after IPO)**, a market cap now rivaling Intel's. Apple, facing the AI-driven DRAM shortage, is testing CXMT memory in iPhones/MacBooks — though export-control + compliance "dual barriers" likely confine CXMT adoption to China/emerging markets near-term, limiting the pricing pressure it exerts on Samsung/SK Hynix/Micron elsewhere. On NAND, **YMTC grabbed #3 in Q2 shipments (14%)**, past Kioxia/Micron/SanDisk (AI servers = 48% of flash), though it stays cut off from the US market. SanDisk's Aug-14 Investor Day (mid-to-high-teens rev growth FY28–30, 100% excess-cash return, BiCS10 332-layer QLC) lifted Asian memory names. The read: the supercycle's demand side is intact, but the China-capacity wildcard the bears fear (Burry's "beginning of the end") is materializing faster than expected on the yield front.
 
 **2026-08-17 — China DRAM narrows the gap, and starts saying no.** Semi Doped: **CXMT** crossed **$500B market cap** (past Tencent → China's most valuable public company) and **rejected Apple's request for DRAM price cuts** — a striking reversal for a supplier Apple was reportedly qualifying for iPhone/MacBook amid the AI memory shortage. CXMT DDR5 now hits **9,000 MT/s** and **CL28 at DDR5-6000**, two milestones narrowing the gap to SK Hynix/Samsung. Commerce Secretary Lutnick publicly opposed Apple sourcing memory from CXMT (policy overlay). A US judge dismissed YMTC's defamation suit vs Micron. *Plain read:* the Big-3 DRAM oligopoly's pricing power now has a credible domestic-China challenger on commodity DDR5 — but (per Austin) CXMT still isn't apples-to-apples with the incumbents on the leading edge/HBM. [[MU]] NEUTRAL, [[000660.KS]] LONG.
+
+### 2026-08-28 — shortage guided *through 2030*; SK Hynix breaks US ground
+- **[[000660.KS|SK Hynix]] broke ground on its first US AI-memory hub** ($4B, West Lafayette IN, HBM line + advanced-packaging R&D); output starts **2029**. CEO Kwak explicitly guided the **memory shortage to persist through 2030** — the longest-dated tightness call yet — and flagged deeper **Kioxia** NAND cooperation.
+- **Memory-cost squeeze reaches Nvidia:** Nvidia **cut its gross-margin outlook** on **surging memory prices** and **paused cloud revenue-sharing** deals — the DRAM/HBM up-cycle is now visibly taxing the buyers, not just enriching the makers.
+- **NVHBM** (controller in the HBM base die) turns HBM into a more custom, higher-content component — see [[custom-silicon-asic]].
