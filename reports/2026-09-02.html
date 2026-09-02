@@ -1,0 +1,394 @@
+<title>Semi Scan · Sep 2 2026</title>
+<meta name="description" content="Visual intelligence brief from 3 semiconductor Substacks — sovereign AI, HBM base dies, custom ASICs.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);margin:0;line-height:1.45;
+  -webkit-font-smoothing:antialiased;font-size:14px}
+.wrap{max-width:1120px;margin:0 auto;padding:20px 18px 60px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1,h2,h3{margin:0;font-weight:650;letter-spacing:-.01em}
+section{margin-top:26px}
+.sec-h{font-size:12px;font-weight:650;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sec-h::after{content:"";flex:1;height:1px;background:var(--border)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;flex:none}
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px;
+  padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.mast h1{font-size:27px}
+.mast .sub{color:var(--sec);font-size:13px;margin-top:4px}
+.srcs{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--sec)}
+.srcs span{display:flex;align-items:center;gap:6px}
+.runstat{margin-top:12px;font-size:12.5px;color:var(--sec);background:var(--surface-2);
+  border:1px solid var(--border);border-radius:9px;padding:9px 12px;display:flex;gap:8px;align-items:flex-start}
+.runstat b{color:var(--ink);font-weight:600}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{padding:14px 15px}
+.tile .k{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.tile .v{font-size:34px;font-weight:680;line-height:1.05;margin-top:4px;letter-spacing:-.02em}
+.tile .n{font-size:11.5px;color:var(--sec);margin-top:5px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:9px;gap:2px;background:transparent}
+.distbar>span{display:block}
+.leg{display:flex;gap:11px;font-size:11px;color:var(--sec);margin-top:7px;flex-wrap:wrap}
+.leg span{display:flex;align-items:center;gap:4px}
+/* call board */
+table{width:100%;border-collapse:collapse;font-size:13px}
+.board-wrap{overflow-x:auto}
+th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+  font-weight:600;padding:0 10px 8px;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:11px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+.tk{font-weight:650;font-size:13.5px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:650;padding:2px 8px;
+  border-radius:999px;white-space:nowrap}
+.chip.long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.chip.short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.chip.neutral{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.thesis{color:var(--sec);max-width:340px;font-size:12.5px;line-height:1.35}
+.pub{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--sec);white-space:nowrap}
+.pnl{font-weight:650;font-size:12px}
+.pnl.new{color:var(--muted);font-weight:600}
+.newtag{font-size:10px;color:var(--muted);border:1px solid var(--border);border-radius:5px;padding:1px 5px}
+/* spotlights */
+.spot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot{padding:15px 16px}
+.spot .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.spot .nm{font-size:15px;font-weight:680}
+.spot .co{font-size:11.5px;color:var(--muted);margin-top:1px}
+.spot .px{text-align:right}
+.spot .px .p{font-size:18px;font-weight:680}
+.spot .px .m{font-size:11px;color:var(--sec)}
+.spotchart{margin:10px 0 4px}
+.rangebar{margin:9px 0 3px}
+.rlab{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted);margin-top:3px}
+.cons{margin-top:11px}
+.cons .cl{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px}
+.segbar{display:flex;height:12px;border-radius:6px;overflow:hidden;gap:2px}
+.bull{margin-top:11px;padding-left:0;list-style:none}
+.bull li{font-size:12px;color:var(--sec);padding-left:15px;position:relative;margin-top:5px;line-height:1.35}
+.bull li::before{content:"";position:absolute;left:2px;top:7px;width:5px;height:5px;border-radius:50%;background:var(--base)}
+/* scorecards */
+.score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.score{padding:0;overflow:hidden}
+.score .band{height:4px}
+.score .body{padding:13px 15px}
+.score .h{display:flex;align-items:center;gap:7px;font-size:13.5px;font-weight:650}
+.meter{margin:11px 0 4px}
+.meter .track{height:8px;background:var(--surface-2);border-radius:5px;overflow:hidden}
+.meter .fill{height:100%;border-radius:5px}
+.meter .lab{display:flex;justify-content:space-between;font-size:11px;color:var(--sec);margin-top:5px}
+.posts{margin-top:10px;font-size:12px}
+.posts .p{display:flex;gap:7px;padding:6px 0;border-top:1px solid var(--border);align-items:flex-start}
+.posts .p .t{color:var(--sec);flex:1;line-height:1.3}
+.posts .chiprow{display:flex;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+.minichip{font-size:9.5px;font-weight:650;padding:1px 5px;border-radius:4px}
+.minichip.long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.minichip.short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.minichip.neutral{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+/* jargon */
+.jargon{columns:2;column-gap:22px}
+.jargon .j{break-inside:avoid;padding:8px 0;border-bottom:1px solid var(--border);font-size:12.5px}
+.jargon .j b{color:var(--ink);font-weight:650}
+.jargon .j span{color:var(--sec)}
+/* themes */
+.themes .row{display:flex;align-items:center;gap:10px;margin:7px 0}
+.themes .nm{width:170px;font-size:12px;color:var(--sec);text-align:right;flex:none}
+.themes .bar{height:16px;border-radius:0 4px 4px 0;background:var(--accent)}
+.themes .ct{font-size:11px;color:var(--muted);font-family:var(--mono)}
+.foot{margin-top:30px;font-size:11px;color:var(--muted);text-align:center;line-height:1.6}
+@media(max-width:820px){.tiles{grid-template-columns:repeat(2,1fr)}.spot-grid{grid-template-columns:1fr}
+  .score-grid{grid-template-columns:1fr}.jargon{columns:1}.themes .nm{width:120px}}
+</style>
+
+<div class="wrap">
+
+<!-- 1. MASTHEAD -->
+<div class="mast">
+  <div>
+    <h1>Semiconductor Substack Scan</h1>
+    <div class="sub">Visual intelligence brief · window <span class="mono">Aug 30 – Sep 2, 2026</span></div>
+  </div>
+  <div class="srcs">
+    <span><i class="dot" style="background:var(--pub-irrational)"></i>Irrational Analysis</span>
+    <span><i class="dot" style="background:var(--pub-semianalysis)"></i>SemiAnalysis</span>
+    <span><i class="dot" style="background:var(--pub-semidoped)"></i>Semi Doped</span>
+  </div>
+</div>
+
+<!-- 2. RUN STATUS -->
+<div class="runstat">
+  <span>●</span>
+  <div><b>Run status:</b> SemiAnalysis ✔ 2 posts (Korea sovereign-AI deep dive; neocloud security). Semi Doped ✔ 2 daily briefs (Aug 31, Sep 1). Irrational Analysis — no post in window (last: Aug 19). All bodies fetched full & unauthenticated. Prices via Yahoo chart API; Street consensus bars are approximate (analyst-count endpoint blocked by egress policy).</div>
+</div>
+
+<!-- 3. HERO TILES -->
+<section>
+  <div class="tiles">
+    <div class="card tile">
+      <div class="k">Posts scanned</div><div class="v mono">4</div>
+      <div class="n">3 call-bearing · 1 thematic (security)</div>
+    </div>
+    <div class="card tile">
+      <div class="k">Tickers priced</div><div class="v mono">7</div>
+      <div class="n">US · Korea · Taiwan · EU listings</div>
+    </div>
+    <div class="card tile">
+      <div class="k">Calls logged</div><div class="v mono">8</div>
+      <div class="distbar">
+        <span style="flex:5;background:var(--long)"></span>
+        <span style="flex:3;background:var(--neutral)"></span>
+      </div>
+      <div class="leg">
+        <span><i class="dot" style="background:var(--long)"></i>▲ 5 Long</span>
+        <span><i class="dot" style="background:var(--neutral)"></i>● 3 Neutral</span>
+        <span><i class="dot" style="background:var(--short)"></i>▼ 0 Short</span>
+      </div>
+    </div>
+    <div class="card tile">
+      <div class="k">Book bias</div><div class="v" style="font-size:26px">Net Long</div>
+      <div class="n">AI-infra beneficiaries; memory names flagged <b>Neutral</b> on sovereign-vs-shareholder tension</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CALL BOARD -->
+<section>
+  <div class="sec-h">Call board · this run</div>
+  <div class="card board-wrap">
+    <table id="board">
+      <thead><tr>
+        <th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis</th>
+        <th style="text-align:right">Price</th><th style="text-align:center">3-mo trend</th><th style="text-align:right">P&amp;L→call</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 5. SPOTLIGHTS -->
+<section>
+  <div class="sec-h">Ticker spotlights · promoted theses</div>
+  <div class="spot-grid" id="spots"></div>
+</section>
+
+<!-- 6. SCORECARDS -->
+<section>
+  <div class="sec-h">Source scorecards</div>
+  <div class="score-grid">
+    <div class="card score">
+      <div class="band" style="background:var(--pub-semianalysis)"></div>
+      <div class="body">
+        <div class="h"><i class="dot" style="background:var(--pub-semianalysis)"></i>SemiAnalysis</div>
+        <div class="meter">
+          <div class="track"><div class="fill" style="width:32%;background:var(--pub-semianalysis)"></div></div>
+          <div class="lab"><span>hit-rate <b class="mono">6/19 (32%)</b></span><span class="mono">~4 open · 221 logged</span></div>
+        </div>
+        <div class="posts">
+          <div class="p"><div class="t">Korea's Trillion-$ Sovereign AI (Sep 1)</div>
+            <div class="chiprow"><span class="minichip long">NVDA ▲</span><span class="minichip neutral">Hynix ●</span><span class="minichip neutral">SMSG ●</span></div></div>
+          <div class="p"><div class="t">Most Neoclouds Suck At Security (Aug 30)</div>
+            <div class="chiprow"><span class="minichip neutral">thematic</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card score">
+      <div class="band" style="background:var(--pub-semidoped)"></div>
+      <div class="body">
+        <div class="h"><i class="dot" style="background:var(--pub-semidoped)"></i>Semi Doped</div>
+        <div class="meter">
+          <div class="track"><div class="fill" style="width:38%;background:var(--pub-semidoped)"></div></div>
+          <div class="lab"><span>hit-rate <b class="mono">11/29 (38%)</b></span><span class="mono">~53 open · 168 logged</span></div>
+        </div>
+        <div class="posts">
+          <div class="p"><div class="t">Daily · Sep 1 (CXMT HBM3E, High-NA EUV)</div>
+            <div class="chiprow"><span class="minichip long">ASML ▲</span><span class="minichip neutral">MU ●</span></div></div>
+          <div class="p"><div class="t">Daily · Aug 31 (NVDA↔MediaTek, Intel foundry)</div>
+            <div class="chiprow"><span class="minichip long">NVDA ▲</span><span class="minichip long">MTK ▲</span><span class="minichip long">INTC ▲</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card score">
+      <div class="band" style="background:var(--pub-irrational)"></div>
+      <div class="body">
+        <div class="h"><i class="dot" style="background:var(--pub-irrational)"></i>Irrational Analysis</div>
+        <div class="meter">
+          <div class="track"><div class="fill" style="width:23%;background:var(--pub-irrational)"></div></div>
+          <div class="lab"><span>hit-rate <b class="mono">3/13 (23%)</b></span><span class="mono">~31 open · 600 logged</span></div>
+        </div>
+        <div class="posts">
+          <div class="p"><div class="t" style="color:var(--muted)">No post in window — last Aug 19. Open book: long optics/InP (LITE, AXTI), short Cerebras.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. JARGON -->
+<section>
+  <div class="sec-h">Jargon decoder</div>
+  <div class="card" style="padding:6px 16px 12px">
+    <div class="jargon">
+      <div class="j"><b>Sovereign AI</b> — <span>a nation building & controlling its own frontier model + compute, so it isn't hostage to US labs (Anthropic/OpenAI) or foreign chip supply.</span></div>
+      <div class="j"><b>Commoditize your complements</b> — <span>make the thing next to your product cheap & abundant (here, open AI models) so demand for your product (Nvidia GPUs) rises.</span></div>
+      <div class="j"><b>HBM4 / HBM4E</b> — <span>4th-gen High-Bandwidth Memory — DRAM stacked beside the GPU; the scarce ingredient gating accelerator throughput. "E" = faster follow-on.</span></div>
+      <div class="j"><b>HBM base die</b> — <span>logic chip at the bottom of an HBM stack handling power + I/O; now migrating to logic foundries (why SK Hynix eyes Intel).</span></div>
+      <div class="j"><b>SOCAMM</b> — <span>Nvidia's compression-attached CPU-side memory module for Grace/Rubin; an LTA locks both supply and price.</span></div>
+      <div class="j"><b>High-NA EUV</b> — <span>ASML's next-gen litho (0.55 numerical aperture vs 0.33) for sub-2nm patterning; ~$400M per tool, now in first high-volume logic.</span></div>
+      <div class="j"><b>NVLink Fusion</b> — <span>Nvidia opening its NVLink interconnect so partners' custom ASICs/CPUs can plug into the Nvidia rack — the hook in the MediaTek deal.</span></div>
+      <div class="j"><b>Custom ASIC / XPU</b> — <span>application-specific accelerator (TPU, Trainium, OpenAI's Jalapeño) hyperscalers build to cut Nvidia dependence.</span></div>
+      <div class="j"><b>CXMT</b> — <span>ChangXin Memory, China's top DRAM maker, now attempting HBM3E. "Risk production" = trial output; yields/economics unproven.</span></div>
+      <div class="j"><b>Convertible bond</b> — <span>debt that can convert to equity — Nvidia's $3.5B into MediaTek could become a stake if converted.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. THEMES -->
+<section>
+  <div class="sec-h">Themes in play · by mention weight</div>
+  <div class="card" style="padding:14px 16px">
+    <div class="themes" id="themes"></div>
+  </div>
+</section>
+
+<div class="foot">
+  Generated automatically from public Substack post bodies · prices Yahoo Finance, intraday Sep 2 2026 · not investment advice.<br>
+  Calls logged at fetch price (px@call); freshly opened this run, so P&amp;L→call starts flat — track record accrues in the wiki over the next loops.
+</div>
+
+</div>
+
+<script>
+const PRICES = {
+ "NVDA":{price:217.44,hi52:236.54,lo52:164.07,cur:"$",closes:[222.82,214.75,218.66,205.1,208.64,208.19,200.42,204.87,205.19,212.45,207.41,204.65,210.69,208.65,200.04,199.0,195.74,192.53,194.97,200.09,197.58,194.83,195.55,196.93,204.12,202.78,210.96,203.53,211.8,212.5,207.4,202.81,203.28,207.29,212.06,208.76,206.84,196.51,197.01,190.01,195.04,200.75,206.64,211.94,219.22,218.99,223.96,217.55,217.5,224.09,225.3,225.16,225.01,219.74,217.56,216.85,214.72,208.48,213.05,209.66,227.98,217.55,220.78,217.44]},
+ "000660.KS":{price:1650000,hi52:2987000,lo52:256000,cur:"₩",closes:[2360000,2298000,2070000,1911000,2215000,2048000,2101000,2150000,2288000,2382000,2521000,2685000,2764000,2919000,2555000,2621000,2917000,2673000,2628000,2650000,2560000,2187000,2425000,2343000,2201000,2076000,2186000,2180000,1845000,1913000,2082000,1842000,1764000,1836000,1830000,1919000,1759000,1816000,1550000,1401000,1322000,1718000,1567000,1577000,1668000,1495000,1422000,1420000,1425000,1504000,1593000,1645000,1662000,1500000,1691000,1730000,1671000,1678000,1688000,1730000,1653000,1674000,1693000,1650000]},
+ "005930.KS":{price:254500,hi52:374500,lo52:67800,cur:"₩",closes:[360500,351500,329000,295500,322000,302500,299000,322500,337000,343000,346500,362500,354000,353500,310000,340500,358500,339500,323000,334000,314500,286000,309500,318000,296000,277500,278000,285000,254500,263000,279500,255000,244000,259000,260500,270000,249500,254000,220000,208500,207000,262500,239500,240000,246000,230500,231000,230000,239500,255500,268000,274500,268500,247500,271000,281500,257000,257000,261500,266000,257000,260000,261000,254500]},
+ "2454.TW":{price:4315,hi52:4970,lo52:1130,cur:"NT$",closes:[4525,4545,4430,4300,4070,4475,4155,4085,4180,4470,4560,4460,4390,4465,4535,4285,4310,3880,3910,4245,4335,4345,4195,4125,4030,3995,3925,3925,3825,3660,3740,3700,3370,3340,3670,3850,3875,3750,3680,3315,3150,3235,3555,3910,3865,4000,3920,3900,3960,4020,4015,4225,4210,4050,3885,3845,3700,3790,3765,3735,3945,3865,3985,3925,4315]},
+ "INTC":{price:88.97,hi52:142.35,lo52:23.68,cur:"$",closes:[107.93,112.71,111.78,99.17,110.27,107.92,107.04,116.96,124.57,127.86,117.05,121.1,133.99,140.94,132.28,131.65,132.87,128.32,131.72,139.63,127.02,120.35,122.2,110.39,110.24,112.54,109.84,103.12,107.76,102.99,96.98,95.04,97.06,105.45,102.62,100.23,92.32,91.67,86.3,81.88,91.13,90.2,91.0,100.86,101.06,99.81,101.65,97.52,97.71,100.95,104.56,102.5,103.49,96.69,92.8,92.13,90.07,87.26,87.48,88.24,92.09,89.47,89.51,88.97]},
+ "ASML":{price:1665.14,hi52:1999.96,lo52:716.2,cur:"$",closes:[1705.37,1726.36,1757.47,1641.74,1749.04,1777.77,1734.19,1899.48,1863.55,1892.66,1803.89,1867.83,1929.68,1929.25,1778.46,1762.77,1841.18,1794.62,1883.11,1989.44,1843.04,1769.32,1825.07,1747.28,1768.65,1804.25,1797.32,1726.04,1775.64,1815.27,1784.87,1747.58,1739.02,1801.51,1801.86,1803.0,1757.09,1655.26,1582.95,1550.69,1651.44,1629.0,1642.52,1711.89,1678.22,1704.37,1740.99,1733.48,1799.38,1810.07,1847.9,1844.08,1883.12,1802.98,1751.73,1750.31,1763.76,1740.13,1744.16,1745.64,1735.01,1696.01,1665.14]},
+ "MU":{price:933.44,hi52:1255.0,lo52:114.25,cur:"$",closes:[1064.1,1079.57,996.0,864.01,949.28,935.89,891.88,995.87,981.61,1087.99,1020.76,1043.19,1133.99,1211.38,1051.77,1048.51,1213.56,1132.33,1145.28,1154.29,1032.28,975.56,984.75,938.38,948.8,991.64,979.3,937.0,983.12,904.28,853.2,848.95,865.46,970.82,959.48,990.21,920.95,900.2,820.53,739.0,874.66,823.03,829.5,892.67,893.19,881.47,877.57,861.0,868.52,911.29,949.83,971.66,1011.75,940.76,937.11,974.33,966.78,910.43,932.97,938.4,935.39,932.86,958.73,933.44]}
+};
+const PUBCOL={irrationalanalysis:"var(--pub-irrational)",semianalysis:"var(--pub-semianalysis)",semidoped:"var(--pub-semidoped)"};
+const PUBNM={irrationalanalysis:"Irrational",semianalysis:"SemiAnalysis",semidoped:"Semi Doped"};
+
+const CALLS=[
+ {tk:"NVDA",co:"NVIDIA",dir:"long",pub:"semianalysis",px:217.44,
+  th:"Sovereign AI diversifies Nvidia's customer base — 'commoditize your complements'; SK Group 2GW Rubin + $500B compute-MOU turn compute into an investable asset class."},
+ {tk:"NVDA",co:"NVIDIA",dir:"long",pub:"semidoped",px:217.44,
+  th:"$3.5B convertible-bond stake in MediaTek — Nvidia embraces custom ASICs via NVLink Fusion, extending reach into AI-PC, edge & automotive."},
+ {tk:"2454.TW",co:"MediaTek",dir:"long",pub:"semidoped",px:4315,
+  th:"Nvidia's $3.5B convertible anchors the balance sheet; NVLink-Fusion custom-accelerator IP + Google TPU v10 second-source deepen the merchant-ASIC role."},
+ {tk:"INTC",co:"Intel",dir:"long",pub:"semidoped",px:88.97,
+  th:"SK Hynix weighs Intel Foundry for HBM4E base dies — a rare external-customer win that would break HBM's near-total TSMC reliance."},
+ {tk:"ASML",co:"ASML Holding",dir:"long",pub:"semidoped",px:1665.14,
+  th:"High-NA EUV enters first high-volume logic production — validates the sub-2nm path; UBS: China unlikely to match within a decade."},
+ {tk:"000660.KS",co:"SK Hynix",dir:"neutral",pub:"semianalysis",px:1650000,
+  th:"Nvidia likely locked favorable HBM pricing + SOCAMM LTA + 2027 volume — good demand, but sovereign national-champion role may not align with shareholders."},
+ {tk:"005930.KS",co:"Samsung Elec.",dir:"neutral",pub:"semianalysis",px:254500,
+  th:"50k-GPU Nvidia AI-factory + sovereign buildout, yet Korea's national goals (capex-heavy, favorable-pricing) sit in tension with shareholder returns."},
+ {tk:"MU",co:"Micron",dir:"neutral",pub:"semidoped",px:933.44,
+  th:"CXMT begins HBM3E risk production (first China HBM), but 'no threat any time soon' — 3–5yr, EUV-gated; incumbent moat intact, no fresh directional push."}
+];
+
+function fmtPx(v,cur){
+  if(cur==="₩") return "₩"+(v/1000).toFixed(0)+"k";
+  if(cur==="NT$") return "NT$"+v.toLocaleString();
+  return "$"+v.toFixed(2);
+}
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+const ICON={long:"▲",short:"▼",neutral:"●"};
+
+// CALL BOARD
+const tb=document.querySelector("#board tbody");
+CALLS.forEach(c=>{
+  const P=PRICES[c.tk],col=PUBCOL[c.pub];
+  const spark=sparkSVG(P.closes,110,30,col,{ci:P.closes.length-1});
+  const tr=document.createElement("tr");
+  tr.innerHTML=`
+    <td class="mono tk">${c.tk}</td>
+    <td><span class="chip ${c.dir}">${ICON[c.dir]} ${c.dir.charAt(0).toUpperCase()+c.dir.slice(1)}</span></td>
+    <td><span class="pub"><i class="dot" style="background:${col}"></i>${PUBNM[c.pub]}</span></td>
+    <td class="thesis">${c.th}</td>
+    <td class="mono" style="text-align:right;white-space:nowrap">${fmtPx(c.px,P.cur)}</td>
+    <td style="text-align:center">${spark}</td>
+    <td style="text-align:right"><span class="newtag">new</span></td>`;
+  tb.appendChild(tr);
+});
+
+// SPOTLIGHTS  (approx Street consensus: buy/hold/sell)
+const SPOTS=[
+ {tk:"NVDA",cons:[62,6,1],bl:["SemiAnalysis' first resolved NVDA long-side win (+9.3%, Jul-25) is on the board; sovereign + MediaTek deals widen a customer base narrowed to ~7 names.","Falsifier now sits on the balance sheet: if GPU rental rates roll over, Nvidia's financing backstops expose it to the price risk."]},
+ {tk:"2454.TW",cons:[19,6,2],bl:["Nvidia's $3.5B convert + TPU v10 second-source = two hyperscaler-ASIC hooks; +33% off the Jul-30 relative-value long vs Qualcomm.","Datacenter SerDes remains the falsifier — prior TPU socket lost on 336G; this is merchant-ASIC breadth, not a re-qualified high-speed win."]},
+ {tk:"INTC",cons:[7,29,4],bl:["SK Hynix base-die interest joins MediaTek's $5B foundry commit + Socionext 18A-P — external-customer proof points the turnaround needed.","But shares broke below the $95 raise (CEO's own $10M buy now underwater); thesis rests purely on 18A-P volume yield, not valuation."]},
+ {tk:"ASML",cons:[31,7,1],bl:["High-NA moving from qualification to first HVM logic de-risks the sub-2nm roadmap and the ~$400M/tool backlog.","TSMC's cost skepticism (holding back to the 2030s) is the near-term drag — Intel is the lead first-mover buyer."]}
+];
+const sp=document.getElementById("spots");
+SPOTS.forEach(s=>{
+  const c=CALLS.find(x=>x.tk===s.tk),P=PRICES[s.tk],col=PUBCOL[c.pub];
+  const chart=sparkSVG(P.closes,470,90,col,{ci:P.closes.length-1,refline:true});
+  const lo=P.lo52,hi=P.hi52,pos=((P.price-lo)/(hi-lo)*100).toFixed(1);
+  const tot=s.cons[0]+s.cons[1]+s.cons[2];
+  const seg=`<div class="segbar">
+    <span style="flex:${s.cons[0]};background:var(--long)"></span>
+    <span style="flex:${s.cons[1]};background:var(--neutral)"></span>
+    <span style="flex:${s.cons[2]};background:var(--short)"></span></div>`;
+  const div=document.createElement("div");
+  div.className="card spot";
+  div.innerHTML=`
+    <div class="top">
+      <div><div class="nm mono">${s.tk} <span class="chip ${c.dir}" style="vertical-align:middle;margin-left:4px">${ICON[c.dir]} ${c.dir}</span></div>
+        <div class="co">${c.co} · <i class="dot" style="background:${col};display:inline-block;vertical-align:middle"></i> ${PUBNM[c.pub]}</div></div>
+      <div class="px"><div class="p mono">${fmtPx(P.price,P.cur)}</div><div class="m mono">${(pos)}% of 52-wk range</div></div>
+    </div>
+    <div class="spotchart">${chart}</div>
+    <div class="rangebar">
+      <div style="position:relative;height:6px;background:var(--surface-2);border-radius:4px">
+        <div style="position:absolute;left:${pos}%;top:-3px;width:12px;height:12px;border-radius:50%;background:${col};border:2px solid var(--surface);transform:translateX(-50%)"></div>
+      </div>
+      <div class="rlab"><span class="mono">${fmtPx(lo,P.cur)}</span><span>52-wk range</span><span class="mono">${fmtPx(hi,P.cur)}</span></div>
+    </div>
+    <div class="cons">
+      <div class="cl">Street consensus (approx.) · ${tot} analysts</div>
+      ${seg}
+      <div class="leg"><span><i class="dot" style="background:var(--long)"></i>${s.cons[0]} Buy</span><span><i class="dot" style="background:var(--neutral)"></i>${s.cons[1]} Hold</span><span><i class="dot" style="background:var(--short)"></i>${s.cons[2]} Sell</span></div>
+    </div>
+    <ul class="bull">${s.bl.map(b=>`<li>${b}</li>`).join("")}</ul>`;
+  sp.appendChild(div);
+});
+
+// THEMES
+const THEMES=[["Sovereign AI (Korea)",9],["HBM / custom base die",8],["Custom ASIC · NVLink Fusion",7],["EUV / advanced litho",5],["China memory (CXMT/YMTC)",4],["NAND capex war",3],["Neocloud security",3]];
+const mx=Math.max(...THEMES.map(t=>t[1]));
+const tw=document.getElementById("themes");
+THEMES.forEach(t=>{
+  const r=document.createElement("div");r.className="row";
+  r.innerHTML=`<div class="nm">${t[0]}</div><div class="bar" style="width:${t[1]/mx*100}%"></div><div class="ct">${t[1]}</div>`;
+  tw.appendChild(r);
+});
+</script>

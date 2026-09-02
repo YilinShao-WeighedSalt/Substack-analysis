@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-08-21
+updated: 2026-09-02
 handle: irrationalanalysis
 calls_logged: 600
-hit_rate: "3/13 (23%), ~31 open"
+hit_rate: "6/17 (35%), ~30 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **No new post in window (last: Cerebras Supernova recap, Aug 19).** Track record re-priced only.
+
+**hit_rate note (2026-09-02): 3/13 → 6/17 (35%) — the Jul-25/28/30 optics/InP/relative-value batch resolves.** **[[AXTI]] Jul-25 LONG ($47.88) → $56.11 = +17.2% WIN ✓**, **[[LITE]] Jul-28 LONG ($711.96) → $868.95 = +22.1% WIN ✓**, **[[2454.TW]] Jul-30 relative-value LONG (NT$3,235) → NT$4,315 = +33.4% WIN ✓** — the long-optics/InP book paid off as the tape finally cooperated; **[[QCOM]] Jul-30 SHORT ($160.74) → $166.61 = -3.7% LOSS ✗** (the multi-year short flipped underwater on this entry). 3 wins / 1 loss → running 6/17. Open book unchanged: long optics/InP (LITE, AXTI), short Cerebras.
 
 - **Cerebras Supernova recap (2026-08-19) + Intel CPO / NVDA-LITE-AEVA papers (2026-08-18):** Two optics/wafer-scale technical teardowns. **Cerebras**: the one-share activist SHORT continues — CS-4/Supernova is a 'gen 3.5' power+clock refresh; I/O 'meaningfully improved' and the doubled clock *implies* better parametric yield, but IA holds its ~20% compound-yield GM model until Hot Chips gives real detail. **Intel CPO** is "maybe not dead" but its multi-λ SOA four-wave-mixing gives a "C+" BER vs Nvidia's clock-forwarded A+ — accuses Intel of clipping spectra to hide FWM tones. **The Nvidia/Lumentum ELSFP paper is "massive alpha"**: a monolithic DFB+per-channel-SOA (MOPA) array with 0.5 dB coupling and a *single* isolator (huge alignment/cost savings) but "unusable" RIN — which *validates* Lumentum's disaggregated-laser moat rather than threatening it. Priced: SHORT [[CBRS]] $209.85; LONG [[LITE]] $879.28; NEUTRAL [[INTC]] $92.13, [[AEVA]] $18.87, [[NVDA]] $216.85.
 

@@ -8,7 +8,7 @@ updated: 2026-08-27
 ticker: MU
 current_stance: mixed
 conviction: medium
-last_review: 2026-08-27
+last_review: 2026-09-02
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -71,6 +71,7 @@ last_review: 2026-08-27
 | 2026-08-17 | [[semidoped]] | NEUTRAL | 1011.75 | YMTC defamation suit dismissed; memory-shortage backdrop supportive, no fresh directional call |
 
 | 2026-08-20 | [[semidoped]] | LONG | 974.33 | $10B Boise AI-memory R&D campus (answer to SK Hynix HBM lead); overtakes Kioxia for #3 in global NAND share |
+| 2026-09-01 | [[semidoped]] | NEUTRAL | 933.44 | CXMT begins HBM3E risk production (first China HBM) but 'no threat any time soon' (3–5yr, EUV-gated); incumbent moat intact. |
 
 ## Thesis evolution
 The initial 2024 bull case rested on Samsung's HBM3E disqualification from Nvidia supply chains, which handed Micron and SK Hynix a windfall: HBM sold out 21-24 months forward, non-HBM DRAM prices lifted via supply cannibalization, and Micron's FeRAM R&D gave it a credible long-term roadmap differentiation. irrationalanalysis oscillated tactically — entering on Samsung weakness, trimming when HBM upside appeared priced in, and re-entering on new disqualification evidence — while semianalysis maintained a steadier structural long predicated on Micron's NAND node density advantage and HBM3E yield progress. The thesis fractured in early 2026 when semianalysis reported Micron received zero initial HBM4 Rubin allocation due to pin-speed failures on its internal-process base die, a sharp reversal from the prior Samsung-out-Micron-in narrative; globalsemiresearch and irrationalanalysis remained constructive on the broader DRAM/LTA cycle even as they acknowledged the HBM4 execution gap. As of mid-2026 the consensus has split into two non-contradictory views: DRAM supercycle intact and Micron a long on that vector, but SK Hynix structurally preferred for HBM4 exposure, making Micron a second-best HBM play with a strong DRAM/LTA floor.
@@ -89,3 +90,5 @@ The only hard price anchor in the log is the irrationalanalysis January 2026 re-
 
 
 **Update 2026-08-21:** SD LONG $974.33 on Micron's **$10B Boise AI-memory R&D campus** (a direct answer to SK Hynix's HBM lead) and its overtaking Kioxia for **#3 in global NAND share**. But the memory tape pulled back this run: the Jul-3 SD long ($975.56), a WIN last run at $1,011.75, **flipped back to a LOSS at $974.33 (-0.1%)** on re-price — a razor-thin round-trip, not thesis breakage. SD Jul-31 long ($823.03) still **+18.3%** (open). The $10B campus is a multi-year R&D commitment, not a near-term print.
+
+**Update 2026-09-02:** $933.44. New **SD NEUTRAL** — CXMT begins **HBM3E risk production** (first China HBM, Alibaba first customer), but Vik reads it as no near-term threat (3-5yr to mass market, EUV-gated in the custom-base-die era); supportive-for-incumbents, no fresh directional push. Prior SD Aug longs ($974.33/$966.78) sit **-4.2%/-3.5%** open; the Jul-31 LONG ($823.03) is **+13.4%** open. Supercycle intact; the China-ramp falsifier gained a (still-distant) data point.

@@ -4,16 +4,20 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-08-27
+updated: 2026-09-02
 handle: semianalysis
-calls_logged: 221
-hit_rate: "6/19 (32%), ~4 open"
+calls_logged: 224
+hit_rate: "6/19 (32%), ~7 open"
 updated: 2026-08-30
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Korea's Trillion-$ Sovereign AI (2026-09-01) + Neocloud Security (2026-08-30):** The Korea deep dive is the marquee call. Thesis: sovereign AI is Nvidia's answer to a customer base narrowing to ~7 names (all but SpaceX building XPUs) — "commoditize your complements" (Jensen's open-source manifesto), the $500B "AI-Factory-Compute as an investable asset class" MOU, and country-deals like SK's 2GW Rubin diversify demand → **[[NVDA]] LONG $217.44**. The twist for memory: Nvidia has likely secured favorable HBM pricing + a SOCAMM LTA + 2027 volume from SK Hynix, and Korea's national-champion use of its memory giants may not align with shareholders → **[[000660.KS]] NEUTRAL ₩1,650,000**, **[[005930.KS]] NEUTRAL ₩254,500** (>50k-GPU Nvidia AI-factory). Also notable: tiny Korean startup **Motif 3** trained the best non-Chinese open-source model for ~$15M — evidence from-scratch training is cheaper than most think → new theme [[sovereign-ai]]. The **neocloud security** piece carries no priced call (thematic counterparty-risk read; recaps the OpenAI/HuggingFace Persistent-Sol RCE incident).
+
+**hit_rate note (2026-09-02): no new 30-day resolutions — holds 6/19 (32%).** The Aug-7 GOOGL/MSFT/NVDA-SpaceX longs cross 30d ~Sep-6; the Aug-24/25 AgentX/Jalapeño calls later. This run's NVDA long opened at spot; the two Korea memory calls are NEUTRAL (excluded from the ratio).
 
 - **No new post in window (Aug 27-30, 2026) — track record re-priced only.** Latest post is the Aug-25 Jalapeño article (below), ingested last run.
 

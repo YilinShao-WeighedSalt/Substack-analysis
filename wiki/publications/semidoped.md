@@ -4,16 +4,20 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-08-27
+updated: 2026-09-02
 handle: semidoped
-calls_logged: 168
-hit_rate: "11/29 (38%), ~53 open"
+calls_logged: 173
+hit_rate: "14/32 (44%), ~50 open"
 updated: 2026-08-30
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Updates Aug 31 & Sep 1 (2026-08-31, 09-01):** Two call-bearing dailies. **Nvidia goes custom-ASIC:** $3.5B convertible-bond stake in MediaTek (NVLink Fusion custom-accelerator IP, AI-PC/edge/auto) → **[[NVDA]] LONG $217.44**, **[[2454.TW]] LONG NT$4,315**. **HBM base dies migrate to logic:** SK Hynix weighs Intel Foundry for HBM4E base dies (rare external-customer win, breaks TSMC reliance) → **[[INTC]] LONG $88.97**; SK Hynix Indiana packaging groundbreaking (2029), shortage-to-2030 → [[000660.KS]] mention. **Equipment:** ASML High-NA EUV enters first high-volume logic production (UBS: China a decade behind) → **[[ASML]] LONG $1,665.14**. **China memory:** CXMT begins HBM3E risk production (first China HBM, Alibaba first customer) but "no threat any time soon" (3-5yr, EUV-gated) → **[[MU]] NEUTRAL $933.44**. Also: Architect Labs "Redwood" AI-designed accelerator (3.4× perf/W claim, recursive self-improvement); Kioxia+SanDisk $31B NAND; Unimicron PCB-fraud raid (JPM: ~5% non-AI rev contained); SLB $3.4B Kelvion (DC cooling); SB Energy $5.5B warrants to OpenAI.
+
+**hit_rate note (2026-09-02): 11/29 → 14/32 (44%) — the Jul-31 memory batch resolves, all wins.** Among priced-tracked names crossing 30d: **[[000660.KS]] Jul-31 LONG (₩1,596,000) → ₩1,650,000 = +3.4% WIN ✓**, **[[005930.KS]] Jul-31 LONG (₩242,500) → ₩254,500 = +4.9% WIN ✓**, **[[MU]] Jul-31 LONG ($823.03) → $933.44 = +13.4% WIN ✓** — the memory supercycle longs entered at the late-July rout bottom keep cashing. 3 wins / 3 resolved this batch → running 14/32. This run's 5 new calls (4 long + 1 neutral) opened at spot.
 
 - **Daily Updates Aug 27-28 (2026-08-27..28):** Two call-bearing dailies (Aug-27 Jalapeño-teardown podcast + Aug-29 MOSFET-history TIL = educational, no calls). **Nvidia's FQ2 anchors the stack:** ~**70% FY27 growth** guide, AI spend visible to 2028, **Rubin = fastest ramp in history (~$40B/GW)**, CPUs a $20B/yr business, **buys Hugging Face $12.9B** → [[NVDA]] LONG $217.55; **NVHBM** moves the memory controller into the HBM base die (+30% BW/-15% power, Amazon Annapurna first) + **AWS +2M GPUs 2027-28** and **Anthropic $45B/6-yr Nscale** deal. **NAND capex war:** Kioxia+SanDisk **$31B Kitakami Fab3** vs YMTC's 2027 top-3 push → [[SNDK]] LONG $1,484.98, [[285A.T]] NEUTRAL ¥47,900. **EDA:** Synopsys Q3 $2.48B/EPS $2.84 beat+raise on custom-ASIC/chiplet demand → [[SNPS]] LONG $442.61. **Aug-28:** **Jalapeño independent benchmarks 1.5-1.9× perf/W vs Nvidia inference** → [[AVGO]] LONG $368.79 (Broadcom co-design + ESUN scale-up); **SK Hynix breaks ground on $4B Indiana HBM fab** (2029), **shortage-to-2030** → [[000660.KS]] LONG ₩1,653,000; **Nvidia margins squeezed** (GM guide cut, paused cloud rev-share); **Marvell beat+raise but shares fell** on Google-revenue timing ($120B is cumulative, not booked) → [[MRVL]] NEUTRAL $216.62; **foundry +29%, Samsung ~7% share** → [[TSM]] LONG $417.52, [[005930.KS]] NEUTRAL ₩257,000.
 

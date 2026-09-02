@@ -8,7 +8,7 @@ updated: 2026-08-30
 ticker: NVDA
 current_stance: long
 conviction: medium
-last_review: 2026-08-30
+last_review: 2026-09-02
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -165,6 +165,8 @@ last_review: 2026-08-30
 | 2026-08-21 | [[semidoped]] | NEUTRAL | 214.72 | Denies The Information's China-legal Groq-based 'LPU' report; in early talks to acquire Korean inference startup Rebellions |
 | 2026-08-25 | [[semianalysis]] | NEUTRAL | 209.66 | Jalapeño beats Blackwell on perf/W & level w/ Rubin — real DC-margin threat, but Rubin ships now & leads; moat pressured not breached. |
 | 2026-08-27 | [[semidoped]] | LONG | 217.55 | FQ2 guides ~70% FY27 growth, AI spend to 2028; Rubin fastest ramp (~$40B/GW); NVHBM base-die content grab; buys Hugging Face $12.9B (Aug-28 caveat: paused cloud rev-share, GM guide cut on memory costs) |
+| 2026-08-31 | [[semidoped]] | LONG | 217.44 | $3.5B convertible-bond stake in MediaTek — embraces custom ASICs via NVLink Fusion; extends into AI-PC/edge/automotive. |
+| 2026-09-01 | [[semianalysis]] | LONG | 217.44 | Korea sovereign AI diversifies Nvidia's ~7-name customer base ('commoditize your complements'); $500B compute-MOU + SK 2GW Rubin. |
 
 ## Thesis evolution
 The bull thesis began with CUDA lock-in and datacenter GPU dominance in early 2024 and has only deepened since. [[irrationalanalysis]] established the core framework — 17 years of CUDA ecosystem accumulation creates switching costs no hardware advantage can overcome in the medium term — and has held Nvidia as a 40-50% portfolio position throughout, rarely wavering even during Blackwell packaging delays (Aug 2024) and the DeepSeek shock (Jan 2025). [[semianalysis]] started equally bullish on the hardware moat (Blackwell margins, NVL72 TCO, GB300 for reasoning) but has introduced the most substantive bearish notes: Huawei CloudMatrix 384 eroding the China TAM (Apr 2025), TPUv7 threatening hyperscaler accounts on TCO (Nov 2025), and three-front competitive pressure building through 2025. [[citrini]] has drifted from outright LONG to NEUTRAL/lower-conviction by late 2025 and into 2026, arguing the easy alpha is gone and supply-chain names now offer more asymmetry. The key evolution is that competitive risk has migrated from "implausible" to "real but medium-term" — the bear case is no longer dismissed, it is time-bounded to H2 2026+ when hyperscaler ASICs and Huawei Ascend take meaningful share. NVLink Fusion, CPO (COUPE/Quantum-X), the Groq acquihire, and the Vera Rubin full-stack CPU+GPU pod have each extended the moat narrative just as each preceding concern peaked.
@@ -185,3 +187,5 @@ The two entries with concrete px@call data are [[irrationalanalysis]] at $16.53 
 **Update 2026-08-24:** the **SA Jul-25 LONG ($196.51) resolved at $214.72 = +9.3% WIN ✓** (>30d) — SemiAnalysis's first resolved NVDA long-side win. Two fresh NEUTRALs at $214.72: SA's AgentX benchmark is the strongest moat-holds datapoint yet (Nvidia cheaper $/token than AMD on most frontier agentic models even if AMD compute were free — the moat is software: KV-offload, vLLM/TRT-LLM/Dynamo), while SD flags an unglamorous China-LPU denial + a Rebellions acquihire rumor. Stance stays long; the software-moat read reinforces it even as custom-ASIC financing (AVGO/Anthropic $70B SPV) accelerates the H2-26 share-erosion clock.
 
 **Update 2026-08-27:** SemiAnalysis NEUTRAL $209.66 on **Jalapeño** — the first non-TPU/Trainium ASIC to beat merchant GPUs on a third-party benchmark (tokens/MW), which CNBC frames as pressure on Nvidia's DC gross margins. But SemiAnalysis stresses the fair comparison is **Rubin (also HBM4), which ships to customers now** while Jalapeño is engineering samples with volume late-2027 — GPUs still win the near-term fight. Corroborating product momentum: Groq 3 LPX into mass production (Samsung Foundry). Earnings Wed Aug-26. Moat pressured over a multi-year horizon, not breached today.
+
+**Update 2026-09-02:** $217.44. Two fresh LONGs — SD on the **$3.5B MediaTek convertible** (Nvidia embracing custom ASICs via NVLink Fusion after dissing them in 2025) and SA on **Korea sovereign AI** (diversifies a customer base narrowed to ~7 names; commoditize-your-complements; $500B compute-MOU + SK 2GW Rubin). SA's Aug-27 SD LONG ($217.55) sits ~flat. NVDA held up on the Sep-1 global-bond-selloff day that dinged INTC -3% and slipped peers — relative strength. Falsifier unchanged: GPU rental rates rolling over would trigger the financing backstops. Stance long/medium.

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-08-30
+updated: 2026-09-02
 ---
 
 # Wiki Index
@@ -157,6 +157,7 @@ updated: 2026-08-30
 
 ## Themes
 
+- [[sovereign-ai]] — Sovereign AI (nations building their own models + compute)
 - [[advanced-packaging]] — Advanced Packaging
 - [[advanced-transistor-materials]] — Advanced Transistor & Materials Technology
 - [[ai-debt-financing]] — AI Debt Financing & Neocloud Economics
@@ -192,6 +193,7 @@ updated: 2026-08-30
 
 ## Queries
 
+- [[memory-longs-vs-sovereign-shareholder-tension]] — Memory: Semi Doped's persistent longs vs SemiAnalysis's sovereign/shareholder caution
 - [[qcom-short-vs-edge-ai-turnaround]] — QCOM: persistent short vs. edge-AI turnaround
 - [[buildout-vs-monetization]] — AI buildout accelerates vs. buildout→monetization (Meta Compute)
 - [[cbrs-yield-short-vs-inference-tam]] — CBRS: parametric-yield short vs. working tape vs. TileRT TAM erosion
@@ -510,6 +512,8 @@ updated: 2026-08-30
 - [[semianalysis-2026-07-09-meta-superintelligence-1yr-update]] — The Future of Meta Superintelligence: A 1 Year Progress Update
 - [[semianalysis-2026-08-16-pjm-ratepayers-model]] — PJM RRS reverse-engineered: ~4GW capacity undercount → ~$12B ratepayer waste (policy, no call)
 - [[semianalysis-2026-08-19-cerebras-cs4]] — CS-4 teardown: double clock/BW on same WSE-3; "modest" perf/W, 3µs net bottleneck (NEUT CBRS)
+- [[semianalysis-2026-08-30-most-neoclouds-suck-at-security]] — Neocloud security horror stories from ClusterMAX 3.0; OpenAI/HuggingFace RCE incident (thematic, no call)
+- [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
 
