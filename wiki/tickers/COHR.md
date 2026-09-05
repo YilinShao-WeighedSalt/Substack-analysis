@@ -4,11 +4,11 @@ title: "COHR — Coherent Corp"
 tags: []
 related: ["[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-07-practical-optical-comms]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[semidoped-2026-04-24-googles-networking-innovations]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[semidoped-2026-08-05-daily-update]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]", "[[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]]"]
 created: 2024-02-08
-updated: 2026-08-15
+updated: 2026-09-05
 ticker: COHR
 current_stance: mixed
 conviction: medium
-last_review: 2026-08-15
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -55,3 +55,5 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 **Update 2026-08-12:** IA NEUTRAL ($328.57). Coherent is a real laser maker and its 106G-PAM4 VCSEL NPO demo impressed IA, but on the *high-power CPO laser* it "has nothing" vs the Broadcom+Lumentum duopoly and its MOPA is ~18mo from stability. The Aug-5 IA mark ($328.22) is flat. Constructive-but-behind, not a short.
 
 **Update 2026-08-15:** IA flips to an outright **SHORT ($325.83)** on the Q4/FY26 call — the sharpest bear stance since the run of 2026 shorts. Thesis: the miss only makes sense if 6-in InP yield is bad (management dodged every yield question), the 200G-PAM4 VCSEL CPO/NPO design will fail GR-468 reliability (optimal is 32/64G NRZ), and Coherent is stuck selling low-margin isolators/FAU (~30–40%) while Lumentum earns ~80% on the laser itself. Notably IA offers Coherent an out that is *not its fault* — the 6-in InP wafer uniformity may be Sumitomo's, fixable once [[AXTI]] ships good 6-in substrate. COHR fell to $325.83 (from a ~$440 52-wk high). Prior Aug-5 LONG ($328.22) and Aug-9 NEUTRAL ($328.57) both ~flat. This is now a clean IA short vs the [[semidoped]]/[[globalsemiresearch]] 6-in-InP-ramp longs — the same empirical yield dispute, now with an earnings miss on the bear side.
+
+**2026-09-05 resolve:** IA Aug-5 LONG $328.22→$281.86 **-14.1% ✗** (the transceiver-ban chase; IA's separate COHR *short* thesis is the higher-conviction view).

@@ -4,11 +4,11 @@ title: "NOK — Nokia"
 tags: []
 related: ["[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]"]
 created: 2024-09-04
-updated: 2026-08-06
+updated: 2026-09-05
 ticker: NOK
 current_stance: long
 conviction: medium
-last_review: 2026-08-06
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,3 +27,5 @@ The Nokia long case originates in SemiAnalysis's September 2024 multi-datacenter
 No px@call values are recorded for either entry, so quantitative P&L cannot be assessed. The thesis trajectory runs in one direction across both publications and both time periods: constructively long, with the March 2026 irrationalanalysis entry adding a structural supply-scarcity argument (InP fab duopoly) on top of the original demand-side DCI thesis. The live view would be falsified by a meaningful deterioration in hyperscaler long-haul capex, a loss of Nokia's InP fab competitive position, or a sustained re-rating of the price/book multiple without accompanying earnings improvement.
 
 **Update 2026-08-06:** IA NEUTRAL $9.58 (Aug-5), grouped with Ciena as long-haul names outside the ban. Prior IA Aug-1 LONG $9.14 -> $9.58 = **+4.8% (open)**; the Jul-1 long ($13.10) resolved a loss last run. InP-fab-duopoly (Infinera) moat unchanged.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $9.14→$10.03 **+9.7% ✓** (long-haul, outside the transceiver ban).

@@ -4,11 +4,11 @@ title: "BE — Bloom Energy"
 tags: []
 related: ["[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]"]
 created: 2025-10-24
-updated: 2026-08-03
+updated: 2026-09-05
 ticker: BE
 current_stance: long
 conviction: medium
-last_review: 2026-08-03
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -36,3 +36,5 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 **Update 2026-07-10:** Semi Doped relayed a **Hunterbrook activist-short report** alleging Bloom's fuel cells depend on Chinese **scandium** requiring per-shipment CCP approval — "China has an OFF switch to US datacenters" — while the CEO has repeatedly denied any China supply chain. Logged CAUTIOUS @ $299.71 (mark 07-02). Material *new bear vector* (input-chain geopolitics) on an already highest-risk name, but note the conflicts/caveats: Hunterbrook is short BE, Bloom says the cells "supplement" grid power (not off-grid datacenter primary), and the target datacenters aren't built yet. Single-source, unverified — a hypothesis to watch, not a confirmed falsifier. (Also this run: Brookfield expanded its AI-power deal with Bloom to $25B per the Jul-6 closes — a bullish demand counterpoint.)
 
 **Update 2026-08-03:** Two fresh LONGs (IA core + semidoped) at $205.81 after a +25.3% Q2 earnings pop (beat + raised guide) on fuel-cell contracts with AI-datacenter operators — the standout non-memory name in IA's book. Watch item: the July Hunterbrook activist-short allegation (Chinese-scandium dependency 'off switch') remains unresolved.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $205.81→$252.87 **+22.9% ✓** — Bloom's power-for-AI-DC bull paid.

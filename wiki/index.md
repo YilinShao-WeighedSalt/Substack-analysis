@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-02
+updated: 2026-09-05
 ---
 
 # Wiki Index
@@ -591,3 +591,8 @@ updated: 2026-09-02
 - [[semidoped-2026-08-28-daily-update]] — Daily Aug 28 (Jalapeño 1.5-1.9× perf/W benchmarks, SK Hynix $4B Indiana HBM fab, Marvell/Google timing, TSMC +29% foundry) (LONG AVGO/TSM/000660, NEUT MRVL/005930)
 - [[semidoped-2026-08-27-jalapeno-podcast]] — Jalapeño Hot Chips teardown podcast (NUMA HBM slices, ESUN scale-up, 9-mo tapeout) — educational, no calls
 - [[semidoped-2026-08-29-til-mosfet-kahng]] — TIL: Dawon Kahng & the first MOSFET (1959) — educational history, no calls
+- [[semidoped-2026-08-31-daily-update-august-31st]] — Daily Aug 31 (Nvidia $3.5B MediaTek convertible/NVLink Fusion, SK Hynix eyes Intel Foundry HBM4E base dies, ASML High-NA HVM) (LONG NVDA/2454.TW/INTC/ASML, NEUT MU)
+- [[semidoped-2026-09-01-daily-update-september-1st]] — Daily Sep 1 (CXMT HBM3E risk production, ASML High-NA first HVM, Architect Labs Redwood AI-designed accelerator) (LONG ASML, NEUT MU)
+- [[semidoped-2026-09-02-daily-update-september-2nd]] — Daily Sep 2 (Nvidia ~$14B Hugging Face, SK/Kioxia Japan fab, TSMC tools double → Intel packaging, Compilers 2.0) (LONG NVDA/INTC)
+- [[semidoped-2026-09-03-daily-update-september-3rd]] — Daily Sep 3 (Nvidia $12.93B Hugging Face, Broadcom >$30 EPS FY28 vs Google-defection, TSMC defers hybrid bonding, Samsung zHBM, Phison 2027 NAND shortage) (LONG AVGO/NVDA/285A.T, NEUT GOOGL/TSM/005930/000660)
+- [[semidoped-2026-09-04-daily-update-september-4th]] — Daily Sep 4 (CXMT 10% DRAM + Project-Hefei theft case, Ciena +37%/$10B backlog, Kioxia NAND-as-DRAM, Figure $3.5B Nscale robotics) (LONG CIEN/285A.T/SNDK, NEUT MU/005930/000660)

@@ -4,11 +4,11 @@ title: "AEHR — Aehr Test Systems"
 tags: []
 related: ["[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[irrationalanalysis-2025-07-19-aehr-micron-catch-up]]", "[[irrationalanalysis-2025-07-25-seppuku-inside]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[semidoped-2026-06-18-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-07-18
-updated: 2026-08-12
+updated: 2026-09-05
 ticker: AEHR
 current_stance: long
 conviction: medium
-last_review: 2026-08-12
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -32,3 +32,5 @@ The original 2024 stance was bearish: the Incal acquisition was called out as a 
 No px@call values are recorded for any entry, so price-based performance cannot be assessed. The pivotal wafer-level AI burn-in thesis — hyperscalers skipping formal HTOL and burning in all logic wafers at production scale — had not played out as of the July 2025 holding updates (the Sonoma order was packaged-level burn-in, not wafer-level). The thesis remained live but unconfirmed through at least March 2026. The primary falsifier for the bull case is failure to secure a production wafer-level burn-in contract with an AI hyperscaler; the key data point to watch is any disclosed customer win for logic (not SiC/GaN) wafer-level burn-in at volume. As of June 2026, AEHR trades at $103.03 (~$1.4B mkt cap). Two FOX-XP orders in 3 months (April $41M + this follow-on) represent the first concrete validation of the AI optical burn-in thesis. The likely Broadcom customer identification, if correct, signals hyperscaler-grade production commitment.
 
 **Update 2026-08-12:** IA LONG $117.18 (Aug-9) — named among the names IA wants to add to but is holding off on to preserve leverage buffer. New spot entry.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $79.98→$86.26 **+7.9% ✓**.

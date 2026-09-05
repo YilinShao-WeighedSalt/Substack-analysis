@@ -2,13 +2,13 @@
 type: ticker
 title: "GOOGL — Alphabet"
 tags: []
-related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]"]
+related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]"]
 created: 2024-03-13
-updated: 2026-08-27
+updated: 2026-09-05
 ticker: GOOGL
 current_stance: long
 conviction: medium
-last_review: 2026-08-27
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -33,6 +33,7 @@ last_review: 2026-08-27
 | 2026-07-09 | [[semianalysis]] | NEUTRAL | n/a | "Faded dramatically" from AI big-3; models trail on real-world coding (relative knock, not fundamental short) |
 | 2026-08-07 | [[semianalysis]] | LONG | 343.80 | GCP financialization — TPU-system sales (~$35B/GW), GCP growth to mid-100s vs 64% consensus, ~+$3 EPS 2027; DeepMind/Gemini "cooked" after Jeff Dean exit |
 | 2026-08-26 | [[semidoped]] | LONG | 342.00 | TPU v10 goes multi-vendor for the first time, distributing production risk; deepens in-house accelerator lead. |
+| 2026-09-05 | [[semidoped]] | NEUTRAL | 338.46 | Accelerates in-house TPU cadence ~4x — the read-through pressuring Broadcom's ASIC concentration. |
 
 ## Thesis evolution
 Coverage opened with uniform bullishness on Google's infrastructure lead — semianalysis praised the TPU stack, Pathways, and Borg orchestration as a multi-year moat that no hyperscaler could quickly replicate. Citrini diverged sharply in mid-2024, removing GOOGL from its AI basket after repeated Gemini execution failures, introducing the first explicit bear signal. Semianalysis maintained a constructive view on the cloud/silicon side throughout 2025, turning LONG again on UVEU regulatory tailwinds and then doubling down via the TPUv7 deep dive, which framed vertical silicon integration as a durable TCO and customer-lock-in advantage; citrini converged on this view in November 2025. The primary bear thread, distinct from execution risk, is the Search revenue model: semianalysis issued a SHORT in August 2025 on the thesis that agentic AI purchasing funnels structurally disintermediate high-intent commercial queries. The May 2026 accounting concern — DeepMind training costs excluded from GCP segment — adds a separate financial-integrity bear leg. The result is a genuinely split picture: semianalysis and citrini are constructive on GCP/TPU as infrastructure, but semianalysis carries an active SHORT on Search monetization and questions the reported margin quality of the cloud segment itself.

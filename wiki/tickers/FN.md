@@ -4,11 +4,11 @@ title: "FN — Fabrinet"
 tags: []
 related: ["[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]"]
 created: 2024-02-08
-updated: 2026-08-21
+updated: 2026-09-05
 ticker: FN
 current_stance: long
 conviction: medium
-last_review: 2026-08-21
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -40,3 +40,5 @@ The view on FN passed through three distinct phases. In early 2024 [[irrationala
 No px@call values are available for any entry in the log, so price-based outcome tracking is not possible. The thesis trajectory is consistent and self-reinforcing: each successive publication layered new structural arguments (CPO complexity, IP segregation, 1.6T volume ramp, western manufacturing scarcity) rather than revising the core view, which suggests the author's conviction has been rewarded or at minimum not falsified by events visible in the notes. The live thesis would be falsified if Nvidia were to materially second-source Fabrinet's module assembly work (flagged once in October 2024 but reversed by the November aggressive re-entry), if CPO adoption is delayed beyond 2026 such that the volume catalyst fails to materialize, or if a Chinese manufacturer captures Fabrinet's Nvidia relationship on cost. The May 2026 earnings call being characterized as "boring" with no new thesis indicates the view is in a hold-and-wait phase rather than active accumulation or exit.
 
 **Update 2026-08-06:** first *priced* FN anchor — IA LONG $522.22 (Aug-5). Prior calls were all px n/a. Thesis re-activated by the ban: Fabrinet is 'the world's best non-Chinese optical CM because everyone else is unusably dogshit,' the direct beneficiary of forced de-coupling. Structural falsifier unchanged (Nvidia second-sourcing module assembly, or a Chinese CM capturing the relationship on cost). Stance long / conviction medium; open, <30d.
+
+**2026-09-05 resolve:** IA Aug-5 LONG $522.22→$407.40 **-22.0% ✗** — Fabrinet round-tripped the transceiver-substitution squeeze.

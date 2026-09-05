@@ -4,11 +4,11 @@ title: "AXTI — AXT Inc."
 tags: []
 related: ["[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]"]
 created: 2026-04-18
-updated: 2026-08-15
+updated: 2026-09-05
 ticker: AXTI
 current_stance: long
 conviction: high
-last_review: 2026-08-15
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -37,3 +37,5 @@ No price data was recorded at either call (both px@call are n/a), so mark-to-mar
 **Update 2026-08-12:** IA LONG $73.78 (Aug-9). The Jul-25 IA LONG ($47.88) is the run's standout open tracker at **+54.1% ✓ (open, resolves ~Aug-24)** — InP substrate demand bucked everything. IA still adding. Falsifier: China InP-export retaliation or an AI-optics air-pocket.
 
 **Update 2026-08-15:** IA LONG $81.64 off the Coherent earnings note (6-in InP conspiracy angle: AXTI's absence in 6-in is *why* Coherent may be stuck with worse Sumitomo wafers — a demand pull once AXTI's 6-in R&D ships). The Jul-25 IA LONG ($47.88) is now the run's runaway open tracker at **+70.5% ✓ (open, resolves ~Aug-24)**; Aug-1 $60.43 → +35.1%, Aug-5 $68.61 → +19.0%, Aug-9 $73.78 → +10.7%, all tracking. Structural thesis (80% of InP to AI, no consumer fallback) reinforced by the earnings-season optics data. Falsifier unchanged: credible Chinese 6-in/single-crystal yield catch-up, or a China InP-export retaliation.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $60.43→$61.64 **+2.0% ✓**; IA Aug-5 LONG $68.61→$61.64 **-10.2% ✗** (bought the ban-chase top).

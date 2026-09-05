@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: []
 created: 2024-03-16
-updated: 2026-08-30
+updated: 2026-09-05
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -94,3 +94,5 @@ Semi Doped's Aug-12/14 dailies mark how fast China's DRAM challenger is closing 
 - **[[000660.KS|SK Hynix]] broke ground on its first US AI-memory hub** ($4B, West Lafayette IN, HBM line + advanced-packaging R&D); output starts **2029**. CEO Kwak explicitly guided the **memory shortage to persist through 2030** — the longest-dated tightness call yet — and flagged deeper **Kioxia** NAND cooperation.
 - **Memory-cost squeeze reaches Nvidia:** Nvidia **cut its gross-margin outlook** on **surging memory prices** and **paused cloud revenue-sharing** deals — the DRAM/HBM up-cycle is now visibly taxing the buyers, not just enriching the makers.
 - **NVHBM** (controller in the HBM base die) turns HBM into a more custom, higher-content component — see [[custom-silicon-asic]].
+
+**Update 2026-09-05 — CXMT hits 10% DRAM share; Project-Hefei theft case surfaces (Semi Doped, Sep 4).** A Korean court found **CXMT's "Project Hefei" lifted a 620-step Samsung manufacturing recipe** (a written roadmap used to transfer process know-how). CXMT reached **10% of global DRAM revenue in Q2 2026** — a threshold Samsung and SK Hynix each took decades to build — and is recruiting DDR5/LPDDR talent in Japan. *Vik's key read: the share gain came largely at **SK Hynix's** expense because SK diverted capacity toward HBM, not because of any CXMT quality or China-exposure signal — the up-cycle's mix-shift, not a competitive breakage.* The US separately warned Korea to accelerate its HBM4 pivot, where China's gap remains widest. Read-through: keeps commodity DRAM (with the NAND-substitution thread on [[nand-flash-storage]]) as a two-sided story → [[MU]] / [[005930.KS]] / [[000660.KS]] NEUTRAL.

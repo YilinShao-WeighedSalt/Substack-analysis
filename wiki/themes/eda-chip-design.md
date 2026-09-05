@@ -4,7 +4,7 @@ title: "EDA & Chip Design Tools"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-08-30
+updated: 2026-09-05
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -43,3 +43,6 @@ EDA and chip design tools emerged as a peripheral topic in early 2024, initially
 
 ### 2026-08-27 — Synopsys beat/raise on the custom-ASIC wave
 - **[[SNPS|Synopsys]] Q3 rev $2.477B / GAAP EPS $2.84** beat and **raised FY2026 guide**. The tell: accelerating **hyperscaler custom-ASIC + chiplet adoption** front-loads intensive **front-end EDA** work before every tapeout — the same AI-accelerated design cycle (Codex-written kernels, ~9-mo tapeouts) that makes labs like OpenAI viable chip designers is a *demand* pull for EDA franchises, not a threat.
+
+### 2026-09-05 — OpenAI "Compilers 2.0": the LLM as a stochastic kernel optimizer
+- Chris Leary (founder of Google's XLA compiler, now on OpenAI's hardware team) detailed how **AI wrote the Jalapeño MLA kernel** shown at Hot Chips. Plain-language: a normal compiler improves code by fixed local rules/heuristics; an **LLM acts as a "stochastic optimizer"** — it proposes optimizations like an expert human performance engineer, unconstrained by a rule set, taking many shots on goal. Lineage runs to the **2013 STOKE paper** (randomly mutate a program searching for the optimum) with LLM reasoning swapping in for the random walk. The AI takes the compiler's **"emitter"** role — lowering a numpy-level spec to optimized code — and because outputs are **verified for semantic equivalence** against the spec, nobody reads the kernels (like the assembly `C++ -O3` emits). "Start near numpy, wait 48 hours, out comes a kernel" often beating hand-tuned expert code. Why it matters for the theme: this is the mechanism behind the ~9–16-month "hiring-to-tapeout" cycles making labs (OpenAI/Anthropic) viable chip designers — a *demand* pull for verification/EDA, not a replacement. Ties to [[custom-silicon-asic]].

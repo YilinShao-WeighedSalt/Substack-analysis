@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-08-30
+updated: 2026-09-05
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -46,3 +46,5 @@ Second-source race + the real blocker (Austin's read): Samsung has the motive (b
 
 ### 2026-08-27 — Kioxia + SanDisk commit $31B against YMTC
 - **[[SNDK|SanDisk]] + [[285A.T|Kioxia]] announced a joint >$31B NAND investment** in Japan, centered on a **new Fab3 at Kioxia's Kitakami plant** (third building at the complex). Framed explicitly by Korean press as a **response to [[YMTC]]** — the Chinese state-backed maker publicly targeting a **top-3 NAND position by 2027** (though still constrained on US-controlled equipment). Reads bullish-supply-discipline for SanDisk but defensive-catch-up for Kioxia (semidoped: SNDK LONG, 285A.T NEUTRAL).
+
+**Update 2026-09-05 — worst-ever-2027 NAND shortage call + NAND-as-DRAM-substitute (Semi Doped, Sep 3-4).** Two reinforcing threads for the NAND bulls. (1) **Phison warns 2027 will be the worst NAND shortage the industry has seen** — and **SK Group is courting Kioxia** (Chey calls joint production "one option"; SK Hynix already holds ~18.6% of Kioxia), possibly with a Japan fab decision this year; would align the two largest non-Samsung NAND makers. *Vik notes the Phison CEO has cried shortage before — "bearish messaging from a controller maker."* (2) **NAND-as-DRAM substitution:** Kioxia (with Micron and YMTC closing on the same pitch) is positioning **high-speed NAND as a practical DRAM substitute** in AI memory hierarchies — specifically for **inference tiers where latency tolerance is loose and $/GB dominates**. *Austin's caveat: read "substitute for DRAM" as "in certain situations"; the workload heterogeneity means NAND takes a real slice of the inference stack alongside DRAM, not that it replaces it.* Net: commodity DRAM squeezed from both demand and substitution sides → [[285A.T]] LONG, [[SNDK]] LONG. YMTC also stepping toward a Hong Kong IPO.

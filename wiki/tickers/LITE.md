@@ -4,11 +4,11 @@ title: "LITE — Lumentum"
 tags: []
 related: ["[[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]]", "[[citrini-2024-07-03-interconnects-101]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-11-07-practical-optical-comms]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2026-01-01-cpo-book-scaling-interconnect]]", "[[irrationalanalysis-2026-01-24-practical-datacom-lasers]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]]", "[[irrationalanalysis-2026-02-19-isscc-2026-irrational-recap]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-06-hilarious-short-squeeze]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[semidoped-2026-04-24-googles-networking-innovations]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]"]
 created: 2024-03-25
-updated: 2026-08-21
+updated: 2026-09-05
 ticker: LITE
 current_stance: long
 conviction: high
-last_review: 2026-08-21
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -62,3 +62,5 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 **Update 2026-08-15:** IA LONG $926.14 off the Q4/FY26 earnings call (twin note vs Coherent). LITE now near its 52-wk high ($1,085.68). Open trackers all tracking ✓: Jul-28 LONG $711.96 → **+30.1%** (open, resolves ~Aug-27), Aug-5 $826.26 → +12.1%, Aug-9 $820.59 → +12.9%. The earnings call is the strongest thesis datapoint yet — public RIN (<−155 dBc/Hz vs −145 spec), WPE ~10–11% realistic, cavity-length cut again at constant linewidth, and the disaggregated-laser argument (integration only happens because of the InP shortage; it worsens mode-hop reliability and single-point failure). Falsifier unchanged: a Coherent 6-in-InP yield breakthrough or a China InP-export retaliation.
 
 **Update 2026-08-21:** IA LONG $879.28 off the Nvidia/Lumentum ELSFP paper (Aug-18), which the author calls 'massive alpha.' Two datapoints reinforce the moat: (1) Lumentum's claimed 0.5 dB coupling loss + a single-isolator module design implies large active-alignment/BOM savings; (2) the *monolithic* DFB laser array's RIN is 'garbage/unusable,' so integration doesn't threaten Lumentum's disaggregated (ELS/ELSFP) approach — the qual-only mode-hop-free-range moat holds. Open IA trackers: Jul-28 $711.96 -> **+23.5% ✓** (resolves ~Aug-27); Aug-12 $926.14 -> **-5.1%** as LITE pulled back from its 52-wk high ($1,085.68) to $879.28. Falsifier unchanged: a Coherent 6-in-InP yield breakthrough or China InP-export retaliation.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $713.94→$881.26 **+23.4% ✓**; IA Aug-5 LONG $826.26→$881.26 **+6.7% ✓**. The optics-duopoly long keeps working.

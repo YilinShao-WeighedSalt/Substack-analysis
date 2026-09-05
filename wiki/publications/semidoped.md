@@ -6,14 +6,18 @@ related: []
 created: 2026-04-24
 updated: 2026-09-02
 handle: semidoped
-calls_logged: 173
-hit_rate: "14/32 (44%), ~50 open"
-updated: 2026-08-30
+calls_logged: 184
+hit_rate: "15/35 (43%), ~50 open"
+updated: 2026-09-05
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Updates Sep 2-4 (2026-09-02..04):** Three call-bearing dailies. **Nvidia buys Hugging Face for $12.93B** (+$1B retention; down from the $14B first cited) — folds the dominant open-model hub into its stack, "commoditize your complement" as labs flee to custom silicon; + **Figure AI $3.5B→$6B Nscale / 100k Vera Rubin GPUs** for robotics and the **PAIR** local-inference beta → **[[NVDA]] LONG $230.36**. **Broadcom's two-year AI-chip surge guide — >$30 EPS by FY28** (~$115B FY27/~$230B FY28 chips), Hock's "XPU <½ cost/GW of an Nvidia GPU"; stock *fell* on Google's 4× in-house-TPU acceleration (concentration risk) → **[[AVGO]] LONG $357.89**, **[[GOOGL]] NEUTRAL $338.46**. **Ciena rev +37% to $1.67B, backlog nearing $10B, supply-limited** (shares −10% on in-line guide) → **[[CIEN]] LONG $321.00**. **Packaging:** big tech shifts advanced-packaging to Intel Foundry as **TSMC tool procurement ~doubles** and **TSMC defers hybrid bonding for HBM (stays on microbumps)**; Intel EMIB-T gains as a CoWoS alternative → **[[INTC]] LONG $95.80**, **[[TSM]] NEUTRAL $428.91**. **Memory:** Samsung stakes ground on vertical **zHBM / 3D-stacked HBM** ("going to be a while") + a Korean court finds **CXMT's Project Hefei lifted a 620-step Samsung recipe** as CXMT hits **10% DRAM share** → **[[005930.KS]] NEUTRAL ₩255,500**, **[[000660.KS]] NEUTRAL ₩1,647,000**, **[[MU]] NEUTRAL $1,016.59**. **NAND:** Phison warns **2027 = worst-ever NAND shortage**, SK courts Kioxia, Kioxia pitches high-speed **NAND as a DRAM substitute** → **[[285A.T]] LONG ¥54,460**, **[[SNDK]] LONG $1,740.00**. Concept color: OpenAI **"Compilers 2.0"** (LLM as stochastic kernel optimizer, STOKE lineage — wrote the Jalapeño MLA kernel) → [[eda-chip-design]].
+
+**hit_rate note (2026-09-05): 14/32 → 15/35 (43%) — the Aug 3-5 batch resolves thin as optics cooled.** Three priced LONGs crossed 30d: **[[TSEM]] Aug-4 ($211.14) → $222.34 = +5.3% WIN ✓**, **[[ON]] Aug-4 ($76.91) → $74.38 = -3.3% LOSS ✗**, **[[GLW]] Aug-5 ($156.70) → $154.30 = -1.5% LOSS ✗**. 1W/2L → running 15/35. This run's 11 new calls (6 long + 5 neutral, no shorts) opened at spot.
 
 - **Daily Updates Aug 31 & Sep 1 (2026-08-31, 09-01):** Two call-bearing dailies. **Nvidia goes custom-ASIC:** $3.5B convertible-bond stake in MediaTek (NVLink Fusion custom-accelerator IP, AI-PC/edge/auto) → **[[NVDA]] LONG $217.44**, **[[2454.TW]] LONG NT$4,315**. **HBM base dies migrate to logic:** SK Hynix weighs Intel Foundry for HBM4E base dies (rare external-customer win, breaks TSMC reliance) → **[[INTC]] LONG $88.97**; SK Hynix Indiana packaging groundbreaking (2029), shortage-to-2030 → [[000660.KS]] mention. **Equipment:** ASML High-NA EUV enters first high-volume logic production (UBS: China a decade behind) → **[[ASML]] LONG $1,665.14**. **China memory:** CXMT begins HBM3E risk production (first China HBM, Alibaba first customer) but "no threat any time soon" (3-5yr, EUV-gated) → **[[MU]] NEUTRAL $933.44**. Also: Architect Labs "Redwood" AI-designed accelerator (3.4× perf/W claim, recursive self-improvement); Kioxia+SanDisk $31B NAND; Unimicron PCB-fraud raid (JPM: ~5% non-AI rev contained); SLB $3.4B Kelvion (DC cooling); SB Energy $5.5B warrants to OpenAI.
 

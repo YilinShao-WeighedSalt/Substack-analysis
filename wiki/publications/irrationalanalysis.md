@@ -4,10 +4,10 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-02
+updated: 2026-09-05
 handle: irrationalanalysis
 calls_logged: 600
-hit_rate: "6/17 (35%), ~30 open"
+hit_rate: "18/34 (53%), ~13 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
@@ -15,6 +15,8 @@ Irrational Analysis is a technically-driven semiconductor and datacenter-infrast
 ## Coverage
 
 - **No new post in window (last: Cerebras Supernova recap, Aug 19).** Track record re-priced only.
+
+**hit_rate note (2026-09-05): 6/17 → 18/34 (53%) — the Aug-1 (SALP-memo) and Aug-5 (transceiver-ban) batches resolve, and the entry level made the difference.** The **Aug-1 book bought lower ran 10W/1L**: [[LITE]] $713.94→$881.26 +23.4% ✓, [[SMTC]] $117.82→$147.89 +25.5% ✓, [[BE]] $205.81→$252.87 +22.9% ✓, [[AAOI]] $94.32→$105.53 +11.9% ✓, [[NOK]] $9.14→$10.03 +9.7% ✓, [[AEHR]] $79.98→$86.26 +7.9% ✓, [[INTC]] $90.20→$95.80 +6.2% ✓, [[005930.KS]] ₩242,500→₩255,500 +5.4% ✓, [[AXTI]] $60.43→$61.64 +2.0% ✓, [[TSEM]] $219.67→$222.34 +1.2% ✓; the one loss [[CIEN]] $377.05→$321.00 -14.9% ✗ (long-haul lagged). The **Aug-5 ban-chase bought at the squeeze top ran 2W/4L**: [[LITE]] $826.26→$881.26 +6.7% ✓, [[TSEM]] $211.14→$222.34 +5.3% ✓; losses [[FN]] $522.22→$407.40 -22.0% ✗, [[AAOI]] $128.56→$105.53 -17.9% ✗, [[COHR]] $328.22→$281.86 -14.1% ✗, [[AXTI]] $68.61→$61.64 -10.2% ✗. Net 12W/5L → 18/34 (53%). Lesson the log makes plain: the same optics/InP names won when bought Aug-1 and lost when chased Aug-5. Open book (~13): the Aug-9/12/14/18/19 optics longs + COHR/CBRS shorts.
 
 **hit_rate note (2026-09-02): 3/13 → 6/17 (35%) — the Jul-25/28/30 optics/InP/relative-value batch resolves.** **[[AXTI]] Jul-25 LONG ($47.88) → $56.11 = +17.2% WIN ✓**, **[[LITE]] Jul-28 LONG ($711.96) → $868.95 = +22.1% WIN ✓**, **[[2454.TW]] Jul-30 relative-value LONG (NT$3,235) → NT$4,315 = +33.4% WIN ✓** — the long-optics/InP book paid off as the tape finally cooperated; **[[QCOM]] Jul-30 SHORT ($160.74) → $166.61 = -3.7% LOSS ✗** (the multi-year short flipped underwater on this entry). 3 wins / 1 loss → running 6/17. Open book unchanged: long optics/InP (LITE, AXTI), short Cerebras.
 

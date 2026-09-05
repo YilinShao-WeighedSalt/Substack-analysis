@@ -4,11 +4,11 @@ title: "AAOI — Applied Optoelectronics"
 tags: []
 related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-12-02
-updated: 2026-08-12
+updated: 2026-09-05
 ticker: AAOI
 current_stance: neutral
 conviction: low
-last_review: 2026-08-12
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -43,3 +43,5 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 **Update 2026-08-06:** IA LONG $128.56 (Aug-5). The highest-torque name in the basket: prior IA longs Jul-28 $97.82 -> **+31.4% ✓ (open)** and Aug-1 $94.32 -> **+36.3%**. IA frames it as a 'fun degen play' with better near-term risk/reward than AXTI on a massive transceiver-capacity expansion, and now discloses ownership (the May-8 short is fully unwound). Also the most violent — a round-trip risk if China retaliates. Conviction stays low given the author's own documented history of poor AAOI timing.
 
 **Update 2026-08-12:** IA moves to NEUTRAL ($134.33) — steps back from the trade after the earnings call. Credits the CEO on Chinese-transceiver-decoupling and that most Chinese players can't do 300mW DWDM, but calls AAOI's own high-power-CPO-laser claims a bluff (demands phase-noise/linewidth data, says AAOI is 2-3yr away). The Aug-5 IA LONG ($128.56) is +4.5% open. Downgrade, not a short.
+
+**2026-09-05 resolve:** IA Aug-1 LONG $94.32→$105.53 **+11.9% ✓**; IA Aug-5 LONG $128.56→$105.53 **-17.9% ✗** (degen ban-chase entry gave it back).

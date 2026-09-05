@@ -4,11 +4,11 @@ title: "ON — ON Semiconductor"
 tags: []
 related: ["[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-08-04-daily-update]]"]
 created: 2024-01-06
-updated: 2026-08-06
+updated: 2026-09-05
 ticker: ON
 current_stance: neutral
 conviction: low
-last_review: 2026-08-06
+last_review: 2026-09-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,3 +30,5 @@ The view on ON started as a defensive exit in January 2024 — the Mobileye inve
 No px@call values are available for any entry point across the call log, so direct price-based assessment is not possible. The thesis trajectory tells a clear story: the initial re-entry in late 2025 on vertical GaN optionality played out favorably enough to yield a 15% realized gain by May 2026, but the conviction behind the exit was stronger than the conviction behind the entry. The live view would be falsified positively if ON publishes a credible vertical GaN datasheet with competitive Rds_on and breakdown voltage data, or ships a vertical GaN product into a hyperscaler power supply design; it would be falsified negatively if the vertical GaN program is quietly shelved or if ON loses additional SiC market share to Infineon in the 1200V class.
 
 **Update 2026-08-06:** first *priced* ON anchor — SD LONG $76.91 (Aug-4), a different (fundamental datacenter-power) angle than IA's prior vertical-GaN option thesis (IA sold at +15% in May, stance neutral). SD cites AI-datacenter revenue to more than double in 2026, GaNEXUS (40-650V GaN) launch, expanded Nvidia MGX role, FCF quadrupled. Open, <30d; note the covering publications now diverge (SD constructive on the datacenter-power ramp vs IA's lapsed vertical-GaN skepticism).
+
+**2026-09-05 resolve:** SD Aug-4 LONG $76.91→$74.38 **-3.3% ✗**.
