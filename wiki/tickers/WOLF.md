@@ -4,11 +4,11 @@ title: "WOLF — Wolfspeed"
 tags: []
 related: ["[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semianalysis-2026-05-26-800vdc-datacenter-revolution]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-11-09
-updated: 2026-08-12
+updated: 2026-09-08
 ticker: WOLF
 current_stance: long
 conviction: medium
-last_review: 2026-08-12
+last_review: 2026-09-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,3 +29,5 @@ The view on WOLF reversed sharply between late 2024 and mid-2026. Through early 
 No px@call values are available across any of the five entries, so price-based outcome judgment is not possible. The thesis has undergone a qualitative reversal: the original short thesis (structural insolvency, overcapacity, zero margins) has not been falsified on the fundamentals — WOLF remains a post-bankruptcy, high-fixed-cost SiC manufacturer in a crowded market — but a new product-level catalyst (10KV SiC for SSTs) opened a potential path to a differentiated, higher-margin market. The live long view would be falsified if: the full 10KV datasheet reveals inferior temperature/switching performance versus competing high-voltage SiC parts; SST adoption in datacenter grid applications stalls or is delayed past NEC 2032 code support; or WOLF fails to translate product leadership into revenue given its cost structure. Low conviction reflects the coexistence of a genuine product breakthrough with a company that has not yet demonstrated operational recovery.
 
 **Update 2026-08-12:** IA LONG $30.14 (Aug-9), wants to add (with AXTI/AEHR) but capping leverage. On the WOLF-vs-NVTS suit: IA thinks the six cited patents are weak (one GaN patent expiring in 4mo; Wolfspeed ships no GaN) but that Navitas's SiC is so poor Wolfspeed is 'fine.' New spot entry.
+
+**2026-09-08 (resolution):** IA's Aug-9 LONG ($30.14) → **LOSS** at $28.35 = **-5.9%** ✗.

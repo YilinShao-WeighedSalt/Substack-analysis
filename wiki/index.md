@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-05
+updated: 2026-09-08
 ---
 
 # Wiki Index
@@ -254,6 +254,7 @@ updated: 2026-09-05
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]] — Hot Chips 2026: Irrational Recap
 
 - [[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]] — Mobileye's Rancid Kitchen Sink
 - [[irrationalanalysis-2024-01-27-intels-terrifying-future]] — Intel's Terrifying Future
@@ -396,6 +397,7 @@ updated: 2026-09-05
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-07-tpu-inferencex-full-steam]] — TPU Inference Externalization Full Steam Ahead
 
 - [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] — IEDM 2023: GenAI Yield, CFET
 - [[semianalysis-2024-01-11-neural-network-quantization-number-formats]] — Neural Network Quantization & Number Formats From First Principles
@@ -516,6 +518,7 @@ updated: 2026-09-05
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-09-07-daily-update-september-7th]] — Daily Update, September 7th 2026
 
 - [[semidoped-2026-04-24-googles-networking-innovations]] — Google's Networking Innovations
 - [[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]] — CapEx is just Memory Tax Now, DeepSeek V4 NAND Impact

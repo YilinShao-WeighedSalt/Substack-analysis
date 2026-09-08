@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-08-21
+updated: 2026-09-08
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -124,3 +124,16 @@ Status: still maturing, now with a live **geopolitical catalyst** layered on the
 - **6-inch InP conspiracy:** Coherent's bad yield may be *input goods* — poor 6-in InP wafer uniformity from Sumitomo, since [[AXTI]] (the best substrate maker) doesn't yet have 6-in InP (still R&D). Once AXTI ships good 6-in, chain-wide yield could lift. Names: [[LITE]] (near-monopoly high-power laser, ~80% GM), [[COHR]] (IA now outright SHORT), [[AXTI]] (substrate pull).
 
 **Update 2026-08-21 (Intel CPO teardown + Nvidia/Lumentum paper + SK Hynix roadmap).** Three CPO datapoints. (1) **Intel's CPO** amplifies 8 wavelengths with one **SOA** → **four-wave-mixing (FWM)**: every pair of wavelengths spawns noise tones that raise **RIN**; IA grades Intel's un-clock-forwarded BER a "C+" vs Nvidia's clock-forwarded "A+" bathtub curve. Lesson: a single SOA fed many wavelengths is a noise trap; per-wavelength SOAs avoid it. (2) The **Nvidia/Lumentum ELSFP paper** builds a **MOPA array** — one **DFB laser + its own SOA per channel** (amplify *and* beam-shape, no FWM), claiming **0.5 dB coupling** and a *single isolator* (big active-alignment/BOM savings); but the *monolithic* array's RIN is "unusable," reinforcing that **disaggregated** laser modules (Lumentum's ELS/ELSFP) beat integration on reliability. (3) **SK Hynix published a CPO roadmap in Nature Electronics** — memory-bandwidth→optical-interconnect through HBM4/HBM5, enabling optically-pooled memory (set compute:memory ratio at design time).
+
+### 2026-09 — The 850nm → 1060nm VCSEL migration and its requal tax (Hot Chips 2026)
+For dense NPO/CPO optics, [[LITE]] and [[COHR]] are moving VCSELs from the traditional
+**850 nm** to **1060 nm**. Why: to pack many VCSELs densely you want *bottom-emission*,
+but the substrate blocks 850 nm light — **1060 nm shoots straight through standard
+substrate**. The catch is the *fiber*: standard OM multimode fiber was never characterized
+at 1060 nm (no attenuation/dispersion datasheets, batch-to-batch variation), forcing
+over-designed drivers/TIAs. And 1060 nm needs new VCSEL materials, so LITE/COHR face a
+fresh **GR-468 reliability requal at device + system level — a 6-12 month process**.
+Meanwhile **AMS OSRAM stays at 850 nm** and competes on its LED-derived packaging edge
+(dense fiber-array attach, wafer-to-wafer compound-semi bonding) — VCSEL quality matters
+less for the slow-and-wide <30m NPO/CPO use case. Near-term speed bump for the optics
+duopoly, not a moat break.

@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-08-30
+updated: 2026-09-08
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -86,3 +86,19 @@ Plain-language why it matters: in a **power-limited** datacenter, "throughput pe
 - **Jalapeño (OpenAI's first inference ASIC, co-designed with [[AVGO|Broadcom]])** cleared *independent* benchmarks (EE Times) at **1.5–1.9× efficiency-per-watt vs Nvidia's current inference silicon** — a clean-sheet general-purpose accelerator, so the figures are not the usual apples-to-oranges marketing. Semidoped's teardown adds the architecture: designed for **user experience (end-to-end latency) + energy-per-request** (Pareto curves, not single numbers), **NUMA-style local HBM slices**, **ESUN** open scale-up networking with Broadcom, "**dark silicon is cheaper than idle accelerators**," and a ~**9-month RTL-to-tapeout** using AI-assisted EDA. Reinforces [[AVGO]] LONG (co-design + Tomahawk-6/ESUN switching).
 - **NVHBM (Nvidia's counter):** Nvidia extends **NVLink Fusion** with a custom HBM variant that puts its **memory controller into the HBM base die** (+30% BW / −15% power / +25% freed XPU area vs HBM4E), standardized across memory vendors, **Amazon Annapurna first (Trainium4)**. The XPU-friendly on-ramp is also a content-sell — Nvidia monetizes even the custom-ASIC wave.
 - **Anthropic's build-vs-buy verdict:** locking **$45B/6-yr GPU capacity via [[Nscale]]** let it **walk away from a ~$7B MatX acquisition** into a partnership — capacity access beat vertical integration this round.
+
+### 2026-09 — TPU externalization goes merchant (SemiAnalysis InferenceX; Hot Chips)
+The biggest custom-silicon datapoint this cycle: **Google's TPUv7 "Ironwood" is now a
+product outsiders can buy or rent**, and SemiAnalysis published the **first third-party
+inference benchmarks** — up to **~50% better performance-per-dollar than Nvidia B200/B300**
+on FP8 serving. Plain-language: for a decade the question was "how much of Google's
+internal TPU edge can the rest of the industry actually get?" — the answer is now
+"a lot, on the metric inference buyers care about (tokens per dollar)." The enabler is
+**TorchTPU**, a native-PyTorch backend (replacing the clumsy TorchAX→JAX translation)
+that lets vLLM/SGLang treat TPUs as first-class devices; **open-sources ~mid-October**
+at the PyTorch Conference. Caveats: TPUv7 has **no native FP4** (Nvidia keeps the FP4
+lead until **TPUv8i "Boardfly"**, which adds FP4 + a lower-diameter network and is
+expected to rival Rubin NVL72), and external disagg serving isn't optimized yet.
+**Anthropic is the largest TPU user** (>1M committed). IA's parallel framing: only four
+compute entities matter (Nvidia, Google/TPU, Amazon/Trainium, AMD) and **multi-vendor
+disagg inference is temporary** — everyone goes vertical.

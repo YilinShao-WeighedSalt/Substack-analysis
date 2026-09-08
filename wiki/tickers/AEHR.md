@@ -4,11 +4,11 @@ title: "AEHR — Aehr Test Systems"
 tags: []
 related: ["[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[irrationalanalysis-2025-07-19-aehr-micron-catch-up]]", "[[irrationalanalysis-2025-07-25-seppuku-inside]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[semidoped-2026-06-18-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-07-18
-updated: 2026-09-05
+updated: 2026-09-08
 ticker: AEHR
 current_stance: long
 conviction: medium
-last_review: 2026-09-05
+last_review: 2026-09-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -34,3 +34,5 @@ No px@call values are recorded for any entry, so price-based performance cannot 
 **Update 2026-08-12:** IA LONG $117.18 (Aug-9) — named among the names IA wants to add to but is holding off on to preserve leverage buffer. New spot entry.
 
 **2026-09-05 resolve:** IA Aug-1 LONG $79.98→$86.26 **+7.9% ✓**.
+
+**2026-09-08 (resolution):** IA's Aug-9 LONG ($117.18) → **LOSS** at $86.26 = **-26.4%** ✗ (worst of the Aug-9 batch).

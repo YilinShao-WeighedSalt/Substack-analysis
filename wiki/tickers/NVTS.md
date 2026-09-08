@@ -4,11 +4,11 @@ title: "NVTS — Navitas Semiconductor"
 tags: []
 related: ["[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-24-navitas-dangerous-specialty-switching]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2025-05-24
-updated: 2026-08-27
+updated: 2026-09-08
 ticker: NVTS
 current_stance: short
 conviction: medium
-last_review: 2026-08-27
+last_review: 2026-09-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -34,3 +34,5 @@ The NVTS thesis originated in May 2025 as a cautious, speculative LONG: irration
 No px@call values are available across any of the seven entries, so price-based outcome judgment is not possible. The qualitative trajectory is positive: the thesis has evolved from a speculative single-product bet to a multi-catalyst LONG backed by rigorous datasheet analysis and a cross-licensing deal with Infineon. The live LONG would be falsified if: TI erodes Navitas's GaN performance lead with a competing integrated-driver part; the 800V datacenter architecture standardizes on 800V-to-48V conversion (favoring incumbents) rather than direct 800V-to-low-voltage conversion (where Navitas and TI are challengers); Innoscience or other Chinese GaN fabs close the performance gap and compete on price; or GlobalFoundries (Navitas's wafer supplier) loses share to Innoscience under tariff-affected dynamics. The SiC division is acknowledged as weak, so the thesis is almost entirely a GaN play.
 
 **Update 2026-08-12:** IA reiterates SHORT ($13.60). The Jul-2 IA SHORT ($14.11) remains a WIN ✓ (short +3.6%). Note the cross-current: Semi Doped separately reports **Navitas suing Renesas** over GaN (Aug-11) — Navitas is litigating on offense even as Wolfspeed sues it. IA's engineering view (SiC line is weak) is unchanged.
+
+**2026-09-08 (resolution):** IA's Aug-9 SHORT ($13.60) → **WIN**, NVTS fell to $11.80 = short **+13.2%** ✓.

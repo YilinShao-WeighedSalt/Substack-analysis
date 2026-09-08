@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-05
+updated: 2026-09-08
 handle: irrationalanalysis
-calls_logged: 600
-hit_rate: "18/34 (53%), ~13 open"
+calls_logged: 613
+hit_rate: "22/42 (52%), ~18 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Hot Chips 2026: Irrational Recap (2026-09-06):** A sweeping engineering tour. Thesis of the run: **the DRAM giants overplayed their hand and HBM de-spec (12→8-hi) is rewiring the packaging/memory theses.** The single sharpest new call is a **SHORT/exit on [[BESI]]** (€202.50) — the author **liquidated his entire hybrid-bonding-tool position** because 8-hi HBM doesn't need hybrid bonding ("RIP BESI"). Reaffirms the **activist SHORT [[CBRS]]** ($210.05, parametric-yield "confirmed," deep-dive Oct/Nov), holds the **large [[005930.KS]]** long ($274,250, cleanest HBM base-die data), **LONG [[NVDA]]** ($230.36 — owns half of CoWoS + most HBM at a discount, vertical wins as multi-vendor disagg proves temporary) and **LONG [[GOOGL]]** ($338.46, TPU V8 progress). NEUTRALs: [[AMD]] (Venice CPU good, MI400 re-timer TCO), [[INTC]] (Xe "F-tier"), [[META]] (MTIA dual-mandate "worst of both worlds"), [[MSFT]] (Maia "dogshit"), [[AVGO]] (Thor Ultra beaten by BlueField-4), [[MU]] (DRAM overplayed hand), [[LITE]]/[[COHR]] (1060nm VCSEL GR-468 requal headwind).
+
+**hit_rate note (2026-09-08): 18/34 → 22/42 (52%) — the Aug-9 grab-bag batch resolves 4W/4L.** Wins: **[[LITE]] ($820.59→$881.25 +7.4% ✓)**, **[[SMTC]] ($131.18→$147.88 +12.7% ✓)**, **[[CBRS]] SHORT ($234.76→$210.05, short +10.5% ✓)**, **[[NVTS]] SHORT ($13.60→$11.80, short +13.2% ✓)**. Losses: **[[TSEM]] ($249.58→$222.34 -10.9% ✗)**, **[[WOLF]] ($30.14→$28.35 -5.9% ✗)**, **[[AEHR]] ($117.18→$86.26 -26.4% ✗)**, **[[AXTI]] ($73.78→$61.64 -16.5% ✗)**. Both **shorts won**; the InP/optics longs (AXTI, AEHR) gave back the summer run. This run's 13 new calls opened at spot.
 
 - **No new post in window (last: Cerebras Supernova recap, Aug 19).** Track record re-priced only.
 

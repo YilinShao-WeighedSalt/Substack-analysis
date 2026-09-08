@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-05
+updated: 2026-09-08
 handle: semianalysis
-calls_logged: 224
-hit_rate: "6/19 (32%), ~7 open"
+calls_logged: 227
+hit_rate: "7/22 (32%), ~7 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **TPU Inference Externalization Full Steam Ahead — InferenceX (2026-09-07):** The marquee call. SemiAnalysis publishes the **first third-party TPUv7 Ironwood inference benchmarks** — up to **~50% better perf-per-dollar than Nvidia B200/B300** on FP8 serving (Qwen3.5-397B), with **TorchTPU** (native-PyTorch backend) open-sourcing ~mid-October. Verdict: TPU externalization is real and moving fast, and Google's mature software culture (unlike AMD's) should mature it rapidly; Anthropic is the biggest TPU user (>1M). → **LONG [[GOOGL]]** $338.46. Nuance: TPUv7 has **no native FP4** so Rubin still leads there (TPUv8i "Boardfly" is the real contest) → **NEUTRAL [[NVDA]]** $230.36; AMD dinged on software culture → **NEUTRAL [[AMD]]** $477.57.
+
+**hit_rate note (2026-09-08): 6/19 → 7/22 (32%) — the Aug-7 SpaceX-10GW / GCP batch resolves 1W/2L.** **[[NVDA]] LONG ($217.50→$230.36 +5.9% ✓)**; **[[GOOGL]] LONG ($343.80→$338.46 -1.6% ✗)** and **[[MSFT]] LONG ($503.81→$499.70 -0.8% ✗)** both resolved thin losses. This run's 3 new calls opened at spot.
 
 - **No new post in window (Sep 2-5, 2026) — track record unchanged.** Latest post is the Sep-1 Korea Sovereign-AI deep dive, ingested last run.
 

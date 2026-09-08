@@ -4,11 +4,11 @@ title: "SMTC — Semtech"
 tags: []
 related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2025-06-15
-updated: 2026-09-05
+updated: 2026-09-08
 ticker: SMTC
 current_stance: long
 conviction: medium
-last_review: 2026-09-05
+last_review: 2026-09-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -34,3 +34,5 @@ No px@call prices are recorded across any of the seven entries, so precise retur
 **Update 2026-08-12:** IA LONG $131.18 (Aug-9) — reiterates Semtech as the discrete-amplifier winner off Tower's 300mm SiGe capacity build. Prior IA marks (Jul-1 $161.30 resolved LOSS in the late-July rout) predate the recovery; new spot entry.
 
 **2026-09-05 resolve:** IA Aug-1 LONG $117.82→$147.89 **+25.5% ✓**.
+
+**2026-09-08 (resolution):** IA's Aug-9 LONG ($131.18) → **WIN** at $147.88 = **+12.7%** ✓.

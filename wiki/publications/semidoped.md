@@ -4,16 +4,20 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-09-02
+updated: 2026-09-08
 handle: semidoped
-calls_logged: 184
-hit_rate: "15/35 (43%), ~50 open"
+calls_logged: 193
+hit_rate: "15/35 (43%), ~55 open"
 updated: 2026-09-05
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update — September 7th (2026-09-07):** News-dense daily. **Kioxia XL1 CXL flash-for-DRAM** (first NAND-maker DRAM substitute for production AI; Nvidia CMX + Apple LTA) → **LONG [[285A.T]]** ¥60,460; **Foxconn record August** $29.14B (+52% YoY), Q3 raised → **LONG [[2317.TW]]** NT$256; **TSMC 3nm >NT$400B**, overtakes 5nm as top node → **LONG [[TSM]]** $428.91; **Anthropic $517B compute** pre-IPO → **LONG [[NVDA]]** $230.36; **Bloom Energy S&P 500 inclusion** + Q2 rev +166% → **LONG [[BE]]** $252.87; **Infineon** dual-phase power stages → **LONG [[IFX]]** €60.79; **GE Vernova** MV UPS → **LONG [[GEV]]** $941.95; **Qualcomm** Snapdragon 8 Elite Gen 6 stacked DRAM → **NEUTRAL [[QCOM]]** $168.74; **AMD** Threadripper Halo Station → **NEUTRAL [[AMD]]** $477.57. (Sep-5 TIL + Sep-6 pub-quiz educational, no calls.)
+
+**hit_rate note (2026-09-08): no new 30-day resolutions — holds 15/35 (43%).** The Aug 10-11 dailies (INTC/TSM/AMD batch) cross 30d ~Sep 9-11 and resolve next scan. This run's 9 new calls opened at spot.
 
 - **Daily Updates Sep 2-4 (2026-09-02..04):** Three call-bearing dailies. **Nvidia buys Hugging Face for $12.93B** (+$1B retention; down from the $14B first cited) — folds the dominant open-model hub into its stack, "commoditize your complement" as labs flee to custom silicon; + **Figure AI $3.5B→$6B Nscale / 100k Vera Rubin GPUs** for robotics and the **PAIR** local-inference beta → **[[NVDA]] LONG $230.36**. **Broadcom's two-year AI-chip surge guide — >$30 EPS by FY28** (~$115B FY27/~$230B FY28 chips), Hock's "XPU <½ cost/GW of an Nvidia GPU"; stock *fell* on Google's 4× in-house-TPU acceleration (concentration risk) → **[[AVGO]] LONG $357.89**, **[[GOOGL]] NEUTRAL $338.46**. **Ciena rev +37% to $1.67B, backlog nearing $10B, supply-limited** (shares −10% on in-line guide) → **[[CIEN]] LONG $321.00**. **Packaging:** big tech shifts advanced-packaging to Intel Foundry as **TSMC tool procurement ~doubles** and **TSMC defers hybrid bonding for HBM (stays on microbumps)**; Intel EMIB-T gains as a CoWoS alternative → **[[INTC]] LONG $95.80**, **[[TSM]] NEUTRAL $428.91**. **Memory:** Samsung stakes ground on vertical **zHBM / 3D-stacked HBM** ("going to be a while") + a Korean court finds **CXMT's Project Hefei lifted a 620-step Samsung recipe** as CXMT hits **10% DRAM share** → **[[005930.KS]] NEUTRAL ₩255,500**, **[[000660.KS]] NEUTRAL ₩1,647,000**, **[[MU]] NEUTRAL $1,016.59**. **NAND:** Phison warns **2027 = worst-ever NAND shortage**, SK courts Kioxia, Kioxia pitches high-speed **NAND as a DRAM substitute** → **[[285A.T]] LONG ¥54,460**, **[[SNDK]] LONG $1,740.00**. Concept color: OpenAI **"Compilers 2.0"** (LLM as stochastic kernel optimizer, STOKE lineage — wrote the Jalapeño MLA kernel) → [[eda-chip-design]].
 

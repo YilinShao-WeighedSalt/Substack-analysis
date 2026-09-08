@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-05
+updated: 2026-09-08
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -77,3 +77,16 @@ SemiAnalysis and IrrationalAnalysis were among the earliest to frame HBM as a st
 **Update 2026-07-28 — 'HBM is not the answer,' and a violent memory de-rating.** At the Raise Summit, SK Hynix's Hoshik Kim publicly agreed with Gelsinger's "lousy memory / ugly baby" jab: **HBM will not solve the memory wall** (an inherent AI problem — thermal, IO, cost), and Hynix is pursuing solutions *beyond* HBM. Simultaneously the Korea $950B summit deepened the custom-HBM shift — a **$200B Broadcom-Samsung HBM/foundry MoU** and >$500B Nvidia-SK deal — with the panel's read that increasingly **custom base dies** turn HBM from a commodity into a locked-in, per-customer part (and a supply-lockup lever). Counter-supply: **CXMT** IPO'd +470% on the STAR market (DUV-multipatterned, no EUV; pricing DDR5 *above* Samsung), and Nomura sees DRAM revenue hitting $2T by 2030. Crucially, the *tape* diverged hard from the bull narrative this run: [[000660.KS]], [[005930.KS]] and [[285A.T]] all fell ~30–46% from their early-July marks — the first priced evidence that the DRAM-oversupply falsifier (CXMT + Korea's capacity doubling) is being priced, even as the structural franchises stay intact.
 
 **Update 2026-09-05 — Samsung stakes ground on vertical zHBM / 3D-stacked HBM (Semi Doped, Sep 3).** Plain-language: today's HBM stacks DRAM dies side-of-logic and links them through a base die; **zHBM / 3D-stacked HBM** instead stacks memory *vertically on top of logic* (DRAM-on-logic) to raise capacity in the same footprint and cut data-transfer distance — targeting the planar-scaling wall. The hard part is **thermal**: logic runs hot, and heat trapped under DRAM degrades it. Samsung's disclosure names no product/date — read as a public staking of ground against SK Hynix's advanced-HBM lead; Samsung says HBM5 will use hybrid bonding. *Vik likes zHBM in principle ("DRAM-on-logic is logical") but flags the thermal problem and expects it's "going to be a while."* Separately, the **US is pushing Korea to accelerate the HBM4 pivot**, where China's gap stays widest ([[000660.KS]], [[005930.KS]]). Ties to the hybrid-bonding-deferral note on [[advanced-packaging]].
+
+### 2026-09 — HBM de-spec: customers want *fewer layers* (Hot Chips 2026)
+The dominant HBM story at Hot Chips 2026 was **de-spec**: buyers asking to drop from
+12-hi stacks to **8-hi or even 4-hi** (while still buying as many stacks as possible).
+Plain-language: it's never a good sign when customers ask for the *lower-end* version of
+your product — it means they found a way around your roadmap and your value-add is worth
+less than you thought. IA reads it as the DRAM makers having **overplayed their hand**
+(>80% gross margins + shortage → buyers evaluate every alternative, incl. CXL flash-for-
+DRAM and NAND-as-DRAM). Consequences: (1) **8-hi HBM does not need hybrid bonding** →
+kills the hybrid-bonding-for-HBM thesis (bad for [[BESI]]); we may never see 16-hi HBM.
+(2) Future **base dies** improve by using real die-to-die PHYs (UCIe, NVLink D2D,
+Broadcom MAX, Marvell 64G) instead of the JEDEC HBM PHY, and moving the memory controller
+off the main ASIC. Samsung showed the cleanest base-die data (IA holds a large long).

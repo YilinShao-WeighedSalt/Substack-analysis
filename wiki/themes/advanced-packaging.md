@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-05
+updated: 2026-09-08
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -63,3 +63,14 @@ Advanced packaging emerged as a central theme in early 2024, initially driven by
 **Update 2026-08-15 — CoWoS yield clears 99%, bottleneck moves upstream.** Semi Doped (Aug-12) reports TSMC's 5.5-reticle CoWoS yield has crossed **99%** and its 3DIC development cycle is cut to one year — removing what had been the sharpest constraint on AI packaging. TSMC now flags **ABF substrate and memory** as the next bottlenecks (Nvidia holds ~60% of the packaging queue; Microsoft Maia 300 seeking 300k units). Austin's timespan framing: an **ABF line clears first** (~$100M, 18–24 months of laser-drills/platers, no EUV allocation) vs a DRAM fab ($15–20B+, 3 years). TSMC is pursuing two AUO fabs (>TWD 30B) for **FOPLP/CoPoS** capacity (one Longtan site possibly 1.4nm), broadening beyond CoWoS; +$29.44B board capex approval (Aug-13). Camtek (adv-packaging inspection) orders top $600M with adv-packaging revenue set +70% Q1→Q4 — the equipment read-through on the ramp. SK Hynix breaks ground on its Indiana packaging fab Aug-27 (Jensen expected).
 
 **Update 2026-09-05 — TSMC defers hybrid bonding for HBM; EMIB-T pressure builds (Semi Doped, Sep 2-3).** Two linked datapoints. (1) **Microbump vs hybrid bonding, plainly:** a *microbump* is a tiny solder ball joining stacked dies (~tens of µm pitch) — coarse but very high-yield; *hybrid bonding* is direct copper-to-copper bonding at far finer pitch (denser, no solder) but yield-hard at scale. TSMC sits at ~6µm hybrid-bonding pitch yet has **decided against committing capital to hybrid bonding for HBM near-term**, staying on microbumps while yield matures — handing Samsung/SK Hynix a window to put hybrid bonding into HBM roadmaps first (a reversal of the assumed sequence). *Vik is bearish hybrid-bonding-for-HBM: high stacks too costly, bandwidth matters more than raw capacity.* (2) **EMIB-T momentum:** with **TSMC's quarterly tool procurement ~doubling** and CoWoS lead times stretching, big tech is actively routing advanced-packaging work to **Intel Foundry**, where EMIB-T (see ECTC note above) is gaining traction as the credible CoWoS alternative — a concrete demand-pull for [[intel-foundry-decline]] and the [[INTC]] long. Also: Hanmi 2.5D gear, Simmtech ₩400B + Powertech panel-level substrate expansions, Onto Innovation Dragonfly G5 metrology at SEMICON Taiwan 2026 — the equipment tier scaling with the ramp.
+
+### 2026-09 — Hybrid bonding for HBM is "fucked" (Hot Chips 2026)
+Hybrid bonding = copper-to-copper chip stacking at ~10µm pitch, far denser than the
+~36µm microbumps it replaces; it was expected to be *required* for tall (12-hi+) HBM.
+The Hot Chips 2026 **de-spec** trend (see [[hbm-memory]]) breaks that: since **8-hi HBM
+stacks fine on microbumps**, the anticipated hybrid-bonding wave for memory evaporates.
+IA **liquidated its entire [[BESI]] position** on this ("RIP BESI") — BESI's tool sales
+were levered to HBM going hybrid-bonded. Note the irony: hybrid bonding *is* finally
+scaling in **logic** (Fujitsu Monaka; AMD's Genoa-X was the last hybrid-bonded EPYC,
+now capitulated), just not in memory — so the installed tool base has *some* work, but
+not the volume the memory ramp promised.
