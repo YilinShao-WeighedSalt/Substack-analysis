@@ -4,15 +4,20 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-08
+updated: 2026-09-11
 handle: semianalysis
-calls_logged: 227
-hit_rate: "7/22 (32%), ~7 open"
+calls_logged: 231
+hit_rate: "7/22 (32%), ~9 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **What is So Hard About Behind-The-Meter Power? Part 1 (2026-09-10):** Definitive deep dive on **behind-the-meter (BTM)** datacenter power. The Energy Model tracks **75 GW of firm binding orders** (~20 GW in Q2 2026); ~3 GW operational US IT by year-end. Economics: a ~1 GW islanded plant ~$5B vs ~$100B/GW/yr inference at 90%+ GM → speed beats efficiency (Anthropic pays back a plant in ~20 days). **Winners are NOT just incumbents [[GEV]] & Siemens** — the share-gainers are the ~22 reciprocating-engine OEMs (INNIO/Jenbacher, Caterpillar, Cummins, Wartsila) and solid-oxide fuel cells (**[[BE|Bloom]] carries 3.8 GW of orders vs 0.03 GW FuelCell**), plus a new Energy-as-a-Service "BTM utility" layer (VoltaGrid, Williams, Solaris). Six execution gates (bankability, permits, fuel, equipment, workforce, grid-less physics); cracks emerging (Oracle Jupiter & Nebius NJ pivoted to Bloom; secondary turbine market from failed orders most hurts GEV/Siemens). Priced: **[[BE]] LONG $258.49** (dominant fuel-cell winner; Google 900MW Wyoming), **[[CAT]] LONG $805.00** (recip output ~3x 2024), **[[GEV]] NEUTRAL $923.91** & **[[ENR.DE]] NEUTRAL €140.82** (incumbent turbine winners ceding relative share). → [[datacenter-power]].
+
+**hit_rate note (2026-09-11): no new priced call crossed 30 days — holds 7/22 (32%).** The Aug-25 Jalapeño longs ([[AVGO]] $355.59, [[005930.KS]] ₩265,000) resolve ~Sep-24; the Aug-19 CS-4 and Aug-24 AgentX calls were NEUTRAL (excluded). This run adds 2 priced LONGs (BE, CAT) + 2 NEUTRALs (GEV, ENR.DE), all opened at spot.
+
 
 - **TPU Inference Externalization Full Steam Ahead — InferenceX (2026-09-07):** The marquee call. SemiAnalysis publishes the **first third-party TPUv7 Ironwood inference benchmarks** — up to **~50% better perf-per-dollar than Nvidia B200/B300** on FP8 serving (Qwen3.5-397B), with **TorchTPU** (native-PyTorch backend) open-sourcing ~mid-October. Verdict: TPU externalization is real and moving fast, and Google's mature software culture (unlike AMD's) should mature it rapidly; Anthropic is the biggest TPU user (>1M). → **LONG [[GOOGL]]** $338.46. Nuance: TPUv7 has **no native FP4** so Rubin still leads there (TPUv8i "Boardfly" is the real contest) → **NEUTRAL [[NVDA]]** $230.36; AMD dinged on software culture → **NEUTRAL [[AMD]]** $477.57.
 

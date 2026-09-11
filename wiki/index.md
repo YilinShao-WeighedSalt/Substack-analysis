@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-08
+updated: 2026-09-11
 ---
 
 # Wiki Index
@@ -68,6 +68,7 @@ updated: 2026-09-08
 - [[CSCO]] — Cisco Systems
 - [[DELL]] — Dell Technologies
 - [[ENPH]] — Enphase Energy
+- [[ENR.DE]] — ENR.DE — Siemens Energy (BTM turbine incumbent)
 - [[EQT]] — EQT Corporation
 - [[ETN]] — Eaton Corporation
 - [[FEIM]] — Frequency Electronics
@@ -397,6 +398,7 @@ updated: 2026-09-08
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-10-behind-the-meter-power-part-1]] — Behind-The-Meter Power for Datacenters Pt.1 (75 GW firm orders; Bloom fuel cells + Caterpillar recips the share-gainers vs GEV/Siemens) (LONG BE/CAT, NEUT GEV/ENR.DE)
 - [[semianalysis-2026-09-07-tpu-inferencex-full-steam]] — TPU Inference Externalization Full Steam Ahead
 
 - [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] — IEDM 2023: GenAI Yield, CFET
@@ -518,6 +520,9 @@ updated: 2026-09-08
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-09-10-daily-update-september-10th]] — Daily Sep 10 (DOJ probes Nvidia-Groq license, d-Matrix→NVLink Fusion, DeepSeek V4.1 Flash near-free, AMD 50k MI450→Oracle, SMIC >$3B, GF+MPWR) (LONG AMD/UMC/GFS/0981.HK, NEUT NVDA)
+- [[semidoped-2026-09-09-daily-update-september-9th]] — Daily Sep 9 (ASML/TSMC/Samsung High-NA EUV + 12" mask commitments, Kioxia rejects SK tie-up, OpenAI-Samsung chip, CoreWeave $5B, ADI-Alif, Meta Muse) (LONG ASML/INTC/005930/285A.T/CRWV/ADI/META)
+- [[semidoped-2026-09-08-daily-update-september-8th]] — Daily Sep 8 (QCOM-Amazon custom AI-chip deal +$4B warrants, Arm full-stack refresh, GPT-6 Astra HBM bid, Samsung leads Mistral, Verizon-Corning fiber) (LONG QCOM/ARM/MU/000660/005930/285A.T/GLW)
 - [[semidoped-2026-09-07-daily-update-september-7th]] — Daily Update, September 7th 2026
 
 - [[semidoped-2026-04-24-googles-networking-innovations]] — Google's Networking Innovations

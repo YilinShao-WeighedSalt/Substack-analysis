@@ -4,7 +4,7 @@ title: "CAMT — Camtek"
 tags: []
 related: ["[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[irrationalanalysis-2024-09-27-micron-q4-fy2024-intel-meme]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-01-05-long-mrdimm-short-nand-flash]]", "[[irrationalanalysis-2025-05-11-onto-innovation-implosion]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[semidoped-2026-08-12-daily-update]]"]
 created: 2024-07-01
-updated: 2026-08-15
+updated: 2026-09-11
 ticker: CAMT
 current_stance: long
 conviction: medium
@@ -29,3 +29,5 @@ The author established a long position in mid-2024 anchored on CAMT's exposure t
 
 ## Outcome tracking
 No px@call data is available across any entry in the call log, so price-based performance cannot be assessed. The thesis trajectory has been consistently bullish and has not reversed across 18 months of coverage — the author never trimmed or rotated out, even self-critically acknowledging in December 2024 that stubbornness cost returns during the bubble run. The live view would be falsified by (1) US export controls expanding to cover Israeli-domiciled semicap tools, eliminating the China sales advantage, (2) a structural slowdown in HBM capacity additions that removes the primary demand driver for advanced packaging inspection, or (3) KLA successfully displacing CAMT in its core optical inspection niche at leading-edge customers.
+
+**Resolution (2026-09-11):** Semi Doped's Aug-12 LONG ($165.38) → $144.25 = **-12.8% LOSS ✗** — advanced-packaging inspection name gave back the order-momentum pop.

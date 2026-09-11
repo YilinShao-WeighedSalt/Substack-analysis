@@ -2,13 +2,13 @@
 type: ticker
 title: "CRWV — CoreWeave"
 tags: []
-related: ["[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]"]
+related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]"]
 created: 2025-03-22
-updated: 2026-08-15
+updated: 2026-09-11
 ticker: CRWV
 current_stance: mixed
 conviction: low
-last_review: 2026-08-15
+last_review: 2026-09-11
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,6 +23,7 @@ last_review: 2026-08-15
 | 2026-07-02 | [[semianalysis]] | LONG | 81.75 | Meta-cloud selloff misreads Meta as competitor; Meta will be a huge source of neocloud RPO growth, not eat their lunch |
 | 2026-07-06 | [[semianalysis]] | MENTION | 82.94 | Textbook financing case study in the Nvidia-backstop piece: Meta-backstopped DDTL 4.0 ($8.5B) priced 5.9% vs ~10% on unsecured bonds |
 | 2026-08-13 | [[semidoped]] | LONG | 105.26 | Backlog $104B +$25B new commitments; shares +18% after raising prices 25% while sold out; A100s under contract to 2029. Risk: debt $35.6B + Nvidia lock-in |
+| 2026-09-11 | [[semidoped]] | LONG | 89.12 | Hits $5B revenue; GB300 NVL72 lead, first Nvidia Exemplar Cloud, Google interconnect tie-up. |
 
 ## Thesis evolution
 [[irrationalanalysis]] has been consistently bearish from the IPO, framing CoreWeave's S-1 as structurally compromised by Microsoft customer concentration and the risk that Microsoft — both a customer and a direct GPU cloud competitor via Azure — would defect as GPU oversupply normalized. By May 2026 that skepticism was reinforced by the earnings call, where management gave contradictory answers on cost pass-through; the author had already exited the trade and characterized the stock as "platinum dogshit" with no structural long view. [[semianalysis]] sits on the opposite side with consistent LONG calls across three separate reports: ClusterMAX v1.0 (Mar 2025), ClusterMAX 2.0 (Nov 2025), and the H100 Rental Price Index (Apr 2026), arguing CoreWeave's SUNK architecture, automated health-check stack, and rack-level SLAs create a durable operational moat that hyperscaler GPU offerings cannot match — and that the stock's underperformance through early 2026 reflects sentiment lagging improving GPU rental fundamentals rather than deteriorating competitive position. [[citrini]]'s November 2025 mention is neutral color: CoreWeave was named as one of the neoclouds Google approached about hosting TPUs under a franchise model, which neither confirms nor denies the bull/bear debate but introduces a possible hardware-mix optionality. The two publications have not converged — irrationalanalysis focuses on financial structure and management credibility while semianalysis focuses on operational differentiation and supply/demand dynamics, producing a genuine and unresolved disagreement.

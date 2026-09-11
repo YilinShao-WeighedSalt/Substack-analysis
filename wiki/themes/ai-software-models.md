@@ -4,7 +4,7 @@ title: "AI Models, Software & Economics"
 tags: []
 related: []
 created: 2024-05-07
-updated: 2026-08-24
+updated: 2026-09-11
 status: maturing
 first_seen: 2024-05-07
 ---
@@ -108,3 +108,7 @@ SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-m
 **Update 2026-08-06 — Kimi K3 architecture (SemiAnalysis, educational).** [[semianalysis-2026-08-03-kimi-k3-architecture]] dissects Moonshot's open frontier model. The takeaway for the *hardware/inference-economics* thesis: **Kimi Delta Attention (KDA)** — a gated/diagonal-decay evolution of DeltaNet — is a **linear-attention** layer that compresses long context into a fixed-size memory state, so serving cost scales far better than full softmax attention on long agentic traces. Benchmarked on real Claude-Code traces (median 142k input / 444 output tokens); OpenRouter floor $3/$15 per-M in/out; Nvidia + AMD both had Day-0 vLLM recipes; the model needs pipeline-parallel on B200 but fits one **B300** node. No equity call, but it reinforces the run's cross-cutting thread — cheaper inference architectures pressure token pricing and push model makers toward custom silicon ([[custom-silicon-asic]]).
 
 **Update 2026-08-21 (open models: catch-up time halves each era).** SemiAnalysis measured open-vs-closed capability *per era* (early-scaling → reasoning → agentic) and found the open-source catch-up window **halves every generation**: Llama-2 trailed GPT-4 by a wide margin, DeepSeek R1 closed the reasoning gap in 8.5 months, and Kimi K2.6 passed Opus 4.5 in just **4.8 months** (GLM-5.2 cleared GPT-5.2 in 6). GLM 5.3 / Kimi K3 now do real coding/agentic work at a fraction of frontier cost (Fireworks alone ~40T tokens/day). The FUD: model-layer commoditization crushes frontier-lab margins. SemiAnalysis's "less bearish than you think" caveat — it still prefers **Fable 5** day-to-day despite Kimi K3 scoring higher, because the **model+harness product** (Claude Code, Claude Tag) and longer safety-testing windows preserve a productization moat that raw benchmarks miss. No equity call; reinforces that inference economics + harness quality, not benchmark parity, decide value capture.
+
+
+## 2026-09-11 update — DeepSeek V4.1 Flash compresses the inference-price floor again
+**DeepSeek released V4.1 Flash** — a 552B-parameter Mixture-of-Experts model ("Causal-Encoder-Decoder") priced at **fractions of a cent per million tokens**, undercutting Anthropic/OpenAI/Z.AI and beating Kimi K3 on coding/cybersecurity while running faster than its prior flagship. Each DeepSeek release has arrived cheaper and more capable, steadily compressing the global inference-price floor — a direct pressure on the hyperscaler capex cases built around premium model pricing. Mechanism note (Vik): DeepSeek keeps improving KV-cache compression, cutting SSD offload. Alongside: **OpenAI reports it hit its "automated research intern" goal** (3.1 agent-workdays per human workday, up from sub-parity pre-June 2026) and targets an automated AI *researcher* by March 2028 — its public marker toward recursive self-improvement.

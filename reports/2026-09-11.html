@@ -1,0 +1,254 @@
+<title>Semi Scan — Sep 11</title>
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;margin:0}
+.wrap{max-width:960px;margin:0 auto;padding-block:28px;padding-left:18px;padding-right:18px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--sec);margin:34px 0 12px;font-weight:700}
+.sub{color:var(--sec);font-size:14px;margin:0}
+.dots{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0 0;font-size:13px;color:var(--sec)}
+.dot{display:inline-flex;align-items:center;gap:6px}
+.dot i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.status{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:9px 12px;font-size:12.5px;color:var(--sec);margin-top:16px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 15px}
+.tile .k{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}
+.tile .v{font-size:30px;font-weight:750;letter-spacing:-.02em}
+.tile .n{font-size:12px;color:var(--sec);margin-top:3px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:9px;gap:2px}
+.distbar span{display:block}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;padding:10px 10px;border-bottom:1px solid var(--border)}
+td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+.tick{font-weight:700;font-size:13.5px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:2px 7px;border-radius:20px;white-space:nowrap}
+.chip.LONG{color:#fff;background:var(--long)}
+.chip.SHORT{color:#fff;background:var(--short)}
+.chip.NEUTRAL{color:#fff;background:var(--neutral)}
+.pub{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--sec);white-space:nowrap}
+.pub i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.th{color:var(--sec);font-size:12.5px;line-height:1.4}
+.mv{font-weight:700;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:12.5px}
+.mv.g{color:var(--gain)} .mv.l{color:var(--loss)} .mv.n{color:var(--muted)}
+.mv small{display:block;font-weight:400;color:var(--muted);font-size:10px}
+.spots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.spot .hd{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.spot .nm{font-weight:750;font-size:16px}
+.spot .px{font-family:var(--mono);font-weight:700;font-size:15px}
+.spot .rng{margin:12px 0 4px;font-size:11px;color:var(--muted)}
+.rangebar{position:relative;height:6px;background:var(--surface-2);border-radius:4px;margin:5px 0 2px}
+.rangebar .fill{position:absolute;height:6px;background:var(--base);border-radius:4px}
+.rangebar .now{position:absolute;top:-3px;width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--accent);transform:translateX(-50%)}
+.rnglbl{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);font-family:var(--mono)}
+.spot ul{margin:10px 0 0;padding-left:16px}
+.spot li{font-size:12.5px;color:var(--sec);margin:4px 0}
+.scards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:15px;border-top:3px solid var(--base)}
+.sc h3{margin:0;font-size:15px;display:flex;align-items:center;gap:7px}
+.meter{height:8px;background:var(--surface-2);border-radius:5px;overflow:hidden;margin:10px 0 4px}
+.meter i{display:block;height:8px;background:var(--accent);border-radius:5px}
+.sc .hr{font-size:12px;color:var(--sec);font-family:var(--mono)}
+.sc .posts{list-style:none;padding:0;margin:11px 0 0;font-size:12px}
+.sc .posts li{display:flex;gap:7px;align-items:flex-start;margin:7px 0;color:var(--sec)}
+.jar{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:4px 16px}
+.jar dl{margin:0}
+.jrow{padding:11px 0;border-bottom:1px solid var(--border)}
+.jrow:last-child{border-bottom:none}
+.jrow dt{font-weight:700;font-size:13px;font-family:var(--mono)}
+.jrow dd{margin:3px 0 0;font-size:12.5px;color:var(--sec);line-height:1.45}
+.tbar{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:12.5px}
+.tbar .lbl{width:180px;flex:none;color:var(--sec)}
+.tbar .track{flex:1;background:var(--surface-2);border-radius:4px;height:16px;overflow:hidden}
+.tbar .track i{display:block;height:16px;border-radius:4px}
+.tbar .ct{width:22px;text-align:right;font-family:var(--mono);color:var(--muted);font-size:11px}
+.foot{margin-top:30px;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6}
+@media(max-width:680px){.tiles{grid-template-columns:repeat(2,1fr)}.spots{grid-template-columns:1fr}.scards{grid-template-columns:1fr}.tbar .lbl{width:120px}.hide-sm{display:none}}
+</style>
+<div class="wrap">
+<h1>Semiconductor Intelligence Brief</h1>
+<p class="sub">3-day scan · posts Sep 8–10, 2026 · generated Sep 11</p>
+<div class="dots">
+ <span class="dot"><i style="background:var(--pub-semidoped)"></i>Semi Doped</span>
+ <span class="dot"><i style="background:var(--pub-semianalysis)"></i>SemiAnalysis</span>
+ <span class="dot"><i style="background:var(--pub-irrational)"></i>Irrational Analysis</span>
+</div>
+<div class="status"><b>Run status:</b> Semi Doped ✓ 3 new dailies (Sep 8/9/10) · SemiAnalysis ✓ 1 new post (Sep-10 behind-the-meter power, Part 1) · Irrational Analysis — no new post since Sep-6 (already ingested). All bodies full. Analyst-consensus endpoint returned 401 (egress-blocked) → consensus bars omitted, not fabricated.</div>
+<h2>The State of Play</h2>
+<div class="tiles">
+ <div class="tile"><div class="k">Posts scanned</div><div class="v">4</div><div class="n">3 SD dailies · 1 SA deep-dive</div></div>
+ <div class="tile"><div class="k">Tickers priced</div><div class="v">21</div><div class="n">live Yahoo chart API</div></div>
+ <div class="tile"><div class="k">Calls logged</div><div class="v">21</div>
+   <div class="distbar">
+     <span style="background:var(--long);flex:18" title="18 long"></span>
+     <span style="background:var(--neutral);flex:3" title="3 neutral"></span>
+   </div>
+   <div class="n">18 ▲ long · 3 ● neutral · 0 ▼ short</div></div>
+ <div class="tile"><div class="k">Book bias</div><div class="v">Long</div><div class="n">custom silicon · memory · power</div></div>
+</div>
+<h2>Dominant story</h2>
+<div class="card" style="padding:16px 18px;font-size:14px;line-height:1.55;color:var(--sec)">
+<b style="color:var(--ink)">The custom-silicon wave finally pulls its two laggards in, while power moves from turbines to engines.</b>
+Qualcomm — the perennial short — lands a multi-generational Amazon custom-AI-chip deal (+10%), and OpenAI deepens its Samsung/Arm silicon pacts: the ASIC turn now reaches the names it had passed over. Underneath, TSMC and Samsung finally sign for <b>High-NA EUV</b>, GPT-6 Astra reprices the memory bid, and SemiAnalysis's behind-the-meter deep dive names the real power winners — Bloom's fuel cells and Caterpillar's engines, not just the GE Vernova / Siemens turbine incumbents. DeepSeek's near-free V4.1 Flash quietly compresses the inference-price floor the whole capex case rests on.
+</div>
+<h2>Call Board — 21 logged calls this run</h2>
+<div class="card" style="overflow-x:auto"><table><thead><tr><th>Ticker</th><th>Call</th><th>Source</th><th>Thesis</th><th>Price</th><th class="hide-sm">3-mo</th><th>vs pub's last mark</th></tr></thead><tbody id="cb"></tbody></table></div>
+<h2>Ticker spotlights</h2><div class="spots" id="spots"></div>
+<h2>Source scorecards</h2>
+<div class="scards">
+ <div class="sc" style="border-top-color:var(--pub-semidoped)">
+   <h3><span style="width:10px;height:10px;border-radius:50%;background:var(--pub-semidoped);display:inline-block"></span>Semi Doped</h3>
+   <div class="meter"><i style="width:45%"></i></div>
+   <div class="hr">hit-rate 18/40 (45%) · ~68 open</div>
+   <ul class="posts">
+     <li><span class="chip LONG">▲</span><span>Sep 8 · QCOM-Amazon deal, GPT-6 Astra memory bid, Arm full-stack refresh</span></li>
+     <li><span class="chip LONG">▲</span><span>Sep 9 · High-NA EUV signed, OpenAI-Samsung chip, CoreWeave $5B, ADI-Alif</span></li>
+     <li><span class="chip NEUTRAL">●</span><span>Sep 10 · DOJ probes Nvidia-Groq; AMD ships 50k MI450; SMIC tops $3B</span></li>
+   </ul>
+   <div class="hr" style="margin-top:10px;color:var(--muted)">▲ Aug 10-12 batch resolved 3W/2L: INTC +2.7%, TSM +1.4%/+0.4% ✓ · CAMT −12.8%, 2317.TW −3.3% ✗</div>
+ </div>
+ <div class="sc" style="border-top-color:var(--pub-semianalysis)">
+   <h3><span style="width:10px;height:10px;border-radius:50%;background:var(--pub-semianalysis);display:inline-block"></span>SemiAnalysis</h3>
+   <div class="meter"><i style="width:32%"></i></div>
+   <div class="hr">hit-rate 7/22 (32%) · ~7 open</div>
+   <ul class="posts">
+     <li><span class="chip LONG">▲</span><span>Sep 10 · Behind-the-meter power Pt.1 — 75 GW firm orders; Bloom + Caterpillar the share-gainers</span></li>
+     <li><span class="chip NEUTRAL">●</span><span>Sep 10 · GEV / Siemens turbine incumbents win but cede relative share</span></li>
+   </ul>
+   <div class="hr" style="margin-top:10px;color:var(--muted)">No priced call crossed 30d — Jalapeño Aug-25 longs (AVGO, Samsung) resolve ~Sep 24.</div>
+ </div>
+ <div class="sc" style="border-top-color:var(--pub-irrational)">
+   <h3><span style="width:10px;height:10px;border-radius:50%;background:var(--pub-irrational);display:inline-block"></span>Irrational Analysis</h3>
+   <div class="meter"><i style="width:52%"></i></div>
+   <div class="hr">hit-rate 22/42 (52%) · silent this window</div>
+   <ul class="posts">
+     <li><span style="color:var(--muted);font-size:12px">No new post since the Sep-6 Hot Chips recap (already ingested). Its Aug-18/19 LITE/MRVL/CBRS-short batch crosses 30d ~Sep 18-19 and resolves next scan.</span></li>
+   </ul>
+ </div>
+</div>
+<h2>Jargon decoder</h2><div class="jar"><dl>
+<div class="jrow"><dt>High-NA EUV</dt><dd>Next-gen extreme-ultraviolet lithography with a wider 0.55 lens aperture — prints finer features in one pass. ~$350-400M/machine; TSMC now committed for 2030, Samsung for DRAM by 2028.</dd></div>
+<div class="jrow"><dt>Behind-the-meter (BTM)</dt><dd>Power generated on-site, bypassing the public grid — 'off-grid' / 'islanded'. Faster to stand up than waiting years for a grid interconnection; SemiAnalysis tracks 75 GW of firm orders.</dd></div>
+<div class="jrow"><dt>Reciprocating engine / genset</dt><dd>A gas piston-engine generator (0.5-20 MW/unit) — the surprise BTM winner over big turbines; 22 OEMs now have multi-hundred-MW datacenter orders, up from 12 a year ago.</dd></div>
+<div class="jrow"><dt>Solid-oxide fuel cell</dt><dd>Bloom Energy's on-site power unit; carries nearly all BTM fuel-cell orders (3.8 GW) and permits more easily than combustion turbines.</dd></div>
+<div class="jrow"><dt>Custom AI ASIC</dt><dd>A chip designed by a cloud/model firm (Trainium, TPU, OpenAI's Jalapeño) instead of buying a merchant Nvidia GPU — the wave QCOM-Amazon and OpenAI-Samsung just widened.</dd></div>
+<div class="jrow"><dt>NVLink Fusion</dt><dd>Nvidia's scale-up interconnect opened to third-party accelerators so they plug into Nvidia racks — d-Matrix's Raptor and MediaTek both wired in; the chip only fully performs inside Nvidia's fabric.</dd></div>
+<div class="jrow"><dt>HBM</dt><dd>High-bandwidth memory — DRAM stacked beside the GPU; the AI-compute bottleneck. A GPT-6-class model launch reads straight through to HBM demand.</dd></div>
+<div class="jrow"><dt>Cost per token / perf-per-$</dt><dd>The inference-economics yardstick. Google's TPUv7 Ironwood came in ~50% better perf-per-dollar than Nvidia B200/B300 in the first third-party test.</dd></div>
+<div class="jrow"><dt>Mature node</dt><dd>An older, larger process (UMC, SMIC) — re-rating on AI-adjacent power/analog demand rather than leading-edge logic.</dd></div>
+<div class="jrow"><dt>Mixture-of-Experts (MoE)</dt><dd>A model that activates only a subset of 'expert' sub-networks per token, cutting inference cost — DeepSeek's V4.1 Flash is a 552B-param MoE priced at fractions of a cent per million tokens.</dd></div>
+<div class="jrow"><dt>Acqui-hire / license-not-buy</dt><dd>Structuring a deal as a license rather than an acquisition to stay under merger-review thresholds — the DOJ is now probing whether Nvidia's Groq deal did exactly that.</dd></div>
+<div class="jrow"><dt>FC-BGA / glass substrate</dt><dd>Advanced package substrates that carry the chip; microcrack yield is the hard part. Korean rivals (Samsung Electro-Mechanics, LG Innotek) are racing to glass by 2028.</dd></div>
+</dl></div>
+<h2>Themes in play</h2><div class="card" style="padding:16px 18px">
+<div class="tbar"><span class="lbl">Custom silicon & ASICs</span><span class="track"><i style="width:100%;background:var(--pub-semidoped)"></i></span><span class="ct">9</span></div>
+<div class="tbar"><span class="lbl">Datacenter power & BTM</span><span class="track"><i style="width:88%;background:var(--pub-semianalysis)"></i></span><span class="ct">8</span></div>
+<div class="tbar"><span class="lbl">HBM & memory cycle</span><span class="track"><i style="width:77%;background:var(--pub-semidoped)"></i></span><span class="ct">7</span></div>
+<div class="tbar"><span class="lbl">Foundry & lithography</span><span class="track"><i style="width:77%;background:var(--pub-irrational)"></i></span><span class="ct">7</span></div>
+<div class="tbar"><span class="lbl">AI models & inference econ</span><span class="track"><i style="width:55%;background:var(--pub-semidoped)"></i></span><span class="ct">5</span></div>
+<div class="tbar"><span class="lbl">Optics & networking</span><span class="track"><i style="width:55%;background:var(--pub-semianalysis)"></i></span><span class="ct">5</span></div>
+<div class="tbar"><span class="lbl">Edge AI & robotics</span><span class="track"><i style="width:44%;background:var(--pub-irrational)"></i></span><span class="ct">4</span></div>
+</div>
+<div class="foot">Generated by the Substack Scanner 3-day memory loop · prices via Yahoo chart API (live) · not investment advice.<br>
+Calls are logged at spot on the run date; "vs pub's last mark" shows the move since that publication last flagged the name.</div>
+</div>
+<script>
+const PRICES={"QCOM": {"price": 176.88, "hi52": 259.92, "lo52": 121.99, "cur": "USD", "closes": [202.96, 211.72, 220.81, 214.07, 212.97, 226.11, 221.9, 204.13, 197.41, 204.9, 189.39, 188.72, 184.79, 181.92, 176.25, 186.48, 182.97, 186.56, 191.11, 189.16, 183.98, 178.1, 177.98, 170.61, 171.78, 170.32, 173.5, 175.63, 171.11, 166.97, 170.04, 162.88, 155.68, 151.6, 147.61, 151.57, 162.67, 157.53, 160.39, 167.86, 162.17, 162.68, 163.07, 164.79, 165.79, 162.18, 160.19, 161.91, 160.74, 160.75, 158.53, 160.56, 163.72, 164.78, 164.19, 170.48, 166.61, 169.96, 168.57, 168.74, 174.09, 176.4]}, "ARM": {"price": 254.18, "hi52": 452.7, "lo52": 100.02, "cur": "USD", "closes": [342.23, 380.81, 412.55, 396.34, 418.88, 439.46, 407.72, 366.39, 359.08, 347.71, 334.27, 343.58, 354.57, 337.47, 315.28, 322.24, 300.43, 300.24, 327.87, 323.39, 298.99, 281.17, 277.01, 262.01, 267.19, 269.61, 289.73, 283.4, 283.04, 260.01, 266.33, 244.74, 224.89, 241.54, 239.69, 239.06, 280.56, 274.58, 286.68, 282.57, 267.85, 268.93, 271.87, 278.65, 279.44, 271.43, 253.32, 249.34, 250.72, 243.32, 238.78, 241.56, 251.06, 255.21, 239.05, 241.91, 234.82, 234.86, 242.59, 252.09, 261.53, 264.23]}, "MU": {"price": 977.41, "hi52": 1255.0, "lo52": 147.61, "cur": "USD", "closes": [995.87, 981.61, 1087.99, 1020.76, 1043.19, 1133.99, 1211.38, 1051.77, 1048.51, 1213.56, 1132.33, 1145.28, 1154.29, 1032.28, 975.56, 984.75, 938.38, 948.8, 991.64, 979.3, 937.0, 983.12, 904.28, 853.2, 848.95, 865.46, 970.82, 959.48, 990.21, 920.95, 900.2, 820.53, 739.0, 874.66, 823.03, 829.5, 892.67, 893.19, 881.47, 877.57, 861.0, 868.52, 911.29, 949.83, 971.66, 1011.75, 940.76, 937.11, 974.33, 966.78, 910.43, 932.97, 938.4, 935.39, 932.86, 958.73, 933.44, 956.08, 958.16, 1016.59, 1000.26, 1027.77]}, "000660.KS": {"price": 1776000.0, "hi52": 2987000.0, "lo52": 305500.0, "cur": "KRW", "closes": [2101000.0, 2150000.0, 2288000.0, 2382000.0, 2521000.0, 2685000.0, 2764000.0, 2919000.0, 2555000.0, 2621000.0, 2917000.0, 2673000.0, 2628000.0, 2650000.0, 2560000.0, 2187000.0, 2425000.0, 2343000.0, 2201000.0, 2076000.0, 2186000.0, 2180000.0, 1845000.0, 1913000.0, 2082000.0, 1842000.0, 1764000.0, 1836000.0, 1830000.0, 1919000.0, 1759000.0, 1816000.0, 1550000.0, 1401000.0, 1322000.0, 1718000.0, 1567000.0, 1577000.0, 1668000.0, 1495000.0, 1422000.0, 1420000.0, 1425000.0, 1504000.0, 1593000.0, 1645000.0, 1662000.0, 1500000.0, 1691000.0, 1730000.0, 1671000.0, 1678000.0, 1688000.0, 1730000.0, 1653000.0, 1674000.0, 1693000.0, 1613000.0, 1596000.0, 1647000.0, 1783000.0, 1793000.0, 1856000.0, 1853000.0, 1776000.0]}, "285A.T": {"price": 53770.0, "hi52": 112700.0, "lo52": 3620.0, "cur": "JPY", "closes": [75440.0, 81200.0, 90910.0, 94720.0, 96000.0, 96900.0, 108600.0, 108700.0, 92290.0, 92500.0, 103850.0, 92180.0, 88450.0, 89680.0, 88130.0, 76260.0, 83300.0, 81590.0, 72400.0, 71870.0, 77860.0, 77000.0, 67100.0, 69100.0, 73100.0, 62110.0, 52110.0, 61060.0, 64270.0, 61880.0, 56010.0, 54550.0, 44550.0, 38380.0, 39500.0, 46500.0, 49160.0, 52090.0, 54300.0, 48740.0, 47730.0, 48010.0, 49870.0, 51800.0, 53740.0, 61840.0, 57150.0, 49950.0, 52950.0, 54320.0, 50930.0, 51260.0, 50000.0, 52500.0, 47900.0, 49990.0, 51000.0, 51000.0, 51670.0, 54460.0, 59530.0, 57410.0, 57000.0, 58090.0, 53770.0]}, "GLW": {"price": 163.12, "hi52": 271.78, "lo52": 74.6, "cur": "USD", "closes": [176.55, 179.2, 187.88, 177.42, 175.4, 194.92, 209.83, 194.07, 205.83, 228.01, 221.05, 255.69, 255.43, 220.63, 196.79, 194.8, 185.38, 184.03, 192.38, 190.89, 183.11, 187.64, 174.41, 158.39, 154.61, 153.1, 162.41, 154.06, 156.06, 146.65, 143.36, 126.01, 124.05, 135.22, 138.25, 146.64, 159.89, 156.7, 157.18, 165.68, 157.76, 159.19, 167.44, 158.54, 165.99, 173.21, 159.9, 152.46, 151.45, 149.84, 145.55, 147.16, 152.78, 152.8, 148.98, 148.73, 145.56, 144.13, 146.0, 154.3, 165.96, 168.46]}, "ASML": {"price": 1687.43, "hi52": 1999.96, "lo52": 798.51, "cur": "USD", "closes": [1899.48, 1863.55, 1892.66, 1803.89, 1867.83, 1929.68, 1929.25, 1778.46, 1762.77, 1841.18, 1794.62, 1883.11, 1989.44, 1843.04, 1769.32, 1825.07, 1747.28, 1768.65, 1804.25, 1797.32, 1726.04, 1775.64, 1815.27, 1784.87, 1747.58, 1739.02, 1801.51, 1801.86, 1803.0, 1757.09, 1655.26, 1582.95, 1550.69, 1651.44, 1629.0, 1642.52, 1711.89, 1678.22, 1704.37, 1740.99, 1733.48, 1799.38, 1810.07, 1847.9, 1844.08, 1883.12, 1802.98, 1751.73, 1750.31, 1763.76, 1740.13, 1744.16, 1745.64, 1735.01, 1696.16, 1696.01, 1665.14, 1682.3, 1646.19, 1714.88, 1764.85, 1729.52]}, "INTC": {"price": 100.32, "hi52": 142.35, "lo52": 24.05, "cur": "USD", "closes": [116.96, 124.57, 127.86, 117.05, 121.1, 133.99, 140.94, 132.28, 131.65, 132.87, 128.32, 131.72, 139.63, 127.02, 120.35, 122.2, 110.39, 110.24, 112.54, 109.84, 103.12, 107.76, 102.99, 96.98, 95.04, 97.06, 105.45, 102.62, 100.23, 92.32, 91.67, 86.3, 81.88, 91.13, 90.2, 91.0, 100.86, 101.06, 99.81, 101.65, 97.52, 97.71, 100.95, 104.56, 102.5, 103.49, 96.69, 92.8, 92.13, 90.07, 87.26, 87.48, 88.24, 92.09, 89.47, 89.51, 88.97, 90.05, 91.67, 95.8, 104.47, 106.24]}, "005930.KS": {"price": 258750.0, "hi52": 374500.0, "lo52": 72100.0, "cur": "KRW", "closes": [299000.0, 322500.0, 337000.0, 343000.0, 346500.0, 362500.0, 354000.0, 353500.0, 310000.0, 340500.0, 358500.0, 339500.0, 323000.0, 334000.0, 314500.0, 286000.0, 309500.0, 318000.0, 296000.0, 277500.0, 278000.0, 285000.0, 254500.0, 263000.0, 279500.0, 255000.0, 244000.0, 259000.0, 260500.0, 270000.0, 249500.0, 254000.0, 220000.0, 208500.0, 207000.0, 262500.0, 239500.0, 240000.0, 246000.0, 230500.0, 231000.0, 230000.0, 239500.0, 255500.0, 268000.0, 274500.0, 268500.0, 247500.0, 271000.0, 281500.0, 257000.0, 257000.0, 261500.0, 266000.0, 257000.0, 260000.0, 261000.0, 250500.0, 250000.0, 255500.0, 270000.0, 269500.0, 269500.0, 269000.0, 258750.0]}, "CRWV": {"price": 89.12, "hi52": 153.2, "lo52": 60.55, "cur": "USD", "closes": [95.74, 100.55, 106.71, 117.03, 115.21, 117.95, 111.29, 105.72, 100.88, 98.76, 96.58, 95.51, 99.54, 85.68, 81.75, 86.46, 83.53, 90.0, 89.7, 88.88, 83.31, 79.94, 77.12, 72.91, 73.21, 73.06, 79.58, 82.64, 81.1, 71.88, 70.79, 67.3, 60.82, 73.9, 71.77, 85.76, 91.9, 89.89, 85.33, 90.67, 88.19, 90.32, 107.73, 106.29, 105.26, 106.0, 93.17, 90.87, 89.76, 87.85, 86.25, 88.04, 88.01, 86.8, 84.23, 84.89, 81.85, 80.93, 84.56, 89.36, 99.83, 94.94]}, "ADI": {"price": 361.25, "hi52": 445.91, "lo52": 223.47, "cur": "USD", "closes": [412.13, 417.79, 427.58, 416.0, 414.45, 434.46, 445.48, 407.26, 413.16, 417.93, 386.91, 391.78, 397.17, 388.98, 377.16, 388.83, 379.03, 385.4, 393.64, 395.65, 386.01, 392.75, 390.96, 380.53, 375.36, 372.46, 382.81, 386.73, 380.2, 371.86, 371.89, 365.83, 353.37, 366.67, 367.41, 361.88, 380.29, 377.69, 377.31, 389.93, 383.93, 385.3, 384.43, 381.17, 389.39, 390.28, 376.63, 373.26, 370.24, 373.09, 371.17, 373.66, 371.8, 374.52, 361.78, 362.14, 354.52, 355.71, 356.5, 362.25, 363.2, 365.07]}, "META": {"price": 644.38, "hi52": 790.8, "lo52": 520.26, "cur": "USD", "closes": [568.43, 566.98, 593.48, 600.21, 567.58, 577.22, 563.85, 562.2, 557.67, 542.87, 550.25, 562.6, 563.29, 612.91, 582.9, 600.29, 615.58, 603.12, 631.48, 669.21, 656.73, 661.04, 681.31, 664.54, 646.01, 645.85, 643.81, 627.17, 606.1, 595.19, 593.87, 593.41, 585.61, 539.03, 556.71, 590.24, 587.94, 588.77, 589.9, 592.1, 594.92, 599.12, 578.85, 594.97, 589.85, 568.97, 543.67, 546.03, 545.83, 549.9, 559.02, 570.05, 576.14, 571.1, 578.02, 572.34, 578.54, 592.85, 610.68, 616.77, 613.48, 653.69]}, "AMD": {"price": 503.6, "hi52": 584.73, "lo52": 149.85, "cur": "USD", "closes": [488.45, 511.57, 547.26, 507.29, 512.48, 537.37, 551.63, 519.85, 519.74, 532.57, 521.58, 539.49, 580.91, 540.88, 517.82, 552.05, 516.11, 517.41, 546.72, 557.89, 534.39, 548.13, 529.14, 500.94, 495.76, 503.57, 544.43, 552.33, 539.69, 521.95, 494.95, 454.62, 429.56, 485.39, 476.15, 484.64, 518.58, 482.05, 489.28, 483.36, 469.56, 474.32, 482.93, 483.01, 514.39, 506.0, 484.39, 466.42, 469.46, 473.25, 456.75, 479.18, 480.93, 476.67, 465.58, 470.72, 459.61, 457.06, 456.16, 477.57, 505.74, 521.1]}, "UMC": {"price": 22.12, "hi52": 28.96, "lo52": 6.72, "cur": "USD", "closes": [20.68, 21.63, 23.08, 21.62, 21.76, 24.08, 27.5, 26.2, 28.01, 27.73, 25.58, 26.84, 27.21, 25.71, 24.54, 25.83, 23.83, 24.73, 24.86, 24.34, 23.46, 23.84, 24.92, 22.29, 21.25, 20.3, 21.19, 21.29, 20.87, 19.48, 19.08, 17.36, 17.11, 18.94, 19.03, 18.69, 20.63, 19.29, 19.2, 18.72, 18.79, 18.94, 19.31, 19.38, 19.15, 19.53, 18.48, 18.12, 18.0, 18.34, 19.05, 19.6, 19.03, 19.07, 19.79, 19.88, 20.47, 19.97, 19.86, 20.77, 21.82, 22.69]}, "GFS": {"price": 45.96, "hi52": 92.55, "lo52": 31.59, "cur": "USD", "closes": [80.74, 81.38, 83.98, 79.92, 80.64, 85.83, 89.67, 83.39, 83.7, 86.12, 79.78, 81.0, 82.41, 77.23, 69.84, 68.91, 65.84, 67.97, 69.71, 68.97, 63.94, 63.39, 61.41, 58.24, 57.48, 56.81, 59.39, 58.49, 56.91, 53.53, 53.18, 49.02, 47.07, 49.89, 49.99, 50.01, 52.02, 49.46, 50.36, 53.93, 50.05, 50.82, 53.18, 52.69, 54.58, 53.44, 49.9, 48.58, 47.33, 48.05, 45.95, 45.92, 45.67, 46.34, 44.76, 44.69, 43.93, 43.97, 44.53, 45.21, 45.09, 45.95]}, "0981.HK": {"price": 63.45, "hi52": 93.5, "lo52": 49.32, "cur": "HKD", "closes": [72.35, 73.3, 71.65, 76.65, 74.0, 75.75, 76.5, 78.9, 77.85, 84.8, 86.0, 80.0, 84.8, 89.4, 80.4, 77.6, 75.75, 73.45, 75.8, 83.55, 79.65, 78.35, 78.35, 76.3, 75.2, 67.7, 69.75, 75.5, 72.9, 70.75, 71.35, 70.65, 69.1, 67.2, 62.0, 63.25, 62.2, 65.3, 68.0, 65.35, 66.9, 66.2, 65.3, 67.4, 67.55, 70.8, 75.15, 75.85, 73.0, 72.1, 72.5, 66.75, 67.85, 69.7, 71.3, 70.15, 70.75, 68.85, 68.25, 68.05, 67.2, 68.3, 65.35, 65.0, 63.45]}, "NVDA": {"price": 218.36, "hi52": 236.54, "lo52": 164.27, "cur": "USD", "closes": [204.87, 205.19, 212.45, 207.41, 204.65, 210.69, 208.65, 200.04, 199.0, 195.74, 192.53, 194.97, 200.09, 197.58, 194.83, 195.55, 196.93, 204.12, 202.78, 210.96, 203.53, 211.8, 212.5, 207.4, 202.81, 203.28, 207.29, 212.06, 208.76, 206.84, 196.51, 197.01, 190.01, 195.04, 200.75, 206.64, 211.94, 219.22, 218.99, 223.96, 217.55, 217.5, 224.09, 225.3, 225.16, 225.01, 219.74, 217.56, 216.85, 214.72, 208.48, 213.05, 209.66, 227.98, 217.55, 220.78, 217.44, 224.41, 228.45, 230.36, 225.73, 223.67]}, "2454.TW": {"price": 4720.0, "hi52": 4970.0, "lo52": 1130.0, "cur": "TWD", "closes": [4085.0, 4180.0, 4470.0, 4560.0, 4460.0, 4390.0, 4465.0, 4535.0, 4285.0, 4310.0, 3880.0, 3910.0, 4245.0, 4335.0, 4345.0, 4195.0, 4125.0, 4030.0, 3995.0, 3925.0, 3925.0, 3825.0, 3660.0, 3740.0, 3700.0, 3370.0, 3340.0, 3670.0, 3850.0, 3875.0, 3750.0, 3680.0, 3315.0, 3150.0, 3235.0, 3555.0, 3910.0, 3865.0, 4000.0, 3920.0, 3900.0, 3960.0, 4020.0, 4015.0, 4225.0, 4210.0, 4050.0, 3885.0, 3845.0, 3700.0, 3790.0, 3765.0, 3735.0, 3945.0, 3865.0, 3985.0, 3925.0, 4315.0, 4275.0, 4340.0, 4415.0, 4760.0, 4710.0, 4625.0, 4720.0]}, "IFX.DE": {"price": 55.8, "hi52": 88.83, "lo52": 31.27, "cur": "EUR", "closes": [75.1, 77.06, 80.06, 80.75, 79.28, 77.06, 82.01, 81.97, 85.94, 80.56, 79.56, 82.01, 78.3, 78.24, 81.67, 77.9, 76.35, 77.38, 77.21, 70.83, 70.3, 73.35, 72.48, 70.37, 71.82, 67.31, 64.71, 63.66, 64.0, 67.54, 69.8, 65.49, 64.41, 61.49, 57.77, 54.48, 59.47, 61.67, 61.47, 63.72, 60.08, 60.32, 62.08, 62.53, 62.85, 63.09, 62.5, 61.73, 61.97, 57.24, 54.98, 55.41, 55.97, 54.16, 54.85, 55.19, 57.17, 57.08, 56.29, 55.54, 55.77, 55.53, 56.86, 58.45, 56.95]}, "BE": {"price": 258.49, "hi52": 351.28, "lo52": 61.37, "cur": "USD", "closes": [248.88, 260.22, 274.5, 280.88, 284.99, 328.91, 345.85, 321.98, 326.19, 309.18, 252.02, 275.01, 302.7, 289.5, 270.89, 295.05, 269.57, 254.29, 257.02, 244.61, 233.49, 243.4, 239.38, 206.73, 214.96, 197.06, 226.26, 218.22, 217.3, 184.89, 188.18, 166.84, 163.75, 207.12, 205.81, 218.32, 228.11, 234.33, 228.96, 219.34, 210.63, 211.21, 237.16, 236.22, 229.94, 232.16, 209.01, 206.63, 202.48, 201.45, 204.02, 217.45, 218.21, 217.83, 210.77, 206.3, 213.63, 217.28, 235.55, 252.87, 277.22, 269.28]}, "CAT": {"price": 805.0, "hi52": 1073.46, "lo52": 423.32, "cur": "USD", "closes": [897.63, 910.57, 933.93, 945.46, 955.92, 985.82, 1022.28, 984.24, 994.45, 1057.01, 997.47, 1033.19, 1064.9, 991.41, 963.53, 969.92, 940.12, 948.08, 938.39, 952.41, 931.47, 933.34, 914.3, 877.17, 880.28, 864.3, 889.97, 889.31, 894.54, 888.73, 873.28, 840.85, 782.71, 809.14, 814.81, 830.03, 876.54, 871.08, 856.96, 842.19, 837.58, 843.37, 855.6, 854.6, 856.57, 881.65, 840.87, 816.15, 815.39, 827.9, 811.02, 811.29, 821.93, 817.0, 800.25, 797.47, 779.16, 792.28, 800.14, 813.94, 822.48, 815.56]}, "GEV": {"price": 923.91, "hi52": 1195.94, "lo52": 530.16, "cur": "USD", "closes": [906.79, 940.66, 979.07, 982.35, 1048.86, 1109.73, 1127.59, 1034.98, 1057.65, 1085.47, 1045.17, 1102.51, 1174.86, 1134.35, 1113.11, 1152.04, 1077.08, 1070.99, 1075.26, 1091.57, 1042.6, 1066.01, 1055.28, 1036.22, 1057.84, 1079.18, 1078.81, 985.03, 1031.19, 1014.75, 996.57, 943.38, 900.28, 981.98, 990.29, 1006.76, 1018.53, 1017.96, 1000.3, 990.32, 990.85, 1011.88, 1039.9, 1049.42, 1063.25, 1079.0, 1004.53, 987.46, 966.01, 956.85, 942.1, 926.73, 953.09, 953.83, 911.93, 898.53, 898.53, 921.94, 941.84, 941.95, 971.31, 951.04]}, "ENR.DE": {"price": 140.82, "hi52": 191.66, "lo52": 90.3, "cur": "EUR", "closes": [138.68, 147.0, 153.58, 156.2, 156.12, 161.74, 169.34, 168.92, 169.14, 162.5, 159.86, 163.46, 153.92, 157.06, 165.8, 163.34, 165.82, 168.12, 170.44, 155.3, 151.9, 156.24, 152.12, 150.68, 154.12, 152.18, 148.74, 147.66, 152.64, 158.14, 152.32, 150.46, 151.34, 148.38, 137.9, 135.18, 146.16, 147.44, 147.54, 150.86, 150.86, 153.68, 153.54, 154.6, 158.56, 161.7, 160.72, 160.72, 162.8, 154.28, 154.34, 152.58, 153.36, 148.74, 152.76, 151.1, 150.24, 149.7, 142.18, 141.08, 142.24, 145.4, 146.52, 148.86, 145.14]}};
+const CALLS=[{"sym": "QCOM", "name": "QCOM", "dir": "LONG", "pub": "semidoped", "date": "Sep 8", "thesis": "Amazon signs multi-gen custom AI-chip deal; AWS gets up to $4B QCOM warrants; +10% on the day", "px": "$176.88", "prev": 168.74, "plabel": "SD Sep-7 NEUT", "cur": "USD"}, {"sym": "ARM", "name": "ARM", "dir": "LONG", "pub": "semidoped", "date": "Sep 8", "thesis": "One-shot agentic-AI stack refresh: CSS Mobile 2, Neoverse N4, new AGI CPU + robotics framework", "px": "$254.18", "prev": null, "plabel": null, "cur": "USD"}, {"sym": "MU", "name": "MU", "dir": "LONG", "pub": "semidoped", "date": "Sep 8", "thesis": "GPT-6 Astra launch lifts all memory; MU/Hynix/Intel futures +4% on HBM read-through", "px": "$977.41", "prev": 1016.59, "plabel": "SD Sep-2 NEUT", "cur": "USD"}, {"sym": "000660.KS", "name": "SK Hynix", "dir": "LONG", "pub": "semidoped", "date": "Sep 8", "thesis": "Korea memory bid on GPT-6 Astra HBM demand; Future Forum frames HBM as prime growth vector", "px": "\u20a91,776,000", "prev": 1647000, "plabel": "SD Sep-2 NEUT", "cur": "KRW"}, {"sym": "285A.T", "name": "Kioxia", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "Apple signs uncapped 3-5yr NAND deal (Kioxia frontrunner); CEO vows price restraint, rejects SK tie-up", "px": "\u00a553,770", "prev": 60460, "plabel": "SD Sep-7 LONG", "cur": "JPY"}, {"sym": "GLW", "name": "Corning", "dir": "LONG", "pub": "semidoped", "date": "Sep 8", "thesis": "Verizon-Corning multi-billion fiber pact explicitly built for US AI connectivity", "px": "$163.12", "prev": 149.84, "plabel": "SD Aug-21 LONG", "cur": "USD"}, {"sym": "ASML", "name": "ASML", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "TSMC & Samsung give formal High-NA EUV + 12-inch mask commitments; TSMC 2030, Samsung DRAM 2028", "px": "$1,687.43", "prev": 1665.14, "plabel": "SD Sep-1 LONG", "cur": "USD"}, {"sym": "INTC", "name": "Intel", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "Intel Foundry holds a High-NA lead \u2014 already running Panther Lake layers in HVM ahead of TSMC", "px": "$100.32", "prev": 95.8, "plabel": "SD Sep-2 LONG", "cur": "USD"}, {"sym": "005930.KS", "name": "Samsung", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "OpenAI-Samsung custom-chip pact deepens (fab+packaging); Samsung also leads Mistral's \u20ac21B round", "px": "\u20a9258,750", "prev": 255500, "plabel": "SD Sep-2 NEUT", "cur": "KRW"}, {"sym": "CRWV", "name": "CoreWeave", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "Hits $5B revenue; GB300 NVL72 lead, first Nvidia Exemplar Cloud, Google interconnect tie-up", "px": "$89.12", "prev": 105.26, "plabel": "SD Aug-12 LONG", "cur": "USD"}, {"sym": "ADI", "name": "Analog Dev", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "Buys Alif Semiconductor \u2014 edge-AI MCUs (Cortex-M55 + Ethos NPU) push inference to the sensor; robotics play", "px": "$361.25", "prev": 370.24, "plabel": "SD Aug-18 LONG", "cur": "USD"}, {"sym": "META", "name": "Meta", "dir": "LONG", "pub": "semidoped", "date": "Sep 9", "thesis": "Launches Muse personal AI agent (isolated VM, WhatsApp); big pull on cloud CPU + memory", "px": "$644.38", "prev": 576.14, "plabel": "SD Aug-24 LONG", "cur": "USD"}, {"sym": "AMD", "name": "AMD", "dir": "LONG", "pub": "semidoped", "date": "Sep 10", "thesis": "Ships 50,000 MI450 'Helios' GPUs to Oracle \u2014 first large-scale deployment of the new accelerator", "px": "$503.60", "prev": 477.57, "plabel": "SD Sep-7 NEUT", "cur": "USD"}, {"sym": "UMC", "name": "UMC", "dir": "LONG", "pub": "semidoped", "date": "Sep 10", "thesis": "August revenue +30% as mature-node demand tightens", "px": "$22.12", "prev": 18.94, "plabel": "SD Jul-28 LONG", "cur": "USD"}, {"sym": "GFS", "name": "GlobalFoundries", "dir": "LONG", "pub": "semidoped", "date": "Sep 10", "thesis": "Long-term manufacturing pact with Monolithic Power for advanced power silicon at GF Singapore", "px": "$45.96", "prev": null, "plabel": null, "cur": "USD"}, {"sym": "0981.HK", "name": "SMIC", "dir": "LONG", "pub": "semidoped", "date": "Sep 10", "thesis": "Quarterly revenue tops $3B for the first time; gap to Samsung Foundry narrows to ~$250M", "px": "HK$63.45", "prev": 75.15, "plabel": "SD Aug-17 LONG", "cur": "HKD"}, {"sym": "NVDA", "name": "NVIDIA", "dir": "NEUTRAL", "pub": "semidoped", "date": "Sep 10", "thesis": "DOJ antitrust probe of the $17-20B Groq license overhangs, but d-Matrix wiring Raptor into NVLink Fusion shows ecosystem gravity", "px": "$218.36", "prev": 230.36, "plabel": "SD Sep-7 LONG", "cur": "USD"}, {"sym": "BE", "name": "Bloom Energy", "dir": "LONG", "pub": "semianalysis", "date": "Sep 10", "thesis": "Behind-the-meter fuel-cell winner: 3.8 GW of tracker orders vs 0.03 GW for FuelCell; Google 900MW Wyoming, going vertical on O&M", "px": "$258.49", "prev": 252.87, "plabel": "SD Sep-7 LONG", "cur": "USD"}, {"sym": "CAT", "name": "Caterpillar", "dir": "LONG", "pub": "semianalysis", "date": "Sep 10", "thesis": "Lifting large reciprocating-engine output to ~3x 2024 levels, steering supply to off-grid datacenters", "px": "$805.00", "prev": null, "plabel": null, "cur": "USD"}, {"sym": "GEV", "name": "GE Vernova", "dir": "NEUTRAL", "pub": "semianalysis", "date": "Sep 10", "thesis": "Still a premium turbine incumbent, but recips + fuel cells take relative share; exposed to speculative-order secondary market", "px": "$923.91", "prev": 941.95, "plabel": "SD Sep-7 LONG", "cur": "USD"}, {"sym": "ENR.DE", "name": "Siemens Energy", "dir": "NEUTRAL", "pub": "semianalysis", "date": "Sep 10", "thesis": "Incumbent turbine winner alongside GEV, but the biggest BTM beneficiaries are the 22 recip/fuel-cell OEMs, not the two incumbents", "px": "\u20ac140.82", "prev": null, "plabel": null, "cur": "EUR"}];
+
+function sparkSVG(closes,w,h,color,opts){opts=opts||{};
+  var pad=4,n=closes.length,min=Math.min.apply(0,closes),max=Math.max.apply(0,closes),rng=(max-min)||1;
+  var X=function(i){return pad+i*(w-2*pad)/(n-1)}, Y=function(v){return h-pad-(v-min)/rng*(h-2*pad)};
+  var line="";closes.forEach(function(v,i){line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" "});
+  var area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  var ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1),call="";
+  if(opts.ci!=null){var cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?'<line x1="'+pad+'" y1="'+cy+'" x2="'+(w-pad)+'" y2="'+cy+'" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>':"")
+        +'<circle cx="'+cx+'" cy="'+cy+'" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>';}
+  return '<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'" preserveAspectRatio="none" aria-hidden="true">'
+   +'<path d="'+area+'" fill="'+color+'" fill-opacity=".11"/>'
+   +'<path d="'+line+'" fill="none" stroke="'+color+'" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>'
+   +call+'<circle cx="'+ex+'" cy="'+ey+'" r="6" fill="var(--surface)"/><circle cx="'+ex+'" cy="'+ey+'" r="3.6" fill="'+color+'"/></svg>';
+}
+var PUBVAR={irrationalanalysis:"--pub-irrational",semianalysis:"--pub-semianalysis",semidoped:"--pub-semidoped"};
+var PUBNM={irrationalanalysis:"Irrational Analysis",semianalysis:"SemiAnalysis",semidoped:"Semi Doped"};
+var SYMPUB={};CALLS.forEach(function(c){SYMPUB[c.sym]=c.pub});
+function pubColorForSym(s){return "var("+(PUBVAR[SYMPUB[s]]||"--accent")+")"}
+var ICON={LONG:"\u25B2",SHORT:"\u25BC",NEUTRAL:"\u25CF"};
+function moveHtml(prev,px,cur,dir){
+  if(prev==null) return '<span class="mv n">new<small>first flag</small></span>';
+  var cur_px=PRICES[Object.keys(PRICES).find? null:null];
+  return "";
+}
+// current numeric price lookup
+function curPx(sym){return PRICES[sym]?PRICES[sym].price:null}
+var cb=document.getElementById("cb");
+CALLS.forEach(function(c){
+  var tr=document.createElement("tr");
+  var mv;
+  if(c.prev==null){mv='<span class="mv n">new<small>first flag</small></span>';}
+  else{var cp=curPx(c.sym);var pct=(cp-c.prev)/c.prev*100;var cls=pct>=0?"g":"l";var sgn=pct>=0?"+":"";
+    mv='<span class="mv '+cls+'">'+sgn+pct.toFixed(1)+'%<small>'+c.plabel+'</small></span>';}
+  tr.innerHTML='<td class="tick mono">'+c.sym+'</td>'
+   +'<td><span class="chip '+c.dir+'">'+ICON[c.dir]+' '+c.dir+'</span></td>'
+   +'<td><span class="pub"><i style="background:var('+PUBVAR[c.pub]+')"></i>'+PUBNM[c.pub]+' · '+c.date+'</span></td>'
+   +'<td class="th">'+c.thesis+'</td>'
+   +'<td class="mono" style="font-weight:700;white-space:nowrap">'+c.px+'</td>'
+   +'<td class="hide-sm">'+sparkSVG(PRICES[c.sym].closes,148,34,pubColorForSym(c.sym))+'</td>'
+   +'<td>'+mv+'</td>';
+  cb.appendChild(tr);
+});
+
+// spotlights
+var SPOTS=[
+ {sym:"QCOM",name:"Qualcomm",dir:"LONG",pub:"semidoped",bullets:[
+   "Amazon signs a multi-generational custom AI-chip deal and takes up to $4B in QCOM warrants — the first hyperscaler anchor beyond Saudi-backed Humain; shares +10%.",
+   "Reframes the ~2-yr short thesis: QCOM at $176.88 sits back near Irrational Analysis's $177 short entry, so the datacenter turnaround is finally a real counter-narrative (see contradiction query)."]},
+ {sym:"BE",name:"Bloom Energy",dir:"LONG",pub:"semianalysis",bullets:[
+   "SemiAnalysis's BTM tracker: Bloom holds 3.8 GW of fuel-cell orders vs 0.03 GW for FuelCell Energy; Google takes 900MW in Wyoming, Oracle/Nebius pivot projects to Bloom on easier permitting.",
+   "Going vertical on install + O&M is now a deciding factor in orders — a structural edge as speculative turbine orders clog the incumbents."]},
+ {sym:"INTC",name:"Intel",dir:"LONG",pub:"semidoped",bullets:[
+   "Intel Foundry holds a concrete High-NA EUV lead — already running Panther Lake layers in HVM while TSMC waits for 6×12-inch masks (2030).",
+   "The Aug-10 long ($97.71) just resolved +2.7% ✓; stock at $100.32 continues to track the foundry-turnaround thesis up."]},
+ {sym:"NVDA",name:"NVIDIA",dir:"NEUTRAL",pub:"semidoped",bullets:[
+   "DOJ opens an antitrust probe into whether the $17-20B Groq deal was licensed to skirt merger review — a fresh regulatory overhang; stock dipped.",
+   "Offsetting: d-Matrix wires its Raptor XPU into NVLink Fusion + MGX racks — even challengers now only fully perform inside Nvidia's fabric."]}
+];
+var sp=document.getElementById("spots");
+SPOTS.forEach(function(s){
+  var p=PRICES[s.sym];var cur={USD:"$",KRW:"\u20A9",JPY:"\u00A5",TWD:"NT$",HKD:"HK$",EUR:"\u20AC"}[p.cur]||"";
+  var pxs=(p.cur=="KRW"||p.cur=="JPY"||p.cur=="TWD")?cur+p.price.toLocaleString():cur+p.price.toFixed(2);
+  var lo=p.lo52,hi=p.hi52,pos=(p.price-lo)/((hi-lo)||1)*100;pos=Math.max(2,Math.min(98,pos));
+  var col=pubColorForSym(s.sym);
+  var ci=p.closes.length-1;
+  var big=sparkSVG(p.closes,300,64,col,{ci:ci,refline:true});
+  var bl=s.bullets.map(function(b){return "<li>"+b+"</li>"}).join("");
+  var d=document.createElement("div");d.className="spot";
+  d.innerHTML='<div class="hd"><div><span class="nm">'+s.sym+'</span> <span style="color:var(--sec);font-size:12px">'+s.name+'</span></div>'
+    +'<span class="chip '+s.dir+'">'+ICON[s.dir]+' '+s.dir+'</span></div>'
+    +'<div style="margin-top:4px"><span class="px">'+pxs+'</span> <span class="pub" style="margin-left:6px"><i style="background:'+col+'"></i>'+PUBNM[s.pub]+'</span></div>'
+    +'<div style="margin-top:10px">'+big+'</div>'
+    +'<div class="rng">52-week range</div>'
+    +'<div class="rangebar"><div class="fill" style="left:0;width:100%"></div><div class="now" style="left:'+pos+'%"></div></div>'
+    +'<div class="rnglbl"><span>'+cur+lo.toLocaleString()+'</span><span>'+cur+hi.toLocaleString()+'</span></div>'
+    +'<ul>'+bl+'</ul>';
+  sp.appendChild(d);
+});
+
+</script>

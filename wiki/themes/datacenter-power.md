@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-06-12
+updated: 2026-09-11
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -47,3 +47,7 @@ first_seen: 2024-03-19
 
 ## Narrative
 The datacenter power and cooling theme surfaced in early 2024 as SemiAnalysis and IrrationalAnalysis began examining the electrical and thermal constraints imposed by increasingly dense GPU racks — SemiAnalysis leading with deep dives into datacenter electrical systems and the GB200 supply chain BOM, while IrrationalAnalysis contributed component-level analysis of VRMs, switching regulators, and electromigration concerns in power semiconductors. Coverage accelerated through 2025 as xAI's Colossus cluster and Middle East buildouts pushed the gigawatt-scale conversation into the open, and SemiAnalysis's December 2025 report on onsite gas generation marked a turning point where grid constraints were treated as a structural bottleneck rather than a near-term nuisance. In 2026 the theme sharpened around architecture: the 800VDC datacenter standard emerged as a specific debate (SemiAnalysis, IrrationalAnalysis), GlobalSemiResearch added neocloud power-crunch framing, and SemiDoped covered the physics limits of power delivery alongside Computex optics-and-power trends. The theme is maturing — the core problem (power is the binding constraint on AI buildout) is now consensus across all major publications, but the solutions layer (800V distribution, GaN power semis, liquid cooling architectures, onsite generation, even space datacenters) remains actively contested and investable.
+
+
+## 2026-09-11 update — Behind-the-meter (BTM) power goes mainstream
+SemiAnalysis's BTM deep dive (Part 1) is the definitive read: **behind-the-meter / off-grid / islanded** power (on-site generation bypassing the public grid) is now standard for every AI lab and hyperscaler. Their Energy Model tracks **75 GW of firm binding orders** (~20 GW in Q2 2026 alone). The economics — a ~1 GW islanded plant costs ~$5B but inference can yield ~$100B/GW/yr at 90%+ GM, so speed beats efficiency, and Anthropic can pay back a plant in ~20 days — make grid delay unacceptable. Plain-language mechanics: a *meter* is where the project's wires meet the grid; everything on the project side is "behind the meter." Configurations run grid-supplied → grid-parallel (grid-led / plant-led) → export-only → fully off-grid; "islanded" is an operating state, a "microgrid" a controllable boundary that can island. Many projects use BTM as a *bridge* until the grid connection arrives, then demote gensets to backup. **Winners:** not just turbine incumbents [[GEV]] & Siemens ([[ENR.DE]]) — the share-gainers are the ~22 **reciprocating-engine** OEMs (INNIO/Jenbacher, [[CAT|Caterpillar]] G3520, Cummins, Wartsila; 0.5-20 MW/unit) and **solid-oxide fuel cells** ([[BE|Bloom]], 3.8 GW of tracker orders vs 0.03 GW FuelCell). New service layer: **Energy-as-a-Service ("BTM utilities")** — VoltaGrid, Williams, Solaris — deliver guaranteed power, not just equipment. Six execution gates: contract/bankability (financing wall), permits (air-permit PTE thresholds; developers pick states like Texas or straddle borders), fuel, equipment, workforce, and grid-less physics.

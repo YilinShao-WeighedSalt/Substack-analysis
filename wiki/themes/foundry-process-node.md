@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-06-14
+updated: 2026-09-11
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -67,3 +67,7 @@ first_seen: 2024-01-03
 
 ## Narrative
 SemiAnalysis established the foundational frame early, covering GAA transistor yield at IEDM 2023 and then publishing detailed analyses of Intel 18A and 14A process technology through mid-2024, while IrrationalAnalysis tracked the investor-facing consequences — Intel's credibility erosion, Gelsinger's departure, and repeated 18A yield disappointments. The theme intensified through late 2024 and into 2025 as the GAA/backside-power generation forced a direct three-way comparison between TSMC N2, Samsung SF2, and Intel 18A, with SemiAnalysis providing the most rigorous node-by-node density and PPA breakdowns and IrrationalAnalysis cataloguing Intel Foundry's customer and financial struggles in real time. By 2025-2026 coverage broadened significantly — High-NA EUV adoption, TSMC's overseas fab execution, SMIC's advancing process capabilities, and EDA toolchain dynamics all entered the conversation, signaling that process node competition had expanded beyond the Intel-vs-TSMC binary into a multi-dimensional race encompassing lithography, geopolitics, and design ecosystem lock-in. The theme remains actively contested as of mid-2026, with SMIC's N3-class metal pitch progress and Intel 18A's continued technical scrutiny keeping the outcome genuinely open.
+
+
+## 2026-09-11 update — High-NA EUV gets its first firm commitments
+The long-hesitant High-NA question resolved this week: **ASML secured formal High-NA EUV commitments from both TSMC and Samsung**, plus a new **12-inch photomask** platform (a big productivity boost over today's 6-inch reticle). **High-NA EUV** = next-gen extreme-ultraviolet lithography with a wider 0.55 numerical-aperture lens, printing finer features in a single pass (vs low-NA + multi-patterning); the catch is ~$350-400M per machine, which is why TSMC had pushed low-NA as far as possible. Now **TSMC targets 2030 (A10/A11 nodes)** as the first confirmed process anchor, while **Samsung is more aggressive — High-NA in high-volume DRAM by 2028** (an industry first). Per Semi Doped, **Intel Foundry holds the practical lead** — already running layers of Panther Lake in HVM on High-NA — while TSMC waits for the 6×12-inch masks. ASML broke ground on expanded manufacturing capacity for the ramp.

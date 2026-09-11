@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-09-08
+updated: 2026-09-11
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -102,3 +102,7 @@ expected to rival Rubin NVL72), and external disagg serving isn't optimized yet.
 **Anthropic is the largest TPU user** (>1M committed). IA's parallel framing: only four
 compute entities matter (Nvidia, Google/TPU, Amazon/Trainium, AMD) and **multi-vendor
 disagg inference is temporary** — everyone goes vertical.
+
+
+## 2026-09-11 update — the ASIC wave reaches its laggards; Nvidia turns rivals into tenants
+Two structural moves this week. (1) The custom-silicon turn finally pulls in the names it had passed over: **Qualcomm signs a multi-generational custom AI-chip deal with Amazon** (AWS takes up to $4B in QCOM warrants; +10%) — QCOM's first real hyperscaler anchor beyond Saudi-backed Humain — and **OpenAI deepens its custom-chip pact with Samsung + Arm** (Samsung fab/packaging; OpenAI used its own models to design Jalapeño; a separate Samsung-Arm on-device chip for OpenAI is reported). (2) Nvidia converts challengers into tenants: **d-Matrix wires its next-gen Raptor XPU into NVLink Fusion + Spectrum-X + the MGX rack spec** — the accelerator only fully performs inside Nvidia's own scale-up/scale-out fabric. NVLink Fusion (Nvidia's interconnect opened to third-party silicon) is becoming the gravity well that lets ASIC startups skip building rack/cooling/networking — at the cost of dependence on Nvidia infrastructure. Overhang: the **DOJ opened an antitrust probe** into whether Nvidia's ~$17-20B Groq deal was licensed to skirt merger review.
