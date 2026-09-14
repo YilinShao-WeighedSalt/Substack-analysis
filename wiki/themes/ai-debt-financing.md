@@ -4,7 +4,7 @@ title: "AI Debt Financing & Neocloud Economics"
 tags: [ai-infrastructure-capex, neocloud, ai-debt-financing]
 related: ["[[semianalysis-2026-07-06-nvidia-gpu-debt-backstop]]", "[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[NVDA]]", "[[CRWV]]", "[[META]]", "[[AMD]]", "[[ai-infrastructure-capex]]", "[[buildout-vs-monetization]]"]
 created: 2026-07-07
-updated: 2026-08-12
+updated: 2026-09-14
 status: emerging
 first_seen: 2026-07-06
 ---
@@ -31,3 +31,12 @@ SemiAnalysis's sequencing of the bottleneck: **2025 = datacenter space → early
 - Watch **GPU rental rates** (SemiAnalysis GPU Rental Price Index): if they roll over in H2 2026 and backstops start getting *triggered* (operators actually renting to Nvidia at the floor), the optimistic read flips. This is the financing-side barometer for the [[buildout-vs-monetization]] query.
 
 **Update 2026-08-12 — the financing machine formalizes.** Two datapoints extend the "money is the constraint" thesis. (1) **Nvidia's $500B "banker of choice" platform** with Apollo/BlackRock GIP/Blackstone/Brookfield/GS/KKR mobilizes third-party capital, shifting the AI buildout off corporate balance sheets; SEC exempts datacenter bonds from securitization rules. (2) **Infra-debt / "token factory" financing** — Anthropic's $10B deal with 6-month-old Volta Infrastructure treats compute like a toll road (predictable token "tolls" → low-rate institutional debt → cheaper compute), with a crypto-miner operator and Nvidia GPU allocation behind a clean balance-sheet SPV. SemiAnalysis's SpaceX piece adds the **Nvidia vendor-financing** angle (why Elon went Nvidia-exclusive) and value-based GPU pricing (~$50B/GW/yr).
+
+## Nvidia's Backstop Universe — $530B of off-B/S guarantees (2026-09-11, [[semianalysis]])
+
+SemiAnalysis's Compute/Capital/Markets desk quantified Nvidia's guarantee stack from its 2Q F1/27 10-Q: **$530B gross off-balance-sheet guarantees**, up from $184B the prior quarter — vs just **$91B on-B/S liabilities**.
+
+- **Six line items:** supply/capacity commitments $119B→$279B (mostly memory, 96% due by F1/29); guarantees $3.5B→$108.5B (SB Energy PORTS-Pike, 4.25 GW to OpenAI, 20 yrs); new **$36B AI cloud agreements** (AICP take-or-pay floors) + **$20B datacenter leases** signed as tenant to reassign.
+- **The mechanism** (from *The Front End Gets Crowded*): Gigascalers gatekeep IG capital; Nvidia manufactures **alternative credit anchors** so non-IG neoclouds/neolabs borrow at IG pricing — revenue floors (AICP ≈$2.35/hr/GPU GB300), landlord guarantees, or signing the lease itself.
+- **Heads/tails asymmetry:** heads → Nvidia earns twice (GPU sale + rev-share above floor); tails → only bites if a downcycle overwhelms Nvidia's own cash generation *while* backstopped neoclouds fail. Firepower: ~$441B EBITDA F1/28, cash modeled to $1.4T by F1/31 vs ~$11T cumulative industry capex CY24–29. Nvidia backstops ~6.5 GW today vs Gigascalers' ~15 GW (2026)→35 GW+ (2028) implicit backstop — "Cisco PTSD" overdone.
+- **Cost per GW enabled:** AICP $59B/GW, PORTS-Pike $25B/GW, new **residual-value-guarantee** structure (≤25% RVG under the >$500B PE capital partnership, modeled on the Google-Broadcom-Anthropic-Apollo TPU SPV) only $9.4B/GW. AICP reportedly paused ~2 weeks ago. Priced: [[NVDA]] LONG (constructive).

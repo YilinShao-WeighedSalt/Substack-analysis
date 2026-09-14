@@ -4,16 +4,20 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-09-11
+updated: 2026-09-14
 handle: semidoped
-calls_logged: 210
-hit_rate: "18/40 (45%), ~68 open"
-updated: 2026-09-11
+calls_logged: 220
+hit_rate: "18/40 (45%), ~78 open"
+updated: 2026-09-14
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+- **Daily Update — September 11th (2026-09-11):** One call-bearing daily (Sep-12 TIL + Sep-13 pub-quiz educational, no calls). **>$1.5B into inference silicon in a day** (Positron $875M@$5B; Ayar Labs $150M, ODM Wiwynn strategic — both private). **Oracle FY27 Q1:** OCI **+121%**, RPO backlog **$664B** (record), **300K GPUs shipped in the quarter**, $20B raised, FY guide ~$90B, +7% → **[[ORCL]] LONG $150.28**. **Microsoft targets 38 GW by 2032** (~3× fleet), computing-as-a-utility → **[[MSFT]] LONG $495.63**. **OpenAI eyes Samsung as 2nd fab source** alongside TSMC for its Broadcom-designed chips → **[[005930.KS]] LONG ₩252,000**. **Foundry:** TSMC A14/1.4nm Taichung pulled 6 months forward, MP 2027 → **[[TSM]] LONG $433.24**; Samsung-QCOM 2nm pricing impasse; **Synopsys cuts NPU die area 22% on Samsung 2nm** via AI physical design → **[[SNPS]] LONG $397.38**. **Power:** **Eaton grid-to-chip 800 VDC** → **[[ETN]] LONG $425.37**; **Bloom Power Connect** (>40% faster deploy, record backlog) → **[[BE]] LONG $275.75**; HD Hyundai >₩1T generation+SMR; **Core Scientific ERCOT 1,402 MW** approval → **[[CORZ]] LONG $17.94**. **Components/optics:** **Renesas** 2nd price hike (Jan-27) → **[[6723.JP]] LONG ¥3,140**; **Lightera (Furukawa)** fiber capacity add → **[[5801.T]] LONG ¥3,798**; Kyocera+Tohoku on-chip optical isolator (CPO); **FCC final rule stops short of blocking Chinese transceivers** (removes the Western-substitution tailwind). Pentagon weighs $5B loan to Fluidstack; Nscale adds OpenAI CFO to board pre-IPO. (→ [[ai-infrastructure-capex]], [[datacenter-power]], [[foundry-process-node]].)
+
+**hit_rate note (2026-09-14): no priced call crossed 30 days — holds 18/40 (45%).** The Aug-17 daily batch (12 calls: [[0981.HK]], [[CBRS]], [[NVDA]] $225.01, [[SNDK]], [[TSM]] $430.97, [[000660.KS]], [[MU]], [[285A.T]], [[AMD]], [[CORZ]] $20.13, [[RIOT]], [[1347.HK]]) crosses 30d ~Sep-16 and resolves next scan. This run's 10 new calls (all LONG, no shorts) opened at spot.
 
 - **Daily Updates Sep 8-10 (2026-09-08..10):** Three call-bearing dailies. **The custom-silicon wave reaches its laggards:** **Qualcomm signs a multi-generational custom AI-chip deal with Amazon** — AWS takes up to **$4B in QCOM warrants**; +~10% (first hyperscaler anchor beyond Humain) → **[[QCOM]] LONG $176.88**; **OpenAI + Samsung/Arm** deepen custom-chip + on-device pacts, Samsung leads Mistral's €21B round → **[[005930.KS]] LONG ₩258,750**. **Arm** one-shot agentic stack refresh (CSS Mobile 2 / Neoverse N4 / AGI CPU + robotics framework) → **[[ARM]] LONG $254.18**. **Memory:** GPT-6 Astra launch lifts all memory (+4% futures) → **[[MU]] LONG $977.41**, **[[000660.KS]] LONG ₩1,776,000**; Apple's uncapped 3-5yr NAND deal + Kioxia price-restraint/independence → **[[285A.T]] LONG ¥53,770**. **Lithography:** TSMC & Samsung give formal **High-NA EUV** + 12-inch mask commitments (TSMC 2030; Samsung DRAM 2028); Intel Foundry holds the practical lead (Panther Lake in HVM) → **[[ASML]] LONG $1,687.43**, **[[INTC]] LONG $100.32**. **Neocloud/edge:** CoreWeave $5B rev + GB300 lead → **[[CRWV]] LONG $89.12**; ADI buys Alif (edge-AI/robotics) → **[[ADI]] LONG $361.25**; Meta launches Muse agent → **[[META]] LONG $644.38**. **Sep-10:** AMD ships 50k MI450 to Oracle → **[[AMD]] LONG $503.60**; UMC Aug +30% mature-node → **[[UMC]] LONG $22.12**; GF+MPWR long-term pact → **[[GFS]] LONG $45.96**; SMIC rev tops $3B → **[[0981.HK]] LONG HK$63.45**; **DOJ probes Nvidia's ~$17-20B Groq license** for merger-review evasion (offset by d-Matrix wiring Raptor into NVLink Fusion) → **[[NVDA]] NEUTRAL $218.36**; **DeepSeek V4.1 Flash** (552B MoE, fractions-of-a-cent/M tokens) compresses the inference-price floor → [[ai-software-models]]. Also: Verizon-Corning AI fiber → **[[GLW]] LONG $163.12**.
 

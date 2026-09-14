@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-11
+updated: 2026-09-14
 handle: semianalysis
-calls_logged: 231
-hit_rate: "7/22 (32%), ~9 open"
+calls_logged: 234
+hit_rate: "7/22 (32%), ~12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Two posts, Sep 11 & 13 2026 (both paywalled, full bodies served):** *Nvidia's Backstop Universe* (Sep-11) + *Long Live the Short King: Why 4-hi HBM Wins* (Sep-13). **Backstop Universe** — balance-sheet forensics on Nvidia's off-B/S guarantee stack: **$530B gross guarantees** (up from $184B QoQ) vs $91B on-B/S liabilities; the "manufactured credit anchor" mechanism (AICP revenue floors, PORTS-Pike lease guarantees, ≤25% residual-value guarantees under the >$500B PE partnership) lets non-IG neoclouds borrow at IG pricing. Heads Nvidia earns twice, tails only bites if a downcycle overwhelms its own cash gen while neoclouds fail; ~$441B EBITDA F1/28 / $1.4T cash by F1/31 = enormous firepower, "Cisco PTSD" overdone → **[[NVDA]] LONG $218.29** (→ [[ai-debt-financing]]). **4-hi HBM** — the ever-more-HBM supercycle is breaking: Rubin Ultra cut to 192GB (from 288GB), 8-hi now standard, and SA argues **4-hi is optimal for inference** — same bandwidth as taller stacks at a fraction of the $/bandwidth; +8-10% peak throughput from 8-/12-hi is below the +12-26% TCO premium. New figure of merit **tokens/HBM-wafer** (4-hi ≈2-3× vs taller); framed win-win for suppliers (frees wafers to starved DRAM). Reinforces hybrid-bonding collapse ([[advanced-packaging]]). Priced **[[MU]]/[[000660.KS]]/[[005930.KS]] all NEUTRAL** (→ [[hbm-memory]]).
+
+**hit_rate note (2026-09-14): no priced call crossed 30 days — holds 7/22 (32%).** The Aug-25 Jalapeño longs ([[AVGO]] $355.59, [[005930.KS]] ₩265,000) resolve ~Sep-24. This run adds 1 priced LONG (NVDA) + 3 NEUTRALs (MU, SK Hynix, Samsung), all at spot.
 
 - **What is So Hard About Behind-The-Meter Power? Part 1 (2026-09-10):** Definitive deep dive on **behind-the-meter (BTM)** datacenter power. The Energy Model tracks **75 GW of firm binding orders** (~20 GW in Q2 2026); ~3 GW operational US IT by year-end. Economics: a ~1 GW islanded plant ~$5B vs ~$100B/GW/yr inference at 90%+ GM → speed beats efficiency (Anthropic pays back a plant in ~20 days). **Winners are NOT just incumbents [[GEV]] & Siemens** — the share-gainers are the ~22 reciprocating-engine OEMs (INNIO/Jenbacher, Caterpillar, Cummins, Wartsila) and solid-oxide fuel cells (**[[BE|Bloom]] carries 3.8 GW of orders vs 0.03 GW FuelCell**), plus a new Energy-as-a-Service "BTM utility" layer (VoltaGrid, Williams, Solaris). Six execution gates (bankability, permits, fuel, equipment, workforce, grid-less physics); cracks emerging (Oracle Jupiter & Nebius NJ pivoted to Bloom; secondary turbine market from failed orders most hurts GEV/Siemens). Priced: **[[BE]] LONG $258.49** (dominant fuel-cell winner; Google 900MW Wyoming), **[[CAT]] LONG $805.00** (recip output ~3x 2024), **[[GEV]] NEUTRAL $923.91** & **[[ENR.DE]] NEUTRAL €140.82** (incumbent turbine winners ceding relative share). → [[datacenter-power]].
 

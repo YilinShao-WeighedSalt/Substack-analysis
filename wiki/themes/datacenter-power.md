@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-09-11
+updated: 2026-09-14
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -51,3 +51,9 @@ The datacenter power and cooling theme surfaced in early 2024 as SemiAnalysis an
 
 ## 2026-09-11 update — Behind-the-meter (BTM) power goes mainstream
 SemiAnalysis's BTM deep dive (Part 1) is the definitive read: **behind-the-meter / off-grid / islanded** power (on-site generation bypassing the public grid) is now standard for every AI lab and hyperscaler. Their Energy Model tracks **75 GW of firm binding orders** (~20 GW in Q2 2026 alone). The economics — a ~1 GW islanded plant costs ~$5B but inference can yield ~$100B/GW/yr at 90%+ GM, so speed beats efficiency, and Anthropic can pay back a plant in ~20 days — make grid delay unacceptable. Plain-language mechanics: a *meter* is where the project's wires meet the grid; everything on the project side is "behind the meter." Configurations run grid-supplied → grid-parallel (grid-led / plant-led) → export-only → fully off-grid; "islanded" is an operating state, a "microgrid" a controllable boundary that can island. Many projects use BTM as a *bridge* until the grid connection arrives, then demote gensets to backup. **Winners:** not just turbine incumbents [[GEV]] & Siemens ([[ENR.DE]]) — the share-gainers are the ~22 **reciprocating-engine** OEMs (INNIO/Jenbacher, [[CAT|Caterpillar]] G3520, Cummins, Wartsila; 0.5-20 MW/unit) and **solid-oxide fuel cells** ([[BE|Bloom]], 3.8 GW of tracker orders vs 0.03 GW FuelCell). New service layer: **Energy-as-a-Service ("BTM utilities")** — VoltaGrid, Williams, Solaris — deliver guaranteed power, not just equipment. Six execution gates: contract/bankability (financing wall), permits (air-permit PTE thresholds; developers pick states like Texas or straddle borders), fuel, equipment, workforce, and grid-less physics.
+
+## 800 VDC grid-to-chip + Bloom Power Connect (2026-09-11, [[semidoped]])
+
+- **Eaton grid-to-chip 800 VDC:** [[ETN]] unveiled an architecture that **eliminates AC↔DC conversion stages** between grid and rack, cutting losses and rack space — the incumbent-scale answer to the 800V-DC standard (Google/MSFT/Nvidia) already tracked here. Priced [[ETN]] LONG.
+- **Bloom Energy Power Connect:** [[BE]] launched an install system claiming **>40% faster fuel-cell deployment**, with order backlog at record — extends SemiAnalysis's behind-the-meter thesis that solid-oxide fuel cells are share-gainers vs turbine incumbents when speed-to-power is the prize. Priced [[BE]] LONG.
+- **HD Hyundai** committed >₩1T to land-based generation engines + SMRs for AI DC power; **Core Scientific** ([[CORZ]]) won conditional ERCOT approval for up to 1,402 MW (grid-interconnect gate cleared).

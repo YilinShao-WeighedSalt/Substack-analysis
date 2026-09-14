@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-08
+updated: 2026-09-14
 handle: irrationalanalysis
 calls_logged: 613
-hit_rate: "22/42 (52%), ~18 open"
+hit_rate: "24/45 (53%), ~15 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **No new post in window (Sep 11-13, 2026) — track record re-priced only.** Latest post is the Sep-6 Hot Chips 2026 recap, ingested last run.
+
+**hit_rate note (2026-09-14): 22/42 → 24/45 (53%) — the Aug-12/14 Lumentum/Coherent twin-note batch resolves 2W/1L (was skipped last scan).** **[[LITE]] Aug-12 LONG ($926.14) → $927.03 = +0.1% WIN ✓** (barely), **[[COHR]] Aug-14 SHORT ($325.83) → $305.37 = short +6.3% WIN ✓** (the optics-duopoly SHORT paid), **[[AXTI]] Aug-12/14 LONG ($81.64) → $64.77 = -20.7% LOSS ✗** (the 6-inch-InP long gave back the summer run). The optics *duopoly* thesis (long Lumentum / short Coherent) tracked; the InP-substrate leg did not. Next: the Aug-18/19 CS-4/Intel-CPO batch (LITE $879.28, [[CBRS]] SHORT $209.85, [[NVDA]] $216.85) crosses 30d ~Sep 18-19.
 
 - **Hot Chips 2026: Irrational Recap (2026-09-06):** A sweeping engineering tour. Thesis of the run: **the DRAM giants overplayed their hand and HBM de-spec (12→8-hi) is rewiring the packaging/memory theses.** The single sharpest new call is a **SHORT/exit on [[BESI]]** (€202.50) — the author **liquidated his entire hybrid-bonding-tool position** because 8-hi HBM doesn't need hybrid bonding ("RIP BESI"). Reaffirms the **activist SHORT [[CBRS]]** ($210.05, parametric-yield "confirmed," deep-dive Oct/Nov), holds the **large [[005930.KS]]** long ($274,250, cleanest HBM base-die data), **LONG [[NVDA]]** ($230.36 — owns half of CoWoS + most HBM at a discount, vertical wins as multi-vendor disagg proves temporary) and **LONG [[GOOGL]]** ($338.46, TPU V8 progress). NEUTRALs: [[AMD]] (Venice CPU good, MI400 re-timer TCO), [[INTC]] (Xe "F-tier"), [[META]] (MTIA dual-mandate "worst of both worlds"), [[MSFT]] (Maia "dogshit"), [[AVGO]] (Thor Ultra beaten by BlueField-4), [[MU]] (DRAM overplayed hand), [[LITE]]/[[COHR]] (1060nm VCSEL GR-468 requal headwind).
 

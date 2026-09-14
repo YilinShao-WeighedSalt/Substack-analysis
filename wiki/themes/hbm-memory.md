@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-08
+updated: 2026-09-14
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -90,3 +90,13 @@ kills the hybrid-bonding-for-HBM thesis (bad for [[BESI]]); we may never see 16-
 (2) Future **base dies** improve by using real die-to-die PHYs (UCIe, NVLink D2D,
 Broadcom MAX, Marvell 64G) instead of the JEDEC HBM PHY, and moving the memory controller
 off the main ASIC. Samsung showed the cleanest base-die data (IA holds a large long).
+
+## 4-hi HBM: the de-spec goes further (2026-09-13, [[semianalysis]])
+
+SemiAnalysis's *Long Live the Short King* argues the "ever-more-HBM-per-accelerator" supercycle has **broken** and that **4-hi HBM is optimal for many inference workloads** from HBM4E onward — a deepening of the 12→8-hi de-spec already flagged at Hot Chips.
+
+- **Same bandwidth, less capacity, cheaper:** an HBM cube's 2048 I/Os are split across its dies; **4-hi (max 512 I/O/die) still harvests all 2048 I/Os → identical bandwidth** to 8-/12-hi, but cost scales with GB content → 4-hi is a far cheaper $/bandwidth ("almost a free lunch").
+- **Why now:** compute mix shifted from capacity-bound pre-training to **bandwidth-bound inference/RL decode**; rack-scale worlds (GB300 NVL72 ≈ 21TB aggregate HBM; Rubin Ultra NVL576) hold weights with huge headroom (Kimi K3 2.8T in MXFP4 = 1,561GB, <8% of NVL72). Rubin Ultra already cut to **192GB/GPU (from 288GB)**; 8-hi is the new standard.
+- **Roofline (Kimi K3 / NVL576):** 8-hi gives only +8% peak throughput vs 4-hi, 12-hi +10% — but the TCO premium is **+12.1% / +26.3%** → taller stacks deliver *higher* cost/token at today's memory prices. **KVCache offloading** to DDR DRAM and DeepSeek-V4.1-Flash-style KV compression (~75%) relieve the capacity given up.
+- **New figure of merit — tokens/HBM-wafer:** 4-hi ≈ 2× harvestable bandwidth per wafer vs 8-hi, ~3× vs 12-hi. Moves the bottleneck off DRAM wafers onto logic/substrate/PCB/integration and **frees wafers back to starved conventional/server DRAM**. Framed as win-win for memory-supplier profitability (paywalled detail truncated).
+- **Packaging read-through:** 8-hi and below **need no hybrid bonding** — reinforces [[advanced-packaging]] hybrid-bonding-collapse and IA's BESI short. Also: **looped transformers** (confirmed GPT-6 Astra) scale by depth not weights → less HBM capacity needed. Priced: [[MU]]/[[000660.KS]]/[[005930.KS]] all NEUTRAL.

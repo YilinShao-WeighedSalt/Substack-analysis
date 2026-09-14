@@ -4,11 +4,11 @@ title: "AXTI — AXT Inc."
 tags: []
 related: ["[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]"]
 created: 2026-04-18
-updated: 2026-09-08
+updated: 2026-09-14
 ticker: AXTI
 current_stance: long
 conviction: high
-last_review: 2026-09-08
+last_review: 2026-09-14
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -41,3 +41,5 @@ No price data was recorded at either call (both px@call are n/a), so mark-to-mar
 **2026-09-05 resolve:** IA Aug-1 LONG $60.43→$61.64 **+2.0% ✓**; IA Aug-5 LONG $68.61→$61.64 **-10.2% ✗** (bought the ban-chase top).
 
 **2026-09-08 (resolution):** IA's Aug-9 LONG ($73.78) → **LOSS** at $61.64 = **-16.5%** ✗ (InP substrate long gave back the summer run).
+
+**Update 2026-09-14 (outcome):** [[irrationalanalysis]]'s Aug-12/14 6-inch-InP LONG ($81.64) crossed 30d at $64.77 = **-20.7% LOSS ✗**. The InP-substrate leg gave back the summer run even as the optics-duopoly (long LITE / short COHR) worked — the 6-in yield/ramp catalyst has not yet shown up in the tape.
