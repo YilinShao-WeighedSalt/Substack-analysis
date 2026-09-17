@@ -8,7 +8,7 @@ updated: 2026-09-14
 ticker: TSM
 current_stance: long
 conviction: high
-last_review: 2026-09-14
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -71,6 +71,7 @@ last_review: 2026-09-14
 | 2026-09-05 | [[semidoped]] | NEUTRAL | 428.91 | Tool procurement ~doubles but defers hybrid bonding for HBM (stays microbumps); packaging rev under EMIB-T scrutiny. |
 | 2026-09-07 | [[semidoped]] | LONG | 428.91 | 3nm output >NT$400B H2 — overtakes 5nm as top node; >70% adv-node share |
 | 2026-09-11 | [[semidoped]] | LONG | 433.24 | A14/1.4nm Taichung fab pulled 6 months forward; mass production targeted 2027 |
+| 2026-09-15 | [[semidoped]] | LONG | 417.72 | Record Aug rev +53.3% YoY (NT$514.8B); 2nm +22%/3nm +16%/CoWoS 2x by 2028; AWS+MediaTek+Google-TPU allocation squeeze thru 2027 = pricing power |
 
 ## Thesis evolution
 From 2024 through mid-2025, the view was near-unanimously bullish: irrationalanalysis treated TSMC as its highest-conviction long, anchored on the collapse of Samsung 3nm yields and Intel Foundry's structural failure leaving TSMC as the only viable advanced-node supplier; semianalysis framed TSMC as the apex predator extending dominance into the GAA era via N2, A16, and CoWoS packaging compounding its ecosystem moat. By late 2025 and into 2026, semianalysis began layering in short-framed arguments — first a hypothetical XRL domestic-fab displacement scenario, then the pointed observation that N3 is running above 100% utilization yet TSMC's pricing discipline is leaving substantial economic rent on the table, and most recently framing TSMC capacity saturation as a binding constraint on global AI buildout rather than a pure pricing windfall. irrationalanalysis remained structurally long but acknowledged TSMC's own pricing power as a systemic risk to the broader AI supply chain it anchors. The resulting mixed stance reflects a consensus on TSMC's irreplaceable technology lead alongside a growing debate over whether the company is monetizing that monopoly adequately — and whether capacity concentration in N3 creates systemic fragility rather than pure upside.
@@ -89,3 +90,5 @@ The only price-anchored call in the log is irrationalanalysis's October 2024 men
 **Resolution (2026-09-11):** Semi Doped's Aug-10 LONG ($422.06) → $428.03 = **+1.4% WIN ✓** and Aug-12 LONG ($426.35) → $428.03 = **+0.4% WIN ✓** — CoWoS/2nm demand thesis holds.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 433.24 (opened at spot this scan).
+
+**Update 2026-09-17:** SD LONG $417.72 — record Aug rev +53.3% YoY and an advanced-node/CoWoS allocation squeeze through 2027. **Resolution:** SD's Aug-17 LONG ($430.97, AZ profit) → $417.72 = **-3.1% LOSS ✗** (Aug-19 $416.00 crosses 30d next run). The fundamentals kept improving but the entry level near the mid-Aug top gave back.

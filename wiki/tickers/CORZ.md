@@ -8,7 +8,7 @@ updated: 2026-09-14
 ticker: CORZ
 current_stance: long
 conviction: low
-last_review: 2026-09-14
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,3 +23,5 @@ Bitcoin-miner-to-AI-datacenter converter (same cohort as [[RIOT]], [[WULF]], [[I
 Opened $20.13 (2026-08-17), open (<30d).
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 17.94 (opened at spot this scan).
+
+**Update 2026-09-17 (resolution):** SD's Aug-17 LONG ($20.13, $444M Polaris → 1.5GW Muskogee campus) → $16.88 = **-16.1% LOSS ✗** — the miner-to-AI-infra re-rate faded.

@@ -4,7 +4,7 @@ title: "Nvidia GPU Platform & Moat"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-06-16
+updated: 2026-09-17
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -122,3 +122,7 @@ first_seen: 2024-02-04
 
 ## Narrative
 Nvidia's GPU platform and CUDA moat first appeared as a central thesis in early 2024, with irrationalanalysis laying architectural groundwork and SemiAnalysis providing detailed hardware economics around the Blackwell launch — including COGS, margins, and NVL72 rack designs. Through mid-2024 the theme deepened into supply chain analysis, Blackwell packaging delays, and early competitive assessments of AMD's MI300X, with CUDA lock-in emerging as a recurring structural argument. By 2025 coverage shifted toward benchmarking the moat under pressure: AMD inference comparisons, the Vera Rubin roadmap, export control impacts, and purpose-built inference infrastructure like NVLink Fusion. Into 2026 the conversation has grown more contested — detailed PTX/SASS microarchitecture teardowns, Blackwell vs. AMD hopper inference benchmarks, and emerging concern about Nvidia's China exposure sit alongside continued affirmations of Nvidia's inference kingdom expansion. The theme remains highly active and analytically dense across all major publications, with no sign of resolution; the moat is real but the challengers (AMD, custom silicon, Cerebras) are now serious enough to sustain genuine uncertainty.
+
+
+## Update 2026-09-17 — Vera Rubin's verified inference lead (SemiAnalysis)
+First third-party Rubin results on the AgentX agentic-inference benchmark (pre-release TRTLLM software): **~67x tokens/$ TCO vs GB300** at 170 TPS (1.4-3x at the realistic 60-100 TPS band), **up to 7x token throughput per MW**, and **>2x profit per GW** (~$150B modeled profit/GW, ~$446M more/GW than GB300 at 10MW; ~28% pricing headroom). SA accuses Jensen of "sandbagging" his own GTC 3x claim (as in 2024, when GB200's claimed 30x-vs-Hopper tested at 98x). New feature: **DSX MaxLPS** dynamic power-shifting fits more GPUs into the same datacenter power budget by profiling actual (not TDP) inference power. Plain terms: Rubin makes each dollar and each watt in a datacenter produce far more sellable tokens, so "the more you buy, the more you earn" holds another generation. Caveat: early software; the gap could compress as competing stacks mature.

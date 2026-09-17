@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-14
+updated: 2026-09-17
 handle: irrationalanalysis
-calls_logged: 613
-hit_rate: "24/45 (53%), ~15 open"
+calls_logged: 617
+hit_rate: "25/46 (54%), ~15 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **[Market Memo] Qualcomm/Amazon, Apple C2, Credo µLED, Cerebras I/O (2026-09-14):** A self-described "low-effort filler" shitpost that nonetheless carries four sharp calls, all bearish-to-Qualcomm's-orbit. **(1) QCOM/Amazon deal** = low-margin backend physical-design + Alphawave 112G SerDes (a coherent-lite DSP that predates the Alphawave buy); margins "much lower than the Apple modem margins this revenue is attempting to replace," and QTL revenue "definitely going to be in jeopardy early next year" — timed to drown out Apple-modem news → **SHORT [[QCOM]] $184.84**. **(2) Apple C2 modem** got **mmWave ahead of schedule**, so Apple is "fully self-sufficient now and can attack Qualcomm with little to no repercussion"; QCOM's planned 20% iPhone share slashed to low-single-digit — "spicy April 2027" → **LONG [[AAPL]] $332.41**. **(3) Credo** CEO's **30-meter µLED reach claim** is "bullshit" (chromatic + modal dispersion cap it near ~10m; no DSP fixes it) → **SHORT [[CRDO]] $161.49** (first priced CRDO call). **(4) Cerebras I/O**: now "100% confident" the on/off-wafer I/O is a **primitive parallel port** (a direct NoC extension) at ~0.0056 Tbps/mm shoreline vs 1+ for even a bad SerDes; Skyechip custom-IP partnership shows the fix isn't in yet → reaffirms **SHORT [[CBRS]] $190.47**.
+
+**hit_rate note (2026-09-17): 24/45 → 25/46 (54%) — the Aug-18 Intel-CPO batch's one priced long resolves.** **[[LITE]] Aug-18 LONG ($879.28) → $919.40 = +4.6% WIN ✓** (the Nvidia/Lumentum ELSFP disaggregated-laser-moat thesis kept working). The Aug-18/19 [[CBRS]] activist SHORT ($209.85) is 29d today → resolves next run (currently short **+9.2%** at $190.47, working). This run's 4 new calls opened at spot.
 
 - **No new post in window (Sep 11-13, 2026) — track record re-priced only.** Latest post is the Sep-6 Hot Chips 2026 recap, ingested last run.
 

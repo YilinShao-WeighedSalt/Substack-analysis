@@ -8,7 +8,7 @@ updated: 2026-09-11
 ticker: AMD
 current_stance: long
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -96,6 +96,7 @@ last_review: 2026-09-11
 | 2026-09-07 | [[semianalysis]] | NEUTRAL | 477.57 | "Still learning test-first software culture" vs Google's mature quality culture |
 | 2026-09-07 | [[semidoped]] | NEUTRAL | 477.57 | Threadripper Halo Station (96-core + 4x MI350P) answers Nvidia DGX Station for local AI dev |
 | 2026-09-11 | [[semidoped]] | LONG | 503.60 | Ships 50,000 MI450 'Helios' GPUs to Oracle — first large-scale deployment of the new accelerator. |
+| 2026-09-14 | [[semianalysis]] | NEUTRAL | 512.50 | MI455X UALoE72 committed to InferenceX/AgentX, but Rubin dominates the frontier on perf/TCO & perf/MW |
 
 ## Thesis evolution
 The view on AMD across these publications has bifurcated sharply into two non-overlapping theses that have rarely converged. Both irrationalanalysis and semianalysis opened 2024 broadly constructive on AMD's CPU renaissance — Turin/Bergamo/Strix crushing Intel and validating the fabless-chiplet model — and that CPU bull case has only strengthened over time, culminating in the Venice server CPU thesis of early 2026. The GPU story followed the opposite arc: an initial window of MI300X opportunity (H1 2024) quickly collapsed as Blackwell ramped, and by late 2024 both publications were independently short the datacenter GPU segment on the same structural grounds — ROCm software immaturity, aggressive hardware discounting, Samsung HBM yield problems, and no rack-scale solution. The two publications diverge most in 2025-2026 on whether the MI450X/Helios roadmap closes the gap: semianalysis acknowledges cultural progress but maintains AMD is 6+ months behind on inference composability and has zero production inference customers as of early 2026, while irrationalanalysis points to the OpenAI warrant deal and CPU margin tailwinds as reasons to own the stock regardless of GPU execution. The net result is a stock with a well-established CPU long that both camps endorse and a GPU short that semianalysis sustains while irrationalanalysis periodically covers and re-enters around catalysts.
@@ -114,3 +115,5 @@ No px@call values are recorded across the log, so price-based verification is no
 **Update 2026-08-18:** SD's **Jul-6 LONG ($552.05) resolved at $506.00 = -8.3% LOSS ✗** (>30d). SA Jul-28 LONG ($494.95) is +2.2% (open). New SD Aug-17 LONG on a report that **Google is in talks to co-design its next-gen TPU with AMD** (on-package CPU cores for RL workloads) — a notable break from Google's in-house-only ASIC strategy and a credibility marker for AMD's datacenter roadmap.
 
 **Update 2026-08-24:** the **SA Jul-25 LONG ($494.95) resolved at $473.25 = -4.4% LOSS ✗** (>30d) — the SemiAnalysis "great chance at the CUDA moat" long round-tripped. Its AgentX benchmark (fresh NEUTRAL $473.25) is the nuance behind it: MI355X/ATOM is closing fast (M3 FP4 day-0 vs months-late on R1) but AMD tuned only for short-context single-turn — upstream vLLM/SGLang still trails Nvidia on realistic long-context agentic serving, and "even free AMD compute" is dearer per token. Constructive on trajectory, cautious on the tape; stance stays neutral.
+
+**Update 2026-09-17:** SA NEUTRAL $512.50 — MI455X committed to InferenceX but Rubin sets the frontier. **Resolution:** SD's Aug-17 LONG ($506.00, Google-AMD TPU co-design) → $512.50 = **+1.3% WIN ✓**.

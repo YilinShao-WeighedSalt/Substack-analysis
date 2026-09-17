@@ -4,7 +4,7 @@ title: "Qualcomm & Mobile RF Front-End"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-04-30
+updated: 2026-09-17
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -58,3 +58,7 @@ first_seen: 2024-02-08
 
 ## Narrative
 The Qualcomm and mobile RFFE theme has been tracked primarily by irrationalanalysis since early 2024, centered on the structural risk to Qualcomm's modem and RF franchise as Apple developed its in-house modem. The thesis crystallized through mid-2024 coverage of Apple's modem roadmap and RFFE supplier dynamics (Qorvo, Skyworks, CEVA, SiTime), with the iPhone 16e launch in early 2025 confirming initial Apple modem displacement and triggering a cluster of detailed post-mortems. By mid-2025, irrationalanalysis had sharpened the bear case on Qualcomm's remaining Apple content window, culminating in the September 2025 "out of time" thesis as Apple's full modem rollout timeline came into focus. Coverage has continued into 2026 across earnings cycles, with the narrative now maturing around execution risk for Qualcomm's diversification into automotive and PC and secondary effects on RFFE suppliers tied to Apple socket transitions.
+
+
+## Update 2026-09-17 — Apple's C2 modem lands mmWave early (Irrational Analysis)
+The Apple-modem design-out — Qualcomm's central bear case — accelerated. Apple's **C2 modem got mmWave support ahead of schedule**, surprising Qualcomm management; QCOM's planned 20% iPhone share this year was slashed to low-single-digit (contractual minimums only). Plain terms: **mmWave** (high-band 5G) is the hard part of a modem, and the reason many expected Apple to need a Verizon waiver or keep buying from Qualcomm another year; hitting it early means Apple is "fully self-sufficient and can attack Qualcomm with little repercussion." The **QTL licensing cliff (Apr-2027)** — where a big slice of Qualcomm's highest-margin licensing income resets — now has no modem-revenue offset. IA also reads the new Qualcomm/Amazon deal as low-margin backend + Alphawave SerDes work timed to distract from the Apple news. Feeds the bear side of [[qcom-short-vs-edge-ai-turnaround]].

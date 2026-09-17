@@ -8,7 +8,7 @@ updated: 2026-08-18
 ticker: RIOT
 current_stance: long
 conviction: low
-last_review: 2026-08-18
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,5 @@ Bitcoin miner turned AI-infra landlord — part of the same "power-rich miner le
 
 ## Outcome tracking
 Opened $20.04 (2026-08-17), open (<30d). Falsified if the Anthropic offtake slips or crypto drawdown forces capital away from the AI pivot.
+
+**Update 2026-09-17 (resolution):** SD's Aug-17 LONG ($20.04, 20-yr ~$9B Anthropic compute-supply deal) → $20.35 = **+1.5% WIN ✓** — the Anthropic anchor held while peers gave back.

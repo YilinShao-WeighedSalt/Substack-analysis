@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-11
+updated: 2026-09-17
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -71,3 +71,7 @@ SemiAnalysis established the foundational frame early, covering GAA transistor y
 
 ## 2026-09-11 update — High-NA EUV gets its first firm commitments
 The long-hesitant High-NA question resolved this week: **ASML secured formal High-NA EUV commitments from both TSMC and Samsung**, plus a new **12-inch photomask** platform (a big productivity boost over today's 6-inch reticle). **High-NA EUV** = next-gen extreme-ultraviolet lithography with a wider 0.55 numerical-aperture lens, printing finer features in a single pass (vs low-NA + multi-patterning); the catch is ~$350-400M per machine, which is why TSMC had pushed low-NA as far as possible. Now **TSMC targets 2030 (A10/A11 nodes)** as the first confirmed process anchor, while **Samsung is more aggressive — High-NA in high-volume DRAM by 2028** (an industry first). Per Semi Doped, **Intel Foundry holds the practical lead** — already running layers of Panther Lake in HVM on High-NA — while TSMC waits for the 6×12-inch masks. ASML broke ground on expanded manufacturing capacity for the ramp.
+
+
+## Update 2026-09-17 — the 6x12-inch mask unlocks High-NA (Semi Doped pod; ASML)
+TSMC, Samsung and Intel all publicly committed to a new **6x12-inch photomask standard** — the coordinated move that makes High-NA EUV economically viable. Why it matters in plain terms: **High-NA (0.55 NA) uses anamorphic optics** (magnifies x and y differently), which halves the printable field per exposure and creates a throughput problem; the larger 6x12 mask restores field size so wafers-per-hour economics work. No single mask vendor could justify the tooling alone, so the joint commitment was essential. Separately, **ASML is weighing production beyond its 110-unit EUV ceiling for 2028** (limiter is assembly speed, not supply chain — JPM); High-NA adoption starts 2028 and grows "more meaningfully over the next decade." MediaTek's Dimensity 9600 Pro became the first 2nm mobile SoC at volume (beating Qualcomm to the node) — mobile leads AI chips onto each new node.

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-14
+updated: 2026-09-17
 ---
 
 # Wiki Index
@@ -255,6 +255,7 @@ updated: 2026-09-14
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-09-14-market-memo-qualcomm-amazon-apple]] — Market Memo: QCOM/Amazon (low-margin), Apple C2 mmWave early, Credo 30m µLED "bullshit", Cerebras parallel-port I/O (SHORT QCOM/CRDO/CBRS, LONG AAPL)
 - [[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]] — Hot Chips 2026: Irrational Recap
 
 - [[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]] — Mobileye's Rancid Kitchen Sink
@@ -398,6 +399,9 @@ updated: 2026-09-14
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-15-datacenter-moratoriums-not-killing-buildout]] — Moratoriums aren't killing the US buildout: only ~2.3GW genuinely delayed, +38GW 2027, buildout moving behind-the-meter (thesis-level bullish AI infra)
+- [[semianalysis-2026-09-14-vera-rubin-nvl72-agentic-inference]] — Vera Rubin NVL72: 67x tokens/TCO vs GB300, 7x perf/MW, >2x profit/GW — "the more you buy, the more you earn" (LONG NVDA, NEUT AMD)
+- [[semianalysis-2026-09-14-brain-too-big-on-device-vs-datacenter-inference]] — On-device vs datacenter robot inference: node convergence + the network wall (reinforces NVDA/TSMC; no priced call)
 - [[semianalysis-2026-09-13-long-live-the-short-king-4-hi-hbm]] — 4-hi HBM Wins: the de-spec goes further; bandwidth beats capacity for inference, tokens/HBM-wafer the new metric (NEUT MU/000660/005930)
 - [[semianalysis-2026-09-11-nvidias-backstop-universe]] — Nvidia's Backstop Universe: $530B off-B/S guarantees, asymmetric in Nvidia's favor, "Cisco PTSD" overdone (LONG NVDA)
 - [[semianalysis-2026-09-10-behind-the-meter-power-part-1]] — Behind-The-Meter Power for Datacenters Pt.1 (75 GW firm orders; Bloom fuel cells + Caterpillar recips the share-gainers vs GEV/Siemens) (LONG BE/CAT, NEUT GEV/ENR.DE)
@@ -522,6 +526,10 @@ updated: 2026-09-14
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-09-16-daily-update-september-16th]] — Daily Sep 16 (SK Hynix→Intel Ohio fab, Astera Leo 2/Leo X, Samsung DDR5→OSAT/HBM + Tesla AI5, AWS writes off Gulf zones, Altera IPO, MSFT AION 2) (LONG INTC/ALAB/005930)
+- [[semidoped-2026-09-15-daily-update-september-15th]] — Daily Sep 15 (MediaTek 9600 Pro first 2nm mobile, TSMC allocation squeeze thru 2027, ASML weighs >110-unit EUV, Broadcom holds AI targets, SEMCO/QCOM organic bridge, $425B Q2 record) (LONG 2454.TW/TSM/ASML/AVGO/009150)
+- [[semidoped-2026-09-14-daily-update-september-14th]] — Daily Sep 14 (AI-pacing debate, TSMC +53% Aug, Nvidia $10B Anthropic-IPO anchor, Ciena Ventures $200M) (LONG TSM/NVDA/CIEN)
+- [[semidoped-2026-09-14-podcast-tsmc-high-na-6x12-mask]] — Podcast: 6x12-inch mask standard unlocks High-NA EUV; anamorphic-optics throughput (educational, no call)
 - [[semidoped-2026-09-11-daily]] — Daily Sep 11 (Oracle OCI +121%/$664B backlog/300K GPUs, MSFT 38GW by 2032, OpenAI 2nd-fab Samsung, TSMC A14 pulled fwd, Synopsys −22% NPU die, Eaton 800VDC, Bloom Power Connect, CORZ ERCOT 1.4GW, Renesas/Lightera) (LONG ORCL/MSFT/005930/TSM/BE/CORZ/ETN/SNPS/6723.JP/5801.T)
 - [[semidoped-2026-09-10-daily-update-september-10th]] — Daily Sep 10 (DOJ probes Nvidia-Groq license, d-Matrix→NVLink Fusion, DeepSeek V4.1 Flash near-free, AMD 50k MI450→Oracle, SMIC >$3B, GF+MPWR) (LONG AMD/UMC/GFS/0981.HK, NEUT NVDA)
 - [[semidoped-2026-09-09-daily-update-september-9th]] — Daily Sep 9 (ASML/TSMC/Samsung High-NA EUV + 12" mask commitments, Kioxia rejects SK tie-up, OpenAI-Samsung chip, CoreWeave $5B, ADI-Alif, Meta Muse) (LONG ASML/INTC/005930/285A.T/CRWV/ADI/META)

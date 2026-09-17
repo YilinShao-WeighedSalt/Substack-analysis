@@ -8,7 +8,7 @@ updated: 2026-09-11
 ticker: INTC
 current_stance: long
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -107,6 +107,7 @@ last_review: 2026-09-11
 | 2026-09-05 | [[semidoped]] | LONG | 95.80 | EMIB-T gains as a CoWoS alternative; big tech shifts advanced-packaging to Intel Foundry as TSMC tools double. |
 | 2026-09-06 | [[irrationalanalysis]] | NEUTRAL | 95.80 | Xe GPU "F-tier"; Diamond Rapids CPU finally adopts central-IO die |
 | 2026-09-11 | [[semidoped]] | LONG | 100.32 | Intel Foundry holds a High-NA lead — already running Panther Lake layers in HVM ahead of TSMC. |
+| 2026-09-16 | [[semidoped]] | LONG | 101.05 | SK Hynix in talks to make memory inside Intel's Ohio fab — a rare foundry external-customer win reframing IFS revenue geography |
 
 ## Thesis evolution
 The coverage arc divides into three distinct phases. Through early-2025, irrationalanalysis held a consistently bearish view grounded in product deterioration — CPU share losses to AMD and Qualcomm, Lunar Lake COGS blowout from TSMC N3B dependence, and a broken 18A PDK with unacceptable parametric yield; semianalysis was more measured, acknowledging a credible roadmap while flagging the capital gap and absence of external foundry customers. The pivot came in March 2025 with Lip-Bu Tan's appointment, which irrationalanalysis treated as a genuine inflection, initiating a long and holding it through a turbulent 2025 marked by continued shorts on any product-specific bad news. By late 2025 and into 2026 the bull thesis consolidated around three pillars: 18A-P as a process fix, EMIB/Foveros Direct as a differentiated advanced-packaging moat, and sub-book-value as a margin of safety — with globalsemiresearch and semidoped joining semianalysis in supporting the foundry optionality view. The remaining bearish voices (irrationalanalysis's own January 2026 short note; semianalysis's Diamond Rapids throughput critique) focus on the products division, which most bulls now explicitly write off, making the live thesis a pure foundry/packaging option on 18A-P success by 2027. The June 2026 Apple foundry deal — announced by the White House — represents the strongest external validation to date: Apple's partnership with TSMC is what originally made TSMC the global leader, so Apple choosing Intel signals a credibility inflection. Separately, Google's reported ~3M TPU EMIB commitment (via MediaTek, not Broadcom) validates Intel as a viable external advanced packaging vendor. The stock hit an all-time high of $135.48 on June 18; the original $80–81 bull case is now up 65–68%.
@@ -125,3 +126,5 @@ The two calls with explicit px@call values — irrationalanalysis at $81.4 (2026
 **2026-09-05:** SD LONG at $95.80 on the packaging-pivot demand-pull. IA Aug-1 LONG ($90.20) resolves **+6.2% ✓**. The EMIB-T-as-CoWoS-alternative thesis keeps compounding (18A-P wins, MediaTek $5B, now TSMC tool-procurement overflow).
 
 **Resolution (2026-09-11):** Semi Doped's Aug-10 LONG ($97.71) → $100.32 = **+2.7% WIN ✓** (foundry-turnaround thesis tracking up; new Sep-9 High-NA-lead LONG opened at spot).
+
+**Update 2026-09-17:** SD LONG $101.05 — SK Hynix in talks to lease space in Intel's Ohio fab to make memory on US soil: a rare external-customer validation for IFS (US gov't tariff pressure is the stick). Adds to the foundry-turnaround optionality.

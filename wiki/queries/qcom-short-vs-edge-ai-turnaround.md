@@ -4,7 +4,7 @@ title: "Open contradiction: Qualcomm — persistent short vs. edge-AI turnaround
 tags: [qualcomm, contradiction, edge-ai, hbc]
 related: ["[[semidoped-2026-09-08-daily-update-september-8th]]", "[[QCOM]]", "[[irrationalanalysis]]", "[[semidoped]]", "[[semidoped-2026-06-29-qualcomm-hbc-memory-alphawave]]"]
 created: 2026-07-01
-updated: 2026-09-11
+updated: 2026-09-17
 ---
 
 # QCOM: persistent short vs. edge-AI turnaround
@@ -25,3 +25,7 @@ Watch: AI200 sampling (2026) reception; any technical paper / Hot Chips disclosu
 
 ## 2026-09-11 update — the data-center anchor arrives
 Semi Doped's Sep-8 daily logs the strongest constructive datapoint yet: **Qualcomm signs a multi-generational custom AI data-center chip deal with Amazon, with AWS taking the right to acquire up to $4B in QCOM shares** (a warrant structure tying AWS economics to QCOM execution); shares **+~10%**. This is exactly the "credible hyperscaler data-center traction" the bull side needed — no longer just Humain/slideware — and it moves Semi Doped from NEUTRAL to an outright **LONG (px@call $176.88)**. For the bear side, the irony is that QCOM at $176.88 has round-tripped back **near [[irrationalanalysis]]'s $177 short entry**, so the ~2-yr short is roughly flat-to-underwater again rather than clearly winning. The Apple-modem / QTL-2027 cliffs are unchanged and still unrefuted — the deal is optionality on execution, not proof of P&L — but the balance of evidence has tilted toward the turnaround. **Status: still open, tilting bull.** Watch: deal chip-generation cadence & first silicon; whether the DC revenue offsets the QTL cliff in FY27-28; any Snapdragon Hexagon-NPU 30B on-device momentum.
+
+
+## Update 2026-09-17 — the split sharpens
+This scan hit **both sides in the same window**, and the contradiction is now explicit. **Bear side ([[irrationalanalysis]], SHORT $184.84, Sep-14):** Apple's C2 modem landed **mmWave ahead of schedule**, so Qualcomm's planned 20% iPhone share was cut to low-single-digit and the **QTL cliff (Apr-2027)** has no offset; IA reads the QCOM/Amazon deal as low-margin backend + Alphawave SerDes filler, timed to distract, at "much lower margins than the Apple modem revenue it's replacing." **Constructive side ([[semidoped]], LONG $176.88, Sep-11):** the Amazon multi-gen custom-AI-chip deal (up to $4B QCOM warrants) is the first hyperscaler anchor beyond Humain. **Scoreboard:** QCOM sits **$184.84** — SD's Sep-11 long is **+4.5%** and IA's fresh short is fresh; the market is still rewarding the optionality read, but the Apple mmWave surprise is the strongest datapoint yet for the bear's core thesis. Resolution watch: April-2027 QTL reset and whether the Amazon/edge revenue actually replaces the modem/licensing loss at margin.

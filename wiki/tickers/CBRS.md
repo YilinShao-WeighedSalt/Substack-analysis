@@ -8,7 +8,7 @@ updated: 2026-09-08
 ticker: CBRS
 current_stance: mixed
 conviction: medium
-last_review: 2026-09-08
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -33,6 +33,7 @@ last_review: 2026-09-08
 | 2026-08-19 | [[semidoped]] | NEUTRAL | 209.85 | 'Thermal/power/systems iteration, not architectural' — same 44GB SRAM/900K cores/5nm; 3 wafers/rack vs 2, 50% higher SRAM density/rack. Still an improvement |
 | 2026-08-25 | [[semianalysis]] | NEUTRAL | 182.15 | Jalapeño's arrival puts Cerebras' 1.25 GW option beyond OpenAI's firm 750 MW 'in question.' |
 | 2026-09-06 | [[irrationalanalysis]] | SHORT | 210.05 | Activist short reaffirmed; Hot Chips "confirmed" the ~20% parametric-yield thesis; deep-dive Oct/Nov |
+| 2026-09-14 | [[irrationalanalysis]] | SHORT | 190.47 | On/off-wafer I/O confirmed a primitive parallel port (NoC extension): 0.0056 Tbps/mm shoreline vs 1+ for SerDes; Skyechip custom-IP = fix not in yet; reaffirms activist yield short |
 
 ## Thesis evolution
 irrationalanalysis opened with a consistently bearish view across three calls spanning late 2024, citing fatal customer concentration (G42 as near-sole buyer), structurally weak gross margins around 36%, and a wafer-scale architecture it viewed as technically overblown. By mid-2026 the same publication reversed to bullish after Cerebras secured an OpenAI $20B inference deal and AWS distribution, arguing the company found a defensible niche in ultra-low-latency inference where wafer-scale die actually delivers differentiated speed. The June 2026 earnings call reinforced the LONG: despite calling the transcript a "trainwreck," irrationalanalysis deepened its conviction by modeling the packaging yield problem (20% estimated) as the central financial variable — improvement from 20% to 50% would lift gross margins from ~42% to ~72%. The author initiated a symbolic "activist campaign" focused on three catalysts: WSE-4 with FP8 support, face-to-face I/O to solve KV cache offload, and a packaging yield investor day. semidoped maintained NEUTRAL at first earnings, noting shares fell 10% despite the beat and flagging the 88GB SRAM-per-rack constraint for large models. The two publications continue to disagree on conviction — irrationalanalysis sees solvable engineering bottlenecks, semidoped sees structural TAM and business model risks.
@@ -53,3 +54,5 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 **Update 2026-08-27:** SemiAnalysis NEUTRAL $182.15 on the **OpenAI Jalapeño** benchmark — its read is that Cerebras' **1.25 GW option beyond OpenAI's firm 750 MW is 'now in question'** as a first-gen custom ASIC (HBM4, beats Blackwell on perf/W) crowds the ultra-fast-inference niche CBRS depends on. CS-4's 30×-vs-GPU claim (Hot Chips) lands the same week. Stock $182.15, ~13% below the CS-4 mark ($209.85) and near the 52-wk low — the yield-short / TAM-pressure side of [[cbrs-yield-short-vs-inference-tam]] gains a hard datapoint. IA's Aug-9 activist short ($234.76) now **+22% (working)**.
 
 **2026-09-08 (resolution):** IA's Aug-9 activist SHORT ($234.76) crossed 30d → **WIN**, CBRS fell to $210.05 = short **+10.5%** ✓. Reaffirmed at Hot Chips ($210.05); parametric-yield deep-dive teased for Oct/Nov.
+
+**Update 2026-09-17:** IA SHORT $190.47 — the I/O conspiracy note hardens the activist short: the wafer-edge I/O is a primitive parallel port at ~0.0056 Tbps/mm (vs 1+ for SerDes), explaining why improving it has been 'impossible.' **Resolution:** SD's Aug-17 LONG ($251.98, OpenAI-Sol production win) → $190.47 = **-24.4% LOSS ✗** — the Sol pop fully round-tripped; the yield/IO bears are winning the tape. See [[cbrs-yield-short-vs-inference-tam]].

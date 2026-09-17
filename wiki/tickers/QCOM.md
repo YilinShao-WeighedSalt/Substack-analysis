@@ -8,7 +8,7 @@ updated: 2026-09-11
 ticker: QCOM
 current_stance: mixed
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -71,6 +71,7 @@ last_review: 2026-09-11
 | 2026-08-24 | [[semidoped]] | NEUTRAL | 163.72 | Xiaomi Xring O3 (3nm, LPDDR6) + Exynos 2700 claims squeeze the high end; offset by Snapdragon breaking 5 GHz. |
 | 2026-09-07 | [[semidoped]] | NEUTRAL | 168.74 | Snapdragon 8 Elite Gen 6 (Sep 22) side-stacked DRAM + higher prices; S27 win |
 | 2026-09-11 | [[semidoped]] | LONG | 176.88 | Amazon multi-gen custom-AI-chip deal + up to $4B QCOM warrants; +10% — first hyperscaler anchor beyond Humain. |
+| 2026-09-14 | [[irrationalanalysis]] | SHORT | 184.84 | Amazon deal = low-margin backend PD + Alphawave SerDes (coherent-lite DSP that predates the buy); replaces higher-margin Apple-modem rev; Apple C2 mmWave slashes QCOM share to low-single-digit; QTL cliff Apr-2027 |
 
 ## Thesis evolution
 The view on QCOM pivoted sharply in mid-2024. Early in the coverage period (Q1-Q2 2024), irrationalanalysis was cautiously constructive on the Snapdragon X Elite PC entry as a pressure point on Intel, with the May 2024 Dell leak briefly pushing the stance to outright LONG on margin and share-gain assumptions. That bull case collapsed between July and August 2024 when two compounding negatives arrived simultaneously: the Apple C1 modem timeline was revealed to be far more aggressive than consensus expected, threatening the single largest QCT revenue stream, and channel checks on X Elite sell-through were obscured by management evasion on earnings calls. From August 2024 onward irrationalanalysis maintained an essentially unbroken SHORT, using QCOM as a hedge leg against leveraged AVGO/TSM longs and eventually as a standalone conviction short. The two interruptions — a tactical LONG on ARM litigation resolution in October 2024 and a brief LONG on NVLink Fusion optionality in May 2025 — were both characterized as opportunistic and short-lived rather than thesis changes. Semianalysis converged on the same Apple modem displacement conclusion by early 2026, adding independent confirmation to the revenue-cliff thesis. Citrini was the sole persistent bull, but that call was made in July 2024 before the modem timeline accelerated and was never updated in this log.
@@ -83,3 +84,5 @@ The only anchored px@call in the log is the October 2024 short at $163.08, which
 **2026-07-04 — Semi Doped TIL adds color, not conviction.** A history essay (Qualcomm's OmniTRACS trucking cash funding the "impossible" CDMA bet in the late '80s) framed as a hopeful analogy for the HBC data-center reinvention. No new call; logged NEUTRAL $177.40. Meanwhile the bear side is re-gaining ground on price: QCOM at $177.40 is now **below** the persistent IA short anchors ($191.65 late-June, $177 April) again after fading from the June-29 Investor-Day pop — the ~+7% move off $177 has round-tripped. The standoff in [[qcom-short-vs-edge-ai-turnaround]] remains unresolved; HBC is still slideware.
 
 **2026-07-31 — the short is finally paying.** QCOM has broken down to **$151.60**, ~-42% from its 52-wk high, on the Q3-2026 call where Apple's accelerated modem design-out (foldable-only QCOM share vs the prior ~20% expectation, timed to maximize pain into the Apr-1-2027 QTL cliff) crystallized and Akash conceded the modem-margin hit. **Both priced irrationalanalysis SHORTs now resolve as WINS**: Oct-2024 $163.08 -> $151.60 (short +7.0% ✓) and Apr-2026 $177.00 -> $151.60 (short +14.4% ✓), flipping the ~2-yr-old thesis from losing-on-price to vindicated. New SHORT logged $151.60 (07-30). Stance moved mixed -> short. Falsifier for the bear: a credible datacenter design-win or a QTL/Apple licensing extension; the 'Dragonfly' DC play was exposed as RTL/Virtuoso simulation with no test silicon.
+
+**Update 2026-09-17:** IA SHORT $184.84 — the Apple-modem cliff arrives early. Apple's C2 got mmWave ahead of schedule (QCOM's planned 20% iPhone share cut to low-single-digit); the Amazon deal is low-margin filler replacing it, and QTL revenue is 'in jeopardy early next year.' This directly reinforces the bear side of [[qcom-short-vs-edge-ai-turnaround]]. Note: SD's Sep-11 LONG ($176.88, Amazon warrants) is +4.5% at $184.84 — the two pubs remain split, and the market is (for now) rewarding SD's optionality read over IA's cliff.

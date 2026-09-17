@@ -8,7 +8,7 @@ updated: 2026-09-05
 ticker: SNDK
 current_stance: long
 conviction: medium
-last_review: 2026-09-05
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -37,3 +37,5 @@ No px@call values are recorded across any entry, so quantitative performance tra
 **Update 2026-08-15:** SD LONG $1,641.11 (Aug-14 Investor Day). The Jul-3 SD LONG ($1,745) already resolved as a loss (Aug-3, into the memory flush) but has since round-tripped most of the way back ($1,641, −6.0% vs entry). Investor-Day model (mid-to-high-teens rev growth FY28–30, 100% excess-cash return) extends the NAND-boom-through-decade thesis; HBF roadmap is the new optionality. Open.
 
 **Update 2026-08-18:** SD's **Jul-3 LONG ($1,745) resolved at $1,786.85 = +2.4% WIN ✓** (>30d; the July memory selloff has fully retraced). SD Aug-14 Investor-Day LONG ($1,641.11) is **+8.9%** (open). New SD Aug-17 LONG on Phison's NAND-shortage-to-2030 warning + the SanDisk/Kioxia 1 PB SSD demo. YMTC passing Kioxia for #3 NAND is the geopolitical wrinkle, not a demand hit.
+
+**Update 2026-09-17 (resolution):** SD's Aug-17 LONG ($1,786.85, Phison NAND-shortage-to-2030 / 1PB SSD) → $1,519.97 = **-14.9% LOSS ✗** — bought near the mid-Aug top; the shortage thesis intact but the entry gave back.

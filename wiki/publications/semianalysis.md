@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-14
+updated: 2026-09-17
 handle: semianalysis
-calls_logged: 234
-hit_rate: "7/22 (32%), ~12 open"
+calls_logged: 236
+hit_rate: "7/22 (32%), ~13 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Three posts, Sep 14-15 2026 (all paywalled, full bodies served): *Vera Rubin NVL72 Agentic Inference*, *A Brain Too Big to Carry* (robotics), *Datacenter Moratoriums*.** The marquee call is **Vera Rubin**: the first verified third-party Rubin AgentX results show — even on pre-release TRTLLM software — **up to 67x tokens/$ TCO vs GB300** at 170 TPS (a realistic **1.4-3x at 60-100 TPS** where most serve), **7x token throughput per MW** (Jensen "sandbagging" his own 3x GTC claim, as he did in 2024 with GB200), **>2x profit per GW** (~$150B modeled profit/GW, ~$446M more/GW than GB300 at 10MW) and ~28% pricing headroom → **LONG [[NVDA]] $213.90**. AMD's MI455X UALoE72 is committed to InferenceX but Rubin owns the frontier → **NEUTRAL [[AMD]] $512.50**. **Brain-Too-Big** (robotics/embodied-AI, → [[robotics-embodied-ai]]): robot silicon is converging onto the same leading-edge nodes as the datacenter (Thor N4 → next-gen N3 alongside Rubin → N2), Jetson is a thin margin sliver so Nvidia points scarce wafers at the datacenter; generalist robots' planning layer (≤20Hz) is offloadable to datacenter GPUs but the "network wall" (jitter, uplink MIMO, robot-aware access points) is the real bottleneck — no clean single ticker (reinforces NVDA + TSMC advanced-node demand). **Moratoriums** (→ [[ai-infrastructure-capex]]): rebuts the "moratoriums are killing the US buildout" narrative — of ~20GW nominally exposed only **~2.3GW is genuinely delayed**; +38GW IT capacity in 2027 (>2x 2026); the buildout is moving **behind-the-meter** (BtM a net-positive for on-site generation). Thesis-level bullish AI-infra, no fresh priced ticker.
+
+**hit_rate note (2026-09-17): no priced call crossed 30 days — holds 7/22 (32%).** The Aug-25 Jalapeño longs ([[AVGO]] $355.59, [[005930.KS]] ₩265,000) resolve ~Sep-24; the Sep-11 NVDA LONG ($218.29) and this run's NVDA LONG open+underwater-but-open. This run adds 1 priced LONG (NVDA) + 1 NEUTRAL (AMD).
 
 - **Two posts, Sep 11 & 13 2026 (both paywalled, full bodies served):** *Nvidia's Backstop Universe* (Sep-11) + *Long Live the Short King: Why 4-hi HBM Wins* (Sep-13). **Backstop Universe** — balance-sheet forensics on Nvidia's off-B/S guarantee stack: **$530B gross guarantees** (up from $184B QoQ) vs $91B on-B/S liabilities; the "manufactured credit anchor" mechanism (AICP revenue floors, PORTS-Pike lease guarantees, ≤25% residual-value guarantees under the >$500B PE partnership) lets non-IG neoclouds borrow at IG pricing. Heads Nvidia earns twice, tails only bites if a downcycle overwhelms its own cash gen while neoclouds fail; ~$441B EBITDA F1/28 / $1.4T cash by F1/31 = enormous firepower, "Cisco PTSD" overdone → **[[NVDA]] LONG $218.29** (→ [[ai-debt-financing]]). **4-hi HBM** — the ever-more-HBM supercycle is breaking: Rubin Ultra cut to 192GB (from 288GB), 8-hi now standard, and SA argues **4-hi is optimal for inference** — same bandwidth as taller stacks at a fraction of the $/bandwidth; +8-10% peak throughput from 8-/12-hi is below the +12-26% TCO premium. New figure of merit **tokens/HBM-wafer** (4-hi ≈2-3× vs taller); framed win-win for suppliers (frees wafers to starved DRAM). Reinforces hybrid-bonding collapse ([[advanced-packaging]]). Priced **[[MU]]/[[000660.KS]]/[[005930.KS]] all NEUTRAL** (→ [[hbm-memory]]).
 

@@ -8,7 +8,7 @@ updated: 2026-09-08
 ticker: AVGO
 current_stance: long
 conviction: high
-last_review: 2026-09-08
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -94,6 +94,7 @@ last_review: 2026-09-08
 | 2026-08-28 | [[semidoped]] | LONG | 368.79 | Independent Jalapeño benchmarks 1.5-1.9x efficiency/W vs Nvidia inference validate Broadcom ASIC co-design + ESUN scale-up switching |
 | 2026-09-05 | [[semidoped]] | LONG | 357.89 | Guides >$30 EPS by FY28 (~$115B FY27/~$230B FY28 chips); Hock's XPU cost/perf edge; dipped on Google-defection fear. |
 | 2026-09-06 | [[irrationalanalysis]] | NEUTRAL | 357.89 | Thor Ultra networking beaten by Nvidia BlueField-4 on small-packet tput |
+| 2026-09-15 | [[semidoped]] | LONG | 339.51 | CEO holds AI-revenue targets into the Anthropic 'pacing' selloff — AI demand 'here to stay' |
 ## Thesis evolution
 The AVGO thesis began in early 2024 as a multi-pillar conviction long anchored on three simultaneous tailwinds: hyperscaler custom silicon (Google TPU, Meta, and later OpenAI/Apple as ASIC customers), AI networking dominance via Tomahawk switching and 224G SerDes, and VMware monetization post-acquisition. Irrationalanalysis established the position early and deepened it consistently through 2024, at one point carrying a leveraged long with call options as AVGO became the primary vehicle for AI semiconductor exposure — a stance described as ~20% of portfolio in August 2024 and growing to the largest trading-account position by September 2025. The only material interruption was a brief tactical SHORT in March 2025 on concerns that the MediaTek/Nvidia IP deal threatened Broadcom's networking moat, but that view was subsequently reversed as Marvell and MediaTek SerDes failures through mid-2025 made Broadcom the unambiguous share gainer in optical DSPs and AEC. Semianalysis and globalsemiresearch independently arrived at bullish conclusions on the same core assets — Tomahawk switching incumbency, CPO execution leadership, and TPU silicon manufacturing — though globalsemiresearch introduced a nuanced caveat about hyperscaler bargaining power eroding margins at scale. Citrini was early and constructive but softened to neutral in January 2026, flagging moderating marginal returns for what had become a consensus AI semis holding. The one genuine risk thread runs through the Apple internalization story: Apple's progressive displacement of Broadcom RFFE and connectivity components (noted in the January 2026 semianalysis entry) creates a slow-moving headwind on the non-AI side of the business that the bulls have largely discounted relative to the ASIC ramp.
 
@@ -107,3 +108,5 @@ No px@call values are recorded in the log, so absolute return cannot be measured
 **Update 2026-08-24:** the marquee datapoint of the run — an **off-balance-sheet SPV targeting $60–100B in debt to fund Anthropic's custom accelerators** (CNBC $70B; Digitimes up to $100B), the single largest ASIC-financing signal yet and a direct read-through to the custom-silicon thesis. SD LONG @ $368.45. But the SA Jul-28 LONG ($383.22) **resolved at $368.45 = -3.9% LOSS ✗** (>30d) — content-win thesis intact, tape negative into the AI-hardware drawdown. Key unstated risk on the SPV: offtake concentration on one lab and off-balance-sheet debt structure. Stance stays long/high; the AgentX "CUDA moat holds" note is a mild counterweight to how fast merchant-ASIC displaces Nvidia.
 
 **Update 2026-08-27:** SemiAnalysis LONG $355.59 on **OpenAI Jalapeño** — Broadcom is Jalapeño's co-design ASIC partner AND supplies the **Tomahawk-6** scale-up switches binding 2,048 chips per fabric, so it's paid on both silicon and network. With Anthropic now standing up its own silicon team (Aug-25) and Meta/Google shipping MTIA 300 / TPU v10, every model lab designing away from merchant GPUs routes through Broadcom's franchise. Stock has drifted from the Jul-25 mark ($383) to $355 despite the strongest structural ASIC signal yet.
+
+**Update 2026-09-17:** SD LONG $339.51 — CEO publicly holds AI-revenue targets into the Anthropic 'pacing' selloff. Note the stock is down materially from the Aug-25 Jalapeño-era marks (~$355-369); SA's Aug-25 AVGO LONG resolves ~Sep-24.

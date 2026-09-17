@@ -4,7 +4,7 @@ title: "AI Infrastructure & Hyperscaler Capex"
 tags: []
 related: []
 created: 2024-01-27
-updated: 2026-08-18
+updated: 2026-09-17
 status: maturing
 first_seen: 2024-01-27
 ---
@@ -157,3 +157,7 @@ The AI infrastructure capex theme emerged in early 2024 as IrrationalAnalysis an
 **2026-07-06 — the bottleneck moves to financing.** SemiAnalysis's GPU-debt-backstop piece argues the constraint has migrated from datacenter space (2025) → chip supply (early 2026) → **money** (mid-2026): who will lend the trillions once hyperscaler balance sheets are tapped out. Its answer — Nvidia backstopping neocloud rental revenue so banks will lend ("Central Bank of AI") — spun out into its own concept page ([[ai-debt-financing]]): ~$7.1T AI debt by 2029, 6-year backstops with revenue-share, DSCR ≥1.3x / 70–80% LTV, first deals SharonAI and Firmus in APAC. Also this run: **Foxconn Q2 record AI-server revenue** (a real-world "no slowdown" datapoint favoring the bull side of [[buildout-vs-monetization]]) and Nvidia's **Kyber rack delayed to 2028**.
 
 **2026-08-17 — land, power, and miners-turned-landlords.** Semi Doped: **Nvidia guarantees 4.25 of 8 IT-GW at OpenAI's Ohio (PORTS-Pike) campus + invests $1.5B in SB Energy** — but it **cut** its backstop >50% (from 8 IT-GW) and its check from up-to-$3B to $1.5B. Jensen: land & power "have become vital in the age of AI"; Austin: Nvidia is backstopping the datacenter itself, re-rentable if OpenAI stumbles ([[NVDA]] LONG). The **miner-to-AI-infra pivot** accelerates: **Riot Platforms** signs a 20-yr ~$9B Anthropic compute deal ([[RIOT]] LONG); **Core Scientific** closes $444M Polaris → 1.5 GW Muskogee campus ([[CORZ]] LONG) — same cohort as [[WULF]]/[[IREN]]. **Anthropic** courts a >$2T IPO on a $190–200B 2028 revenue case, buying inference-accel startup Decart (~$6B). OpenAI *delayed* its $20B Georgia DC on power/permitting — the power wall is real (see PJM RRS work in [[energy-grid-infrastructure]]).
+
+
+## Update 2026-09-17 — moratoriums don't (yet) kill the buildout (SemiAnalysis)
+SemiAnalysis's parcel-by-parcel audit rebuts the viral "moratoriums are killing the US datacenter buildout" story. Of ~20GW nominally exposed to 400+ local/state instruments, **only ~2.3GW is genuinely delayed** (~1,525MW local across 3 projects + ~0.8GW from NY's order). The model still forecasts **+38GW US IT capacity in 2027 (>2x 2026)**. Plain terms — **"counting moratoriums ≠ counting megawatts":** a pause only bites a project if it reaches the parcel (county rules often stop at city lines), freezes an approval the developer still needs (most freeze *new* applications, not existing approvals), and doesn't expire first. Brownsville de-annexed 444 acres days before approving Elon's DC. The buildout is increasingly **behind-the-meter** (75GW firm BtM orders), which sidesteps grid-permitting entirely and is a net positive for on-site generation. Bullish for the whole AI-infra complex; a durable statewide moratorium wave would be the tell to watch.

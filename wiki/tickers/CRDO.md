@@ -8,7 +8,7 @@ updated: 2026-03-27
 ticker: CRDO
 current_stance: mixed
 conviction: medium
-last_review: 2026-03-27
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,9 +27,12 @@ last_review: 2026-03-27
 | 2025-12-21 | [[irrationalanalysis]] | SHORT | n/a | Valuation inflated by Marvell Alaska AEC delays; ACC proliferation shrinks TAM |
 | 2026-03-12 | [[citrini]] | MENTION | n/a | Part of original connectivity basket; now priced for perfection per Citrini |
 | 2026-03-27 | [[irrationalanalysis]] | NEUTRAL | n/a | 3-7m optical reach niche structurally shrinks as advanced optics proliferate; good DSP is net-bearish Marvell, not net-bullish Credo |
+| 2026-09-14 | [[irrationalanalysis]] | SHORT | 161.49 | CEO's 30-meter uLED reach claim 'bullshit' — chromatic + modal dispersion cap it near ~10m; no DSP fixes that; OCP demo challenge coming |
 
 ## Thesis evolution
 Citrini drove the early bull case from mid-2024, holding CRDO as a high-conviction AI infrastructure long from inception: power-efficient SerDes and AECs were the right answer to AI cluster bandwidth bottlenecks, and the stock tripled-plus from initial entry. Irrational Analysis entered the name cautiously in late 2024, interested in the LRO DSP optionality, then flipped to short in March 2025 after Credo's simultaneous patent lawsuit and Amazon's warrant grants to AEC rivals (AAOI, FN) signaled customer concentration risk and defensive posturing at ~86% Amazon revenue. The short thesis then oscillated: IA went long again in June 2025 when Marvell's Alaska AEC DSP appeared to be failing (Credo outperformance as indirect proof), before reversing to short by October 2025 once Marvell demonstrated a superior AEC product at Amazon and at the OCP Summit. By end-2025 IA held CRDO as an explicit short on the view that Marvell delays had artificially inflated CRDO's valuation and that ACC proliferation structurally shrinks the AEC TAM. The two publications remain split at the last update: Citrini (March 2026) acknowledged CRDO as a prior winner but flagged it as priced for perfection; IA (March 2026) moved to neutral after OFC, noting that CRDO's 3-7 meter optical niche shrinks as LPO/XPO/NPO/CPO proliferate and that a strong Credo optical DSP is net-bearish Marvell rather than net-bullish Credo.
 
 ## Outcome tracking
 No px@call values are recorded across any entry, so direct price-based PnL attribution is not possible. What is traceable is thesis trajectory: Citrini's multi-year bull case was vindicated through at least September 2025 (cited as a successful prior long), consistent with a stock that tripled-plus from their 2024 entry. Irrational Analysis's short calls from March 2025 and October 2025 were intermittently challenged by the stock's persistence, with IA itself re-entering long in June 2025 before re-shorting in October — suggesting the bear thesis was structurally directional but tactically difficult to hold. The live falsifier for the bear view is whether Marvell Alaska AEC holds and expands its Amazon socket; continued CRDO revenue growth or a new large-customer AEC win would undermine the displacement narrative, while accelerating CPO and LPO adoption eating into the 3-7 meter reach niche is the structural bear catalyst that neither publication currently disputes.
+
+**Update 2026-09-17:** IA SHORT $161.49 (first priced CRDO call) — activist skepticism on the 30-meter uLED reach claim, which IA calls physically impossible (chromatic/modal dispersion). Distinct from IA's older Marvell-Alaska-displacement short thesis; this one targets a specific product claim ahead of an OCP demo. Stance mixed→lean-short.

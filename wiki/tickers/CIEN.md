@@ -8,7 +8,7 @@ updated: 2026-09-05
 ticker: CIEN
 current_stance: long
 conviction: high
-last_review: 2026-09-05
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,6 +27,7 @@ last_review: 2026-09-05
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 377.05 | Long-haul optics on the (unverified) Nvidia long-haul-gear tip. |
 | 2026-08-05 | [[irrationalanalysis]] | NEUTRAL | 408.83 | Long-haul optics outside the ban's blast radius; sell-then-bounce was "stupidity." |
 | 2026-09-05 | [[semidoped]] | LONG | 321.00 | Rev +37% to $1.67B, backlog nearing $10B, supply-limited optical up-cycle; -10% on in-line guide = entry. |
+| 2026-09-14 | [[semidoped]] | LONG | 340.50 | Launches $200M Ciena Ventures arm targeting AI-networking / optical-interconnect startups |
 
 ## Thesis evolution
 Coverage originates with citrini's August 2024 framing of CIEN as the primary equity expression of a cyclical-trough-meets-secular-inflection setup: chronic telecom underinvestment colliding with AI-driven datacenter interconnect demand, explicitly analogized to Nvidia's August 2022 trough. SemiAnalysis reinforced the call one week later by naming CIEN as a systems-level winner in the DWDM/DCI infrastructure required for multi-datacenter AI training at 100,000+ GPU scale. Irrationalanalysis adopted the thesis in September 2024 as a high-risk/high-reward complement to Fabrinet, framing CIEN as a pure-play on dark-fiber monetization; by October 2024 it was labeled the author's "favorite current trade." The view held without meaningful dissent through early 2025, with the February 2025 Fabrinet earnings cited as a confirmatory read-through and the December 2025 update adding a technical angle — Ciena's in-house 400G SerDes capability as a product differentiation driver ahead of the WDM upgrade wave. The one note of friction came at OCP October 2025, where irrationalanalysis strongly disagreed with Ciena's Nubis-acquired DWDM-based CPO approach, preferring D2D clock-forwarded SerDes — a technical objection that did not overturn the long but introduced skepticism about Ciena's CPO strategic direction. Citrini's March 2026 update declared the original thesis had played out ("more than tripled"), drawing a direct Nvidia-2023 earnings revision cycle analogy, and recommended taking profits on what had become a crowded consensus trade. As of June 2026, irrationalanalysis is not in the position but explicitly intends to re-enter on earnings-driven weakness, indicating the thesis remains live rather than closed.
@@ -37,3 +38,5 @@ No px@call values are recorded across any entry, so quantitative P&L cannot be a
 **Update 2026-08-06:** IA NEUTRAL $408.83 (Aug-5) — explicitly *not* affected by the transceiver ban (long-haul/DCI, not datacenter pluggables); IA calls the initial sell-off 'stupidity.' Prior IA Aug-1 LONG $377.05 -> $408.83 = **+8.4% (open)**, recovering from the Jul-1 long ($477.59) that resolved a loss last run. Thesis (Nvidia long-haul-gear tip) unverified but intact.
 
 **2026-09-05:** SD opens a LONG at $321.00 on the +37%/$10B-backlog print. Prior IA Aug-1 LONG ($377.05) resolves **-14.9% ✗** — the long-haul/DCI name lagged the transceiver-substitution optics winners; the new SD entry is ~15% lower, on a fundamentals beat sold off on in-line guide.
+
+**Update 2026-09-17:** SD LONG $340.50 — Ciena launches a $200M corporate venture arm for AI-networking/optical-interconnect startups. A strategic-signal (not earnings) datapoint; note CIEN has re-rated sharply higher since the Sep-4 $321 mark.

@@ -8,7 +8,7 @@ updated: 2026-09-14
 ticker: LITE
 current_stance: long
 conviction: high
-last_review: 2026-09-14
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -69,3 +69,5 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 **2026-09-08 (resolution):** IA's Aug-9 LONG ($820.59) → **WIN** at $881.25 = **+7.4%** ✓. New Hot Chips call NEUTRAL ($881.25) flags the 1060nm VCSEL GR-468 requal headwind + AMS OSRAM 850nm competition — structurally still long the laser moat.
 
 **Update 2026-09-14 (outcome):** [[irrationalanalysis]]'s Aug-12 Lumentum-earnings LONG ($926.14) crossed 30d at $927.03 = **+0.1% WIN ✓** (essentially flat — LITE has held near its highs). The disaggregated-laser/mode-hop-free-range moat thesis remains intact.
+
+**Update 2026-09-17 (resolution):** IA's Aug-18 LONG ($879.28, Nvidia/Lumentum ELSFP 'massive alpha' paper validating the disaggregated-laser moat) → $919.40 = **+4.6% WIN ✓** (>30d). The optics-duopoly long keeps working; no new post this run.

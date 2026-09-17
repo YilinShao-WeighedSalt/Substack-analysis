@@ -8,7 +8,7 @@ updated: 2026-09-14
 ticker: NVDA
 current_stance: long
 conviction: medium
-last_review: 2026-09-14
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -173,6 +173,8 @@ last_review: 2026-09-14
 | 2026-09-07 | [[semidoped]] | LONG | 230.36 | Anthropic discloses $517B compute commitments pre-IPO; Foxconn/Nscale demand |
 | 2026-09-11 | [[semidoped]] | NEUTRAL | 218.36 | DOJ antitrust probe of the $17-20B Groq license overhangs; offset by d-Matrix wiring Raptor into NVLink Fusion (ecosystem gravity). |
 | 2026-09-11 | [[semianalysis]] | LONG | 218.29 | Backstop Universe: $530B off-B/S guarantees asymmetric in Nvidia's favor; ~$441B EBITDA firepower, Cisco-PTSD overdone |
+| 2026-09-14 | [[semianalysis]] | LONG | 213.90 | Vera Rubin NVL72 AgentX: 67x tokens/TCO vs GB300 (1.4-3x at realistic 60-100 TPS), 7x perf/MW, >2x profit/GW — Jensen 'sandbagging' his own 3x GTC claim |
+| 2026-09-14 | [[semidoped]] | LONG | 213.90 | $10B anchor in Anthropic's ~$2T Nasdaq IPO; Anthropic named as the $13.7B GPU buyer (RUM Group) |
 
 ## Thesis evolution
 The bull thesis began with CUDA lock-in and datacenter GPU dominance in early 2024 and has only deepened since. [[irrationalanalysis]] established the core framework — 17 years of CUDA ecosystem accumulation creates switching costs no hardware advantage can overcome in the medium term — and has held Nvidia as a 40-50% portfolio position throughout, rarely wavering even during Blackwell packaging delays (Aug 2024) and the DeepSeek shock (Jan 2025). [[semianalysis]] started equally bullish on the hardware moat (Blackwell margins, NVL72 TCO, GB300 for reasoning) but has introduced the most substantive bearish notes: Huawei CloudMatrix 384 eroding the China TAM (Apr 2025), TPUv7 threatening hyperscaler accounts on TCO (Nov 2025), and three-front competitive pressure building through 2025. [[citrini]] has drifted from outright LONG to NEUTRAL/lower-conviction by late 2025 and into 2026, arguing the easy alpha is gone and supply-chain names now offer more asymmetry. The key evolution is that competitive risk has migrated from "implausible" to "real but medium-term" — the bear case is no longer dismissed, it is time-bounded to H2 2026+ when hyperscaler ASICs and Huawei Ascend take meaningful share. NVLink Fusion, CPO (COUPE/Quantum-X), the Groq acquihire, and the Vera Rubin full-stack CPU+GPU pod have each extended the moat narrative just as each preceding concern peaked.
@@ -199,3 +201,5 @@ The two entries with concrete px@call data are [[irrationalanalysis]] at $16.53 
 **2026-09-08 (resolution):** SemiAnalysis's Aug-7 SpaceX-10GW LONG ($217.50) → **WIN** at $230.36 = **+5.9%** ✓. Three fresh calls this run at $230.36 — IA LONG (CoWoS/HBM lockup, vertical wins), SA NEUTRAL (TPUv7 inference-economics pressure), SD LONG (Anthropic $517B).
 
 **Update 2026-09-14:** [[semianalysis]] LONG @ 218.29 (opened at spot this scan).
+
+**Update 2026-09-17:** two fresh LONGs at $213.90 — SA's *Vera Rubin* deep-dive (67x tokens/TCO vs GB300, 7x perf/MW, >2x profit/GW) and SD on the $10B Anthropic-IPO anchor. **Resolutions:** SD's Aug-17 LONG ($225.01) → $213.90 = **-4.9% LOSS ✗** and Aug-18 LONG ($216.85) → **-1.4% LOSS ✗** — NVDA drifted with the Anthropic 'pacing' selloff. SA's own Aug-25 Jalapeño-adjacent NEUTRAL and Sep-11 LONG ($218.29) sit modestly underwater but open. Falsifier unchanged (GPU rental rates rolling over → backstops).

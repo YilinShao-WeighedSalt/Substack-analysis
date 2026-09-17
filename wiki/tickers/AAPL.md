@@ -8,7 +8,7 @@ updated: 2026-08-27
 ticker: AAPL
 current_stance: long
 conviction: medium
-last_review: 2026-08-27
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -25,6 +25,7 @@ last_review: 2026-08-27
 
 | 2026-07-08 | [[semidoped]] | CAUTIOUS | 308.45 | Testing blacklisted CXMT DRAM for China devices; memory-cost pressure; $30B Broadcom RF deal |
 | 2026-08-25 | [[semidoped]] | NEUTRAL | 313.45 | M6 & M5 Ultra push on-device AI compute, but 'not hobby-grade' — a DGX-Spark-class desktop, not mass inference. |
+| 2026-09-14 | [[irrationalanalysis]] | LONG | 332.41 | C2 modem landed mmWave ahead of schedule — Apple fully self-sufficient, free to attack Qualcomm with little repercussion |
 ## Thesis evolution
 The bull case opened in mid-2024 with two distinct but complementary angles: [[semianalysis]] focused on the supply-side — Apple's proprietary M2 Ultra server buildout as a cost-and-privacy substitute for third-party GPU cloud — while [[citrini]] focused on the demand-side, swapping out GOOGL for AAPL and arguing Apple's closed ecosystem and consumer trust position it to own the agentic AI last mile and catalyze the first major iPhone replacement cycle in a decade. [[irrationalanalysis]] reinforced the consumer angle by 2024-07-27, treating Microsoft and Qualcomm's bungled Copilot+ launch as direct evidence that Apple would capture on-device AI by default. By 2026, [[semianalysis]] shifted the thesis to silicon economics: $7B+ in annual chip savings from displacing Intel, Qualcomm, and Broadcom, plus 11pp Mac gross-margin expansion, make the vertical integration story increasingly durable. [[irrationalanalysis]] added a competitive-dynamics dimension in April 2026, framing Apple's aggressive LPDDR purchasing as a deliberate strategy to crowd out Android OEMs rather than merely a demand signal. No publication has expressed a bearish view; the closest is the June 2026 [[semianalysis]] SMIC teardown, which treats Apple's process lead over Huawei as a benchmark reference rather than a directional call.
 
@@ -32,3 +33,5 @@ The bull case opened in mid-2024 with two distinct but complementary angles: [[s
 No px@call values exist across any entry, so outcome tracking rests on thesis trajectory. The core 2024 predictions — on-device AI leadership and an iPhone replacement supercycle — have mixed evidence: Apple Intelligence shipped with iOS 18 broadly as forecast, but the China exclusion risk flagged by [[citrini]] in July 2024 persists and the magnitude of the replacement cycle remains debated. The silicon-economics thesis has the clearest confirmation: the C1 modem shipped in iPhone 16e (2025) and full Qualcomm displacement by 2027-2028 is on track per [[semianalysis]], and Mac gross margin expansion to ~39.5% is cited as an achieved data point. The live LONG view would be falsified by a reversal in smartphone market-share momentum (Android closing the on-device AI capability gap) or by Apple failing to complete modem internalization, which would eliminate a key margin-expansion leg.
 
 **Update 2026-07-04:** first priced call at $308.45 — but a CAUTIOUS one (semidoped), a shift in tone for a name the wiki has held as a high-conviction LONG. The memory supercycle is now hitting Apple directly: first-ever *mid-cycle* product price hikes (raising prices on existing products, not new models) to defend gross margin, and an unprecedented request to the US government to buy DRAM from CXMT — a Chinese maker on the entity list. This is the flip side of April 2026's "Apple buying LPDDR to crowd out Android" thesis: the crunch is now severe enough to bend Apple's 20-year hard-nosed supply strategy. Conviction trimmed high→medium; margin compression from memory input costs is the new near-term risk layered on the intact long-term silicon-integration story.
+
+**Update 2026-09-17:** IA LONG $332.41 — C2 modem hitting mmWave ahead of schedule is a structural positive (modem self-sufficiency + attack surface on Qualcomm); IA calls it 'under-covered.' Complements the standing constructive stance.

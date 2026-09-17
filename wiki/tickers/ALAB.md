@@ -8,7 +8,7 @@ updated: 2026-06-03
 ticker: ALAB
 current_stance: short
 conviction: high
-last_review: 2026-06-03
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -39,9 +39,12 @@ last_review: 2026-06-03
 | 2026-03-12 | [[citrini]] | MENTION | n/a | Part of original connectivity basket; now priced for perfection per Citrini |
 | 2026-05-31 | [[irrationalanalysis]] | MENTION | n/a | Named alongside Marvell as a CXL beneficiary |
 | 2026-06-03 | [[irrationalanalysis]] | SHORT | n/a | Marvell's Structera CXL product described as way better than Astera's Synopsys-based solution |
+| 2026-09-16 | [[semidoped]] | LONG | 269.18 | Leo 2 (CXL 3.2/PCIe Gen6) + Leo X rack-scale fabric-attached memory controllers expand the AI-memory portfolio |
 
 ## Thesis evolution
 Coverage opened at the March 2024 IPO with a split verdict: irrationalanalysis and the CXL-skeptic semianalysis piece both called it a short on the grounds that the CXL infrastructure thesis was wrong for AI workloads and Broadcom held the real competitive moat, while a separate semianalysis note and citrini acknowledged the dominant PCIe retimer position as a genuine bull case. The irrationalanalysis short thesis then escalated through 2024 around a single catalyst — PCIe retimer removal from the GB200 reference design — and the author paid a painful price when the low-float stock squeezed anyway, forcing margin calls and an admitted thesis error at year-end 2024. From 2025 onward the short thesis migrated from retimers to PCIe switches: first that Amazon warrant accounting inflated gross margins, then that Marvell's superior SerDes threatened both retimer and switch sockets, then that NVLink Fusion and UALink's collapse removed the scale-up switching TAM entirely, and finally in June 2026 that Marvell's Structera CXL solution is simply better than Astera's Synopsys-licensed alternative. Semianalysis has been structurally more constructive throughout, consistently noting that Amazon equity warrants create durable sourcing preference regardless of engineering quality, and citrini's connectivity basket originally included ALAB though by March 2026 Citrini flagged it as priced for perfection. The persistent irrationalanalysis short, now running over two years with multiple thesis pivots, represents the dominant live view; no publication has issued a fresh outright long since mid-2024.
 
 ## Outcome tracking
 The only px@call data point is the October 2024 irrationalanalysis short entry at $65. The author acknowledged the short was wrong at year-end 2024, implying the stock was materially higher than $65 by then, which would mark the prior short as a loss. Beyond that single data point, no px@call values are recorded, so quantitative P&L tracking across the call log is not possible. The thesis trajectory shows that each time a specific short catalyst failed to materialize on schedule (retimer removal, GB200 disqualification, margin collapse), the author shifted to the next structural threat rather than closing the position; the live short as of June 2026 rests on CXL competitive displacement by Marvell Structera, which would be falsified by evidence of Astera winning new CXL design-ins or by continued gross margin expansion inconsistent with losing socket share.
+
+**Update 2026-09-17:** SD LONG $269.18 — Leo 2 (CXL 3.2/PCIe Gen6) + the new Leo X rack-scale fabric-attached memory controller broaden Astera's AI-memory TAM. Note IA still carries an older SHORT (Marvell-Structera-displacement, n/a px); the pubs disagree — SD sees CXL memory expansion, IA sees Marvell taking the socket.

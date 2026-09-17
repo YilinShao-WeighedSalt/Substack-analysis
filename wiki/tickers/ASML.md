@@ -8,7 +8,7 @@ updated: 2026-09-11
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-09-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -32,6 +32,7 @@ last_review: 2026-09-11
 | 2026-07-29 | [[semidoped]] | NEUTRAL | 1651.44 | China domestic immersion DUV (~2008 NXT:1950i-class, ~5 tools 2026 vs ASML ~160) is 20 yrs behind — no near-term threat |
 | 2026-09-01 | [[semidoped]] | LONG | 1665.14 | High-NA EUV enters first high-volume logic production; sub-2nm path de-risked; UBS: China a decade behind. |
 | 2026-09-11 | [[semidoped]] | LONG | 1687.43 | TSMC & Samsung give formal High-NA EUV + 12-inch mask commitments (TSMC 2030 A10/A11; Samsung DRAM 2028). |
+| 2026-09-15 | [[semidoped]] | LONG | 1602.22 | Weighs breaking its 110-unit EUV output ceiling for 2028; demand outruns capacity, no competitor near; High-NA 'more meaningful over the next decade' |
 
 ## Thesis evolution
 The coverage arc began with ASML as a peripheral beneficiary of process technology transitions — DSA adoption, backside power, and overlay improvements — before crystallizing into a direct monopoly thesis by mid-2025. SemiAnalysis turned constructive in April 2025, anchoring on the EXE:5000's technical outperformance and the absence of any credible near-term substitute; semidoped reinforced this in May 2026 by arguing tau scaling structurally increases wafer starts per chip, making ASML a volume beneficiary even if individual tool ASPs compress. The bearish thread runs through IrrationalAnalysis (Oct 2024, customer delay risk) and SemiAnalysis's own October 2025 piece flagging XRL as a potential monopoly-killer at one-tenth the price — a rare instance where the same publication holds both the bull and the bear case simultaneously. The net posture across publications is cautiously long on the monopoly durability but alert to the XRL/Substrate industrialization timeline as the primary falsifying catalyst.
@@ -40,3 +41,5 @@ The coverage arc began with ASML as a peripheral beneficiary of process technolo
 No px@call values are recorded across any entry, so price-based score-keeping is not possible. The thesis trajectory favors the long side: Intel 14A backlog data (Jan 2026) and semidoped's tau scaling analysis (May 2026) both arrived as incremental confirms, while the XRL short thesis (Oct 2025) remains unresolved — Substrate's industrialization progress is the key watch item. The live view would be falsified by XRL reaching volume production at the quoted ~$40M price point with comparable overlay performance, or by a sustained collapse in TSMC/Samsung High-NA pull-through driven by customer fab delays outlasting ASML's backlog cushion.
 
 **Update 2026-09-02:** $1,665.14. New **SD LONG** — **High-NA EUV enters first high-volume logic production**, moving from qualification to production and de-risking the sub-2nm roadmap + ~$400M/tool backlog; UBS says China a decade behind. First resolved priced call: **IA's Jul-2 LONG ($1,759.59) crosses 30d at -5.4% → LOSS ✗** (litho names de-rated with the group). Near-term drag = TSMC's cost skepticism (holding High-NA to the 2030s); Intel is the lead first-mover buyer. Stance stays mixed, leaning constructive on the HVM milestone.
+
+**Update 2026-09-17:** SD LONG $1,602.22 — ASML weighing production beyond its 110-unit EUV ceiling for 2028; the limiter is assembly speed, not supply chain (JPM). Demand-outruns-capacity is the cleanest read; stock dipped on the news but the setup is bullish.
