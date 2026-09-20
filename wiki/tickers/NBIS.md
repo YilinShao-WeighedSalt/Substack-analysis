@@ -4,11 +4,11 @@ title: "NBIS — Nebius"
 tags: []
 related: ["[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]"]
 created: 2026-04-02
-updated: 2026-08-24
+updated: 2026-09-20
 ticker: NBIS
 current_stance: long
 conviction: medium
-last_review: 2026-08-24
+last_review: 2026-09-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -28,3 +28,9 @@ No numeric px@call values are recorded, so mark-to-market tracking is not yet po
 **Update 2026-07-04:** first gradable anchor — SA's NEUTRAL at $285.50 (Jun 18) is now **$215.89, −24.4%**, after a −17% single day (Jul 1) on the Meta-cloud/overcapacity fear. SA reiterated LONG at $215.89, arguing Meta's third-party contracting is a tailwind (RPO growth), not a threat. Same falsifier as before: a sustained GPU-rental-rate decline would confirm the overcapacity read; SA insists the drop is sentiment, not fundamentals.
 
 **Update 2026-08-15:** SD LONG $277.68 (Aug-13). +514% YoY revenue, ~$6B deferred, shares +34% — NBIS trades near its 52-wk high ($299.86), a clean beneficiary of persistent neocloud pricing power. The prior SA Jul-2 LONG ($215.89) is +28.6% (already resolved). Falsifier: neocloud RPO growth stalling or GPU rental rollover.
+
+
+## 2026-09-20 run update
+| 2026-09-18 | [[semidoped]] | LONG | 223.54 | Raised Nvidia GPU rates up to 21% in October (2nd hike) as demand outruns supply; stock rallying — neocloud pricing power |
+
+**Outcome tracking (2026-09-20):** semidoped's Aug-21 LONG ($219.13) → $223.54 = **+2.0% ✓** resolves a WIN this run. The +21% rate hike (its second) is the clearest neocloud pricing-power datapoint of the cycle — watts→tokens scarcity accruing to the operator. current_stance long, conviction medium.

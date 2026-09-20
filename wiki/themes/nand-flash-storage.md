@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-09-08
+updated: 2026-09-20
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -58,3 +58,7 @@ to **Nvidia's CMX platform** and is backstopped by a reported Apple NAND LTA (vo
 keep fabs full). Synopsys shipped CXL 4.0 IP in parallel. This is another route "around"
 the DRAM makers (see [[hbm-memory]] de-spec) — using NAND to substitute for a slice of
 expensive DRAM in AI servers.
+
+
+### 2026-09-20 update — Kioxia halts hikes; CXMT enters NAND; Solidigm weighs US fab
+Two-sided NAND signals. **Kioxia halted further NAND price hikes** to protect demand after customer resistance ([[285A.T]]) — a near-term cap on the "shortage-to-2030" bull framing. **CXMT is standing up a Beijing NAND R&D line** to challenge YMTC on home turf, adding a second competitive axis across the full memory stack; Barron's argues the pressure falls harder on **SK Hynix than Micron** given segment mix. **Solidigm (SK Hynix's storage unit) is weighing a US NAND fab** amid onshoring pressure. The China-NAND supply question: if NAND demand is fully accretive, CXMT slots in on top; otherwise it takes share from an incumbent.

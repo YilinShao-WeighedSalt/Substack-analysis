@@ -4,11 +4,11 @@ title: "TSEM — Tower Semiconductor"
 tags: []
 related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-06-19-daily-update-june-19]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-08-04-daily-update]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
 created: 2024-12-02
-updated: 2026-09-08
+updated: 2026-09-20
 ticker: TSEM
 current_stance: long
 conviction: high
-last_review: 2026-09-08
+last_review: 2026-09-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -52,3 +52,9 @@ No px@call values were recorded across the first 18 appearances (all pre-2026-06
 **2026-09-05 resolve:** IA Aug-1 LONG $219.67→$222.34 **+1.2% ✓**; IA Aug-5 LONG $211.14→$222.34 **+5.3% ✓**; SD Aug-4 LONG $211.14→$222.34 **+5.3% ✓**.
 
 **2026-09-08 (resolution):** IA's Aug-9 LONG ($249.58) → **LOSS** at $222.34 = **-10.9%** ✗ (optics cooled off the transceiver-ban highs).
+
+
+## 2026-09-20 run update
+| 2026-09-17 | [[semidoped]] | LONG | 223.60 | Tower + NewPhotonics begin HVM of laser-integrated, serviceable optical-engine PICs for AI scale-out/scale-up interconnect |
+
+**Outcome tracking (2026-09-20):** Tower's silicon-photonics/InP volume position keeps drawing bull calls (semidoped Aug-4 $211.14 resolved +5.3% ✓ earlier; IA's InP basket ran hot then cooled). The NewPhotonics HVM ramp is a fresh concrete datapoint on serviceable optical engines. Opened at spot. current_stance long, conviction medium.

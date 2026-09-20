@@ -4,11 +4,11 @@ title: "BE — Bloom Energy"
 tags: []
 related: ["[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]"]
 created: 2025-10-24
-updated: 2026-09-14
+updated: 2026-09-20
 ticker: BE
 current_stance: long
 conviction: medium
-last_review: 2026-09-14
+last_review: 2026-09-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -44,3 +44,9 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 **2026-09-05 resolve:** IA Aug-1 LONG $205.81→$252.87 **+22.9% ✓** — Bloom's power-for-AI-DC bull paid.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 275.75 (opened at spot this scan).
+
+
+## 2026-09-20 run update
+| 2026-09-17 | [[semidoped]] | LONG | 265.63 | Launches 800V DC power architecture for AI datacenters (cost cuts vs AC-coupled); BTM fuel-cell leader as grid interconnect stays the bottleneck |
+
+**Outcome tracking (2026-09-20):** the BTM thesis keeps paying — semidoped Jul-29 LONG ($207.12) now $265.63 = **+28.3%**, Sep-7 ($252.87) +5.1%, SA Sep-11 ($258.49) +2.8%; the semidoped Sep-11 ($275.75) mark is -3.7% open. This run adds the 800V-DC product angle on top of the fuel-cell order book. current_stance long, conviction medium-high.

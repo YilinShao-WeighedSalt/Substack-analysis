@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-09-14
+updated: 2026-09-20
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -57,3 +57,7 @@ SemiAnalysis's BTM deep dive (Part 1) is the definitive read: **behind-the-meter
 - **Eaton grid-to-chip 800 VDC:** [[ETN]] unveiled an architecture that **eliminates AC↔DC conversion stages** between grid and rack, cutting losses and rack space — the incumbent-scale answer to the 800V-DC standard (Google/MSFT/Nvidia) already tracked here. Priced [[ETN]] LONG.
 - **Bloom Energy Power Connect:** [[BE]] launched an install system claiming **>40% faster fuel-cell deployment**, with order backlog at record — extends SemiAnalysis's behind-the-meter thesis that solid-oxide fuel cells are share-gainers vs turbine incumbents when speed-to-power is the prize. Priced [[BE]] LONG.
 - **HD Hyundai** committed >₩1T to land-based generation engines + SMRs for AI DC power; **Core Scientific** ([[CORZ]]) won conditional ERCOT approval for up to 1,402 MW (grid-interconnect gate cleared).
+
+
+### 2026-09-20 update — firm power procurement + 800V DC + the passives bottleneck
+Hyperscalers are shifting from spot power to **committed multi-year firm procurement**, and the beneficiary set is widening below the turbine incumbents. **Generac +33%** on a multi-year Amazon backup-generator pact ($2.4B Reuters / $8B Bloomberg) — diesel/gas gensets as the fast, proven bridge tier ([[GNRC]]). **Bloom launches an 800V DC architecture** for AI datacenters (distributing high-voltage DC through the rack instead of AC → fewer conversion stages + less copper for dense GPU trays), on top of its fuel-cell order book ([[BE]]). Google/Nvidia/Emerald founded the **AI Energy Management Alliance** (grid demand-response). **New sub-bottleneck — passives/PCB:** **Doosan commits ₩968B to copper-clad laminate (CCL)** — the base of every server PCB, lead times now ~1 year — and **Samsung Electro-Mechanics** ships high-capacity **MLCCs** for AI-server power delivery ([[009150.KS]]). BTM demand is now the binding constraint (grid interconnect queues), and it is pulling in gensets, fuel cells, CCL, and MLCC alike.

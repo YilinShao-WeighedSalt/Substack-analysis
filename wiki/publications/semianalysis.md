@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-17
+updated: 2026-09-20
 handle: semianalysis
-calls_logged: 236
+calls_logged: 239
 hit_rate: "7/22 (32%), ~13 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Engrams: Codesign for Efficient DRAM/SSD Offloading (2026-09-18, paywalled, full body served).** A codesign / CUDA-moat deep-dive rather than a fresh thesis — but it sharpens two arcs. **HBM de-spec:** DeepSeek's **Engram** (learned multi-token embedding lookups) lowers the HBM *capacity* needed per model at equal quality and is naturally codesigned for **parameter offloading** — embedding rows prefetch from host DRAM while earlier layers compute. SA's experiments: **DRAM offload wins** (B300 drops TP4→TP2, pareto +1.6×; moving the table back to HBM barely helps); **SSD offload loses** in production (DRAM dominates tokens/$ and P90 interactivity). Conclusion reinforces the running memory read — *bandwidth > capacity → 4-hi HBM = best $/bandwidth* → **[[MU]] NEUTRAL $1,015.80** (→ [[hbm-memory]]). **CUDA moat:** on Day-0 of DeepSeek-V4.1-Flash, NVIDIA vLLM worked out-of-the-box across all 6 SKUs; AMD's day-0 image slipped to hour-23 and, once out, ran **up to 14.8× worse perf/$ than H200 / 42× vs B200-B300**, settling to **~2–4× worse than B200** even TCO-normalized on MI355X → **[[NVDA]] LONG $222.27**, **[[AMD]] NEUTRAL $559.82** (→ [[ai-accelerator-competition]]). InferenceX now spans TPUv7/Jalapeño/Rubin/AMD (SambaNova+Trainium soon); AMD committed MI455X UALoE72.
+
+**hit_rate note (2026-09-20): no priced call crossed 30 days — holds 7/22 (32%).** The Aug-25 Jalapeño longs ([[AVGO]] $355.59, [[005930.KS]] ₩265,000) resolve ~Sep-24; the Sep-11/14 NVDA longs are open. This run adds 1 priced LONG (NVDA) + 2 NEUTRALs (AMD, MU), all at spot.
 
 - **Three posts, Sep 14-15 2026 (all paywalled, full bodies served): *Vera Rubin NVL72 Agentic Inference*, *A Brain Too Big to Carry* (robotics), *Datacenter Moratoriums*.** The marquee call is **Vera Rubin**: the first verified third-party Rubin AgentX results show — even on pre-release TRTLLM software — **up to 67x tokens/$ TCO vs GB300** at 170 TPS (a realistic **1.4-3x at 60-100 TPS** where most serve), **7x token throughput per MW** (Jensen "sandbagging" his own 3x GTC claim, as he did in 2024 with GB200), **>2x profit per GW** (~$150B modeled profit/GW, ~$446M more/GW than GB300 at 10MW) and ~28% pricing headroom → **LONG [[NVDA]] $213.90**. AMD's MI455X UALoE72 is committed to InferenceX but Rubin owns the frontier → **NEUTRAL [[AMD]] $512.50**. **Brain-Too-Big** (robotics/embodied-AI, → [[robotics-embodied-ai]]): robot silicon is converging onto the same leading-edge nodes as the datacenter (Thor N4 → next-gen N3 alongside Rubin → N2), Jetson is a thin margin sliver so Nvidia points scarce wafers at the datacenter; generalist robots' planning layer (≤20Hz) is offloadable to datacenter GPUs but the "network wall" (jitter, uplink MIMO, robot-aware access points) is the real bottleneck — no clean single ticker (reinforces NVDA + TSMC advanced-node demand). **Moratoriums** (→ [[ai-infrastructure-capex]]): rebuts the "moratoriums are killing the US buildout" narrative — of ~20GW nominally exposed only **~2.3GW is genuinely delayed**; +38GW IT capacity in 2027 (>2x 2026); the buildout is moving **behind-the-meter** (BtM a net-positive for on-site generation). Thesis-level bullish AI-infra, no fresh priced ticker.
 

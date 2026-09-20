@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-17
+updated: 2026-09-20
 ---
 
 # Wiki Index
@@ -77,6 +77,7 @@ updated: 2026-09-17
 - [[GEV]] — GE Vernova
 - [[GFS]] — GlobalFoundries
 - [[GLW]] — Corning
+- [[GNRC]] — Generac Holdings (backup gensets / datacenter BTM power)
 - [[GOOGL]] — Alphabet
 - [[HIMX]] — Himax Technologies
 - [[IFNNF]] — Infineon Technologies (OTC)
@@ -399,6 +400,7 @@ updated: 2026-09-17
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-18-engrams-embedding-entendre-codesign]] — Engram codesign for DRAM/SSD offloading: cuts HBM capacity need (DRAM offload wins, SSD loses); CUDA moat measured on DeepSeek-V4.1-Flash day-0 (MI355X 2–4× worse perf/$) (LONG NVDA, NEUT AMD/MU)
 - [[semianalysis-2026-09-15-datacenter-moratoriums-not-killing-buildout]] — Moratoriums aren't killing the US buildout: only ~2.3GW genuinely delayed, +38GW 2027, buildout moving behind-the-meter (thesis-level bullish AI infra)
 - [[semianalysis-2026-09-14-vera-rubin-nvl72-agentic-inference]] — Vera Rubin NVL72: 67x tokens/TCO vs GB300, 7x perf/MW, >2x profit/GW — "the more you buy, the more you earn" (LONG NVDA, NEUT AMD)
 - [[semianalysis-2026-09-14-brain-too-big-on-device-vs-datacenter-inference]] — On-device vs datacenter robot inference: node convergence + the network wall (reinforces NVDA/TSMC; no priced call)
@@ -526,6 +528,8 @@ updated: 2026-09-17
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-09-18-daily-update-september-18th-2026]] — Daily Sep 18 (Jensen 2× chips + Nebius +21% GPU hike + Nvidia $2B Brookfield, CXMT NAND R&D vs YMTC, SEMICON India Tata binding pacts + ASML $120B/2030, Doosan ₩968B CCL + SEMCO record-Q3 MLCC, Crusoe $3.9B, SoftBank $21B+Arm $25B) (LONG NVDA/NBIS/ASML/BESI/009150, NEUT 000660)
+- [[semidoped-2026-09-17-daily-update-september-17th-2026]] — Daily Sep 17 (Huawei Ascend 960DT pulled fwd + UnifiedBus 1M-processor + Hi-ONE NPO, Generac +33% Amazon genset pact, Bloom 800V DC, Tower+NewPhotonics HVM optical PICs, OpenAI "no CXL use case", Kioxia halts NAND hikes, GT2N open 2nm PDK) (LONG GNRC/BE/TSEM, NEUT 000660/285A)
 - [[semidoped-2026-09-16-daily-update-september-16th]] — Daily Sep 16 (SK Hynix→Intel Ohio fab, Astera Leo 2/Leo X, Samsung DDR5→OSAT/HBM + Tesla AI5, AWS writes off Gulf zones, Altera IPO, MSFT AION 2) (LONG INTC/ALAB/005930)
 - [[semidoped-2026-09-15-daily-update-september-15th]] — Daily Sep 15 (MediaTek 9600 Pro first 2nm mobile, TSMC allocation squeeze thru 2027, ASML weighs >110-unit EUV, Broadcom holds AI targets, SEMCO/QCOM organic bridge, $425B Q2 record) (LONG 2454.TW/TSM/ASML/AVGO/009150)
 - [[semidoped-2026-09-14-daily-update-september-14th]] — Daily Sep 14 (AI-pacing debate, TSMC +53% Aug, Nvidia $10B Anthropic-IPO anchor, Ciena Ventures $200M) (LONG TSM/NVDA/CIEN)

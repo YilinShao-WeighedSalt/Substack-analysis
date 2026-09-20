@@ -4,7 +4,7 @@ title: "AI Debt Financing & Neocloud Economics"
 tags: [ai-infrastructure-capex, neocloud, ai-debt-financing]
 related: ["[[semianalysis-2026-07-06-nvidia-gpu-debt-backstop]]", "[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[NVDA]]", "[[CRWV]]", "[[META]]", "[[AMD]]", "[[ai-infrastructure-capex]]", "[[buildout-vs-monetization]]"]
 created: 2026-07-07
-updated: 2026-09-14
+updated: 2026-09-20
 status: emerging
 first_seen: 2026-07-06
 ---
@@ -40,3 +40,7 @@ SemiAnalysis's Compute/Capital/Markets desk quantified Nvidia's guarantee stack 
 - **The mechanism** (from *The Front End Gets Crowded*): Gigascalers gatekeep IG capital; Nvidia manufactures **alternative credit anchors** so non-IG neoclouds/neolabs borrow at IG pricing — revenue floors (AICP ≈$2.35/hr/GPU GB300), landlord guarantees, or signing the lease itself.
 - **Heads/tails asymmetry:** heads → Nvidia earns twice (GPU sale + rev-share above floor); tails → only bites if a downcycle overwhelms Nvidia's own cash generation *while* backstopped neoclouds fail. Firepower: ~$441B EBITDA F1/28, cash modeled to $1.4T by F1/31 vs ~$11T cumulative industry capex CY24–29. Nvidia backstops ~6.5 GW today vs Gigascalers' ~15 GW (2026)→35 GW+ (2028) implicit backstop — "Cisco PTSD" overdone.
 - **Cost per GW enabled:** AICP $59B/GW, PORTS-Pike $25B/GW, new **residual-value-guarantee** structure (≤25% RVG under the >$500B PE capital partnership, modeled on the Google-Broadcom-Anthropic-Apollo TPU SPV) only $9.4B/GW. AICP reportedly paused ~2 weeks ago. Priced: [[NVDA]] LONG (constructive).
+
+
+### 2026-09-20 update — neocloud raises + SoftBank's leverage stack + Nvidia-Brookfield
+The capital side kept accelerating. **Crusoe closed an oversubscribed $3.9B Series F at a $30.9B valuation** (Atreides/Mubadala/Valor) — one of the largest single raises by a non-hyperscaler AI-infra operator, funding "AI factories" down to modular Crusoe Spark units; Gulf sovereign capital via Mubadala. **SoftBank** added ~$21B in fresh borrowings in one week, expanded its **Arm margin loan to $25B**, and reportedly planned a $10–20B jumbo bond. **Nvidia committed $2B into Brookfield's AI-infrastructure fund** — the chipmaker pairing with an infra backer, echoing the backstop-universe mechanics. Neocloud pricing power showed through **Nebius raising Nvidia GPU rates up to 21% (its second hike)** ([[NBIS]]). Neither Nvidia nor SoftBank is treating current capital costs as a reason to slow.

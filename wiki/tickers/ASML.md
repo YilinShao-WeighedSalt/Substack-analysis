@@ -4,11 +4,11 @@ title: "ASML — ASML Holding"
 tags: []
 related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]"]
 created: 2024-04-18
-updated: 2026-09-11
+updated: 2026-09-20
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-09-17
+last_review: 2026-09-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -43,3 +43,9 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 **Update 2026-09-02:** $1,665.14. New **SD LONG** — **High-NA EUV enters first high-volume logic production**, moving from qualification to production and de-risking the sub-2nm roadmap + ~$400M/tool backlog; UBS says China a decade behind. First resolved priced call: **IA's Jul-2 LONG ($1,759.59) crosses 30d at -5.4% → LOSS ✗** (litho names de-rated with the group). Near-term drag = TSMC's cost skepticism (holding High-NA to the 2030s); Intel is the lead first-mover buyer. Stance stays mixed, leaning constructive on the HVM milestone.
 
 **Update 2026-09-17:** SD LONG $1,602.22 — ASML weighing production beyond its 110-unit EUV ceiling for 2028; the limiter is assembly speed, not supply chain (JPM). Demand-outruns-capacity is the cleanest read; stock dipped on the news but the setup is bullish.
+
+
+## 2026-09-20 run update
+| 2026-09-18 | [[semidoped]] | LONG | 1679.92 | India semi market seen $120B by 2030; deepens Tata Electronics fab support; SEMICON India pipeline turns binding |
+
+**Outcome tracking (2026-09-20):** a new demand-geography leg on the standing High-NA/EUV bull case — India converting pledges to binding fab commitments (Tata + Nexperia/Fujifilm/Besi) widens ASML's addressable base beyond the incumbent Taiwan/Korea/US triad. Opened at spot. current_stance long, conviction medium.

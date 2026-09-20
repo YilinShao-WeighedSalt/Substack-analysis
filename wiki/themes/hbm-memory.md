@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-14
+updated: 2026-09-20
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -100,3 +100,7 @@ SemiAnalysis's *Long Live the Short King* argues the "ever-more-HBM-per-accelera
 - **Roofline (Kimi K3 / NVL576):** 8-hi gives only +8% peak throughput vs 4-hi, 12-hi +10% — but the TCO premium is **+12.1% / +26.3%** → taller stacks deliver *higher* cost/token at today's memory prices. **KVCache offloading** to DDR DRAM and DeepSeek-V4.1-Flash-style KV compression (~75%) relieve the capacity given up.
 - **New figure of merit — tokens/HBM-wafer:** 4-hi ≈ 2× harvestable bandwidth per wafer vs 8-hi, ~3× vs 12-hi. Moves the bottleneck off DRAM wafers onto logic/substrate/PCB/integration and **frees wafers back to starved conventional/server DRAM**. Framed as win-win for memory-supplier profitability (paywalled detail truncated).
 - **Packaging read-through:** 8-hi and below **need no hybrid bonding** — reinforces [[advanced-packaging]] hybrid-bonding-collapse and IA's BESI short. Also: **looped transformers** (confirmed GPT-6 Astra) scale by depth not weights → less HBM capacity needed. Priced: [[MU]]/[[000660.KS]]/[[005930.KS]] all NEUTRAL.
+
+
+### 2026-09-20 update — Engram: architecture innovates around HBM capacity
+SemiAnalysis's *Engrams* codesign piece deepens the de-spec logic. **Engram** (a DeepSeek architecture) stores recurring token patterns as directly-retrieved embedding vectors, so the model reconstructs less through attention/FFN — **lowering the HBM *capacity* needed per model at equal quality.** Because each token's embedding rows are addressed by token ID (not hidden state), the table can be **prefetched from host DRAM** while earlier layers compute — **parameter offloading**. SA's experiments: DRAM offload actually *improves* the pareto (B300 drops from 4-GPU to 2-GPU tensor-parallel, +1.6×); SSD offload loses in production. The takeaway reinforces the running thesis: **HBM bandwidth matters more than HBM capacity → 4-hi HBM gives the best $/bandwidth → lowest $/token.** SA half-jokes China's architecture innovation could push toward "0-hi HBM" stacks. Caveat: "this does not mean HBM demand falls" — capacity is freed to starved commodity DRAM.

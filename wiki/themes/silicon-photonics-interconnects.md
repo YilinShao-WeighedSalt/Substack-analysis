@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-09-08
+updated: 2026-09-20
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -137,3 +137,7 @@ Meanwhile **AMS OSRAM stays at 850 nm** and competes on its LED-derived packagin
 (dense fiber-array attach, wafer-to-wafer compound-semi bonding) — VCSEL quality matters
 less for the slow-and-wide <30m NPO/CPO use case. Near-term speed bump for the optics
 duopoly, not a moat break.
+
+
+### 2026-09-20 update — Huawei NPO Hi-ONE + Tower/NewPhotonics serviceable PICs
+**Near-packaged optics (NPO)** — optics placed *beside* the switch/compute ASIC, one integration step short of fully co-packaged — got its first mass-production claim: **Huawei's Hi-ONE** engine (in the Atlas 960 SuperPoD) claims **7.2 Tbit/s per engine** and is billed as the "industry's first NPO product ready for mass production" with a **built-in light source**, part of Huawei's all-optical UnifiedBus scale-up. On the merchant side, **Tower Semiconductor + NewPhotonics** began **high-volume shipments of laser-integrated, *serviceable* optical-engine PICs** for AI scale-out/scale-up ([[TSEM]]); Lightmatter joined the Open CPX MSA with the first bidirectional CPX engine; GlobalFoundries + Marvell expanded their silicon-photonics collaboration. The field-serviceable angle matters because integrated-laser optical engines historically fail whole-module on a single laser fault.
