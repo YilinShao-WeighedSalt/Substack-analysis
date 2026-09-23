@@ -2,13 +2,13 @@
 type: ticker
 title: "IFX — Infineon Technologies"
 tags: []
-related: ["[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]"]
+related: ["[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]"]
 created: 2026-05-17
-updated: 2026-09-08
+updated: 2026-09-23
 ticker: IFX
 current_stance: long
 conviction: high
-last_review: 2026-09-08
+last_review: 2026-09-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -17,6 +17,7 @@ last_review: 2026-09-08
 | 2026-07-28 | [[semidoped]] | LONG | 61.49 | Raised FY guide on AI-datacenter power-semi strength; opened world's largest power fab (Dresden) (IFX.DE, €). |
 | 2026-08-24 | [[semidoped]] | LONG | 55.19 | Buys Bangalore's C2i (SIVR IP) for AI-rack power delivery; record Q3 guidance (IFX.DE, €). |
 | 2026-09-07 | [[semidoped]] | LONG | 60.79 | Dual-phase smart power stages for AI accelerators (2 A/mm²) [IFX.DE] |
+| 2026-09-22 | [[semidoped]] | LONG | 60.13 | PSOC Control C3 MCU (post-quantum) + SolarEdge 800VDC solid-state breaker pact |
 
 ## Thesis evolution
 Coverage originates from a single irrationalanalysis piece dated 2026-05-17. The bull case rests on Infineon's structural moat in 1200V silicon carbide: best-in-class Rds_on metrics, vertical integration through its owned GaN fab, and dominant positioning in a segment where automotive and industrial electrification demand is secular. The author's willingness to commit $50K of personal capital signals high conviction. No bearish publications are present in the record, and no other sources have weighed in, so the view is entirely one-directional at this point.

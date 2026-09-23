@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-20
+updated: 2026-09-23
 ---
 
 # Wiki Index
@@ -256,6 +256,8 @@ updated: 2026-09-20
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]] — Emergency ECOC memo: Coherent's phase-noise slide proves its UHP laser fails the 1MHz effective-linewidth spec; Cerebras integrated-laser "fantasy" (SHORT COHR/CBRS, LONG LITE)
+- [[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]] — Anthropic twice-delayed IPO = desperation; GPT-6 Astra crushes Fabel in coding; GloFo 45CLO derided → Tower hybrid-bonding (LONG TSEM, NEUT MU; cut leverage to 64%)
 - [[irrationalanalysis-2026-09-14-market-memo-qualcomm-amazon-apple]] — Market Memo: QCOM/Amazon (low-margin), Apple C2 mmWave early, Credo 30m µLED "bullshit", Cerebras parallel-port I/O (SHORT QCOM/CRDO/CBRS, LONG AAPL)
 - [[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]] — Hot Chips 2026: Irrational Recap
 
@@ -400,6 +402,7 @@ updated: 2026-09-20
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-21-computation-data-movement-inference]] — Computation & Data Movement for Inference: MoE serving economics; fast-memory capacity less binding than network placement + bandwidth (technical, no priced call; reinforces 4-hi HBM / network wall)
 - [[semianalysis-2026-09-18-engrams-embedding-entendre-codesign]] — Engram codesign for DRAM/SSD offloading: cuts HBM capacity need (DRAM offload wins, SSD loses); CUDA moat measured on DeepSeek-V4.1-Flash day-0 (MI355X 2–4× worse perf/$) (LONG NVDA, NEUT AMD/MU)
 - [[semianalysis-2026-09-15-datacenter-moratoriums-not-killing-buildout]] — Moratoriums aren't killing the US buildout: only ~2.3GW genuinely delayed, +38GW 2027, buildout moving behind-the-meter (thesis-level bullish AI infra)
 - [[semianalysis-2026-09-14-vera-rubin-nvl72-agentic-inference]] — Vera Rubin NVL72: 67x tokens/TCO vs GB300, 7x perf/MW, >2x profit/GW — "the more you buy, the more you earn" (LONG NVDA, NEUT AMD)
@@ -619,3 +622,5 @@ updated: 2026-09-20
 - [[semidoped-2026-09-02-daily-update-september-2nd]] — Daily Sep 2 (Nvidia ~$14B Hugging Face, SK/Kioxia Japan fab, TSMC tools double → Intel packaging, Compilers 2.0) (LONG NVDA/INTC)
 - [[semidoped-2026-09-03-daily-update-september-3rd]] — Daily Sep 3 (Nvidia $12.93B Hugging Face, Broadcom >$30 EPS FY28 vs Google-defection, TSMC defers hybrid bonding, Samsung zHBM, Phison 2027 NAND shortage) (LONG AVGO/NVDA/285A.T, NEUT GOOGL/TSM/005930/000660)
 - [[semidoped-2026-09-04-daily-update-september-4th]] — Daily Sep 4 (CXMT 10% DRAM + Project-Hefei theft case, Ciena +37%/$10B backlog, Kioxia NAND-as-DRAM, Figure $3.5B Nscale robotics) (LONG CIEN/285A.T/SNDK, NEUT MU/005930/000660)
+- [[semidoped-2026-09-21-daily-update]] — Daily Sep 21 (Nscale S-1 $35B/$103B backlog, Qualcomm X80 in US iPhone 18 Pro Max, ECOC optics: MRVL 2nm/LITE+GLW 1060nm VCSEL, Generac $8B Amazon, Intel High-NA production) (LONG NVDA/285A.T/MRVL/LITE/GLW/CIEN/ON/BE/NVTS/GNRC/009150/ASML/INTC, NEUT QCOM/MU)
+- [[semidoped-2026-09-22-daily-update]] — Daily Sep 22 (Texas/California permit freeze = NIMBY paces AI, Vicor +20% VPD royalties, TSMC A14→Q1-27, Qualcomm eyes Samsung 2nm, YMTC German injunctions vs Micron, SK Hynix HBM-leadership commit) (LONG VICR/TSM/2454/000660/CDNS/SMTC/IFX, NEUT 005930/MP)

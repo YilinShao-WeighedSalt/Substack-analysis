@@ -4,7 +4,7 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-20
+updated: 2026-09-23
 handle: semianalysis
 calls_logged: 239
 hit_rate: "7/22 (32%), ~13 open"
@@ -13,6 +13,10 @@ hit_rate: "7/22 (32%), ~13 open"
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Computation and Data Movement for Inference (2026-09-21, paywalled, full body served) — technical, no priced call.** An 11k-word deep-dive on how **MoE** reshaped inference-serving economics: which tensors are active per token, what must stay physically close, and how memory/storage/scheduling contribute to useful throughput (orchestration via Dynamo/Mooncake atop vLLM/SGLang; the KV cache as session distillate). Prefill/midfill reward organized parallelism + stage-local expert traffic; decode rewards low-latency parallelism but peak throughput/GPU comes from simpler attention + wide expert placement. **Thesis-level takeaway:** across projected frontiers, **fast-memory *capacity* is LESS restrictive than network placement, memory *bandwidth*, and orchestration** — reinforcing the running *bandwidth > capacity → 4-hi HBM* read ([[hbm-memory]]) and the *network wall* as the binding inference constraint ([[serdes-high-speed-connectivity]]). No fresh priced ticker.
+
+**hit_rate note (2026-09-23): no priced call crossed 30 days — holds 7/22 (32%).** The Aug-25 Jalapeño longs ([[AVGO]] $355.59 → $364.54 = +2.5%; [[005930.KS]] ₩265,000 → ₩284,500 = +7.4%) are 29d and resolve next run (both currently green). No priced call this window.
 
 - **Engrams: Codesign for Efficient DRAM/SSD Offloading (2026-09-18, paywalled, full body served).** A codesign / CUDA-moat deep-dive rather than a fresh thesis — but it sharpens two arcs. **HBM de-spec:** DeepSeek's **Engram** (learned multi-token embedding lookups) lowers the HBM *capacity* needed per model at equal quality and is naturally codesigned for **parameter offloading** — embedding rows prefetch from host DRAM while earlier layers compute. SA's experiments: **DRAM offload wins** (B300 drops TP4→TP2, pareto +1.6×; moving the table back to HBM barely helps); **SSD offload loses** in production (DRAM dominates tokens/$ and P90 interactivity). Conclusion reinforces the running memory read — *bandwidth > capacity → 4-hi HBM = best $/bandwidth* → **[[MU]] NEUTRAL $1,015.80** (→ [[hbm-memory]]). **CUDA moat:** on Day-0 of DeepSeek-V4.1-Flash, NVIDIA vLLM worked out-of-the-box across all 6 SKUs; AMD's day-0 image slipped to hour-23 and, once out, ran **up to 14.8× worse perf/$ than H200 / 42× vs B200-B300**, settling to **~2–4× worse than B200** even TCO-normalized on MI355X → **[[NVDA]] LONG $222.27**, **[[AMD]] NEUTRAL $559.82** (→ [[ai-accelerator-competition]]). InferenceX now spans TPUv7/Jalapeño/Rubin/AMD (SambaNova+Trainium soon); AMD committed MI455X UALoE72.
 

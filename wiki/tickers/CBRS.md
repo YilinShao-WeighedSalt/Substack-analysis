@@ -2,13 +2,13 @@
 type: ticker
 title: "CBRS — Cerebras Systems"
 tags: []
-related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]", "[[semidoped-2026-08-17-daily-update]]"]
+related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]"]
 created: 2024-10-01
-updated: 2026-09-08
+updated: 2026-09-23
 ticker: CBRS
 current_stance: mixed
 conviction: medium
-last_review: 2026-09-17
+last_review: 2026-09-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -34,6 +34,7 @@ last_review: 2026-09-17
 | 2026-08-25 | [[semianalysis]] | NEUTRAL | 182.15 | Jalapeño's arrival puts Cerebras' 1.25 GW option beyond OpenAI's firm 750 MW 'in question.' |
 | 2026-09-06 | [[irrationalanalysis]] | SHORT | 210.05 | Activist short reaffirmed; Hot Chips "confirmed" the ~20% parametric-yield thesis; deep-dive Oct/Nov |
 | 2026-09-14 | [[irrationalanalysis]] | SHORT | 190.47 | On/off-wafer I/O confirmed a primitive parallel port (NoC extension): 0.0056 Tbps/mm shoreline vs 1+ for SerDes; Skyechip custom-IP = fix not in yet; reaffirms activist yield short |
+| 2026-09-21 | [[irrationalanalysis]] | SHORT | 212.41 | Integrated-laser wafer photonics 'fantasy': thermal modulator bias + waveguide/laser loss blow the link budget |
 
 ## Thesis evolution
 irrationalanalysis opened with a consistently bearish view across three calls spanning late 2024, citing fatal customer concentration (G42 as near-sole buyer), structurally weak gross margins around 36%, and a wafer-scale architecture it viewed as technically overblown. By mid-2026 the same publication reversed to bullish after Cerebras secured an OpenAI $20B inference deal and AWS distribution, arguing the company found a defensible niche in ultra-low-latency inference where wafer-scale die actually delivers differentiated speed. The June 2026 earnings call reinforced the LONG: despite calling the transcript a "trainwreck," irrationalanalysis deepened its conviction by modeling the packaging yield problem (20% estimated) as the central financial variable — improvement from 20% to 50% would lift gross margins from ~42% to ~72%. The author initiated a symbolic "activist campaign" focused on three catalysts: WSE-4 with FP8 support, face-to-face I/O to solve KV cache offload, and a packaging yield investor day. semidoped maintained NEUTRAL at first earnings, noting shares fell 10% despite the beat and flagging the 88GB SRAM-per-rack constraint for large models. The two publications continue to disagree on conviction — irrationalanalysis sees solvable engineering bottlenecks, semidoped sees structural TAM and business model risks.
@@ -56,3 +57,5 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 **2026-09-08 (resolution):** IA's Aug-9 activist SHORT ($234.76) crossed 30d → **WIN**, CBRS fell to $210.05 = short **+10.5%** ✓. Reaffirmed at Hot Chips ($210.05); parametric-yield deep-dive teased for Oct/Nov.
 
 **Update 2026-09-17:** IA SHORT $190.47 — the I/O conspiracy note hardens the activist short: the wafer-edge I/O is a primitive parallel port at ~0.0056 Tbps/mm (vs 1+ for SerDes), explaining why improving it has been 'impossible.' **Resolution:** SD's Aug-17 LONG ($251.98, OpenAI-Sol production win) → $190.47 = **-24.4% LOSS ✗** — the Sol pop fully round-tripped; the yield/IO bears are winning the tape. See [[cbrs-yield-short-vs-inference-tam]].
+
+**Update 2026-09-23:** [[irrationalanalysis]] adds a fresh **SHORT ($212.41)** — Cerebras's integrated-laser wafer photonics is "fantasy" (thermal modulator bias impossible; waveguide + laser loss blow the 32G link budget). **Resolution:** IA's Aug-19 activist SHORT ($209.85) crossed 30d at $212.41 = **short -1.2% LOSS ✗** — CBRS bounced off its lows, so this entry sits just underwater even as the newer Sep-6/14 shorts (from higher marks) work. The yield + I/O + laser-physics bear case now has three legs. See [[cbrs-yield-short-vs-inference-tam]].

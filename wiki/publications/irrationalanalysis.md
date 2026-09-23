@@ -4,15 +4,21 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-17
+updated: 2026-09-23
 handle: irrationalanalysis
-calls_logged: 617
-hit_rate: "25/46 (54%), ~15 open"
+calls_logged: 622
+hit_rate: "25/47 (53%), ~16 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **[Emergency Memo] Coherent laser garbage + Cerebras roast (2026-09-21):** A rushed lunch-hour ECOC memo delivering the run's sharpest optics-quality proof. **Coherent finally showed phase-noise data** on its CPO/NPO UHP laser and "provided the rope to hang themselves": overlaying [[LITE]]'s phase noise, Lumentum is consistently better with no 100 Hz spike-cluster, and Coherent is "very obviously" reporting *intrinsic* (10–50 kHz) rather than the *effective* β-separation linewidth that actually sets link quality — "100% proof" its UHP laser fails the 1 MHz effective spec of all NPO/CPO/OCI-MSA systems → **SHORT [[COHR]] $310.39**, **LONG [[LITE]] $945.67**. Separately, Cerebras's integrated-laser wafer photonics is "fantasy land bullshit" — thermal modulator bias is unstable and waveguide/laser loss blow the 32G link budget → **SHORT [[CBRS]] $212.41**.
+
+- **[Market Memo] Calm Before the IPO Storm (2026-09-20):** A macro/positioning memo. **Anthropic's twice-delayed IPO** (→ "after November elections") reads as *desperation* not safety theater — 7 finance pros agree "private markets cannot support Anthropic anymore." **OpenAI GPT-6 Astra is obliterating Anthropic's Fabel 5.1 in coding** (a rare "universal engineering consensus," ~100% coding share), gutting Anthropic ARR; coding is "BY FAR the most important market" (Lean makes math ≡ code) and justifies the AI trade. Skewers the "profitable at 80–90% GM before future capex/R&D" accounting as "radioactive bullshit." Photonics aside: GloFo **45CLO** is universally derided; Ayar/Lightmatter fled to TSMC COUPE + **Tower hybrid-bonding** → **LONG [[TSEM]] $236.61**. Micron cast as the desperate hand begging Samsung for DRAM discipline → **NEUTRAL [[MU]] $1,096.16**. Author **cut leverage to 64% margin equity** (vs normal 50–55%) ahead of the desperation-IPO/Iran/rates window.
+
+**hit_rate note (2026-09-23): 25/46 → 25/47 (53%) — the Aug-19 Cerebras-recap SHORT resolves as a thin loss.** **[[CBRS]] Aug-19 SHORT ($209.85) → $212.41 = short -1.2% LOSS ✗** — CBRS bounced off its lows (it was short +9.2% on Sep-17), so this specific entry flips underwater even as the newer, higher-marked Sep-6 ($210.05) and Sep-14 ($190.47) shorts stay in the money. The Sep-14 QCOM/CRDO/CBRS/AAPL batch resolves ~Oct-14. This run's 5 new calls (2 SHORT, 2 LONG, 1 NEUTRAL) opened at spot.
 
 - **[Market Memo] Qualcomm/Amazon, Apple C2, Credo µLED, Cerebras I/O (2026-09-14):** A self-described "low-effort filler" shitpost that nonetheless carries four sharp calls, all bearish-to-Qualcomm's-orbit. **(1) QCOM/Amazon deal** = low-margin backend physical-design + Alphawave 112G SerDes (a coherent-lite DSP that predates the Alphawave buy); margins "much lower than the Apple modem margins this revenue is attempting to replace," and QTL revenue "definitely going to be in jeopardy early next year" — timed to drown out Apple-modem news → **SHORT [[QCOM]] $184.84**. **(2) Apple C2 modem** got **mmWave ahead of schedule**, so Apple is "fully self-sufficient now and can attack Qualcomm with little to no repercussion"; QCOM's planned 20% iPhone share slashed to low-single-digit — "spicy April 2027" → **LONG [[AAPL]] $332.41**. **(3) Credo** CEO's **30-meter µLED reach claim** is "bullshit" (chromatic + modal dispersion cap it near ~10m; no DSP fixes it) → **SHORT [[CRDO]] $161.49** (first priced CRDO call). **(4) Cerebras I/O**: now "100% confident" the on/off-wafer I/O is a **primitive parallel port** (a direct NoC extension) at ~0.0056 Tbps/mm shoreline vs 1+ for even a bad SerDes; Skyechip custom-IP partnership shows the fix isn't in yet → reaffirms **SHORT [[CBRS]] $190.47**.
 

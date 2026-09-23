@@ -4,11 +4,11 @@ title: "GOOGL — Alphabet"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2026-09-07-tpu-inferencex-full-steam]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]"]
 created: 2024-03-13
-updated: 2026-09-08
+updated: 2026-09-23
 ticker: GOOGL
 current_stance: long
 conviction: medium
-last_review: 2026-09-08
+last_review: 2026-09-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -46,3 +46,5 @@ No px@call values are recorded in this log, precluding quantitative P&L assessme
 **Update 2026-08-12:** SA flips the frame to a clean LONG ($343.80): Gemini is 'no longer a frontier lab' (Jeff Dean → Discovery Loop; #8-9 on quality) but that's bullish for Alphabet the *stock* — GCP won the internal compute fight, TPU-system sales to SPVs (Anthropic) drive GCP growth to mid-100s vs 64% consensus and ~+$3 EPS in 2027. Note: prior SA GOOGL mentions were NEUTRAL/softening; this is the first outright LONG. Falsifier: TPU backlog capitalization / an AI-capex air-pocket.
 
 **2026-09-08 (resolution):** SemiAnalysis's Aug-7 GCP-financialization LONG ($343.80) → **LOSS** at $338.46 = **-1.6%** ✗ (thin). Two fresh LONGs this run (IA + SA) at $338.46 on TPU externalization — the strongest merchant-TPU datapoint yet (Ironwood ~50% better perf/$).
+
+**Update 2026-09-23 (resolution):** [[semidoped]]'s Aug-24 Hot Chips LONG (TPU v10 multi-vendor, $342.00) crossed 30d at $351.16 = **+2.7% WIN ✓** — thin but positive as the TPU-externalization story kept building.

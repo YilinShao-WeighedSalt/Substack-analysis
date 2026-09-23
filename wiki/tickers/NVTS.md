@@ -2,13 +2,13 @@
 type: ticker
 title: "NVTS — Navitas Semiconductor"
 tags: []
-related: ["[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-24-navitas-dangerous-specialty-switching]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
+related: ["[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-24-navitas-dangerous-specialty-switching]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semidoped-2026-09-21-daily-update]]"]
 created: 2025-05-24
-updated: 2026-09-08
+updated: 2026-09-23
 ticker: NVTS
 current_stance: short
 conviction: medium
-last_review: 2026-09-08
+last_review: 2026-09-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,6 +26,7 @@ last_review: 2026-09-08
 | 2026-07-28 | [[semidoped]] | LONG | 11.01 | Q2 rev +22% QoQ, high-power markets +50% YoY; GaN/SiC demand from AI/datacenter confirmed |
 | 2026-08-09 | [[irrationalanalysis]] | SHORT | 13.60 | SiC products "utter dogshit"; reiterated bearish amid the Wolfspeed patent suit |
 | 2026-08-25 | [[semidoped]] | LONG | 12.67 | Acquires Claros for vertical power delivery / integrated voltage regulators (grid-to-xPU AI infra). |
+| 2026-09-21 | [[semidoped]] | LONG | 12.46 | Strategic investment in Magnachip pairs GaN/SiC power ICs with analog fab capacity |
 
 ## Thesis evolution
 The NVTS thesis originated in May 2025 as a cautious, speculative LONG: irrationalanalysis found the GaN safety claims credible after datasheet analysis but warned the stock was extremely illiquid and dangerous. The view strengthened considerably through April 2026 as the 800V datacenter power delivery opportunity crystallized — a detailed multi-vendor comparison across Rds_on, power dissipation, and switching characteristics placed Navitas and TI jointly at first place in 650V GaN, with Navitas's GaNSafe integrated driver/protection features adding a genuine system-design advantage. A brief pause occurred in May 2026 when the earnings roundup found no differentiation versus TI on a pure-performance basis, but by May 17 the LONG was reinstated at higher conviction: LTSpice simulation work confirmed first-place GaN FET performance, and a cross-licensing and second-source agreement with Infineon was flagged as a meaningful credibility signal. Semidoped corroborated the technology directionally — Navitas (alongside TI) advocates eliminating the 48V intermediate bus and converting 800V directly to point-of-load voltages, a topology that would expand Navitas's addressable market. irrationalanalysis is the only publication with a directional view; semidoped treats NVTS as context rather than a call.

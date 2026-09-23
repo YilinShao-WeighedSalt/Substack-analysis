@@ -1,0 +1,514 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semi Scan 2026-09-23</title>
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.45;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 60px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:26px;margin:0 0 2px;letter-spacing:-.02em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--sec);margin:34px 0 12px;
+  font-weight:700}
+.sub{color:var(--muted);font-size:13px}
+.masthead{border-bottom:2px solid var(--border);padding-bottom:14px}
+.srcs{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:13px}
+.src{display:flex;align-items:center;gap:6px;color:var(--sec)}
+.pubdot{width:9px;height:9px;border-radius:50%;background:var(--c);display:inline-block;flex:none}
+.runstat{margin-top:12px;font-size:12.5px;color:var(--sec);background:var(--surface-2);
+  border:1px solid var(--border);border-radius:8px;padding:8px 11px}
+/* hero tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.tile .big{font-size:32px;font-weight:800;letter-spacing:-.03em;font-family:var(--mono)}
+.tile .lbl{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:2px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:9px;gap:2px}
+.distbar span{display:block}
+.distleg{display:flex;gap:10px;font-size:11px;color:var(--sec);margin-top:6px;flex-wrap:wrap}
+.distleg i{font-style:normal}
+/* call board */
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+  font-weight:600;padding:0 8px 8px;border-bottom:1px solid var(--border)}
+tbody td{padding:9px 8px;border-bottom:1px solid var(--grid);vertical-align:middle}
+.tk{font-weight:700}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;color:var(--c);
+  border:1px solid var(--c);border-radius:20px;padding:1px 8px;white-space:nowrap}
+.chip.sm{font-size:10px;padding:0 6px;margin:2px 3px 0 0}
+.pubn{font-size:12px;color:var(--sec)}
+.th{color:var(--sec);max-width:340px}
+.px{white-space:nowrap;font-weight:600}
+.spk svg{display:block}
+.pnl[data-new]{color:var(--muted);font-size:10.5px;letter-spacing:.05em;border:1px dashed var(--border);
+  border-radius:5px;padding:1px 5px}
+/* spotlights */
+.spots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.spot-hd{display:flex;align-items:center;gap:10px}
+.spot-tk{font-size:19px;font-weight:800}
+.spot-px{margin-left:auto;font-size:15px;font-weight:700}
+.spot-pub{font-size:11.5px;color:var(--muted);margin-top:3px;display:flex;align-items:center;gap:5px}
+.spot-chart{margin:10px 0 6px}
+.spot-chart svg{display:block;width:100%}
+.range{display:flex;align-items:center;gap:8px;font-size:10.5px;color:var(--muted)}
+.rbar{position:relative;flex:1;height:4px;background:var(--base);border-radius:3px}
+.rdot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--surface);
+  border:2px solid var(--ink);transform:translate(-50%,-50%)}
+.bull{margin:10px 0 0;padding-left:16px;font-size:12px;color:var(--sec)}
+.bull li{margin:3px 0}
+/* scorecards */
+.scores{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.score{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--pc);
+  border-radius:12px;padding:14px}
+.score-hd{display:flex;align-items:center;gap:7px;font-size:14px}
+.score-hd .hr{margin-left:auto;font-size:12px;color:var(--sec);font-weight:700}
+.meter{height:6px;background:var(--surface-2);border-radius:4px;margin:9px 0 12px;overflow:hidden}
+.mfill{height:100%;border-radius:4px}
+.post{padding:8px 0;border-top:1px solid var(--grid)}
+.pdate{font-size:10.5px;color:var(--muted)}
+.ptitle{font-size:12px;color:var(--sec);margin:1px 0 3px}
+.none{font-size:10.5px;color:var(--muted);font-style:italic}
+/* jargon */
+.jargon{display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
+.jr{display:flex;flex-direction:column;padding:7px 0;border-bottom:1px solid var(--grid)}
+.jt{font-weight:700;font-size:12.5px}
+.jd{font-size:12px;color:var(--sec)}
+/* themes */
+.themes{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.trow{display:flex;align-items:center;gap:10px;margin:7px 0;font-size:12.5px}
+.tlabel{width:230px;flex:none;color:var(--sec)}
+.tbar{flex:1;height:14px;background:var(--surface-2);border-radius:0 4px 4px 0}
+.tfill{height:100%;background:var(--accent);border-radius:0 4px 4px 0}
+.tval{width:22px;text-align:right;color:var(--muted)}
+.foot{margin-top:40px;font-size:11px;color:var(--muted);text-align:center;line-height:1.6}
+@media(max-width:760px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .spots,.scores,.jargon{grid-template-columns:1fr}
+  .tlabel{width:130px}
+  .th{max-width:180px}
+  .spk{display:none} thead th:nth-child(6){display:none}
+}
+</style></head>
+<body><div class="wrap">
+
+<div class="masthead">
+  <h1>Semiconductor Substack Scan</h1>
+  <div class="sub">Visual intelligence brief · Sep 20–22, 2026 · generated 2026-09-23</div>
+  <div class="srcs">
+    <span class="src"><span class="pubdot" style="--c:var(--pub-irrational)"></span>Irrational Analysis</span>
+    <span class="src"><span class="pubdot" style="--c:var(--pub-semianalysis)"></span>SemiAnalysis</span>
+    <span class="src"><span class="pubdot" style="--c:var(--pub-semidoped)"></span>Semi Doped</span>
+  </div>
+  <div class="runstat"><b>Run status:</b> all 3 sources fetched OK. Call-bearing: Irrational ×2 (Sep-21 emergency laser memo, Sep-20 IPO memo), Semi Doped ×2 dailies (Sep-21/22). SemiAnalysis Sep-21 ("Computation &amp; Data Movement for Inference") is a technical deep-dive — <b>no priced ticker call</b> (thesis: fast-memory capacity is <i>less</i> binding than network placement + bandwidth → reinforces 4-hi HBM / network-wall). Prices via yfinance history; analyst-consensus crumb host egress-blocked → consensus bars omitted, not fabricated.</div>
+</div>
+
+<h2>The state of play</h2>
+<p class="sub" style="font-size:14px;color:var(--sec);max-width:820px">
+The optics-quality war turned into open combat at ECOC: Irrational Analysis says Coherent's own phase-noise slide <b>proves</b> its co-packaged laser fails the effective-linewidth spec — reaffirming <b>SHORT COHR / LONG LITE</b> — while Cerebras's integrated-laser pitch gets called physically impossible. Meanwhile the real governor on the AI buildout isn't Dario's "pacing" pledge but <b>NIMBY permit freezes</b> (Texas halted all data-center permits; California added oversight), and the memory map keeps tilting competitive: <b>CXMT claims DRAM near-parity without EUV</b> and <b>YMTC won German injunctions against Micron</b>, even as SK Hynix reaffirms HBM leadership. Book bias stays overwhelmingly long — 22 longs vs 2 shorts.
+</p>
+
+<div class="tiles">
+  <div class="tile"><div class="big">5</div><div class="lbl">posts scanned</div><div class="sub" style="font-size:11px;margin-top:4px;color:var(--muted)">4 call-bearing</div></div>
+  <div class="tile"><div class="big">27</div><div class="lbl">tickers priced</div></div>
+  <div class="tile"><div class="big">28</div><div class="lbl">calls logged</div>
+     <div class="distbar">
+       <span style="flex:22;background:var(--long)"></span>
+       <span style="flex:4;background:var(--neutral)"></span>
+       <span style="flex:2;background:var(--short)"></span></div>
+     <div class="distleg"><i>▲ 22 long</i><i>● 4 neutral</i><i>▼ 2 short</i></div></div>
+  <div class="tile"><div class="big" style="color:var(--long)">Long</div><div class="lbl">book bias</div>
+     <div class="sub" style="font-size:11px;margin-top:4px;color:var(--muted)">22L / 4N / 2S</div></div>
+</div>
+
+<h2>Call board</h2>
+<table><thead><tr>
+  <th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis</th><th>Price</th><th>3-mo</th><th>P&amp;L</th>
+</tr></thead><tbody>
+<tr>
+      <td class="mono tk">COHR</td>
+      <td><span class="chip" style="--c:var(--short)">▼ SHORT</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-irrational)"></span><span class="pubn">Irrational Analysis</span></td>
+      <td class="th">ECOC phase-noise data proves UHP laser reports intrinsic not effective linewidth — fails 1MHz spec of all NPO/CPO systems</td>
+      <td class="mono px">$310.39</td>
+      <td class="spk" data-sym="COHR" data-col="var(--short)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">LITE</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-irrational)"></span><span class="pubn">Irrational Analysis</span></td>
+      <td class="th">Lumentum phase noise consistently better, no 100Hz spikes; effective linewidth 0.5–1.2MHz confirmed — the laser moat holds</td>
+      <td class="mono px">$945.67</td>
+      <td class="spk" data-sym="LITE" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">CBRS</td>
+      <td><span class="chip" style="--c:var(--short)">▼ SHORT</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-irrational)"></span><span class="pubn">Irrational Analysis</span></td>
+      <td class="th">Integrated-laser wafer photonics is 'fantasy': thermal modulator bias + waveguide loss blow the link budget</td>
+      <td class="mono px">$212.41</td>
+      <td class="spk" data-sym="CBRS" data-col="var(--short)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">TSEM</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-irrational)"></span><span class="pubn">Irrational Analysis</span></td>
+      <td class="th">Ayar/Lightmatter fled GloFo 45CLO (universally derided) to TSMC COUPE + Tower hybrid-bonding — Tower is the viable SiPho node</td>
+      <td class="mono px">$236.61</td>
+      <td class="spk" data-sym="TSEM" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">MU</td>
+      <td><span class="chip" style="--c:var(--neutral)">● NEUTRAL</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-irrational)"></span><span class="pubn">Irrational Analysis</span></td>
+      <td class="th">Sanjay begging Samsung for DRAM discipline = the desperate hand; author cutting leverage to 64% ahead of IPO/Iran/rates</td>
+      <td class="mono px">$1,096.16</td>
+      <td class="spk" data-sym="MU" data-col="var(--neutral)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">NVDA</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Nscale S-1 ($35B val / $103B backlog, Anthropic+MSFT anchors); Nvidia holds >5% pre-float</td>
+      <td class="mono px">$228.87</td>
+      <td class="spk" data-sym="NVDA" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">QCOM</td>
+      <td><span class="chip" style="--c:var(--neutral)">● NEUTRAL</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">X80 modem in US iPhone 18 Pro Max = revenue reprieve this gen, but 'reusing last year's silicon, not a design win'</td>
+      <td class="mono px">$198.27</td>
+      <td class="spk" data-sym="QCOM" data-col="var(--neutral)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">285A.T</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Kioxia XL1 CXL XL-FLASH (E3.S) — NAND-as-memory-expansion for AI servers</td>
+      <td class="mono px">¥54,570</td>
+      <td class="spk" data-sym="285A.T" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">MRVL</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Industry-first 2nm optical (co-packaged) tech to demo at ECOC 2026</td>
+      <td class="mono px">$262.36</td>
+      <td class="spk" data-sym="MRVL" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">LITE</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Lumentum + Qualcomm + Corning to demo 1060nm VCSEL die-to-die scale-up at ECOC</td>
+      <td class="mono px">$945.67</td>
+      <td class="spk" data-sym="LITE" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">GLW</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Corning joins the 1060nm VCSEL optical die-to-die scale-up collab</td>
+      <td class="mono px">$159.69</td>
+      <td class="spk" data-sym="GLW" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">CIEN</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Selected by ACE consortium to upgrade Africa-Europe subsea cable >30 Tbps (WaveLogic 6)</td>
+      <td class="mono px">$368.56</td>
+      <td class="spk" data-sym="CIEN" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">ON</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Wafer-as-substrate power packaging eliminates discrete power-module assembly</td>
+      <td class="mono px">$73.60</td>
+      <td class="spk" data-sym="ON" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">BE</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">800 VDC fuel-cell architecture extends direct-DC strategy to hyperscale</td>
+      <td class="mono px">$276.53</td>
+      <td class="spk" data-sym="BE" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">NVTS</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Strategic investment in Magnachip pairs GaN/SiC power ICs with analog fab capacity</td>
+      <td class="mono px">$12.46</td>
+      <td class="spk" data-sym="NVTS" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">GNRC</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">$8B Amazon backup-generator supply deal — its largest single deal, for AWS buildouts</td>
+      <td class="mono px">$206.17</td>
+      <td class="spk" data-sym="GNRC" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">009150.KS</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">SEMCO nears ₩4T cumulative AI-MLCC contracts as component shortage bites</td>
+      <td class="mono px">₩1,491,000</td>
+      <td class="spk" data-sym="009150.KS" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">ASML</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Formally begins India operations, tied to Tata Electronics' Dholera fab ramp</td>
+      <td class="mono px">$1,747.90</td>
+      <td class="spk" data-sym="ASML" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">INTC</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Moves High-NA EUV into production at Intel Foundry (large-die stitching still unresolved)</td>
+      <td class="mono px">$123.86</td>
+      <td class="spk" data-sym="INTC" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">VICR</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Q3 guide raised >20% on VPD royalties (fee regardless of GPU vendor); +316% YTD</td>
+      <td class="mono px">$268.34</td>
+      <td class="spk" data-sym="VICR" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">TSM</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">A14 pilot pulled forward to Q1 2027 — compressing lead vs Intel 14A into the same window</td>
+      <td class="mono px">$452.00</td>
+      <td class="spk" data-sym="TSM" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">005930.KS</td>
+      <td><span class="chip" style="--c:var(--neutral)">● NEUTRAL</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Qualcomm eyeing Samsung as 2nm co-source = 'insurance' vs TSMC lockup; yields still trail</td>
+      <td class="mono px">₩284,500</td>
+      <td class="spk" data-sym="005930.KS" data-col="var(--neutral)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">2454.TW</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">MediaTek Dimensity CX C10 Max (3nm) built for Googlebook; Lenovo design win</td>
+      <td class="mono px">NT$5,180</td>
+      <td class="spk" data-sym="2454.TW" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">000660.KS</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">SK Hynix CEO publicly commits to sustaining HBM/next-gen memory leadership</td>
+      <td class="mono px">₩1,868,000</td>
+      <td class="spk" data-sym="000660.KS" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">CDNS</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">ChipStack AI Super Agent adds RTL-generation + early PPA optimization agent</td>
+      <td class="mono px">$302.95</td>
+      <td class="spk" data-sym="CDNS" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">SMTC</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">Joins XPO MSA with 200G/lane modulator-driver + TIA merchant silicon</td>
+      <td class="mono px">$174.33</td>
+      <td class="spk" data-sym="SMTC" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">IFX</td>
+      <td><span class="chip" style="--c:var(--long)">▲ LONG</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">PSOC Control C3 MCU (post-quantum secure) + SolarEdge 800VDC solid-state breaker pact</td>
+      <td class="mono px">€60.13</td>
+      <td class="spk" data-sym="IFX" data-col="var(--long)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+<tr>
+      <td class="mono tk">MP</td>
+      <td><span class="chip" style="--c:var(--neutral)">● NEUTRAL</span></td>
+      <td><span class="pubdot" style="--c:var(--pub-semidoped)"></span><span class="pubn">Semi Doped</span></td>
+      <td class="th">China Rare Earth Group in talks to buy Shenghe (MP's Chinese shareholder) ahead of Trump-Xi</td>
+      <td class="mono px">$51.04</td>
+      <td class="spk" data-sym="MP" data-col="var(--neutral)"></td>
+      <td class="mono pnl" data-new="1">NEW</td>
+    </tr>
+</tbody></table>
+
+<h2>Ticker spotlights</h2>
+<div class="spots">
+<div class="spot">
+      <div class="spot-hd">
+        <span class="mono spot-tk">COHR</span>
+        <span class="chip" style="--c:var(--short)">▼ SHORT</span>
+        <span class="mono spot-px">$310.39</span>
+      </div>
+      <div class="spot-pub"><span class="pubdot" style="--c:var(--pub-irrational)"></span>irrational</div>
+      <div class="spot-chart" data-sym="COHR" data-col="var(--short)"></div>
+      <div class="range">
+        <span class="mono rlo">$102.14</span>
+        <div class="rbar"><div class="rdot" style="left:62%"></div></div>
+        <span class="mono rhi">$440.00</span>
+      </div>
+      <ul class="bull"><li>ECOC data proves the UHP laser fails effective-linewidth spec</li><li>Off ~29% from 52-wk high; the short's engineering proof just landed</li></ul>
+    </div>
+<div class="spot">
+      <div class="spot-hd">
+        <span class="mono spot-tk">LITE</span>
+        <span class="chip" style="--c:var(--long)">▲ LONG</span>
+        <span class="mono spot-px">$945.67</span>
+      </div>
+      <div class="spot-pub"><span class="pubdot" style="--c:var(--pub-irrational)"></span>irrational+semidoped</div>
+      <div class="spot-chart" data-sym="LITE" data-col="var(--long)"></div>
+      <div class="range">
+        <span class="mono rlo">$144.52</span>
+        <div class="rbar"><div class="rdot" style="left:85%"></div></div>
+        <span class="mono rhi">$1,085.68</span>
+      </div>
+      <ul class="bull"><li>Superior phase-noise/linewidth; QCOM+Corning 1060nm VCSEL at ECOC</li><li>Near 52-wk high — the other side of the optics-quality war</li></ul>
+    </div>
+<div class="spot">
+      <div class="spot-hd">
+        <span class="mono spot-tk">NVDA</span>
+        <span class="chip" style="--c:var(--long)">▲ LONG</span>
+        <span class="mono spot-px">$228.87</span>
+      </div>
+      <div class="spot-pub"><span class="pubdot" style="--c:var(--pub-semidoped)"></span>semidoped</div>
+      <div class="spot-chart" data-sym="NVDA" data-col="var(--long)"></div>
+      <div class="range">
+        <span class="mono rlo">$164.27</span>
+        <div class="rbar"><div class="rdot" style="left:89%"></div></div>
+        <span class="mono rhi">$236.54</span>
+      </div>
+      <ul class="bull"><li>Nscale S-1 anchors on Anthropic+MSFT; Nvidia holds >5%</li><li>At the 52-wk high; the backstop-universe demand engine keeps compounding</li></ul>
+    </div>
+<div class="spot">
+      <div class="spot-hd">
+        <span class="mono spot-tk">VICR</span>
+        <span class="chip" style="--c:var(--long)">▲ LONG</span>
+        <span class="mono spot-px">$268.34</span>
+      </div>
+      <div class="spot-pub"><span class="pubdot" style="--c:var(--pub-semidoped)"></span>semidoped</div>
+      <div class="spot-chart" data-sym="VICR" data-col="var(--long)"></div>
+      <div class="range">
+        <span class="mono rlo">$47.56</span>
+        <div class="rbar"><div class="rdot" style="left:66%"></div></div>
+        <span class="mono rhi">$382.65</span>
+      </div>
+      <ul class="bull"><li>Q3 raised >20% on VPD royalties — fee regardless of GPU vendor</li><li>+316% YTD; royalty model re-rates as rack power density climbs</li></ul>
+    </div>
+</div>
+
+<h2>Source scorecards</h2>
+<div class="scores">
+<div class="score" style="--pc:var(--pub-irrational)">
+      <div class="score-hd"><span class="pubdot" style="--c:var(--pub-irrational)"></span><b>Irrational Analysis</b><span class="hr mono">25/47 (53%)</span></div>
+      <div class="meter"><div class="mfill" style="width:53%;background:var(--pub-irrational)"></div></div>
+      <div class="post"><div class="pdate mono">2026-09-21</div><div class="ptitle">Coherent laser 'garbage' + Cerebras roast</div><div class="pchips"><span class="chip sm" style="--c:var(--short)">▼ COHR</span><span class="chip sm" style="--c:var(--long)">▲ LITE</span><span class="chip sm" style="--c:var(--short)">▼ CBRS</span></div></div><div class="post"><div class="pdate mono">2026-09-20</div><div class="ptitle">Calm Before the IPO Storm (macro)</div><div class="pchips"><span class="chip sm" style="--c:var(--long)">▲ TSEM</span><span class="chip sm" style="--c:var(--neutral)">● MU</span></div></div>
+    </div>
+<div class="score" style="--pc:var(--pub-semianalysis)">
+      <div class="score-hd"><span class="pubdot" style="--c:var(--pub-semianalysis)"></span><b>SemiAnalysis</b><span class="hr mono">7/22 (32%)</span></div>
+      <div class="meter"><div class="mfill" style="width:32%;background:var(--pub-semianalysis)"></div></div>
+      <div class="post"><div class="pdate mono">2026-09-21</div><div class="ptitle">Computation & Data Movement for Inference — technical, no priced call</div><div class="pchips"><span class=none>— no priced call —</span></div></div>
+    </div>
+<div class="score" style="--pc:var(--pub-semidoped)">
+      <div class="score-hd"><span class="pubdot" style="--c:var(--pub-semidoped)"></span><b>Semi Doped</b><span class="hr mono">34/70 (49%)</span></div>
+      <div class="meter"><div class="mfill" style="width:49%;background:var(--pub-semidoped)"></div></div>
+      <div class="post"><div class="pdate mono">2026-09-22</div><div class="ptitle">Daily — Alibaba chip, TX/CA permit freeze, Vicor, TSMC A14</div><div class="pchips"><span class="chip sm" style="--c:var(--long)">▲ VICR</span><span class="chip sm" style="--c:var(--long)">▲ TSM</span><span class="chip sm" style="--c:var(--long)">▲ 2454.TW</span><span class="chip sm" style="--c:var(--long)">▲ 000660.KS</span><span class="chip sm" style="--c:var(--long)">▲ CDNS</span><span class="chip sm" style="--c:var(--long)">▲ SMTC</span><span class="chip sm" style="--c:var(--long)">▲ IFX</span><span class="chip sm" style="--c:var(--neutral)">● 005930.KS</span><span class="chip sm" style="--c:var(--neutral)">● MP</span></div></div><div class="post"><div class="pdate mono">2026-09-21</div><div class="ptitle">Daily — Nscale S-1, Qualcomm X80 iPhone, ECOC optics</div><div class="pchips"><span class="chip sm" style="--c:var(--long)">▲ NVDA</span><span class="chip sm" style="--c:var(--long)">▲ 285A.T</span><span class="chip sm" style="--c:var(--long)">▲ MRVL</span><span class="chip sm" style="--c:var(--long)">▲ LITE</span><span class="chip sm" style="--c:var(--long)">▲ GLW</span><span class="chip sm" style="--c:var(--long)">▲ CIEN</span><span class="chip sm" style="--c:var(--long)">▲ ON</span><span class="chip sm" style="--c:var(--long)">▲ BE</span><span class="chip sm" style="--c:var(--long)">▲ NVTS</span><span class="chip sm" style="--c:var(--long)">▲ GNRC</span><span class="chip sm" style="--c:var(--long)">▲ 009150.KS</span><span class="chip sm" style="--c:var(--long)">▲ ASML</span><span class="chip sm" style="--c:var(--long)">▲ INTC</span><span class="chip sm" style="--c:var(--neutral)">● QCOM</span></div></div>
+    </div>
+</div>
+
+<h2>Jargon decoder</h2>
+<div class="jargon"><div class="jr"><span class="jt">Effective (β-separation) linewidth</span><span class="jd">Integral of a laser's phase noise above the β-line; what actually sets optical-link quality. Coherent showed the flattering *intrinsic* number instead — IA's whole short.</span></div><div class="jr"><span class="jt">NPO / CPO</span><span class="jd">Near-/Co-Packaged Optics — moving the optical engine next to (or onto) the switch/GPU package; needs a clean, narrow-linewidth laser to work.</span></div><div class="jr"><span class="jt">VCSEL (1060nm)</span><span class="jd">Vertical-cavity laser; the industry is migrating 850→1060nm for AI die-to-die optics, which triggers a 6–12mo GR-468 reliability requal.</span></div><div class="jr"><span class="jt">ECOC</span><span class="jd">European Conference on Optical Communication — the September event where LITE/COHR/MRVL/Semtech showed their optics hands.</span></div><div class="jr"><span class="jt">Nscale / neocloud</span><span class="jd">GPU-rental infra co (like CoreWeave/Nebius); Nscale's $35B IPO rides a $103B backlog anchored by Anthropic + Microsoft.</span></div><div class="jr"><span class="jt">VPD (vertical power delivery)</span><span class="jd">Feeding the GPU from *underneath* the board instead of across it — how Vicor's royalty-licensed architecture survives extreme rack densities.</span></div><div class="jr"><span class="jt">High-NA EUV</span><span class="jd">Next-gen 0.55-NA lithography (ASML); 'stitching' = joining exposure fields to pattern dies larger than one High-NA shot — Intel's unsolved gate.</span></div><div class="jr"><span class="jt">A14 / 14A</span><span class="jd">TSMC's 1.4nm node (A14) vs Intel's competing 14A; TSMC pulled A14 pilot to Q1-2027 to defend its lead.</span></div><div class="jr"><span class="jt">CXL / XL-FLASH</span><span class="jd">Memory-expansion fabric; Kioxia's XL1 puts fast NAND on a CXL card as a cheaper DRAM-capacity substitute in AI servers.</span></div><div class="jr"><span class="jt">MoE active parameters</span><span class="jd">Only a subset of a mixture-of-experts model runs per token; Anthropic's models are rumored *less* sparse than OpenAI's → worse inference economics (IA).</span></div><div class="jr"><span class="jt">Backstop universe</span><span class="jd">SemiAnalysis's name for Nvidia's ~$530B off-balance-sheet guarantees that let neoclouds borrow at investment-grade pricing.</span></div></div>
+
+<h2>Themes in play</h2>
+<div class="themes"><div class="trow"><span class="tlabel">Silicon photonics / optics war</span><div class="tbar"><div class="tfill" style="width:100%"></div></div><span class="mono tval">14</span></div><div class="trow"><span class="tlabel">AI debt & neocloud finance</span><div class="tbar"><div class="tfill" style="width:64%"></div></div><span class="mono tval">9</span></div><div class="trow"><span class="tlabel">Datacenter power (800VDC/gensets)</span><div class="tbar"><div class="tfill" style="width:57%"></div></div><span class="mono tval">8</span></div><div class="trow"><span class="tlabel">Foundry & High-NA nodes</span><div class="tbar"><div class="tfill" style="width:50%"></div></div><span class="mono tval">7</span></div><div class="trow"><span class="tlabel">HBM / memory competition</span><div class="tbar"><div class="tfill" style="width:43%"></div></div><span class="mono tval">6</span></div><div class="trow"><span class="tlabel">Custom silicon & ASICs</span><div class="tbar"><div class="tfill" style="width:36%"></div></div><span class="mono tval">5</span></div><div class="trow"><span class="tlabel">Anthropic IPO / model economics</span><div class="tbar"><div class="tfill" style="width:29%"></div></div><span class="mono tval">4</span></div></div>
+
+<div class="foot">
+  Generated by an automated Substack scanner · prices are point-in-time (yfinance) · not investment advice.<br>
+  Publication track records (resolved priced calls ≥30d): Irrational 25/47 · SemiAnalysis 7/22 · Semi Doped 34/70.
+</div>
+
+</div>
+<script>
+const PRICES={"000660.KS": {"price": 1868000.0, "hi52": 2987000.0, "lo52": 333000.0, "closes": [2554446.0, 2620431.75, 2916367.75, 2672420.5, 2627430.25, 2649425.5, 2559445.0, 2186526.0, 2424474.25, 2342492.0, 2200522.75, 2075550.0, 2185526.0, 2179527.5, 1844600.0, 1912585.25, 2081548.62, 1841600.62, 1763617.62, 1835602.0, 1829603.25, 1918584.0, 1758618.62, 1815606.38, 1549664.0, 1400696.25, 1321713.38, 1717627.62, 1566660.25, 1576658.12, 1667638.38, 1494675.88, 1421691.75, 1419692.12, 1424691.12, 1503674.0, 1592654.62, 1644643.38, 1661639.75, 1499674.88, 1690633.38, 1729625.0, 1670637.75, 1677636.25, 1687634.12, 1729625.0, 1653000.0, 1674000.0, 1693000.0, 1613000.0, 1596000.0, 1647000.0, 1783000.0, 1793000.0, 1856000.0, 1853000.0, 1812000.0, 1697000.0, 1690000.0, 1759000.0, 1745000.0, 1857000.0, 1868000.0, 1840000.0, 1868000.0]}, "005930.KS": {"price": 284500.0, "hi52": 374500.0, "lo52": 82400.0, "closes": [309658.5, 340124.91, 358105.06, 339126.0, 323000.0, 334000.0, 314500.0, 286000.0, 309500.0, 318000.0, 296000.0, 277500.0, 278000.0, 285000.0, 254500.0, 263000.0, 279500.0, 255000.0, 244000.0, 259000.0, 260500.0, 270000.0, 249500.0, 254000.0, 220000.0, 208500.0, 207000.0, 262500.0, 239500.0, 240000.0, 246000.0, 230500.0, 231000.0, 230000.0, 239500.0, 255500.0, 268000.0, 274500.0, 268500.0, 247500.0, 271000.0, 281500.0, 257000.0, 257000.0, 261500.0, 266000.0, 257000.0, 260000.0, 261000.0, 250500.0, 250000.0, 255500.0, 270000.0, 269500.0, 269500.0, 269000.0, 259500.0, 249000.0, 248500.0, 253500.0, 252500.0, 261000.0, 274000.0, 276500.0, 285000.0]}, "009150.KS": {"price": 1491000.0, "hi52": 2417000.0, "lo52": 188600.0, "closes": [1990000.0, 1964000.0, 1997000.0, 1993000.0, 2038000.0, 2184000.0, 2205000.0, 1926000.0, 1989000.0, 1828000.0, 1648000.0, 1479000.0, 1493000.0, 1584000.0, 1289000.0, 1260000.0, 1413000.0, 1277000.0, 1275000.0, 1310000.0, 1345000.0, 1448000.0, 1326000.0, 1325000.0, 1114000.0, 1029000.0, 879000.0, 1142000.0, 1181000.0, 1185000.0, 1356000.0, 1229000.0, 1278000.0, 1274000.0, 1262000.0, 1335000.0, 1503000.0, 1558000.0, 1440000.0, 1387000.0, 1396000.0, 1316000.0, 1318000.0, 1362000.0, 1330000.0, 1385000.0, 1421000.0, 1458000.0, 1430000.0, 1400000.0, 1348000.0, 1401000.0, 1454000.0, 1370000.0, 1404000.0, 1400000.0, 1400000.0, 1337000.0, 1317000.0, 1381000.0, 1330000.0, 1388000.0, 1429000.0, 1486000.0, 1491000.0]}, "2454.TW": {"price": 5180.0, "hi52": 5480.0, "lo52": 1130.0, "closes": [4508.06, 4259.55, 4284.4, 3856.96, 3886.78, 4219.79, 4309.25, 4319.19, 4170.08, 4100.5, 4030.0, 3995.0, 3925.0, 3925.0, 3825.0, 3660.0, 3740.0, 3700.0, 3370.0, 3340.0, 3670.0, 3850.0, 3875.0, 3750.0, 3680.0, 3315.0, 3150.0, 3235.0, 3555.0, 3910.0, 3865.0, 4000.0, 3920.0, 3900.0, 3960.0, 4020.0, 4015.0, 4225.0, 4210.0, 4050.0, 3885.0, 3845.0, 3700.0, 3790.0, 3765.0, 3735.0, 3945.0, 3865.0, 3985.0, 3925.0, 4315.0, 4275.0, 4340.0, 4415.0, 4760.0, 4710.0, 4625.0, 4720.0, 4585.0, 4560.0, 4430.0, 4530.0, 4500.0, 4710.0, 5010.0, 5180.0]}, "285A.T": {"price": 54570.0, "hi52": 112700.0, "lo52": 4355.0, "closes": [96900.0, 108600.0, 108700.0, 92290.0, 92500.0, 103850.0, 92180.0, 88450.0, 89680.0, 88130.0, 76260.0, 83300.0, 81590.0, 72400.0, 71870.0, 77860.0, 77000.0, 67100.0, 69100.0, 73100.0, 62110.0, 52110.0, 61060.0, 64270.0, 61880.0, 56010.0, 54550.0, 44550.0, 38380.0, 39500.0, 46500.0, 49160.0, 52090.0, 54300.0, 48740.0, 47730.0, 48010.0, 49870.0, 51800.0, 53740.0, 61840.0, 57150.0, 49950.0, 52950.0, 54320.0, 50930.0, 51260.0, 50000.0, 52500.0, 47900.0, 49990.0, 51000.0, 51000.0, 51670.0, 54460.0, 59530.0, 57410.0, 57000.0, 58090.0, 54030.0, 50590.0, 51750.0, 50780.0, 49880.0, 54570.0]}, "ASML": {"price": 1747.9, "hi52": 1999.96, "lo52": 935.41, "closes": [1776.16, 1760.49, 1838.8, 1792.3, 1880.68, 1986.87, 1840.66, 1767.03, 1822.71, 1745.02, 1766.37, 1801.92, 1795.0, 1723.81, 1773.35, 1812.93, 1782.56, 1745.32, 1736.77, 1799.18, 1799.53, 1800.67, 1754.82, 1653.12, 1582.95, 1550.69, 1651.44, 1629.0, 1642.52, 1711.89, 1678.22, 1704.37, 1740.99, 1733.48, 1799.38, 1810.07, 1847.9, 1844.08, 1883.12, 1802.98, 1751.73, 1750.31, 1763.76, 1740.13, 1744.16, 1745.64, 1735.01, 1696.16, 1696.01, 1665.14, 1682.3, 1646.19, 1714.88, 1764.85, 1729.52, 1687.43, 1698.3, 1575.15, 1591.48, 1602.22, 1629.67, 1679.92, 1711.32]}, "BE": {"price": 276.53, "hi52": 351.28, "lo52": 61.37, "closes": [321.98, 326.19, 309.18, 252.02, 275.01, 302.7, 289.5, 270.89, 295.05, 269.57, 254.29, 257.02, 244.61, 233.49, 243.4, 239.38, 206.73, 214.96, 197.06, 226.26, 218.22, 217.3, 184.89, 188.18, 166.84, 163.75, 207.12, 205.81, 218.32, 228.11, 234.33, 228.96, 219.34, 210.63, 211.21, 237.16, 236.22, 229.94, 232.16, 209.01, 206.63, 202.48, 201.45, 204.02, 217.45, 218.21, 217.83, 210.77, 206.3, 213.63, 217.28, 235.55, 252.87, 277.22, 269.28, 258.49, 275.75, 257.05, 259.35, 270.02, 280.76, 265.63, 272.89]}, "CBRS": {"price": 212.41, "hi52": 386.34, "lo52": 160.81, "closes": [226.72, 182.26, 168.52, 181.59, 216.16, 221.0, 221.27, 204.86, 192.01, 176.61, 181.72, 198.53, 215.08, 204.62, 203.81, 184.01, 180.46, 172.86, 176.88, 208.57, 209.8, 220.0, 199.12, 188.61, 192.72, 169.39, 203.07, 198.71, 219.97, 227.15, 214.3, 211.3, 226.73, 230.01, 234.76, 262.06, 231.01, 218.98, 251.98, 220.01, 215.69, 209.85, 196.13, 185.43, 183.92, 182.15, 186.67, 179.08, 184.24, 172.62, 184.52, 190.44, 210.05, 199.77, 196.2, 191.34, 191.93, 181.21, 184.03, 190.47, 194.14, 198.37, 208.49]}, "CDNS": {"price": 302.95, "hi52": 416.69, "lo52": 262.75, "closes": [379.06, 372.4, 368.23, 377.27, 372.72, 375.32, 377.73, 373.14, 375.77, 371.06, 374.06, 385.95, 384.17, 377.92, 376.8, 371.5, 364.65, 330.11, 329.93, 344.64, 337.01, 330.46, 326.24, 338.61, 344.72, 332.76, 332.82, 340.02, 336.15, 340.62, 337.07, 338.42, 339.24, 331.91, 327.53, 323.13, 323.77, 324.82, 323.47, 316.52, 314.98, 313.59, 319.02, 315.92, 331.9, 334.68, 347.55, 340.39, 338.78, 313.04, 306.67, 304.88, 292.7, 284.11, 284.6, 284.95, 289.37, 279.06, 273.96, 279.9, 280.76, 282.9, 294.9]}, "CIEN": {"price": 368.56, "hi52": 637.51, "lo52": 133.67, "closes": [459.85, 463.51, 484.69, 479.5, 478.93, 490.56, 462.44, 422.46, 433.83, 418.91, 440.97, 462.34, 460.72, 445.44, 446.93, 418.46, 388.81, 374.41, 378.77, 408.73, 397.16, 407.53, 390.96, 377.27, 350.51, 330.37, 372.07, 377.05, 390.76, 411.13, 408.83, 403.76, 412.39, 387.7, 387.53, 432.05, 442.79, 428.77, 445.18, 405.54, 399.47, 392.48, 395.79, 371.95, 387.66, 404.03, 399.85, 378.44, 382.8, 360.33, 354.16, 317.46, 321.0, 341.29, 338.0, 334.56, 349.54, 319.64, 334.33, 340.5, 344.25, 348.8, 365.96]}, "COHR": {"price": 310.39, "hi52": 440.0, "lo52": 102.14, "closes": [381.22, 392.5, 407.25, 380.56, 391.22, 394.47, 368.65, 333.36, 335.7, 314.13, 317.05, 327.24, 324.5, 307.39, 310.77, 299.38, 276.96, 277.6, 285.4, 317.22, 312.19, 313.22, 282.39, 271.31, 243.33, 222.05, 249.06, 262.89, 288.14, 323.73, 328.22, 334.22, 379.13, 325.15, 328.57, 355.64, 327.23, 325.83, 351.22, 306.43, 287.47, 290.03, 289.52, 275.49, 288.14, 294.37, 295.39, 279.2, 277.83, 272.03, 268.64, 264.41, 281.86, 301.88, 303.48, 293.17, 305.37, 266.5, 271.17, 289.93, 295.98, 317.36, 321.52]}, "GLW": {"price": 159.69, "hi52": 271.78, "lo52": 77.05, "closes": [193.71, 205.44, 227.58, 220.63, 255.21, 254.95, 220.22, 196.42, 194.43, 185.03, 183.68, 192.02, 190.53, 182.77, 187.29, 174.08, 158.09, 154.32, 152.81, 162.1, 153.77, 155.77, 146.37, 143.09, 125.77, 123.82, 134.97, 137.99, 146.36, 159.59, 156.41, 156.88, 165.37, 157.46, 158.89, 167.13, 158.24, 165.68, 172.88, 159.6, 152.17, 151.17, 149.56, 145.28, 146.88, 152.49, 152.51, 148.7, 148.73, 145.56, 144.13, 146.0, 154.3, 165.96, 168.46, 163.12, 166.4, 143.6, 143.57, 144.16, 147.8, 150.13, 158.98]}, "GNRC": {"price": 206.17, "hi52": 296.44, "lo52": 134.8, "closes": [274.54, 284.14, 295.16, 278.62, 283.81, 292.81, 270.22, 252.66, 257.81, 235.8, 236.61, 235.86, 233.94, 226.95, 225.12, 226.58, 215.38, 214.91, 213.25, 215.61, 213.42, 210.5, 202.01, 197.54, 195.6, 195.19, 191.91, 197.11, 201.21, 218.63, 217.41, 211.18, 212.22, 206.09, 215.86, 221.9, 216.66, 219.3, 221.25, 211.56, 210.81, 206.75, 205.98, 203.56, 201.78, 206.62, 197.29, 183.8, 185.38, 181.42, 180.76, 183.02, 187.35, 190.21, 186.48, 181.67, 186.99, 176.98, 175.03, 175.11, 207.23, 207.44, 204.96]}, "IFX": {"price": 60.13, "hi52": 88.83, "lo52": 31.27, "closes": [85.94, 80.56, 79.56, 82.01, 78.3, 78.24, 81.67, 77.9, 76.35, 77.38, 77.21, 70.83, 70.3, 73.35, 72.48, 70.37, 71.82, 67.31, 64.71, 63.66, 64.0, 67.54, 69.8, 65.49, 64.41, 61.49, 57.77, 54.48, 59.47, 61.67, 61.47, 63.72, 60.08, 60.32, 62.08, 62.53, 62.85, 63.09, 62.5, 61.73, 61.97, 57.24, 54.98, 55.41, 55.97, 54.16, 54.85, 55.19, 57.17, 57.08, 56.29, 55.54, 55.77, 55.53, 56.86, 60.79, 58.45, 56.95, 55.8, 58.56, 54.04, 54.33, 55.0, 54.4, 55.86, 58.29]}, "INTC": {"price": 123.86, "hi52": 142.35, "lo52": 28.82, "closes": [132.28, 131.65, 132.87, 128.32, 131.72, 139.63, 127.02, 120.35, 122.2, 110.39, 110.24, 112.54, 109.84, 103.12, 107.76, 102.99, 96.98, 95.04, 97.06, 105.45, 102.62, 100.23, 92.32, 91.67, 86.3, 81.88, 91.13, 90.2, 91.0, 100.86, 101.06, 99.81, 101.65, 97.52, 97.71, 100.95, 104.56, 102.5, 103.49, 96.69, 92.8, 92.13, 90.07, 87.26, 87.48, 88.24, 92.09, 89.47, 89.51, 88.97, 90.05, 91.67, 95.8, 104.47, 106.24, 100.32, 102.94, 97.19, 97.14, 101.05, 108.8, 108.6, 121.78]}, "LITE": {"price": 945.67, "hi52": 1085.68, "lo52": 144.52, "closes": [827.92, 842.53, 861.97, 816.98, 851.4, 858.06, 801.16, 728.32, 731.25, 698.91, 707.1, 785.77, 802.01, 768.15, 814.8, 752.0, 706.23, 732.82, 765.55, 837.56, 829.7, 833.64, 762.99, 711.96, 651.93, 602.35, 693.24, 713.94, 779.89, 849.47, 826.26, 838.06, 890.17, 813.51, 820.59, 932.47, 880.41, 926.14, 968.9, 873.31, 827.6, 879.28, 866.71, 830.17, 885.57, 939.03, 956.14, 895.0, 914.76, 868.95, 870.58, 847.37, 881.26, 978.53, 988.98, 935.7, 927.03, 835.03, 838.96, 919.4, 893.61, 930.91, 954.49]}, "MP": {"price": 51.04, "hi52": 100.25, "lo52": 37.81, "closes": [58.9, 56.51, 55.62, 53.9, 54.74, 56.01, 54.28, 53.31, 53.01, 50.49, 53.0, 51.71, 52.21, 49.5, 50.79, 49.46, 45.46, 45.24, 45.7, 46.3, 45.68, 44.65, 41.3, 43.13, 41.28, 38.1, 41.66, 41.37, 43.84, 47.47, 47.91, 47.49, 51.11, 54.66, 55.24, 54.11, 55.66, 58.74, 58.51, 56.67, 56.68, 55.04, 60.05, 57.42, 60.17, 59.31, 59.03, 56.13, 54.75, 53.74, 54.7, 53.78, 54.53, 55.37, 54.3, 51.32, 50.51, 50.68, 49.17, 48.99, 49.38, 47.26, 50.0]}, "MRVL": {"price": 262.36, "hi52": 329.88, "lo52": 70.69, "closes": [278.97, 276.63, 281.19, 266.7, 277.68, 297.82, 271.98, 245.23, 249.21, 230.64, 231.65, 243.21, 235.81, 217.53, 222.44, 206.26, 188.3, 188.68, 194.94, 207.96, 210.99, 209.32, 194.23, 189.17, 174.47, 163.4, 183.3, 187.56, 193.78, 218.59, 211.02, 210.54, 218.72, 208.56, 212.31, 217.08, 222.18, 222.02, 234.33, 216.0, 237.27, 251.01, 237.04, 229.29, 240.38, 245.11, 241.45, 216.62, 211.66, 210.39, 206.48, 208.83, 223.55, 225.41, 235.01, 226.96, 236.1, 218.82, 221.7, 229.71, 240.76, 244.25, 257.38]}, "MU": {"price": 1096.16, "hi52": 1255.0, "lo52": 154.65, "closes": [1051.61, 1048.35, 1213.37, 1132.16, 1145.1, 1154.11, 1032.12, 975.41, 984.75, 938.38, 948.8, 991.64, 979.3, 937.0, 983.12, 904.28, 853.2, 848.95, 865.46, 970.82, 959.48, 990.21, 920.95, 900.2, 820.53, 739.0, 874.66, 823.03, 829.5, 892.67, 893.19, 881.47, 877.57, 861.0, 868.52, 911.29, 949.83, 971.66, 1011.75, 940.76, 937.11, 974.33, 966.78, 910.43, 932.97, 938.4, 935.39, 932.86, 958.73, 933.44, 956.08, 958.16, 1016.59, 1000.26, 1027.77, 977.41, 975.26, 924.03, 927.6, 926.55, 977.5, 1015.8, 1043.96]}, "NVDA": {"price": 228.87, "hi52": 236.54, "lo52": 164.27, "closes": [199.82, 198.78, 195.52, 192.31, 194.75, 199.87, 197.36, 194.61, 195.33, 196.71, 203.89, 202.55, 210.72, 203.3, 211.56, 212.26, 207.17, 202.58, 203.05, 207.06, 211.82, 208.53, 206.61, 196.29, 196.79, 189.8, 194.82, 200.53, 206.41, 211.7, 218.97, 218.75, 223.71, 217.31, 217.26, 223.84, 225.05, 224.91, 224.76, 219.49, 217.32, 216.61, 214.48, 208.25, 212.81, 209.43, 227.73, 217.31, 220.53, 217.2, 224.16, 228.19, 230.1, 225.48, 223.42, 218.36, 218.29, 210.96, 212.17, 213.9, 219.34, 222.27, 227.38]}, "NVTS": {"price": 12.46, "hi52": 34.17, "lo52": 6.22, "closes": [21.4, 18.32, 17.7, 17.3, 17.74, 17.92, 16.53, 14.46, 15.23, 13.99, 13.36, 14.18, 13.47, 12.87, 13.09, 13.27, 11.76, 11.46, 11.54, 12.82, 12.67, 12.03, 10.92, 11.41, 10.01, 9.73, 11.01, 10.86, 11.52, 12.69, 12.35, 12.4, 13.89, 13.17, 13.6, 13.93, 13.66, 14.45, 14.58, 13.17, 12.83, 12.97, 12.97, 12.23, 12.44, 12.67, 12.51, 11.49, 11.59, 10.94, 11.21, 11.1, 11.8, 12.0, 11.6, 11.15, 11.63, 10.89, 10.81, 10.48, 11.14, 11.43, 12.16]}, "ON": {"price": 73.6, "hi52": 134.92, "lo52": 44.56, "closes": [117.06, 115.74, 118.74, 90.65, 88.57, 94.54, 94.63, 91.22, 94.69, 91.1, 93.79, 97.87, 95.96, 90.37, 93.73, 92.54, 88.12, 87.37, 86.7, 91.06, 92.33, 90.13, 86.81, 89.04, 84.39, 78.86, 83.74, 81.61, 80.4, 80.78, 76.91, 78.33, 81.17, 79.78, 81.11, 83.32, 81.56, 82.66, 83.38, 79.42, 76.58, 74.71, 74.21, 71.93, 72.51, 73.22, 74.8, 72.61, 74.09, 72.65, 72.34, 73.65, 74.38, 71.08, 70.98, 70.17, 76.14, 71.65, 73.2, 66.6, 68.3, 69.98, 71.72]}, "QCOM": {"price": 198.27, "hi52": 259.92, "lo52": 121.99, "closes": [203.03, 196.34, 203.79, 188.36, 187.7, 183.79, 180.94, 175.3, 185.47, 181.98, 185.55, 190.08, 188.14, 182.98, 177.14, 177.02, 169.69, 170.85, 169.4, 172.56, 174.68, 170.18, 166.07, 169.12, 162.0, 154.84, 150.78, 146.81, 150.75, 161.79, 156.68, 159.52, 166.95, 161.29, 161.8, 162.19, 163.9, 164.89, 161.3, 159.32, 161.03, 159.87, 159.88, 157.67, 159.69, 162.83, 163.89, 163.3, 169.56, 165.71, 169.04, 168.57, 168.74, 174.09, 176.4, 176.88, 181.97, 180.15, 187.8, 184.84, 188.71, 177.72, 194.23]}, "SMTC": {"price": 174.33, "hi52": 190.64, "lo52": 57.5, "closes": [163.28, 158.48, 162.27, 149.75, 156.14, 161.85, 147.03, 135.27, 138.89, 126.4, 128.84, 137.5, 136.13, 132.15, 141.36, 135.22, 127.65, 124.96, 125.88, 137.84, 136.93, 138.68, 125.92, 121.52, 111.3, 103.55, 114.61, 117.82, 119.08, 129.16, 121.25, 134.78, 139.42, 131.27, 131.18, 140.0, 133.58, 140.35, 154.22, 135.23, 125.36, 124.88, 124.09, 120.91, 127.52, 140.8, 142.43, 131.17, 132.96, 132.27, 133.85, 135.4, 147.89, 162.62, 163.94, 159.13, 167.24, 147.05, 150.91, 167.55, 178.19, 185.0, 177.37]}, "TSEM": {"price": 236.61, "hi52": 319.94, "lo52": 66.3, "closes": [282.65, 275.32, 269.88, 249.91, 255.59, 260.64, 245.46, 219.05, 218.95, 211.93, 216.7, 226.58, 222.75, 229.68, 255.49, 251.0, 237.92, 234.1, 227.21, 250.91, 249.53, 260.42, 233.37, 224.21, 202.99, 187.84, 211.16, 219.67, 234.32, 239.53, 211.14, 224.7, 252.49, 252.55, 249.58, 260.31, 252.95, 265.48, 263.73, 240.55, 226.46, 223.78, 222.59, 211.1, 212.71, 221.23, 219.85, 208.01, 205.05, 199.06, 206.81, 206.16, 222.34, 219.82, 216.57, 208.07, 211.52, 191.12, 195.12, 202.2, 219.24, 223.6, 233.82]}, "TSM": {"price": 452.0, "hi52": 479.0, "lo52": 266.82, "closes": [435.22, 439.65, 433.83, 431.19, 453.88, 476.29, 443.04, 433.0, 450.58, 431.41, 435.81, 435.79, 432.95, 420.45, 419.27, 418.36, 408.64, 397.3, 401.22, 423.47, 420.08, 414.47, 402.33, 398.02, 391.26, 373.67, 402.23, 403.17, 405.02, 416.05, 412.89, 417.08, 418.92, 417.35, 420.93, 428.0, 429.34, 425.21, 429.82, 412.3, 410.99, 414.89, 417.83, 409.02, 416.29, 416.57, 426.16, 416.4, 414.21, 412.89, 414.39, 415.89, 427.76, 437.83, 434.2, 426.88, 432.08, 416.89, 412.64, 417.72, 430.26, 434.67, 445.14]}, "VICR": {"price": 268.34, "hi52": 382.65, "lo52": 47.56, "closes": [336.12, 322.28, 331.59, 326.93, 366.79, 379.78, 350.21, 282.95, 285.34, 257.34, 263.16, 277.43, 272.05, 252.16, 264.5, 260.2, 230.41, 237.62, 230.99, 214.7, 217.35, 231.38, 211.01, 206.44, 192.12, 182.77, 206.67, 207.37, 213.54, 226.48, 219.08, 218.72, 221.2, 208.81, 210.88, 226.12, 226.64, 234.74, 253.5, 242.41, 217.35, 207.64, 200.54, 189.99, 194.62, 197.23, 203.64, 187.75, 187.68, 175.99, 181.59, 178.76, 188.55, 193.32, 183.87, 178.05, 197.91, 184.73, 183.97, 183.91, 216.39, 222.72, 223.9]}, "META": {"price": 736.6, "hi52": null, "lo52": null, "closes": [561.76, 557.23, 542.44, 549.82, 562.16, 562.85, 612.43, 582.44, 599.82, 615.09, 602.64, 630.98, 668.68, 656.21, 660.52, 680.77, 664.02, 645.5, 645.34, 643.3, 626.68, 605.62, 594.72, 593.4, 592.94, 585.15, 538.6, 556.27, 589.77, 587.48, 588.31, 589.43, 591.63, 594.45, 598.65, 578.39, 594.5, 589.38, 568.52, 543.24, 545.6, 545.4, 549.47, 558.58, 569.6, 575.69, 570.65, 577.56, 571.89, 578.08, 592.38, 610.2, 616.28, 613.0, 653.17, 643.87, 647.52, 665.08, 669.71, 672.78, 681.77, 665.23, 741.25]}, "GOOGL": {"price": 351.16, "hi52": null, "lo52": null, "closes": [345.91, 345.07, 343.49, 337.17, 353.42, 357.14, 360.98, 359.68, 366.22, 366.79, 361.69, 358.66, 356.95, 352.28, 359.28, 370.68, 354.23, 346.55, 351.76, 346.93, 341.87, 317.49, 319.53, 326.35, 333.5, 336.49, 333.45, 355.9, 373.27, 377.41, 362.2, 357.52, 354.07, 357.29, 343.58, 343.32, 346.14, 345.68, 343.78, 343.98, 344.5, 340.45, 344.6, 347.84, 346.74, 341.78, 340.43, 346.37, 339.13, 334.8, 336.9, 342.26, 338.46, 338.36, 330.65, 332.6, 338.5, 349.39, 344.98, 342.87, 347.33, 349.54, 354.97]}, "AVGO": {"price": 364.54, "hi52": null, "lo52": null, "closes": [379.46, 381.38, 378.22, 364.36, 371.77, 377.06, 368.67, 359.79, 373.22, 370.11, 387.98, 400.38, 399.24, 383.35, 388.4, 393.56, 373.77, 370.16, 377.47, 385.8, 396.09, 391.76, 381.23, 382.52, 380.22, 369.65, 387.14, 388.57, 391.52, 417.4, 417.52, 419.81, 426.98, 421.63, 415.32, 415.29, 417.06, 392.28, 391.72, 379.31, 361.82, 363.37, 367.78, 358.11, 356.09, 354.94, 370.86, 368.12, 369.67, 369.01, 366.57, 356.51, 357.25, 367.89, 363.72, 360.17, 361.33, 344.09, 338.65, 338.89, 346.67, 356.96, 362.66]}};
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+document.querySelectorAll('.spk').forEach(el=>{
+  const p=PRICES[el.dataset.sym]; if(!p||!p.closes.length)return;
+  el.innerHTML=sparkSVG(p.closes,110,30,el.dataset.col,{ci:p.closes.length-1});
+});
+document.querySelectorAll('.spot-chart').forEach(el=>{
+  const p=PRICES[el.dataset.sym]; if(!p||!p.closes.length)return;
+  el.innerHTML=sparkSVG(p.closes,480,90,el.dataset.col,{ci:p.closes.length-1,refline:true});
+});
+</script>
+</body></html>

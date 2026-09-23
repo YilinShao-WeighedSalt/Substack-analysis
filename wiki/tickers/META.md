@@ -4,11 +4,11 @@ title: "META — Meta Platforms"
 tags: []
 related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[citrini-2025-11-27-carving-up-the-tpu]]"]
 created: 2024-03-13
-updated: 2026-09-11
+updated: 2026-09-23
 ticker: META
 current_stance: long
 conviction: high
-last_review: 2026-09-11
+last_review: 2026-09-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -48,3 +48,5 @@ No px@call values are recorded across any entry, so quantitative P&L assessment 
 **Update 2026-07-10:** SemiAnalysis's MSL 1-year update reaffirms the LONG (logged $601.00, mark 07-06). Deepens the *data* pillar (Meta reassigned ~3,000 engineers to full-time RL-task creation + started screen/keyboard/mouse tracking = a top-tier RL-environment shop spun up in-house) and hard-quantifies *compute* (five simultaneous 1GW+ "titan" clusters; projected more AI compute than OpenAI or Anthropic by end-2026). The Jul-2/3 LONGs at $584.88 remain ~+2.8% at the last $601 mark ✓ (open). Falsifiers unchanged and now explicitly enumerated by SA: a no-clawback compute-sale deal, disbanding the RL-task org, or losing top researchers — plus any Q3/Q4 contracting deceleration. Product (Muse Spark 1.1) still admittedly behind Anthropic/OpenAI — thesis is on *slope*, which is unfalsifiable short-term.
 
 **Update 2026-08-12:** the SemiAnalysis Jul-9 MSL LONG ($601.00) has crossed 30 days at **$599.12 = -0.3% → LOSS ✗** (essentially flat — the slope-not-intercept thesis hasn't paid on the tape yet). Counts against SA's ratio (now 2/9).
+
+**Update 2026-09-23 (resolution):** [[semidoped]]'s Aug-24 Hot Chips LONG (MTIA 300, $576.14) crossed 30d at $736.60 = **+27.8% WIN ✓** — Meta's custom-silicon + capex narrative compounded hard through September.
