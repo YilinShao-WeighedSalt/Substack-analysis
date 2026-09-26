@@ -4,7 +4,7 @@ title: "Modular / Prefab 'LEGO' Datacenter Construction"
 tags: [datacenter, construction, modular, prefab]
 related: ["[[semianalysis-2026-07-29-lego-datacenters]]", "[[FIX]]", "[[STRL]]", "[[PWR]]", "[[FLEX]]", "[[SU.PA]]", "[[VRT]]", "[[datacenter-power]]", "[[ai-infrastructure-capex]]"]
 created: 2026-07-31
-updated: 2026-07-31
+updated: 2026-09-26
 status: emerging
 first_seen: 2026-07-29
 ---
@@ -39,3 +39,6 @@ Reliability doubts (operators/MEP contractors report modular hasn't always met c
 ## Timeline
 - **2025-07:** SA first calls out Meta's fabric "tent" buildings.
 - **2026-07-29:** SA "The Wild Wild West of LEGO Datacenters" — 80+ vendor universe, bottom-up cost/speed model, beneficiary breakdown.
+
+### 2026-09-26 — China does the LEGO playbook at national scale (SemiAnalysis China Datacenter Model)
+SemiAnalysis's new building-level China census (1,000+ facilities) shows the modular/prefab playbook the US is only now adopting has been China's standard for a decade (Tencent's 3rd-gen modular design dates to 2014). Key contrasts vs the US "Wild West of LEGO Datacenters": the US buildout is **power-gated** (interconnect queues, transformer lead times); **China is chip-gated** — power abundant, permitting a policy funnel (3-6mo vs US 12-13mo), labor plentiful. 100MW facility delivery compressed from ~18mo (cloud era) to **~12mo**; state-of-the-art faster. Methods: greenfield low-rise long-span **steel halls** (factory steel + on-site foundations, concrete only in the ground); **Alibaba CUBE 5.0 "100-day datacenter"** (30d factory + 50d install + 20d commissioning, ground-break-to-commissioning ~7-9mo, >10% cheaper than prior gen); Tencent **T-Block** full-modular containers. Full-modular is NOT the national default for two very-Chinese reasons: (1) cheap/abundant site labor makes the marginal container speed-gain small, and (2) colo developers pledge **real buildings** as bank collateral (a yard of containers appraises poorly). Capex a fraction of comparable US wholesale.

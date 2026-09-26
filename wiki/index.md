@@ -39,6 +39,7 @@ updated: 2026-09-23
 - [[AIXA]] — Aixtron
 - [[AIXA.AS]] — Aixtron (Amsterdam listing)
 - [[AIXA.DE]] — Aixtron (Frankfurt listing)
+- [[AKAM]] — Akamai Technologies (CDN → Anthropic model-layer stake)
 - [[ALAB]] — Astera Labs
 - [[AMAT]] — Applied Materials
 - [[AMD]] — Advanced Micro Devices
@@ -402,6 +403,8 @@ updated: 2026-09-23
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-25-the-chinese-ai-infrastructure-boom]] — China Datacenter Model: >24GW live fleet (bigger than EMEA), retail-first history → wholesale AI supercycle; EDWC quota funnel; chip-gated (not power-gated), 100MW in ~12mo (thesis-level, no priced call)
+- [[semianalysis-2026-09-23-clustermax-30-the-industry-standard]] — ClusterMAX 3.0 GPU-cloud ratings: NBIS joins CRWV in Platinum, GOOGL→Gold, Azure→Silver, Crusoe→Bronze; only 19 medallions (LONG NBIS/CRWV/GOOGL, NEUT ORCL/MSFT)
 - [[semianalysis-2026-09-21-computation-data-movement-inference]] — Computation & Data Movement for Inference: MoE serving economics; fast-memory capacity less binding than network placement + bandwidth (technical, no priced call; reinforces 4-hi HBM / network wall)
 - [[semianalysis-2026-09-18-engrams-embedding-entendre-codesign]] — Engram codesign for DRAM/SSD offloading: cuts HBM capacity need (DRAM offload wins, SSD loses); CUDA moat measured on DeepSeek-V4.1-Flash day-0 (MI355X 2–4× worse perf/$) (LONG NVDA, NEUT AMD/MU)
 - [[semianalysis-2026-09-15-datacenter-moratoriums-not-killing-buildout]] — Moratoriums aren't killing the US buildout: only ~2.3GW genuinely delayed, +38GW 2027, buildout moving behind-the-meter (thesis-level bullish AI infra)
@@ -623,4 +626,7 @@ updated: 2026-09-23
 - [[semidoped-2026-09-03-daily-update-september-3rd]] — Daily Sep 3 (Nvidia $12.93B Hugging Face, Broadcom >$30 EPS FY28 vs Google-defection, TSMC defers hybrid bonding, Samsung zHBM, Phison 2027 NAND shortage) (LONG AVGO/NVDA/285A.T, NEUT GOOGL/TSM/005930/000660)
 - [[semidoped-2026-09-04-daily-update-september-4th]] — Daily Sep 4 (CXMT 10% DRAM + Project-Hefei theft case, Ciena +37%/$10B backlog, Kioxia NAND-as-DRAM, Figure $3.5B Nscale robotics) (LONG CIEN/285A.T/SNDK, NEUT MU/005930/000660)
 - [[semidoped-2026-09-21-daily-update]] — Daily Sep 21 (Nscale S-1 $35B/$103B backlog, Qualcomm X80 in US iPhone 18 Pro Max, ECOC optics: MRVL 2nm/LITE+GLW 1060nm VCSEL, Generac $8B Amazon, Intel High-NA production) (LONG NVDA/285A.T/MRVL/LITE/GLW/CIEN/ON/BE/NVTS/GNRC/009150/ASML/INTC, NEUT QCOM/MU)
+- [[semidoped-2026-09-25-daily-update-september-25th]] — Daily Sep 25 (Oracle NM force-majeure hits BE/GEV, Akamai $11.6B Anthropic, Goldman $1.2T capex, ASML zero-EU-revenue + MATCH Act, Amazon-Generac, Eaton-COL, SK Hynix HBM commit, YMTC German win vs Micron) (LONG AKAM/GNRC/ETN/000660, NEUT BE/GEV/ASML/MU)
+- [[semidoped-2026-09-24-daily-update-september-24th]] — Daily Sep 24 (TSMC locks 2027 +3-6% + A14 EDA certs, QCOM-Apple license renewal + HBC, DeepSeek 8T on Ascend, Meta $145B capex) (LONG TSM/CDNS/SNPS/UMC/META, NEUT QCOM/MSFT)
+- [[semidoped-2026-09-23-daily-update-september-23rd]] — Daily Sep 23 (Apple A20 Pro on N2 verified = first 2nm shipping chip, Snapdragon/Dimensity flagships, Huawei Kirin tops A17, QCOM buys PickNik, Supermicro ships Vera Rubin NVL72) (LONG TSM/AAPL/2454/SMCI, NEUT QCOM)
 - [[semidoped-2026-09-22-daily-update]] — Daily Sep 22 (Texas/California permit freeze = NIMBY paces AI, Vicor +20% VPD royalties, TSMC A14→Q1-27, Qualcomm eyes Samsung 2nm, YMTC German injunctions vs Micron, SK Hynix HBM-leadership commit) (LONG VICR/TSM/2454/000660/CDNS/SMTC/IFX, NEUT 005930/MP)

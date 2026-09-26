@@ -2,19 +2,20 @@
 type: ticker
 title: "UMC — United Microelectronics"
 tags: [foundry, mature-node, silicon-photonics]
-related: ["[[semidoped-2026-09-10-daily-update-september-10th]]", "[[semidoped-2026-07-30-daily-update]]", "[[foundry-process-node]]", "[[silicon-photonics-interconnects]]"]
+related: ["[[semidoped-2026-09-10-daily-update-september-10th]]", "[[semidoped-2026-07-30-daily-update]]", "[[foundry-process-node]]", "[[silicon-photonics-interconnects]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
 created: 2026-07-31
-updated: 2026-09-11
+updated: 2026-09-26
 ticker: UMC
 current_stance: long
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
 |------|-------------|--------|---------|--------|
 | 2026-07-30 | [[semidoped]] | LONG | 18.94 | Mature-node foundry surprises: lifts 2026-27 capex plan to $5B, targets $1B AI-related revenue, silicon photonics already in production; Q2 rev +17% YoY beat; Intel 12nm PDKs to customers by year-end |
 | 2026-09-11 | [[semidoped]] | LONG | 22.12 | August revenue +30% as mature-node demand tightens. |
+| 2026-09-24 | [[semidoped]] | LONG | 24.10 | TSMC's 3-6% 2027 hikes give mature-node peers (UMC/Samsung/VIS) room to raise too |
 
 ## Thesis evolution
 Introduced 2026-07-30 in Semi Doped's daily as "the most unexpected" of the equipment/foundry earnings cluster: a commodity-logic foundry re-rating on AI-adjacent demand (silicon photonics in production, Intel 12nm process collaboration, capacity expansion across Taiwan and Singapore). Vik: high chip-equipment demand is a signal hardware buildout continues past leading-edge nodes.

@@ -2,13 +2,13 @@
 type: ticker
 title: "ORCL — Oracle"
 tags: []
-related: ["[[irrationalanalysis-2024-05-20-ampere-computing-probably-dead]]", "[[irrationalanalysis-2024-09-20-how-much-ampere-worth]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]]", "[[semianalysis-2025-05-16-ai-middle-east-uae-ksa]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-06-30-oracle-winning-ai-compute-market]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[globalsemiresearch-2026-03-11-oracle-q3-fy2026-ai-explosion]]", "[[semidoped-2026-09-11-daily]]"]
+related: ["[[irrationalanalysis-2024-05-20-ampere-computing-probably-dead]]", "[[irrationalanalysis-2024-09-20-how-much-ampere-worth]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]]", "[[semianalysis-2025-05-16-ai-middle-east-uae-ksa]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-06-30-oracle-winning-ai-compute-market]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[globalsemiresearch-2026-03-11-oracle-q3-fy2026-ai-explosion]]", "[[semidoped-2026-09-11-daily]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2024-05-20
-updated: 2026-09-14
+updated: 2026-09-26
 ticker: ORCL
 current_stance: mixed
 conviction: medium
-last_review: 2026-09-14
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -28,6 +28,7 @@ last_review: 2026-09-14
 | 2026-07-02 | [[semianalysis]] | SHORT | 141.01 | Under-monetized its gigawatts vs SpaceX; valuation divergence a "massive blow"; only Meta/Oracle could match SpaceX deals but Oracle fumbled it |
 | 2026-07-02 | [[semidoped]] | CAUTIOUS | 141.01 | Oracle itself warns AI datacenter spend "may not pay off"; lists customer nonpayment as risk on $300B Stargate contract |
 | 2026-09-11 | [[semidoped]] | LONG | 150.28 | OCI +121%, RPO backlog $664B, 300K GPUs shipped in the quarter, FY guide ~$90B (+7%) |
+| 2026-09-23 | [[semianalysis]] | NEUTRAL | 139.54 | Holds Gold in ClusterMAX 3.0; but Sep-25 force-majeure on its NM 'Jupiter' Stargate campus clouds build cadence |
 
 ## Thesis evolution
 The view on Oracle has undergone a meaningful reversal over the covered period. In mid-2024, both irrationalanalysis and semianalysis were skeptical: Oracle was seen as a poor capital allocator (Ampere stake) and structurally disadvantaged in sovereign AI cloud due to its non-resident deployment model. The pivot began in January 2025 when semianalysis flipped to LONG on Stargate, identifying Oracle Cloud as OpenAI's anchor hyperscaler and a direct winner of the Phase 1 Abilene buildout — a view reinforced by the June 2025 neocloud deep-dive citing cost-structure and early-commitment advantages. Irrationalanalysis has remained more cautious, treating Oracle primarily as an RPO-beat / ecosystem-beneficiary MENTION rather than a standalone LONG, and has never explicitly retracted its 2024 SHORT. Globalsemiresearch's March 2026 initiation is the most constructive, arguing that a 15-year earnings acceleration milestone validates the cloud transformation thesis with hard fundamental evidence. The dominant live view is bullish, with semianalysis and globalsemiresearch aligned on AI infrastructure tailwinds; irrationalanalysis is the outlier holding residual skepticism on capital allocation.

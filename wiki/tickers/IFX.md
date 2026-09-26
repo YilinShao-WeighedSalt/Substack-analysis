@@ -4,11 +4,11 @@ title: "IFX — Infineon Technologies"
 tags: []
 related: ["[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]"]
 created: 2026-05-17
-updated: 2026-09-23
+updated: 2026-09-26
 ticker: IFX
 current_stance: long
 conviction: high
-last_review: 2026-09-23
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -28,3 +28,4 @@ No px@call value was recorded at the time of the call, which prevents any quanti
 **Update 2026-07-28:** first *priced* anchor — semidoped LONG at **€61.49** on the Frankfurt IFX.DE listing, on Infineon's raised FY guidance (AI-datacenter power-semi strength) and the opening of the world's largest power fab in Dresden. The prior irrationalanalysis SiC-leadership LONG (May-17, px n/a) remains ungraded. A rare green data point in a run dominated by the memory sell-off: datacenter-levered power semis are guiding up.
 
 **Update 2026-08-27:** the Jul-28 LONG (€61.49, Frankfurt) **resolves €55.19 = -10.2% LOSS ✗** — power-semi names de-rated with the broad tape despite fundamentals guiding up. New semidoped LONG at €55.19: Infineon acquires Bangalore's **C2i Semiconductors** (substrate-integrated voltage-regulator IP) for AI-rack power delivery, alongside **record Q3 2026 guidance**. Thesis intact (datacenter power-semi content growth); entry timing was the problem, not the story.
+- **2026-09-26 resolution:** [[semidoped]] Aug-26 C2i/SIVR LONG (€55.19) → €56.26 = **+1.9% WIN ✓**.

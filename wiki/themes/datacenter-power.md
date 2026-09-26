@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-09-20
+updated: 2026-09-26
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -61,3 +61,6 @@ SemiAnalysis's BTM deep dive (Part 1) is the definitive read: **behind-the-meter
 
 ### 2026-09-20 update — firm power procurement + 800V DC + the passives bottleneck
 Hyperscalers are shifting from spot power to **committed multi-year firm procurement**, and the beneficiary set is widening below the turbine incumbents. **Generac +33%** on a multi-year Amazon backup-generator pact ($2.4B Reuters / $8B Bloomberg) — diesel/gas gensets as the fast, proven bridge tier ([[GNRC]]). **Bloom launches an 800V DC architecture** for AI datacenters (distributing high-voltage DC through the rack instead of AC → fewer conversion stages + less copper for dense GPU trays), on top of its fuel-cell order book ([[BE]]). Google/Nvidia/Emerald founded the **AI Energy Management Alliance** (grid demand-response). **New sub-bottleneck — passives/PCB:** **Doosan commits ₩968B to copper-clad laminate (CCL)** — the base of every server PCB, lead times now ~1 year — and **Samsung Electro-Mechanics** ships high-capacity **MLCCs** for AI-server power delivery ([[009150.KS]]). BTM demand is now the binding constraint (grid interconnect queues), and it is pulling in gensets, fuel cells, CCL, and MLCC alike.
+
+### 2026-09-26 — force-majeure as a buildout governor (Oracle NM 'Jupiter')
+Oracle sent a **force-majeure notice to Blue Owl** over its Stargate-affiliated Project Jupiter campus (New Mexico), citing construction setbacks — a mechanism that can suspend or void supplier delivery commitments, leaving power-equipment vendors holding contracted capacity with no install date. **Bloom Energy ([[BE]]) and GE Vernova ([[GEV]]) shares fell**; Barron's flagged GEV specifically (backlog depends on DC builds proceeding on time). This is the concrete instance of the running "local governments, not the labs, pace AI" thesis — permit freezes (TX/CA), water probes (Texas AG), and now a marquee campus slipping repriced power-build revenue visibility. Cuts against the otherwise-bullish BTM order book (SA's model still had Bloom carrying 3.8GW of firm fuel-cell orders). Also this window: **Amazon-Generac ([[GNRC]]) backup-power deal**; **Eaton ([[ETN]]) buys COL Group** for EMEA power distribution; ABB Infinitus DC-power portfolio; Schneider Motivair CDU.

@@ -2,13 +2,13 @@
 type: ticker
 title: "ETN — Eaton Corporation"
 tags: []
-related: ["[[citrini-2024-08-26-can-you-hear-me-now]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semianalysis-2026-05-26-800vdc-datacenter-revolution]]", "[[semidoped-2026-09-11-daily]]"]
+related: ["[[citrini-2024-08-26-can-you-hear-me-now]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semianalysis-2026-05-26-800vdc-datacenter-revolution]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-08-26
-updated: 2026-09-14
+updated: 2026-09-26
 ticker: ETN
 current_stance: long
 conviction: medium
-last_review: 2026-09-14
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -17,6 +17,7 @@ last_review: 2026-09-14
 | 2026-05-17 | [[irrationalanalysis]] | MENTION | n/a | Named as diversified incumbent positioned to benefit from SST buildout alongside Vertiv |
 | 2026-05-26 | [[semianalysis]] | LONG | n/a | Acquired Resilient Power Systems for SST expertise; positioned across circuit protection and power distribution for Phase 3 transition |
 | 2026-09-11 | [[semidoped]] | LONG | 425.37 | Unveils grid-to-chip 800 VDC architecture — removes AC/DC conversion stages, saves rack space |
+| 2026-09-25 | [[semidoped]] | LONG | 440.00 | Acquires COL Group to expand EMEA power-distribution capacity for data centers |
 
 ## Thesis evolution
 Eaton first appeared in this coverage as a retrospective template — Citrini cited it in August 2024 as a prior example of catching a cyclical-meets-secular inflection in fiscal infrastructure spending, framing it as proof-of-concept for the CIEN setup rather than a fresh call. By May 2026 the narrative had shifted to ETN as a live beneficiary: both Irrational Analysis and SemiAnalysis identified it as an incumbent well-positioned for the solid-state transformer and 800VDC datacenter power transition. SemiAnalysis is the most constructive, pointing to Eaton's August 2025 acquisition of Resilient Power Systems as tangible SST capability and flagging exposure across circuit protection and power distribution as Phase 3 datacenter architecture displaces AC switchgear. Irrational Analysis is directionally bullish but treats ETN as a broad-basket name alongside Vertiv rather than a high-conviction pure-play pick. There is no bearish coverage in this file.

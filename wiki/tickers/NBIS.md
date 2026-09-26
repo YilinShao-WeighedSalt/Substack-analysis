@@ -2,13 +2,13 @@
 type: ticker
 title: "NBIS — Nebius"
 tags: []
-related: ["[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]"]
+related: ["[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2026-04-02
-updated: 2026-09-20
+updated: 2026-09-26
 ticker: NBIS
 current_stance: long
 conviction: medium
-last_review: 2026-09-20
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -18,6 +18,7 @@ last_review: 2026-09-20
 | 2026-07-02 | [[semianalysis]] | LONG | 215.89 | Meta-RPO tailwind for pure-play neocloud; sell-off is sentiment not fundamentals |
 | 2026-08-13 | [[semidoped]] | LONG | 277.68 | +514% YoY revenue, deferred rev ~$6B, H1 infra spend >$8.1B; shares +34%; neocloud pricing power holding as capacity grows |
 | 2026-08-21 | [[semidoped]] | LONG | 219.13 | Upsizes AI-infrastructure convertible to $5B (from $4.5B) on strong institutional demand; accelerating EU/US datacenter deployment |
+| 2026-09-23 | [[semianalysis]] | LONG | 243.48 | ClusterMAX 3.0: joins CoreWeave in Platinum; commands premium pricing, serves neolabs at seller's prices |
 
 ## Thesis evolution
 SemiAnalysis introduced Nebius as the primary public-market way to express the neocloud pricing power thesis. The argument is that GPU rental rates (particularly H100) are staying elevated longer than the market expects, and Nebius — as a pure-play GPU cloud operator — captures that pricing tailwind directly on its income statement. No competing publication surfaces in the call log, so the view is uncontested as of the last review date. The conviction is medium rather than high because the thesis depends on a prolonged shortage that could compress faster than anticipated if hyperscalers or rival neoclouds add capacity aggressively.

@@ -4,11 +4,11 @@ title: "MPWR — Monolithic Power Systems"
 tags: []
 related: ["[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[irrationalanalysis-2024-11-15-switching-regulators-and-vrms]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-24-navitas-dangerous-specialty-switching]]", "[[semidoped-2026-07-31-daily-update]]"]
 created: 2024-07-18
-updated: 2026-08-27
+updated: 2026-09-26
 ticker: MPWR
 current_stance: long
 conviction: low
-last_review: 2026-08-27
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,3 +26,4 @@ The earliest mentions framed MPWR as a commodity-adjacent power-components vendo
 
 ## Outcome tracking
 No px@call values are recorded for any entry in the log, so price-based verification is not possible. The thesis trajectory does provide some signal: semianalysis noted the stock was already down 37%+ at the time of the December 2024 bearish call, suggesting the bear thesis was at least partially correct before it was published. The live view — a small long held by irrationalanalysis as of May 2025 — would be falsified bearishly if hyperscalers complete direct VRM sourcing for Blackwell/GB300 racks and MPWR's datacenter content share falls materially; it would be falsified bullishly if MPWR wins a named design slot in a next-generation hyperscaler rack or demonstrates pricing-power evidence in gross margin expansion.
+- **2026-09-26 resolution:** [[semidoped]] Aug-26 Q2-beat+raise LONG ($1,303.88) → $1,335.55 = **+2.4% WIN ✓**.

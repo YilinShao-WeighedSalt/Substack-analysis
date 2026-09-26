@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-17
+updated: 2026-09-26
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -75,3 +75,6 @@ The long-hesitant High-NA question resolved this week: **ASML secured formal Hig
 
 ## Update 2026-09-17 — the 6x12-inch mask unlocks High-NA (Semi Doped pod; ASML)
 TSMC, Samsung and Intel all publicly committed to a new **6x12-inch photomask standard** — the coordinated move that makes High-NA EUV economically viable. Why it matters in plain terms: **High-NA (0.55 NA) uses anamorphic optics** (magnifies x and y differently), which halves the printable field per exposure and creates a throughput problem; the larger 6x12 mask restores field size so wafers-per-hour economics work. No single mask vendor could justify the tooling alone, so the joint commitment was essential. Separately, **ASML is weighing production beyond its 110-unit EUV ceiling for 2028** (limiter is assembly speed, not supply chain — JPM); High-NA adoption starts 2028 and grows "more meaningfully over the next decade." MediaTek's Dimensity 9600 Pro became the first 2nm mobile SoC at volume (beating Qualcomm to the node) — mobile leads AI chips onto each new node.
+
+### 2026-09-26 — N2 verified in a shipping device; TSMC's 2027 pricing power
+TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on TSMC N2** — the first independently-verified 2nm chip in a shipping consumer device, establishing N2 yielding at commercial scale with Apple absorbing early volume (spent the density on an extra GPU core + neural area, not a smaller die), clearing the runway for every fabless customer queued behind it. Meanwhile **TSMC locked 2027 wafer price hikes of 3-6%** with A14 pushed toward a 2028 ramp; **Cadence, Synopsys and Siemens all certified A14 design flows** (Synopsys added A14 IP + CPO). Semi Doped's read: order visibility runs to 2030, so designers have no leverage — "TSMC raises because it can," which hands **mature-node peers (UMC/Samsung/VIS) cover to raise too**. MediaTek's Dimensity 9600 Pro (2nm-class) shipping in OPPO shows the node is broadening beyond Apple.

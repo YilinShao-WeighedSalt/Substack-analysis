@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semi Scan — Sep 26 2026</title>
+<meta name="description" content="Visual intelligence brief from 3 semiconductor Substacks: ClusterMAX 3.0, China's datacenter fleet, TSMC N2 verified, and the buildout's shift from chips to ground.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-text-size-adjust:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.08em;color:var(--sec);margin:34px 0 12px;font-weight:700}
+.sub{color:var(--sec);font-size:14px;margin:0}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.sources{display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;font-size:13px;color:var(--sec)}
+.sources span{white-space:nowrap}
+.status{margin-top:14px;padding:10px 12px;background:var(--surface-2);border-radius:8px;font-size:12.5px;color:var(--sec);border:1px solid var(--border)}
+.hero{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px}
+.tile .n{font-size:30px;font-weight:700;letter-spacing:-.02em}
+.tile .l{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:2px}
+.distbar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-top:9px;gap:2px}
+.distbar i{display:block;height:100%}
+.legend{font-size:11px;color:var(--sec);margin-top:6px;display:flex;gap:10px;flex-wrap:wrap}
+.dominant{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:14.5px;color:var(--sec)}
+.dominant b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+.board-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:10px 10px;border-bottom:1px solid var(--border);font-weight:700;white-space:nowrap}
+td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:2px 7px;border-radius:20px;white-space:nowrap}
+.chip.long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.chip.short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.chip.neutral{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.tk{font-weight:700}
+.pl-new{font-size:11px;color:var(--muted);font-weight:600}
+.spot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.card.top-ir{border-top:3px solid var(--pub-irrational)}
+.card.top-sa{border-top:3px solid var(--pub-semianalysis)}
+.card.top-sd{border-top:3px solid var(--pub-semidoped)}
+.card h3{margin:0;font-size:19px;letter-spacing:-.01em}
+#spots svg{width:100%;height:72px;display:block}
+.card .px{font-size:13px;color:var(--sec);margin-top:2px}
+.rangebar{position:relative;height:6px;background:var(--grid);border-radius:3px;margin:16px 0 4px}
+.rangebar i{position:absolute;top:50%;transform:translate(-50%,-50%);width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
+.rangelab{display:flex;justify-content:space-between;font-size:10.5px;color:var(--muted)}
+.bullets{margin:12px 0 0;padding-left:16px;font-size:12.5px;color:var(--sec)}
+.bullets li{margin-bottom:6px}
+.consensus-na{font-size:11px;color:var(--muted);margin-top:10px;font-style:italic}
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.meter{height:7px;background:var(--grid);border-radius:4px;overflow:hidden;margin:8px 0 3px}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.sc-hit{font-size:12px;color:var(--sec)}
+.sc-posts{list-style:none;padding:0;margin:10px 0 0;font-size:12px}
+.sc-posts li{padding:7px 0;border-top:1px solid var(--border);color:var(--sec)}
+.sc-posts .pt{color:var(--ink);font-weight:600}
+.tag{font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;background:var(--surface-2);color:var(--muted);margin-left:5px;vertical-align:middle;letter-spacing:.03em}
+.jd{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 20px}
+.jd div{font-size:12.5px;padding:7px 0;border-bottom:1px solid var(--border)}
+.jd b{color:var(--ink)}
+.jd span{color:var(--sec)}
+.themebar{display:flex;flex-direction:column;gap:7px;margin-top:4px}
+.themerow{display:grid;grid-template-columns:180px 1fr;align-items:center;gap:10px;font-size:12px}
+.themerow .tt{color:var(--sec);text-align:right}
+.themerow .bar{height:16px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px}
+.resolved{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+.rpill{font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--border);background:var(--surface)}
+.rpill .g{color:var(--gain);font-weight:700}
+.rpill .r{color:var(--loss);font-weight:700}
+.foot{margin-top:40px;font-size:11px;color:var(--muted);text-align:center;line-height:1.7}
+@media(max-width:760px){.hero{grid-template-columns:repeat(2,1fr)}.spot-grid{grid-template-columns:1fr}.sc-grid{grid-template-columns:1fr}.jd{grid-template-columns:1fr}.themerow{grid-template-columns:130px 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Semiconductor Substack Scan</h1>
+  <p class="sub">Visual intelligence brief · posts from Sep 23–25, 2026 · scanned Sep 26</p>
+  <div class="sources">
+    <span><i class="dot" style="background:var(--pub-irrational)"></i>Irrational Analysis</span>
+    <span><i class="dot" style="background:var(--pub-semianalysis)"></i>SemiAnalysis</span>
+    <span><i class="dot" style="background:var(--pub-semidoped)"></i>Semi Doped</span>
+  </div>
+  <div class="status"><b>Run status:</b> SemiAnalysis ✓ 2 posts (ClusterMAX 3.0, China Datacenter Model — both full-body, incl. paywalled) · Semi Doped ✓ 3 dailies (Sep 23/24/25) · Irrational Analysis — no new post (last Sep-21, already ingested). Prices/history via Yahoo chart endpoint; analyst-consensus + P/E host still egress-blocked → consensus bars omitted, not fabricated. All 22 calls this run are fresh (opened at spot).</div>
+
+  <div class="dominant">
+    <b>The buildout's governor moves from chips to the ground under them.</b> Oracle's force-majeure on its Stargate-affiliated New Mexico campus knocked Bloom and GE Vernova, Texas opened water probes, and local governments — not the labs — keep setting the pace. Against that, <b>SemiAnalysis crossed into China</b> to reveal a <b>24GW fleet</b> built retail-first and now flipped to a wholesale AI supercycle at speeds and costs the West can't match; <b>TSMC's N2 is verified yielding in a shipping iPhone</b> and it raised 2027 prices "because it can"; and <b>ClusterMAX 3.0 crowned Nebius alongside CoreWeave</b> in Platinum while Azure slipped to Silver.
+  </div>
+
+  <h2>The Board at a Glance</h2>
+  <div class="hero">
+    <div class="tile"><div class="n">5</div><div class="l">Posts scanned</div></div>
+    <div class="tile"><div class="n">22</div><div class="l">Tickers priced</div></div>
+    <div class="tile"><div class="n">22</div><div class="l">Calls logged</div>
+      <div class="distbar">
+        <i style="background:var(--long);width:68.2%"></i>
+        <i style="background:var(--neutral);width:31.8%"></i>
+      </div>
+      <div class="legend"><span><i class="dot" style="background:var(--long)"></i>15 long</span><span><i class="dot" style="background:var(--neutral)"></i>7 neutral</span><span><i class="dot" style="background:var(--short)"></i>0 short</span></div>
+    </div>
+    <div class="tile"><div class="n" style="color:var(--long)">Net long</div><div class="l">Book bias — zero shorts this run</div></div>
+  </div>
+
+  <h2>Call Board — 22 fresh calls</h2>
+  <div class="board-wrap">
+  <table id="board"><thead><tr>
+    <th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis</th><th>Price</th><th>3-mo trend</th><th>P&amp;L</th>
+  </tr></thead><tbody id="board-body"></tbody></table>
+  </div>
+
+  <h2>Ticker Spotlights</h2>
+  <div class="spot-grid" id="spots"></div>
+
+  <h2>Resolved This Run <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted);font-size:12px">— prior priced calls crossing 30 days</span></h2>
+  <div class="resolved" id="resolved"></div>
+
+  <h2>Source Scorecards</h2>
+  <div class="sc-grid" id="scorecards"></div>
+
+  <h2>Jargon Decoder</h2>
+  <div class="jd" id="jargon"></div>
+
+  <h2>Themes in Play <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--muted);font-size:12px">— by mention count this run</span></h2>
+  <div class="themebar" id="themes"></div>
+
+  <div class="foot">
+    Generated by an automated 3-day scan loop reading 3 semiconductor Substacks through an accumulated wiki knowledge base.<br>
+    Not investment advice. Prices are point-in-time snapshots (Yahoo). Directional calls are the newsletters', not the tool's.
+  </div>
+</div>
+
+<script>
+const PRICES = {"NBIS":{"price":243.48,"hi52":286.69,"lo52":73.87,"closes":[240.3,261.15,276.17,229.18,215.62,213.02,195.19,216.48,216.2,219.65,210.51,194.09,199.51,171.77,177.71,182.62,216.92,218.16,220.97,187.77,187.88,169.69,148.22,188.43,190.41,212.58,225.74,218.99,189.88,187.97,184.11,193.23,259.2,255.04,277.68,268.85,248.43,223.9,220.11,219.13,210.91,221.97,213.93,218.48,209.18,206.32,199.54,204.09,210.63,226.39,243.88,240.35,228.11,224.55,212.19,207.37,209.37,217.99,223.54,232.8,236.12,226.61,243.48]},"CRWV":{"price":90.13,"hi52":107.73,"lo52":60.82,"closes":[96.58,95.51,99.54,85.68,81.75,86.46,83.53,90.0,89.7,88.88,83.31,79.94,77.12,72.91,73.21,73.06,79.58,82.64,81.1,71.88,70.79,67.3,60.82,73.9,71.77,85.76,91.9,89.89,85.33,90.67,88.19,90.32,107.73,106.29,105.26,106.0,93.17,90.87,89.76,87.85,86.25,88.04,88.01,86.8,84.23,84.89,81.85,80.93,84.56,89.36,99.83,94.94,89.12,88.99,82.98,80.92,83.35,79.88,81.36,85.43,86.76,86.9,90.13]},"GOOGL":{"price":342.36,"hi52":377.41,"lo52":317.49,"closes":[337.17,353.42,357.14,360.98,359.68,366.22,366.79,361.69,358.66,356.95,352.28,359.28,370.68,354.23,346.55,351.76,346.93,341.87,317.49,319.53,326.35,333.5,336.49,333.45,355.9,373.27,377.41,362.2,357.52,354.07,357.29,343.58,343.32,346.14,345.68,343.78,343.98,344.5,340.45,344.6,347.84,346.74,341.78,340.43,346.37,339.13,334.8,336.9,342.26,338.46,338.36,330.65,332.6,338.5,349.39,344.98,342.87,347.33,349.54,354.97,351.16,337.83,342.36]},"MSFT":{"price":497.93,"hi52":513.53,"lo52":367.88,"closes":[372.27,367.88,372.32,383.56,389.76,386.01,388.11,382.62,383.64,384.38,390.26,384.21,394.89,400.35,393.08,401.53,397.0,389.61,380.86,380.98,388.37,392.61,389.81,450.25,463.85,486.73,491.88,486.54,498.92,499.05,505.11,502.86,491.5,495.95,494.47,479.45,480.73,483.4,481.15,483.24,487.31,491.71,496.37,505.06,513.53,507.29,501.02,496.82,510.12,499.7,493.95,491.65,492.44,495.63,505.41,497.12,490.3,497.75,493.78,501.61,498.0,500.59,497.93]},"ORCL":{"price":139.54,"hi52":162.52,"lo52":114.99,"closes":[148.02,147.25,146.04,142.01,139.78,143.26,141.11,140.0,143.72,140.64,131.54,127.94,132.49,124.21,126.41,121.38,127.05,125.84,120.04,114.99,119.9,119.96,117.74,127.56,129.87,141.85,145.74,144.39,143.47,147.02,151.05,145.48,153.28,156.22,150.52,146.65,142.79,143.81,142.07,146.47,142.45,144.76,148.87,151.94,150.85,149.12,141.32,145.75,154.04,158.78,162.52,161.63,152.94,150.28,144.79,140.35,143.16,150.59,147.61,148.56,149.2,144.56,139.54]},"TSM":{"price":451.15,"hi52":476.29,"lo52":270.37,"closes":[431.19,453.88,476.29,443.04,433.0,450.58,431.41,435.81,435.79,432.95,420.45,419.27,418.36,408.64,397.3,401.22,423.47,420.08,414.47,402.33,398.02,391.26,373.67,402.23,403.17,405.02,416.05,412.89,417.08,418.92,417.35,420.93,428.0,429.34,425.21,429.82,412.3,410.99,414.89,417.83,409.02,416.29,416.57,426.16,416.4,414.21,412.89,414.39,415.89,427.76,437.83,434.2,426.88,432.08,416.89,412.64,417.72,430.26,434.67,445.14,452.0,446.57,451.15]},"2454.TW":{"price":5285.0,"hi52":5285.0,"lo52":3150.0,"closes":[4259.55,4284.4,3856.96,3886.78,4219.79,4309.25,4319.19,4170.08,4100.5,4030.0,3995.0,3925.0,3925.0,3825.0,3660.0,3740.0,3700.0,3370.0,3340.0,3670.0,3850.0,3875.0,3750.0,3680.0,3315.0,3150.0,3235.0,3555.0,3910.0,3865.0,4000.0,3920.0,3900.0,3960.0,4020.0,4015.0,4225.0,4210.0,4050.0,3885.0,3845.0,3700.0,3790.0,3765.0,3735.0,3945.0,3865.0,3985.0,3925.0,4315.0,4275.0,4340.0,4415.0,4760.0,4710.0,4625.0,4720.0,4585.0,4560.0,4430.0,4530.0,4500.0,4710.0,5010.0,5180.0,5185.0,5285.0]},"QCOM":{"price":194.26,"hi52":248.74,"lo52":122.94,"closes":[188.36,187.7,183.79,180.94,175.3,185.47,181.98,185.55,190.08,188.14,182.98,177.14,177.02,169.69,170.85,169.4,172.56,174.68,170.18,166.07,169.12,162.0,154.84,150.78,146.81,150.75,161.79,156.68,159.52,166.95,161.29,161.8,162.19,163.9,164.89,161.3,159.32,161.03,159.87,159.88,157.67,159.69,162.83,163.89,163.3,169.56,165.71,169.04,168.57,168.74,174.09,176.4,176.88,181.97,180.15,187.8,184.84,188.71,177.72,194.23,198.27,197.24,194.26]},"AAPL":{"price":335.92,"hi52":339.79,"lo52":281.5,"closes":[283.54,281.5,289.11,294.13,308.36,312.39,310.39,313.12,315.95,315.05,317.04,314.59,327.22,332.97,333.45,326.31,327.46,325.61,321.38,332.73,336.62,339.79,337.9,333.14,308.64,303.16,309.11,310.73,312.14,313.06,308.26,304.91,302.25,305.26,305.93,305.59,310.03,316.83,311.3,309.35,310.34,309.9,313.45,314.58,319.7,316.85,325.13,324.96,328.21,319.97,316.22,315.34,326.57,332.27,333.08,331.34,332.41,337.0,336.13,338.98,339.75,337.02,335.92]},"SMCI":{"price":41.51,"hi52":41.54,"lo52":23.83,"closes":[30.63,28.15,29.33,27.65,27.22,27.19,26.25,28.17,28.24,28.31,27.66,27.65,26.89,24.68,24.18,23.83,25.5,30.56,31.2,30.1,29.81,28.45,25.7,27.73,28.4,28.64,31.69,30.32,29.38,31.13,31.46,31.6,37.61,39.16,39.84,38.28,37.41,36.58,36.5,37.24,35.17,38.46,37.39,38.46,37.08,37.28,36.71,37.0,37.87,39.59,40.26,38.93,37.38,40.1,36.74,35.64,36.85,40.35,39.09,41.2,41.54,41.44,41.51]},"CDNS":{"price":322.0,"hi52":385.95,"lo52":273.96,"closes":[377.27,372.72,375.32,377.73,373.14,375.77,371.06,374.06,385.95,384.17,377.92,376.8,371.5,364.65,330.11,329.93,344.64,337.01,330.46,326.24,338.61,344.72,332.76,332.82,340.02,336.15,340.62,337.07,338.42,339.24,331.91,327.53,323.13,323.77,324.82,323.47,316.52,314.98,313.59,319.02,315.92,331.9,334.68,347.55,340.39,338.78,313.04,306.67,304.88,292.7,284.11,284.6,284.95,289.37,279.06,273.96,279.9,280.76,282.9,294.9,302.95,309.09,322.0]},"SNPS":{"price":424.91,"hi52":464.89,"lo52":367.7,"closes":[454.34,447.26,446.07,454.53,437.16,442.27,436.63,434.5,443.37,445.5,433.82,425.9,425.28,417.03,384.28,378.46,389.07,377.61,373.52,373.47,388.99,383.82,373.69,372.33,388.76,392.07,403.86,400.82,405.98,415.99,411.68,410.91,412.32,411.75,421.5,413.22,404.41,401.24,397.92,397.87,394.51,408.79,410.0,464.89,442.61,439.59,414.82,415.97,416.31,393.84,392.03,393.22,397.17,397.38,381.43,367.7,378.47,381.17,384.97,401.85,409.24,413.06,424.91]},"UMC":{"price":24.1,"hi52":26.74,"lo52":17.11,"closes":[25.14,26.38,26.74,25.27,24.12,25.38,23.42,24.73,24.86,24.34,23.46,23.84,24.92,22.29,21.25,20.3,21.19,21.29,20.87,19.48,19.08,17.36,17.11,18.94,19.03,18.69,20.63,19.29,19.2,18.72,18.79,18.94,19.31,19.38,19.15,19.53,18.48,18.12,18.0,18.34,19.05,19.6,19.03,19.07,19.79,19.88,20.47,19.97,19.86,20.77,21.82,22.69,22.12,22.64,21.9,21.61,22.53,24.47,24.61,25.43,25.77,24.68,24.1]},"META":{"price":777.59,"hi52":777.59,"lo52":538.6,"closes":[549.82,562.16,562.85,612.43,582.44,599.82,615.09,602.64,630.98,668.68,656.21,660.52,680.77,664.02,645.5,645.34,643.3,626.68,605.62,594.72,593.4,592.94,585.15,538.6,556.27,589.77,587.48,588.31,589.43,591.63,594.45,598.65,578.39,594.5,589.38,568.52,543.24,545.6,545.4,549.47,558.58,569.6,575.69,570.65,577.56,571.89,578.08,592.38,610.2,616.28,613.0,653.17,643.87,647.52,665.08,669.71,672.78,681.77,665.23,741.25,736.6,744.1,777.59]},"BE":{"price":266.65,"hi52":345.85,"lo52":70.32,"closes":[252.02,275.01,302.7,289.5,270.89,295.05,269.57,254.29,257.02,244.61,233.49,243.4,239.38,206.73,214.96,197.06,226.26,218.22,217.3,184.89,188.18,166.84,163.75,207.12,205.81,218.32,228.11,234.33,228.96,219.34,210.63,211.21,237.16,236.22,229.94,232.16,209.01,206.63,202.48,201.45,204.02,217.45,218.21,217.83,210.77,206.3,213.63,217.28,235.55,252.87,277.22,269.28,258.49,275.75,257.05,259.35,270.02,280.76,265.63,272.89,276.53,275.19,266.65]},"GEV":{"price":955.04,"hi52":1174.86,"lo52":874.76,"closes":[1045.17,1102.51,1174.86,1134.35,1113.11,1152.04,1077.08,1070.99,1075.26,1091.57,1042.6,1066.01,1055.28,1036.22,1057.84,1079.18,1078.81,985.03,1031.19,1014.75,996.57,943.38,900.28,981.98,990.29,1006.76,1018.53,1017.96,1000.3,990.32,990.85,1011.88,1039.9,1049.42,1063.25,1079.0,1004.53,987.46,966.01,956.85,942.1,926.73,953.09,953.83,911.93,898.53,898.53,921.94,941.84,941.95,971.31,951.04,923.91,957.27,874.76,882.81,925.09,924.93,940.33,946.22,950.28,951.82,955.04]},"AKAM":{"price":110.41,"hi52":129.52,"lo52":104.48,"closes":[113.29,113.8,118.21,112.81,113.17,112.73,114.37,126.57,129.52,126.19,125.13,126.11,120.01,118.81,120.19,123.13,124.91,124.3,117.37,115.37,112.85,111.79,107.41,113.75,115.18,117.88,123.35,122.27,118.55,110.54,117.65,116.67,122.78,125.29,124.99,122.97,115.2,112.84,110.09,110.42,105.66,105.74,108.06,111.24,107.47,108.62,106.46,105.09,106.5,105.22,105.61,110.75,107.13,106.79,105.57,105.4,104.48,107.08,104.52,117.41,118.34,118.44,110.41]},"ASML":{"price":1722.5,"hi52":1986.87,"lo52":1550.69,"closes":[1792.3,1880.68,1986.87,1840.66,1767.03,1822.71,1745.02,1766.37,1801.92,1795.0,1723.81,1773.35,1812.93,1782.56,1745.32,1736.77,1799.18,1799.53,1800.67,1754.82,1653.12,1582.95,1550.69,1651.44,1629.0,1642.52,1711.89,1678.22,1704.37,1740.99,1733.48,1799.38,1810.07,1847.9,1844.08,1883.12,1802.98,1751.73,1750.31,1763.76,1740.13,1744.16,1745.64,1735.01,1696.16,1696.01,1665.14,1682.3,1646.19,1714.88,1764.85,1729.52,1687.43,1698.3,1575.15,1591.48,1602.22,1629.67,1679.92,1711.32,1747.9,1744.61,1722.5]},"GNRC":{"price":198.05,"hi52":292.81,"lo52":175.03,"closes":[278.62,283.81,292.81,270.22,252.66,257.81,235.8,236.61,235.86,233.94,226.95,225.12,226.58,215.38,214.91,213.25,215.61,213.42,210.5,202.01,197.54,195.6,195.19,191.91,197.11,201.21,218.63,217.41,211.18,212.22,206.09,215.86,221.9,216.66,219.3,221.25,211.56,210.81,206.75,205.98,203.56,201.78,206.62,197.29,183.8,185.38,181.42,180.76,183.02,187.35,190.21,186.48,181.67,186.99,176.98,175.03,175.11,207.23,207.44,204.96,206.17,199.42,198.05]},"ETN":{"price":440.0,"hi52":459.96,"lo52":360.99,"closes":[401.69,407.26,425.07,411.3,397.54,412.41,394.71,398.58,404.83,406.28,401.86,414.5,411.85,395.3,399.01,400.42,401.96,405.91,414.11,403.08,397.66,385.31,360.99,385.94,414.18,437.15,443.68,446.18,447.09,448.68,444.96,459.29,459.96,453.33,451.51,455.4,431.33,424.67,415.29,419.2,408.67,409.2,419.44,416.04,402.78,401.88,390.71,390.85,397.12,410.85,422.13,415.22,409.15,425.37,393.16,392.4,397.8,409.46,424.77,435.43,442.49,438.76,440.0]},"000660.KS":{"price":1862000.0,"hi52":2916367.75,"lo52":1321713.38,"closes":[2554446.0,2620431.75,2916367.75,2672420.5,2627430.25,2649425.5,2559445.0,2186526.0,2424474.25,2342492.0,2200522.75,2075550.0,2185526.0,2179527.5,1844600.0,1912585.25,2081548.62,1841600.62,1763617.62,1835602.0,1829603.25,1918584.0,1758618.62,1815606.38,1549664.0,1400696.25,1321713.38,1717627.62,1566660.25,1576658.12,1667638.38,1494675.88,1421691.75,1419692.12,1424691.12,1503674.0,1592654.62,1644643.38,1661639.75,1499674.88,1690633.38,1729625.0,1670637.75,1677636.25,1687634.12,1729625.0,1653000.0,1674000.0,1693000.0,1613000.0,1596000.0,1647000.0,1783000.0,1793000.0,1856000.0,1853000.0,1812000.0,1697000.0,1690000.0,1759000.0,1745000.0,1857000.0,1868000.0,1840000.0,1862000.0]},"RMBS":{"price":104.55,"hi52":132.74,"lo52":80.39,"closes":[114.73,123.9,132.74,123.83,112.92,113.25,105.93,109.64,114.13,112.1,103.11,105.38,102.89,101.42,101.44,100.85,105.79,103.83,103.19,96.01,96.42,87.75,82.81,89.58,91.03,92.21,100.55,97.3,97.68,101.52,95.89,96.42,101.01,99.33,100.85,100.61,93.71,90.85,92.15,91.24,87.07,89.86,90.03,91.11,85.76,86.69,84.4,84.72,84.34,85.46,86.89,87.65,85.35,86.97,80.39,83.11,81.41,85.87,87.6,96.96,105.24,103.47,104.55]},"MU":{"price":1080.53,"hi52":1154.11,"lo52":739.0,"closes":[1132.16,1145.1,1154.11,1032.12,975.41,984.75,938.38,948.8,991.64,979.3,937.0,983.12,904.28,853.2,848.95,865.46,970.82,959.48,990.21,920.95,900.2,820.53,739.0,874.66,823.03,829.5,892.67,893.19,881.47,877.57,861.0,868.52,911.29,949.83,971.66,1011.75,940.76,937.11,974.33,966.78,910.43,932.97,938.4,935.39,932.86,958.73,933.44,956.08,958.16,1016.59,1000.26,1027.77,977.41,975.26,924.03,927.6,926.55,977.5,1015.8,1043.96,1096.16,1071.88,1080.53]}};
+const CALLS = [{"pub": "semianalysis", "t": "NBIS", "dir": "LONG", "cur": "$", "th": "ClusterMAX 3.0: joins CoreWeave in Platinum; now commands premium pricing, serving a class of neolabs at seller's prices"}, {"pub": "semianalysis", "t": "CRWV", "dir": "LONG", "cur": "$", "th": "ClusterMAX 3.0: still sets the technical bar every other GPU cloud follows (Platinum)"}, {"pub": "semianalysis", "t": "GOOGL", "dir": "LONG", "cur": "$", "th": "ClusterMAX 3.0: Google Cloud joins Oracle in the Gold tier"}, {"pub": "semianalysis", "t": "ORCL", "dir": "NEUTRAL", "cur": "$", "th": "Stays Gold in ClusterMAX, but Sep-25 force-majeure on its NM 'Jupiter' campus clouds power-build visibility"}, {"pub": "semianalysis", "t": "MSFT", "dir": "NEUTRAL", "cur": "$", "th": "Azure demoted to Silver in ClusterMAX 3.0 (relative downgrade); $10B+ Gulf buildout to 2030"}, {"pub": "semidoped", "t": "TSM", "dir": "LONG", "cur": "$", "th": "A20 Pro confirmed on N2 = first verified 2nm shipping chip; 2027 wafers +3-6%, order visibility to 2030"}, {"pub": "semidoped", "t": "AAPL", "dir": "LONG", "cur": "$", "th": "A20 Pro is the first independently-verified 2nm (TSMC N2) silicon in a shipping consumer device"}, {"pub": "semidoped", "t": "2454.TW", "dir": "LONG", "cur": "NT$", "th": "MediaTek Dimensity 9600 Pro = 2nm-class flagship win in OPPO Find X10 Pro Max"}, {"pub": "semidoped", "t": "QCOM", "dir": "NEUTRAL", "cur": "$", "th": "Apple license renewed to Apr-2027 + dual Snapdragon flagship + PickNik robotics buy; modem cliff still looms"}, {"pub": "semidoped", "t": "SMCI", "dir": "LONG", "cur": "$", "th": "First production shipment of Nvidia Vera Rubin NVL72 racks"}, {"pub": "semidoped", "t": "CDNS", "dir": "LONG", "cur": "$", "th": "Certifies TSMC A14 design flows; ChipStack agentic-EDA super agent"}, {"pub": "semidoped", "t": "SNPS", "dir": "LONG", "cur": "$", "th": "A14 IP + co-packaged-optics support + Alchip scale-up/scale-out interconnect collaboration"}, {"pub": "semidoped", "t": "UMC", "dir": "LONG", "cur": "$", "th": "TSMC's 3-6% 2027 hikes hand mature-node peers (UMC / Samsung / VIS) room to raise too"}, {"pub": "semidoped", "t": "META", "dir": "LONG", "cur": "$", "th": "2026 capex target set at $145B (Ohio 1GW live, Louisiana 5GW planned); Muse ships free per-user Linux VM"}, {"pub": "semidoped", "t": "AKAM", "dir": "LONG", "cur": "$", "th": "$11.6B Anthropic cloud deal recasts Akamai from CDN into a model-layer equity stakeholder"}, {"pub": "semidoped", "t": "GNRC", "dir": "LONG", "cur": "$", "th": "Amazon signs a backup-power supply deal with Generac for AI infra"}, {"pub": "semidoped", "t": "ETN", "dir": "LONG", "cur": "$", "th": "Acquires COL Group to expand EMEA power-distribution capacity for data centers"}, {"pub": "semidoped", "t": "000660.KS", "dir": "LONG", "cur": "\u20a9", "th": "SK Hynix CEO Kwak publicly reaffirms HBM / next-gen memory leadership"}, {"pub": "semidoped", "t": "ASML", "dir": "NEUTRAL", "cur": "$", "th": "Zero European fab revenue this year; MATCH Act threatens the China sales still driving the book"}, {"pub": "semidoped", "t": "BE", "dir": "NEUTRAL", "cur": "$", "th": "Oracle force-majeure on its Stargate NM campus repriced power-equipment revenue visibility; shares fell"}, {"pub": "semidoped", "t": "GEV", "dir": "NEUTRAL", "cur": "$", "th": "Barron's flags GE Vernova exposed to Oracle's NM force-majeure; backlog hinges on on-time DC builds"}, {"pub": "semidoped", "t": "MU", "dir": "NEUTRAL", "cur": "$", "th": "YMTC wins a first-round German patent ruling vs Micron on NAND"}];
+const SPOTS = [{"t": "TSM", "cur": "$", "dir": "LONG", "pub": "semidoped", "b": ["A20 Pro teardown confirms N2 yielding at commercial scale \u2014 Apple absorbs first volume, clearing the runway for every fabless customer behind it.", "2027 wafer prices set +3-6% with order visibility to 2030; 'TSMC raises because it can,' and Samsung/UMC/VIS get cover to follow."]}, {"t": "NBIS", "cur": "$", "dir": "LONG", "pub": "semianalysis", "b": ["Joins CoreWeave in ClusterMAX's Platinum tier \u2014 only 19 neoclouds worldwide earn any medallion in 3.0.", "Now consistently commands premium pricing, serving a whole class of neolabs 'at seller's prices.'"]}, {"t": "QCOM", "cur": "$", "dir": "NEUTRAL", "pub": "semidoped", "b": ["Apple patent-license renewed effective Apr-2027 = a revenue floor; dual Snapdragon 8 flagship + PickNik (MoveIt) robotics buy widen the base.", "But it's the modem cliff, not licensing, that governs the multiple \u2014 reprieve, not a design win."]}, {"t": "BE", "cur": "$", "dir": "NEUTRAL", "pub": "semidoped", "b": ["Shares fell after Oracle's force-majeure on the Stargate-affiliated NM campus repriced hyperscale-build revenue visibility.", "The signal cuts both ways: SemiAnalysis's BTM work still has Bloom carrying 3.8GW of firm fuel-cell orders."]}];
+const THEMES = [["AI infrastructure capex", 9], ["Datacenter power", 8], ["Foundry & process node", 7], ["Memory (HBM/DRAM/NAND)", 6], ["Neocloud / GPU cloud", 5], ["Custom silicon / China compute", 5], ["AI models & economics", 4], ["Modular datacenter build", 3], ["Robotics / edge AI", 2]];
+const JARGON = [{"t": "ClusterMAX", "d": "SemiAnalysis's GPU-cloud rating system (Platinum \u2192 Gold \u2192 Silver \u2192 Bronze) scoring managed-cluster quality across compute, network, storage, orchestration and support."}, {"t": "Neocloud", "d": "A GPU-rental cloud (CoreWeave, Nebius, Crusoe) that rents out AI compute rather than building its own models; only 19 earned a ClusterMAX medallion this round."}, {"t": "Force majeure", "d": "A contract clause suspending obligations when outside events stall a project. Oracle invoked it on its New Mexico campus, cutting power-equipment suppliers' contracted revenue visibility."}, {"t": "N2 / A14", "d": "TSMC process nodes. N2 = 2nm (now verified in a shipping iPhone); A14 = 1.4nm (2028 target). Lower number = denser, faster, more expensive."}, {"t": "HBC (High Bandwidth Compute)", "d": "Qualcomm's mobile move to stack DRAM on the logic die for very low energy-per-bit \u2014 skips CoWoS packaging but shifts the pain to harder 3D die-stacking."}, {"t": "Eastern Data, Western Compute", "d": "China policy that funnels datacenter buildout to power-rich western provinces via energy-consumption quotas; the quota is the binding cap on facility size."}, {"t": "Vera Rubin NVL72", "d": "Nvidia's next-gen 72-GPU rack system (Rubin architecture), now shipping in first production via Supermicro."}, {"t": "Ascend 960 / Atlas 960E SuperPoD", "d": "Huawei's China AI-training accelerator + 4,096-NPU cluster, built without EUV; DeepSeek ordered 160k units for an 8-trillion-parameter model."}, {"t": "BOT (Build-Operate-Transfer)", "d": "China DC ownership split: the hyperscaler owns land + shell, the colo partner funds/owns/operates the power-and-cooling layer under an 8-10yr contract."}, {"t": "Modular / prefab datacenter", "d": "Factory-built steel halls + prefab power/cooling skids bolted together on-site; China routinely delivers 100MW in under 12 months."}];
+const SCORECARDS = [{"pub": "irrationalanalysis", "name": "Irrational Analysis", "hitW": 25, "hitL": 22, "pct": 53, "open": 21, "posts": [["No new post in window", "", "the last (Sep-21 ECOC/Coherent memo) was ingested last run; Sep-14 QCOM/CRDO shorts resolve ~Oct-14"]]}, {"pub": "semianalysis", "name": "SemiAnalysis", "hitW": 8, "hitL": 16, "pct": 33, "open": 13, "posts": [["ClusterMAX 3.0", "", "NBIS+CRWV Platinum; GOOGL\u2192Gold; Azure\u2192Silver; Crusoe\u2192Bronze; only 19 medallions"], ["China Datacenter Model", "THESIS", "24GW China fleet, retail-first \u2192 wholesale AI supercycle; speed/cost the West can't match \u2014 no priced ticker"]]}, {"pub": "semidoped", "name": "Semi Doped", "hitW": 38, "hitL": 37, "pct": 51, "open": 90, "posts": [["Daily \u2014 Sep 23", "", "A20 Pro on N2 verified; Snapdragon/Dimensity flagships; Huawei Kirin tops A17; QCOM buys PickNik"], ["Daily \u2014 Sep 24", "", "TSMC locks 2027 hikes + A14 EDA certs; QCOM-Apple license renewal + HBC; DeepSeek 8T on Ascend; Meta $145B capex"], ["Daily \u2014 Sep 25", "", "Oracle force-majeure hits BE/GEV; Akamai $11.6B Anthropic; Goldman $1.2T capex; Google TPU satellite"]]}];
+const RESOLVED = [{"pub": "semianalysis", "t": "005930.KS", "dir": "LONG", "pct": 7.7, "win": true, "note": "Jalape\u00f1o HBM4 (Aug-25)"}, {"pub": "semianalysis", "t": "AVGO", "dir": "LONG", "pct": -1.5, "win": false, "note": "Jalape\u00f1o partner (Aug-25)"}, {"pub": "semidoped", "t": "MU", "dir": "LONG", "pct": 15.1, "win": true, "note": "chipflation (Aug-26)"}, {"pub": "semidoped", "t": "005930.KS", "dir": "LONG", "pct": 7.7, "win": true, "note": "Groq@Samsung 4nm (Aug-26)"}, {"pub": "semidoped", "t": "MPWR", "dir": "LONG", "pct": 2.4, "win": true, "note": "Q2 beat+raise (Aug-26)"}, {"pub": "semidoped", "t": "IFX", "dir": "LONG", "pct": 1.9, "win": true, "note": "C2i/SIVR (Aug-26)"}, {"pub": "semidoped", "t": "NVTS", "dir": "LONG", "pct": -6.6, "win": false, "note": "Claros/VPD (Aug-26)"}];
+const PUBCOLOR = {irrational:"var(--pub-irrational)",semianalysis:"var(--pub-semianalysis)",semidoped:"var(--pub-semidoped)"};
+const PUBNAME = {irrational:"Irrational",semianalysis:"SemiAnalysis",semidoped:"Semi Doped"};
+function pubKey(p){return p==="irrationalanalysis"?"irrational":p;}
+function fmt(sym,v){ if(v==null) return "n/a"; if(v>=100000) return sym+Math.round(v).toLocaleString(); if(v>=1000) return sym+v.toLocaleString(undefined,{maximumFractionDigits:0}); return sym+v.toFixed(2);}
+function dirIcon(d){return d==="LONG"?"▲":d==="SHORT"?"▼":"●";}
+
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+
+// Call board
+const tb=document.getElementById("board-body");
+CALLS.forEach(c=>{
+  const p=PRICES[c.t]||{}; const col=PUBCOLOR[pubKey(c.pub)];
+  const cls=c.dir.toLowerCase();
+  const spark=p.closes?sparkSVG(p.closes,96,26,c.dir==="LONG"?"var(--long)":c.dir==="SHORT"?"var(--short)":"var(--neutral)"):"";
+  const tr=document.createElement("tr");
+  tr.innerHTML=`<td class="mono tk">${c.t}</td>
+    <td><span class="chip ${cls}">${dirIcon(c.dir)} ${c.dir}</span></td>
+    <td style="white-space:nowrap"><i class="dot" style="background:${col}"></i><span style="font-size:11.5px;color:var(--sec)">${PUBNAME[pubKey(c.pub)]}</span></td>
+    <td style="min-width:280px;color:var(--sec)">${c.th}</td>
+    <td class="mono">${fmt(c.cur,p.price)}</td>
+    <td>${spark}</td>
+    <td><span class="pl-new">NEW</span></td>`;
+  tb.appendChild(tr);
+});
+
+// Spotlights
+const sp=document.getElementById("spots");
+SPOTS.forEach(s=>{
+  const p=PRICES[s.t]||{}; const topcls=s.pub==="semianalysis"?"top-sa":s.pub==="semidoped"?"top-sd":"top-ir";
+  const col=s.dir==="LONG"?"var(--long)":s.dir==="NEUTRAL"?"var(--neutral)":"var(--short)";
+  const ci=p.closes?p.closes.length-1:null;
+  const big=p.closes?sparkSVG(p.closes,320,72,col,{ci:ci,refline:true}):"";
+  let pos=50;
+  if(p.hi52!=null&&p.lo52!=null&&p.price!=null){pos=Math.max(3,Math.min(97,(p.price-p.lo52)/((p.hi52-p.lo52)||1)*100));}
+  const cls=s.dir.toLowerCase();
+  const card=document.createElement("div");card.className="card "+topcls;
+  card.innerHTML=`<div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div><h3 class="mono">${s.t}</h3><div class="px mono">${fmt(s.cur,p.price)}</div></div>
+      <span class="chip ${cls}">${dirIcon(s.dir)} ${s.dir}</span></div>
+    <div style="margin-top:12px">${big}</div>
+    <div class="rangebar"><i style="left:${pos}%"></i></div>
+    <div class="rangelab"><span>52w lo ${fmt(s.cur,p.lo52)}</span><span>hi ${fmt(s.cur,p.hi52)}</span></div>
+    <ul class="bullets">${s.b.map(x=>`<li>${x}</li>`).join("")}</ul>
+    <div class="consensus-na">Analyst-consensus bar omitted — data host egress-blocked this run (not fabricated).</div>`;
+  sp.appendChild(card);
+});
+
+// Resolved
+const rz=document.getElementById("resolved");
+RESOLVED.forEach(r=>{
+  const col=PUBCOLOR[pubKey(r.pub)];
+  const el=document.createElement("span");el.className="rpill";
+  el.innerHTML=`<i class="dot" style="background:${col}"></i><span class="mono" style="font-weight:700">${r.t}</span> ${r.dir==="LONG"?"▲":"▼"} <span class="${r.win?'g':'r'}">${r.pct>0?'+':''}${r.pct}%</span> <span style="color:var(--muted)">· ${r.note}</span>`;
+  rz.appendChild(el);
+});
+
+// Scorecards
+const sc=document.getElementById("scorecards");
+SCORECARDS.forEach(s=>{
+  const topcls=s.pub==="semianalysis"?"top-sa":s.pub==="semidoped"?"top-sd":"top-ir";
+  const col=PUBCOLOR[pubKey(s.pub)];
+  const card=document.createElement("div");card.className="card "+topcls;
+  card.innerHTML=`<div style="display:flex;align-items:center;gap:6px"><i class="dot" style="background:${col}"></i><b>${s.name}</b></div>
+    <div class="meter"><i style="width:${s.pct}%"></i></div>
+    <div class="sc-hit"><b class="mono">${s.pct}%</b> hit-rate · <span class="mono">${s.hitW}W/${s.hitL}L</span>, ${s.open} open</div>
+    <ul class="sc-posts">${s.posts.map(pp=>`<li><span class="pt">${pp[0]}</span>${pp[1]?`<span class="tag">${pp[1]}</span>`:""}<br>${pp[2]}</li>`).join("")}</ul>`;
+  sc.appendChild(card);
+});
+
+// Jargon
+const jg=document.getElementById("jargon");
+JARGON.forEach(j=>{const d=document.createElement("div");d.innerHTML=`<b>${j.t}</b> — <span>${j.d}</span>`;jg.appendChild(d);});
+
+// Themes
+const th=document.getElementById("themes");
+const maxT=Math.max(...THEMES.map(t=>t[1]));
+THEMES.forEach(t=>{
+  const row=document.createElement("div");row.className="themerow";
+  row.innerHTML=`<div class="tt">${t[0]}</div><div><span class="bar" style="width:${t[1]/maxT*100}%;display:inline-block"></span> <span class="mono" style="font-size:11px;color:var(--muted)">${t[1]}</span></div>`;
+  th.appendChild(row);
+});
+</script>
+</body>
+</html>

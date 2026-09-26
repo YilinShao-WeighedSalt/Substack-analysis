@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-23
+updated: 2026-09-26
 handle: semianalysis
-calls_logged: 239
-hit_rate: "7/22 (32%), ~13 open"
+calls_logged: 244
+hit_rate: "8/24 (33%), ~16 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **ClusterMAX 3.0 (2026-09-23) + China Datacenter Model (2026-09-25) — both paywalled, full bodies served.** **ClusterMAX 3.0** is the return of SA's GPU-cloud rating system: 77 providers reviewed (market view 323, up from 209), 200+ end-user interviews, a 3-phase Audit/Performance/Reliability protocol on 32-GPU Blackwell/MI355X clusters. The investable signal is the tier board: **[[NBIS|Nebius]] joins [[CRWV|CoreWeave]] in Platinum** (CoreWeave still the technical bar; Nebius now "commands premium pricing," serving neolabs "at seller's prices") → both **LONG** ([[CRWV]] $90.13, [[NBIS]] $243.48); **[[GOOGL|Google Cloud]] joins [[ORCL|Oracle]] in Gold** → GOOGL **LONG** $342.36, ORCL **NEUTRAL** $139.54 (Gold, but the Sep-25 NM force-majeure clouds its build cadence); **[[MSFT|Azure]] demoted to Silver** → **NEUTRAL** $497.93; Crusoe → Bronze, Fluidstack → Unavailable. Only **19 neoclouds** earn any Medallion; a new "Participation Ribbon" tier captures the bare-minimum crowd. Structural read: frontier labs increasingly self-manage (modeled 56.3% of lab compute by YE2027) but managed clusters still grow exponentially; a financing "Matthew principle" favors profitable labs. **China Datacenter Model** — building-level census (1,000+ facilities, 60+ operators): **China = >24GW live** (bigger than EMEA/APAC-ex-China; US 56GW), 2Q26 BAT capex $20B (>2× YoY, all FCF-negative), BATB on track for ~$100B in 2026; ByteDance ~1/5 of delivered capacity, rents nearly all. Four-era history explains ~50% vacancy alongside an AI shortage; **Eastern-Data-Western-Compute** routes buildout west via energy quotas (Inner Mongolia = "China's Johor," power ~½ Tier-1). Speed/cost: US power-gated, **China chip-gated** — 100MW in ~12mo, 3-6mo permitting, Alibaba CUBE-5.0 "100-day datacenter"; capex a fraction of US. **Thesis-level, no priced ticker** — reinforces [[modular-datacenter-construction]] + [[ai-infrastructure-capex]].
+
+**hit_rate note (2026-09-26): 7/22 → 8/24 (33%) — the Aug-25 Jalapeño longs resolve 1W/1L.** **[[005930.KS]] LONG (₩265,000) → ₩285,500 = +7.7% WIN ✓** (near-exclusive HBM4 thesis paid); **[[AVGO]] LONG ($355.59) → $350.36 = -1.5% LOSS ✗** (ASIC-partner leg gave back as the AI tape cooled). The Sep-11/14 NVDA longs remain open; ClusterMAX's 5 new calls (3 long, 2 neutral) opened at spot.
 
 - **Computation and Data Movement for Inference (2026-09-21, paywalled, full body served) — technical, no priced call.** An 11k-word deep-dive on how **MoE** reshaped inference-serving economics: which tensors are active per token, what must stay physically close, and how memory/storage/scheduling contribute to useful throughput (orchestration via Dynamo/Mooncake atop vLLM/SGLang; the KV cache as session distillate). Prefill/midfill reward organized parallelism + stage-local expert traffic; decode rewards low-latency parallelism but peak throughput/GPU comes from simpler attention + wide expert placement. **Thesis-level takeaway:** across projected frontiers, **fast-memory *capacity* is LESS restrictive than network placement, memory *bandwidth*, and orchestration** — reinforcing the running *bandwidth > capacity → 4-hi HBM* read ([[hbm-memory]]) and the *network wall* as the binding inference constraint ([[serdes-high-speed-connectivity]]). No fresh priced ticker.
 

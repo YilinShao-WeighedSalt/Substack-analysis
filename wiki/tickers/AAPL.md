@@ -2,13 +2,13 @@
 type: ticker
 title: "AAPL — Apple"
 tags: []
-related: ["[[semianalysis-2024-05-27-apple-ai-datacenter-strategy]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[irrationalanalysis-2026-04-16-long-memory-short-android-smartphone]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]"]
+related: ["[[semianalysis-2024-05-27-apple-ai-datacenter-strategy]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[irrationalanalysis-2026-04-16-long-memory-short-android-smartphone]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
 created: 2024-05-27
-updated: 2026-08-27
+updated: 2026-09-26
 ticker: AAPL
 current_stance: long
 conviction: medium
-last_review: 2026-09-17
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,6 +26,7 @@ last_review: 2026-09-17
 | 2026-07-08 | [[semidoped]] | CAUTIOUS | 308.45 | Testing blacklisted CXMT DRAM for China devices; memory-cost pressure; $30B Broadcom RF deal |
 | 2026-08-25 | [[semidoped]] | NEUTRAL | 313.45 | M6 & M5 Ultra push on-device AI compute, but 'not hobby-grade' — a DGX-Spark-class desktop, not mass inference. |
 | 2026-09-14 | [[irrationalanalysis]] | LONG | 332.41 | C2 modem landed mmWave ahead of schedule — Apple fully self-sufficient, free to attack Qualcomm with little repercussion |
+| 2026-09-23 | [[semidoped]] | LONG | 335.92 | A20 Pro is the first independently-verified 2nm (TSMC N2) silicon in a shipping consumer device |
 ## Thesis evolution
 The bull case opened in mid-2024 with two distinct but complementary angles: [[semianalysis]] focused on the supply-side — Apple's proprietary M2 Ultra server buildout as a cost-and-privacy substitute for third-party GPU cloud — while [[citrini]] focused on the demand-side, swapping out GOOGL for AAPL and arguing Apple's closed ecosystem and consumer trust position it to own the agentic AI last mile and catalyze the first major iPhone replacement cycle in a decade. [[irrationalanalysis]] reinforced the consumer angle by 2024-07-27, treating Microsoft and Qualcomm's bungled Copilot+ launch as direct evidence that Apple would capture on-device AI by default. By 2026, [[semianalysis]] shifted the thesis to silicon economics: $7B+ in annual chip savings from displacing Intel, Qualcomm, and Broadcom, plus 11pp Mac gross-margin expansion, make the vertical integration story increasingly durable. [[irrationalanalysis]] added a competitive-dynamics dimension in April 2026, framing Apple's aggressive LPDDR purchasing as a deliberate strategy to crowd out Android OEMs rather than merely a demand signal. No publication has expressed a bearish view; the closest is the June 2026 [[semianalysis]] SMIC teardown, which treats Apple's process lead over Huawei as a benchmark reference rather than a directional call.
 

@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-08
+updated: 2026-09-26
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -74,3 +74,6 @@ were levered to HBM going hybrid-bonded. Note the irony: hybrid bonding *is* fin
 scaling in **logic** (Fujitsu Monaka; AMD's Genoa-X was the last hybrid-bonded EPYC,
 now capitulated), just not in memory — so the installed tool base has *some* work, but
 not the volume the memory ramp promised.
+
+### 2026-09-26 — HBC: DRAM-on-logic comes to the phone (Qualcomm)
+At Snapdragon Summit, Qualcomm's Cristiano Amon introduced **High Bandwidth Compute (HBC)** — a mobile take on stacking DRAM directly on the logic die, borrowed from data-center architecture. The payoff is very low **pJ/bit** moving data between memory and logic; the trick is it **skips CoWoS** but, as Vik notes, the packaging pain doesn't vanish — it moves to **3D die-stacking**, the harder version. A mobile-scale proof point for the memory-on-logic direction that HBM base-die integration (NVHBM) and hybrid-bonding debates have been circling on the datacenter side.

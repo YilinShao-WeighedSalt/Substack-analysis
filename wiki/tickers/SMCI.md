@@ -2,13 +2,13 @@
 type: ticker
 title: "SMCI — Super Micro Computer"
 tags: []
-related: ["[[semianalysis-2024-05-30-dell-beating-supermicro]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]"]
+related: ["[[semianalysis-2024-05-30-dell-beating-supermicro]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
 created: 2024-05-30
-updated: 2024-11-09
+updated: 2026-09-26
 ticker: SMCI
 current_stance: short
 conviction: high
-last_review: 2024-11-09
+last_review: 2026-09-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -17,6 +17,7 @@ last_review: 2024-11-09
 | 2024-06-01 | [[irrationalanalysis]] | MENTION | n/a | Mentioned as Dell competitor losing customers; cited in risk-arbitrage long DELL / short SMCI trade |
 | 2024-10-03 | [[semianalysis]] | MENTION | n/a | Cited as a primary OEM for neocloud server deployments alongside Dell |
 | 2024-11-09 | [[irrationalanalysis]] | SHORT | n/a | Governance red flags, EY auditor resignation, deteriorating margins, risk of Nvidia GPU allocation cutoff |
+| 2026-09-23 | [[semidoped]] | LONG | 41.51 | Ships first production Nvidia Vera Rubin NVL72 racks |
 
 ## Thesis evolution
 The bear case on SMCI opened in May 2024 on a purely competitive basis: SemiAnalysis argued that Supermicro's dominance in non-hyperscale GPU servers was an artifact of Dell's absence rather than any durable moat, and that Dell's activation of OEM financing, logistics, and enterprise relationships would structurally erode SMCI's share at CoreWeave, Tesla, xAI, and the broader neocloud market. Irrational Analysis reinforced this view in June, framing a long DELL / short SMCI pair trade around the customer-defection narrative. By October 2024 SemiAnalysis was citing SMCI as a still-active neocloud OEM alongside Dell — a neutral acknowledgment that Supermicro had not been fully displaced — but by November the bear case had materially widened: Irrational Analysis added governance risk (Nasdaq delisting history, EY auditor resignation, cult-like CEO, related-party revenue), gross margin deterioration to 7–15% with continued compression, and the tail risk of Nvidia redirecting GPU allocations away from SMCI to avoid compliance exposure. The two publications are aligned in direction — both bearish — but SemiAnalysis focused on competitive dynamics while Irrational Analysis layered in a more acute governance and margin-quality critique.
