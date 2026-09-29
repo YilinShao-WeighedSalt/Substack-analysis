@@ -4,11 +4,13 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-26
+updated: 2026-09-29
 status: maturing
 first_seen: 2024-01-03
 ---
 ## Timeline
+- 2026-09-26 — [[semianalysis-2026-09-26-intel-panther-lake-teardown]] (semianalysis)
+- 2026-09-28 — [[semidoped-2026-09-28-daily-update-september-28th-2026]] (semidoped)
 - 2024-01-03 — [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] (semianalysis)
 - 2024-01-03 — [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] (semianalysis)
 - 2024-02-09 — [[semianalysis-2024-02-09-hybrid-bonding-process-flow]] (semianalysis)
@@ -77,3 +79,9 @@ not the volume the memory ramp promised.
 
 ### 2026-09-26 — HBC: DRAM-on-logic comes to the phone (Qualcomm)
 At Snapdragon Summit, Qualcomm's Cristiano Amon introduced **High Bandwidth Compute (HBC)** — a mobile take on stacking DRAM directly on the logic die, borrowed from data-center architecture. The payoff is very low **pJ/bit** moving data between memory and logic; the trick is it **skips CoWoS** but, as Vik notes, the packaging pain doesn't vanish — it moves to **3D die-stacking**, the harder version. A mobile-scale proof point for the memory-on-logic direction that HBM base-die integration (NVHBM) and hybrid-bonding debates have been circling on the datacenter side.
+
+## Concept update — 2026-09-29 (Foveros-S; FC-BGA chokepoint)
+
+**Foveros-S** = Intel's 2.5D packaging: active compute/GPU/I-O tiles bonded via microbumps (~36µm nominal pitch; ~25µm measured locally) to a **passive silicon base** whose RDL carries dense tile-to-tile links and whose TSVs fan out to the substrate. It makes the package part of node economics — leading-edge silicon confined to the compute tile, graphics/I-O on cheaper established nodes.
+
+**FC-BGA substrate = the next chokepoint:** the high-layer-count package linking an AI accelerator die to the board. Samsung Electro-Mechanics commits **$4.4B** (Sejong ₩4.27T largest-ever + Vietnam) to FC-BGA capacity, but **mass production only in Sept 2028** — no relief for the current squeeze. China is pulling ahead on **glass-substrate** commercialization (process validation + pilot) vs Korean rivals; SK Hynix validated **HBM5 on TSMC CoWoS** (still round-wafer, scaling to very large packages the open question).

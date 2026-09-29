@@ -4,11 +4,13 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-26
+updated: 2026-09-29
 status: maturing
 first_seen: 2024-01-03
 ---
 ## Timeline
+- 2026-09-26 — [[semianalysis-2026-09-26-intel-panther-lake-teardown]] (semianalysis)
+- 2026-09-28 — [[semidoped-2026-09-28-daily-update-september-28th-2026]] (semidoped)
 - 2024-01-03 — [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] (semianalysis)
 - 2024-03-23 — [[irrationalanalysis-2024-03-23-microns-hbm-party]] (irrationalanalysis)
 - 2024-04-02 — [[semianalysis-2024-04-02-intel-back-foundry-product-resurgence]] (semianalysis)
@@ -78,3 +80,9 @@ TSMC, Samsung and Intel all publicly committed to a new **6x12-inch photomask st
 
 ### 2026-09-26 — N2 verified in a shipping device; TSMC's 2027 pricing power
 TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on TSMC N2** — the first independently-verified 2nm chip in a shipping consumer device, establishing N2 yielding at commercial scale with Apple absorbing early volume (spent the density on an extra GPU core + neural area, not a smaller die), clearing the runway for every fabless customer queued behind it. Meanwhile **TSMC locked 2027 wafer price hikes of 3-6%** with A14 pushed toward a 2028 ramp; **Cadence, Synopsys and Siemens all certified A14 design flows** (Synopsys added A14 IP + CPO). Semi Doped's read: order visibility runs to 2030, so designers have no leverage — "TSMC raises because it can," which hands **mature-node peers (UMC/Samsung/VIS) cover to raise too**. MediaTek's Dimensity 9600 Pro (2nm-class) shipping in OPPO shows the node is broadening beyond Apple.
+
+## Concept update — 2026-09-29 (Panther Lake teardown; TSMC N2 ramp)
+
+**Intel 18A, measured (SemiAnalysis STEEL teardown):** 18A is the first node to ship **backside power delivery (PowerVia/BSPDN)** and **RibbonFET (gate-all-around)** together in a commercial product (Panther Lake). But SA's cross-sections put **18A compute-logic density only on par with TSMC N3E** (an older node) — it does **not** lead N3P, N2, or Samsung SF2 on peak density — and Intel still builds Panther Lake's high-end GPU tile on **TSMC N3E** (I/O on N6). So 18A is a real manufacturing-recovery milestone confined to the compute tile, not restored process leadership. 18A uses a 5-track logic library (vs 7-track on N3E/Intel 3); RibbonFET stacks 4 nanosheets vs Samsung SF2's 3.
+
+**TSMC N2 capacity:** targeting **120,000 wafers/month by end-2026** (one of its fastest leading-edge ramps), with N2 tape-outs already ~4× the N3 node's — demand-led, not slowing.

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-09-23
+updated: 2026-09-29
 ---
 
 # Wiki Index
@@ -403,6 +403,8 @@ updated: 2026-09-23
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] — GLM5.3 sparse attention: DSA cuts attention compute/bandwidth but NOT HBM capacity (top-k needs full context); HiSparse KV→DRAM offload; InferenceX GB200/GB300/MI355X-ATOM no uniform cost winner; GLM tuned for Moore Threads? (technical, no priced call; MU-supportive, NVDA/AMD read)
+- [[semianalysis-2026-09-26-intel-panther-lake-teardown]] — 18A ships first BSPD (PowerVia)+RibbonFET GAA+Foveros-S, but density ~TSMC N3E (trails N3P/N2/SF2); GPU tile still TSMC N3E — milestone not leadership (NEUT INTC)
 - [[semianalysis-2026-09-25-the-chinese-ai-infrastructure-boom]] — China Datacenter Model: >24GW live fleet (bigger than EMEA), retail-first history → wholesale AI supercycle; EDWC quota funnel; chip-gated (not power-gated), 100MW in ~12mo (thesis-level, no priced call)
 - [[semianalysis-2026-09-23-clustermax-30-the-industry-standard]] — ClusterMAX 3.0 GPU-cloud ratings: NBIS joins CRWV in Platinum, GOOGL→Gold, Azure→Silver, Crusoe→Bronze; only 19 medallions (LONG NBIS/CRWV/GOOGL, NEUT ORCL/MSFT)
 - [[semianalysis-2026-09-21-computation-data-movement-inference]] — Computation & Data Movement for Inference: MoE serving economics; fast-memory capacity less binding than network placement + bandwidth (technical, no priced call; reinforces 4-hi HBM / network wall)
@@ -534,6 +536,7 @@ updated: 2026-09-23
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-09-28-daily-update-september-28th-2026]] — Daily Sep 28 (Nvidia record $150B buyback, SEMCO $4.4B FC-BGA but output only 2028, TSMC N2→120k wpm + 5 packaging fabs, SK Hynix weighs $150B Solidigm IPO + HBM5 on CoWoS, Snapdragon Summit + Samsung-2nm eval, Infineon C2i + 120A VR, Synopsys autonomous-agent + TSMC OIP, ASML 2027 EUV sold out, GFS Chinese optical demand) (LONG NVDA/TSM/ASML/SNPS/IFX/GFS, NEUT QCOM/000660/009150; ETN/SMCI dup-skipped)
 - [[semidoped-2026-09-18-daily-update-september-18th-2026]] — Daily Sep 18 (Jensen 2× chips + Nebius +21% GPU hike + Nvidia $2B Brookfield, CXMT NAND R&D vs YMTC, SEMICON India Tata binding pacts + ASML $120B/2030, Doosan ₩968B CCL + SEMCO record-Q3 MLCC, Crusoe $3.9B, SoftBank $21B+Arm $25B) (LONG NVDA/NBIS/ASML/BESI/009150, NEUT 000660)
 - [[semidoped-2026-09-17-daily-update-september-17th-2026]] — Daily Sep 17 (Huawei Ascend 960DT pulled fwd + UnifiedBus 1M-processor + Hi-ONE NPO, Generac +33% Amazon genset pact, Bloom 800V DC, Tower+NewPhotonics HVM optical PICs, OpenAI "no CXL use case", Kioxia halts NAND hikes, GT2N open 2nm PDK) (LONG GNRC/BE/TSEM, NEUT 000660/285A)
 - [[semidoped-2026-09-16-daily-update-september-16th]] — Daily Sep 16 (SK Hynix→Intel Ohio fab, Astera Leo 2/Leo X, Samsung DDR5→OSAT/HBM + Tesla AI5, AWS writes off Gulf zones, Altera IPO, MSFT AION 2) (LONG INTC/ALAB/005930)

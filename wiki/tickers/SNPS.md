@@ -2,13 +2,13 @@
 type: ticker
 title: "SNPS — Synopsys"
 tags: []
-related: ["[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]", "[[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
+related: ["[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-09-10-masas-rocket-merry-go-round]]", "[[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]", "[[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
 created: 2025-05-17
-updated: 2026-09-26
+updated: 2026-09-29
 ticker: SNPS
 current_stance: long
 conviction: medium
-last_review: 2026-09-26
+last_review: 2026-09-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -24,11 +24,14 @@ last_review: 2026-09-26
 | 2026-08-27 | [[semidoped]] | LONG | 442.61 | Q3 rev $2.48B / EPS $2.84 beat -> raises FY26 guide; hyperscaler custom-ASIC + chiplet work front-loads EDA demand |
 | 2026-09-11 | [[semidoped]] | LONG | 397.38 | AI-assisted physical design cuts NPU die area 22% on Samsung 2nm — strengthens node's case |
 | 2026-09-24 | [[semidoped]] | LONG | 424.91 | A14 IP + co-packaged-optics support + Alchip scale-up/out interconnect collaboration |
+| 2026-09-28 | [[semidoped]] | LONG | 425.76 | Launches autonomous engineering-agent platform + expands TSMC OIP collaboration for AI system design |
 
 ## Thesis evolution
 The SNPS view has evolved through three distinct phases. irrationalanalysis opened cautiously in May 2025 — neutral on valuation concerns, the Ansys deal uncertainty, IP division TAM compression from Nvidia competition, and FPGA emulation weakness versus Cadence. A sharp deterioration followed in September 2025 when Intel Foundry NRE contract losses triggered a near-term SHORT call with ~20% downside flagged, before irrationalanalysis reversed to LONG just days later on the view that the Intel contract loss was a one-off event misread by the market as structural damage. The author then pulled back to neutral again by late September, selling a large position to de-lever and flagging valuation risk in volatile conditions. By mid-2026, both semianalysis and semidoped converged on a constructive view: semianalysis identified PrimeTime's 90%+ signoff share and universal advanced-node coverage as durable franchise characteristics, with the closed Ansys deal expanding the addressable market to $31B, and semidoped added a forward-looking thesis that logic folding's coupled multiphysics complexity structurally extends the EDA tooling opportunity. The two newer publications are unambiguously bullish on the franchise; irrationalanalysis is directionally positive but tactically volatile and valuation-sensitive.
 
 ## Outcome tracking
+
+**Outcome tracking (2026-09-29):** semidoped's Aug-27 LONG ($442.61) → $425.76 = **-3.8% ✗** resolves a LOSS (EDA gave back with the tape despite the beat+raise). Thesis intact — this run's autonomous engineering-agent platform + TSMC OIP deepen the AI-tapeout / agentic-EDA demand story. Opened at spot. current_stance long, conviction medium.
 No px@call values are recorded across the log, so price-based verification is not possible. The central risk flagged by irrationalanalysis in September 2025 — Intel Foundry NRE contract loss representing structural deterioration — was self-refuted by the same author within days, suggesting the sell-off was an overreaction consistent with the LONG call's thesis. The Ansys deal closure, which was a precondition for the bull case in May 2025, appears to have been resolved given semianalysis's May 2026 framing of the combined Synopsys/Ansys TAM as $31B. The live view is long with medium conviction: the permanent-franchise thesis (PrimeTime monopoly in signoff, advanced-node coverage lock-in) would be falsified by meaningful share loss in signoff tools or a competitive EDA entrant gaining traction at leading-edge nodes; China export restrictions and Intel Foundry's continued contraction remain the primary near-term headwinds.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 397.38 (opened at spot this scan).

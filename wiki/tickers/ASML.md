@@ -2,13 +2,13 @@
 type: ticker
 title: "ASML — ASML Holding"
 tags: []
-related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
+related: ["[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-04-18
-updated: 2026-09-26
+updated: 2026-09-29
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-09-26
+last_review: 2026-09-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -35,11 +35,14 @@ last_review: 2026-09-26
 | 2026-09-15 | [[semidoped]] | LONG | 1602.22 | Weighs breaking its 110-unit EUV output ceiling for 2028; demand outruns capacity, no competitor near; High-NA 'more meaningful over the next decade' |
 | 2026-09-21 | [[semidoped]] | LONG | 1747.90 | Formally begins India operations, tied to Tata Electronics' Dholera fab ramp |
 | 2026-09-25 | [[semidoped]] | NEUTRAL | 1722.50 | Zero European fab revenue this year; MATCH Act threatens the China sales still driving the book |
+| 2026-09-28 | [[semidoped]] | LONG | 1743.94 | 2027 EUV output fully sold out; High-NA demand firming; opens India office |
 
 ## Thesis evolution
 The coverage arc began with ASML as a peripheral beneficiary of process technology transitions — DSA adoption, backside power, and overlay improvements — before crystallizing into a direct monopoly thesis by mid-2025. SemiAnalysis turned constructive in April 2025, anchoring on the EXE:5000's technical outperformance and the absence of any credible near-term substitute; semidoped reinforced this in May 2026 by arguing tau scaling structurally increases wafer starts per chip, making ASML a volume beneficiary even if individual tool ASPs compress. The bearish thread runs through IrrationalAnalysis (Oct 2024, customer delay risk) and SemiAnalysis's own October 2025 piece flagging XRL as a potential monopoly-killer at one-tenth the price — a rare instance where the same publication holds both the bull and the bear case simultaneously. The net posture across publications is cautiously long on the monopoly durability but alert to the XRL/Substrate industrialization timeline as the primary falsifying catalyst.
 
 ## Outcome tracking
+
+**Outcome tracking (2026-09-29):** the standing EUV-scarcity bull case gets a hard confirmation — **2027 EUV output fully sold out** + High-NA firming; the India office adds a demand-geography leg (offsetting the Sep-25 zero-European-revenue / MATCH-Act caution). Opened at spot. current_stance long, conviction medium.
 No px@call values are recorded across any entry, so price-based score-keeping is not possible. The thesis trajectory favors the long side: Intel 14A backlog data (Jan 2026) and semidoped's tau scaling analysis (May 2026) both arrived as incremental confirms, while the XRL short thesis (Oct 2025) remains unresolved — Substrate's industrialization progress is the key watch item. The live view would be falsified by XRL reaching volume production at the quoted ~$40M price point with comparable overlay performance, or by a sustained collapse in TSMC/Samsung High-NA pull-through driven by customer fab delays outlasting ASML's backlog cushion.
 
 **Update 2026-09-02:** $1,665.14. New **SD LONG** — **High-NA EUV enters first high-volume logic production**, moving from qualification to production and de-risking the sub-2nm roadmap + ~$400M/tool backlog; UBS says China a decade behind. First resolved priced call: **IA's Jul-2 LONG ($1,759.59) crosses 30d at -5.4% → LOSS ✗** (litho names de-rated with the group). Near-term drag = TSMC's cost skepticism (holding High-NA to the 2030s); Intel is the lead first-mover buyer. Stance stays mixed, leaning constructive on the HVM milestone.

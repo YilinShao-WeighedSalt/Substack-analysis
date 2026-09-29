@@ -4,11 +4,13 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-20
+updated: 2026-09-29
 status: maturing
 first_seen: 2024-01-03
 ---
 ## Timeline
+- 2026-09-28 — [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] (semianalysis)
+- 2026-09-28 — [[semidoped-2026-09-28-daily-update-september-28th-2026]] (semidoped)
 - 2024-01-03 — [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] (semianalysis)
 - 2024-03-18 — [[semianalysis-2024-03-18-nvidia-blackwell-cogs-margins]] (semianalysis)
 - 2024-03-23 — [[irrationalanalysis-2024-03-23-microns-hbm-party]] (irrationalanalysis)
@@ -104,3 +106,9 @@ SemiAnalysis's *Long Live the Short King* argues the "ever-more-HBM-per-accelera
 
 ### 2026-09-20 update — Engram: architecture innovates around HBM capacity
 SemiAnalysis's *Engrams* codesign piece deepens the de-spec logic. **Engram** (a DeepSeek architecture) stores recurring token patterns as directly-retrieved embedding vectors, so the model reconstructs less through attention/FFN — **lowering the HBM *capacity* needed per model at equal quality.** Because each token's embedding rows are addressed by token ID (not hidden state), the table can be **prefetched from host DRAM** while earlier layers compute — **parameter offloading**. SA's experiments: DRAM offload actually *improves* the pareto (B300 drops from 4-GPU to 2-GPU tensor-parallel, +1.6×); SSD offload loses in production. The takeaway reinforces the running thesis: **HBM bandwidth matters more than HBM capacity → 4-hi HBM gives the best $/bandwidth → lowest $/token.** SA half-jokes China's architecture innovation could push toward "0-hi HBM" stacks. Caveat: "this does not mean HBM demand falls" — capacity is freed to starved commodity DRAM.
+
+## Concept update — 2026-09-29 (sparse attention ≠ less HBM capacity; HBM5)
+
+**Sparse attention does NOT cut HBM *capacity* demand.** GLM-5.x's DeepSeek Sparse Attention (lightning indexer + sparse MLA) selects top-k tokens to reduce the compute/bandwidth of the attention op — **but the top-k selection still requires the full context resident in HBM**, so the capacity bottleneck persists. SGLang's **HiSparse** works around it by offloading KV entries HBM→host DRAM (LRU, layer-wise prefetch overlap). This reinforces the running *bandwidth > capacity → 4-hi HBM = best $/bandwidth* read and **DRAM-offload-wins** — supportive, not bearish, for HBM/DRAM demand ([[MU]] NEUTRAL-supportive).
+
+**HBM5:** SK Hynix validated its HBM5 architecture on **TSMC's CoWoS** this week (TSMC Partner of the Year, 2nd year) — power + design-process co-optimization (the base-die story) now the value driver, with value sliding toward the logic/base-die designers.

@@ -4,11 +4,12 @@ title: "AI Accelerator Competition & Landscape"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-09-20
+updated: 2026-09-29
 status: maturing
 first_seen: 2024-01-11
 ---
 ## Timeline
+- 2026-09-28 — [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] (semianalysis)
 - 2024-01-11 — [[semianalysis-2024-01-11-neural-network-quantization-number-formats]] (semianalysis)
 - 2024-01-11 — [[semianalysis-2024-01-11-neural-network-quantization-number-formats]] (semianalysis)
 - 2024-01-11 — [[semianalysis-2024-01-11-neural-network-quantization-number-formats]] (semianalysis)
@@ -108,3 +109,7 @@ The AI accelerator competition theme emerged in early 2024 as SemiAnalysis and I
 
 ### 2026-09-20 update — the CUDA moat, measured on day-0 of DeepSeek-V4.1-Flash
 SemiAnalysis's InferenceX gave a fresh empirical read on the **CUDA moat**: on the Day-0 release of DeepSeek-V4.1-Flash, **NVIDIA vLLM worked out-of-the-box across all 6 SKUs** (H100/H200/B200/B300/GB200/GB300). **AMD vLLM did not work day-0** — the documented ROCm image wasn't public through hour-23, and once released ran **up to 14.8× worse perf/$ than H200 and up to 42× vs B200/B300**, settling to **~2–4× worse than B200** even TCO-normalized on MI355X. SA's dig: AMD markets "SPEED IS THE MOAT" yet missed hour-0 on the hottest open model. AMD is closing (significant improvements, MI455X UALoE72 committed to InferenceX) but the software/kernel ecosystem gap — Nvidia's 6M-developer community optimizing on day-0 — remains the durable edge.
+
+## Concept update — 2026-09-29 (GLM5.3 InferenceX serving)
+
+On GLM-5.3 (744B/40B MoE, DeepSeek Sparse Attention), SemiAnalysis's InferenceX shows **no uniform cost winner**: at 150 TPS **GB200 ≈$0.044/M total tokens vs MI355X-ATOM $0.049** (~12% cheaper), but under a tight **2s TTFT cap MI355X-ATOM wins** ($0.0607 vs B200 $0.0666), and relaxed to 10s **GB300-TRT-LLM wins** ($0.0451, ~26% below ATOM). GB300 serves +17.5% tokens/GPU but its higher $/GPU-hr offsets that at the 150-TPS target. AMD's **TileRT** (single-persistent-decode-kernel engine) closes on interactivity but **TTFT stays weak**. GLM-5's 64 query heads (half DeepSeek's) hint at tuning for lower-arithmetic-intensity silicon — SA suspects China's **Moore Threads MTT S4000** (GLM-5.3-Flash day-0 support corroborates). Net: Nvidia holds cost-at-latency leadership across most targets; AMD competitive in throughput/loose-TTFT corners.

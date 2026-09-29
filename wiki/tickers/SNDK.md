@@ -4,11 +4,11 @@ title: "SNDK — Sandisk"
 tags: []
 related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-04-daily-update-september-4th]]"]
 created: 2025-10-01
-updated: 2026-09-05
+updated: 2026-09-29
 ticker: SNDK
 current_stance: long
 conviction: medium
-last_review: 2026-09-17
+last_review: 2026-09-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,6 +30,8 @@ last_review: 2026-09-17
 The initial October 2025 irrationalanalysis call was a reversal of a prior short, with the bull case anchored on SNDK's QLC co-design advantage with Kioxia and the structural need for high-density NAND in AI video storage applications; the author backed conviction with call options. The view briefly went neutral in late 2025 after a profitable trade, with irrationalanalysis citing NAND's inherent cyclicality as a reason to step aside rather than a structural bear thesis. By early 2026 the bull case re-engaged: irrationalanalysis reframed SNDK as the preferred NAND expression over DRAM names on engineering differentiation grounds, and globalsemiresearch added supply-scarcity corroboration via new long-term agreement signings. semidoped extended the thesis into May 2026, pointing to multi-year supply contracts, SSD-driven inference demand, and gross margin expansion above 80% as evidence that the structural tailwinds are compounding. No publication has taken a bear or short stance across the full period, though irrationalanalysis's December 2025 neutral pause signals awareness of cycle risk.
 
 ## Outcome tracking
+
+**Outcome tracking (2026-09-29):** semidoped's Aug-27 LONG ($1,484.98) → $1,777.80 = **+19.7% ✓** resolves a strong WIN — the NAND-shortage/capacity thesis (Kioxia+SanDisk $31B Kitakami Fab3) paid as NAND pricing firmed. current_stance long.
 No px@call values are recorded across any entry, so quantitative performance tracking is not possible. The thesis trajectory is directionally consistent: each returning bull call built on the prior one with new fundamental evidence (LTAs, margin expansion, inference-era SSD demand) rather than contradicting it. The live long view would be falsified by a NAND oversupply event that breaks pricing before multi-year LTAs roll off, a loss of QLC co-design leadership to a competing NAND supplier, or evidence that SSD-attached inference workloads migrate to a memory architecture that bypasses NAND entirely.
 
 **Update 2026-07-04:** first priced calls, both at $1,745 (after a −14.1% Jul 3 selloff from a $2,335 ATH on Jun 25 — the whole memory complex had gotten stretched). Notable: Irrational Analysis, long an HBF (High-Bandwidth Flash) skeptic, softened from "I hate HBF" to "it could work" once told SLC (not TLC/QLC) will be used — modestly de-risking a bear angle on the Sandisk/SK Hynix HBF optionality; the unsolved piece is ~10W base-die thermals. Semidoped stays LONG on BiCS10 momentum. These $1,745 marks are the first gradable anchors for future runs.
