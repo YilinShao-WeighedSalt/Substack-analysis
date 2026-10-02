@@ -4,11 +4,11 @@ title: "ASML — ASML Holding"
 tags: []
 related: ["[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-04-18
-updated: 2026-09-29
+updated: 2026-10-02
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-09-29
+last_review: 2026-10-02
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -54,3 +54,5 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 | 2026-09-18 | [[semidoped]] | LONG | 1679.92 | India semi market seen $120B by 2030; deepens Tata Electronics fab support; SEMICON India pipeline turns binding |
 
 **Outcome tracking (2026-09-20):** a new demand-geography leg on the standing High-NA/EUV bull case — India converting pledges to binding fab commitments (Tata + Nexperia/Fujifilm/Besi) widens ASML's addressable base beyond the incumbent Taiwan/Korea/US triad. Opened at spot. current_stance long, conviction medium.
+
+**Update 2026-10-02:** semidoped's **Sep-1 LONG ($1,665.14) resolves $1,811.67 = +8.8% WIN ✓** (High-NA EUV into first high-volume logic). No new call this run.

@@ -4,10 +4,10 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-09-23
+updated: 2026-10-02
 handle: irrationalanalysis
-calls_logged: 622
-hit_rate: "25/47 (53%), ~16 open"
+calls_logged: 625
+hit_rate: "25/47 (53%), ~19 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
@@ -84,3 +84,6 @@ Irrational Analysis is a technically-driven semiconductor and datacenter-infrast
 - **Samsung (005930.KS) — LONG (2026-05-31):** Preferred DRAM play over MU and SK Hynix, citing in-house logic foundry, silicon photonics CPO capability, and co-design advantages for the post-HBM memory era. Near-term DRAM bull thesis (another double/triple on agentic AI demand) paired with a 3-10 year structural call that HBM is the wrong architecture. Outcome TBD.
 - **MRVL — Structera CXL re-rating (2026-06-03):** Identified Marvell's Structera CXL card (DDR4 re-use for hyperscalers) as an underappreciated ~85% gross margin product that "went from worthless garbage to extremely valuable" without market recognition, alongside dense SRAM IP as a licensable moat. Outcome TBD.
 - **Q2 2026 holdings (2026-07-01):** Doubling down, not pivoting — adding to Samsung (₩334k) and Musashi supercaps (¥5,520) with day-job cashflow; refusing to trim Lumentum ($862, "cold dead hands") into the optics sell-off; trimmed Intel ($139.63) and Tower ($259.87) on profit-taking but held cores. New/reiterated LONGs: Ciena + Nokia on an (unverified) tip that Nvidia is buying long-haul networking gear; Semtech as the "own it whoever wins" play on MediaTek-vs-Broadcom. Claims +65.7% vs SMH YTD (self-reported).
+
+### 2026-10-02 run
+Ingested Q3 2026 Consolidated Holdings (Oct 1; +51.6% vs SOXX). New ideas: **CRDO LONG** (new Tier-2; µVCSEL pivot — reverses the Sep-14 µLED short), **QMCO LONG** (new; tape cold-storage), **CBRS SHORT** (activist, bearish into ~Dec lockup; 3D-DRAM vs 3D-SRAM). No calls resolved this run (Sep-6 Hot Chips resolves ~Oct-6, Sep-14 shorts ~Oct-14). hit_rate holds **25/47 (53%)**.

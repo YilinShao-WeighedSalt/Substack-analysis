@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-09-20
+updated: 2026-10-02
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -62,3 +62,7 @@ expensive DRAM in AI servers.
 
 ### 2026-09-20 update — Kioxia halts hikes; CXMT enters NAND; Solidigm weighs US fab
 Two-sided NAND signals. **Kioxia halted further NAND price hikes** to protect demand after customer resistance ([[285A.T]]) — a near-term cap on the "shortage-to-2030" bull framing. **CXMT is standing up a Beijing NAND R&D line** to challenge YMTC on home turf, adding a second competitive axis across the full memory stack; Barron's argues the pressure falls harder on **SK Hynix than Micron** given segment mix. **Solidigm (SK Hynix's storage unit) is weighing a US NAND fab** amid onshoring pressure. The China-NAND supply question: if NAND demand is fully accretive, CXMT slots in on top; otherwise it takes share from an incumbent.
+
+## Concept update — 2026-10-01 (Tape re-enters the stack; AMAT-Kioxia)
+
+**Tape storage** returned as an AI-era theme via Irrational Analysis's QMCO add: magnetic tape is **cheaper and slower than HDD**, so historically niche — but the **AI data glut** generates enough spillover that tape makes sense for more use cases, and the kicker is **long-term + cyber-secure offline archival**. Properly stored tape lasts ~**30 years offline** vs **HDD/SSD bit-rot in 3–5 years** (air-gapped HDDs degrade mechanically). AI-driven cybersecurity chaos makes true air-gapped vaulting valuable again → [[QMCO]]. On the roadmap side, **Applied Materials + Kioxia** formalized a next-gen NAND/emerging-memory partnership at Applied's EPIC Center, underpinning the Kioxia/SanDisk **$31B** Japan expansion through 2032.

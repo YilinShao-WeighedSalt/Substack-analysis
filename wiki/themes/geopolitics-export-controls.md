@@ -4,7 +4,7 @@ title: "Semiconductor Geopolitics & Export Controls"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-07-01
+updated: 2026-10-02
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -73,3 +73,7 @@ The semiconductor geopolitics theme began with SemiAnalysis covering process tec
 Two-way escalation this run:
 - **US → China (optics):** Reuters (Aug 4) — the Trump admin is drafting, and the **FCC** separately weighing, curbs on **Chinese datacenter optical transceivers** (equipment-authorization / Covered List). [[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]] argues the "security" rationale is bogus (a transceiver is a PHY behind CMIS signed-key auth; it never touches decrypted data) and reads it as Washington prodding hyperscalers — who were *already* aggressively designing out Chinese modules. **MAD dynamic:** China can't block InP-wafer exports and the US can't cut off transceiver imports; de-coupling takes 2-3 years with spicy volatility (a China retaliation could reset the optics complex ~15-20% in a day). Also floated: a US **polysilicon price floor + tariffs** (Reuters).
 - **China → self-sufficiency:** [[semidoped-2026-08-03-daily-update]] documents **SiCarrier mass-producing DUV lithography** from an unmarked factory and **AMEC** targeting 100+ high-end equipment types (60% coverage) in 5 years — the clearest evidence yet China's equipment drive is *operational*, compressing ASML's mature-node China TAM. **CXMT** is planning a *second* Beijing fab (government-backed funding) and cleared **LPDDR6 at 12.8 Gbps** in R&D, nearing Samsung/SK's mobile-DRAM tier (and already shipping DDR5 into HP/Asus/Acer consumer PCs). Vik's angle: mature-node DUV alone lets China dominate analog + robotics supply chains — "it's not always about the AI accelerator."
+
+## Concept update — 2026-09-30 (China's software + hybrid-bonding workarounds)
+
+Two China workarounds advanced this run. **DeepSeek open-sourced six programming tools for Huawei Ascend** (kernel libraries, compiler utilities, operator frameworks) — a direct run at **Nvidia's CUDA lock-in**; Bloomberg says they could substitute for core Nvidia software. The counter (Vik, Semi Doped): **CUDA's moat was never the language** — it's years of libraries, tooling, and developers who just know it; open-source velocity compresses the gap but doesn't erase the installed base. Separately, **Huawei's Tau 'logic-folding'** (Kirin 9050 Pro, Mate 90 series shipping in volume) stacks a **SMIC 7nm-class die on itself via hybrid bonding** to roughly double density by burning 2× silicon — a density workaround that does *not* require EUV (and flags phone price hikes on tight memory). Both show China routing around the two hardest chokepoints (software ecosystem, leading-edge litho) rather than breaking them.

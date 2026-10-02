@@ -4,10 +4,10 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-29
+updated: 2026-10-02
 handle: semianalysis
 calls_logged: 245
-hit_rate: "8/24 (33%), ~16 open"
+hit_rate: "9/25 (36%), ~15 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
@@ -112,3 +112,6 @@ SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grad
 - **HBM Big Three capacity absorption (2025):** Projected that most incremental DRAM wafer capacity would be absorbed by HBM, consuming 3–4x the wafer area of commodity DRAM, structurally tightening the DRAM market. HBM demand has exceeded commodity DRAM growth expectations through 2025–2026; outcome broadly correct.
 - **Custom ASIC / hyperscaler silicon inflection (2024–2025):** Called the inflection in Google TPU, AWS Trainium, Microsoft Maia, and Meta MTIA earlier than most sell-side, projecting 44%+ CAGR for custom ASIC through 2033 and a structural share shift away from merchant GPU. ASIC buildouts have materially accelerated; full market-share impact still unfolding — outcome TBD.
 - **Samsung HBM vs. SK Hynix (2024):** Characterized SK Hynix as the clear leader in new-generation HBM technologies with Samsung working to catch up. SK Hynix retained pole position on HBM3E supply into NVIDIA through 2024–2025; call correct.
+
+### 2026-10-02 run
+No new post in window (last: GLM5.3 sparse-attention, Sep 28 — ingested prior run). **Resolution:** the Sep-1 Korea LONG [[NVDA]] ($217.44) crossed 30d → $228.38 = **+5.0% WIN ✓**. hit_rate 8/24 → **9/25 (36%)**.

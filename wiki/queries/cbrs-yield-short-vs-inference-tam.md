@@ -4,7 +4,7 @@ title: "CBRS: parametric-yield short vs. working tape vs. software-eroded infere
 tags: [cerebras, inference, contradiction]
 related: ["[[CBRS]]", "[[irrationalanalysis]]", "[[semianalysis]]", "[[semidoped]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[ai-accelerator-competition]]"]
 created: 2026-08-12
-updated: 2026-09-08
+updated: 2026-10-02
 status: open
 ---
 # Cerebras (CBRS) — a genuine three-way disagreement
@@ -31,3 +31,5 @@ As of 2026-08-12 three distinct views sit on the same name at ~$235:
 Net marks: **IA Aug-9 short ($234.76) → short +10.6% ✓ working**; **SA Jul-25 long ($188.61) → +11.3%**, resolving the price question ~Aug-24; SD Aug-17 bull ($251.98) → -16.7%. The falsifiers are unchanged and both still unmet: no clean margin/parametric-yield disclosure yet (IA), and no measured GPU-software erosion of Cerebras's win-rate (SA). **Momentum cooled back toward the bears this run** after last run's bull swing — still open.
 
 **2026-09-08 update:** IA's Aug-9 activist SHORT ($234.76) resolved a **WIN** (+10.5%, CBRS $210.05) and IA **reaffirmed the short at Hot Chips 2026**, saying a 5-min chat with JP "confirmed the parametric-yield theory"; a technical deep-dive is teased for Oct/Nov. IA also roasted Cerebras's disagg-"cables" strawman as dishonest and argued 3D-stacking SRAM (vs a DRAM wafer) would be the smarter path (or acquire D-Matrix). The yield-short side is ahead on the tape for now; the inference-TAM/production-win (OpenAI-Sol) counter remains the falsifier.
+
+**2026-10-02 update:** The split persists, with IA doubling down and Semi Doped feeding the bull side. **IA (Q3 holdings, Oct-1)** calls CBRS "the most interesting semis/AI stock," keeps its activist 1-share **SHORT ($177.65)**, and is **moderately bearish into the ~Dec lockup** — but flags it two-sided (**potentially very bullish H1-2027→H1-2028**). The newest technical wrinkle: IA says the **parametric-yield deep-dive is now top of its queue** (CBRS pushed it there), and it urges Cerebras to **abandon 3D DRAM for 3D-SRAM wafer hybrid bonding**, citing d-Matrix's Hot Chips case that wafer-scale 3D DRAM is "suicidal" — so the long-term call now hinges on whether management pivots the 3D-memory program. **Counter-tape (Semi Doped):** Gimlet Cloud will deploy **100MW of Cerebras wafer-scale inference** (CS-4 launch partner; Sep-29) and **General Compute selected Cerebras** for a multi-year ultra-fast-inference deal (Sep-30) — more production-demand datapoints against the yield short, consistent with the inference-services mix-shift. Falsifiers unchanged: a clean parametric-yield/margin disclosure (IA) vs measured GPU-software erosion of Cerebras's win-rate (SA). Still open; stock drifting lower (now $177.65) into the December lockup IA is watching.

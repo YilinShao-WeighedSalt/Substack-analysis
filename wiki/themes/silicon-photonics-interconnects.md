@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-09-20
+updated: 2026-10-02
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -141,3 +141,7 @@ duopoly, not a moat break.
 
 ### 2026-09-20 update — Huawei NPO Hi-ONE + Tower/NewPhotonics serviceable PICs
 **Near-packaged optics (NPO)** — optics placed *beside* the switch/compute ASIC, one integration step short of fully co-packaged — got its first mass-production claim: **Huawei's Hi-ONE** engine (in the Atlas 960 SuperPoD) claims **7.2 Tbit/s per engine** and is billed as the "industry's first NPO product ready for mass production" with a **built-in light source**, part of Huawei's all-optical UnifiedBus scale-up. On the merchant side, **Tower Semiconductor + NewPhotonics** began **high-volume shipments of laser-integrated, *serviceable* optical-engine PICs** for AI scale-out/scale-up ([[TSEM]]); Lightmatter joined the Open CPX MSA with the first bidirectional CPX engine; GlobalFoundries + Marvell expanded their silicon-photonics collaboration. The field-serviceable angle matters because integrated-laser optical engines historically fail whole-module on a single laser fault.
+
+## Concept update — 2026-10-01 (ECOC: slow-and-wide µVCSEL vs µLED)
+
+Irrational Analysis's Q3 review restated its **anti-µLED thesis** emphatically after ECOC 2026. The engineering bar for **slow-and-wide** optics: every lane must hit **1E-12 raw BER minimum** (1E-14 preferred for margin); miss it and you need **FEC, which defeats the point** of slow-and-wide. **µLED fails that bar even at 2 Gbps** and fiber-attach is expensive; **µVCSEL is better in every way** ("no engineering item favors µLED given µVCSEL exists"). IA reads **Credo's** own ECOC lead (Mohsen Asad, Hyperlume founder) as **tacitly conceding** the point — Credo is **pivoting to µVCSEL**, which IA calls the right move, and IA added **Credo as a new Tier-2 long** (SerDes franchise rated #2 behind Broadcom/Nvidia). This reconciles IA's **Sep-14 µLED short on Credo** (the short was against the *tech choice*) with the **Oct-1 long** (on the *franchise + correct pivot*). → [[CRDO]].

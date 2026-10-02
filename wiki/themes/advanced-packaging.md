@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-29
+updated: 2026-10-02
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -85,3 +85,9 @@ At Snapdragon Summit, Qualcomm's Cristiano Amon introduced **High Bandwidth Comp
 **Foveros-S** = Intel's 2.5D packaging: active compute/GPU/I-O tiles bonded via microbumps (~36µm nominal pitch; ~25µm measured locally) to a **passive silicon base** whose RDL carries dense tile-to-tile links and whose TSVs fan out to the substrate. It makes the package part of node economics — leading-edge silicon confined to the compute tile, graphics/I-O on cheaper established nodes.
 
 **FC-BGA substrate = the next chokepoint:** the high-layer-count package linking an AI accelerator die to the board. Samsung Electro-Mechanics commits **$4.4B** (Sejong ₩4.27T largest-ever + Vietnam) to FC-BGA capacity, but **mass production only in Sept 2028** — no relief for the current squeeze. China is pulling ahead on **glass-substrate** commercialization (process validation + pilot) vs Korean rivals; SK Hynix validated **HBM5 on TSMC CoWoS** (still round-wafer, scaling to very large packages the open question).
+
+## Concept update — 2026-10-01 (Substrate = the next bottleneck trade)
+
+The chokepoint narrative sharpened from FC-BGA into **substrates broadly (ABF / FC-BGA / package substrate)** as *the* emerging AI bottleneck. Datapoints across this run's Semi Doped dailies: **Samsung Electro-Mechanics** committed ~**$5B** to substrate capacity (Korea + Vietnam) plus **₩3.6T cumulative supply LTAs** and a **$1.85B customer-funded Vietnam substrate line**; **LG Innotek** formally declared semiconductor substrates its **primary growth engine** (2031 profit target), pivoting away from Apple camera modules to compete with Samsung EM and Ibiden; **Unimicron** secured NT$10B Hukou land for ABF-substrate expansion. Vik's framing: "substrates look short in supply — likely the next AI bottleneck trade." Glass-substrate commercialization advances in parallel (Philoptics wins through-glass-via equipment orders for 2mm glass). 
+
+**Logic folding (Huawei Tau)** is a packaging story too: Vik reads it as a **hybrid-bonding bet** — stack a SMIC 7nm-class die onto itself to double density by **burning 2× silicon**, not by making denser transistors (an EUV workaround). The Kirin 9050 Pro ships it in volume (Mate 90 series).

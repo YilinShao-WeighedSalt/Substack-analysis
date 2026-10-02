@@ -4,11 +4,10 @@ title: "Semi Doped"
 tags: []
 related: []
 created: 2026-04-24
-updated: 2026-09-14
 handle: semidoped
-calls_logged: 293
-hit_rate: "42/81 (52%), ~106 open"
-updated: 2026-09-29
+updated: 2026-10-02
+calls_logged: 313
+hit_rate: "46/85 (54%), ~122 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
@@ -124,3 +123,6 @@ Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotatin
 - **TSEM — LONG** (2026-06-19): 5M coherent photonic ICs shipped with Marvell; volume leadership flex vs GloFo; px@call $287. Outcome TBD.
 - **MRVL — LONG** (2026-06-19): 5M coherent photonic ICs shipped with Tower validates coherent optics volume position; px@call $309. Outcome TBD.
 - **2454.TW — LONG** (2026-06-19): Google 3M TPU order through MediaTek using Intel EMIB; increasing threat to Broadcom; px@call 4,390 TWD. Outcome TBD.
+
+### 2026-10-02 run
+Ingested 3 dailies (Sep 29 / 30 / Oct 1). Marquee: **Micron record FY26** (DRAM ~54% premium over TSMC 2nm, ~87% GM → LONG [[MU]]); **GPT-Synopsys + $1B Amazon IP** → LONG [[SNPS]]; **Google TPU revenue recognition vs $513.9B backlog** → LONG [[GOOGL]]; substrate-bottleneck LONG [[009150.KS]]. **Resolutions (cross-30d): 4W/0L** — [[NVDA]] +5.0%, [[2454.TW]] +15.4%, [[INTC]] +35.1%, [[ASML]] +8.8% (all Aug31–Sep1 longs). hit_rate 42/81 → **46/85 (54%)**.

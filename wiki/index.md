@@ -86,6 +86,7 @@ updated: 2026-09-29
 - [[IFX]] — Infineon Technologies
 - [[INTC]] — Intel
 - [[IREN]] — IREN/Iris Energy
+- [[JBL]] — JBL — Jabil (EMS; AI-infra breadth)
 - [[KEYS]] — Keysight Technologies
 - [[KLAC]] — KLA Corporation
 - [[LITE]] — Lumentum
@@ -114,6 +115,7 @@ updated: 2026-09-29
 - [[POET]] — POET Technologies
 - [[PSTG]] — Pure Storage
 - [[QCOM]] — Qualcomm
+- [[QMCO]] — QMCO — Quantum (tape cold-storage)
 - [[QRVO]] — Qorvo
 - [[RMBS]] — Rambus
 - [[ROK]] — Rockwell Automation
@@ -257,6 +259,7 @@ updated: 2026-09-29
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]] — Q3 2026 Consolidated Holdings (+51.6% vs SOXX): CRDO new Tier-2 long (µVCSEL pivot, reverses Sep-14 short), QMCO new (tape), CBRS activist short into ~Dec lockup (LONG CRDO/QMCO, SHORT CBRS)
 - [[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]] — Emergency ECOC memo: Coherent's phase-noise slide proves its UHP laser fails the 1MHz effective-linewidth spec; Cerebras integrated-laser "fantasy" (SHORT COHR/CBRS, LONG LITE)
 - [[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]] — Anthropic twice-delayed IPO = desperation; GPT-6 Astra crushes Fabel in coding; GloFo 45CLO derided → Tower hybrid-bonding (LONG TSEM, NEUT MU; cut leverage to 64%)
 - [[irrationalanalysis-2026-09-14-market-memo-qualcomm-amazon-apple]] — Market Memo: QCOM/Amazon (low-margin), Apple C2 mmWave early, Credo 30m µLED "bullshit", Cerebras parallel-port I/O (SHORT QCOM/CRDO/CBRS, LONG AAPL)
@@ -536,6 +539,9 @@ updated: 2026-09-29
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-01-daily-update-october-1st-2026]] — Daily Oct 1 (Micron record FY26: DRAM ~54% > TSMC 2nm & 87% GM; Synopsys $1B Amazon IP + GPT-Synopsys/OpenAI; Google Gemini 4 + TPU rev vs $513.9B backlog; Nebius buys Inferize +50MW; Huawei Kirin 9050 Tau logic-folding; Vicor VPD license +15%; SEMCO ₩3.6T + Vietnam substrate) (LONG MU/SNPS/GOOGL/NBIS/VICR/BE/009150/CRWV/CIEN/IFX, NEUT AMD)
+- [[semidoped-2026-09-30-daily-update-september-30th-2026]] — Daily Sep 30 (DeepSeek open-sources 6 Ascend/CUDA tools; CoreWeave ships first Vera Rubin NVL72 rack to Cognition; OpenAI Dots + $500 tier, withholds GPT-6.1 Astra; AMAT+Kioxia memory R&D; LG Innotek substrate pivot; TSMC 42% Foundry-2.0; SK Hynix WINPAC outsourcing) (LONG CRWV/AMAT/TSM/BE/CIEN/IFX/JBL, NEUT NVDA/AMD/000660)
+- [[semidoped-2026-09-29-daily-update-september-29th-2026]] — Daily Sep 29 (Anthropic S-1: $518B non-cancellable compute; AMD buys World Labs $8.2B; SEMCO $5B substrates + 5th MLCC LTA; Synopsys/Cadence/Siemens AI-flow certs; AT&T $3B Corning fiber; Netlist ITC vs Micron) (LONG 009150/SNPS/TSM/GLW/META, NEUT AMD/CDNS/MU/QCOM/CBRS)
 - [[semidoped-2026-09-28-daily-update-september-28th-2026]] — Daily Sep 28 (Nvidia record $150B buyback, SEMCO $4.4B FC-BGA but output only 2028, TSMC N2→120k wpm + 5 packaging fabs, SK Hynix weighs $150B Solidigm IPO + HBM5 on CoWoS, Snapdragon Summit + Samsung-2nm eval, Infineon C2i + 120A VR, Synopsys autonomous-agent + TSMC OIP, ASML 2027 EUV sold out, GFS Chinese optical demand) (LONG NVDA/TSM/ASML/SNPS/IFX/GFS, NEUT QCOM/000660/009150; ETN/SMCI dup-skipped)
 - [[semidoped-2026-09-18-daily-update-september-18th-2026]] — Daily Sep 18 (Jensen 2× chips + Nebius +21% GPU hike + Nvidia $2B Brookfield, CXMT NAND R&D vs YMTC, SEMICON India Tata binding pacts + ASML $120B/2030, Doosan ₩968B CCL + SEMCO record-Q3 MLCC, Crusoe $3.9B, SoftBank $21B+Arm $25B) (LONG NVDA/NBIS/ASML/BESI/009150, NEUT 000660)
 - [[semidoped-2026-09-17-daily-update-september-17th-2026]] — Daily Sep 17 (Huawei Ascend 960DT pulled fwd + UnifiedBus 1M-processor + Hi-ONE NPO, Generac +33% Amazon genset pact, Bloom 800V DC, Tower+NewPhotonics HVM optical PICs, OpenAI "no CXL use case", Kioxia halts NAND hikes, GT2N open 2nm PDK) (LONG GNRC/BE/TSEM, NEUT 000660/285A)

@@ -4,7 +4,7 @@ title: "EDA & Chip Design Tools"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-09-05
+updated: 2026-10-02
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -46,3 +46,7 @@ EDA and chip design tools emerged as a peripheral topic in early 2024, initially
 
 ### 2026-09-05 — OpenAI "Compilers 2.0": the LLM as a stochastic kernel optimizer
 - Chris Leary (founder of Google's XLA compiler, now on OpenAI's hardware team) detailed how **AI wrote the Jalapeño MLA kernel** shown at Hot Chips. Plain-language: a normal compiler improves code by fixed local rules/heuristics; an **LLM acts as a "stochastic optimizer"** — it proposes optimizations like an expert human performance engineer, unconstrained by a rule set, taking many shots on goal. Lineage runs to the **2013 STOKE paper** (randomly mutate a program searching for the optimum) with LLM reasoning swapping in for the random walk. The AI takes the compiler's **"emitter"** role — lowering a numpy-level spec to optimized code — and because outputs are **verified for semantic equivalence** against the spec, nobody reads the kernels (like the assembly `C++ -O3` emits). "Start near numpy, wait 48 hours, out comes a kernel" often beating hand-tuned expert code. Why it matters for the theme: this is the mechanism behind the ~9–16-month "hiring-to-tapeout" cycles making labs (OpenAI/Anthropic) viable chip designers — a *demand* pull for verification/EDA, not a replacement. Ties to [[custom-silicon-asic]].
+
+## Concept update — 2026-10-01 (AI-native EDA goes commercial)
+
+**AI-native EDA** — design-automation where an AI agent writes the chip, from RTL through physical implementation — moved from demo to commercial this run. **Synopsys** announced **GPT-Synopsys**, jointly built with OpenAI under a **revenue-share ("pay for results") arrangement** rather than a flat fee (a structure meant to ease customer concern about AI-generated design), targeting **engineer-level** RTL→layout; alongside a **$1B+ Amazon silicon-IP pact**. Synopsys also debuted **AgentEngineer** (autonomous chip design, GA end-2026). Three EDA vendors (Synopsys, Cadence, Siemens) certified AI/HPC + 3D-IC flows on TSMC nodes in one window. Cadence has **no announced equivalent** to the Amazon/OpenAI deals — it defends domain depth (CEO Devgan: certified foundry flows aren't easily replicated by general-purpose models). Vik's read: repetitive design work gets **reshored and automated**, bad for offshore design houses (expect layoffs). Caveat: these "L5 autonomous" agents still have **human approval checkpoints** — watch for a *named production customer*.
