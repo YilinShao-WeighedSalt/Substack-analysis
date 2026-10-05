@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-29
+updated: 2026-10-05
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -86,3 +86,5 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 **Intel 18A, measured (SemiAnalysis STEEL teardown):** 18A is the first node to ship **backside power delivery (PowerVia/BSPDN)** and **RibbonFET (gate-all-around)** together in a commercial product (Panther Lake). But SA's cross-sections put **18A compute-logic density only on par with TSMC N3E** (an older node) — it does **not** lead N3P, N2, or Samsung SF2 on peak density — and Intel still builds Panther Lake's high-end GPU tile on **TSMC N3E** (I/O on N6). So 18A is a real manufacturing-recovery milestone confined to the compute tile, not restored process leadership. 18A uses a 5-track logic library (vs 7-track on N3E/Intel 3); RibbonFET stacks 4 nanosheets vs Samsung SF2's 3.
 
 **TSMC N2 capacity:** targeting **120,000 wafers/month by end-2026** (one of its fastest leading-edge ramps), with N2 tape-outs already ~4× the N3 node's — demand-led, not slowing.
+
+**Update 2026-10-05 (parametric yield — plain language):** Irrational Analysis's deep-dive defines **parametric yield** = the share of chips meeting target clock/power *after* catastrophically-defective dies are discarded. It's an **economic choice** (where on the volt/freq curve you ship), not a design one — the physical world is Gaussian (transistor threshold, leakage, rise time vary ±2σ across process corners, ±10% voltage). Industry manages it by **scrapping, binning/harvesting into cheaper SKUs** (AMD Turin, Nvidia Ti/Super), and **per-chip voltage/register tuning**, validated on cheap socketed die-level rigs. **Wafer-scale ([[CBRS]]) is structurally disadvantaged** — 84 fused reticles on a unified grid can't be scrapped, downgraded, or socket-tested. A big post-characterization clock/perf delta (e.g. the reported 25% A0→B0 on OpenAI Jalapeño) signals a parametric-yield failure, not a tuning choice.

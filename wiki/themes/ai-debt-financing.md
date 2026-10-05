@@ -4,7 +4,7 @@ title: "AI Debt Financing & Neocloud Economics"
 tags: [ai-infrastructure-capex, neocloud, ai-debt-financing]
 related: ["[[semianalysis-2026-07-06-nvidia-gpu-debt-backstop]]", "[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[NVDA]]", "[[CRWV]]", "[[META]]", "[[AMD]]", "[[ai-infrastructure-capex]]", "[[buildout-vs-monetization]]"]
 created: 2026-07-07
-updated: 2026-10-02
+updated: 2026-10-05
 status: emerging
 first_seen: 2026-07-06
 ---
@@ -48,3 +48,5 @@ The capital side kept accelerating. **Crusoe closed an oversubscribed $3.9B Seri
 ## Concept update — 2026-09-29 (Anthropic S-1: $518B non-cancellable duration risk)
 
 Anthropic filed its **S-1**: **$4.6B revenue**, **$8.1B operating loss**, **$518B in non-cancellable compute commitments** (mostly multi-year cloud purchase agreements it cannot exit), targeting ~**$2T** valuation; spent $7.3B on compute; discloses AI "existential risk" as a material business risk; founders retain control via a **Founder-LLC** structure. The structural read (Vik): Anthropic takes on **all the duration risk** — it's locked into 7–10yr non-cancellable contracts while **its own customers are bound to nothing** and can cut Claude spend anytime. The clouds get paid either way; that asymmetry is the whole game. A concrete instance of the circular/duration-risk dynamic running through the AI-financing stack (cf. Nvidia's backstop universe, Nscale/CoreWeave pre-IPO debt).
+
+**Update 2026-10-05 (circular financing goes to $60B):** Semi Doped (Oct-2) — **Broadcom is assembling a $60B debt pile to finance Anthropic's chip leases** (up to $42B lent directly; Google TPUs routed through AVGO's balance sheet against Anthropic convertibles) — the largest single AI-infra financing disclosed; Anthropic's 10-yr infra ambition = $518B, pre-IPO investor day Oct 14. Same day, **Amazon is securitizing ~$8B of Nvidia chips** (off-balance-sheet) plus a $1B 'Built Together' fund to buy permitting goodwill. Vik tags circular vendor-financing as 'a horseman that pops this buildout.' → [[AVGO]], [[NVDA]].

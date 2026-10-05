@@ -2,13 +2,13 @@
 type: ticker
 title: "CRWV — CoreWeave"
 tags: []
-related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
+related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2025-03-22
-updated: 2026-10-02
+updated: 2026-10-05
 ticker: CRWV
 current_stance: long
 conviction: low
-last_review: 2026-10-02
+last_review: 2026-10-05
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,6 +26,7 @@ last_review: 2026-10-02
 | 2026-09-11 | [[semidoped]] | LONG | 89.12 | Hits $5B revenue; GB300 NVL72 lead, first Nvidia Exemplar Cloud, Google interconnect tie-up. |
 | 2026-09-23 | [[semianalysis]] | LONG | 90.13 | ClusterMAX 3.0: still sets the Platinum technical bar every GPU cloud follows |
 | 2026-09-30 | [[semidoped]] | LONG | 87.12 | Ships first production Vera Rubin NVL72 rack (Cognition) + Forge IDE & Vera CPU GA (11,264 cores/rack). |
+| 2026-10-02 | [[semidoped]] | NEUTRAL | 89.62 | Core Scientific $9B merger terminated — loses the owned-power / vertical-integration path it was buying. |
 
 ## Thesis evolution
 [[irrationalanalysis]] has been consistently bearish from the IPO, framing CoreWeave's S-1 as structurally compromised by Microsoft customer concentration and the risk that Microsoft — both a customer and a direct GPU cloud competitor via Azure — would defect as GPU oversupply normalized. By May 2026 that skepticism was reinforced by the earnings call, where management gave contradictory answers on cost pass-through; the author had already exited the trade and characterized the stock as "platinum dogshit" with no structural long view. [[semianalysis]] sits on the opposite side with consistent LONG calls across three separate reports: ClusterMAX v1.0 (Mar 2025), ClusterMAX 2.0 (Nov 2025), and the H100 Rental Price Index (Apr 2026), arguing CoreWeave's SUNK architecture, automated health-check stack, and rack-level SLAs create a durable operational moat that hyperscaler GPU offerings cannot match — and that the stock's underperformance through early 2026 reflects sentiment lagging improving GPU rental fundamentals rather than deteriorating competitive position. [[citrini]]'s November 2025 mention is neutral color: CoreWeave was named as one of the neoclouds Google approached about hosting TPUs under a franchise model, which neither confirms nor denies the bull/bear debate but introduces a possible hardware-mix optionality. The two publications have not converged — irrationalanalysis focuses on financial structure and management credibility while semianalysis focuses on operational differentiation and supply/demand dynamics, producing a genuine and unresolved disagreement.
@@ -38,3 +39,5 @@ No px@call values exist for any entry, so price-based outcome verification is no
 **Update 2026-07-06:** SA's Jul-2 LONG at $81.75 is **+1.5% at $82.94** (open, still <30 days). SemiAnalysis's GPU-backstop piece uses CoreWeave as its central financing case study — its Meta-backstopped DDTL 4.0 term loan priced at 5.9% (vs ~10% on unsecured bonds), the ~90bps premium being the market's price for CoreWeave's execution risk. This makes CRWV the living illustration of how backstopped financing lowers a neocloud's cost of capital, and the single best listed barometer for the [[buildout-vs-monetization]] query. Logged as a MENTION (financing color, not a fresh directional call). Same falsifiers hold: GPU rental rates rolling over would hit CRWV first.
 
 **Update 2026-08-15:** SD LONG $105.26 (Aug-13). Backlog $104B +$25B, +25% price hike while sold out, A100s contracted to 2029 — SA's neocloud-RPO long thesis is playing out on the tape (the Jul-2 SA LONG $81.75 is now +28.8%, though that batch already resolved). IA's structural short remains the counterweight; the crux is $35.6B debt + Nvidia lock-in. Falsifier: GPU rental rates rolling over.
+
+**Update 2026-10-05:** SD NEUTRAL $89.62 — the **$9B Core Scientific acquisition is terminated**, so CoreWeave loses the owned-power / vertical-integration path (1.5 GW+ of interconnect) it was buying. Neutral-to-slightly-negative strategically; the neocloud demand story (Vera Rubin NVL72 shipping, Platinum ClusterMAX) is intact. Stock ~$90, mid-range.

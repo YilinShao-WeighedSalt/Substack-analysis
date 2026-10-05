@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-02
+updated: 2026-10-05
 handle: irrationalanalysis
-calls_logged: 625
+calls_logged: 626
 hit_rate: "25/47 (53%), ~19 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Practical Parametric Yield (Featuring Cerebras) (2026-10-04):** The long-teased **parametric-yield deep-dive**, framed as the "only thing that matters for the next 12–18 months" for [[CBRS]]. Plain-language core: parametric yield = the share of chips meeting target clock/power *after* defective dies are scrapped; it's an **economic choice** (where on the volt/freq curve you ship), set by post-silicon validation + product management, on a Gaussian ±2σ process / ±10% voltage distribution. Everyone manages it by **scrapping, binning/harvesting (AMD Turin SKUs, Nvidia Ti/Super), or per-chip voltage tuning** — all three of which wafer-scale **closes off**: Cerebras must get good yield on **84 reticles fused on one wafer** (likely a unified power grid), and must package the whole wafer with bespoke power/cooling before it can be characterized (no cheap socketed test). The **call is a softening** → **NEUTRAL [[CBRS]] $166.43**: the engineering disadvantage is structural, but CS-4's re-worked power/cooling fixes ripple + thermal headroom (why WSE3-turbo doubled clocks on the same silicon), product-level yield is "significantly better," and IA now expects a **GM/supply inflection in H1 2027**, with WSE4 yield levers ahead (split power grids, DVFS, PVT-tolerant cells). Side-swipe: IA calls SemiAnalysis's reported **25% A0→B0 perf/watt delta on OpenAI Jalapeño** (TSMC N3P, Broadcom co-design) a parametric-yield "**disaster**" ("A0 is broken") — the opposite of SA's bullish read → [[jalapeno-parametric-yield-vs-benchmarks]]. Also a mini-lecture on industry cheating (cherry-picked TT parts, unsafe-undervolt claims, electromigration-fatal debug registers). (→ [[foundry-process-node]], [[ai-accelerator-competition]].)
+
+**hit_rate note (2026-10-05): holds 25/47 (53%) — no priced call crossed 30 days.** The Sep-6 Hot Chips recap is 29d today (resolves next run ~Oct-8); the Sep-14 QCOM/CRDO/CBRS shorts + AAPL long resolve ~Oct-14; the Oct-1 Q3 CRDO/QMCO longs + CBRS short are days old. This run's single new call ([[CBRS]] NEUTRAL, excluded from the ratio) opened at spot.
 
 - **[Emergency Memo] Coherent laser garbage + Cerebras roast (2026-09-21):** A rushed lunch-hour ECOC memo delivering the run's sharpest optics-quality proof. **Coherent finally showed phase-noise data** on its CPO/NPO UHP laser and "provided the rope to hang themselves": overlaying [[LITE]]'s phase noise, Lumentum is consistently better with no 100 Hz spike-cluster, and Coherent is "very obviously" reporting *intrinsic* (10–50 kHz) rather than the *effective* β-separation linewidth that actually sets link quality — "100% proof" its UHP laser fails the 1 MHz effective spec of all NPO/CPO/OCI-MSA systems → **SHORT [[COHR]] $310.39**, **LONG [[LITE]] $945.67**. Separately, Cerebras's integrated-laser wafer photonics is "fantasy land bullshit" — thermal modulator bias is unstable and waveguide/laser loss blow the 32G link budget → **SHORT [[CBRS]] $212.41**.
 
