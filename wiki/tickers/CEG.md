@@ -2,18 +2,19 @@
 type: ticker
 title: "CEG — Constellation Energy"
 tags: []
-related: ["[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]"]
+related: ["[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2026-03-03
-updated: 2026-03-03
+updated: 2026-10-08
 ticker: CEG
 current_stance: long
 conviction: medium
-last_review: 2026-03-03
+last_review: 2026-10-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
 |------|-------------|--------|---------|--------|
 | 2026-03-03 | [[semianalysis]] | LONG | n/a | Nuclear baseload IPP in PJM; reliable capacity commands premium in high-price capacity market |
+| 2026-10-08 | [[semidoped]] | LONG | 300.40 | Google 3.6GW nuclear PPA — largest corp clean-energy deal ever, 5x prior-week Amazon; MS calls power (not silicon) the binding constraint; Oracle eyes Point Beach |
 
 ## Thesis evolution
 SemiAnalysis introduced CEG in March 2026 as a structural beneficiary of the PJM capacity market dislocation: as the largest nuclear fleet operator in the PJM interconnect, Constellation offers always-on baseload capacity that is uniquely well-positioned when BRA clearing prices hit $270–329/MW-day and grid reliability is under scrutiny. The Winter Storm Fern episode — where PJM lost 21 GW of fossil and gas capacity to frozen equipment while nuclear ran uninterrupted — reinforces the premium thesis for firm, weather-independent generation. Only one publication has weighed in, so there is no inter-publication disagreement; the call is framed as a capacity-price beneficiary alongside VST and TLN, with CEG's nuclear profile distinguishing it as the highest-reliability option in a market that has demonstrated it prices reliability asymmetrically. Conviction is medium rather than high because the call carries no price target or sizing language and sits at the level of sector beneficiary rather than a primary position.

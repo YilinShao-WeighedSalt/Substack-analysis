@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-05
+updated: 2026-10-08
 ---
 
 # Wiki Index
@@ -28,6 +28,7 @@ updated: 2026-10-05
 - [[6981.JP]] — 6981.JP — Murata Manufacturing
 - [[6981.T]] — 6981.T — Murata Manufacturing
 - [[7220.T]] — 7220.T — Musashi Seimitsu
+- [[8035.T]] — 8035.T — Tokyo Electron (WFE; op profit >¥1T, 2027 service backlog)
 - [[AAOI]] — Applied Optoelectronics
 - [[AAPL]] — Apple
 - [[ABB]] — ABB Ltd
@@ -203,6 +204,7 @@ updated: 2026-10-05
 - [[buildout-vs-monetization]] — AI buildout accelerates vs. buildout→monetization (Meta Compute)
 - [[cbrs-yield-short-vs-inference-tam]] — CBRS: parametric-yield short vs. working tape vs. TileRT TAM erosion
 - [[jalapeno-parametric-yield-vs-benchmarks]] — OpenAI Jalapeño: SA benchmark win vs IA parametric-yield "disaster" (25% A0→B0)
+- [[cien-ia-profit-take-vs-sd-operational-bull]] — CIEN: Irrational profit-take vs Semi Doped operational bull (1.6T India/UK wins)
 
 ## Publications
 
@@ -260,6 +262,7 @@ updated: 2026-10-05
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-07-marvell-2026-investor-day]] — Marvell 2026 Investor Day roast: SRAM/die-to-die/one 1.6T constellation praised, TFLN/µLED/EAM-to-CPO derided, $70-90B FY31 = bubble tell; sold CIEN to add AXTI (NEUT MRVL/CIEN, LONG AVGO/AXTI)
 - [[irrationalanalysis-2026-10-04-practical-parametric-yield]] — Practical Parametric Yield (Cerebras): wafer-scale can't bin/harvest/socket-test → structural GM drag, but CS-4 progress → H1-27 inflection; softens the activist short (NEUTRAL CBRS); Jalapeño 25% A0→B0 = yield "disaster"
 - [[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]] — Q3 2026 Consolidated Holdings (+51.6% vs SOXX): CRDO new Tier-2 long (µVCSEL pivot, reverses Sep-14 short), QMCO new (tape), CBRS activist short into ~Dec lockup (LONG CRDO/QMCO, SHORT CBRS)
 - [[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]] — Emergency ECOC memo: Coherent's phase-noise slide proves its UHP laser fails the 1MHz effective-linewidth spec; Cerebras integrated-laser "fantasy" (SHORT COHR/CBRS, LONG LITE)
@@ -408,6 +411,7 @@ updated: 2026-10-05
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-10-05-anthropic-subscriptions-offer-5x]] — Anthropic subs ~5× OpenAI API-equivalent value; OAI halved $200 plan + $500 tier; subs ~10% rev but >40% inference compute, −$36M rev/MW (economics deep-dive, no priced ticker)
 - [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] — GLM5.3 sparse attention: DSA cuts attention compute/bandwidth but NOT HBM capacity (top-k needs full context); HiSparse KV→DRAM offload; InferenceX GB200/GB300/MI355X-ATOM no uniform cost winner; GLM tuned for Moore Threads? (technical, no priced call; MU-supportive, NVDA/AMD read)
 - [[semianalysis-2026-09-26-intel-panther-lake-teardown]] — 18A ships first BSPD (PowerVia)+RibbonFET GAA+Foveros-S, but density ~TSMC N3E (trails N3P/N2/SF2); GPU tile still TSMC N3E — milestone not leadership (NEUT INTC)
 - [[semianalysis-2026-09-25-the-chinese-ai-infrastructure-boom]] — China Datacenter Model: >24GW live fleet (bigger than EMEA), retail-first history → wholesale AI supercycle; EDWC quota funnel; chip-gated (not power-gated), 100MW in ~12mo (thesis-level, no priced call)
@@ -541,6 +545,9 @@ updated: 2026-10-05
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-07-daily-update]] — Daily Oct 7 (Musk: TSMC no operating role at Terafab/Intel stays, SpaceX $40B Apollo for NVDA chips + Doosan 380MW, SEMCO $216M MLCC >40% share, AMAT+Intel R&D/EPIC, Micron TW union strike, Openreach Ciena 1.6T) (LONG NVDA/009150/AMAT/CIEN, NEUT TSM/INTC/MU/BE)
+- [[semidoped-2026-10-06-daily-update]] — Daily Oct 6 (Google 3.6GW nuclear from Constellation = largest corp deal/power the binding constraint, Tokyo Electron op profit >¥1T, Marvell FY31 $70-90B, AMD 2027 supply, MediaTek 2nm, YMTC NAND shortage to 2029) (LONG CEG/GOOGL/8035.T/AMD/2454/SNDK)
+- [[semidoped-2026-10-05-daily-update]] — Daily Oct 5 (Groq engineers sue NVDA over $20B shell, Musk/TSMC Terafab, Schneider-PTC $22.6B, Foxconn record Q3, Infineon doubles AI rev/divests NOR flash, Vicor +30% guide, QCOM pays Huawei license) (LONG 2317/IFX/VICR, NEUT QCOM)
 - [[semidoped-2026-10-02-daily-update-october-2nd]] — Daily Oct 2 (Broadcom $60B debt for Anthropic chips = circular financing; DRAM/NAND records + DDR4 8Gb $26 + Micron record FY/NVHBM margin debate; Snapdragon X2 beats Intel in premium laptops; Huawei Ascend "passed Nvidia" + DeepSeek CUDA-alt libs; Amazon $8B chip securitization; Core Scientific kills $9B CoreWeave merger; Ciena 100Tb/s India; ASML China tool-stockpiling export-ban risk) (LONG QCOM/CIEN, NEUT AVGO/MU/NVDA/ASML/CORZ/CRWV/INTC)
 - [[semidoped-2026-10-01-daily-update-october-1st-2026]] — Daily Oct 1 (Micron record FY26: DRAM ~54% > TSMC 2nm & 87% GM; Synopsys $1B Amazon IP + GPT-Synopsys/OpenAI; Google Gemini 4 + TPU rev vs $513.9B backlog; Nebius buys Inferize +50MW; Huawei Kirin 9050 Tau logic-folding; Vicor VPD license +15%; SEMCO ₩3.6T + Vietnam substrate) (LONG MU/SNPS/GOOGL/NBIS/VICR/BE/009150/CRWV/CIEN/IFX, NEUT AMD)
 - [[semidoped-2026-09-30-daily-update-september-30th-2026]] — Daily Sep 30 (DeepSeek open-sources 6 Ascend/CUDA tools; CoreWeave ships first Vera Rubin NVL72 rack to Cognition; OpenAI Dots + $500 tier, withholds GPT-6.1 Astra; AMAT+Kioxia memory R&D; LG Innotek substrate pivot; TSMC 42% Foundry-2.0; SK Hynix WINPAC outsourcing) (LONG CRWV/AMAT/TSM/BE/CIEN/IFX/JBL, NEUT NVDA/AMD/000660)

@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-05
+updated: 2026-10-08
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -88,3 +88,5 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 **TSMC N2 capacity:** targeting **120,000 wafers/month by end-2026** (one of its fastest leading-edge ramps), with N2 tape-outs already ~4× the N3 node's — demand-led, not slowing.
 
 **Update 2026-10-05 (parametric yield — plain language):** Irrational Analysis's deep-dive defines **parametric yield** = the share of chips meeting target clock/power *after* catastrophically-defective dies are discarded. It's an **economic choice** (where on the volt/freq curve you ship), not a design one — the physical world is Gaussian (transistor threshold, leakage, rise time vary ±2σ across process corners, ±10% voltage). Industry manages it by **scrapping, binning/harvesting into cheaper SKUs** (AMD Turin, Nvidia Ti/Super), and **per-chip voltage/register tuning**, validated on cheap socketed die-level rigs. **Wafer-scale ([[CBRS]]) is structurally disadvantaged** — 84 fused reticles on a unified grid can't be scrapped, downgraded, or socket-tested. A big post-characterization clock/perf delta (e.g. the reported 25% A0→B0 on OpenAI Jalapeño) signals a parametric-yield failure, not a tuning choice.
+
+**2026-10-08 (semidoped):** A novel foundry structure emerges — **Musk's $119B Terafab will run *licensed* TSMC process**, built and operated by Musk's own companies (TSMC takes no operating role, may sublease at most), with **Intel kept in a supporting capacity** ([[TSM]], [[INTC]]). TSMC licensing its process for a third party to run is itself unprecedented. Also: **Applied Materials + Intel formalize a next-gen transistor/interconnect/packaging R&D pact** (EPIC + Hillsboro) — Intel joins Samsung/Micron/SK Hynix/TSMC/Kioxia at Applied's EPIC center, putting all three leading-edge foundries there ([[AMAT]]); **MediaTek ships Dimensity 9600 Pro on 2nm** ([[2454.TW]]); **CXMT begins mass production of its first DRAM platform** and poaches 27 Samsung/SK Hynix engineers.

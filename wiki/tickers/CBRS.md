@@ -4,11 +4,11 @@ title: "CBRS — Cerebras Systems"
 tags: []
 related: ["[[irrationalanalysis-2026-10-04-practical-parametric-yield]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]"]
 created: 2024-10-01
-updated: 2026-10-05
+updated: 2026-10-08
 ticker: CBRS
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-05
+last_review: 2026-10-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -65,3 +65,5 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 **Update 2026-10-02:** IA reaffirms the activist SHORT (1-share) at $177.65, **moderately bearish into the ~Dec lockup**, but flags the name as two-sided: **potentially very bullish H1-2027→H1-2028** depending on the 3D-memory roadmap. IA's pointed advice — abandon **3D DRAM** for **3D SRAM wafer hybrid bonding** (citing d-Matrix's Hot Chips case against wafer-scale 3D DRAM). Counter-datapoints this run from semidoped: Gimlet Cloud 100MW Cerebras partnership (Sep-29) and General Compute multi-year Cerebras deal (Sep-30) — see [[cbrs-yield-short-vs-inference-tam]].
 
 **Update 2026-10-05:** IA's long-teased **parametric-yield deep-dive** lands as a *softening* → NEUTRAL $166.43. The engineering case is unchanged (wafer-scale is structurally disadvantaged: can't scrap, harvest, or cheaply socket-test, likely a unified power grid), but the tone flips constructive — CS-4's re-worked power/cooling fixes ripple + thermal headroom (that's why WSE3-turbo could *double clocks* on the same silicon), product-level yield is 'significantly better,' and IA now expects a GM/supply inflection in **H1 2027** as CS-4 ramps, with many WSE4 yield levers ahead (split power grids, DVFS, PVT-tolerant cells). This walks back the Oct-1 activist SHORT ($177.65). Stock $166.43 near the 3-mo low, so the recent shorts are in the money; see [[cbrs-yield-short-vs-inference-tam]].
+
+**Outcome update (2026-10-08):** [[irrationalanalysis]] Sep-6 Hot Chips activist SHORT ($210.05) resolved at $177.10 = **short +15.7% WIN ✓** — the parametric-yield thesis paid even as IA's own Oct-4 deep-dive softened the stance to NEUTRAL.

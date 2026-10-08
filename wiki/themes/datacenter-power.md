@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-09-26
+updated: 2026-10-08
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -64,3 +64,5 @@ Hyperscalers are shifting from spot power to **committed multi-year firm procure
 
 ### 2026-09-26 — force-majeure as a buildout governor (Oracle NM 'Jupiter')
 Oracle sent a **force-majeure notice to Blue Owl** over its Stargate-affiliated Project Jupiter campus (New Mexico), citing construction setbacks — a mechanism that can suspend or void supplier delivery commitments, leaving power-equipment vendors holding contracted capacity with no install date. **Bloom Energy ([[BE]]) and GE Vernova ([[GEV]]) shares fell**; Barron's flagged GEV specifically (backlog depends on DC builds proceeding on time). This is the concrete instance of the running "local governments, not the labs, pace AI" thesis — permit freezes (TX/CA), water probes (Texas AG), and now a marquee campus slipping repriced power-build revenue visibility. Cuts against the otherwise-bullish BTM order book (SA's model still had Bloom carrying 3.8GW of firm fuel-cell orders). Also this window: **Amazon-Generac ([[GNRC]]) backup-power deal**; **Eaton ([[ETN]]) buys COL Group** for EMEA power distribution; ABB Infinitus DC-power portfolio; Schneider Motivair CDU.
+
+**2026-10-08 (semidoped):** The power ceiling goes explicit — **Google signs a 3.6 GW nuclear PPA with Constellation** ([[CEG]]), the largest corporate clean-energy deal on record (5× the prior-week 690MW Amazon-Constellation pact); **Morgan Stanley reframes power availability — not silicon — as the binding constraint** on AI expansion (Nvidia/Broadcom relatively insulated, hyperscalers face the ceiling). Vik's near-term read: grid interconnection is still the choke, so **BTM = gas turbines, NOT solid-oxide fuel cells** (SOFC has raw-material-availability limits) — a caution on [[BE]] even as Bloom adds Silicon Valley SOFC capacity. Corroborating: **SpaceX commissions a 380MW Doosan gas turbine** straight to SpaceXAI (no hyperscaler), **Oracle lines up Point Beach nuclear**, **LG Electronics signs a 5 GW NA data-center cooling deal**, LS Power closes a $6B AI-power infra fund, Applied Digital adds 1GW in Finland.

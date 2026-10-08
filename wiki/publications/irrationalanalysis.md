@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-05
+updated: 2026-10-08
 handle: irrationalanalysis
-calls_logged: 626
-hit_rate: "25/47 (53%), ~19 open"
+calls_logged: 630
+hit_rate: "29/52 (56%), ~16 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **Marvell 2026 Investor Day: Irrational Recap (2026-10-07):** A slide-by-slide snarky recap from the author's standing posture — "consistently ultra Broadcom bull and moderate Marvell bear." Confession that frames the run: he **sold [[CIEN]] to buy more [[AXTI]]** the day before, then Matt Murphy's event sent Ciena "to the moon" while barely moving Marvell ("cosmic justice"). Genuine praise: **dense SRAM** (A+), the **die-to-die PHY** ("very impressive"), and one **1.6T coherent constellation** (pre-FEC BER 3e-6 / post-FEC 1e-11, target ~2e-13) — "genuinely impressive." Scorn: **$70-90B-by-FY31 target = bubble tell**, "half the deck is CAGR bar charts"; **TFLN a "meme material,"** µLED dismissed, the **GeSi-EAM pivot to NPO/CPO** wastes its shoreline advantage, EAM C-band vs OCI-MSA O-band, the out-of-spec concat FEC for Google, repeated Innolight/Ara-DSP-respin jabs; HBM-as-cache memory-expander "cool" but doubts Marvell wins HBM allocation over XPU. Published his **Oct-2026 public-company SerDes rankings** (Broadcom top). → **NEUTRAL [[MRVL]] $287.01** (bear maintained), **LONG [[AVGO]] $375.81**, **LONG [[AXTI]] $84.06**, **NEUTRAL [[CIEN]] $443.65** (sold). (→ [[serdes-high-speed-connectivity]], [[silicon-photonics-interconnects]].)
+
+**hit_rate note (2026-10-08): 25/47 → 29/52 (56%) — the Sep-6 Hot Chips batch resolves 4W/1L.** **[[BESI]] SHORT (€202.50, "RIP BESI") → €192.05 = short +5.2% WIN ✓**, **[[CBRS]] SHORT ($210.05) → $177.10 = short +15.7% WIN ✓** (the parametric-yield short's best datapoint, even as IA's own Oct-4 note softened to NEUTRAL), **[[NVDA]] LONG ($230.36) → $239.24 = +3.9% WIN ✓**, **[[GOOGL]] LONG ($338.46) → $347.68 = +2.7% WIN ✓**; loss: **[[005930.KS]] LONG (₩274,250) → ₩267,000 = -2.6% ✗**. The Sep-14 QCOM/CRDO/CBRS shorts + AAPL long resolve ~Oct-14; the Oct-1 CRDO/QMCO longs + CBRS short later. This run's 4 new calls (2 long: AVGO/AXTI + 2 neutral: MRVL/CIEN) opened at spot.
 
 - **Practical Parametric Yield (Featuring Cerebras) (2026-10-04):** The long-teased **parametric-yield deep-dive**, framed as the "only thing that matters for the next 12–18 months" for [[CBRS]]. Plain-language core: parametric yield = the share of chips meeting target clock/power *after* defective dies are scrapped; it's an **economic choice** (where on the volt/freq curve you ship), set by post-silicon validation + product management, on a Gaussian ±2σ process / ±10% voltage distribution. Everyone manages it by **scrapping, binning/harvesting (AMD Turin SKUs, Nvidia Ti/Super), or per-chip voltage tuning** — all three of which wafer-scale **closes off**: Cerebras must get good yield on **84 reticles fused on one wafer** (likely a unified power grid), and must package the whole wafer with bespoke power/cooling before it can be characterized (no cheap socketed test). The **call is a softening** → **NEUTRAL [[CBRS]] $166.43**: the engineering disadvantage is structural, but CS-4's re-worked power/cooling fixes ripple + thermal headroom (why WSE3-turbo doubled clocks on the same silicon), product-level yield is "significantly better," and IA now expects a **GM/supply inflection in H1 2027**, with WSE4 yield levers ahead (split power grids, DVFS, PVT-tolerant cells). Side-swipe: IA calls SemiAnalysis's reported **25% A0→B0 perf/watt delta on OpenAI Jalapeño** (TSMC N3P, Broadcom co-design) a parametric-yield "**disaster**" ("A0 is broken") — the opposite of SA's bullish read → [[jalapeno-parametric-yield-vs-benchmarks]]. Also a mini-lecture on industry cheating (cherry-picked TT parts, unsafe-undervolt claims, electromigration-fatal debug registers). (→ [[foundry-process-node]], [[ai-accelerator-competition]].)
 

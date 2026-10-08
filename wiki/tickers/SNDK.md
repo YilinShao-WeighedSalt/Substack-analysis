@@ -2,13 +2,13 @@
 type: ticker
 title: "SNDK — Sandisk"
 tags: []
-related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-04-daily-update-september-4th]]"]
+related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2025-10-01
-updated: 2026-09-29
+updated: 2026-10-08
 ticker: SNDK
 current_stance: long
 conviction: medium
-last_review: 2026-09-29
+last_review: 2026-10-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -25,6 +25,7 @@ last_review: 2026-09-29
 | 2026-08-17 | [[semidoped]] | LONG | 1786.85 | Phison: NAND shortage to 2030; 1 PB SSD demo; SSD prices structurally elevated |
 | 2026-08-27 | [[semidoped]] | LONG | 1484.98 | Kioxia+SanDisk $31B Kitakami Fab3 NAND expansion — capacity response to YMTC's 2027 top-3 push |
 | 2026-09-05 | [[semidoped]] | LONG | 1740.00 | NAND shortage-to-2027 + DRAM-substitution demand; SanDisk a prime flash beneficiary. |
+| 2026-10-08 | [[semidoped]] | LONG | 1660.46 | YMTC pushes its NAND shortage call to 2029 (most bearish supply timeline yet) + BiCS Gen10 1Tb TLC — cleanest NAND-cycle play |
 
 ## Thesis evolution
 The initial October 2025 irrationalanalysis call was a reversal of a prior short, with the bull case anchored on SNDK's QLC co-design advantage with Kioxia and the structural need for high-density NAND in AI video storage applications; the author backed conviction with call options. The view briefly went neutral in late 2025 after a profitable trade, with irrationalanalysis citing NAND's inherent cyclicality as a reason to step aside rather than a structural bear thesis. By early 2026 the bull case re-engaged: irrationalanalysis reframed SNDK as the preferred NAND expression over DRAM names on engineering differentiation grounds, and globalsemiresearch added supply-scarcity corroboration via new long-term agreement signings. semidoped extended the thesis into May 2026, pointing to multi-year supply contracts, SSD-driven inference demand, and gross margin expansion above 80% as evidence that the structural tailwinds are compounding. No publication has taken a bear or short stance across the full period, though irrationalanalysis's December 2025 neutral pause signals awareness of cycle risk.

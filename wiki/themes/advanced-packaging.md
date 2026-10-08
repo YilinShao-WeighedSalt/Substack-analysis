@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-02
+updated: 2026-10-08
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -91,3 +91,5 @@ At Snapdragon Summit, Qualcomm's Cristiano Amon introduced **High Bandwidth Comp
 The chokepoint narrative sharpened from FC-BGA into **substrates broadly (ABF / FC-BGA / package substrate)** as *the* emerging AI bottleneck. Datapoints across this run's Semi Doped dailies: **Samsung Electro-Mechanics** committed ~**$5B** to substrate capacity (Korea + Vietnam) plus **₩3.6T cumulative supply LTAs** and a **$1.85B customer-funded Vietnam substrate line**; **LG Innotek** formally declared semiconductor substrates its **primary growth engine** (2031 profit target), pivoting away from Apple camera modules to compete with Samsung EM and Ibiden; **Unimicron** secured NT$10B Hukou land for ABF-substrate expansion. Vik's framing: "substrates look short in supply — likely the next AI bottleneck trade." Glass-substrate commercialization advances in parallel (Philoptics wins through-glass-via equipment orders for 2mm glass). 
 
 **Logic folding (Huawei Tau)** is a packaging story too: Vik reads it as a **hybrid-bonding bet** — stack a SMIC 7nm-class die onto itself to double density by **burning 2× silicon**, not by making denser transistors (an EUV workaround). The Kirin 9050 Pro ships it in volume (Mate 90 series).
+
+**2026-10-08 (semidoped):** The passives/substrate chokepoint hardens around one supplier — **Samsung Electro-Mechanics lands a fresh $216M AI-server MLCC order and holds >40% AI-server-MLCC share** ([[009150.KS]]), with ~600K MLCCs per GPU-dense rack and 2027 delivery locked; SEMCO also secured customer backing for a **$5B substrate expansion**, and **Hanmi Semiconductor won a ₩24.5B SEMCO AI-substrate post-processing order**. **Applied Materials–Besi extend their packaging co-development** (die-on-panel, photonics-enabled interconnect) alongside the AMAT–Intel R&D pact.

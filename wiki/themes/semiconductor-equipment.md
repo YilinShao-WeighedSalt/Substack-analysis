@@ -4,7 +4,7 @@ title: "Semiconductor Capital Equipment"
 tags: []
 related: []
 created: 2024-04-03
-updated: 2026-05-29
+updated: 2026-10-08
 status: maturing
 first_seen: 2024-04-03
 ---
@@ -53,3 +53,5 @@ first_seen: 2024-04-03
 
 ## Narrative
 Semiconductor capital equipment emerged as a recurring theme from early 2024, initially surfacing through IrrationalAnalysis coverage of Intel's process struggles and SemiAnalysis's deep dives into Intel's 14A DSA architecture — both of which implicated the tool ecosystem required for leading-edge nodes. Through mid-2024, IrrationalAnalysis broadened the lens to include burn-in and test equipment names (Aehr, Keysight) alongside ASML and TSMC earnings read-throughs, while SemiAnalysis tracked the geopolitical dimension via Chinese fab sanctions evasion. The theme accelerated sharply in 2025, with SemiAnalysis publishing dense, repeated coverage of High-NA EUV at SPIE and the prospects for NIL as a lithography alternative, and IrrationalAnalysis tracking the Onto Innovation collapse as a bellwether for equipment-cycle sentiment. By late 2025, SemiAnalysis was explicitly interrogating ASML's monopoly position and the viability of competing toolsets, a line of inquiry picked up in 2026 by semidoped's lithography masterclass and the Huawei Tau scaling debate — bringing the theme full circle from individual equipment names to a structural question about who controls the tools that define the frontier.
+
+**2026-10-08 (semidoped):** The WFE up-cycle shows in profit and *headcount*. **Tokyo Electron forecasts operating profit >¥1 trillion** ([[8035.T]]) on surging deposition/etch orders, and its Korea unit opened triple-digit hiring (19 roles, Jan start) = field-engineer service backlog stretching into 2027 (the install-base signal, not just bookings). Corroborating the broad tool demand: **DISCO Q2 parent sales +39% to ¥118.5B** (AI-packaging dicing/grinding), **SUSS MicroTec enters wafer cleaning** (GreenTec/GT200), **Towa reshores packaging-tool production to Japan**, **NEXTIN wins a ₩25.44B SK Hynix wafer-inspection order**, Teradyne ships the Titan HP burn-in platform for high-power accelerators.

@@ -4,7 +4,7 @@ title: "AI Models, Software & Economics"
 tags: []
 related: []
 created: 2024-05-07
-updated: 2026-09-11
+updated: 2026-10-08
 status: maturing
 first_seen: 2024-05-07
 ---
@@ -112,3 +112,5 @@ SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-m
 
 ## 2026-09-11 update — DeepSeek V4.1 Flash compresses the inference-price floor again
 **DeepSeek released V4.1 Flash** — a 552B-parameter Mixture-of-Experts model ("Causal-Encoder-Decoder") priced at **fractions of a cent per million tokens**, undercutting Anthropic/OpenAI/Z.AI and beating Kimi K3 on coding/cybersecurity while running faster than its prior flagship. Each DeepSeek release has arrived cheaper and more capable, steadily compressing the global inference-price floor — a direct pressure on the hyperscaler capex cases built around premium model pricing. Mechanism note (Vik): DeepSeek keeps improving KV-cache compression, cutting SSD offload. Alongside: **OpenAI reports it hit its "automated research intern" goal** (3.1 agent-workdays per human workday, up from sub-parity pre-June 2026) and targets an automated AI *researcher* by March 2028 — its public marker toward recursive self-improvement.
+
+**2026-10-08 (semianalysis — Anthropic Subscriptions):** Plain-language additions for the subscription-economics layer. **API-equivalent value** = how many dollars of pay-per-token API usage a subscription's limits actually buy — the fair way to compare plans, since each (model, token-type) burns a different number of 'credits' and worth is only meaningful as a **(plan, model, workload) tuple**. **Revenue per MW** = an AI lab's dollars earned per megawatt of compute; heavily-subsidized subscriptions (Anthropic: ~10% of revenue but >40% of inference compute) drag it down ~$36M. Findings: **Anthropic offers ~5× OpenAI's API-equivalent value** at the mid-tier daily driver (Opus 5.5 vs GPT-6.1 Sol); **OpenAI halved its $200 plan** and added a $500/300-TPS tier; Anthropic quietly cuts value on premium models to lift subscription margins (Opus 5.5 ≈ -369% GM at 100% util vs Fable 5.1 ≈ 1%), OpenAI took the 'nuclear' across-the-board cut. SemiAnalysis now runs a daily Subscriptions Dashboard measuring every (plan, model, token-type).

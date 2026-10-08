@@ -4,11 +4,11 @@ title: "BESI.AS — BE Semiconductor Industries"
 tags: []
 related: ["[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]"]
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-10-08
 ticker: BESI.AS
 current_stance: long
 conviction: medium
-last_review: 2026-05-29
+last_review: 2026-10-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,5 @@ The BESI.AS long from semidoped (May 2026) rests on two interlocking pillars: BE
 
 ## Outcome tracking
 No px@call value is available for the May 2026 entry, so quantitative return assessment is not possible. The thesis is single-publication at this stage, so trajectory judgment relies on monitoring whether China stacking demand materializes and whether export controls are extended to hybrid bonding tools. The live view would be falsified by a U.S. export-control expansion covering hybrid bonding equipment (which would directly impair the ~35% China revenue), a slowdown in Chinese logic-on-logic stacking investment, or a competing supplier gaining meaningful share in advanced bonding sockets.
+
+**Outcome update (2026-10-08):** [[irrationalanalysis]] Sep-6 Hot Chips SHORT (€202.50, the "RIP BESI" hybrid-bonding-liquidation) resolved at €192.05 = **short +5.2% WIN ✓** — the 8-hi HBM de-spec read tracked.

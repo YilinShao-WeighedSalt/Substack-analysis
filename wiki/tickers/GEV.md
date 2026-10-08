@@ -4,11 +4,11 @@ title: "GEV — GE Vernova"
 tags: []
 related: ["[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-09-14
-updated: 2026-09-26
+updated: 2026-10-08
 ticker: GEV
 current_stance: long
 conviction: high
-last_review: 2026-09-26
+last_review: 2026-10-08
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,3 +27,5 @@ The GEV bull case originated in mid-2024 at irrationalanalysis as a straightforw
 
 ## Outcome tracking
 No entry prices were recorded at any of the five call dates (all px@call = n/a), so precise mark-to-market tracking is not possible. The thesis trajectory, however, has been consistently directionally correct: the AI power-demand narrative that underpinned the initial 2024 calls has grown rather than faded, irrationalanalysis noted GEV as a surprise outperformer by year-end 2024, and the BYOG buildout dynamic had become mainstream enough by 2025-2026 for SemiAnalysis to dedicate detailed coverage to it. The live bull case would be falsified by a material slowdown in hyperscaler capex commitments to onsite gas generation, a technology shift toward nuclear or grid-scale battery storage that displaces gas turbines before the current order backlog is worked off, or margin deterioration from input-cost pressure that the service revenue mix cannot offset.
+
+**Outcome update (2026-10-08):** [[semidoped]] Sep-7 LONG ($941.95, MV UPS) resolved at $1,029.21 = **+9.3% WIN ✓** — the power-equipment incumbent rode the datacenter-power demand surge.
