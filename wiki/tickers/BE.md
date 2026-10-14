@@ -4,11 +4,11 @@ title: "BE — Bloom Energy"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2025-10-24
-updated: 2026-10-08
+updated: 2026-10-14
 ticker: BE
 current_stance: mixed
 conviction: medium
-last_review: 2026-10-08
+last_review: 2026-10-14
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -56,3 +56,6 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 **Outcome tracking (2026-09-20):** the BTM thesis keeps paying — semidoped Jul-29 LONG ($207.12) now $265.63 = **+28.3%**, Sep-7 ($252.87) +5.1%, SA Sep-11 ($258.49) +2.8%; the semidoped Sep-11 ($275.75) mark is -3.7% open. This run adds the 800V-DC product angle on top of the fuel-cell order book. current_stance long, conviction medium-high.
 
 **Outcome update (2026-10-08):** [[semidoped]] Sep-7 LONG ($252.87, S&P-500 inclusion / rev +166%) resolved at $295.78 = **+17.0% WIN ✓** — the fuel-cell BTM-power thesis ran hard.
+
+| 2026-10-13 | [[semidoped]] | LONG | 263.45 | LS Electric $138M Bloom order -> cumulative >$500M (BTM fuel-cell demand). |
+**Update 2026-10-14:** SD LONG $263.45. Resolutions: [[semianalysis]] Sep-10 BTM LONG ($258.49) → **+1.9% WIN ✓**; SD Sep-11 LONG ($275.75) → $263.45 = **-4.5% LOSS ✗** (round-trip off the late-Sep high).

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-08
+updated: 2026-10-14
 ---
 
 # Wiki Index
@@ -262,6 +262,7 @@ updated: 2026-10-08
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-11-the-tragedy-of-3d-xpoint]] — The Tragedy of 3D XPoint (Optane/QuantX): PCM between NAND & DRAM, died at 4 layers + NVMe/Memory-mode interface choke; App-direct persistence was the real value; CXL the right bus; SpaceX/Terafab the long-shot reviver (NEUT INTC "back in stride"/MU "won't bother")
 - [[irrationalanalysis-2026-10-07-marvell-2026-investor-day]] — Marvell 2026 Investor Day roast: SRAM/die-to-die/one 1.6T constellation praised, TFLN/µLED/EAM-to-CPO derided, $70-90B FY31 = bubble tell; sold CIEN to add AXTI (NEUT MRVL/CIEN, LONG AVGO/AXTI)
 - [[irrationalanalysis-2026-10-04-practical-parametric-yield]] — Practical Parametric Yield (Cerebras): wafer-scale can't bin/harvest/socket-test → structural GM drag, but CS-4 progress → H1-27 inflection; softens the activist short (NEUTRAL CBRS); Jalapeño 25% A0→B0 = yield "disaster"
 - [[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]] — Q3 2026 Consolidated Holdings (+51.6% vs SOXX): CRDO new Tier-2 long (µVCSEL pivot, reverses Sep-14 short), QMCO new (tape), CBRS activist short into ~Dec lockup (LONG CRDO/QMCO, SHORT CBRS)
@@ -545,6 +546,8 @@ updated: 2026-10-08
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-13-daily-update-october-13th]] — Daily Oct 13 (OCP week): MSFT Maia 300 multi-GW-2027/7× rack; SK Hynix locked Maia memory + H-TPU; CXMT 4F² DDR5 no-EUV rattles Korea; ASML Hyper-NA EUV; AMAT $5B EPIC Center; Credo 1.6T ZeroFlap + SRMO µVCSEL; MRVL Structera X CXL 3.2 6-ch; AMD Helion full-rack; Nvidia Vera Rubin specs/USFP; Bloom/LS Electric >$500M (LONG ASML/MSFT/000660/AMAT/CRDO/LITE/MRVL/BE/AMD/NVDA, NEUT 005930/MU)
+- [[semidoped-2026-10-12-daily-update-october-12th]] — Daily Oct 12 (Amazon ~$7B Decart for Trainium software; TSMC cost pass-through Intel +20%/QCOM +10%; Vicor ITC Sec-337 vs ~20 AI-server makers on VPD patents; Nvidia pursues Reflection AI + d-Matrix; Openreach Ciena WaveLogic 6 1.6T; Super Micro guilty plea; Broadcom CEO "constraint is capital not memory") (LONG AMZN/TSM/VICR/NVDA/CIEN, NEUT INTC/2382.TW)
 - [[semidoped-2026-10-07-daily-update]] — Daily Oct 7 (Musk: TSMC no operating role at Terafab/Intel stays, SpaceX $40B Apollo for NVDA chips + Doosan 380MW, SEMCO $216M MLCC >40% share, AMAT+Intel R&D/EPIC, Micron TW union strike, Openreach Ciena 1.6T) (LONG NVDA/009150/AMAT/CIEN, NEUT TSM/INTC/MU/BE)
 - [[semidoped-2026-10-06-daily-update]] — Daily Oct 6 (Google 3.6GW nuclear from Constellation = largest corp deal/power the binding constraint, Tokyo Electron op profit >¥1T, Marvell FY31 $70-90B, AMD 2027 supply, MediaTek 2nm, YMTC NAND shortage to 2029) (LONG CEG/GOOGL/8035.T/AMD/2454/SNDK)
 - [[semidoped-2026-10-05-daily-update]] — Daily Oct 5 (Groq engineers sue NVDA over $20B shell, Musk/TSMC Terafab, Schneider-PTC $22.6B, Foxconn record Q3, Infineon doubles AI rev/divests NOR flash, Vicor +30% guide, QCOM pays Huawei license) (LONG 2317/IFX/VICR, NEUT QCOM)

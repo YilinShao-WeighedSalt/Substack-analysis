@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-10-02
+updated: 2026-10-14
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -66,3 +66,6 @@ Two-sided NAND signals. **Kioxia halted further NAND price hikes** to protect de
 ## Concept update — 2026-10-01 (Tape re-enters the stack; AMAT-Kioxia)
 
 **Tape storage** returned as an AI-era theme via Irrational Analysis's QMCO add: magnetic tape is **cheaper and slower than HDD**, so historically niche — but the **AI data glut** generates enough spillover that tape makes sense for more use cases, and the kicker is **long-term + cyber-secure offline archival**. Properly stored tape lasts ~**30 years offline** vs **HDD/SSD bit-rot in 3–5 years** (air-gapped HDDs degrade mechanically). AI-driven cybersecurity chaos makes true air-gapped vaulting valuable again → [[QMCO]]. On the roadmap side, **Applied Materials + Kioxia** formalized a next-gen NAND/emerging-memory partnership at Applied's EPIC Center, underpinning the Kioxia/SanDisk **$31B** Japan expansion through 2032.
+
+## 2026-10-14 — 3D XPoint / PCM revival (Irrational Analysis)
+**3D XPoint (3DXP)** = Intel *Optane* / Micron *QuantX*, a **phase-change memory (PCM)**: performance sits **between NAND and DRAM** — byte-addressable, persistent (survives power-off), DRAM-like random latency. Its real niche was always **cheaper-than-DRAM with more capacity + persistence**, NOT competing with NAND on $/bit (fatal mistake). Died ~2022 for two reasons: scaling stalled at **4 layers** while NAND marched to 300+; and the **interface choked it** — most shipped as NVMe/PCIe SSDs (8µs latency, "supersonic jet for 100-mile hops") or CPU "Memory mode" (dumb DRAM cache). Only **App-direct mode** (3DXP in DRAM slots, persistence exposed to software; KV-cache/weights survive reboot; needs Optane-SKU CPU + BIOS striping) captured the value, but Intel's 10nm/Ice-Lake delays meant PMem cost DRAM bandwidth. **Revival angle:** CXL (protocol on PCIe) could be the *right* bus for PCM; Alibaba + Demingli reviving byte-addressable PCM at OCP 2026; IA's long-shot is **SpaceX/Terafab licensing 3DXP from Intel** and cracking >4-layer scaling. Too-early (pre-AI-persistence demand) and too-late (vs NAND cost) at once. (→ contrast with HBF, which IA still calls "a solution looking for a problem.")

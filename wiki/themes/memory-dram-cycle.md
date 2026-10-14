@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: []
 created: 2024-03-16
-updated: 2026-10-05
+updated: 2026-10-14
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -102,3 +102,6 @@ Semi Doped's Aug-12/14 dailies mark how fast China's DRAM challenger is closing 
 Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmation yet: current-quarter revenue guide topped estimates, backlog at record highs, and — the eye-catching figure — **DRAM now prices ~54% ABOVE TSMC 2nm silicon**, with gross margins ~**87%**. Reuters framed the supply gap as **structural, not cyclical**. Mechanism (Vik): fabs steer wafer starts to **HBM (~5× DDR5 per-bit)**, so even commodity DDR5 tightens alongside. "Investors keep hunting for the peak; I don't see it yet." This is the clearest datapoint that **memory holds the pricing power in semis right now**. Litigation overhangs persist on both sides: **Netlist** filed a new ITC action vs Micron (HBM patents) and **YMTC won Munich injunctions** vs Micron on two 3D-NAND utility models (Micron countersues, alleging engineer poaching + patented stolen tech). China keeps expanding: **CXMT** plans a $5.2B DRAM expansion + ¥18B R&D on domestic toolmakers.
 
 **Update 2026-10-05 (record FY + the base-die value-capture debate):** Semi Doped (Oct-2) — DRAM/NAND spot prices hit **records** (8Gb DDR4 contract +4% MoM to $26); **Micron's record FY — DRAM revenue crosses $100B, operating margin >70%**. CTO DeBoer says **NVHBM is profitable despite an externally-built base die** (TSMC); Vik calls it 'cope' — because the **base die is Nvidia-designed**, incremental value may accrue to Nvidia (via NVLink Fusion), not Micron. Sharpens the bandwidth>capacity / 4-hi de-spec thesis: as HBM stacks shrink, value shifts to whoever designs the base die. → [[MU]].
+
+## 2026-10-14 — CXMT 4F² DRAM cell, no-EUV (Semi Doped)
+**4F² cell** = a denser DRAM memory-cell layout (cell area ≈ 4× the minimum feature², vs ~6F² older designs) → more bits per wafer. CXMT (China's largest DRAM maker) says it shifted to 4F² **specifically because EUV lithography is out of reach** — a density path that routes around the equipment ban. Target: **server DDR5**, memory's highest-margin commodity segment, a direct collision with Samsung/SK Hynix. Both Korean names + Micron sold off on the news (SK Hynix ~₩1.77M→₩1.46M into Oct-13/14); some analysts call it overdone. Austin's frame: "Announced, not shipping — but with Samsung ~80% sold out for 2027, does CXMT even need great yields to find China DDR5 buyers?" Joins CXMT's prior 5th-gen DRAM / HBM3E-risk-production as the running China-supply falsifier to the DRAM supercycle. Also this run: **global smartphone Q3 the worst in 14 years, memory shortage cited as the primary supply constraint** (demand-pull on the shortage, not demand destruction).

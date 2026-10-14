@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-09-11
+updated: 2026-10-14
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -106,3 +106,6 @@ disagg inference is temporary** — everyone goes vertical.
 
 ## 2026-09-11 update — the ASIC wave reaches its laggards; Nvidia turns rivals into tenants
 Two structural moves this week. (1) The custom-silicon turn finally pulls in the names it had passed over: **Qualcomm signs a multi-generational custom AI-chip deal with Amazon** (AWS takes up to $4B in QCOM warrants; +10%) — QCOM's first real hyperscaler anchor beyond Saudi-backed Humain — and **OpenAI deepens its custom-chip pact with Samsung + Arm** (Samsung fab/packaging; OpenAI used its own models to design Jalapeño; a separate Samsung-Arm on-device chip for OpenAI is reported). (2) Nvidia converts challengers into tenants: **d-Matrix wires its next-gen Raptor XPU into NVLink Fusion + Spectrum-X + the MGX rack spec** — the accelerator only fully performs inside Nvidia's own scale-up/scale-out fabric. NVLink Fusion (Nvidia's interconnect opened to third-party silicon) is becoming the gravity well that lets ASIC startups skip building rack/cooling/networking — at the cost of dependence on Nvidia infrastructure. Overhang: the **DOJ opened an antitrust probe** into whether Nvidia's ~$17-20B Groq deal was licensed to skirt merger review.
+
+## 2026-10-14 — Maia 300, d-Matrix, Helion, Reflection (Semi Doped, OCP week)
+**Microsoft Maia 300** = MSFT's 2nd-gen inference ASIC, **multichiplet** (departs from monolithic-die GPUs) on **TSMC N2P**, slated for **multi-GW Azure by 2027** with an explicit cost-reduction (reduce-Nvidia-dependence) mandate: ~40% more tokens/s, **7× rack throughput vs Maia 200**. Key read (Vik): **SK Hynix already locked the memory on the whole Maia fleet since Maia 200** → "the memory trade doesn't care which ASIC wins." Axios: the launch makes every major Nvidia customer a potential competitor. **Nvidia counter-moves:** pursuing **Reflection AI** (open-weight model dev — likely acqui-hire) and a stake in **d-Matrix** (inference silicon, ~$5B val; Squadron multi-rack clusters; already wiring Raptor into **NVLink Fusion**) — the same "keep inference rivals plugged into the rack" playbook. **AMD Helion** debuted at full rack scale (agentic AI) at OCP; Wiwynn had built systems on the floor. Amazon chasing **Decart (~$7B)** = software to lift **Trainium** utilization (get more tokens out of the silicon), not new hardware.

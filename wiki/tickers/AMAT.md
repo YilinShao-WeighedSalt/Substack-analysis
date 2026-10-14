@@ -4,11 +4,11 @@ title: "AMAT — Applied Materials"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[semianalysis-2024-02-09-hybrid-bonding-process-flow]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-08
+updated: 2026-10-14
 ticker: AMAT
 current_stance: long
 conviction: medium
-last_review: 2026-10-08
+last_review: 2026-10-14
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -35,3 +35,6 @@ The AMAT bull case was established early in 2024 by both publications on overlap
 
 ## Outcome tracking
 No px@call values are recorded across the log, so price-based verification is not possible. The core bull thesis — that AMAT's bundled tool platforms (tungsten interconnect, Sculpta etch) would drive outsized share at advanced nodes — has been directionally supported by the recurring semianalysis citations of AMAT tools as node-critical through 2025. The irrationalanalysis upcycle thesis (Micron capex extending WFE demand) was held with high conviction through H1 2024 but was walked back by mid-2025 as China ICAPS headwinds materialized, consistent with the sector-wide export-control pressure that the October 2024 semianalysis piece acknowledged. The live view is mixed: semianalysis maintains a positive process-tool franchise view but is tracking Lam gaining Mo deposition share in NAND as a meaningful falsifier; a sustained loss of NAND wordline deposition to Lam combined with further ICAPS China restrictions would materially undermine the remaining bull case.
+
+| 2026-10-13 | [[semidoped]] | LONG | 464.24 | $5B EPIC Center (largest-ever capex); targets doubling sales without proportional headcount. |
+**Update 2026-10-14:** SD LONG $464.24 (EPIC Center). A facility/R&D-cycle moat, not a bookings beat; payoff multi-year.

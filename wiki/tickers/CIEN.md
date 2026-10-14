@@ -4,11 +4,11 @@ title: "CIEN — Ciena Corporation"
 tags: []
 related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[citrini-2024-08-26-can-you-hear-me-now]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semidoped-2026-09-21-daily-update]]", "[[irrationalanalysis-2026-10-07-marvell-2026-investor-day]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-08-26
-updated: 2026-10-08
+updated: 2026-10-14
 ticker: CIEN
 current_stance: mixed
 conviction: high
-last_review: 2026-10-08
+last_review: 2026-10-14
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -47,3 +47,5 @@ No px@call values are recorded across any entry, so quantitative P&L cannot be a
 **Update 2026-09-17:** SD LONG $340.50 — Ciena launches a $200M corporate venture arm for AI-networking/optical-interconnect startups. A strategic-signal (not earnings) datapoint; note CIEN has re-rated sharply higher since the Sep-4 $321 mark.
 
 **Update 2026-10-05:** SD LONG $391.34 — CtrlS + Ciena to build **100 Tb/s metro optical networks across five Indian cities**, another India/coherent-optics win on top of the ACE subsea + venture-fund datapoints. **Resolution:** SD's Sep-2/4 LONG ($321.00) crossed 30d at $391.34 = **+21.9% WIN ✓** — the +37%/$10B-backlog print bought on the in-line-guide dip was the best of the Sep batch; CIEN has re-rated ~+22% since.
+
+| 2026-10-12 | [[semidoped]] | LONG | 400.40 | Openreach deploys WaveLogic 6 -> 1.6 Tbps wholesale across UK. |

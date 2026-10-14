@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-08
+updated: 2026-10-14
 handle: semianalysis
 calls_logged: 245
-hit_rate: "10/26 (38%), ~14 open"
+hit_rate: "13/30 (43%), ~10 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **No new post in the 3-day window (Oct 11-14, 2026) — track record re-priced only.** Latest post is "Beijing Will Not Pace the Frontier: China's Speed-First AI Safety Regime" (Oct-8), which fell outside this run's window; it will be ingested next cycle.
+
+**hit_rate note (2026-10-14): 10/26 → 13/30 (43%) — the Sep 10-14 BTM/backstop/Vera-Rubin batch resolves 3W/1L.** **[[NVDA]] Sep-11 backstop LONG ($218.29) → $228.52 = +4.7% WIN ✓** and **[[NVDA]] Sep-14 Vera-Rubin LONG ($213.90) → +6.8% WIN ✓** (the 67×-tokens/$ / $530B-backstop theses both tracked), **[[BE]] Sep-10 BTM LONG ($258.49) → $263.45 = +1.9% WIN ✓**; loss: **[[CAT]] Sep-10 BTM LONG ($805.00) → $772.78 = −4.0% LOSS ✗** (recip-engine leg gave back). The Sep-13 4-hi HBM calls (MU/000660/005930) were NEUTRAL, excluded. No priced call this window.
 
 - **Anthropic Subscriptions Offer 5x+ More Value Than OpenAI (2026-10-05, paywalled, full body served) — economics deep-dive, no priced ticker.** A Tokenomics-Model analysis of consumer/SMB **subscription limits** and their outsized effect on lab financials: for Anthropic, subscriptions are **~10% of revenue but >40% of inference compute**, lowering blended **revenue per MW by ~$36M**. Plan "value" is only meaningful as a **(plan, model, workload) tuple** of credit costs; SA launched a daily-refreshed **Subscriptions Dashboard** and reverse-engineers each provider's 0–100% meter by isolating one token type at a time (even catching a provider's "extremely tiny" A/B test on limits). Headlines: **Anthropic ~5× the API-equivalent value of OpenAI** at the mid-tier daily driver (Opus 5.5 vs GPT-6.1 Sol); **OpenAI just halved its $200 plan** and added a $500/300-TPS-Ultrafast tier; Anthropic quietly cuts value on premium models (Opus 5.5 ≈ -369% GM at 100% util vs Fable 5.1 ≈ 1%) while OpenAI took the "nuclear option." Chinese plans still subsidized (value-per-dollar rises with tier); first-party beats Cursor/Devin wrappers. **No tradeable ticker** (all private) — ingested as domain knowledge → [[ai-software-models]]. Concept color: API-equivalent value, revenue-per-MW, subscription credits, cache token pricing.
 

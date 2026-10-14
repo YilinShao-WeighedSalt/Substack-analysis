@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-08
+updated: 2026-10-14
 handle: irrationalanalysis
-calls_logged: 630
-hit_rate: "29/52 (56%), ~16 open"
+calls_logged: 632
+hit_rate: "32/56 (57%), ~14 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **The Tragedy of 3D XPoint (AKA Intel Optane AKA Micron QuantX) (2026-10-11):** A history/"shitpost" revisiting **3D XPoint (3DXP/PCM)** — speed between NAND and DRAM, byte-addressable + persistent — provoked by "how fucked the memory market (DRAM in particular) is." Its real niche was always **cheaper-than-DRAM-with-persistence**, not NAND $/bit; it died ~2022 because scaling stalled at **4 layers** and the interface choked it (NVMe SSDs + CPU "Memory mode" wasted it; only **App-direct mode** — 3DXP in DRAM slots, persistence to software, KV-cache/weights survive reboot — captured value, and Intel's 10nm/Ice-Lake delays made PMem cost DRAM bandwidth). Zinsner killed it at both Micron and Intel. **Revival pitch:** CXL could be the right bus for PCM; Alibaba+Demingli reviving it at OCP; IA's long-shot is **SpaceX/Terafab licensing 3DXP from Intel** and cracking >4-layer scaling. Secondary read-throughs, not fresh high-conviction trades: **[[INTC]] NEUTRAL $102.81** ("back in its stride" — 18AP fixed, EMIB-T on track, agentic-CPU revival lifts the written-off Products arm; the natural 3DXP licensor) and **[[MU]] NEUTRAL $953.19** (DRAM "super high" = the premise, but Micron won't revive it — "just print more money on DRAM/HBM"). (→ [[nand-flash-storage]], [[memory-dram-cycle]], [[intel-foundry-decline]].)
+
+**hit_rate note (2026-10-14): 29/52 → 32/56 (57%) — the Sep-14 Market Memo batch resolves 3W/1L.** **[[QCOM]] SHORT ($184.84) → $176.86 = short +4.3% WIN ✓**, **[[CBRS]] SHORT ($190.47) → $149.09 = short +21.7% WIN ✓** (the activist/parametric-yield short's best datapoint yet), **[[AAPL]] LONG ($332.41) → $341.27 = +2.7% WIN ✓**; loss: **[[CRDO]] SHORT ($161.49) → $198.31 = short −22.8% LOSS ✗** — CRDO ran, and IA itself reversed to a Oct-1 LONG once Credo conceded µLED and pivoted to µVCSEL (the short was on the tech choice, wrong on the stock). The Sep-20 TSEM long + Sep-21 COHR-short/LITE-long/CBRS-short resolve ~Oct-20/21; the Oct-1 CRDO/QMCO longs + CBRS short later. This run's 2 new calls (INTC/MU NEUTRAL, excluded from the ratio) opened at spot.
 
 - **Marvell 2026 Investor Day: Irrational Recap (2026-10-07):** A slide-by-slide snarky recap from the author's standing posture — "consistently ultra Broadcom bull and moderate Marvell bear." Confession that frames the run: he **sold [[CIEN]] to buy more [[AXTI]]** the day before, then Matt Murphy's event sent Ciena "to the moon" while barely moving Marvell ("cosmic justice"). Genuine praise: **dense SRAM** (A+), the **die-to-die PHY** ("very impressive"), and one **1.6T coherent constellation** (pre-FEC BER 3e-6 / post-FEC 1e-11, target ~2e-13) — "genuinely impressive." Scorn: **$70-90B-by-FY31 target = bubble tell**, "half the deck is CAGR bar charts"; **TFLN a "meme material,"** µLED dismissed, the **GeSi-EAM pivot to NPO/CPO** wastes its shoreline advantage, EAM C-band vs OCI-MSA O-band, the out-of-spec concat FEC for Google, repeated Innolight/Ara-DSP-respin jabs; HBM-as-cache memory-expander "cool" but doubts Marvell wins HBM allocation over XPU. Published his **Oct-2026 public-company SerDes rankings** (Broadcom top). → **NEUTRAL [[MRVL]] $287.01** (bear maintained), **LONG [[AVGO]] $375.81**, **LONG [[AXTI]] $84.06**, **NEUTRAL [[CIEN]] $443.65** (sold). (→ [[serdes-high-speed-connectivity]], [[silicon-photonics-interconnects]].)
 

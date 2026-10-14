@@ -4,11 +4,11 @@ title: "VICR — Vicor Corporation"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2026-05-13-cerebras-faster-tokens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]"]
 created: 2024-07-18
-updated: 2026-10-08
+updated: 2026-10-14
 ticker: VICR
 current_stance: long
 conviction: medium
-last_review: 2026-10-08
+last_review: 2026-10-14
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,3 +26,6 @@ The 2024 irrationalanalysis call was deliberately agnostic — the author framed
 No px@call values are recorded in either entry, so price-based verification is not possible. The 2024 neutral call was conditional on the outcome of an HTOL qualification report; no subsequent entry in the record confirms or refutes that report's findings, leaving the reliability thesis unresolved. The 2026 mention as a CS-3 BOM supplier is a demand-side positive that would be falsified if Cerebras's datacenter deployment materially slows or if a competing power-delivery vendor displaces Vicor in future system revisions.
 
 **Update 2026-09-23:** [[semidoped]]'s **first priced LONG ($268.34)** — Vicor raised Q3 guide >20% on **VPD (vertical power delivery) royalties**, a licensing stream it collects regardless of which GPU vendor fills a server slot; shares +316% YTD. The royalty model re-rates as rack power densities climb past conventional VR designs. Falsifier: a competing VPD architecture displacing the licensed IP, or AI-rack power scaling stalling.
+
+| 2026-10-12 | [[semidoped]] | LONG | 267.24 | ITC Sec-337 widened to ~20 AI-server makers over VPD patents - royalty leverage across the power chain. |
+**Update 2026-10-14:** SD LONG $267.24 (ITC expansion). Note: pulled back ~13% off its Oct-8 high ($299.29) into the filing; the Sep-22 LONG ($268.34) is ~flat (-0.4%), resolves ~Oct-22.

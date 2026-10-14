@@ -4,7 +4,7 @@ title: "Silicon Photonics & Optical Interconnects"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2026-10-02
+updated: 2026-10-14
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -145,3 +145,6 @@ duopoly, not a moat break.
 ## Concept update — 2026-10-01 (ECOC: slow-and-wide µVCSEL vs µLED)
 
 Irrational Analysis's Q3 review restated its **anti-µLED thesis** emphatically after ECOC 2026. The engineering bar for **slow-and-wide** optics: every lane must hit **1E-12 raw BER minimum** (1E-14 preferred for margin); miss it and you need **FEC, which defeats the point** of slow-and-wide. **µLED fails that bar even at 2 Gbps** and fiber-attach is expensive; **µVCSEL is better in every way** ("no engineering item favors µLED given µVCSEL exists"). IA reads **Credo's** own ECOC lead (Mohsen Asad, Hyperlume founder) as **tacitly conceding** the point — Credo is **pivoting to µVCSEL**, which IA calls the right move, and IA added **Credo as a new Tier-2 long** (SerDes franchise rated #2 behind Broadcom/Nvidia). This reconciles IA's **Sep-14 µLED short on Credo** (the short was against the *tech choice*) with the **Oct-1 long** (on the *franchise + correct pivot*). → [[CRDO]].
+
+## 2026-10-14 — SRMO / micro-VCSEL, 1.6T ZeroFlap, USFP (Semi Doped, OCP)
+**SRMO (Short-Reach Micro-Emitter Optics)** = a new Credo-led OCP standardization workstream (founding: ams OSRAM, Lumentum, Corning, Astera) for **micro-emitter** optical links inside AI racks (intra-rack + rack-to-rack). **Micro-VCSEL** = the "wide-but-slow" approach: many optical emitters in parallel at modest per-channel speeds rather than flogging a few fast channels — closing the **~50m gap between active copper and pluggable optics**. Credo shipped the **1.6T ZeroFlap Active Light Cable** (first row-scale wide-parallel optical interconnect, customer shipments 2027) and **pivoted from µLED to µVCSEL** a year after buying Hyperlume (µLEDs "falling behind") — corroborating IA's Oct-1 reversal (its short was on µLED-the-tech, not Credo-the-franchise). **Lumentum + Corning + Astera** demoed **1060nm-VCSEL PCIe-over-optics** live at OCP. **USFP** = a new Nvidia+Cisco pluggable-optics form factor (vs XPO); Meta disclosed the 102.4T **IceCube** switch + **MetaRoCE** transport. Celestica DS6005 = a CPO switch.

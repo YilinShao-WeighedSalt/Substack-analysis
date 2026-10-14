@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-08
+updated: 2026-10-14
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -90,3 +90,6 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 **Update 2026-10-05 (parametric yield — plain language):** Irrational Analysis's deep-dive defines **parametric yield** = the share of chips meeting target clock/power *after* catastrophically-defective dies are discarded. It's an **economic choice** (where on the volt/freq curve you ship), not a design one — the physical world is Gaussian (transistor threshold, leakage, rise time vary ±2σ across process corners, ±10% voltage). Industry manages it by **scrapping, binning/harvesting into cheaper SKUs** (AMD Turin, Nvidia Ti/Super), and **per-chip voltage/register tuning**, validated on cheap socketed die-level rigs. **Wafer-scale ([[CBRS]]) is structurally disadvantaged** — 84 fused reticles on a unified grid can't be scrapped, downgraded, or socket-tested. A big post-characterization clock/perf delta (e.g. the reported 25% A0→B0 on OpenAI Jalapeño) signals a parametric-yield failure, not a tuning choice.
 
 **2026-10-08 (semidoped):** A novel foundry structure emerges — **Musk's $119B Terafab will run *licensed* TSMC process**, built and operated by Musk's own companies (TSMC takes no operating role, may sublease at most), with **Intel kept in a supporting capacity** ([[TSM]], [[INTC]]). TSMC licensing its process for a third party to run is itself unprecedented. Also: **Applied Materials + Intel formalize a next-gen transistor/interconnect/packaging R&D pact** (EPIC + Hillsboro) — Intel joins Samsung/Micron/SK Hynix/TSMC/Kioxia at Applied's EPIC center, putting all three leading-edge foundries there ([[AMAT]]); **MediaTek ships Dimensity 9600 Pro on 2nm** ([[2454.TW]]); **CXMT begins mass production of its first DRAM platform** and poaches 27 Samsung/SK Hynix engineers.
+
+## 2026-10-14 — Hyper-NA EUV + TSMC pricing power (Semi Doped)
+**Hyper-NA EUV** = ASML's next litho step beyond **High-NA**: **5nm single-exposure patterning**, i.e. resolving a 5nm feature in one shot instead of costly multi-patterning — a technical anchor for sub-2nm scaling (unveiled ahead of ASML earnings; capacity-buildout guide is the investor test). Counterpoint from China: **CXMT's 4F² DRAM explicitly chose density-without-EUV** because the tool is banned — the two headlines frame the EUV-haves vs have-nots split. **TSMC pricing power** went visible: rising wafer + **CoWoS** advanced-packaging cost now passes straight to buyers — **Intel CPU +20%, Qualcomm ~+10%** (AMD expected to follow), the first coordinated CPU hike tied to foundry cost pass-through. The +20% lands on **Panther Lake's TSMC-N3E high-end GPU tile**, not Intel's own 18A compute tile. Also: Rapidus CORE ecosystem (17 design partners, 2nm); Intel names Crescent Island inference GPU "GPU D-Series."
