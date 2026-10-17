@@ -142,3 +142,6 @@ The two calls with explicit px@call values — irrationalanalysis at $81.4 (2026
 | 2026-10-11 | [[irrationalanalysis]] | NEUTRAL | 102.81 | 3D-XPoint essay: Intel "back in its stride" (18AP fixed, EMIB-T on track, agentic-CPU revival); natural 3DXP licensor. |
 | 2026-10-12 | [[semidoped]] | NEUTRAL | 102.81 | TSMC +20% CPU hike lands on its N3E GPU tile - foundry cost pass-through pressures laptop margins. |
 **Update 2026-10-14:** two NEUTRALs at $102.81 (IA constructive on 18AP/agentic-CPU revival; SD flags the N3E-tile price pass-through). Resolution: SD Sep-8 LONG ($100.32) → $102.81 = **+2.5% WIN ✓**.
+
+
+**Update 2026-10-17 (resolution):** SD **Sep-16 LONG ($101.05) → $95.37 = -5.6% LOSS ✗** (the SK-Hynix-in-Ohio external-customer read gave back after the Sep run-up; Panther Lake 18A density only ~N3E per SA still caps the re-rate). No new call this run.

@@ -4,7 +4,7 @@ title: "Semiconductor Capital Equipment"
 tags: []
 related: []
 created: 2024-04-03
-updated: 2026-10-14
+updated: 2026-10-17
 status: maturing
 first_seen: 2024-04-03
 ---
@@ -58,3 +58,7 @@ Semiconductor capital equipment emerged as a recurring theme from early 2024, in
 
 ## 2026-10-14 — AMAT EPIC Center + ASML Hyper-NA / spares (Semi Doped, OCP week)
 **Applied Materials EPIC Center** (Equipment & Process Innovation and Commercialization) = a **$5B** Silicon Valley campus, AMAT's largest-ever capital commitment and billed as the world's largest collaborative process-R&D facility — seats chipmakers, systems companies, equipment partners and universities alongside AMAT engineers. Framing (CEO Dickerson): AI makes **speed of innovation rival raw capability**; Bloomberg notes AMAT targets **doubling sales without a proportional headcount increase**, with EPIC the infrastructure that makes that ratio plausible. **ASML** unveiled **Hyper-NA EUV** (5nm single-exposure; see [[foundry-process-node]]) and plans to **raise prices on litho spare parts** — another cost vector onto chipmakers already eating wafer hikes. Corroborating equipment-boom signals: Intekplus record substrate-inspection order; ERS panel-level packaging system; HanWool MLCC-inspection win; TeraView terahertz through-glass-via inspection.
+
+### Concept note — ASML's monopoly pricing power turns active (2026-10-14/15, Semi Doped)
+ASML posted record Q3 2026 revenue of €11.7B (+25% QoQ), €5.0B net income, and raised FY guide to €44-45B. The structural tell: **2027 and 2028 EUV allocations are sold out**, inquiries now stretch to 2030, and ASML is **withholding 2029-2030 slots** while confirming its **first-ever EUV price increases** — the monopoly is finally charging for its value. The binding constraint on scaling further is the **Zeiss optics supply chain** (not demand), prompting a weighed 2028 facility expansion; SEMI sees 300mm fab-equipment spend hitting $227B by 2029 (from $149B). A 'T'-titled late-decade customer is hinted (likely Musk's Terafab). Korean makers already swallowed a 10% parts hike from January. Read: when a tool monopoly starts raising prices into a sold-out book, that is the pricing-power signal — a durable ASML tailwind independent of per-tool ASP debates. (Vertical-integration leg: see the advanced-packaging hybrid-bonder note — ASML extending from litho into the back end.)
+

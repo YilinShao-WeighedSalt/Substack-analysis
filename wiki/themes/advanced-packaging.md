@@ -4,11 +4,13 @@ title: "Advanced Packaging"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-08
+updated: 2026-10-17
 status: maturing
 first_seen: 2024-01-03
 ---
 ## Timeline
+- 2026-10-15 — [[semianalysis-2026-10-15-asml-hybrid-bonding]] (semianalysis) — ASML building a D2W hybrid bonder
+- 2026-10-16 — [[semidoped-2026-10-16-daily-update]] (semidoped) — ASML enters HB, pressing Besi
 - 2026-09-26 — [[semianalysis-2026-09-26-intel-panther-lake-teardown]] (semianalysis)
 - 2026-09-28 — [[semidoped-2026-09-28-daily-update-september-28th-2026]] (semidoped)
 - 2024-01-03 — [[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]] (semianalysis)
@@ -93,3 +95,9 @@ The chokepoint narrative sharpened from FC-BGA into **substrates broadly (ABF / 
 **Logic folding (Huawei Tau)** is a packaging story too: Vik reads it as a **hybrid-bonding bet** — stack a SMIC 7nm-class die onto itself to double density by **burning 2× silicon**, not by making denser transistors (an EUV workaround). The Kirin 9050 Pro ships it in volume (Mate 90 series).
 
 **2026-10-08 (semidoped):** The passives/substrate chokepoint hardens around one supplier — **Samsung Electro-Mechanics lands a fresh $216M AI-server MLCC order and holds >40% AI-server-MLCC share** ([[009150.KS]]), with ~600K MLCCs per GPU-dense rack and 2027 delivery locked; SEMCO also secured customer backing for a **$5B substrate expansion**, and **Hanmi Semiconductor won a ₩24.5B SEMCO AI-substrate post-processing order**. **Applied Materials–Besi extend their packaging co-development** (die-on-panel, photonics-enabled interconnect) alongside the AMAT–Intel R&D pact.
+
+### Concept note — ASML's track-based die-to-wafer hybrid bonder (2026-10-15, SemiAnalysis)
+**Hybrid bonding** is copper-to-copper die stacking at pitches far finer than solder micro-bumps — the key enabler for 3D logic (AMD V-Cache since 2022; TSMC SoIC ~6µm pitch → 4.5µm ~2029) and eventually DRAM/HBM. Two flavors: **W2W** (wafer-to-wafer, already volume in image sensors / 3D NAND) and **D2W** (die-to-wafer, places individual chiplets — slower, ~1 wafer/hr upper bound today, so cost/die stays high; runs in volume only in logic). The two factors that set bond yield are **alignment accuracy** (<50nm placement needed) and **particle control** (a single 1µm particle unbonds ~10mm).
+
+**Besi** is today the *only* supplier shipping volume D2W tools (concentrated at TSMC/Intel); everyone else is still qualifying a first tool. SA's Oct-2026 scoop: ASML is building a D2W bonder (patent WO2025201788A1) that is architecturally novel — each die rides its own holder around a **track** (SuperTrak CONVEYANCE) past inspection/cleaning/plasma-activation/metrology stations, with the station's head moving to the die; final placement by holder+chuck (shuttle repeatability ~10µm is nowhere near the 50nm bond needs, so actuators do the fine work). Benefits: every station stays busy, capacity added by adding a station not a tool, heterogeneous integration = new recipe. ASML's edge = reuse of its **ORION** wafer-alignment sensor (reads a diffraction grating on each die through CMP/plasma asymmetry) + EUV-grade particle control; it already corrects post-bond overlay from 40-60nm to <4nm. It can hand the scanner a die-position "coordinate system" and sell bonder+scanner as a premium pair. **Implication:** a structural threat to Besi's one high-growth moat (and to the Applied/Besi Kinex JV); HBM D2W adoption — the expected big volume driver — SA now sees slipping to **2029+ "if at all."**
+

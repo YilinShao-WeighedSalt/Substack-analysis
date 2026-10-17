@@ -49,3 +49,6 @@ No px@call values are recorded across any entry, so quantitative P&L cannot be a
 **Update 2026-10-05:** SD LONG $391.34 — CtrlS + Ciena to build **100 Tb/s metro optical networks across five Indian cities**, another India/coherent-optics win on top of the ACE subsea + venture-fund datapoints. **Resolution:** SD's Sep-2/4 LONG ($321.00) crossed 30d at $391.34 = **+21.9% WIN ✓** — the +37%/$10B-backlog print bought on the in-line-guide dip was the best of the Sep batch; CIEN has re-rated ~+22% since.
 
 | 2026-10-12 | [[semidoped]] | LONG | 400.40 | Openreach deploys WaveLogic 6 -> 1.6 Tbps wholesale across UK. |
+
+
+**Update 2026-10-17 (resolution):** SD **Sep-14 LONG ($340.50) → $356.52 = +4.7% WIN ✓** ($200M Ciena Ventures / optical-interconnect read). Also this window: Space Norway picks Ciena for the Svalbard/Arctic Way subsea upgrade (mention). No new priced call this run.

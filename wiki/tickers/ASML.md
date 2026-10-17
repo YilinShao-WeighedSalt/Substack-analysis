@@ -4,11 +4,11 @@ title: "ASML — ASML Holding"
 tags: []
 related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-04-18
-updated: 2026-10-14
+updated: 2026-10-17
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-10-14
+last_review: 2026-10-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -62,3 +62,10 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 
 | 2026-10-13 | [[semidoped]] | LONG | 1717.76 | Hyper-NA EUV (5nm single-exposure) extends roadmap past High-NA; ahead of earnings. |
 **Update 2026-10-14:** SD LONG $1,717.76. Resolution: SD Sep-8 LONG ($1,687.43) → $1,717.76 = **+1.8% WIN ✓**. 2027 capacity guide this week is the investor test.
+
+
+## 2026-10-17 run update
+| 2026-10-15 | [[semianalysis]] | LONG | 1657.44 | Patent trail (WO2025201788A1) shows ASML building a track-based D2W hybrid bonder; reuses ORION alignment + EUV particle-control edge; new back-end TAM, sells bonder+scanner as a pair, logic (TSMC/Intel) first |
+| 2026-10-15 | [[semidoped]] | LONG | 1657.44 | Record Q3 €11.7B, 2027-28 EUV sold out, first-ever EUV price increases + withholding 2029-30 slots = monopoly pricing power |
+
+**Update 2026-10-17:** two new LONGs @ $1,657.44 ([[semianalysis-2026-10-15-asml-hybrid-bonding]] hybrid-bonder deep-dive + [[semidoped-2026-10-15-daily-update]] Q3/EUV-price-hikes). Resolution: SD **Sep-15 LONG ($1,602.22) → $1,657.44 = +3.4% WIN ✓** (break-the-110-unit-ceiling / demand-outruns-capacity read). SA's bonder scoop opens a second structural leg (advanced-packaging TAM) atop the EUV monopoly. current_stance long, conviction medium-high. related: [[semianalysis-2026-10-15-asml-hybrid-bonding]], [[semidoped-2026-10-14-daily-update]], [[semidoped-2026-10-15-daily-update]], [[semidoped-2026-10-16-daily-update]].

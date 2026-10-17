@@ -59,3 +59,6 @@ No px@call values were recorded across the first 18 appearances (all pre-2026-06
 | 2026-09-17 | [[semidoped]] | LONG | 223.60 | Tower + NewPhotonics begin HVM of laser-integrated, serviceable optical-engine PICs for AI scale-out/scale-up interconnect |
 
 **Outcome tracking (2026-09-20):** Tower's silicon-photonics/InP volume position keeps drawing bull calls (semidoped Aug-4 $211.14 resolved +5.3% ✓ earlier; IA's InP basket ran hot then cooled). The NewPhotonics HVM ramp is a fresh concrete datapoint on serviceable optical engines. Opened at spot. current_stance long, conviction medium.
+
+
+**Update 2026-10-17 (resolution):** SD **Sep-17 LONG ($223.60) → $209.80 = -6.2% LOSS ✗** (Tower+NewPhotonics HVM optical-engine-PIC read pulled back with the optics group). No new call this run; this window Tower+Semtech expanded their SiGe partnership (mention).

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-14
+updated: 2026-10-17
 ---
 
 # Wiki Index
@@ -412,6 +412,7 @@ updated: 2026-10-14
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-10-15-asml-hybrid-bonding]] — ASML Is Building a Hybrid Bonding Tool: patent trail (WO2025201788A1) → track-based die-to-wafer bonder reusing ORION alignment + EUV particle-control edge; logic (TSMC/Intel) first; a structural threat to Besi's one D2W moat; HBM D2W slips to 2029+ "if at all" (LONG ASML, SHORT BESI; AMAT implicated via 9%+Kinex)
 - [[semianalysis-2026-10-05-anthropic-subscriptions-offer-5x]] — Anthropic subs ~5× OpenAI API-equivalent value; OAI halved $200 plan + $500 tier; subs ~10% rev but >40% inference compute, −$36M rev/MW (economics deep-dive, no priced ticker)
 - [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] — GLM5.3 sparse attention: DSA cuts attention compute/bandwidth but NOT HBM capacity (top-k needs full context); HiSparse KV→DRAM offload; InferenceX GB200/GB300/MI355X-ATOM no uniform cost winner; GLM tuned for Moore Threads? (technical, no priced call; MU-supportive, NVDA/AMD read)
 - [[semianalysis-2026-09-26-intel-panther-lake-teardown]] — 18A ships first BSPD (PowerVia)+RibbonFET GAA+Foveros-S, but density ~TSMC N3E (trails N3P/N2/SF2); GPU tile still TSMC N3E — milestone not leadership (NEUT INTC)
@@ -546,6 +547,9 @@ updated: 2026-10-14
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-16-daily-update]] — Daily Oct 16: ASML enters hybrid bonding, pressing Besi (echoes SA; logic-first, Applied owns 9%+Kinex); CoreWeave CDS >60% default odds (Jensen: no new backstop); TSMC AZ Fab 2 complete, 2028 capex to $105B; Schneider raises 2026 guide 2nd time (power/cooling binding constraint); SK Hynix 3D FeNAND compute-in-memory (NEUT BESI/CRWV/000660, LONG TSM/SU.PA/ASML)
+- [[semidoped-2026-10-15-daily-update]] — Daily Oct 15: TSMC record Q +69% NI/guide to 44%/Terafab on TSMC's terms; ASML first-ever EUV price hikes + withholding 2029-30 slots; Anthropic $16.8B pre-IPO Q + NTT ¥1T Osaka; ByteDance near MediaTek AI-DC chip deal; CXMT+Samsung 4F² no-EUV convergence rattles Korea; CoreWeave bonds >15% distressed; AEP+Bloom 702MW Google fuel-cell PPA (LONG TSM/ASML/2454/BE, NEUT 005930/000660/CRWV)
+- [[semidoped-2026-10-14-daily-update]] — Daily Oct 14: ASML Q3 €11.7B/2027-28 EUV sold out/demand outruns supply thru 2028; Nvidia $1.4B KYEC prepay locks US test/burn-in capacity; Delaware jury finds Arm breached license ($2 nominal, secures QCOM Nuvia rights); SK Chairman sells $406M stake to Michael Dell's MSD (LONG ASML/NVDA, NEUT QCOM)
 - [[semidoped-2026-10-13-daily-update-october-13th]] — Daily Oct 13 (OCP week): MSFT Maia 300 multi-GW-2027/7× rack; SK Hynix locked Maia memory + H-TPU; CXMT 4F² DDR5 no-EUV rattles Korea; ASML Hyper-NA EUV; AMAT $5B EPIC Center; Credo 1.6T ZeroFlap + SRMO µVCSEL; MRVL Structera X CXL 3.2 6-ch; AMD Helion full-rack; Nvidia Vera Rubin specs/USFP; Bloom/LS Electric >$500M (LONG ASML/MSFT/000660/AMAT/CRDO/LITE/MRVL/BE/AMD/NVDA, NEUT 005930/MU)
 - [[semidoped-2026-10-12-daily-update-october-12th]] — Daily Oct 12 (Amazon ~$7B Decart for Trainium software; TSMC cost pass-through Intel +20%/QCOM +10%; Vicor ITC Sec-337 vs ~20 AI-server makers on VPD patents; Nvidia pursues Reflection AI + d-Matrix; Openreach Ciena WaveLogic 6 1.6T; Super Micro guilty plea; Broadcom CEO "constraint is capital not memory") (LONG AMZN/TSM/VICR/NVDA/CIEN, NEUT INTC/2382.TW)
 - [[semidoped-2026-10-07-daily-update]] — Daily Oct 7 (Musk: TSMC no operating role at Terafab/Intel stays, SpaceX $40B Apollo for NVDA chips + Doosan 380MW, SEMCO $216M MLCC >40% share, AMAT+Intel R&D/EPIC, Micron TW union strike, Openreach Ciena 1.6T) (LONG NVDA/009150/AMAT/CIEN, NEUT TSM/INTC/MU/BE)

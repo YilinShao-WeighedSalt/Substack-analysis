@@ -117,3 +117,6 @@ No px@call values are recorded in the log, so absolute return cannot be measured
 - **2026-09-26 resolution:** [[semianalysis]] Aug-25 Jalapeño LONG ($355.59) → $350.36 = **-1.5% LOSS ✗** (Broadcom's ASIC-partner leg gave back modestly as the AI tape cooled).
 
 **Update 2026-10-05:** SD NEUTRAL $355.14 — Broadcom assembling **$60B debt** for Anthropic's chip leases (up to $42B, Google TPUs routed through AVGO's balance sheet against Anthropic convertibles); Vik flags it as openly **circular** ('a horseman that pops the buildout') but trusts the ASIC book. **Resolution:** SD's Sep-2/3 LONG ($357.89) crossed 30d at $355.14 = **-0.8% LOSS ✗** — the >$30 FY28 EPS guide that fell on Google-TPU concentration worry has gone sideways. Separately, IA's parametric-yield note calls the Broadcom-co-designed OpenAI **Jalapeño** A0 a 25%-perf/W 'disaster' → execution datapoint, not a stock call (see [[jalapeno-parametric-yield-vs-benchmarks]]).
+
+
+**Update 2026-10-17 (resolution):** SD **Sep-15 LONG ($339.51) → $344.33 = +1.4% WIN ✓** (CEO-holds-AI-targets-into-the-pacing-selloff read). No new call this run.

@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: []
 created: 2024-03-16
-updated: 2026-10-14
+updated: 2026-10-17
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -105,3 +105,7 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 
 ## 2026-10-14 — CXMT 4F² DRAM cell, no-EUV (Semi Doped)
 **4F² cell** = a denser DRAM memory-cell layout (cell area ≈ 4× the minimum feature², vs ~6F² older designs) → more bits per wafer. CXMT (China's largest DRAM maker) says it shifted to 4F² **specifically because EUV lithography is out of reach** — a density path that routes around the equipment ban. Target: **server DDR5**, memory's highest-margin commodity segment, a direct collision with Samsung/SK Hynix. Both Korean names + Micron sold off on the news (SK Hynix ~₩1.77M→₩1.46M into Oct-13/14); some analysts call it overdone. Austin's frame: "Announced, not shipping — but with Samsung ~80% sold out for 2027, does CXMT even need great yields to find China DDR5 buyers?" Joins CXMT's prior 5th-gen DRAM / HBM3E-risk-production as the running China-supply falsifier to the DRAM supercycle. Also this run: **global smartphone Q3 the worst in 14 years, memory shortage cited as the primary supply constraint** (demand-pull on the shortage, not demand destruction).
+
+### Concept note — 4F² DRAM convergence + FeNAND compute-in-memory (2026-10-15/16, Semi Doped)
+**4F²** is a denser DRAM cell layout (cell area = 4 × feature²) that, unlike 6F², can be built **without EUV** — the reason it matters for China. In Oct-2026 China's **CXMT** said it will unveil 4F² DRAM before year-end (mass production after 2027) and **Samsung confirmed it completed its own 4F² development**; the convergence rattled Korean memory equities (Samsung + SK Hynix both dropped). Key nuance (Vik): word is CXMT's 4F² cell area ≈ **Korea's *current* 6F²**, so it is a catch-up, not the density leap the headline implies — and "announced ≠ shipping." Separately, **SK Hynix showed 3D FeNAND** at OCP: analog **compute-in-memory** that runs AI multiply-accumulate inside the NAND flash cell using ferroelectric material, cutting the bandwidth/power round-trip to DRAM/HBM — a concrete step toward memory-centric server architectures. SEMI projects global DRAM capacity +41% by 2030 on AI-server demand.
+

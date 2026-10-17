@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-14
+updated: 2026-10-17
 handle: semianalysis
-calls_logged: 245
-hit_rate: "13/30 (43%), ~10 open"
+calls_logged: 247
+hit_rate: "13/30 (43%), ~12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **ASML Is Building a Hybrid Bonding Tool! (2026-10-15, paywalled, full body served).** From 27 bonding patent families (Dec-2022→Nov-2024, mostly D2W), a March *The Elec* report, and its 2024 Investor Day roadmap, SA concludes **ASML is building a die-to-wafer (D2W) hybrid bonder** (likely a W2W TWINSCAN variant too). The design is architecturally novel — dies ride individual holders around a **track** (SuperTrak CONVEYANCE) past inspection/clean/plasma-activation/metrology stations, the station head moving to the die; fine placement by holder actuators + chuck (shuttle repeatability ~10µm is far from the 50nm bond need). SA's thesis: ASML's **ORION alignment sensor** (reads a diffraction grating through CMP/plasma asymmetry; already corrects post-bond overlay 40-60nm→<4nm) + EUV-grade particle control are the two yield-setting factors, so it can win **logic first** (TSMC/Intel, where D2W already runs in volume at ~6µm→4.5µm SoIC pitch) and sell bonder+scanner as a premium pair. → **[[ASML]] LONG $1,657.44** (new back-end TAM + vertical-integration leg). **Bad news for [[BESI]]** — the only volume D2W supplier, concentrated at ASML's 20-yr customers; HBM D2W (the expected big volume driver) SA now sees slipping to **2029+ "if at all"**, Korean challengers catching up → **[[BESI]] SHORT €163.40** (BESI.AS, at 3-mo low). **[[AMAT]]** implicated too (9% Besi owner + Kinex D2W JV). → [[advanced-packaging]], [[semiconductor-equipment]].
+
+**hit_rate note (2026-10-17): holds 13/30 (43%).** No SA priced call crossed 30 days this run — the Sep-18 Engram [[NVDA]] LONG ($222.27) is 29d and resolves next run. This run adds **[[ASML]] LONG + [[BESI]] SHORT**, both opened at spot (+2 open).
 
 - **No new post in the 3-day window (Oct 11-14, 2026) — track record re-priced only.** Latest post is "Beijing Will Not Pace the Frontier: China's Speed-First AI Safety Regime" (Oct-8), which fell outside this run's window; it will be ingested next cycle.
 

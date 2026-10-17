@@ -34,3 +34,6 @@ Watch: the $2.4B (Reuters) vs $8B (Bloomberg) deal-size discrepancy is unresolve
 magnitude of the AI-datacenter contribution matters for the re-rate. Falsifiers: the Amazon
 deal proving to be routine backup capacity (not incremental prime/bridge power), or gensets
 being displaced by fuel cells / grid upgrades as the interconnect queue clears.
+
+
+**Update 2026-10-17 (resolution):** SD **Sep-17 LONG ($207.44) → $198.40 = -4.4% LOSS ✗** (the $8B Amazon-genset backup-power read faded modestly). No new call this run.

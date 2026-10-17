@@ -4,11 +4,11 @@ title: "BESI — BE Semiconductor Industries"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]"]
 created: 2025-06-15
-updated: 2026-09-20
+updated: 2026-10-17
 ticker: BESI
 current_stance: short
 conviction: high
-last_review: 2026-09-20
+last_review: 2026-10-17
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,3 +29,10 @@ No px@call values are available across any of the three entries, so quantitative
 | 2026-09-18 | [[semidoped]] | LONG | 186.65 | Tata signs binding packaging pact (Nexperia/Fujifilm/Besi) at SEMICON India 2026; India fab pipeline turns to commitments |
 
 **Outcome tracking (2026-09-20):** px in EUR (BESI.AS). A rare *bullish* datapoint on Besi after the HBM de-spec (8-/4-hi removes hybrid-bonding need) pressured the trade — a binding India packaging order diversifies demand. Note the persistent bear vector: SemiAnalysis/IA's hybrid-bonding-collapse read (IA had "RIP BESI" in Aug). Opened at spot. current_stance mixed, conviction low.
+
+
+## 2026-10-17 run update
+| 2026-10-15 | [[semianalysis]] | SHORT | 163.40 (BESI.AS) | ASML building a D2W hybrid bonder onto Besi's one moat (volume D2W tooling at TSMC/Intel); HBM D2W adoption slips to 2029+ "if at all"; Korean challengers catching up — "bad news for Besi" |
+| 2026-10-16 | [[semidoped]] | NEUTRAL | 163.40 (BESI.AS) | Echoes SA: ASML + Applied (9% owner, Kinex JV) both circling; logic-first threat real, HBM wave overstated |
+
+**Outcome tracking (2026-10-17):** SA's bonder scoop turns the Besi bear case *structural* — the single high-growth moat is now contested by the litho monopoly with a 20-yr installed-base relationship at every fab, vindicating IA's Sep-6 "RIP BESI" short (resolved +5.2% Oct-8). Shares sit at the 3-mo low (€163.40). The SD **Sep-18 LONG (€186.65, Tata India pact) is 29d** and resolves next run — currently −12.5% underwater. current_stance short, conviction high. related: [[semianalysis-2026-10-15-asml-hybrid-bonding]], [[semidoped-2026-10-16-daily-update]].

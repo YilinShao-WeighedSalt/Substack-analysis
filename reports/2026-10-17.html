@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Semi Scan</title>
+<meta name="description" content="Visual intelligence brief from 3 semiconductor Substacks — Oct 14-16, 2026: ASML's hybrid-bonder move, EUV pricing power, and CoreWeave's credit crack.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 80px}
+.mono,.tk,.px,.pnl,.rret,.tmc,.rtk{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.05;margin:0;letter-spacing:-.02em}
+.sub{color:var(--sec);margin:.4rem 0 0;font-size:15px}
+header{padding:34px 0 18px;border-bottom:1px solid var(--border)}
+.srcs{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;font-size:13px;color:var(--sec)}
+.srcs span{display:inline-flex;align-items:center;gap:7px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:none}
+.status{margin:14px 0 0;font-size:13px;color:var(--muted);padding:10px 14px;background:var(--surface-2);
+  border-radius:10px;border:1px solid var(--border)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+  margin:38px 0 14px;font-weight:600}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:720px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px}
+.tile .n{font-family:var(--mono);font-size:34px;font-weight:600;letter-spacing:-.02em;line-height:1}
+.tile .l{color:var(--muted);font-size:12px;margin-top:7px;text-transform:uppercase;letter-spacing:.05em}
+.distrib{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:12px;gap:2px;background:transparent}
+.distrib i{display:block;height:100%}
+.dkey{display:flex;gap:12px;margin-top:9px;font-size:11px;color:var(--sec)}
+.dkey span{display:inline-flex;align-items:center;gap:5px}
+.board{width:100%;border-collapse:collapse;font-size:14px;background:var(--surface);
+  border:1px solid var(--border);border-radius:14px;overflow:hidden;display:table}
+.board td{padding:11px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.board tr:last-child td{border-bottom:none}
+.tk{font-weight:600;font-size:13px;white-space:nowrap}
+.tk.big{font-size:22px}
+.chip{font-weight:600;font-size:12px;white-space:nowrap;font-family:var(--mono)}
+.pub{font-size:12px;color:var(--sec);white-space:nowrap}
+.th{color:var(--sec);font-size:13px;min-width:230px}
+.px{text-align:right;white-space:nowrap;font-size:13px}
+.spk{width:92px}.spk svg{display:block}
+.pnl{font-size:12px}
+.pnl.new{color:var(--muted);border:1px solid var(--border);border-radius:20px;padding:2px 8px;font-size:11px}
+.boardwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.spots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:720px){.spots{grid-template-columns:1fr}}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.spot-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.spot-h .src{margin-left:auto;font-size:11px;color:var(--muted)}
+.bigspk{margin:14px 0 6px}.bigspk svg{display:block;width:100%;height:92px}
+.rng{margin:6px 0 10px}
+.rng-lab{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:6px}
+.rng-bar{position:relative;height:6px;background:var(--surface-2);border-radius:4px}
+.rng-fill{position:absolute;inset:0;background:var(--base);border-radius:4px;opacity:.5}
+.rng-dot{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;background:var(--accent);
+  border:2px solid var(--surface);transform:translate(-50%,-50%)}
+.rng-ends{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--sec);margin-top:5px}
+.bull{margin:10px 0 0;padding-left:18px;font-size:13px;color:var(--sec)}
+.bull li{margin-bottom:7px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:720px){.cards{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px;border-top:3px solid}
+.card h3{margin:0;font-size:16px;display:flex;align-items:center;gap:8px}
+.meterwrap{margin:13px 0}
+.meter{height:10px;background:var(--surface-2);border-radius:6px;overflow:hidden}
+.meter i{display:block;height:100%;border-radius:6px}
+.meter-lab{display:flex;justify-content:space-between;font-size:12px;color:var(--sec);margin-top:7px;font-family:var(--mono)}
+.plist{margin:12px 0 0;font-size:12.5px;color:var(--sec);list-style:none;padding:0}
+.plist li{display:flex;gap:7px;align-items:baseline;margin-bottom:8px}
+.plist .c{font-family:var(--mono);font-weight:600;font-size:11px;flex:none}
+.resbox{margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
+.resbox .rh{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.resrow{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.rtk{width:72px;font-size:11px;color:var(--sec);flex:none}
+.rtrack{flex:1;background:var(--surface-2);border-radius:3px;height:12px;position:relative}
+.rbar{height:100%;border-radius:3px}
+.rret{width:52px;text-align:right;font-size:11px;font-weight:600;flex:none}
+.jgs{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(max-width:720px){.jgs{grid-template-columns:1fr}}
+.jg{background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:12px 14px}
+.jt{font-weight:600;font-size:13px;margin-bottom:3px}
+.jd{font-size:12.5px;color:var(--sec)}
+.tmrow{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.tmn{width:200px;font-size:12.5px;color:var(--sec);flex:none}
+@media(max-width:560px){.tmn{width:130px}}
+.tmtrack{flex:1;background:var(--surface-2);border-radius:4px;height:14px}
+.tmbar{height:100%;border-radius:4px;background:var(--accent)}
+.tmc{width:22px;text-align:right;font-size:12px;color:var(--muted)}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted)}
+a{color:var(--accent)}
+</style></head>
+<body><div class="wrap">
+<header>
+<h1>ASML's week: pricing power confirmed, a bonder aimed at Besi, and the first neocloud credit crack</h1>
+<p class="sub">Semiconductor Substack intelligence brief · posts dated Oct 14–16, 2026 · scanned 2026-10-17</p>
+<div class="srcs">
+<span><span class="dot" style="background:var(--pub-irrational)"></span>Irrational Analysis</span>
+<span><span class="dot" style="background:var(--pub-semianalysis)"></span>SemiAnalysis</span>
+<span><span class="dot" style="background:var(--pub-semidoped)"></span>Semi Doped</span>
+</div>
+<p class="status"><b>Run status:</b> SemiAnalysis OK — 1 post (ASML hybrid-bonder deep-dive, Oct-15; full body served despite paywall). Semi Doped OK — 3 dailies (Oct 14/15/16); the Oct-15 "Maia 300" podcast (6.9k-word transcript) is educational, no new call. Irrational Analysis — no post in the 3-day window (last was Oct-11, already ingested). Analyst-consensus / P/E endpoints remain egress-blocked → those panels omitted, not fabricated; Korean & Besi range bars use the 3-mo window (52-wk feed split-distorted).</p>
+</header>
+
+<h2>At a glance</h2>
+<div class="tiles">
+<div class="tile"><div class="n">4</div><div class="l">Posts scanned</div></div>
+<div class="tile"><div class="n">11</div><div class="l">Tickers priced</div></div>
+<div class="tile"><div class="n">13</div><div class="l">Calls logged</div>
+  <div class="distrib">
+    <i style="background:var(--long);width:54%"></i>
+    <i style="background:var(--neutral);width:38%"></i>
+    <i style="background:var(--short);width:8%"></i>
+  </div>
+  <div class="dkey"><span><span class="dot" style="background:var(--long)"></span>7 Long</span>
+  <span><span class="dot" style="background:var(--neutral)"></span>5 Neut</span>
+  <span><span class="dot" style="background:var(--short)"></span>1 Short</span></div>
+</div>
+<div class="tile"><div class="n">Bull</div><div class="l">Book bias (lean long)</div></div>
+</div>
+
+<h2>Call board — 13 calls this run</h2>
+<div class="boardwrap"><table class="board"><tbody>
+<tr>
+<td class="tk">ASML</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semianalysis)"></span><span class="pub">SemiAnalysis</span></td>
+<td class="th">Building a die-to-wafer hybrid bonder — new back-end TAM; sells bonder + scanner as a pair</td>
+<td class="px">$1,657.44</td>
+<td class="spk" data-t="ASML"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">BESI</td>
+<td><span class="chip" style="color:var(--short)">▼ SHORT</span></td>
+<td><span class="dot" style="background:var(--pub-semianalysis)"></span><span class="pub">SemiAnalysis</span></td>
+<td class="th">ASML entry + HBM D2W slipping to 2029+ erode Besi's one moat (logic HB at TSMC/Intel)</td>
+<td class="px">€163.40</td>
+<td class="spk" data-t="BESI"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">ASML</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Record Q3 €11.7B, sold out thru 2028, first-ever EUV price hikes = monopoly pricing power</td>
+<td class="px">$1,657.44</td>
+<td class="spk" data-t="ASML"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">BESI</td>
+<td><span class="chip" style="color:var(--neutral)">● NEUT</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">ASML + Applied (9% owner, Kinex JV) both circling; logic-first threat real, HBM wave overstated</td>
+<td class="px">€163.40</td>
+<td class="spk" data-t="BESI"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">TSM</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Record Q +69% NI, AZ Fab 2 complete, 2028 capex seen to $105B, Terafab only on TSMC's terms</td>
+<td class="px">$422.25</td>
+<td class="spk" data-t="TSM"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">CRWV</td>
+<td><span class="chip" style="color:var(--neutral)">● NEUT</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">CDS implies >60% default odds, bonds >15% yield; Jensen says no new Nvidia backstop needed</td>
+<td class="px">$69.69</td>
+<td class="spk" data-t="CRWV"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">SU.PA</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Raises 2026 guide a 2nd time; power & cooling now the binding constraint, book visible to 2028</td>
+<td class="px">€258.00</td>
+<td class="spk" data-t="SU.PA"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">BE</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">AEP+Bloom 702MW 20-yr Google Wyoming fuel-cell PPA — largest fuel-cell power deal on record</td>
+<td class="px">$236.30</td>
+<td class="spk" data-t="BE"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">000660.KS</td>
+<td><span class="chip" style="color:var(--neutral)">● NEUT</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">FeNAND analog compute-in-memory at OCP, but CXMT 4F² convergence overhangs Korean memory</td>
+<td class="px">₩1,272,000</td>
+<td class="spk" data-t="000660.KS"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">005930.KS</td>
+<td><span class="chip" style="color:var(--neutral)">● NEUT</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Confirms own 4F² dev; no-EUV DRAM convergence rattles shares (but 4F² here ≈ Korea's 6F²)</td>
+<td class="px">₩215,500</td>
+<td class="spk" data-t="005930.KS"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">2454.TW</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Near AI-datacenter chip supply deal with ByteDance — marquee custom-silicon design win</td>
+<td class="px">NT$4,250</td>
+<td class="spk" data-t="2454.TW"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">NVDA</td>
+<td><span class="chip" style="color:var(--long)">▲ LONG</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">$1.4B KYEC prepay locks US test/burn-in capacity — tightening grip on the back-end chokepoint</td>
+<td class="px">$217.23</td>
+<td class="spk" data-t="NVDA"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+<tr>
+<td class="tk">QCOM</td>
+<td><span class="chip" style="color:var(--neutral)">● NEUT</span></td>
+<td><span class="dot" style="background:var(--pub-semidoped)"></span><span class="pub">Semi Doped</span></td>
+<td class="th">Arm breach finding ($2 nominal) secures Nuvia license basis; Transsion IP cross-license</td>
+<td class="px">$178.40</td>
+<td class="spk" data-t="QCOM"></td>
+<td><span class="pnl new">new</span></td>
+</tr>
+
+</tbody></table></div>
+
+<h2>Ticker spotlights</h2>
+<div class="spots">
+<div class="spot">
+<div class="spot-h"><span class="tk big">ASML</span><span class="chip" style="color:var(--long)">▲ LONG</span><span class="src">SemiAnalysis + Semi Doped</span></div>
+<div class="bigspk" data-t="ASML" data-ref="1"></div>
+<div class="rng">
+  <div class="rng-lab"><span>52-wk range</span><span class="px">1,657.44</span></div>
+  <div class="rng-bar"><div class="rng-fill"></div><div class="rng-dot" style="left:67.9%"></div></div>
+  <div class="rng-ends"><span>962</span><span>1,987</span></div>
+</div>
+<ul class="bull"><li>Record Q3 €11.7B (+25% QoQ); 2027-28 EUV allocations sold out, first-ever price hikes — Zeiss optics the binding constraint, 2030 inquiries open.</li><li>SemiAnalysis: patent trail shows ASML building a track-based <b>D2W hybrid bonder</b>, reusing its ORION alignment + EUV particle-control edge — a new back-end TAM aimed at logic (TSMC/Intel) first.</li></ul>
+</div>
+<div class="spot">
+<div class="spot-h"><span class="tk big">BESI</span><span class="chip" style="color:var(--short)">▼ SHORT</span><span class="src">SemiAnalysis</span></div>
+<div class="bigspk" data-t="BESI" data-ref="1"></div>
+<div class="rng">
+  <div class="rng-lab"><span>3-mo range</span><span class="px">163.40</span></div>
+  <div class="rng-bar"><div class="rng-fill"></div><div class="rng-dot" style="left:0.0%"></div></div>
+  <div class="rng-ends"><span>163</span><span>248</span></div>
+</div>
+<ul class="bull"><li>ASML's entry lands straight on Besi's one high-growth moat; logic D2W (TSMC/Intel) is exactly where Besi's HB business sits.</li><li>HBM D2W adoption — the expected big volume driver — SA now sees slipping to 2029 or beyond; Korean challengers closing. Shares sit at the 3-mo low.</li></ul>
+</div>
+<div class="spot">
+<div class="spot-h"><span class="tk big">TSM</span><span class="chip" style="color:var(--long)">▲ LONG</span><span class="src">Semi Doped</span></div>
+<div class="bigspk" data-t="TSM" data-ref="1"></div>
+<div class="rng">
+  <div class="rng-lab"><span>52-wk range</span><span class="px">422.25</span></div>
+  <div class="rng-bar"><div class="rng-fill"></div><div class="rng-dot" style="left:70.3%"></div></div>
+  <div class="rng-ends"><span>272</span><span>486</span></div>
+</div>
+<ul class="bull"><li>Q3 net income +69% to $23.6B — sixth straight record quarter; 2026 revenue-growth forecast raised to 44%, demand still exceeds supply.</li><li>Arizona Fab 2 construction complete; Texas/Terafab talks live but 'won't operate any fab it doesn't control'; brokers model 2028 capex up to ~$105B.</li></ul>
+</div>
+<div class="spot">
+<div class="spot-h"><span class="tk big">CRWV</span><span class="chip" style="color:var(--neutral)">● NEUT</span><span class="src">Semi Doped</span></div>
+<div class="bigspk" data-t="CRWV" data-ref="1"></div>
+<div class="rng">
+  <div class="rng-lab"><span>52-wk range</span><span class="px">69.69</span></div>
+  <div class="rng-bar"><div class="rng-fill"></div><div class="rng-dot" style="left:11.2%"></div></div>
+  <div class="rng-ends"><span>61</span><span>140</span></div>
+</div>
+<ul class="bull"><li>Credit-default swaps imply a better-than-60% chance of default (all-time high); bonds yield >15%, >$10B market value lost in four sessions.</li><li>Jensen Huang publicly steadied the stock (no new backstop needed); Deutsche Bank calls it a buying opportunity — but the neocloud financing model is on trial.</li></ul>
+</div>
+
+</div>
+
+<h2>Source scorecards</h2>
+<div class="cards">
+<div class="card" style="border-top-color:var(--pub-irrational)">
+<h3><span class="dot" style="background:var(--pub-irrational)"></span>Irrational Analysis</h3>
+<div class="meterwrap"><div class="meter"><i style="width:57%;background:var(--pub-irrational)"></i></div>
+<div class="meter-lab"><span>hit rate</span><span>32/56 (57%)</span></div></div>
+<p class="plist" style="color:var(--muted);font-size:12.5px">No post in the 3-day window (last: "The Tragedy of 3D XPoint," Oct-11, ingested). Sep-20/21 optics calls (TSEM long, COHR/CBRS short, LITE long) cross 30d ~Oct 20-21 → resolve next run.</p>
+</div>
+
+<div class="card" style="border-top-color:var(--pub-semianalysis)">
+<h3><span class="dot" style="background:var(--pub-semianalysis)"></span>SemiAnalysis</h3>
+<div class="meterwrap"><div class="meter"><i style="width:43%;background:var(--pub-semianalysis)"></i></div>
+<div class="meter-lab"><span>hit rate</span><span>13/30 (43%)</span></div></div>
+<ul class="plist">
+<li><span class="c" style="color:var(--long)">▲L</span><span><b>ASML</b> — track-based D2W hybrid bonder, litho-alignment edge</span></li>
+<li><span class="c" style="color:var(--short)">▼S</span><span><b>Besi</b> — logic HB moat under attack; HBM D2W slips to 2029+</span></li>
+</ul>
+<p class="plist" style="color:var(--muted);font-size:11.5px">Sep-18 Engram NVDA long (29d) resolves next run.</p>
+</div>
+
+<div class="card" style="border-top-color:var(--pub-semidoped)">
+<h3><span class="dot" style="background:var(--pub-semidoped)"></span>Semi Doped</h3>
+<div class="meterwrap"><div class="meter"><i style="width:55%;background:var(--pub-semidoped)"></i></div>
+<div class="meter-lab"><span>hit rate</span><span>74/134 (55%)</span></div></div>
+<ul class="plist">
+<li><span class="c" style="color:var(--long)">▲L</span><span>ASML · TSM · SU.PA · BE · 2454.TW · NVDA</span></li>
+<li><span class="c" style="color:var(--neutral)">●N</span><span>BESI · CRWV · 000660 · 005930 · QCOM</span></li>
+</ul>
+<div class="resbox"><div class="rh">Sep 14–17 batch resolved · 6W / 7L</div>
+<div class="resrow"><span class="rtk">ALAB</span><div class="rtrack"><div class="rbar" style="width:82%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+12.2%</span></div>
+<div class="resrow"><span class="rtk">CIEN</span><div class="rtrack"><div class="rbar" style="width:32%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+4.7%</span></div>
+<div class="resrow"><span class="rtk">ASML</span><div class="rtrack"><div class="rbar" style="width:23%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+3.4%</span></div>
+<div class="resrow"><span class="rtk">NVDA</span><div class="rtrack"><div class="rbar" style="width:11%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+1.6%</span></div>
+<div class="resrow"><span class="rtk">AVGO</span><div class="rtrack"><div class="rbar" style="width:9%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+1.4%</span></div>
+<div class="resrow"><span class="rtk">TSM</span><div class="rtrack"><div class="rbar" style="width:7%;background:var(--gain)"></div></div><span class="rret" style="color:var(--gain)">+1.1%</span></div>
+<div class="resrow"><span class="rtk">GNRC</span><div class="rtrack"><div class="rbar" style="width:30%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-4.4%</span></div>
+<div class="resrow"><span class="rtk">INTC</span><div class="rtrack"><div class="rbar" style="width:38%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-5.6%</span></div>
+<div class="resrow"><span class="rtk">2454.TW</span><div class="rtrack"><div class="rbar" style="width:42%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-6.2%</span></div>
+<div class="resrow"><span class="rtk">TSEM</span><div class="rtrack"><div class="rbar" style="width:42%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-6.2%</span></div>
+<div class="resrow"><span class="rtk">BE</span><div class="rtrack"><div class="rbar" style="width:74%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-11.0%</span></div>
+<div class="resrow"><span class="rtk">009150.KS</span><div class="rtrack"><div class="rbar" style="width:86%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-12.7%</span></div>
+<div class="resrow"><span class="rtk">005930.KS</span><div class="rtrack"><div class="rbar" style="width:100%;background:var(--loss)"></div></div><span class="rret" style="color:var(--loss)">-14.8%</span></div>
+
+</div>
+</div>
+</div>
+
+<h2>Jargon decoder</h2>
+<div class="jgs"><div class="jg"><div class="jt">Hybrid bonding (D2W / W2W)</div><div class="jd">Copper-to-copper die stacking at pitches too fine for solder bumps; die-to-wafer places single chiplets, wafer-to-wafer bonds whole wafers — the key AI-packaging enabler.</div></div><div class="jg"><div class="jt">Besi</div><div class="jd">Dutch firm that today ships the <i>only</i> volume die-to-wafer hybrid-bonding tools (at TSMC/Intel); ASML's entry attacks its single high-growth moat.</div></div><div class="jg"><div class="jt">Overlay / alignment accuracy</div><div class="jd">How precisely a die lines up on the wafer; hybrid bonding needs <50nm, and ASML's litho stages already hold sub-1nm — its claimed edge.</div></div><div class="jg"><div class="jt">EUV / High-NA EUV</div><div class="jd">ASML's monopoly extreme-ultraviolet lithography; 'first-ever price increases' + sold-out 2027-28 slots confirm the pricing power.</div></div><div class="jg"><div class="jt">4F² DRAM</div><div class="jd">A denser memory-cell layout needing no EUV; China's CXMT and now Samsung are pursuing it — though 4F² here ≈ Korea's current 6F², so not the density leap feared.</div></div><div class="jg"><div class="jt">FeNAND / compute-in-memory</div><div class="jd">SK Hynix NAND that runs AI multiply-accumulate inside the flash cell via ferroelectric material, cutting the data round-trip to HBM/DRAM.</div></div><div class="jg"><div class="jt">Neocloud</div><div class="jd">A GPU-rental operator (CoreWeave, Nebius) financing chips against hyperscaler contracts; CoreWeave's CDS blowout is the first real stress-test of the model.</div></div><div class="jg"><div class="jt">CDS (credit-default swap)</div><div class="jd">Market insurance on a bond defaulting; a >60% implied default probability is a vote of no confidence in the borrower.</div></div><div class="jg"><div class="jt">Terafab</div><div class="jd">Elon Musk's proposed $100B+ Texas megafab; TSMC says it will take part only in a fab it controls and runs.</div></div><div class="jg"><div class="jt">Nuvia / Arm license</div><div class="jd">Qualcomm's CPU-core team; a Delaware jury found Arm breached the license but awarded only $2 — letting Qualcomm keep its Nuvia-derived rights.</div></div><div class="jg"><div class="jt">KYEC</div><div class="jd">King Yuan Electronics, a Taiwan test house; Nvidia's $1.4B prepay reserves US burn-in/test capacity — the new back-end chokepoint as Rubin's power climbs.</div></div></div>
+
+<h2>Themes in play</h2>
+<div><div class="tmrow"><span class="tmn">Advanced packaging / hybrid bonding</span><div class="tmtrack"><div class="tmbar" style="width:100%"></div></div><span class="tmc">6</span></div>
+<div class="tmrow"><span class="tmn">Semi equipment & EUV litho</span><div class="tmtrack"><div class="tmbar" style="width:100%"></div></div><span class="tmc">6</span></div>
+<div class="tmrow"><span class="tmn">AI debt financing / neocloud</span><div class="tmtrack"><div class="tmbar" style="width:83%"></div></div><span class="tmc">5</span></div>
+<div class="tmrow"><span class="tmn">Memory & DRAM cycle (4F²)</span><div class="tmtrack"><div class="tmbar" style="width:83%"></div></div><span class="tmc">5</span></div>
+<div class="tmrow"><span class="tmn">Datacenter power & cooling</span><div class="tmtrack"><div class="tmbar" style="width:67%"></div></div><span class="tmc">4</span></div>
+<div class="tmrow"><span class="tmn">Foundry & process node</span><div class="tmtrack"><div class="tmbar" style="width:67%"></div></div><span class="tmc">4</span></div>
+<div class="tmrow"><span class="tmn">Custom silicon / ASIC</span><div class="tmtrack"><div class="tmbar" style="width:50%"></div></div><span class="tmc">3</span></div>
+<div class="tmrow"><span class="tmn">Optics & interconnect</span><div class="tmtrack"><div class="tmbar" style="width:50%"></div></div><span class="tmc">3</span></div>
+</div>
+
+<footer>
+Generated from public Substack post bodies (irrationalanalysis · newsletter.semianalysis · daily.semidoped). Prices &amp; 3-mo history via yfinance on 2026-10-17; calls opened at spot this run (P&amp;L tracked in the wiki). Not investment advice.
+</footer>
+</div>
+
+<script>
+const PRICES={"ASML": {"price": 1657.44, "hi52": 1986.87, "lo52": 961.95, "lo3": 1550.69, "hi3": 1883.12, "closes": [1745.32, 1736.77, 1799.18, 1799.53, 1800.67, 1754.82, 1653.12, 1582.95, 1550.69, 1651.44, 1629.0, 1642.52, 1711.89, 1678.22, 1704.37, 1740.99, 1733.48, 1799.38, 1810.07, 1847.9, 1844.08, 1883.12, 1802.98, 1751.73, 1750.31, 1763.76, 1740.13, 1744.16, 1745.64, 1735.01, 1696.16, 1696.01, 1665.14, 1682.3, 1646.19, 1714.88, 1764.85, 1729.52, 1687.43, 1698.3, 1575.15, 1591.48, 1602.22, 1629.67, 1679.92, 1711.32, 1747.9, 1744.61, 1722.5, 1743.94, 1771.41, 1834.39, 1811.67, 1808.49, 1867.31, 1859.86, 1834.1, 1804.96, 1769.79, 1780.34, 1750.24, 1717.76, 1650.0, 1657.44]}, "TSM": {"price": 422.25, "hi52": 485.8, "lo52": 272.18, "lo3": 373.67, "hi3": 485.8, "closes": [397.3, 401.22, 423.47, 420.08, 414.47, 402.33, 398.02, 391.26, 373.67, 402.23, 403.17, 405.02, 416.05, 412.89, 417.08, 418.92, 417.35, 420.93, 428.0, 429.34, 425.21, 429.82, 412.3, 410.99, 414.89, 417.83, 409.02, 416.29, 416.57, 426.16, 416.4, 414.21, 412.89, 414.39, 415.89, 427.76, 437.83, 434.2, 426.88, 432.08, 416.89, 412.64, 417.72, 430.26, 434.67, 445.14, 452.0, 446.57, 451.15, 450.61, 452.88, 456.94, 456.19, 459.2, 472.78, 485.8, 482.3, 472.2, 457.99, 453.31, 444.35, 445.12, 430.0, 422.25]}, "CRWV": {"price": 69.69, "hi52": 139.93, "lo52": 60.82, "lo3": 60.82, "hi3": 107.73, "closes": [73.21, 73.06, 79.58, 82.64, 81.1, 71.88, 70.79, 67.3, 60.82, 73.9, 71.77, 85.76, 91.9, 89.89, 85.33, 90.67, 88.19, 90.32, 107.73, 106.29, 105.26, 106.0, 93.17, 90.87, 89.76, 87.85, 86.25, 88.04, 88.01, 86.8, 84.23, 84.89, 81.85, 80.93, 84.56, 89.36, 99.83, 94.94, 89.12, 88.99, 82.98, 80.92, 83.35, 79.88, 81.36, 85.43, 86.76, 86.9, 90.13, 87.59, 85.07, 85.93, 87.12, 88.57, 89.62, 87.39, 91.72, 88.45, 81.58, 82.08, 80.26, 77.81, 65.78, 69.69]}, "SU.PA": {"price": 258.0, "hi52": 311.0, "lo52": 218.87, "lo3": 254.55, "hi3": 311.0, "closes": [264.35, 262.45, 264.7, 268.8, 269.0, 265.4, 268.05, 265.6, 262.0, 256.8, 284.6, 289.6, 290.1, 299.25, 300.4, 300.6, 303.7, 302.25, 305.75, 311.0, 309.25, 306.4, 308.75, 295.1, 294.0, 294.3, 296.8, 291.8, 296.25, 299.2, 297.55, 301.75, 294.6, 288.2, 286.75, 287.35, 288.0, 295.5, 299.6, 289.7, 287.4, 291.1, 272.05, 275.3, 279.4, 287.1, 285.75, 295.0, 295.0, 293.35, 289.8, 291.0, 290.5, 296.35, 292.0, 292.6, 303.0, 272.8, 260.5, 254.55, 261.1, 266.4, 265.35, 264.4, 264.4, 258.0]}, "000660.KS": {"price": 1272000.0, "hi52": 2918367.25, "lo52": 451170.06, "lo3": 1262000.0, "hi3": 1918584.0, "closes": [1841600.62, 1763617.62, 1835602.0, 1829603.25, 1918584.0, 1758618.62, 1815606.38, 1549664.0, 1400696.25, 1321713.38, 1717627.62, 1566660.25, 1576658.12, 1667638.38, 1494675.88, 1421691.75, 1419692.12, 1424691.12, 1503674.0, 1592654.62, 1644643.38, 1661639.75, 1499674.88, 1690633.38, 1729625.0, 1670637.75, 1677636.25, 1687634.12, 1729625.0, 1653000.0, 1674000.0, 1693000.0, 1613000.0, 1596000.0, 1647000.0, 1783000.0, 1793000.0, 1856000.0, 1853000.0, 1812000.0, 1697000.0, 1690000.0, 1759000.0, 1745000.0, 1857000.0, 1868000.0, 1840000.0, 1862000.0, 1768000.0, 1765000.0, 1776000.0, 1833000.0, 1841000.0, 1773000.0, 1723000.0, 1681000.0, 1605000.0, 1443000.0, 1419000.0, 1262000.0, 1272000.0]}, "005930.KS": {"price": 215500.0, "hi52": 362100.66, "lo52": 94042.82, "lo3": 207000.0, "hi3": 285500.0, "closes": [255000.0, 244000.0, 259000.0, 260500.0, 270000.0, 249500.0, 254000.0, 220000.0, 208500.0, 207000.0, 262500.0, 239500.0, 240000.0, 246000.0, 230500.0, 231000.0, 230000.0, 239500.0, 255500.0, 268000.0, 274500.0, 268500.0, 247500.0, 271000.0, 281500.0, 257000.0, 257000.0, 261500.0, 266000.0, 257000.0, 260000.0, 261000.0, 250500.0, 250000.0, 255500.0, 270000.0, 269500.0, 269500.0, 269000.0, 259500.0, 249000.0, 248500.0, 253500.0, 252500.0, 261000.0, 274000.0, 276500.0, 285500.0, 270000.0, 272500.0, 268500.0, 276000.0, 276000.0, 272000.0, 268500.0, 262000.0, 250500.0, 232000.0, 232000.0, 210000.0, 215500.0]}, "2454.TW": {"price": 4250.0, "hi52": 5285.0, "lo52": 1116.55, "lo3": 3150.0, "hi3": 5285.0, "closes": [3700.0, 3370.0, 3340.0, 3670.0, 3850.0, 3875.0, 3750.0, 3680.0, 3315.0, 3150.0, 3235.0, 3555.0, 3910.0, 3865.0, 4000.0, 3920.0, 3900.0, 3960.0, 4020.0, 4015.0, 4225.0, 4210.0, 4050.0, 3885.0, 3845.0, 3700.0, 3790.0, 3765.0, 3735.0, 3945.0, 3865.0, 3985.0, 3925.0, 4315.0, 4275.0, 4340.0, 4415.0, 4760.0, 4710.0, 4625.0, 4720.0, 4585.0, 4560.0, 4430.0, 4530.0, 4500.0, 4710.0, 5010.0, 5180.0, 5185.0, 5285.0, 4910.0, 4920.0, 4980.0, 4950.0, 5165.0, 4920.0, 4835.0, 4690.0, 4625.0, 4525.0, 4475.0, 4165.0, 4250.0]}, "NVDA": {"price": 217.23, "hi52": 239.24, "lo52": 164.79, "lo3": 189.8, "hi3": 239.24, "closes": [202.58, 203.05, 207.06, 211.82, 208.53, 206.61, 196.29, 196.79, 189.8, 194.82, 200.53, 206.41, 211.7, 218.97, 218.75, 223.71, 217.31, 217.26, 223.84, 225.05, 224.91, 224.76, 219.49, 217.32, 216.61, 214.48, 208.25, 212.81, 209.43, 227.73, 217.31, 220.53, 217.2, 224.16, 228.19, 230.1, 225.48, 223.42, 218.36, 218.29, 210.96, 212.17, 213.9, 219.34, 222.27, 227.38, 228.87, 225.51, 224.58, 225.07, 228.86, 227.21, 228.38, 230.86, 233.95, 238.9, 239.24, 237.47, 230.48, 229.28, 226.32, 228.52, 221.3, 217.23]}, "QCOM": {"price": 178.4, "hi52": 248.74, "lo52": 122.94, "lo3": 146.81, "hi3": 201.97, "closes": [170.85, 169.4, 172.56, 174.68, 170.18, 166.07, 169.12, 162.0, 154.84, 150.78, 146.81, 150.75, 161.79, 156.68, 159.52, 166.95, 161.29, 161.8, 162.19, 163.9, 164.89, 161.3, 159.32, 161.03, 159.87, 159.88, 157.67, 159.69, 162.83, 163.89, 163.3, 169.56, 165.71, 169.04, 168.57, 168.74, 174.09, 176.4, 176.88, 181.97, 180.15, 187.8, 184.84, 188.71, 177.72, 194.23, 198.27, 197.24, 194.26, 201.97, 187.48, 184.1, 184.04, 182.09, 184.87, 180.79, 181.03, 177.12, 176.01, 175.5, 174.43, 176.86, 172.62, 178.4]}, "BE": {"price": 236.3, "hi52": 345.85, "lo52": 76.97, "lo3": 163.75, "hi3": 295.78, "closes": [214.96, 197.06, 226.26, 218.22, 217.3, 184.89, 188.18, 166.84, 163.75, 207.12, 205.81, 218.32, 228.11, 234.33, 228.96, 219.34, 210.63, 211.21, 237.16, 236.22, 229.94, 232.16, 209.01, 206.63, 202.48, 201.45, 204.02, 217.45, 218.21, 217.83, 210.77, 206.3, 213.63, 217.28, 235.55, 252.87, 277.22, 269.28, 258.49, 275.75, 257.05, 259.35, 270.02, 280.76, 265.63, 272.89, 276.53, 275.19, 266.65, 288.7, 262.87, 291.25, 276.98, 277.58, 289.15, 286.65, 295.78, 291.29, 272.82, 280.5, 262.28, 263.45, 239.34, 236.3]}, "BESI": {"price": 163.4, "hi52": 248.1, "lo52": 163.4, "lo3": 163.4, "hi3": 248.1, "closes": [236.2, 225.5, 223.5, 239.5, 248.1, 229.9, 227.0, 205.1, 197.8, 189.5, 197.5, 198.25, 201.4, 217.7, 215.5, 217.2, 221.4, 219.8, 225.0, 231.8, 235.2, 233.5, 237.8, 222.3, 212.2, 210.8, 212.8, 208.0, 199.2, 192.1, 195.0, 197.5, 195.5, 189.15, 192.5, 191.4, 196.65, 202.5, 195.2, 188.95, 184.1, 189.25, 175.95, 176.35, 178.85, 181.5, 186.65, 188.65, 191.9, 189.5, 187.4, 187.6, 184.35, 192.5, 191.8, 191.4, 204.8, 203.0, 192.05, 175.75, 179.9, 179.45, 175.6, 172.5, 174.55, 163.4]}};
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+const PC={LONG:"--long",SHORT:"--short",NEUT:"--neutral"};
+function cvar(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+document.querySelectorAll(".spk").forEach(el=>{
+  const t=el.dataset.t,d=PRICES[t]; if(!d)return;
+  el.innerHTML=sparkSVG(d.closes,84,26,cvar("--accent"));
+});
+document.querySelectorAll(".bigspk").forEach(el=>{
+  const t=el.dataset.t,d=PRICES[t]; if(!d)return;
+  el.innerHTML=sparkSVG(d.closes,480,92,cvar("--accent"),{ci:d.closes.length-1,refline:true});
+});
+</script>
+</body></html>
