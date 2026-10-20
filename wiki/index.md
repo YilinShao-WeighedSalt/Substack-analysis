@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-17
+updated: 2026-10-20
 ---
 
 # Wiki Index
@@ -205,6 +205,7 @@ updated: 2026-10-17
 - [[cbrs-yield-short-vs-inference-tam]] — CBRS: parametric-yield short vs. working tape vs. TileRT TAM erosion
 - [[jalapeno-parametric-yield-vs-benchmarks]] — OpenAI Jalapeño: SA benchmark win vs IA parametric-yield "disaster" (25% A0→B0)
 - [[cien-ia-profit-take-vs-sd-operational-bull]] — CIEN: Irrational profit-take vs Semi Doped operational bull (1.6T India/UK wins)
+- [[ai-credit-subprime-vs-binding-leases]] — AI credit: Irrational's 'sub-prime/CDO' bear vs SemiAnalysis's >$1T binding-lease bull
 
 ## Publications
 
@@ -262,6 +263,7 @@ updated: 2026-10-17
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-19-ocp-global-summit-2026]] — OCP Global Summit 2026 recap: NPO (Open CPX) replaces CPO, integrated-laser NPO a 'terrible idea', slow-and-wide 32-64G beats 448G; TDECQ waveform-averaging cheating exposed (Marvell/Macom); 'Bubble Vibes' sub-prime/CDO analogy, de-levered $2M, Anthropic $2T→$1.5T (LONG CRDO/SMTC/GLW/LITE/AVGO, SHORT COHR, NEUT MRVL/MTSI/ALAB)
 - [[irrationalanalysis-2026-10-11-the-tragedy-of-3d-xpoint]] — The Tragedy of 3D XPoint (Optane/QuantX): PCM between NAND & DRAM, died at 4 layers + NVMe/Memory-mode interface choke; App-direct persistence was the real value; CXL the right bus; SpaceX/Terafab the long-shot reviver (NEUT INTC "back in stride"/MU "won't bother")
 - [[irrationalanalysis-2026-10-07-marvell-2026-investor-day]] — Marvell 2026 Investor Day roast: SRAM/die-to-die/one 1.6T constellation praised, TFLN/µLED/EAM-to-CPO derided, $70-90B FY31 = bubble tell; sold CIEN to add AXTI (NEUT MRVL/CIEN, LONG AVGO/AXTI)
 - [[irrationalanalysis-2026-10-04-practical-parametric-yield]] — Practical Parametric Yield (Cerebras): wafer-scale can't bin/harvest/socket-test → structural GM drag, but CS-4 progress → H1-27 inflection; softens the activist short (NEUTRAL CBRS); Jalapeño 25% A0→B0 = yield "disaster"
@@ -412,6 +414,7 @@ updated: 2026-10-17
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]] — Datacenters 2027 (paid preview): +50GW in one year defended vs Gerstner's 25GW hunch; >$1T binding/non-cancellable leases YTD; modular 'LEGO' buildout (Google prefab/Meta tent/AWS SAMDC/DayOne 9mo); power 'broadly solved' via BTM; memory/logic the next 2027-28 constraint (LONG VRT/STRL/ABB, supplier reads)
 - [[semianalysis-2026-10-15-asml-hybrid-bonding]] — ASML Is Building a Hybrid Bonding Tool: patent trail (WO2025201788A1) → track-based die-to-wafer bonder reusing ORION alignment + EUV particle-control edge; logic (TSMC/Intel) first; a structural threat to Besi's one D2W moat; HBM D2W slips to 2029+ "if at all" (LONG ASML, SHORT BESI; AMAT implicated via 9%+Kinex)
 - [[semianalysis-2026-10-05-anthropic-subscriptions-offer-5x]] — Anthropic subs ~5× OpenAI API-equivalent value; OAI halved $200 plan + $500 tier; subs ~10% rev but >40% inference compute, −$36M rev/MW (economics deep-dive, no priced ticker)
 - [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] — GLM5.3 sparse attention: DSA cuts attention compute/bandwidth but NOT HBM capacity (top-k needs full context); HiSparse KV→DRAM offload; InferenceX GB200/GB300/MI355X-ATOM no uniform cost winner; GLM tuned for Moore Threads? (technical, no priced call; MU-supportive, NVDA/AMD read)
@@ -547,6 +550,8 @@ updated: 2026-10-17
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-19-daily-update]] — Daily Oct 19: Samsung routes Nvidia HBM4E base die to TSMC 3nm (SK Hynix eyes Intel) = value to logic designer; CXMT ~600% rev → ~10% DRAM share (stock −7.8%); Japan $4.1B Kumamoto 3nm; Anthropic >10% junk-yield chip paper + MSFT quits Nscale Essex pre-IPO; SEMCO $251M substrate + Nvidia financing Unimicron; QCOM 8EEG6 overheat/Exynos risk (LONG TSM/NVDA/INTC/009150/VICR, NEUT 005930/000660/QCOM/MU)
+- [[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]] — From the Editor: Meta's on-device+ads edge (Muse Wonder #2, Spark Open free on Mac Studios) vs OpenAI's courtroom device fight; first Apple-Meta collab since 2017 (LONG META/AAPL)
 - [[semidoped-2026-10-16-daily-update]] — Daily Oct 16: ASML enters hybrid bonding, pressing Besi (echoes SA; logic-first, Applied owns 9%+Kinex); CoreWeave CDS >60% default odds (Jensen: no new backstop); TSMC AZ Fab 2 complete, 2028 capex to $105B; Schneider raises 2026 guide 2nd time (power/cooling binding constraint); SK Hynix 3D FeNAND compute-in-memory (NEUT BESI/CRWV/000660, LONG TSM/SU.PA/ASML)
 - [[semidoped-2026-10-15-daily-update]] — Daily Oct 15: TSMC record Q +69% NI/guide to 44%/Terafab on TSMC's terms; ASML first-ever EUV price hikes + withholding 2029-30 slots; Anthropic $16.8B pre-IPO Q + NTT ¥1T Osaka; ByteDance near MediaTek AI-DC chip deal; CXMT+Samsung 4F² no-EUV convergence rattles Korea; CoreWeave bonds >15% distressed; AEP+Bloom 702MW Google fuel-cell PPA (LONG TSM/ASML/2454/BE, NEUT 005930/000660/CRWV)
 - [[semidoped-2026-10-14-daily-update]] — Daily Oct 14: ASML Q3 €11.7B/2027-28 EUV sold out/demand outruns supply thru 2028; Nvidia $1.4B KYEC prepay locks US test/burn-in capacity; Delaware jury finds Arm breached license ($2 nominal, secures QCOM Nuvia rights); SK Chairman sells $406M stake to Michael Dell's MSD (LONG ASML/NVDA, NEUT QCOM)

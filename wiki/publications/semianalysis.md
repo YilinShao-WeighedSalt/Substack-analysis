@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-17
+updated: 2026-10-20
 handle: semianalysis
-calls_logged: 247
-hit_rate: "13/30 (43%), ~12 open"
+calls_logged: 250
+hit_rate: "13/31 (42%), ~14 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **Datacenters 2027: The Year of Acceleration, +50GW in a Single Year (2026-10-19, paid — body served as a preview, truncated at the paywall).** SA defends its **+43-50GW/2027 forecast** against the FUD (Brad Gerstner's "~25GW hunch" on the All-In pod): >24GW already in advanced construction. Two proprietary leading indicators: **quarterly self-build construction starts "going parabolic"** (two hyperscalers) and **>$1T of binding/non-cancellable leases signed YTD 2026** (15-20yr, $30-50B TCV/GW; leases→debt→buildout; the Microsoft 2023-24 freeze then Oracle's H2-25 gigantic leases explain the cadence). Delivery via the **modular "LEGO datacenter"** movement (Google prefab electrical, Meta tent, AWS SAMDC/Project Houdini, DayOne ~9-mo builds; MEP labor −63%, <10-mo construction); power "broadly solved" via BTM; ex-US buildout sharply accelerating 2027. Preview cut off before the oversupply section; the paywalled teaser flags **memory/logic becoming the #1 constraint in 2027-28** ("The Great Silicon Shortage"). SA explicitly names **Vertiv, ABB, Sterling Infrastructure** as order-surge beneficiaries → **LONG [[VRT]] $206.42 / [[STRL]] $424.36 / [[ABB]] CHF 75.68** (supplier calls, conviction low). (→ [[modular-datacenter-construction]], [[ai-debt-financing]], [[datacenter-power]].)
+
+**hit_rate note (2026-10-20): 13/30 → 13/31 (42%) — the Sep-18 Engram NVDA long resolves a loss.** **[[NVDA]] LONG ($222.27) → $214.13 = -3.7% LOSS ✗** (the DRAM-offload/CUDA-moat long gave back into October's AI-panic tape; AMD/MU Sep-18 were NEUTRAL, excluded). The Sep-25 ClusterMAX longs + Oct-15 ASML/BESI calls resolve in later runs. This run's 3 new calls (all long supplier reads from the Datacenters-2027 preview) opened at spot.
 
 - **ASML Is Building a Hybrid Bonding Tool! (2026-10-15, paywalled, full body served).** From 27 bonding patent families (Dec-2022→Nov-2024, mostly D2W), a March *The Elec* report, and its 2024 Investor Day roadmap, SA concludes **ASML is building a die-to-wafer (D2W) hybrid bonder** (likely a W2W TWINSCAN variant too). The design is architecturally novel — dies ride individual holders around a **track** (SuperTrak CONVEYANCE) past inspection/clean/plasma-activation/metrology stations, the station head moving to the die; fine placement by holder actuators + chuck (shuttle repeatability ~10µm is far from the 50nm bond need). SA's thesis: ASML's **ORION alignment sensor** (reads a diffraction grating through CMP/plasma asymmetry; already corrects post-bond overlay 40-60nm→<4nm) + EUV-grade particle control are the two yield-setting factors, so it can win **logic first** (TSMC/Intel, where D2W already runs in volume at ~6µm→4.5µm SoIC pitch) and sell bonder+scanner as a premium pair. → **[[ASML]] LONG $1,657.44** (new back-end TAM + vertical-integration leg). **Bad news for [[BESI]]** — the only volume D2W supplier, concentrated at ASML's 20-yr customers; HBM D2W (the expected big volume driver) SA now sees slipping to **2029+ "if at all"**, Korean challengers catching up → **[[BESI]] SHORT €163.40** (BESI.AS, at 3-mo low). **[[AMAT]]** implicated too (9% Besi owner + Kinex D2W JV). → [[advanced-packaging]], [[semiconductor-equipment]].
 

@@ -2,9 +2,9 @@
 type: theme
 title: "Silicon Photonics & Optical Interconnects"
 tags: []
-related: []
+related: ["[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2024-02-08
-updated: 2026-10-14
+updated: 2026-10-20
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -148,3 +148,8 @@ Irrational Analysis's Q3 review restated its **anti-µLED thesis** emphatically 
 
 ## 2026-10-14 — SRMO / micro-VCSEL, 1.6T ZeroFlap, USFP (Semi Doped, OCP)
 **SRMO (Short-Reach Micro-Emitter Optics)** = a new Credo-led OCP standardization workstream (founding: ams OSRAM, Lumentum, Corning, Astera) for **micro-emitter** optical links inside AI racks (intra-rack + rack-to-rack). **Micro-VCSEL** = the "wide-but-slow" approach: many optical emitters in parallel at modest per-channel speeds rather than flogging a few fast channels — closing the **~50m gap between active copper and pluggable optics**. Credo shipped the **1.6T ZeroFlap Active Light Cable** (first row-scale wide-parallel optical interconnect, customer shipments 2027) and **pivoted from µLED to µVCSEL** a year after buying Hyperlume (µLEDs "falling behind") — corroborating IA's Oct-1 reversal (its short was on µLED-the-tech, not Credo-the-franchise). **Lumentum + Corning + Astera** demoed **1060nm-VCSEL PCIe-over-optics** live at OCP. **USFP** = a new Nvidia+Cisco pluggable-optics form factor (vs XPO); Meta disclosed the 102.4T **IceCube** switch + **MetaRoCE** transport. Celestica DS6005 = a CPO switch.
+
+## 2026-10-20 — OCP 2026: NPO / Open CPX, and the optics-quality war goes to open combat (Irrational Analysis)
+**Open CPX / NPO** was *the* OCP 2026 topic (replacing 2025's CPO hype). **Open CPX** = a near-package-optics MSA (spec v1.0, 78pp): optical engines bolted beside the switch ASIC, each module ~= **4-4.5 legacy transceivers**; **Type 1** = connectors on the package substrate, **Type 2** = on the PCB; both integrated-laser (ILS) and external-laser (ELS) options exist. IA's hard view: **integrated-laser NPO is "a terrible idea"** — in the Meta+Broadcom large-scale CPO trial the #1 failure (link-flap) came from the laser driver; lasers mode-hop under current ripple + thermal noise, so putting them *inside* the module is asking for it. Tell: Innolight/Terrahop's "Diablo" ships **4 spare lasers** (one cold spare per active laser) — tacit admission the lasers die. **Lasers must be serviceable; PIC + drive electronics are reliable.**
+**Measurement cheating exposed.** **TDECQ** (transmitter-eye quality, lower=better: <1.5 dB great, >3 dB fail) was gamed across the floor via **waveform averaging** (secretly smooths the eye → invalidates the number). IA called out Ciena, Innolight/Terrahop, **Marvell** ("legendary incompetent cheating" — 400G SerDes so bad the top Keysight DCA-X scope *couldn't measure TDECQ at all*, RLM failed 0.95), and **Macom** (7.4 dB TDECQ even with 64× averaging; "losers"). Honest demos: **Credo** (RLM 0.975, no averaging) and **Semtech** (analyst-day, near-all-excellent).
+**Slow-and-wide wins; 448G is a disaster.** IA: optimal SerDes is **32-64G NRZ direct-drive**; 224G "barely works," **448G will be a disaster** (package-core + BGA-ball reflections murder the signal before the PCB; needs CPC connectors). Optical modulators lack extinction ratio for PAM6 → PAM4 is the practical ceiling; IA wants PAM8 + heavy FEC. **Credo** publicly **killed µLED, pivoted all products to µVCSEL** (uLED got ~2 min of CEO mention) → very bullish [[CRDO]]. **Coherent's** UHP CPO/NPO laser "catastrophically fails" the **<1 MHz effective β-separation linewidth** OCI-MSA spec (Jim Anderson "full of shit") → SHORT [[COHR]]. **Lumentum** cut off Ayar/small buyers → supply moat ([[LITE]]); **Ayar Labs'** ELSFP runs on Lumentum lasers it can no longer buy (Sievers can't hit 23 dBm/λ) even as it raises at a $10B valuation. **Corning** showed a "magic" lensed optical connector (1.41→0.26 dB IL, minimal cleaning) → LONG [[GLW]]. **Semtech** wins in **both copper and optics** (SiGe CTLE leader, high GM) → LONG [[SMTC]]. **Avicena** (µLED startup, under NDA) surprisingly impressed IA. **Quintessent** QD comb laser flopped (power <0 dBm, hidden multi-wavelength RIN).

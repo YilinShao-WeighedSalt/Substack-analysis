@@ -2,9 +2,9 @@
 type: theme
 title: "Modular / Prefab 'LEGO' Datacenter Construction"
 tags: [datacenter, construction, modular, prefab]
-related: ["[[semianalysis-2026-07-29-lego-datacenters]]", "[[FIX]]", "[[STRL]]", "[[PWR]]", "[[FLEX]]", "[[SU.PA]]", "[[VRT]]", "[[datacenter-power]]", "[[ai-infrastructure-capex]]"]
+related: ["[[semianalysis-2026-07-29-lego-datacenters, "[[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]]"]]", "[[FIX]]", "[[STRL]]", "[[PWR]]", "[[FLEX]]", "[[SU.PA]]", "[[VRT]]", "[[datacenter-power]]", "[[ai-infrastructure-capex]]"]
 created: 2026-07-31
-updated: 2026-09-26
+updated: 2026-10-20
 status: emerging
 first_seen: 2026-07-29
 ---
@@ -42,3 +42,6 @@ Reliability doubts (operators/MEP contractors report modular hasn't always met c
 
 ### 2026-09-26 — China does the LEGO playbook at national scale (SemiAnalysis China Datacenter Model)
 SemiAnalysis's new building-level China census (1,000+ facilities) shows the modular/prefab playbook the US is only now adopting has been China's standard for a decade (Tencent's 3rd-gen modular design dates to 2014). Key contrasts vs the US "Wild West of LEGO Datacenters": the US buildout is **power-gated** (interconnect queues, transformer lead times); **China is chip-gated** — power abundant, permitting a policy funnel (3-6mo vs US 12-13mo), labor plentiful. 100MW facility delivery compressed from ~18mo (cloud era) to **~12mo**; state-of-the-art faster. Methods: greenfield low-rise long-span **steel halls** (factory steel + on-site foundations, concrete only in the ground); **Alibaba CUBE 5.0 "100-day datacenter"** (30d factory + 50d install + 20d commissioning, ground-break-to-commissioning ~7-9mo, >10% cheaper than prior gen); Tencent **T-Block** full-modular containers. Full-modular is NOT the national default for two very-Chinese reasons: (1) cheap/abundant site labor makes the marginal container speed-gain small, and (2) colo developers pledge **real buildings** as bank collateral (a yard of containers appraises poorly). Capex a fraction of comparable US wholesale.
+
+## 2026-10-20 — SemiAnalysis: +50GW in 2027, >$1T binding leases, "LEGO" buildout (preview)
+**SemiAnalysis "Datacenters 2027" (Oct-19, paid preview)** forecasts **+50GW of datacenter capacity in a single year** (its +43GW/2027 number vs Brad Gerstner's "~25GW hunch") — essentially the entire cumulative global DC market through 2024, built in one year. The leading indicators behind it: **quarterly self-build construction starts "going parabolic"** (two hyperscalers driving) and **>$1T of binding/non-cancellable leases signed YTD 2026** (typically 15-20yr, $30-50B TCV/GW; leases lead debt raises lead buildout). Delivery is handled by the **modular "LEGO datacenter" movement**: **Google** modularized electrical architecture (prefab modules replace onsite cabling); **Meta** tent design; **AWS** simplified "SAMDC" shell + prefab data halls ("Project Houdini") → construction under 10 months and MEP labor down **up to 63%**; **DayOne** cut build timelines to ~9 months (~3GW leased since 2023). Power "broadly solved" via **behind-the-meter** generation (fuel cells, truck engines, refurbished turbines bypassing 5-10yr grid queues); the **ex-US buildout is sharply accelerating in 2027**. Open question (behind paywall): oversupply risk, and **memory/logic becoming the new #1 constraint in 2027-28**. SA named **Vertiv, ABB, Sterling Infrastructure** as order-surge beneficiaries → LONG [[VRT]]/[[STRL]]/[[ABB]]. → [[VRT]], [[STRL]], [[ABB]], [[datacenter-power]].

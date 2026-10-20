@@ -4,11 +4,11 @@ title: "ASML — ASML Holding"
 tags: []
 related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-04-18
-updated: 2026-10-17
+updated: 2026-10-20
 ticker: ASML
 current_stance: long
 conviction: medium
-last_review: 2026-10-17
+last_review: 2026-10-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -49,6 +49,9 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 
 **Update 2026-09-17:** SD LONG $1,602.22 — ASML weighing production beyond its 110-unit EUV ceiling for 2028; the limiter is assembly speed, not supply chain (JPM). Demand-outruns-capacity is the cleanest read; stock dipped on the news but the setup is bullish.
 
+
+
+**Update 2026-10-20:** Resolution — SD's **Sep-18 LONG ($1,679.92)** -> $1,641.52 = **-2.3% LOSS ✗** (SEMICON-India/Tata binding-pacts entry, thin give-back).
 
 ## 2026-09-20 run update
 | 2026-09-18 | [[semidoped]] | LONG | 1679.92 | India semi market seen $120B by 2030; deepens Tata Electronics fab support; SEMICON India pipeline turns binding |

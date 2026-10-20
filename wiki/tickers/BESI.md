@@ -4,11 +4,11 @@ title: "BESI — BE Semiconductor Industries"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]"]
 created: 2025-06-15
-updated: 2026-10-17
+updated: 2026-10-20
 ticker: BESI
 current_stance: short
 conviction: high
-last_review: 2026-10-17
+last_review: 2026-10-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -24,6 +24,9 @@ The BESI long was initiated in June 2025 as a conviction play on hybrid bonding 
 ## Outcome tracking
 No px@call values are available across any of the three entries, so quantitative return attribution is not possible. The directional thesis has remained consistent and has been reinforced rather than challenged: each successive post added a new demand catalyst (CPO/XPU platform, then HBM4 signal-integrity) without walking back prior arguments. The live view would be falsified by a delay or cancellation of Broadcom's hybrid-bonding 3.5D XPU roadmap, a technical pivot away from hybrid bonding for HBM4 (e.g., industry converging on a micro-bump fix for the pin-speed problem), or a competing packaging vendor winning BESI's key customer sockets.
 
+
+
+**Update 2026-10-20:** Resolution — SD's **Sep-18 LONG (€186.65)** -> €155.55 (BESI.AS) = **-16.7% LOSS ✗**. SEMICON-India Besi enthusiasm unwound as SA's ASML-hybrid-bonder threat + 3-mo low pressed the name.
 
 ## 2026-09-20 run update
 | 2026-09-18 | [[semidoped]] | LONG | 186.65 | Tata signs binding packaging pact (Nexperia/Fujifilm/Besi) at SEMICON India 2026; India fab pipeline turns to commitments |

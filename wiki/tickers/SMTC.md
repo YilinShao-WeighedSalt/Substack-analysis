@@ -2,13 +2,13 @@
 type: ticker
 title: "SMTC — Semtech"
 tags: []
-related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semidoped-2026-09-22-daily-update]]"]
+related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semidoped-2026-09-22-daily-update]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2025-06-15
-updated: 2026-09-23
+updated: 2026-10-20
 ticker: SMTC
 current_stance: long
-conviction: medium
-last_review: 2026-09-23
+conviction: high
+last_review: 2026-10-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-09-23
 | 2026-04-24 | [[irrationalanalysis]] | MENTION | n/a | Ejected from core list after strong gains; Mediatek TPU concerns and Edgewater note cited |
 | 2026-07-01 | [[irrationalanalysis]] | LONG | 161.30 | "Own Semtech to play" MediaTek-vs-Broadcom; sole-source CTLE works whoever wins the custom-AI-chip fight |
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 117.82 | Core; 'own it whoever wins' MediaTek-vs-Broadcom SerDes play. |
+| 2026-10-19 | [[irrationalanalysis]] | LONG | 136.73 | OCP analyst day: wins copper AND optics; huge NPO/XPO/LPO content; the CAGR-guide selloff a gift |
 
 | 2026-08-09 | [[irrationalanalysis]] | LONG | 131.18 | "Hyper bullish readthrough" — Tower 300mm SiGe TIA/driver/CTLE expansion benefits Semtech's best-in-class discrete amplifiers |
 | 2026-09-22 | [[semidoped]] | LONG | 174.33 | Joins XPO MSA with 200G/lane modulator-driver + TIA merchant silicon |

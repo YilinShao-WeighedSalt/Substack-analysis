@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-14
+updated: 2026-10-20
 handle: irrationalanalysis
-calls_logged: 632
-hit_rate: "32/56 (57%), ~14 open"
+calls_logged: 641
+hit_rate: "32/57 (56%), ~21 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+- **OCP Global Summit 2026: Irrational Recap (2026-10-19):** A 7.3k-word floor-crawl. **NPO (Open CPX)** replaced CPO as the show's hot topic; IA's hard thesis: **integrated-laser NPO is "a terrible idea"** (lasers = #1 link-flap cause; Innolight/Terrahop's Diablo ships 4 cold-spare lasers = tacit admission), and **slow-and-wide 32-64G NRZ direct-drive** beats heroic 224G/448G SerDes (448G "a disaster"). Exposed widespread **TDECQ cheating via waveform averaging** — **Marvell** "legendary incompetent cheating" (400G SerDes TDECQ *unmeasurable* on the best Keysight scope, RLM failed), **Macom** "sucks" (7.4 dB). The closing **"Bubble Vibes"** is the macro signal: author **de-levered ~$2M** before Anthropic's buyside day; **Anthropic valuation $2T→$1.5T in 10 days**, OpenAI struggling at $1.4T, coding ARR plateaued, neocloud convertible notes "violent," rumored blow-ups (VARA/Jane Street desk/HRT), a repeated **sub-prime/CDO analogy**. Calls: **LONG [[CRDO]] $169.70** (µLED→µVCSEL pivot, honest demo), **LONG [[SMTC]] $136.73** (wins copper+optics), **LONG [[GLW]] $132.00** (Corning magic connector), **LONG [[LITE]] $824.13** (UHP-laser supply moat), **LONG [[AVGO]] $328.75** (cleanest 1.6T AEC), **SHORT [[COHR]] $232.90** (UHP laser fails the <1 MHz spec), **NEUTRAL [[MRVL]] $227.83 / [[MTSI]] $262.24 / [[ALAB]] $285.82** (all scathing). (→ [[silicon-photonics-interconnects]], [[ai-debt-financing]].)
+
+**hit_rate note (2026-10-20): 32/56 → 32/57 (56%) — the Sep-20 TSEM long resolves a loss.** **[[TSEM]] LONG ($236.61) → $195.58 = -17.3% LOSS ✗** (Tower-hybrid-bonding / Ayar-flees-GloFo leg gave back into the October AI wobble; the Sep-20 MU call was NEUTRAL, excluded). The Sep-21 ECOC batch (COHR short $310.39, LITE long $945.67, CBRS short $212.41) is 29d today → resolves next run (COHR short currently working: $310.39→$232.90 = short +25%). This run's 9 new calls (5 long, 1 short, 3 neutral) opened at spot.
 
 - **The Tragedy of 3D XPoint (AKA Intel Optane AKA Micron QuantX) (2026-10-11):** A history/"shitpost" revisiting **3D XPoint (3DXP/PCM)** — speed between NAND and DRAM, byte-addressable + persistent — provoked by "how fucked the memory market (DRAM in particular) is." Its real niche was always **cheaper-than-DRAM-with-persistence**, not NAND $/bit; it died ~2022 because scaling stalled at **4 layers** and the interface choked it (NVMe SSDs + CPU "Memory mode" wasted it; only **App-direct mode** — 3DXP in DRAM slots, persistence to software, KV-cache/weights survive reboot — captured value, and Intel's 10nm/Ice-Lake delays made PMem cost DRAM bandwidth). Zinsner killed it at both Micron and Intel. **Revival pitch:** CXL could be the right bus for PCM; Alibaba+Demingli reviving it at OCP; IA's long-shot is **SpaceX/Terafab licensing 3DXP from Intel** and cracking >4-layer scaling. Secondary read-throughs, not fresh high-conviction trades: **[[INTC]] NEUTRAL $102.81** ("back in its stride" — 18AP fixed, EMIB-T on track, agentic-CPU revival lifts the written-off Products arm; the natural 3DXP licensor) and **[[MU]] NEUTRAL $953.19** (DRAM "super high" = the premise, but Micron won't revive it — "just print more money on DRAM/HBM"). (→ [[nand-flash-storage]], [[memory-dram-cycle]], [[intel-foundry-decline]].)
 

@@ -2,13 +2,13 @@
 type: ticker
 title: "META — Meta Platforms"
 tags: []
-related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
+related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semidoped-2026-09-24-daily-update-september-24th]]", "[[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]]"]
 created: 2024-03-13
-updated: 2026-10-02
+updated: 2026-10-20
 ticker: META
 current_stance: long
-conviction: high
-last_review: 2026-10-02
+conviction: medium
+last_review: 2026-10-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,6 +29,7 @@ last_review: 2026-10-02
 | 2026-07-02 | [[semianalysis]] | LONG | 584.88 | Capex will accelerate; 5+ GW contracted 1H26; 4-way optionality (MSL, RecSys 10×, Claude/Bedrock, SpaceX-type deals) |
 | 2026-07-03 | [[globalsemiresearch]] | LONG | 584.88 | Cloud plan gives financial optionality; stock rewarded +10% while suppliers sold off |
 | 2026-07-06 | [[semianalysis]] | MENTION | 601.00 | Cited as the investment-grade credit anchor backstopping CoreWeave's DDTL 4.0 ($8.5B at 5.9%) in the GPU-financing piece |
+| 2026-10-18 | [[semidoped]] | LONG | 709.33 | Muse Wonder #2 on Artificial Analysis; Spark Open (816B MoE) runs free on Mac Studios -- on-device fits the ad model |
 
 | 2026-07-09 | [[semianalysis]] | LONG | 601.00 | MSL 1-yr update: world-class on data/compute/talent; 5 titan clusters; out-computes OpenAI/Anthropic by year-end |
 | 2026-08-26 | [[semidoped]] | LONG | 576.14 | MTIA 300 moves network fabric onto the chip — custom silicon co-designed for recommendation models (the ads core). |

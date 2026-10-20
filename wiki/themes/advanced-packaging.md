@@ -2,9 +2,9 @@
 type: theme
 title: "Advanced Packaging"
 tags: []
-related: []
+related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-17
+updated: 2026-10-20
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -101,3 +101,5 @@ The chokepoint narrative sharpened from FC-BGA into **substrates broadly (ABF / 
 
 **Besi** is today the *only* supplier shipping volume D2W tools (concentrated at TSMC/Intel); everyone else is still qualifying a first tool. SA's Oct-2026 scoop: ASML is building a D2W bonder (patent WO2025201788A1) that is architecturally novel — each die rides its own holder around a **track** (SuperTrak CONVEYANCE) past inspection/cleaning/plasma-activation/metrology stations, with the station's head moving to the die; final placement by holder+chuck (shuttle repeatability ~10µm is nowhere near the 50nm bond needs, so actuators do the fine work). Benefits: every station stays busy, capacity added by adding a station not a tool, heterogeneous integration = new recipe. ASML's edge = reuse of its **ORION** wafer-alignment sensor (reads a diffraction grating on each die through CMP/plasma asymmetry) + EUV-grade particle control; it already corrects post-bond overlay from 40-60nm to <4nm. It can hand the scanner a die-position "coordinate system" and sell bonder+scanner as a premium pair. **Implication:** a structural threat to Besi's one high-growth moat (and to the Applied/Besi Kinex JV); HBM D2W adoption — the expected big volume driver — SA now sees slipping to **2029+ "if at all."**
 
+## 2026-10-20 — HBM4E base die re-plumbs to TSMC 3nm; substrates stay the chokepoint (Semi Doped)
+The **custom base-die thesis** went concrete: **Samsung is routing the logic base die for Nvidia's next-gen custom HBM ("NVHBM" / HBM4E) to rival TSMC's 3nm** (Seoul Economic Daily, confirmed by Reuters) — Samsung's own 4nm foundry can't match the performance Nvidia demands, a reversal from its in-house HBM4 base die. **SK Hynix is reportedly looking at Intel for HBM4E base dies** because TSMC's cost is 3-4× its own DRAM core dies. Plain language: the **base die** is the logic chip at the bottom of an HBM stack that runs the memory controller; once the controller moves off the GPU onto the base die, **bandwidth becomes a logic problem and value accrues to whoever designs it** (Nvidia/TSMC/Intel) rather than the memory maker → tilts [[000660.KS]]/[[005930.KS]] toward commodity-stack supplier. **Substrates** stay tight: SEMCO booked a **$251M AI-server memory-substrate order** (2026 cumulative ₩4.3T) even as its **$5.1B capacity expansion hits equipment-supply constraints**; **Nvidia is reportedly financing Unimicron's Taiwan ABF expansion** (hyperscaler→substrate direct investment, echoing the KYEC prepay). **Hanmi Semiconductor** opened a US subsidiary and plans a **Wide TC Bonder for 2.5D AI packaging in 2027**. → [[009150.KS]], [[TSM]], [[NVDA]], [[INTC]].

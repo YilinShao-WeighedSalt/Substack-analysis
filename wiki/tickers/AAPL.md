@@ -2,13 +2,13 @@
 type: ticker
 title: "AAPL — Apple"
 tags: []
-related: ["[[semianalysis-2024-05-27-apple-ai-datacenter-strategy]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[irrationalanalysis-2026-04-16-long-memory-short-android-smartphone]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
+related: ["[[semianalysis-2024-05-27-apple-ai-datacenter-strategy]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[irrationalanalysis-2025-01-15-piranha-smell-blood-intel-preview]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[irrationalanalysis-2026-04-16-long-memory-short-android-smartphone]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]", "[[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]]"]
 created: 2024-05-27
-updated: 2026-09-26
+updated: 2026-10-20
 ticker: AAPL
 current_stance: long
 conviction: medium
-last_review: 2026-09-26
+last_review: 2026-10-20
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -22,6 +22,7 @@ last_review: 2026-09-26
 | 2026-04-16 | [[irrationalanalysis]] | LONG | n/a | Aggressively buying LPDDR at premium prices to crowd out Android OEMs and take smartphone market share |
 | 2026-06-14 | [[semianalysis]] | MENTION | n/a | Efficiency cores deliver 20% higher integer performance at 4.5x lower power vs. Huawei prime core |
 | 2026-07-03 | [[semidoped]] | CAUTIOUS | 308.45 | First-ever mid-cycle price hikes + margin pressure from memory crunch; unprecedented plea to USG to buy DRAM from blacklisted CXMT |
+| 2026-10-18 | [[semidoped]] | LONG | 343.46 | Frontier model needs two M5 Ultra Mac Studios = hardware pull; first public Apple-Meta collab since 2017 |
 
 | 2026-07-08 | [[semidoped]] | CAUTIOUS | 308.45 | Testing blacklisted CXMT DRAM for China devices; memory-cost pressure; $30B Broadcom RF deal |
 | 2026-08-25 | [[semidoped]] | NEUTRAL | 313.45 | M6 & M5 Ultra push on-device AI compute, but 'not hobby-grade' — a DGX-Spark-class desktop, not mass inference. |

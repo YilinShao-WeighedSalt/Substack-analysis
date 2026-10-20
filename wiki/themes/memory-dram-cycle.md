@@ -2,9 +2,9 @@
 type: theme
 title: "DRAM & Memory Cycle"
 tags: []
-related: []
+related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-10-17
+updated: 2026-10-20
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -109,3 +109,5 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 ### Concept note — 4F² DRAM convergence + FeNAND compute-in-memory (2026-10-15/16, Semi Doped)
 **4F²** is a denser DRAM cell layout (cell area = 4 × feature²) that, unlike 6F², can be built **without EUV** — the reason it matters for China. In Oct-2026 China's **CXMT** said it will unveil 4F² DRAM before year-end (mass production after 2027) and **Samsung confirmed it completed its own 4F² development**; the convergence rattled Korean memory equities (Samsung + SK Hynix both dropped). Key nuance (Vik): word is CXMT's 4F² cell area ≈ **Korea's *current* 6F²**, so it is a catch-up, not the density leap the headline implies — and "announced ≠ shipping." Separately, **SK Hynix showed 3D FeNAND** at OCP: analog **compute-in-memory** that runs AI multiply-accumulate inside the NAND flash cell using ferroelectric material, cutting the bandwidth/power round-trip to DRAM/HBM — a concrete step toward memory-centric server architectures. SEMI projects global DRAM capacity +41% by 2030 on AI-server demand.
 
+## 2026-10-20 — CXMT becomes a credible #10 DRAM supplier; base-die value leaks to logic (Semi Doped)
+**CXMT (ChangXin Memory)** reported Q3 revenue as high as **$16.7B, a near-600% YoY surge** that lifted its global DRAM share to **~10%** and a nine-month record profit — yet the stock **fell 7.8%** (to 41.52 yuan, off its August 61.8 peak) on margin/yield-sustainability doubts, dragging **SK Hynix** down too as traders weighed what a credible **tenth DRAM supplier** means for commodity-pricing discipline. Combined with the HBM4E-base-die-to-TSMC story (value leaking to logic designers) and **Micron's new "Edge Inference Memory (EIM)"** category for physical-AI/humanoid edge devices, the memory read is mixed: demand strong (Nvidia blamed consumer-GPU shortages directly on insufficient memory supply) but **value-capture and pricing discipline both under question** → [[000660.KS]]/[[005930.KS]]/[[MU]] all NEUTRAL this run.

@@ -2,9 +2,9 @@
 type: theme
 title: "Foundry & Process Node Competition"
 tags: []
-related: []
+related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-14
+updated: 2026-10-20
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -93,3 +93,6 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 
 ## 2026-10-14 — Hyper-NA EUV + TSMC pricing power (Semi Doped)
 **Hyper-NA EUV** = ASML's next litho step beyond **High-NA**: **5nm single-exposure patterning**, i.e. resolving a 5nm feature in one shot instead of costly multi-patterning — a technical anchor for sub-2nm scaling (unveiled ahead of ASML earnings; capacity-buildout guide is the investor test). Counterpoint from China: **CXMT's 4F² DRAM explicitly chose density-without-EUV** because the tool is banned — the two headlines frame the EUV-haves vs have-nots split. **TSMC pricing power** went visible: rising wafer + **CoWoS** advanced-packaging cost now passes straight to buyers — **Intel CPU +20%, Qualcomm ~+10%** (AMD expected to follow), the first coordinated CPU hike tied to foundry cost pass-through. The +20% lands on **Panther Lake's TSMC-N3E high-end GPU tile**, not Intel's own 18A compute tile. Also: Rapidus CORE ecosystem (17 design partners, 2nm); Intel names Crescent Island inference GPU "GPU D-Series."
+
+## 2026-10-20 — Japan backs TSMC Kumamoto 3nm with $4.1B; 3nm pulled taut (Semi Doped)
+**Japan formally approved TSMC's 3nm Kumamoto fab and committed up to $4.1B** in government aid — the biggest advanced-node capacity outside Taiwan, targeting a **2028 ramp** to serve domestic Japanese chipmakers + global AI demand. **TSMC is simultaneously adding a 3nm plant in Taiwan** (same 2028 timeline) because 3nm capacity is already under heavy AI-demand pressure — now compounded by **Nvidia's HBM4E base-die work landing on TSMC 3nm** (Samsung can't match in-house). Reinforces TSMC's structural 3nm/advanced-node demand even amid the October "AI panic" tape (TSMC profits +69%). → [[TSM]].
