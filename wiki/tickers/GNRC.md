@@ -4,11 +4,11 @@ title: "GNRC — Generac Holdings"
 tags: [datacenter-power, backup-generation, behind-the-meter]
 related: ["[[semidoped-2026-09-17-daily-update-september-17th-2026]]", "[[datacenter-power]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2026-09-20
-updated: 2026-09-26
+updated: 2026-10-23
 ticker: GNRC
 current_stance: long
 conviction: low
-last_review: 2026-09-26
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -37,3 +37,8 @@ being displaced by fuel cells / grid upgrades as the interconnect queue clears.
 
 
 **Update 2026-10-17 (resolution):** SD **Sep-17 LONG ($207.44) → $198.40 = -4.4% LOSS ✗** (the $8B Amazon-genset backup-power read faded modestly). No new call this run.
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($206.17) -> $203.14 = **-1.5% LOSS ✗** (Amazon genset; roughly flat).

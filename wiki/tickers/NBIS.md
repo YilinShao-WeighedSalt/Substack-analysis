@@ -4,11 +4,11 @@ title: "NBIS — Nebius"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2026-04-02
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: NBIS
 current_stance: long
 conviction: medium
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -39,3 +39,8 @@ No numeric px@call values are recorded, so mark-to-market tracking is not yet po
 | 2026-09-18 | [[semidoped]] | LONG | 223.54 | Raised Nvidia GPU rates up to 21% in October (2nd hike) as demand outruns supply; stock rallying — neocloud pricing power |
 
 **Outcome tracking (2026-09-20):** semidoped's Aug-21 LONG ($219.13) → $223.54 = **+2.0% ✓** resolves a WIN this run. The +21% rate hike (its second) is the clearest neocloud pricing-power datapoint of the cycle — watts→tokens scarcity accruing to the operator. current_stance long, conviction medium.
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SA Sep-23 ClusterMAX LONG ($243.48) -> $171.57 = **-29.5% LOSS ✗** (Platinum-tier/premium-pricing entry; neocloud de-rating).

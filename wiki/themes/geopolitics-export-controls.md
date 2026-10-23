@@ -4,7 +4,7 @@ title: "Semiconductor Geopolitics & Export Controls"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-05
+updated: 2026-10-23
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -79,3 +79,6 @@ Two-way escalation this run:
 Two China workarounds advanced this run. **DeepSeek open-sourced six programming tools for Huawei Ascend** (kernel libraries, compiler utilities, operator frameworks) — a direct run at **Nvidia's CUDA lock-in**; Bloomberg says they could substitute for core Nvidia software. The counter (Vik, Semi Doped): **CUDA's moat was never the language** — it's years of libraries, tooling, and developers who just know it; open-source velocity compresses the gap but doesn't erase the installed base. Separately, **Huawei's Tau 'logic-folding'** (Kirin 9050 Pro, Mate 90 series shipping in volume) stacks a **SMIC 7nm-class die on itself via hybrid bonding** to roughly double density by burning 2× silicon — a density workaround that does *not* require EUV (and flags phone price hikes on tight memory). Both show China routing around the two hardest chokepoints (software ecosystem, leading-edge litho) rather than breaking them.
 
 **Update 2026-10-05 (the China CUDA-alternative hardens):** Semi Doped (Oct-2) — Huawei's Ken Hu claims **Ascend has passed Nvidia in China share** (unquantified); **DeepSeek + Huawei jointly open-sourced compute/communication libraries + TileLang for Ascend**, a credible CUDA alternative without Nvidia's toolchain (raising switching cost for any re-entrant). **Kirin 9050 Pro LogicFolding** stacks transistors vertically to sidestep the node ceiling export controls target. **China is stockpiling hundreds of ASML immersion-DUV machines** worth billions → louder US calls for a complete tool export ban. Vik: Nvidia's China share is already low, but the domestic ecosystem is hardening. → [[NVDA]], [[ASML]].
+
+## 2026-10-23 update — the Huawei-DeepSeek symbiosis hardens
+SemiAnalysis's **Huawei-DeepSeek symbiosis** ([[semianalysis-2026-10-21-huawei-deepseek]]): Huawei has silicon (Ascend) but no frontier lab; DeepSeek has models but no compute — so DeepSeek's Sep-30 release of **Ascend support for TileLang/DeepGEMM/DeepEP/FlashMLA/etc.** is the artifact of a trade routed "through the kernel-authoring language," and SA expects DeepSeek primarily on Huawei's stack by 2027-28. Ascend 950PR benches ~A100-to-MI300X-class *silicon* ("~5 years behind A100") but **software right at the frontier** (best kernels 99.7% of GEMM ceiling); Huawei bins both compute *and* memory into SKUs. Caveat: optimizations are supernode/ARM-centric, so x86 support is broken — the partnership helps DeepSeek more than everyone else. Alongside: **US bars DeepSeek from federal systems**; the **CUDA-moat challengers multiplied** (Amazon TorchNeuron on Trainium, Google TorchTPU, an AMD+Intel oneDNN x86 pact in PyTorch) even as China still placed **>$35B in Nvidia orders** (ByteDance/Alibaba/Tencent).

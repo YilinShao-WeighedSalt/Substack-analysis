@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-20
+updated: 2026-10-23
 ---
 
 # Wiki Index
@@ -206,6 +206,7 @@ updated: 2026-10-20
 - [[jalapeno-parametric-yield-vs-benchmarks]] — OpenAI Jalapeño: SA benchmark win vs IA parametric-yield "disaster" (25% A0→B0)
 - [[cien-ia-profit-take-vs-sd-operational-bull]] — CIEN: Irrational profit-take vs Semi Doped operational bull (1.6T India/UK wins)
 - [[ai-credit-subprime-vs-binding-leases]] — AI credit: Irrational's 'sub-prime/CDO' bear vs SemiAnalysis's >$1T binding-lease bull
+- [[asml-hybrid-bonder-vs-besi-orders]] — Hybrid bonding: SemiAnalysis's ASML-D2W-bonder SHORT vs Semi Doped's defense of Besi (+96% orders)
 
 ## Publications
 
@@ -416,6 +417,7 @@ updated: 2026-10-20
 ### SemiAnalysis
 - [[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]] — Datacenters 2027 (paid preview): +50GW in one year defended vs Gerstner's 25GW hunch; >$1T binding/non-cancellable leases YTD; modular 'LEGO' buildout (Google prefab/Meta tent/AWS SAMDC/DayOne 9mo); power 'broadly solved' via BTM; memory/logic the next 2027-28 constraint (LONG VRT/STRL/ABB, supplier reads)
 - [[semianalysis-2026-10-15-asml-hybrid-bonding]] — ASML Is Building a Hybrid Bonding Tool: patent trail (WO2025201788A1) → track-based die-to-wafer bonder reusing ORION alignment + EUV particle-control edge; logic (TSMC/Intel) first; a structural threat to Besi's one D2W moat; HBM D2W slips to 2029+ "if at all" (LONG ASML, SHORT BESI; AMAT implicated via 9%+Kinex)
+- [[semianalysis-2026-10-21-huawei-deepseek]] — The Huawei–DeepSeek Symbiosis: Ascend 950PR benchmarks (GEMM 99.7% ceiling, perf between A100/MI300X, software at frontier) + DeepSeek's Ascend kernel releases (TileLang/DeepGEMM/DeepEP) = a vertically-integrating China stack; x86 support broken (no priced call; CUDA-moat/China-share headwind for NVDA)
 - [[semianalysis-2026-10-05-anthropic-subscriptions-offer-5x]] — Anthropic subs ~5× OpenAI API-equivalent value; OAI halved $200 plan + $500 tier; subs ~10% rev but >40% inference compute, −$36M rev/MW (economics deep-dive, no priced ticker)
 - [[semianalysis-2026-09-28-sparse-savings-persistent-demand-inside-glm53]] — GLM5.3 sparse attention: DSA cuts attention compute/bandwidth but NOT HBM capacity (top-k needs full context); HiSparse KV→DRAM offload; InferenceX GB200/GB300/MI355X-ATOM no uniform cost winner; GLM tuned for Moore Threads? (technical, no priced call; MU-supportive, NVDA/AMD read)
 - [[semianalysis-2026-09-26-intel-panther-lake-teardown]] — 18A ships first BSPD (PowerVia)+RibbonFET GAA+Foveros-S, but density ~TSMC N3E (trails N3P/N2/SF2); GPU tile still TSMC N3E — milestone not leadership (NEUT INTC)
@@ -550,6 +552,9 @@ updated: 2026-10-20
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-20-daily-update-october-20th-2026]] — Daily Oct 20: Anthropic record profitable Q3 ($16.8B); ASML patent-scare hammers Besi but orders doubled YoY (contrarian defense); SK Hynix ₩2T supplier fund + SEMCO ₩360.5B substrate; Schneider record + ABB orders +40%; Amazon TorchNeuron on Trainium (LONG BESI/009150/ABB/SU.PA/AMZN/IFX, NEUT MU/000660)
+- [[semidoped-2026-10-21-daily-update-october-21st-2026]] — Daily Oct 21: Anthropic S-1 = $750B non-cancelable compute + $80.7B H1 loss (floor under HBM/accelerators); Terafab locks ASML gear; Super Micro raises guide; Samsung 4nm→HBM base dies (base-die edge); Vicor Q3 +78.5% (LONG SMCI/VICR/005930/NVDA, NEUT QCOM)
+- [[semidoped-2026-10-22-daily-update-october-22nd-2026]] — Daily Oct 22: Meta capex $145B + Nokia AI/cloud +123%; Lam firm + ASML warns tool shortages through 2028; Besi orders +96% (CEO dismisses ASML); OpenAI→Google Cloud + AMD/Intel x86 oneDNN; Corning $585M fiber; TI above-consensus (LONG META/NOK/LRCX/ASML/BESI/GOOGL/NVDA/IFX/GLW/TXN, NEUT MSFT/INTC)
 - [[semidoped-2026-10-19-daily-update]] — Daily Oct 19: Samsung routes Nvidia HBM4E base die to TSMC 3nm (SK Hynix eyes Intel) = value to logic designer; CXMT ~600% rev → ~10% DRAM share (stock −7.8%); Japan $4.1B Kumamoto 3nm; Anthropic >10% junk-yield chip paper + MSFT quits Nscale Essex pre-IPO; SEMCO $251M substrate + Nvidia financing Unimicron; QCOM 8EEG6 overheat/Exynos risk (LONG TSM/NVDA/INTC/009150/VICR, NEUT 005930/000660/QCOM/MU)
 - [[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]] — From the Editor: Meta's on-device+ads edge (Muse Wonder #2, Spark Open free on Mac Studios) vs OpenAI's courtroom device fight; first Apple-Meta collab since 2017 (LONG META/AAPL)
 - [[semidoped-2026-10-16-daily-update]] — Daily Oct 16: ASML enters hybrid bonding, pressing Besi (echoes SA; logic-first, Applied owns 9%+Kinex); CoreWeave CDS >60% default odds (Jensen: no new backstop); TSMC AZ Fab 2 complete, 2028 capex to $105B; Schneider raises 2026 guide 2nd time (power/cooling binding constraint); SK Hynix 3D FeNAND compute-in-memory (NEUT BESI/CRWV/000660, LONG TSM/SU.PA/ASML)

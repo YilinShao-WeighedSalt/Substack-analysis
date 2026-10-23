@@ -4,11 +4,11 @@ title: "IFX — Infineon Technologies"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]"]
 created: 2026-05-17
-updated: 2026-10-08
+updated: 2026-10-23
 ticker: IFX
 current_stance: long
 conviction: high
-last_review: 2026-10-08
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -36,3 +36,9 @@ No px@call value was recorded at the time of the call, which prevents any quanti
 - **2026-09-26 resolution:** [[semidoped]] Aug-26 C2i/SIVR LONG (€55.19) → €56.26 = **+1.9% WIN ✓**.
 
 **Outcome update (2026-10-08):** [[semidoped]] Sep-7 LONG (€60.79, dual-phase power stages) resolved at €64.68 = **+6.4% WIN ✓** — the AI-datacenter power franchise tracked.
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 53.09 (IFX.DE) | Infineon+Nvidia joint GaN 800VDC reference design + long-term Wolfspeed SiC wafer supply deal; PSOC C3 expansion |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 53.09 (IFX.DE) (2026-10-22). Opened at spot. **Resolution** — SD Sep-22 LONG (€60.13) -> €53.09 = **-11.7% LOSS ✗** (PSOC-C3/SolarEdge entry; re-logged LONG this run on the Nvidia GaN pact).

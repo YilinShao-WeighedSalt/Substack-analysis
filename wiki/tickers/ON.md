@@ -4,11 +4,11 @@ title: "ON — ON Semiconductor"
 tags: []
 related: ["[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-08-04-daily-update]]", "[[semidoped-2026-09-21-daily-update]]"]
 created: 2024-01-06
-updated: 2026-09-23
+updated: 2026-10-23
 ticker: ON
 current_stance: neutral
 conviction: low
-last_review: 2026-09-23
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -33,3 +33,8 @@ No px@call values are available for any entry point across the call log, so dire
 **Update 2026-08-06:** first *priced* ON anchor — SD LONG $76.91 (Aug-4), a different (fundamental datacenter-power) angle than IA's prior vertical-GaN option thesis (IA sold at +15% in May, stance neutral). SD cites AI-datacenter revenue to more than double in 2026, GaNEXUS (40-650V GaN) launch, expanded Nvidia MGX role, FCF quadrupled. Open, <30d; note the covering publications now diverge (SD constructive on the datacenter-power ramp vs IA's lapsed vertical-GaN skepticism).
 
 **2026-09-05 resolve:** SD Aug-4 LONG $76.91→$74.38 **-3.3% ✗**.
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($73.60) -> $76.94 = **+4.5% WIN ✓** (wafer-as-substrate; one of only two SD wins in the batch).

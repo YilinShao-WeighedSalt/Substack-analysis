@@ -4,7 +4,7 @@ title: "Semiconductor Capital Equipment"
 tags: []
 related: []
 created: 2024-04-03
-updated: 2026-10-17
+updated: 2026-10-23
 status: maturing
 first_seen: 2024-04-03
 ---
@@ -62,3 +62,6 @@ Semiconductor capital equipment emerged as a recurring theme from early 2024, in
 ### Concept note — ASML's monopoly pricing power turns active (2026-10-14/15, Semi Doped)
 ASML posted record Q3 2026 revenue of €11.7B (+25% QoQ), €5.0B net income, and raised FY guide to €44-45B. The structural tell: **2027 and 2028 EUV allocations are sold out**, inquiries now stretch to 2030, and ASML is **withholding 2029-2030 slots** while confirming its **first-ever EUV price increases** — the monopoly is finally charging for its value. The binding constraint on scaling further is the **Zeiss optics supply chain** (not demand), prompting a weighed 2028 facility expansion; SEMI sees 300mm fab-equipment spend hitting $227B by 2029 (from $149B). A 'T'-titled late-decade customer is hinted (likely Musk's Terafab). Korean makers already swallowed a 10% parts hike from January. Read: when a tool monopoly starts raising prices into a sold-out book, that is the pricing-power signal — a durable ASML tailwind independent of per-tool ASP debates. (Vertical-integration leg: see the advanced-packaging hybrid-bonder note — ASML extending from litho into the back end.)
 
+
+## 2026-10-23 update — the WFE shortage goes multi-year
+**ASML warned customers to expect equipment shortages through 2028** as AI-driven orders outrun production; **Lam Research** results showed WFE demand holding firm; **SEMI projects global silicon-wafer shipments +11.8% in 2026** (14,420 M sq-in) with successive record highs 2027-29. Net read: existing **backlog holders sit at the front of the queue**, fabs chasing faster build-outs have fewer options → structural tailwind for **[[ASML]] / [[LRCX]]** (and AMAT/TEL). Terafab says ASML "expedited" tools, but with EUV sold out through 2028 the open question is *whose slot moved* (Musk dodged whether SpaceX ordered EUV).

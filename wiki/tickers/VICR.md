@@ -4,11 +4,11 @@ title: "VICR — Vicor Corporation"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2026-05-13-cerebras-faster-tokens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]", "[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-07-18
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: VICR
 current_stance: long
 conviction: medium
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,3 +30,9 @@ No px@call values are recorded in either entry, so price-based verification is n
 
 | 2026-10-12 | [[semidoped]] | LONG | 267.24 | ITC Sec-337 widened to ~20 AI-server makers over VPD patents - royalty leverage across the power chain. |
 **Update 2026-10-14:** SD LONG $267.24 (ITC expansion). Note: pulled back ~13% off its Oct-8 high ($299.29) into the filing; the Sep-22 LONG ($268.34) is ~flat (-0.4%), resolves ~Oct-22.
+
+
+## 2026-10-23 run update
+| 2026-10-21 | [[semidoped]] | LONG | 213.42 | Q3 rev $197.1M (+78.5% YoY), EPS $1.33 beat by 4c, 68% GM, backlog up; vertical power delivery scaling into advanced packaging |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 213.42 (2026-10-21). Opened at spot. **Resolution** — SD Sep-21 LONG ($268.34) -> $213.42 = **-20.5% LOSS ✗** (VPD-royalty entry; the AI-power trade is volatile — re-logged LONG this run on the Q3 beat).

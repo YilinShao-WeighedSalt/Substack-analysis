@@ -4,11 +4,11 @@ title: "LRCX — Lam Research"
 tags: []
 related: ["[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]]", "[[irrationalanalysis-2025-01-05-long-mrdimm-short-nand-flash]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-07-21-intel-18a-dram-vlsi2025]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]"]
 created: 2024-01-03
-updated: 2026-01-31
+updated: 2026-10-23
 ticker: LRCX
 current_stance: long
 conviction: medium
-last_review: 2026-01-31
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,3 +27,9 @@ The LRCX view began as a neutral, dual-edged mention in early 2024: semianalysis
 
 ## Outcome tracking
 No px@call values are recorded across the log, so price-based verification is not possible. The core thesis shift — from generic WFE beneficiary to specific share-gainer in Mo ALD and cryo etch — is a January 2026 development and has not had time to be validated by reported financials or market pricing. The live long thesis would be falsified by: NAND makers pausing or reversing the tungsten-to-molybdenum wordline transition (removing the share-gain catalyst), AMAT defending its NAND deposition position through competitive tool development, or further tightening of export controls targeting Lam's Malaysia or other non-US facilities in ways that constrain China revenue more severely than peers. The January 2026 irrationalanalysis note that the semicap selloff reflected a misread rather than a fundamental change is an implicit claim that the entry point was attractive, but without recorded prices that cannot be confirmed.
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 260.81 | Q3 results hold firm; multi-year ASML supply constraint + record wafer demand favor existing WFE backlog |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 260.81 (2026-10-22). Opened at spot.

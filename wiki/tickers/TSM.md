@@ -4,11 +4,11 @@ title: "TSM — Taiwan Semiconductor Manufacturing"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semianalysis-2024-04-02-intel-back-foundry-product-resurgence]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-05-27-apple-ai-datacenter-strategy]]", "[[semianalysis-2024-06-03-openai-chip-team-serious]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[citrini-2024-07-08-inference-on-device]]", "[[semianalysis-2024-08-04-blackwell-reworked-shipment-delays-gb200a]]", "[[irrationalanalysis-2024-09-06-avgo-nvda-mrvl-intc-chaos-update]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2024-12-09-intel-brink-death-culture-foundry]]", "[[irrationalanalysis-2025-01-24-pdk-guide-semiconductors]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[irrationalanalysis-2025-03-05-panther-lake-delay]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[semianalysis-2025-04-16-huawei-cloudmatrix-china-nvidia-gb200]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[semianalysis-2025-07-21-intel-18a-dram-vlsi2025]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[semianalysis-2025-12-01-tsmc-overseas-fabs-success]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[irrationalanalysis-2026-01-04-fabulous-failures]]", "[[semianalysis-2026-01-08-apple-tsmc-partnership-built-modern-semiconductors]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[irrationalanalysis-2026-01-23-intels-agentic-dumpster-fire]]", "[[semianalysis-2026-02-25-vera-rubin-extreme-co-design]]", "[[semianalysis-2026-03-12-great-ai-silicon-shortage]]", "[[globalsemiresearch-2026-03-17-samsung-biggest-winner-gtc-2026]]", "[[globalsemiresearch-2026-04-13-tsmc-advanced-process-expansion-2026]]", "[[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-13-cerebras-faster-tokens]]", "[[globalsemiresearch-2026-05-25-huawei-tau-scaling-deep-dive]]", "[[semianalysis-2026-06-03-case-for-space-datacenters]]", "[[semianalysis-2026-06-14-smic-n3-metal-pitch-intel-18a]]", "[[semidoped-2026-08-10-11-optical-ban-daily-newstake]]", "[[semidoped-2026-08-12-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[semidoped-2026-08-28-daily-update]]", "[[semidoped-2026-09-02-daily-update-september-2nd]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]", "[[semidoped-2026-09-24-daily-update-september-24th]]", "[[semidoped-2026-10-07-daily-update]]", "[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-04-02
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: TSM
 current_stance: long
 conviction: high
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -113,3 +113,8 @@ The only price-anchored call in the log is irrationalanalysis's October 2024 men
 | 2026-10-16 | [[semidoped]] | LONG | 422.25 | AZ Fab 2 construction complete; brokers model 2028 capex up to $105B (UBS); Texas/Terafab talks live |
 
 **Update 2026-10-17:** SD LONG @ $422.25 (reaffirmed across two dailies). Resolution: SD **Sep-15 LONG ($417.72) → $422.25 = +1.1% WIN ✓** (record-August / allocation-squeeze read). Stock has pulled back from its ~$482 early-Oct high on the broader AI wobble even as fundamentals set records. current_stance long. related: [[semidoped-2026-10-15-daily-update]], [[semidoped-2026-10-16-daily-update]].
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($452.00) -> $431.89 = **-4.4% LOSS ✗** (A14-pull-forward entry; modest give-back).

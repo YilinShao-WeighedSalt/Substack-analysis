@@ -4,11 +4,11 @@ title: "TXN — Texas Instruments"
 tags: []
 related: ["[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2025-03-11-america-missing-new-labor-economy-robotics]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[citrini-2026-05-12-supply-chain-inheritance]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]"]
 created: 2024-07-18
-updated: 2026-05-22
+updated: 2026-10-23
 ticker: TXN
-current_stance: mixed
+current_stance: long
 conviction: medium
-last_review: 2026-05-22
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,3 +26,9 @@ The initial view was purely contextual — TXN as a background analog power play
 
 ## Outcome tracking
 No px@call values are available across any entry, so price-based scoring is not possible. The thesis trajectory is constructive on balance: two publications arrived independently at a LONG conclusion via different frameworks (technical product superiority vs. supply-chain-inheritance/ASP dynamics) within a six-week window in spring 2026. The live bull case would be falsified by evidence of meaningful ASP compression in analog (reviving the SemiAnalysis bear case), TXN losing 800V datacenter design wins to Navitas or Infineon, or a resumption of aggressive capex that pressures margins before AI demand fully materializes. The irrationalanalysis exit flags non-pure-play dilution as a persistent drag — TXN may participate in the GaN/800V upswing but at lower beta than dedicated power semi names.
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 284.65 | Above-consensus revenue forecast as analog & embedded-processing demand picks up across end markets |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 284.65 (2026-10-22). Opened at spot.

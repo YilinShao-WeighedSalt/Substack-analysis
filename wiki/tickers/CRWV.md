@@ -4,11 +4,11 @@ title: "CRWV — CoreWeave"
 tags: []
 related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2025-03-22
-updated: 2026-10-17
+updated: 2026-10-23
 ticker: CRWV
 current_stance: long
 conviction: low
-last_review: 2026-10-17
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -48,3 +48,8 @@ No px@call values exist for any entry, so price-based outcome verification is no
 | 2026-10-16 | [[semidoped]] | NEUTRAL | 69.69 | CDS imply >60% implied default odds (all-time high); Jensen says no NEW Nvidia backstop needed — steadies stock, not bonds |
 
 **Outcome tracking (2026-10-17):** SD NEUTRAL @ $69.69 — fresh 52-wk-low zone, down from the ~$90 ClusterMAX-Platinum mark. The first real stress-test of the neocloud financing model (GPUs financed almost entirely against hyperscaler contracts); Gartner's >$3.5T AI-infra write-down warning frames the tail. Not a clean short — Deutsche Bank calls the drop a buying opportunity and the Sept-2025 $6.3B Nvidia capacity backstop (to Apr-2032) still stands. current_stance neutral/cautious. related: [[semidoped-2026-10-15-daily-update]], [[semidoped-2026-10-16-daily-update]].
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SA Sep-23 ClusterMAX LONG ($90.13) -> $61.82 = **-31.4% LOSS ✗** (the technical-bar neocloud; bonds distressed, shares halved).

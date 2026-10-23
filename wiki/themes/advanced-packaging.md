@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-20
+updated: 2026-10-23
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -103,3 +103,8 @@ The chokepoint narrative sharpened from FC-BGA into **substrates broadly (ABF / 
 
 ## 2026-10-20 — HBM4E base die re-plumbs to TSMC 3nm; substrates stay the chokepoint (Semi Doped)
 The **custom base-die thesis** went concrete: **Samsung is routing the logic base die for Nvidia's next-gen custom HBM ("NVHBM" / HBM4E) to rival TSMC's 3nm** (Seoul Economic Daily, confirmed by Reuters) — Samsung's own 4nm foundry can't match the performance Nvidia demands, a reversal from its in-house HBM4 base die. **SK Hynix is reportedly looking at Intel for HBM4E base dies** because TSMC's cost is 3-4× its own DRAM core dies. Plain language: the **base die** is the logic chip at the bottom of an HBM stack that runs the memory controller; once the controller moves off the GPU onto the base die, **bandwidth becomes a logic problem and value accrues to whoever designs it** (Nvidia/TSMC/Intel) rather than the memory maker → tilts [[000660.KS]]/[[005930.KS]] toward commodity-stack supplier. **Substrates** stay tight: SEMCO booked a **$251M AI-server memory-substrate order** (2026 cumulative ₩4.3T) even as its **$5.1B capacity expansion hits equipment-supply constraints**; **Nvidia is reportedly financing Unimicron's Taiwan ABF expansion** (hyperscaler→substrate direct investment, echoing the KYEC prepay). **Hanmi Semiconductor** opened a US subsidiary and plans a **Wide TC Bonder for 2.5D AI packaging in 2027**. → [[009150.KS]], [[TSM]], [[NVDA]], [[INTC]].
+
+## 2026-10-23 update — ASML-bonder-vs-Besi-orders; the substrate squeeze
+The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hammered **[[BESI]]** on a report that **ASML is filing hybrid-bonding patents** (echoing [[semianalysis-2026-10-15-asml-hybrid-bonding]]'s D2W-bonder scoop, which turned SA openly SHORT Besi). But **Semi Doped defended Besi both days** and on **Oct-22 Besi reported Q3 orders +96%**, with CEO Blickman **flatly dismissing ASML as a direct hybrid-bonding rival** ("different positions in the packaging workflow"); die-to-wafer HBM bonding reportedly slips to 2029 anyway. Plain-language: hybrid bonding = copper-to-copper chip stacking with no solder bumps; ASML's angle is the *scanner-grade alignment* (ORION) + particle control, Besi's is the installed volume-tool base. Live contradiction → [[asml-hybrid-bonder-vs-besi-orders]].
+
+**Substrate = the next visible chokepoint.** ABF/FC-BGA substrate (the resin build-up board under an AI package) is scaling hard: **Nvidia locked 6 packaging/substrate partners (incl Ibiden) for 2.5× supply**, **SEMCO ₩360.5B deal + LG Innotek joins Nvidia AI-component supply**, **Kinsus NT$23.5B** capex, **Unimicron forecasts panel sizes 14× by 2030** (and warns of double-booking). **Vertical power delivery** (Vicor) is named as a driver of advanced packaging — feeding current straight up into the die. **Hanmi** wins Micron's top-supplier award (2nd yr) on TC-bonding.

@@ -4,11 +4,11 @@ title: "BESI — BE Semiconductor Industries"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]"]
 created: 2025-06-15
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: BESI
-current_stance: short
+current_stance: long
 conviction: high
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -39,3 +39,9 @@ No px@call values are available across any of the three entries, so quantitative
 | 2026-10-16 | [[semidoped]] | NEUTRAL | 163.40 (BESI.AS) | Echoes SA: ASML + Applied (9% owner, Kinex JV) both circling; logic-first threat real, HBM wave overstated |
 
 **Outcome tracking (2026-10-17):** SA's bonder scoop turns the Besi bear case *structural* — the single high-growth moat is now contested by the litho monopoly with a 20-yr installed-base relationship at every fab, vindicating IA's Sep-6 "RIP BESI" short (resolved +5.2% Oct-8). Shares sit at the 3-mo low (€163.40). The SD **Sep-18 LONG (€186.65, Tata India pact) is 29d** and resolves next run — currently −12.5% underwater. current_stance short, conviction high. related: [[semianalysis-2026-10-15-asml-hybrid-bonding]], [[semidoped-2026-10-16-daily-update]].
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 162.45 (BESI.AS) | Q3 orders +96% YoY; CEO Blickman flatly dismisses ASML as a direct hybrid-bonding rival; backlog conversion on track — contra SemiAnalysis's Oct-15 SHORT |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 162.45 (BESI.AS) (2026-10-22). Opened at spot.

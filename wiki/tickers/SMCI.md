@@ -4,11 +4,11 @@ title: "SMCI — Super Micro Computer"
 tags: []
 related: ["[[semianalysis-2024-05-30-dell-beating-supermicro]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
 created: 2024-05-30
-updated: 2026-09-26
+updated: 2026-10-23
 ticker: SMCI
-current_stance: short
+current_stance: long
 conviction: high
-last_review: 2026-09-26
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -24,3 +24,9 @@ The bear case on SMCI opened in May 2024 on a purely competitive basis: SemiAnal
 
 ## Outcome tracking
 No price-at-call values are available for any of the four entries, so quantitative P&L judgment is not possible. The thesis trajectory has moved consistently in one direction: the original competitive-erosion argument was reinforced rather than falsified over the subsequent months, and by November 2024 a second, independent bear pillar — governance and audit failure — had materialized. The live short view would be falsified by a credible resolution of the accounting investigation (new auditor sign-off, clean restatement), evidence that Nvidia has not reduced GPU allocation to SMCI, or a durable margin recovery above 15% gross. Absent those developments, both pillars of the bear case remain intact.
+
+
+## 2026-10-23 run update
+| 2026-10-21 | [[semidoped]] | LONG | 35.57 | Raised fiscal Q1 revenue guide to $6.6-6.8B (from $5.6-6.4B) on AI-server demand; flagged improved gross margin |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 35.57 (2026-10-21). Opened at spot.

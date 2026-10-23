@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-20
+updated: 2026-10-23
 handle: semianalysis
 calls_logged: 250
-hit_rate: "13/31 (42%), ~14 open"
+hit_rate: "13/34 (38%), ~11 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+- **The Huawei–DeepSeek Symbiosis (2026-10-21, paywalled, full body served) — technical deep-dive, no priced ticker.** A 2.7k-word benchmark/architecture read on the China stack: Huawei has silicon (Ascend) but no frontier lab; DeepSeek has models but no compute → DeepSeek's Sep-30 **Ascend support for TileLang/DeepGEMM/DeepEP/FlashMLA/DeepSelect** is the artifact of that trade, and SA expects DeepSeek primarily on Huawei's stack by 2027-28. **Ascend 950PR** microbenchmarks: best GEMM kernels hit **99.7% of ceiling** (DeepSeek's DeepGEMM isn't the only path), effective HBM bandwidth beats H100 at small messages, but absolute perf sits **between A100 and MI300X** — hardware "~5 yrs behind A100," **software at the frontier**; Huawei bins both compute *and* memory into SKUs. Co-design runs both ways (FlashMLA KV-layout rewrite; DeepEP-Ascend under DeepSeek's org); DSv4.1-Flash is DeepSeek's first Engram model. Caveat: supernode/ARM-centric → **x86 support broken**, so it helps DeepSeek more than the broader ecosystem. **No priced ticker** (Huawei/DeepSeek private) → domain knowledge for [[geopolitics-export-controls]], [[ai-accelerator-competition]], [[hbm-memory]] (long-term CUDA-moat/China-share headwind for [[NVDA]], no fresh call).
+
+**hit_rate note (2026-10-23): 13/31 → 13/34 (38%) — the Sep-23 ClusterMAX longs resolve 0W/3L.** **[[CRWV]] ($90.13→$61.82 −31.4% ✗)** (the technical-bar neocloud, bonds distressed), **[[NBIS]] ($243.48→$171.57 −29.5% ✗)** (Platinum-tier/premium-pricing), **[[GOOGL]] ($342.36→$334.76 −2.2% ✗)** (Gold-tier cloud, thin). The whole neocloud/GPU-cloud complex de-rated hard through October; the ORCL/MSFT ClusterMAX calls were NEUTRAL (excluded). The Oct-15 ASML LONG / BESI SHORT + Oct-19 Datacenters-2027 supplier longs resolve in later runs. No new priced call this run (Huawei-DeepSeek carried none).
 
 - **Datacenters 2027: The Year of Acceleration, +50GW in a Single Year (2026-10-19, paid — body served as a preview, truncated at the paywall).** SA defends its **+43-50GW/2027 forecast** against the FUD (Brad Gerstner's "~25GW hunch" on the All-In pod): >24GW already in advanced construction. Two proprietary leading indicators: **quarterly self-build construction starts "going parabolic"** (two hyperscalers) and **>$1T of binding/non-cancellable leases signed YTD 2026** (15-20yr, $30-50B TCV/GW; leases→debt→buildout; the Microsoft 2023-24 freeze then Oracle's H2-25 gigantic leases explain the cadence). Delivery via the **modular "LEGO datacenter"** movement (Google prefab electrical, Meta tent, AWS SAMDC/Project Houdini, DayOne ~9-mo builds; MEP labor −63%, <10-mo construction); power "broadly solved" via BTM; ex-US buildout sharply accelerating 2027. Preview cut off before the oversupply section; the paywalled teaser flags **memory/logic becoming the #1 constraint in 2027-28** ("The Great Silicon Shortage"). SA explicitly names **Vertiv, ABB, Sterling Infrastructure** as order-surge beneficiaries → **LONG [[VRT]] $206.42 / [[STRL]] $424.36 / [[ABB]] CHF 75.68** (supplier calls, conviction low). (→ [[modular-datacenter-construction]], [[ai-debt-financing]], [[datacenter-power]].)
 

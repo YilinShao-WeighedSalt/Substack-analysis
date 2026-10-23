@@ -4,11 +4,11 @@ title: "AMZN — Amazon"
 tags: []
 related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-07-30-robotics-levels-of-autonomy]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]]"]
 created: 2024-03-13
-updated: 2026-10-14
+updated: 2026-10-23
 ticker: AMZN
 current_stance: long
 conviction: medium
-last_review: 2026-10-14
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -43,3 +43,9 @@ No px@call values are recorded across any entry in this log, making quantitative
 **Update 2026-08-12:** the SemiAnalysis Jul-8 read-through LONG ($243.06, off the Anthropic-IPO/Bedrock-margin note) has crossed 30 days at **$272.27 = +12.0% → WIN ✓**. First SemiAnalysis long-side win in the loaded set; lifts SA to 2/9 (22%).
 
 | 2026-10-12 | [[semidoped]] | LONG | 258.58 | In talks to buy Decart ~$7B to improve Trainium token economics (model-optimization software). |
+
+
+## 2026-10-23 run update
+| 2026-10-20 | [[semidoped]] | LONG | 262.37 | Launches TorchNeuron (PyTorch-native on Trainium, direct CUDA challenge) + €16B Germany + 960MW X-energy SMR with AEP |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 262.37 (2026-10-20). Opened at spot.

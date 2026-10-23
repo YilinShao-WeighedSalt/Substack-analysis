@@ -4,11 +4,11 @@ title: "SMTC — Semtech"
 tags: []
 related: ["[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-09-13-hot-chips-2025-recap]]", "[[irrationalanalysis-2025-12-15-serdes-wars-mediatek-tpu-semtech]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semidoped-2026-09-22-daily-update]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2025-06-15
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: SMTC
 current_stance: long
 conviction: high
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -38,3 +38,8 @@ No px@call prices are recorded across any of the seven entries, so precise retur
 **2026-09-05 resolve:** IA Aug-1 LONG $117.82→$147.89 **+25.5% ✓**.
 
 **2026-09-08 (resolution):** IA's Aug-9 LONG ($131.18) → **WIN** at $147.88 = **+12.7%** ✓.
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($174.33) -> $141.63 = **-18.8% LOSS ✗** (XPO-MSA entry).

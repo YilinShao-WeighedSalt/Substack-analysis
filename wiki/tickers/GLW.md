@@ -4,11 +4,11 @@ title: "GLW — Corning"
 tags: []
 related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-09-08-daily-update-september-8th]]", "[[semidoped-2026-07-29-daily-update]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[semidoped-2026-08-05-daily-update]]", "[[semidoped-2026-08-03-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2024-07-08
-updated: 2026-10-20
+updated: 2026-10-23
 ticker: GLW
 current_stance: long
 conviction: medium
-last_review: 2026-10-20
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -33,3 +33,9 @@ No px@call values are available for any of the three mentions, so price-based pe
 **Update 2026-08-06:** SD LONG $156.70 (Aug-5). The prior SD long (Jul-29 $135.22) is **+15.9% ✓ (open)** — Corning round-tripped its -20% fiber-ceiling drop and surged on the substitution trade, with the $20B 2026 run-rate reaffirmed (Aug-3). SD's 'capacity ceiling not demand' framing is playing out; open <30d.
 
 **2026-09-05 resolve:** SD Aug-5 LONG $156.70→$154.30 **-1.5% ✗** (Corning gave back a sliver of the substitution pop).
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 134.92 | Approves $585M Wilmington expansion (+414 jobs) to scale optical-fiber output for data-center demand |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 134.92 (2026-10-22). Opened at spot. **Resolution** — SD Sep-21 LONG ($159.69) -> $134.92 = **-15.5% LOSS ✗** (1060nm-VCSEL/Corning optics entry sold off hard).

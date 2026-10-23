@@ -4,11 +4,11 @@ title: "SU.PA — Schneider Electric"
 tags: [modular-datacenter, power-cooling, ecostruxure]
 related: ["[[semianalysis-2026-07-29-lego-datacenters]]", "[[modular-datacenter-construction]]", "[[datacenter-power]]"]
 created: 2026-07-31
-updated: 2026-10-17
+updated: 2026-10-23
 ticker: SU.PA
 current_stance: long
 conviction: medium
-last_review: 2026-10-17
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,3 +26,9 @@ First call this run, px@call EUR 284.60 (~-3% from 52-wk high — most resilient
 | 2026-10-16 | [[semidoped]] | LONG | 258.00 | Raises 2026 financial targets a second time this cycle on surging data-center orders; power & cooling now the binding constraint, order book visible into 2027-2028 |
 
 **Outcome tracking (2026-10-17):** SD LONG @ €258.00 (new call this run). Schneider is a direct beneficiary of the power/cooling-is-now-the-governor thesis running across the wiki ([[datacenter-power]]); shares slipped 1.53% on the day (good news priced in, stock near cycle highs). Opened at spot. current_stance long, conviction medium. related: [[semidoped-2026-10-16-daily-update]].
+
+
+## 2026-10-23 run update
+| 2026-10-20 | [[semidoped]] | LONG | 249.10 | Schneider record Q3 revenue on data-center demand; lifted full-year 2026 targets (stock fell 2.2% on the print) |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 249.10 (2026-10-20). Opened at spot.

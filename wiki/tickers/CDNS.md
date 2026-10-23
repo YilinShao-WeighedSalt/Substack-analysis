@@ -4,11 +4,11 @@ title: "CDNS — Cadence"
 tags: []
 related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]", "[[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
 created: 2025-05-17
-updated: 2026-10-02
+updated: 2026-10-23
 ticker: CDNS
 current_stance: mixed
 conviction: medium
-last_review: 2026-10-02
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,3 +29,8 @@ The initial [[irrationalanalysis]] view (May 2025) was straightforwardly structu
 
 ## Outcome tracking
 No px@call values are recorded across any of the six entries, so mark-to-market assessment is not possible. The thesis trajectory has been uniformly positive: every subsequent call has validated or extended the prior constructive view, with [[semianalysis]] (May 2026) providing the most bullish data points to date — $7.8B backlog covering 67% of FY26 revenue pre-booking, 25%+ IP growth in FY25, and documented 15-25% AI tool premium on contract renewals. The live thesis would be falsified by a material deceleration in digital full-flow wins, evidence that Cerebrus AI adoption is plateauing rather than compounding, or a sustained China export control escalation that pushes the China revenue share (currently declining toward 12%) to single digits and triggers a guidance cut.
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($302.95) -> $326.07 = **+7.6% WIN ✓** (ChipStack AI-agent; EDA held — one of only two SD wins).

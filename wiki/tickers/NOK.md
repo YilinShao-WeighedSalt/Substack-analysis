@@ -4,11 +4,11 @@ title: "NOK — Nokia"
 tags: []
 related: ["[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]"]
 created: 2024-09-04
-updated: 2026-09-05
+updated: 2026-10-23
 ticker: NOK
 current_stance: long
 conviction: medium
-last_review: 2026-09-05
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,3 +29,9 @@ No px@call values are recorded for either entry, so quantitative P&L cannot be a
 **Update 2026-08-06:** IA NEUTRAL $9.58 (Aug-5), grouped with Ciena as long-haul names outside the ban. Prior IA Aug-1 LONG $9.14 -> $9.58 = **+4.8% (open)**; the Jul-1 long ($13.10) resolved a loss last run. InP-fab-duopoly (Infinera) moat unchanged.
 
 **2026-09-05 resolve:** IA Aug-1 LONG $9.14→$10.03 **+9.7% ✓** (long-haul, outside the transceiver ban).
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | LONG | 9.25 | AI/cloud net sales +123% YoY, IP Networks +43%, Network Infrastructure +15% cc; Q3 profit beat on data-center demand |
+
+**Outcome tracking (2026-10-23):** New **SD LONG** @ 9.25 (2026-10-22). Opened at spot.

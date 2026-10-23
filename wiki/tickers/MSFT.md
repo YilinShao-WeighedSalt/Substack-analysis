@@ -4,11 +4,11 @@ title: "MSFT — Microsoft"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-07-27-dell-xps-tributoqc-13-review]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-23-stargate-jv-microsoft-oracle-winners]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-04-28-datacenter-freeze-self-build-slowdown]]", "[[semianalysis-2025-05-16-ai-middle-east-uae-ksa]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[semianalysis-2026-04-15-nvidia-broadcom-cpo-hbm4]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-spacex-10gw-microsoft]]", "[[semidoped-2026-09-11-daily]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2024-03-13
-updated: 2026-10-14
+updated: 2026-10-23
 ticker: MSFT
-current_stance: long
+current_stance: neutral
 conviction: medium
-last_review: 2026-10-14
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -52,3 +52,9 @@ No px@call values are recorded for any entry, making quantitative P&L assessment
 
 | 2026-10-13 | [[semidoped]] | LONG | 543.45 | Maia 300 multichiplet inference ASIC → multi-GW Azure by 2027 (~40% more tok/s, 7x rack throughput vs Maia 200 on N2P). |
 **Update 2026-10-14:** SD LONG $543.45 (Maia 300 cost-cut mandate). Resolution: SD Sep-11 LONG ($495.63) → $543.45 = **+9.6% WIN ✓** (38 GW-by-2032 demand floor played out). current_stance long, conviction medium.
+
+
+## 2026-10-23 run update
+| 2026-10-22 | [[semidoped]] | NEUTRAL | 532.95 | Azure exclusivity pressured as OpenAI adds Google Cloud; earlier lost Nscale as UK anchor tenant to power delays |
+
+**Outcome tracking (2026-10-23):** New **SD NEUTRAL** @ 532.95 (2026-10-22). Opened at spot.

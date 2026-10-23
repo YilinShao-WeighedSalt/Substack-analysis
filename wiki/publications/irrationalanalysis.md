@@ -4,15 +4,17 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-20
+updated: 2026-10-23
 handle: irrationalanalysis
 calls_logged: 641
-hit_rate: "32/57 (56%), ~21 open"
+hit_rate: "34/60 (57%), ~18 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-10-23): 32/57 → 34/60 (57%) — the Sep-21 ECOC optics shorts pay off big (2W/1L).** No new IA post in the 3-day window (last Oct-19, already ingested). **[[CBRS]] SHORT ($212.41→$117.98) = short +44.5% WIN ✓** (biggest resolved win of the run — the Cerebras integrated-laser "fantasy" short), **[[COHR]] SHORT ($310.39→$237.53) = short +23.5% WIN ✓** (the UHP-laser-fails-the-<1MHz-spec short), **[[LITE]] LONG ($945.67→$850.70) = −10.0% LOSS ✗** (the companion UHP-supply-moat long round-tripped). The lesson cuts against Semi Doped's same-window optics *longs* (2W/17L): IA shorted the names everyone else was buying into the ECOC top, and the entries resolved the opposite way. The Oct-19 OCP batch (CRDO/SMTC/GLW/LITE/AVGO long, COHR short, MRVL/MTSI/ALAB neut) resolves ~Nov-18.
 
 - **OCP Global Summit 2026: Irrational Recap (2026-10-19):** A 7.3k-word floor-crawl. **NPO (Open CPX)** replaced CPO as the show's hot topic; IA's hard thesis: **integrated-laser NPO is "a terrible idea"** (lasers = #1 link-flap cause; Innolight/Terrahop's Diablo ships 4 cold-spare lasers = tacit admission), and **slow-and-wide 32-64G NRZ direct-drive** beats heroic 224G/448G SerDes (448G "a disaster"). Exposed widespread **TDECQ cheating via waveform averaging** — **Marvell** "legendary incompetent cheating" (400G SerDes TDECQ *unmeasurable* on the best Keysight scope, RLM failed), **Macom** "sucks" (7.4 dB). The closing **"Bubble Vibes"** is the macro signal: author **de-levered ~$2M** before Anthropic's buyside day; **Anthropic valuation $2T→$1.5T in 10 days**, OpenAI struggling at $1.4T, coding ARR plateaued, neocloud convertible notes "violent," rumored blow-ups (VARA/Jane Street desk/HRT), a repeated **sub-prime/CDO analogy**. Calls: **LONG [[CRDO]] $169.70** (µLED→µVCSEL pivot, honest demo), **LONG [[SMTC]] $136.73** (wins copper+optics), **LONG [[GLW]] $132.00** (Corning magic connector), **LONG [[LITE]] $824.13** (UHP-laser supply moat), **LONG [[AVGO]] $328.75** (cleanest 1.6T AEC), **SHORT [[COHR]] $232.90** (UHP laser fails the <1 MHz spec), **NEUTRAL [[MRVL]] $227.83 / [[MTSI]] $262.24 / [[ALAB]] $285.82** (all scathing). (→ [[silicon-photonics-interconnects]], [[ai-debt-financing]].)
 

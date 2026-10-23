@@ -4,11 +4,11 @@ title: "BE — Bloom Energy"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2025-10-24
-updated: 2026-10-17
+updated: 2026-10-23
 ticker: BE
 current_stance: mixed
 conviction: medium
-last_review: 2026-10-17
+last_review: 2026-10-23
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -65,3 +65,8 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 | 2026-10-15 | [[semidoped]] | LONG | 236.30 | AEP+Bloom 20-yr 702MW fuel-cell PPA with Google (Wyoming; AEP $4B investment) — largest single fuel-cell power deal on record |
 
 **Update 2026-10-17:** SD LONG @ $236.30. Resolution: SD **Sep-17 LONG ($265.63, 800VDC launch) → $236.30 = -11.0% LOSS ✗** (fuel-cell names de-rated through October despite order flow; the arc has been choppy — SA's Sep-10 BTM long +1.9%, SD's Oct-7 neutral mark). The 702MW Google PPA is a concrete demand anchor against the pullback. current_stance long, conviction medium. related: [[semidoped-2026-10-15-daily-update]].
+
+
+## 2026-10-23 run update
+
+**Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($276.53) -> $238.53 = **-13.7% LOSS ✗** (800VDC entry; BTM power trade de-rated).
