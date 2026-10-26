@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-23
+updated: 2026-10-26
 handle: semianalysis
-calls_logged: 250
-hit_rate: "13/34 (38%), ~11 open"
+calls_logged: 251
+hit_rate: "13/34 (38%), ~12 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-10-26): holds 13/34 (38%) — no priced call crossed 30 days.** The Sep-23 ClusterMAX longs resolved last run (Oct-23); Sep-25 China-DC and Sep-26 Panther Lake carried no/neutral priced calls. The Oct-15 ASML LONG / BESI SHORT + Oct-19 Datacenters-2027 supplier longs resolve in later runs. This run's 1 new call (AMZN LONG) opened at spot.
+
+- **Amazon's Trainium Takes a Strike at the Training King (2026-10-23, paywalled, full body served).** A hands-on review (SA engineers ran Trainium3 racks 2 weeks) arguing **Amazon's software course-correction broadens Trainium3 from inference into research training.** The fix is **TorchNeuron — a first-class native-PyTorch backend** (swap `.to("cuda")`→`.to("neuron")`, eager + `torch.compile`, native distributed/DTensor/FSDP) replacing the old PyTorch/XLA graph-capture; AWS hired Google's native-Torch-on-TPU lead. Findings: already supports HF Accelerate/TorchTitan/gpt-oss + investing in vLLM/SGLang; TorchTitan run hit **30.47% MFU compiled** (architecture edits "worked great") but the **Neuron compiler is slow** (gpt-oss 27-min compile; ~2-orders-faster TTFS targeted); a single Trainium3 core beats **GB300** MFU from the mid-range and again past 1 TFLOP; FlexAttention 93% pass; up to **80k cores on CI** + transparent parity tables; **Neuron Explorer profiler is SOTA / "GPU-impossible"** and Anthropic's perf lead prefers it to Nvidia/AMD. → **LONG [[AMZN]] $248.00** (training viability broadens adoption; "nowhere near CUDA maturity, but the direction is right"); competitive read-through vs **[[NVDA]]** (no fresh call). (→ [[custom-silicon-asic]], [[ai-accelerator-competition]].)
 
 - **The Huawei–DeepSeek Symbiosis (2026-10-21, paywalled, full body served) — technical deep-dive, no priced ticker.** A 2.7k-word benchmark/architecture read on the China stack: Huawei has silicon (Ascend) but no frontier lab; DeepSeek has models but no compute → DeepSeek's Sep-30 **Ascend support for TileLang/DeepGEMM/DeepEP/FlashMLA/DeepSelect** is the artifact of that trade, and SA expects DeepSeek primarily on Huawei's stack by 2027-28. **Ascend 950PR** microbenchmarks: best GEMM kernels hit **99.7% of ceiling** (DeepSeek's DeepGEMM isn't the only path), effective HBM bandwidth beats H100 at small messages, but absolute perf sits **between A100 and MI300X** — hardware "~5 yrs behind A100," **software at the frontier**; Huawei bins both compute *and* memory into SKUs. Co-design runs both ways (FlashMLA KV-layout rewrite; DeepEP-Ascend under DeepSeek's org); DSv4.1-Flash is DeepSeek's first Engram model. Caveat: supernode/ARM-centric → **x86 support broken**, so it helps DeepSeek more than the broader ecosystem. **No priced ticker** (Huawei/DeepSeek private) → domain knowledge for [[geopolitics-export-controls]], [[ai-accelerator-competition]], [[hbm-memory]] (long-term CUDA-moat/China-share headwind for [[NVDA]], no fresh call).
 

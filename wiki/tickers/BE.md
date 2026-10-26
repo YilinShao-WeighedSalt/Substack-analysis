@@ -2,13 +2,13 @@
 type: ticker
 title: "BE — Bloom Energy"
 tags: []
-related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
+related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2025-10-24
-updated: 2026-10-23
+updated: 2026-10-26
 ticker: BE
-current_stance: mixed
+current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -70,3 +70,9 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($276.53) -> $238.53 = **-13.7% LOSS ✗** (800VDC entry; BTM power trade de-rated).
+
+
+## 2026-10-26 run update
+| 2026-10-24 | [[irrationalanalysis]] | LONG | 193.30 | Great earnings, imploded anyway; IA bought back the dip (stayed out of the earnings YOLO but couldn't resist), would double near ~$160 ('buy and pray'). |
+
+**Outcome tracking (2026-10-26):** New IA LONG @ $193.30. Opened at spot.

@@ -2,13 +2,13 @@
 type: ticker
 title: "CRDO — Credo Technology"
 tags: []
-related: ["[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-03-interconnects-101]]", "[[citrini-2024-07-15-in-conversation-credo-semiconductor]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[citrini-2025-09-18-single-stock-long-thesis]]", "[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
+related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-03-interconnects-101]]", "[[citrini-2024-07-15-in-conversation-credo-semiconductor]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[citrini-2025-09-18-single-stock-long-thesis]]", "[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2024-06-03
-updated: 2026-10-20
+updated: 2026-10-26
 ticker: CRDO
 current_stance: long
 conviction: high
-last_review: 2026-10-20
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -43,3 +43,9 @@ No px@call values are recorded across any entry, so direct price-based PnL attri
 
 | 2026-10-13 | [[semidoped]] | LONG | 198.31 | 1.6T ZeroFlap + SRMO micro-emitter OCP standard (Lumentum/Corning/Astera); uVCSEL pivot off uLED. |
 **Update 2026-10-14:** SD LONG $198.31 — corroborates IA's Oct-1 uVCSEL-pivot reversal. **Resolution: IA's Sep-14 uLED SHORT ($161.49) → $198.31 = short -22.8% LOSS ✗** — CRDO ran; the µLED-specific short was wrong on the stock even though IA later agreed µLED was the wrong tech and flipped long. current_stance long.
+
+
+## 2026-10-26 run update
+| 2026-10-24 | [[irrationalanalysis]] | LONG | 147.29 | Edgewater xAI-to-optics note crushed it; IA reads it as 'nobody makes 1.6T AEC at 6m,' bad news priced in; ultra-bull on SerDes + uVCSEL NPO/CPO, 'really tempted to go long here.' |
+
+**Outcome tracking (2026-10-26):** New IA LONG @ $147.29 (reaffirm/dip-buy). Opened at spot.

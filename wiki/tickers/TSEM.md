@@ -2,13 +2,13 @@
 type: ticker
 title: "TSEM — Tower Semiconductor"
 tags: []
-related: ["[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-06-19-daily-update-june-19]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-08-04-daily-update]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]]"]
+related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-06-19-daily-update-june-19]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-08-04-daily-update]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]]"]
 created: 2024-12-02
-updated: 2026-10-20
+updated: 2026-10-26
 ticker: TSEM
 current_stance: long
 conviction: high
-last_review: 2026-10-20
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -65,3 +65,9 @@ No px@call values were recorded across the first 18 appearances (all pre-2026-06
 
 
 **Update 2026-10-17 (resolution):** SD **Sep-17 LONG ($223.60) → $209.80 = -6.2% LOSS ✗** (Tower+NewPhotonics HVM optical-engine-PIC read pulled back with the optics group). No new call this run; this window Tower+Semtech expanded their SiGe partnership (mention).
+
+
+## 2026-10-26 run update
+| 2026-10-24 | [[irrationalanalysis]] | NEUTRAL | 167.56 | Wants to fade SA's 'mostly wrong Claude-slop' anti-Tower note but disciplined; only a 'buy and pray' near ~$130. (SA anti-TSEM vs IA pro-Tower disagreement.) |
+
+**Outcome tracking (2026-10-26):** New IA NEUTRAL @ $167.56 (watching; would buy near ~$130). Excluded from ratio.

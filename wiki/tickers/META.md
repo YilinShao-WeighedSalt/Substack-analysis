@@ -2,13 +2,13 @@
 type: ticker
 title: "META — Meta Platforms"
 tags: []
-related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semidoped-2026-09-24-daily-update-september-24th]]", "[[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]]"]
+related: ["[[semidoped-2026-10-23-daily-update]]", "[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[semianalysis-2024-06-17-100k-h100-cluster-power-network]]", "[[irrationalanalysis-2024-09-17-gelsingers-heroic-amputations]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[irrationalanalysis-2025-01-28-emergency-deepseek-note]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-11-meta-superintelligence-leadership-compute-talent-data]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-12-microsoft-ai-strategy-energy-tokens]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semidoped-2026-09-24-daily-update-september-24th]]", "[[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]]"]
 created: 2024-03-13
-updated: 2026-10-23
+updated: 2026-10-26
 ticker: META
 current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -59,3 +59,9 @@ No px@call values are recorded across any entry, so quantitative P&L assessment 
 | 2026-10-22 | [[semidoped]] | LONG | 697.52 | 2026 capex lifted to $145B ($34.9B Q3); Zuckerberg says AI spend delivering results; new nonvoting stock class for acquisitions |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 697.52 (2026-10-22). Opened at spot.
+
+
+## 2026-10-26 run update
+| 2026-10-23 | [[semidoped]] | NEUTRAL | 642.62 | $34.9B single-quarter capex -> FCF negative first time in years, shares -7%, credit-risk gauge at fresh high, $825B future commitments; the debate shifts to whether monetization can keep pace with the burn. |
+
+**Outcome tracking (2026-10-26):** New SD NEUTRAL @ $642.62 (excluded). **Resolution: SD Sep-24 LONG ($777.59) -> $642.62 = -17.4% LOSS ✗** (the $145B-capex/Muse long round-tripped into the FCF-negative print).

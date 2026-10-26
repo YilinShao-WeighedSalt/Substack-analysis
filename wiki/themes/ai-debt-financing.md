@@ -4,7 +4,7 @@ title: "AI Debt Financing & Neocloud Economics"
 tags: [ai-infrastructure-capex, neocloud, ai-debt-financing]
 related: ["[[semianalysis-2026-07-06-nvidia-gpu-debt-backstop, "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]", "[[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]]", "[[semidoped-2026-10-19-daily-update]]"]]", "[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[NVDA]]", "[[CRWV]]", "[[META]]", "[[AMD]]", "[[ai-infrastructure-capex]]", "[[buildout-vs-monetization]]"]
 created: 2026-07-07
-updated: 2026-10-23
+updated: 2026-10-26
 status: emerging
 first_seen: 2026-07-06
 ---
@@ -63,3 +63,5 @@ A **neocloud** rents GPUs, financing the hardware almost entirely against hypers
 
 ## 2026-10-23 update — Anthropic's $750B compute floor; China raises $17B in a day
 **Anthropic posted a record, first-ever-profitable Q3 ($16.8B rev, +45% QoQ; ~$965B valuation)**, then its **draft S-1 put up to $750B of future compute obligations on record** alongside an **$80.7B H1 net loss** (Austin: ~$72B is non-cash convertible-note accounting, reconciling the profitable-Q3/loss-H1 split). The investable signal (Vik): **much of the $750B is non-cancelable → a floor under accelerator & HBM orders even if the IPO wobbles**; and the clouds (AWS/Google/MSFT) now treat Anthropic as a competitor, squeezing its capacity. **Nscale** lost Microsoft as UK anchor (grid delays) and is courting **Anthropic for a 2nd $45B compute deal**; its $30B IPO target is contested (fair value pegged ~$16-19B). On the China side, **Huawei closed a $2.3B offshore loan and DeepSeek raised $15B the same day** (>$17B), all aimed at US-independent AI infra.
+
+**2026-10-26 (neocloud credit stress goes mainstream + valuation cuts):** AI-sector credit spreads hit a **17-month high**; short-sellers banked **$6B** betting against CoreWeave and neocloud peers (CRWV/IREN new 2026 lows, CRWV −10% after Jensen flagged an AI funding crunch). Structural problem restated: long-dated GPU leases financed with short-term debt = acute refinancing risk (Blackstone's Jon Gray: can 'find a way through'). On the equity side, **Meta's $34.9B quarter pushed FCF negative** (first time in years), $145B 2026 capex guide drove its credit-risk gauge to a fresh high, $825B future commitments. Valuation cuts: **OpenAI raising at ~$1.25T** (from $1.4T), **Anthropic IPO whisper ~$1.5T** (from $2T). IA's framing: circular financing meets circular token spend; ~75% of lab spend is training → a training pullback floods inference supply.

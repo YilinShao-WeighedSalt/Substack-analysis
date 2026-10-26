@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-10-14
+updated: 2026-10-26
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -109,3 +109,5 @@ Two structural moves this week. (1) The custom-silicon turn finally pulls in the
 
 ## 2026-10-14 — Maia 300, d-Matrix, Helion, Reflection (Semi Doped, OCP week)
 **Microsoft Maia 300** = MSFT's 2nd-gen inference ASIC, **multichiplet** (departs from monolithic-die GPUs) on **TSMC N2P**, slated for **multi-GW Azure by 2027** with an explicit cost-reduction (reduce-Nvidia-dependence) mandate: ~40% more tokens/s, **7× rack throughput vs Maia 200**. Key read (Vik): **SK Hynix already locked the memory on the whole Maia fleet since Maia 200** → "the memory trade doesn't care which ASIC wins." Axios: the launch makes every major Nvidia customer a potential competitor. **Nvidia counter-moves:** pursuing **Reflection AI** (open-weight model dev — likely acqui-hire) and a stake in **d-Matrix** (inference silicon, ~$5B val; Squadron multi-rack clusters; already wiring Raptor into **NVLink Fusion**) — the same "keep inference rivals plugged into the rack" playbook. **AMD Helion** debuted at full rack scale (agentic AI) at OCP; Wiwynn had built systems on the floor. Amazon chasing **Decart (~$7B)** = software to lift **Trainium** utilization (get more tokens out of the silicon), not new hardware.
+
+**2026-10-26 (Trainium3 training-stack viability — SA Oct-23):** SemiAnalysis's hands-on Trainium3 review argues Amazon's software course-correction broadens the chip from inference into research training. **TorchNeuron** = a first-class native-PyTorch backend (swap `.to('cuda')`→`.to('neuron')`, eager + torch.compile, native torch.distributed/DTensor/FSDP) replacing the old PyTorch/XLA graph-capture; AWS hired Google's native-Torch-on-TPU lead. Already supports HF Accelerate/TorchTitan/gpt-oss + investing in vLLM/SGLang; TorchTitan hit 30.47% MFU compiled; a single Trainium3 core beats GB300 MFU from the mid-range and again past 1 TFLOP; FlexAttention 93% pass; up to 80k cores on CI. Weakness: slow Neuron compiler (gpt-oss 27-min compile; ~2-orders-faster TTFS targeted). The **Neuron Explorer profiler is SOTA / 'GPU-impossible'** (per-HW-unit event timeline) and Anthropic's perf lead prefers it to Nvidia Nsight/AMD.

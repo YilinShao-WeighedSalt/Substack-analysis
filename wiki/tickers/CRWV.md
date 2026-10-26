@@ -2,13 +2,13 @@
 type: ticker
 title: "CRWV — CoreWeave"
 tags: []
-related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
+related: ["[[semidoped-2026-10-23-daily-update]]", "[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2025-03-22
-updated: 2026-10-23
+updated: 2026-10-26
 ticker: CRWV
 current_stance: long
 conviction: low
-last_review: 2026-10-23
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -53,3 +53,9 @@ No px@call values exist for any entry, so price-based outcome verification is no
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SA Sep-23 ClusterMAX LONG ($90.13) -> $61.82 = **-31.4% LOSS ✗** (the technical-bar neocloud; bonds distressed, shares halved).
+
+
+## 2026-10-26 run update
+| 2026-10-23 | [[semidoped]] | NEUTRAL | 54.24 | Short-sellers bank $6B on neocloud debt fears; new 2026 lows (-10% after Jensen flagged an AI funding crunch), AI-credit spreads at a 17-mo high — long GPU leases on short-term debt. |
+
+**Outcome tracking (2026-10-26):** New SD NEUTRAL @ $54.24 (cautionary; excluded). CoreWeave now the poster child of the neocloud credit-stress trade.

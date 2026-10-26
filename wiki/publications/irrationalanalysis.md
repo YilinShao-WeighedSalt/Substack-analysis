@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-23
+updated: 2026-10-26
 handle: irrationalanalysis
-calls_logged: 641
-hit_rate: "34/60 (57%), ~18 open"
+calls_logged: 647
+hit_rate: "34/60 (57%), ~23 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-10-26): holds 34/60 (57%) — no priced call crossed 30 days.** The Sep-21 ECOC batch resolved last run (Oct-23); the Oct-1 Q3 CRDO/QMCO longs + CBRS short cross 30d ~Oct-31, the Oct-7 Marvell AVGO/AXTI longs ~Nov-6, the Oct-19 OCP batch ~Nov-18. This run's 6 new calls (5 directional long/short + 1 neutral) opened at spot.
+
+- **[Market Memo] Dancing in the Rain (2026-10-24):** A macro/sentiment memo into "a rather violent few weeks" — author ~70-80% to peak fear, fully **de-levered**, advises "dancing in the warm rain." The teardown: **OpenAI raising at $1.25T** (from $1.4T), **Anthropic IPO whisper cut to ~$1.5T** (from $2T) — both cut within a month. **"Alcoholic ARR":** a large, "dirty" slice of lab revenue is rivals (Chinese, Meta) paying to **distill** them at ~1/10th R&D cost on a 1-3mo delay; Anthropic now backing it out as a "temporary 6-8% headwind." Moffett's "no dark GPU" rebuttal is "compelling"; ~75% of lab spend is training, so stress → an inference-supply flood; subscriptions heavily subsidized; AI-math breakouts open-sourced (⇒ no economic value); **drug discovery** the "worst industry" to serve the 12-18mo revenue need → "a very bad time in 2028." Calls (Interesting-Charts section, speculative): **LONG [[AAOI]] $67.51** (asymmetric: soft Chinese transceiver-ban rumor + AMD/Ayar/Marvell laser starvation for the 2028 MI500), **LONG [[BE]] $193.30** (bought the earnings-implosion dip), **LONG [[AXTI]] $52.08** (6-in InP chokepoint, a favorite; wants March prices), **LONG [[CRDO]] $147.29** (Edgewater xAI-optics scare priced in; ultra-bull SerDes + µVCSEL), **SHORT [[COHR]] $209.29** (won't win the laser sockets — reaffirm), **NEUTRAL [[TSEM]] $167.56** (wants to fade SA's anti-Tower note, disciplined; buy near ~$130). (→ [[ai-software-models]], [[ai-debt-financing]], [[silicon-photonics-interconnects]].)
 
 **hit_rate note (2026-10-23): 32/57 → 34/60 (57%) — the Sep-21 ECOC optics shorts pay off big (2W/1L).** No new IA post in the 3-day window (last Oct-19, already ingested). **[[CBRS]] SHORT ($212.41→$117.98) = short +44.5% WIN ✓** (biggest resolved win of the run — the Cerebras integrated-laser "fantasy" short), **[[COHR]] SHORT ($310.39→$237.53) = short +23.5% WIN ✓** (the UHP-laser-fails-the-<1MHz-spec short), **[[LITE]] LONG ($945.67→$850.70) = −10.0% LOSS ✗** (the companion UHP-supply-moat long round-tripped). The lesson cuts against Semi Doped's same-window optics *longs* (2W/17L): IA shorted the names everyone else was buying into the ECOC top, and the entries resolved the opposite way. The Oct-19 OCP batch (CRDO/SMTC/GLW/LITE/AVGO long, COHR short, MRVL/MTSI/ALAB neut) resolves ~Nov-18.
 

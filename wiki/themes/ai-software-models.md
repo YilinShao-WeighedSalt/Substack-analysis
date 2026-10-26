@@ -4,7 +4,7 @@ title: "AI Models, Software & Economics"
 tags: []
 related: ["[[semidoped-2026-10-18-from-the-editor-zucks-week-sams-week]]"]
 created: 2024-05-07
-updated: 2026-10-20
+updated: 2026-10-26
 status: maturing
 first_seen: 2024-05-07
 ---
@@ -117,3 +117,5 @@ SemiAnalysis seeded this theme in mid-2024 with structural critiques of closed-m
 
 ## 2026-10-20 — Meta's on-device + ads edge vs OpenAI's courtroom device fight (Semi Doped editorial)
 Semi Doped's "From the Editor: Zuck's Week, Sam's Week" frames a structural divide. **Meta** released **Muse Wonder** (ranked **#2 on Artificial Analysis**, behind Opus 5.5, ahead of GPT-6 Astra / Gemini 4 Argon / Claude Fable 5.1) and open-weighted **Muse Spark Open** (816B-param MoE, 42B active) that **runs free on two M5 Ultra Mac Studios** (1,024GB unified memory; 816GB weights at 8-bit). Why give it away? **Ads** — Meta pays nothing for on-device inference, loses no revenue, and gains developers; API + $20/$100 subs are upside. On-device fits **both** Meta's ad model and **Apple's** hardware model (a frontier model that needs two top-config Mac Studios *sells Mac Studios*; Apple CEO John Ternus got a thank-you — first public Apple-Meta collab since 2017). **OpenAI is on the other side**: it earns by *serving* inference, so a token generated on a Mac is one it didn't serve; its edge device is **in federal court** (Judge Davila "highly likely" to grant Apple's injunction; dueling trade-secret filings). → LONG [[META]], LONG [[AAPL]].
+
+**2026-10-26 (distillation / 'alcoholic ARR' — IA Dancing-in-the-Rain):** Distillation = training a small 'student' model to copy a big 'teacher' by feeding the same inputs (public models like Fabel/Astra distilled from internal Mythos/Bel). IA argues a large, 'dirty' slice of Anthropic/OpenAI ARR IS rival labs (Chinese, Meta-accused) paying to distill them at ~1/10th R&D cost on a 1-3-month delay — most of that spend shows up as the target's revenue. The labs either can detect it or are lying; they took the money to juice ARR ('alcoholic ARR'), and Anthropic now backs it out as a 'temporary 6-8% headwind' in its S-1 (the revenue migrates to OpenAI, not gone). Also: ~75% of lab spend is training, so financial stress → a flood of inference supply; subscriptions heavily subsidized; AI-math breakouts open-sourced ⇒ little economic value; drug-discovery pitched as the next use-case but the worst industry for a 12-18-month revenue rescue (compresses discovery but ~10yr to approval). OpenAI raising at ~$1.25T, Anthropic IPO whisper cut to ~$1.5T.

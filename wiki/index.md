@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-23
+updated: 2026-10-26
 ---
 
 # Wiki Index
@@ -264,6 +264,7 @@ updated: 2026-10-23
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]] — Bubble-vibes macro memo: de-levered, ~70-80% to peak fear; OpenAI raising $1.25T / Anthropic IPO whisper ~$1.5T; 'alcoholic ARR' = distillation revenue the labs can't admit; ~75% lab spend is training; drug-discovery the worst 12-18mo monetization fix (LONG AAOI/BE/AXTI/CRDO, SHORT COHR, NEUT TSEM)
 - [[irrationalanalysis-2026-10-19-ocp-global-summit-2026]] — OCP Global Summit 2026 recap: NPO (Open CPX) replaces CPO, integrated-laser NPO a 'terrible idea', slow-and-wide 32-64G beats 448G; TDECQ waveform-averaging cheating exposed (Marvell/Macom); 'Bubble Vibes' sub-prime/CDO analogy, de-levered $2M, Anthropic $2T→$1.5T (LONG CRDO/SMTC/GLW/LITE/AVGO, SHORT COHR, NEUT MRVL/MTSI/ALAB)
 - [[irrationalanalysis-2026-10-11-the-tragedy-of-3d-xpoint]] — The Tragedy of 3D XPoint (Optane/QuantX): PCM between NAND & DRAM, died at 4 layers + NVMe/Memory-mode interface choke; App-direct persistence was the real value; CXL the right bus; SpaceX/Terafab the long-shot reviver (NEUT INTC "back in stride"/MU "won't bother")
 - [[irrationalanalysis-2026-10-07-marvell-2026-investor-day]] — Marvell 2026 Investor Day roast: SRAM/die-to-die/one 1.6T constellation praised, TFLN/µLED/EAM-to-CPO derided, $70-90B FY31 = bubble tell; sold CIEN to add AXTI (NEUT MRVL/CIEN, LONG AVGO/AXTI)
@@ -415,6 +416,7 @@ updated: 2026-10-23
 - [[irrationalanalysis-2026-07-02-market-memo-hot-summer-topics]] — [Market Memo] Hot Summer Topics (AMAT, Erock, HBF, VCSEL CPO, 800V DC)
 
 ### SemiAnalysis
+- [[semianalysis-2026-10-23-amazons-trainium-takes-a-strike]] — Amazon's Trainium Takes a Strike at the Training King: TorchNeuron = native-PyTorch backend (.to('neuron')) broadens Trainium3 into research training; HF/TorchTitan/vLLM support, 30.47% MFU compiled, MatMul beats GB300 mid-range, 80k-core CI, Neuron Explorer profiler SOTA ('GPU-impossible'); weakness = slow compiler (LONG AMZN; competitive read-through NVDA)
 - [[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]] — Datacenters 2027 (paid preview): +50GW in one year defended vs Gerstner's 25GW hunch; >$1T binding/non-cancellable leases YTD; modular 'LEGO' buildout (Google prefab/Meta tent/AWS SAMDC/DayOne 9mo); power 'broadly solved' via BTM; memory/logic the next 2027-28 constraint (LONG VRT/STRL/ABB, supplier reads)
 - [[semianalysis-2026-10-15-asml-hybrid-bonding]] — ASML Is Building a Hybrid Bonding Tool: patent trail (WO2025201788A1) → track-based die-to-wafer bonder reusing ORION alignment + EUV particle-control edge; logic (TSMC/Intel) first; a structural threat to Besi's one D2W moat; HBM D2W slips to 2029+ "if at all" (LONG ASML, SHORT BESI; AMAT implicated via 9%+Kinex)
 - [[semianalysis-2026-10-21-huawei-deepseek]] — The Huawei–DeepSeek Symbiosis: Ascend 950PR benchmarks (GEMM 99.7% ceiling, perf between A100/MI300X, software at frontier) + DeepSeek's Ascend kernel releases (TileLang/DeepGEMM/DeepEP) = a vertically-integrating China stack; x86 support broken (no priced call; CUDA-moat/China-share headwind for NVDA)
@@ -552,6 +554,7 @@ updated: 2026-10-23
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-23-daily-update]] — Daily Oct 23: Meta's $34.9B quarter → FCF negative (shares −7%, credit gauge fresh high, $825B commitments); Tesla ₩1.1T + Nvidia ₩2.6T equity into dedicated SEMCO FC-BGA lines; TSMC asks suppliers to purge Chinese rare-earth magnets; SK Hynix scraps Solidigm $10B US IPO (shares rally); JCET $2.73B advanced packaging; short-sellers bank $6B on CoreWeave/neocloud debt; WDC dividend raise (LONG 009150/000660/WDC, NEUT META/CRWV/MU/TSM)
 - [[semidoped-2026-10-20-daily-update-october-20th-2026]] — Daily Oct 20: Anthropic record profitable Q3 ($16.8B); ASML patent-scare hammers Besi but orders doubled YoY (contrarian defense); SK Hynix ₩2T supplier fund + SEMCO ₩360.5B substrate; Schneider record + ABB orders +40%; Amazon TorchNeuron on Trainium (LONG BESI/009150/ABB/SU.PA/AMZN/IFX, NEUT MU/000660)
 - [[semidoped-2026-10-21-daily-update-october-21st-2026]] — Daily Oct 21: Anthropic S-1 = $750B non-cancelable compute + $80.7B H1 loss (floor under HBM/accelerators); Terafab locks ASML gear; Super Micro raises guide; Samsung 4nm→HBM base dies (base-die edge); Vicor Q3 +78.5% (LONG SMCI/VICR/005930/NVDA, NEUT QCOM)
 - [[semidoped-2026-10-22-daily-update-october-22nd-2026]] — Daily Oct 22: Meta capex $145B + Nokia AI/cloud +123%; Lam firm + ASML warns tool shortages through 2028; Besi orders +96% (CEO dismisses ASML); OpenAI→Google Cloud + AMD/Intel x86 oneDNN; Corning $585M fiber; TI above-consensus (LONG META/NOK/LRCX/ASML/BESI/GOOGL/NVDA/IFX/GLW/TXN, NEUT MSFT/INTC)

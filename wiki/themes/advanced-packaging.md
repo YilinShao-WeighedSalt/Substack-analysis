@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-23
+updated: 2026-10-26
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -108,3 +108,5 @@ The **custom base-die thesis** went concrete: **Samsung is routing the logic bas
 The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hammered **[[BESI]]** on a report that **ASML is filing hybrid-bonding patents** (echoing [[semianalysis-2026-10-15-asml-hybrid-bonding]]'s D2W-bonder scoop, which turned SA openly SHORT Besi). But **Semi Doped defended Besi both days** and on **Oct-22 Besi reported Q3 orders +96%**, with CEO Blickman **flatly dismissing ASML as a direct hybrid-bonding rival** ("different positions in the packaging workflow"); die-to-wafer HBM bonding reportedly slips to 2029 anyway. Plain-language: hybrid bonding = copper-to-copper chip stacking with no solder bumps; ASML's angle is the *scanner-grade alignment* (ORION) + particle control, Besi's is the installed volume-tool base. Live contradiction → [[asml-hybrid-bonder-vs-besi-orders]].
 
 **Substrate = the next visible chokepoint.** ABF/FC-BGA substrate (the resin build-up board under an AI package) is scaling hard: **Nvidia locked 6 packaging/substrate partners (incl Ibiden) for 2.5× supply**, **SEMCO ₩360.5B deal + LG Innotek joins Nvidia AI-component supply**, **Kinsus NT$23.5B** capex, **Unimicron forecasts panel sizes 14× by 2030** (and warns of double-booking). **Vertical power delivery** (Vicor) is named as a driver of advanced packaging — feeding current straight up into the die. **Hanmi** wins Micron's top-supplier award (2nd yr) on TC-bonding.
+
+**2026-10-26 (customers buy equity in substrate lines — SD Oct-23):** The FC-BGA chokepoint hardened from prepayments into equity: **Tesla (₩1.1T) and Nvidia (₩2.6T) took equity stakes in dedicated SEMCO FC-BGA lines** (Sejong/Busan, ~₩3.7T total) → allocated output rather than a queue slot. Ibiden still holds 70%+ of high-end FC-BGA; Nvidia runs the same play via Ibiden prepayments + Unimicron reservations; Tesla's allocation only lands 2029. China's largest OSAT **JCET committed $2.73B** to chiplet/heterogeneous advanced packaging (into ASE/Amkor's lane); Daeduck added ₩615B substrate capex — the Korean/Taiwan substrate capex wave continues.

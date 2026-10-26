@@ -2,13 +2,13 @@
 type: ticker
 title: "AMZN — Amazon"
 tags: []
-related: ["[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-07-30-robotics-levels-of-autonomy]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]]"]
+related: ["[[semianalysis-2026-10-23-amazons-trainium-takes-a-strike]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-07-30-robotics-levels-of-autonomy]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]]"]
 created: 2024-03-13
-updated: 2026-10-23
+updated: 2026-10-26
 ticker: AMZN
 current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-10-26
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -49,3 +49,9 @@ No px@call values are recorded across any entry in this log, making quantitative
 | 2026-10-20 | [[semidoped]] | LONG | 262.37 | Launches TorchNeuron (PyTorch-native on Trainium, direct CUDA challenge) + €16B Germany + 960MW X-energy SMR with AEP |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 262.37 (2026-10-20). Opened at spot.
+
+
+## 2026-10-26 run update
+| 2026-10-23 | [[semianalysis]] | LONG | 248.00 | Trainium3 TorchNeuron = native PyTorch (swap .to('cuda')->.to('neuron')); Neuron Explorer profiler SOTA (Anthropic's perf lead agrees), MatMul beats GB300 mid-range; training viability broadens Trainium3 adoption. |
+
+**Outcome tracking (2026-10-26):** New SA LONG @ $248.00 (Trainium3 training-stack deep-dive). Opened at spot.
