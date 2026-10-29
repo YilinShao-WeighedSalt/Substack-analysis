@@ -4,11 +4,11 @@ title: "CDNS — Cadence"
 tags: []
 related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]", "[[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
 created: 2025-05-17
-updated: 2026-10-23
+updated: 2026-10-29
 ticker: CDNS
-current_stance: mixed
+current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-10-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -23,6 +23,7 @@ last_review: 2026-10-23
 | 2026-09-22 | [[semidoped]] | LONG | 302.95 | ChipStack AI Super Agent adds RTL-generation + early PPA optimization agent |
 | 2026-09-24 | [[semidoped]] | LONG | 322.00 | Certifies TSMC A14 design flows; ChipStack agentic-EDA super agent |
 | 2026-09-29 | [[semidoped]] | NEUTRAL | 330.19 | TSMC AI/HPC + 3D-IC flow certs & ChipStack agent, but no Synopsys-scale IP/AI-model deal. |
+| 2026-10-27 | [[semidoped]] | LONG | 343.08 | Q3 EPS beat by 7c + raised FY revenue outlook; ships Maestro — domain-specialized AI models powering autonomous 'super agents' wired into EDA/SDA via RL loops, running on-prem (Q4 early access). Digitimes contrasts Synopsys's OpenAI-partner route with Cadence's proprietary domain-trained models. |
 
 ## Thesis evolution
 The initial [[irrationalanalysis]] view (May 2025) was straightforwardly structural: Cadence's Clarity3D and analog/3D-EM simulation tools give it a bundling advantage in the chiplet era that Synopsys lacks without the Ansys acquisition closed. This was reinforced by the September 2025 Synopsys note, where [[irrationalanalysis]] identified Cadence as an indirect beneficiary of Intel's NRE contract dispute — Lip-Bu Tan's Cadence pedigree gives him credible leverage to redirect Intel's EDA wallet, which would compound Synopsys's existing headwind into a Cadence share gain. Both publications are consistently bullish on the core EDA franchise: [[semianalysis]] (May 2026) provides the most granular bull case, highlighting accelerating organic growth driven by 36 new full-flow logos in 2024, Cerebrus AI at 1,000+ tapeouts and exponential adoption, and 53 percentage points of cumulative margin expansion over 15 years. The one area of agreement between both sources and against Cadence is that valuation is rich, and [[irrationalanalysis]] explicitly warned against holding either EDA name in a leveraged account. There is no meaningful bearish dissent — the only headwind identified across sources is IP division TAM compression from Nvidia's proprietary 200G SerDes PHY undercutting third-party IP vendors, which both sources treat as a minor, isolated drag on a small revenue segment.
@@ -34,3 +35,5 @@ No px@call values are recorded across any of the six entries, so mark-to-market 
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($302.95) -> $326.07 = **+7.6% WIN ✓** (ChipStack AI-agent; EDA held — one of only two SD wins).
+
+**Update 2026-10-29:** First clear SD LONG on Cadence; Vik notes digital design is code-like/verifiable (AI-amenable) while analog/power/RF keep tacit-knowledge moats. current_stance long.

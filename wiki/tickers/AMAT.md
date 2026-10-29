@@ -4,11 +4,11 @@ title: "AMAT — Applied Materials"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[semianalysis-2024-02-09-hybrid-bonding-process-flow]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-14
+updated: 2026-10-29
 ticker: AMAT
 current_stance: long
-conviction: medium
-last_review: 2026-10-14
+conviction: high
+last_review: 2026-10-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,6 +29,7 @@ last_review: 2026-10-14
 | 2026-08-14 | [[semidoped]] | NEUTRAL | 507.18 | Record $9.12B quarter (+25% YoY), EPS +41%, unusual 8-quarter visibility to 2030; structurally bullish WFE read but shares "sold the news" |
 | 2026-09-30 | [[semidoped]] | LONG | 511.38 | Co-develops next-gen NAND/emerging memory with Kioxia at EPIC Center; rides the $31B Japan flash buildout. |
 | 2026-10-08 | [[semidoped]] | LONG | 530.27 | Formal Intel next-gen transistor/packaging R&D pact (EPIC + Hillsboro) + all 3 leading-edge foundries now at EPIC + Besi extension; TEL/DISCO WFE boom corroborates |
+| 2026-10-27 | [[semidoped]] | LONG | 395.93 | Raising its equity stake in Besi to ~20% — financializing the hybrid-bonding interdependence (AMAT deposition/surface-prep + Besi bonders); rides the ALD/advanced-packaging WFE boom. |
 
 ## Thesis evolution
 The AMAT bull case was established early in 2024 by both publications on overlapping but distinct grounds: semianalysis emphasized sole-source tool bundles — all-tungsten interconnect, Sculpta directional etch — that position AMAT as a structural beneficiary of each successive node transition, while irrationalanalysis framed AMAT as the indispensable infrastructure play on the semicap upcycle, holding it as its largest WFE position through mid-2024. The two camps share a long directional view but have diverged in conviction over time. Semianalysis has remained constructively engaged, consistently citing AMAT's process tools as critical to leading-edge inflections (BSPDN, High-NA EUV complementarity, TSMC N2 gate contacts), though its mentions increasingly carry nuance — the tungsten-to-molybdenum wordline transition in NAND is a concrete share-loss risk cited in January 2026, and the China export-control resilience thesis appears more conditional than previously assumed. Irrationalanalysis turned cautious by mid-2025, explicitly avoiding AMAT on the grounds that ICAPS China headwinds overwhelm the gate-all-around opportunity, a reversal from its prior largest-position framing. The result is a stock where semianalysis sees durable process-tool franchise value at each node but is surfacing fresh competitive threats, while irrationalanalysis has downgraded conviction from high to neutral on macro/regulatory headwinds.
@@ -38,3 +39,5 @@ No px@call values are recorded across the log, so price-based verification is no
 
 | 2026-10-13 | [[semidoped]] | LONG | 464.24 | $5B EPIC Center (largest-ever capex); targets doubling sales without proportional headcount. |
 **Update 2026-10-14:** SD LONG $464.24 (EPIC Center). A facility/R&D-cycle moat, not a bookings beat; payoff multi-year.
+
+**Update 2026-10-29:** The Besi stake increase complements the Oct-13 $5B EPIC Center capex. current_stance long.

@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-09-29
+updated: 2026-10-29
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -112,3 +112,5 @@ SemiAnalysis's *Engrams* codesign piece deepens the de-spec logic. **Engram** (a
 **Sparse attention does NOT cut HBM *capacity* demand.** GLM-5.x's DeepSeek Sparse Attention (lightning indexer + sparse MLA) selects top-k tokens to reduce the compute/bandwidth of the attention op — **but the top-k selection still requires the full context resident in HBM**, so the capacity bottleneck persists. SGLang's **HiSparse** works around it by offloading KV entries HBM→host DRAM (LRU, layer-wise prefetch overlap). This reinforces the running *bandwidth > capacity → 4-hi HBM = best $/bandwidth* read and **DRAM-offload-wins** — supportive, not bearish, for HBM/DRAM demand ([[MU]] NEUTRAL-supportive).
 
 **HBM5:** SK Hynix validated its HBM5 architecture on **TSMC's CoWoS** this week (TSMC Partner of the Year, 2nd year) — power + design-process co-optimization (the base-die story) now the value driver, with value sliding toward the logic/base-die designers.
+
+**Update 2026-10-29 (Korean memory banner quarter vs CXMT's low-yield entry):** **SK Hynix posted a record Q3 and a $75B shareholder-return plan** (Bloomberg parses $45B), partly funded by gains on its Kioxia stake (a $12B special dividend was pre-announced Oct-26) — shares +9-10%, pulled Samsung up; but Bloomberg notes memory equities broadly struggle to hold post-earnings gains (cycle-risk debate). **CXMT started HBM3E at only 20-30% yield** (vs ~60% needed to profit) — the cost of being cut from leading-edge EUV tools; it pursues a **4F² cell** for density from older litho while SK Hynix doubles down on **EUV-extended 6F²** to defend its lead (two genuinely different bets on DRAM scaling without the other's tooling). Also: **Nvidia quietly cut its official HBM4 pin speed 11.7→9.6 Gbps**; **imec published 3D volumetric DRAM-on-GPU stacking** research (post-HBM integration roadmap, wider thermal envelope). [[000660.KS]] [[005930.KS]]

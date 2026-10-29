@@ -4,7 +4,7 @@ title: "Datacenter Power & Cooling"
 tags: []
 related: []
 created: 2024-03-19
-updated: 2026-10-14
+updated: 2026-10-29
 status: maturing
 first_seen: 2024-03-19
 ---
@@ -69,3 +69,5 @@ Oracle sent a **force-majeure notice to Blue Owl** over its Stargate-affiliated 
 
 ## 2026-10-14 — Vertical power delivery / Vicor ITC Sec-337 (Semi Doped)
 **Vertical power delivery (VPD)** = feeding current to a chip from **directly underneath** the package instead of from the side — the power-architecture shift that advanced packaging is pushing as rack densities climb past conventional voltage-regulator designs. **Vicor** licenses the IP and collects a **royalty regardless of which GPU vendor** fills a server slot (why VICR ran +300%+ YTD on the royalty model). This run it **expanded an ITC Section 337 complaint to ~20 respondents** — Foxconn, Luxshare, Quanta, Delta, plus Infineon and MPS — seeking **US import bans** on power hardware it says infringes the VPD patents. Luxshare says its parts aren't in mass production (limited near-term bite); Quanta PT cut to NT$427.84 on the overhang; an actual import ban "would get messy." Possible openings for IVR startups (PowerLattice, Ferric) or ADI's Empower. Also: **Bloom/LS Electric $138M order → cumulative >$500M** (BTM fuel-cell demand); Infineon 27kW + 800VDC hot-swap; SolarEdge/Infineon solid-state breakers; Wolfspeed up to $1.5B DoW loan.
+
+**Update 2026-10-29 (GaN pushes to 800-900V; power is the deploy constraint):** **Infineon won a GaN design in Nvidia's 800 VDC rack** (intermediate bus converter; GaN near 1 MHz shrinks the magnetics as racks head to MW) — but Nvidia's 800V supplier list also names MPS, Navitas, onsemi, ROHM, ST, TI ("a seat at a long table"). Infineon also committed **€1.1B to a Villach 300mm GaN line** (Europe's first) and shipped the **world's first 900V GaN bidirectional switch** (collapses two devices into one for the solid-state transformer; Enphase design win) — pushing GaN into SiC's 900V turf, though 900V only cleared testing (650V the only part in the field). Demand-side: AWS reportedly has ~$5B of GB300 racks dark for lack of electricity — power, not silicon, gates deployment; Schneider launched a 2.5 MW modular power module for Vera Rubin. [[IFX]]

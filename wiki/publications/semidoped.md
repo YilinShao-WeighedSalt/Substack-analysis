@@ -5,9 +5,9 @@ tags: []
 related: []
 created: 2026-04-24
 handle: semidoped
-updated: 2026-10-26
-calls_logged: 411
-hit_rate: "78/170 (46%), ~123 open"
+updated: 2026-10-29
+calls_logged: 425
+hit_rate: "79/176 (45%), ~129 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
@@ -154,3 +154,6 @@ Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotatin
 
 ### 2026-10-02 run
 Ingested 3 dailies (Sep 29 / 30 / Oct 1). Marquee: **Micron record FY26** (DRAM ~54% premium over TSMC 2nm, ~87% GM → LONG [[MU]]); **GPT-Synopsys + $1B Amazon IP** → LONG [[SNPS]]; **Google TPU revenue recognition vs $513.9B backlog** → LONG [[GOOGL]]; substrate-bottleneck LONG [[009150.KS]]. **Resolutions (cross-30d): 4W/0L** — [[NVDA]] +5.0%, [[2454.TW]] +15.4%, [[INTC]] +35.1%, [[ASML]] +8.8% (all Aug31–Sep1 longs). hit_rate 42/81 → **46/85 (54%)**.
+
+### 2026-10-29 run
+Ingested 3 dailies (Oct 26/27/28). Dominant thread: **GPU/XPU-as-collateral goes mega-scale** (SpaceX $40B Apollo lease, Broadcom's $63B Anthropic XPU SPV with a residual-value guarantee → NEUTRAL [[AVGO]]) while the physical supply chain tightens — **TSMC CoWoS +20%** (LONG [[TSM]], LONG [[INTC]] on EMIB), **AMAT lifts Besi stake to ~20%** (LONG [[BESI]]/[[AMAT]]), **SK Hynix record Q3 + $75B return** (LONG [[000660.KS]]/[[005930.KS]]), **SEMCO record +165%** (LONG [[009150.KS]]), **ASMI pulls 2030→2027** (LONG [[ASM.AS]], new), **Cadence Maestro agentic EDA** (LONG [[CDNS]]), **Azure HAMR-SMR qual** (LONG [[STX]], new), **Oracle OCI + OpenAI TPU** (LONG [[GOOGL]]), Infineon GaN 800VDC/900V (LONG [[IFX]]), Exynos-2700-socket-risk (NEUT [[QCOM]]). 14 calls (12 LONG / 2 NEUTRAL). **Resolutions (Sep-28 batch, cross-30d): 1W/5L** — SNPS +11.4% ✓; NVDA -3.2%, TSM -3.0%, IFX -7.3%, ASML -6.2%, GFS -4.7% ✗ (late-Sep longs round-tripped into the October wobble). hit_rate 78/170 → **79/176 (45%)**.

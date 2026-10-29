@@ -4,7 +4,7 @@ title: "Hybrid bonding: ASML's D2W bonder threat vs Besi's +96% orders"
 tags: [advanced-packaging, semiconductor-equipment]
 related: ["[[BESI]]", "[[ASML]]", "[[semianalysis]]", "[[semidoped]]", "[[semianalysis-2026-10-15-asml-hybrid-bonding]]", "[[semidoped-2026-10-20-daily-update-october-20th-2026]]", "[[semidoped-2026-10-22-daily-update-october-22nd-2026]]", "[[advanced-packaging]]"]
 created: 2026-10-23
-updated: 2026-10-23
+updated: 2026-10-29
 ---
 
 # Open contradiction — is ASML about to break Besi's hybrid-bonding moat?
@@ -16,3 +16,5 @@ updated: 2026-10-23
 **The crux:** both agree HBM-D2W volume is a 2029 story and that ASML is *entering*. They disagree on (a) whether ASML's scanner-grade alignment + particle-control edge actually transfers to a volume bonder on a realistic timeline, and (b) how much of Besi's value is the HBM wave vs. the logic-D2W + AI-packaging order surge already in hand. **Resolution watch:** ASML product/date announcements and first tool orders; Besi's 2027-28 order trajectory and whether ASML (or Applied, a 9% Besi owner with a Kinex JV) wins a named volume socket.
 
 **Scorecard so far:** SA's Oct-15 SHORT (€163.40) and SD's Oct-16 NEUTRAL (€163.40) both opened at the 3-mo low; shares sit ~€162 on Oct-23 — roughly flat, unresolved. Besi's +96% order print is a near-term point for the bulls; the structural threat is unproven either way.
+
+**Update 2026-10-29:** New datapoint on Semi Doped's side — **Applied Materials lifted its equity stake in Besi to ~20%** (deepening the hybrid-bonding partnership; AMAT's deposition/surface-prep tools run in sequence with Besi's Cu-Cu bonders). An equipment peer financializing the interdependence is a conviction vote that cuts against SemiAnalysis's Oct-15 ASML-bonder SHORT. Vik: despite negative patent-driven sentiment, the industry directionally needs more memory capacity → 16-hi+ HBM via hybrid bonding. [[BESI]] [[AMAT]] reaffirmed LONG.

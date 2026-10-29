@@ -4,11 +4,11 @@ title: "IFX — Infineon Technologies"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]"]
 created: 2026-05-17
-updated: 2026-10-23
+updated: 2026-10-29
 ticker: IFX
 current_stance: long
 conviction: high
-last_review: 2026-10-23
+last_review: 2026-10-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -21,6 +21,7 @@ last_review: 2026-10-23
 | 2026-09-28 | [[semidoped]] | LONG | 56.71 | Buys AI-power specialist C2i + samples record 120A/phase voltage regulator (vertical power / SIVR vs MPS) [IFX.DE] |
 | 2026-09-30 | [[semidoped]] | LONG | 59.50 | Eaton SiC solid-state transformers for 800VDC + $1.4B Thailand backend hub. |
 | 2026-10-08 | [[semidoped]] | LONG | 64.68 | Doubles AI rev to $1.6B, divests NOR flash+F-RAM to Winbond ($1.12B), adds C2i + Thailand hub — power-pure-play sharpening |
+| 2026-10-26 | [[semidoped]] | LONG | 52.59 | GaN design win inside Nvidia's 800 VDC rack architecture (intermediate bus converter, ~1 MHz GaN shrinks magnetics) [IFX.DE]; reaffirmed Oct-27 with EUR1.1B Villach 300mm GaN line (Europe's first) + 900V bidirectional switch winning Enphase. |
 
 ## Thesis evolution
 Coverage originates from a single irrationalanalysis piece dated 2026-05-17. The bull case rests on Infineon's structural moat in 1200V silicon carbide: best-in-class Rds_on metrics, vertical integration through its owned GaN fab, and dominant positioning in a segment where automotive and industrial electrification demand is secular. The author's willingness to commit $50K of personal capital signals high conviction. No bearish publications are present in the record, and no other sources have weighed in, so the view is entirely one-directional at this point.
@@ -42,3 +43,5 @@ No px@call value was recorded at the time of the call, which prevents any quanti
 | 2026-10-22 | [[semidoped]] | LONG | 53.09 (IFX.DE) | Infineon+Nvidia joint GaN 800VDC reference design + long-term Wolfspeed SiC wafer supply deal; PSOC C3 expansion |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 53.09 (IFX.DE) (2026-10-22). Opened at spot. **Resolution** — SD Sep-22 LONG (€60.13) -> €53.09 = **-11.7% LOSS ✗** (PSOC-C3/SolarEdge entry; re-logged LONG this run on the Nvidia GaN pact).
+
+**Update 2026-10-29:** Two AI-power wins in three days; but Nvidia's 800V list also names MPS/Navitas/onsemi/ROHM/ST/TI ('seat at a long table'), and 900V only cleared testing (650V the only part shipping). **Resolution:** SD Sep-28 LONG (EUR56.71) crossed 30d at EUR52.59 = -7.3% ✗ (auto-softness overhang). current_stance long.

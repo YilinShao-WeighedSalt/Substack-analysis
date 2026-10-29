@@ -4,7 +4,7 @@ title: "Semiconductor Capital Equipment"
 tags: []
 related: []
 created: 2024-04-03
-updated: 2026-10-26
+updated: 2026-10-29
 status: maturing
 first_seen: 2024-04-03
 ---
@@ -67,3 +67,5 @@ ASML posted record Q3 2026 revenue of €11.7B (+25% QoQ), €5.0B net income, a
 **ASML warned customers to expect equipment shortages through 2028** as AI-driven orders outrun production; **Lam Research** results showed WFE demand holding firm; **SEMI projects global silicon-wafer shipments +11.8% in 2026** (14,420 M sq-in) with successive record highs 2027-29. Net read: existing **backlog holders sit at the front of the queue**, fabs chasing faster build-outs have fewer options → structural tailwind for **[[ASML]] / [[LRCX]]** (and AMAT/TEL). Terafab says ASML "expedited" tools, but with EUV sold out through 2028 the open question is *whose slot moved* (Musk dodged whether SpaceX ordered EUV).
 
 **2026-10-26 (rare-earth magnets in tool motors — SD Oct-23):** TSMC formally asked chipmaking-equipment suppliers to develop motors/components with **no Chinese rare-earth magnets** — the first known tool-level request of its kind, after Beijing tightened rare-earth export controls. Permanent-magnet (NdFeB; neodymium/dysprosium) motors drive the wafer-handlers and litho stages; China controls ~95% of finished magnets. Alternatives exist (induction, switched-reluctance, ferrite) but requalifying motors across a fab's entire tool base is a multi-year, costly slog across the whole equipment ecosystem.
+
+**Update 2026-10-29 (ALD pulls its roadmap forward 3 years):** **ASM International pulled its 2030 revenue target forward to 2027** (raising the 2027 target ~24%) after a Q3 beat and above-consensus Q4 guide — atomic-layer-deposition tools are selling faster than its own roadmap on AI-driven fab investment + gate-all-around + advanced-packaging demand. Frames the WFE super-cycle (Yole: $129B in 2025 → $220B by 2031) and the thesis that specialized, hard-to-substitute process-tool makers (ALD, hybrid-bonding) are harder to displace than commodity equipment. Corroborated by **Applied Materials lifting its Besi stake to ~20%**. [[ASM.AS]] [[AMAT]] [[BESI]]

@@ -4,7 +4,7 @@ title: "AI credit: Irrational's 'sub-prime' bear vs SemiAnalysis's binding-lease
 tags: [ai-debt-financing, bubble, datacenter]
 related: ["[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]", "[[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]]", "[[ai-debt-financing]]", "[[modular-datacenter-construction]]", "[[NVDA]]", "[[buildout-vs-monetization]]"]
 created: 2026-10-20
-updated: 2026-10-20
+updated: 2026-10-29
 ---
 ## Open question
 Both publications looked at the same AI-infrastructure credit stack the same week (Oct-19) and drew opposite conclusions about its soundness.
@@ -20,3 +20,5 @@ Are the datacenter leases genuinely **binding / take-or-pay** (SA's claim, which
 - A neocloud/lab **default or covenant break** on GW-scale lease debt → IA.
 - 2027 capacity delivering roughly on SA's +50GW track with leases honored → SA.
 - Watch: Anthropic's next raise clearing (or not) near $1.5T; neocloud convertible/CDS spreads; whether more anchor tenants walk on grid delays.
+
+**Update 2026-10-29:** The credit structure got concrete and bigger. **Anthropic's public S-1** shows $161.2B in non-cancelable Broadcom TPU leases (largest of its commitments) atop $417B minimum compute obligations; **SpaceX took a $40B GPU master lease from Apollo** (xAI) and **Broadcom closed a $63B XPU SPV** for Anthropic with **Broadcom guaranteeing residual values** and ~$21B of bonds eyed. This is the binding-lease bull (real contracted demand, institutional capital) and the sub-prime bear (residual-value risk on thin-resale custom XPUs, pensions/insurers now exposed) colliding in a single structure — Austin: a GPU is real collateral, a custom XPU less so. Logged NEUTRAL [[AVGO]] to capture both. Compounds with AWS's reported ~$5B of GB300 racks sitting dark for lack of power.

@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-26
+updated: 2026-10-29
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -110,3 +110,5 @@ The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hamme
 **Substrate = the next visible chokepoint.** ABF/FC-BGA substrate (the resin build-up board under an AI package) is scaling hard: **Nvidia locked 6 packaging/substrate partners (incl Ibiden) for 2.5× supply**, **SEMCO ₩360.5B deal + LG Innotek joins Nvidia AI-component supply**, **Kinsus NT$23.5B** capex, **Unimicron forecasts panel sizes 14× by 2030** (and warns of double-booking). **Vertical power delivery** (Vicor) is named as a driver of advanced packaging — feeding current straight up into the die. **Hanmi** wins Micron's top-supplier award (2nd yr) on TC-bonding.
 
 **2026-10-26 (customers buy equity in substrate lines — SD Oct-23):** The FC-BGA chokepoint hardened from prepayments into equity: **Tesla (₩1.1T) and Nvidia (₩2.6T) took equity stakes in dedicated SEMCO FC-BGA lines** (Sejong/Busan, ~₩3.7T total) → allocated output rather than a queue slot. Ibiden still holds 70%+ of high-end FC-BGA; Nvidia runs the same play via Ibiden prepayments + Unimicron reservations; Tesla's allocation only lands 2029. China's largest OSAT **JCET committed $2.73B** to chiplet/heterogeneous advanced packaging (into ASE/Amkor's lane); Daeduck added ₩615B substrate capex — the Korean/Taiwan substrate capex wave continues.
+
+**Update 2026-10-29 (substrate crunch + hybrid bonding + CoWoS pricing):** The packaging layer is now the loudest AI bottleneck. (1) **TSMC preparing CoWoS price increases up to 20%** (TrendForce) — CoWoS is the interposer step that stacks HBM beside compute dies; with EMIB-T yields lagging, TSMC can price at will, repricing every Nvidia/AMD/hyperscaler accelerator (Austin: good for Intel EMIB). (2) **Ajinomoto reveals next-gen ABF films** — ABF is the insulating film upstream of every FC-BGA substrate; Unimicron CEO flags a ~20% substrate shortfall through 2027 (T-glass/ABF/CCL all backlogged), and Nvidia is courting Samsung for FC-BGA (threatens Unimicron/Kinsus). (3) **Applied Materials lifts its Besi stake to ~20%** — financializing the hybrid-bonding interdependence (AMAT deposition/surface-prep tools run in sequence with Besi's solder-less Cu-Cu bonders); the path to 16-hi+ HBM. (4) **SEMCO record Q3 op profit +165%** on simultaneous MLCC + ABF demand (AI-MLCC guided 8x by 2027). [[009150.KS]] [[BESI]] [[AMAT]] [[TSM]]

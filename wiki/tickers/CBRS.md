@@ -4,11 +4,11 @@ title: "CBRS — Cerebras Systems"
 tags: []
 related: ["[[irrationalanalysis-2026-10-04-practical-parametric-yield]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]"]
 created: 2024-10-01
-updated: 2026-10-23
+updated: 2026-10-29
 ticker: CBRS
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-10-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -37,6 +37,7 @@ last_review: 2026-10-23
 | 2026-09-21 | [[irrationalanalysis]] | SHORT | 212.41 | Integrated-laser wafer photonics 'fantasy': thermal modulator bias + waveguide/laser loss blow the link budget |
 | 2026-10-01 | [[irrationalanalysis]] | SHORT | 177.65 | Activist 1-share; bearish into ~Dec lockup; 3D-DRAM roadmap a 'terrible mistake' vs 3D-SRAM hybrid bonding; parametric-yield deep-dive pending. |
 | 2026-10-04 | [[irrationalanalysis]] | NEUTRAL | 166.43 | Parametric-yield deep-dive: wafer-scale can't bin/harvest/socket-test 84 reticles → structural GM drag; but CS-4 enclosure 'great progress' → H1-27 inflection likely. Softens the activist short. |
+| 2026-10-28 | [[irrationalanalysis]] | NEUTRAL | 119.31 | Culper Research short (Oct-28); IA (post-silicon-validation background) calls its Arrhenius/electromigration math 'garbage' (temp+voltage, not raw power, drive EM, and both are trade secrets Culper can't see) but concedes fixed-price OpenAI deal + dummy-load inference power waste are 'fair points' — CS-4 gross margin in ~6mo is the tell. |
 
 ## Thesis evolution
 irrationalanalysis opened with a consistently bearish view across three calls spanning late 2024, citing fatal customer concentration (G42 as near-sole buyer), structurally weak gross margins around 36%, and a wafer-scale architecture it viewed as technically overblown. By mid-2026 the same publication reversed to bullish after Cerebras secured an OpenAI $20B inference deal and AWS distribution, arguing the company found a defensible niche in ultra-low-latency inference where wafer-scale die actually delivers differentiated speed. The June 2026 earnings call reinforced the LONG: despite calling the transcript a "trainwreck," irrationalanalysis deepened its conviction by modeling the packaging yield problem (20% estimated) as the central financial variable — improvement from 20% to 50% would lift gross margins from ~42% to ~72%. The author initiated a symbolic "activist campaign" focused on three catalysts: WSE-4 with FP8 support, face-to-face I/O to solve KV cache offload, and a packaging yield investor day. semidoped maintained NEUTRAL at first earnings, noting shares fell 10% despite the beat and flagging the 88GB SRAM-per-rack constraint for large models. The two publications continue to disagree on conviction — irrationalanalysis sees solvable engineering bottlenecks, semidoped sees structural TAM and business model risks.
@@ -72,3 +73,5 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — IA Sep-21 ECOC SHORT ($212.41) -> $117.98 = price -44.5%, **short +44.5% WIN ✓** (biggest resolved win of the run; Cerebras integrated-laser 'fantasy' short).
+
+**Update 2026-10-29:** SD/Oracle note: OCI deal (TPU+Cerebras+SambaNova, 2027) gave CBRS a ~+10% pop. IA stance stays NEUTRAL (engineering-driven, not the Oct-1 activist short). No priced IA call crosses 30d this run.

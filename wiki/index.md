@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-26
+updated: 2026-10-29
 ---
 
 # Wiki Index
@@ -50,6 +50,7 @@ updated: 2026-10-26
 - [[APH]] — Amphenol
 - [[ARM]] — Arm Holdings
 - [[ASML]] — ASML Holding
+- [[ASM.AS]] — ASM.AS — ASM International (ALD leader; WFE super-cycle)
 - [[ASX]] — ASE Technology
 - [[AVGO]] — Broadcom
 - [[AXTI]] — AXT Inc.
@@ -131,6 +132,7 @@ updated: 2026-10-26
 - [[SMH]] — VanEck Semiconductor ETF
 - [[SMNEY]] — Siemens Energy
 - [[SMTC]] — Semtech
+- [[STX]] — Seagate Technology (HAMR-SMR; AI cold/warm storage)
 - [[SNDK]] — Sandisk
 - [[SNPS]] — Synopsys
 - [[SOI.PA]] — Soitec
@@ -264,6 +266,7 @@ updated: 2026-10-26
 - [[globalsemiresearch-2026-07-09-model-makers-own-chips]] — Why the Model Makers Are Coming for Their Own Chips
 
 ### Irrational Analysis
+- [[irrationalanalysis-2026-10-28-culper-research-vs-cerebras]] — Culper Research vs Cerebras: a NEUTRAL engineering-driven view — Culper's Arrhenius/electromigration short math is 'garbage' (temp+voltage, not raw power, drive EM; params are trade secrets), but the fixed-price OpenAI deal + inference power-TCO are 'fair points'; CS-4 gross margin in ~6mo the tell (NEUT CBRS)
 - [[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]] — Bubble-vibes macro memo: de-levered, ~70-80% to peak fear; OpenAI raising $1.25T / Anthropic IPO whisper ~$1.5T; 'alcoholic ARR' = distillation revenue the labs can't admit; ~75% lab spend is training; drug-discovery the worst 12-18mo monetization fix (LONG AAOI/BE/AXTI/CRDO, SHORT COHR, NEUT TSEM)
 - [[irrationalanalysis-2026-10-19-ocp-global-summit-2026]] — OCP Global Summit 2026 recap: NPO (Open CPX) replaces CPO, integrated-laser NPO a 'terrible idea', slow-and-wide 32-64G beats 448G; TDECQ waveform-averaging cheating exposed (Marvell/Macom); 'Bubble Vibes' sub-prime/CDO analogy, de-levered $2M, Anthropic $2T→$1.5T (LONG CRDO/SMTC/GLW/LITE/AVGO, SHORT COHR, NEUT MRVL/MTSI/ALAB)
 - [[irrationalanalysis-2026-10-11-the-tragedy-of-3d-xpoint]] — The Tragedy of 3D XPoint (Optane/QuantX): PCM between NAND & DRAM, died at 4 layers + NVMe/Memory-mode interface choke; App-direct persistence was the real value; CXL the right bus; SpaceX/Terafab the long-shot reviver (NEUT INTC "back in stride"/MU "won't bother")
@@ -554,6 +557,9 @@ updated: 2026-10-26
 - [[semianalysis-2026-09-01-koreas-trillion-dollar-sovereign]] — Korea sovereign AI: Nvidia wins (customer diversification), Hynix/Samsung shareholders may not (LONG NVDA, NEUT 000660/005930)
 
 ### Semi Doped
+- [[semidoped-2026-10-28-daily-update]] — Daily Oct 28: Hock Tan closes $63B Anthropic XPU SPV (residual-value guarantee); SK Hynix record Q3 + $75B shareholder return (+Samsung); CXMT HBM3E at 20-30% yield (4F² vs EUV-6F²); Oracle loads OCI with Google TPU/Cerebras/SambaNova + OpenAI weighing TPU; ASM Intl pulls 2030→2027 (+24%); SEMCO record +165% (MLCC+ABF) (LONG 000660/005930/GOOGL/ASM.AS/009150, NEUT AVGO)
+- [[semidoped-2026-10-27-daily-update]] — Daily Oct 27: SpaceX $40B Apollo GPU lease + Broadcom $63B Anthropic facility (GPU-as-collateral); TSMC CoWoS +20% (good for EMIB/Intel); AMAT lifts Besi stake to 20% (hybrid bonding→16-hi); Infineon €1.1B Villach 300mm GaN + 900V bidi; Cadence Q3 beat + Maestro agentic EDA; Azure qualifies Seagate HAMR-SMR w/ Broadcom HBAs (LONG TSM/INTC/BESI/AMAT/CDNS/STX/IFX, NEUT AVGO)
+- [[semidoped-2026-10-26-daily-update]] — Daily Oct 26: Anthropic public S-1 ($16.3B H1 rev, $161.2B Broadcom lease = largest commitment, NRR ~900%); AWS 'chunk of 2028 sold out' while ~$5B GB300 racks dark for power; SK Hynix ~$12B Kioxia-gain dividend; Ajinomoto next-gen ABF + 20% substrate shortfall; Infineon GaN win in Nvidia 800VDC; Exynos 2700 ~20% > Snapdragon (LONG 000660/IFX, NEUT QCOM/AVGO)
 - [[semidoped-2026-10-23-daily-update]] — Daily Oct 23: Meta's $34.9B quarter → FCF negative (shares −7%, credit gauge fresh high, $825B commitments); Tesla ₩1.1T + Nvidia ₩2.6T equity into dedicated SEMCO FC-BGA lines; TSMC asks suppliers to purge Chinese rare-earth magnets; SK Hynix scraps Solidigm $10B US IPO (shares rally); JCET $2.73B advanced packaging; short-sellers bank $6B on CoreWeave/neocloud debt; WDC dividend raise (LONG 009150/000660/WDC, NEUT META/CRWV/MU/TSM)
 - [[semidoped-2026-10-20-daily-update-october-20th-2026]] — Daily Oct 20: Anthropic record profitable Q3 ($16.8B); ASML patent-scare hammers Besi but orders doubled YoY (contrarian defense); SK Hynix ₩2T supplier fund + SEMCO ₩360.5B substrate; Schneider record + ABB orders +40%; Amazon TorchNeuron on Trainium (LONG BESI/009150/ABB/SU.PA/AMZN/IFX, NEUT MU/000660)
 - [[semidoped-2026-10-21-daily-update-october-21st-2026]] — Daily Oct 21: Anthropic S-1 = $750B non-cancelable compute + $80.7B H1 loss (floor under HBM/accelerators); Terafab locks ASML gear; Super Micro raises guide; Samsung 4nm→HBM base dies (base-die edge); Vicor Q3 +78.5% (LONG SMCI/VICR/005930/NVDA, NEUT QCOM)

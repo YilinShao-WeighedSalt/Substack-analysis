@@ -4,9 +4,9 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-26
+updated: 2026-10-29
 handle: irrationalanalysis
-calls_logged: 647
+calls_logged: 648
 hit_rate: "34/60 (57%), ~23 open"
 ---
 ## Profile
@@ -109,3 +109,6 @@ Irrational Analysis is a technically-driven semiconductor and datacenter-infrast
 
 ### 2026-10-02 run
 Ingested Q3 2026 Consolidated Holdings (Oct 1; +51.6% vs SOXX). New ideas: **CRDO LONG** (new Tier-2; µVCSEL pivot — reverses the Sep-14 µLED short), **QMCO LONG** (new; tape cold-storage), **CBRS SHORT** (activist, bearish into ~Dec lockup; 3D-DRAM vs 3D-SRAM). No calls resolved this run (Sep-6 Hot Chips resolves ~Oct-6, Sep-14 shorts ~Oct-14). hit_rate holds **25/47 (53%)**.
+
+### 2026-10-29 run
+Ingested **Culper Research vs Cerebras: A Neutral Engineering-Driven View** (Oct-28). IA rebuts Culper's electromigration/Arrhenius short thesis as physically wrong (temperature + voltage, not raw power, drive EM; the real parameters are trade secrets) while conceding the fixed-price OpenAI deal + inference power-TCO points — **NEUTRAL [[CBRS]]** @ $119.31 (engineering-driven, not the Oct-1 activist short). CS-4 gross margin in ~6mo is the stated tell. No priced call crossed 30d (the NEUTRAL is excluded; the Oct-1 Q3 batch — CRDO/QMCO long, CBRS short — resolves ~Oct-31). hit_rate holds **34/60 (57%)**.

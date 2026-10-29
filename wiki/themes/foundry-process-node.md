@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-20
+updated: 2026-10-29
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -96,3 +96,5 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 
 ## 2026-10-20 — Japan backs TSMC Kumamoto 3nm with $4.1B; 3nm pulled taut (Semi Doped)
 **Japan formally approved TSMC's 3nm Kumamoto fab and committed up to $4.1B** in government aid — the biggest advanced-node capacity outside Taiwan, targeting a **2028 ramp** to serve domestic Japanese chipmakers + global AI demand. **TSMC is simultaneously adding a 3nm plant in Taiwan** (same 2028 timeline) because 3nm capacity is already under heavy AI-demand pressure — now compounded by **Nvidia's HBM4E base-die work landing on TSMC 3nm** (Samsung can't match in-house). Reinforces TSMC's structural 3nm/advanced-node demand even amid the October "AI panic" tape (TSMC profits +69%). → [[TSM]].
+
+**Update 2026-10-29 (electromigration literacy, via the Cerebras short):** Responding to Culper Research's short on Cerebras, Irrational Analysis laid out a clean reliability primer: **electromigration** (current-density-driven metal wear) is accelerated by **temperature and voltage, not raw power draw**, and modeled with **Arrhenius** kinetics at a stress corner (e.g. TSMC N5 standard max-VT corner = 110°C at +5% voltage; IP vendors qualify at 110°C long-term, HTOL at 125°C / +10-20%). Because the targeted voltage bands, temperature limits, and HTOL spec (5 vs 10 yr) are trade secrets, you **cannot infer reliability from power alone** — IA calls Culper's power-based Arrhenius math wrong. The plausible real failure mode: juicing voltage / tuning registers in post-silicon validation to fix functional/perf bugs, pushing a subsystem past safe current density. See [[CBRS]], [[ai-accelerator-competition]]. Separately, **TSMC's CoWoS +20% hike makes Intel's EMIB packaging relatively more attractive**.

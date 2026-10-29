@@ -4,11 +4,11 @@ title: "GOOGL — Alphabet"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2026-09-07-tpu-inferencex-full-steam]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2024-03-13
-updated: 2026-10-23
+updated: 2026-10-29
 ticker: GOOGL
 current_stance: long
-conviction: medium
-last_review: 2026-10-23
+conviction: high
+last_review: 2026-10-29
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -39,6 +39,7 @@ last_review: 2026-10-23
 | 2026-09-23 | [[semianalysis]] | LONG | 342.36 | ClusterMAX 3.0: Google Cloud joins Oracle in the Gold tier |
 | 2026-10-01 | [[semidoped]] | LONG | 344.08 | TPU revenue recognition begins vs $513.9B cloud backlog; chip capacity sold out; Gemini-4 quality doubts the caveat. |
 | 2026-10-08 | [[semidoped]] | LONG | 347.68 | Locks 3.6GW baseload nuclear (Constellation) to de-risk its buildout; secures the power ceiling ahead of rivals |
+| 2026-10-28 | [[semidoped]] | LONG | 320.58 | TPU demand broadens off-Google: Oracle adds Google TPUs to OCI (2027) and OpenAI is weighing TPU buys to supplement its Nvidia supply (Bloomberg) — external TPU pull validates the custom-silicon franchise. |
 
 ## Thesis evolution
 Coverage opened with uniform bullishness on Google's infrastructure lead — semianalysis praised the TPU stack, Pathways, and Borg orchestration as a multi-year moat that no hyperscaler could quickly replicate. Citrini diverged sharply in mid-2024, removing GOOGL from its AI basket after repeated Gemini execution failures, introducing the first explicit bear signal. Semianalysis maintained a constructive view on the cloud/silicon side throughout 2025, turning LONG again on UVEU regulatory tailwinds and then doubling down via the TPUv7 deep dive, which framed vertical silicon integration as a durable TCO and customer-lock-in advantage; citrini converged on this view in November 2025. The primary bear thread, distinct from execution risk, is the Search revenue model: semianalysis issued a SHORT in August 2025 on the thesis that agentic AI purchasing funnels structurally disintermediate high-intent commercial queries. The May 2026 accounting concern — DeepMind training costs excluded from GCP segment — adds a separate financial-integrity bear leg. The result is a genuinely split picture: semianalysis and citrini are constructive on GCP/TPU as infrastructure, but semianalysis carries an active SHORT on Search monetization and questions the reported margin quality of the cloud segment itself.
@@ -59,3 +60,5 @@ No px@call values are recorded in this log, precluding quantitative P&L assessme
 | 2026-10-22 | [[semidoped]] | LONG | 334.76 | OpenAI to sell top models via Google Cloud (pressures Azure exclusivity); open-sources TorchTPU as a direct CUDA challenge |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 334.76 (2026-10-22). Opened at spot. **Resolution** — SA Sep-23 ClusterMAX LONG ($342.36) -> $334.76 = **-2.2% LOSS ✗** (Gold-tier cloud; thin give-back — re-logged LONG this run on the OpenAI-on-GCP win).
+
+**Update 2026-10-29:** Extends the Oct-22 TorchTPU/OpenAI-on-Google-Cloud thread; TPU now sought by rival clouds + the largest model lab. current_stance long.
