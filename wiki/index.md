@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-10-29
+updated: 2026-11-01
 ---
 
 # Wiki Index
@@ -201,6 +201,7 @@ updated: 2026-10-29
 
 ## Queries
 
+- [[marvell-lumentum-deal]] — Marvell's bid for Lumentum: vertical-integration logic vs. standalone-moat value (IA opposes)
 - [[memory-longs-vs-sovereign-shareholder-tension]] — Memory: Semi Doped's persistent longs vs SemiAnalysis's sovereign/shareholder caution
 - [[qcom-short-vs-edge-ai-turnaround]] — QCOM: persistent short vs. edge-AI turnaround
 - [[buildout-vs-monetization]] — AI buildout accelerates vs. buildout→monetization (Meta Compute)
@@ -220,6 +221,9 @@ updated: 2026-10-29
 
 ## Sources
 
+- [[irrationalanalysis-2026-10-30-intel-q3-2026-dead-inside]] — IA: Intel Q3 'Dead Inside' — wafer-limited not substrate-limited; SHORT INTC, LONG LITE, opposes Marvell/LITE
+- [[semidoped-2026-10-29-daily-update-october-29th-2026]] — SD: Marvell-LITE talks, Alphabet+Samsung miss, Azure +48%, SK Hynix ₩100T
+- [[semidoped-2026-10-30-daily-update-october-30th-2026]] — SD: Intel −23%, Samsung record/device-drag, TSMC-AUO CoWoS, Murata/SEMCO MLCC, Nscale backstop
 ### Citrini Research
 
 - [[citrini-2024-06-03-annual-review-ai-highlights]] — Annual Review: AI Thematic Highlights

@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: NVDA
 current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -153,14 +153,12 @@ last_review: 2026-10-23
 | 2026-07-06 | [[semianalysis]] | LONG | 195.84 | GPU debt backstop ("Central Bank of AI") broadens compute TAM beyond hyperscalers; revenue-share upside above a ~$2.36/hr floor |
 | 2026-07-06 | [[semidoped]] | NEUTRAL | 195.84 | Mixed: Kyber NVL144 delayed >12mo to 2028 + NVL72x2 cancelled (limits Rubin Ultra scale-up) vs bullish revenue-share financing moat |
 | 2026-10-19 | [[semidoped]] | LONG | 214.13 | Custom base-die value accrues to the logic designer; Germany sovereign-AI pact next week; GPU shortage = memory demand |
-
 | 2026-07-09 | [[globalsemiresearch]] | NEUTRAL | 195.84 | "Short Nvidia on custom silicon" is wrong/premature; ASICs take the stable slice, GPU keeps the volatile frontier |
 | 2026-07-09 | [[semidoped]] | NEUTRAL | 195.84 | China clears H200 purchases — incremental China-revenue upside; panel split on magnitude |
 | 2026-07-28 | [[semianalysis]] | LONG | 196.51 | Still leads: Rubin ships tokens at scale first; has 3-bit LUT tensor cores AMD lacks. 'The pie grows for everyone.' |
 | 2026-08-09 | [[irrationalanalysis]] | NEUTRAL | 217.50 | Small long-call position "in solidarity" with Gavin Baker; low conviction, admits large NVDA-call losses YTD |
 | 2026-08-07 | [[semianalysis]] | LONG | 217.50 | SpaceX declares Nvidia-exclusive on vendor financing; neolab capital (Discovery Loop et al.) flows to GPUs rented in GCP |
 | 2026-08-17 | [[semidoped]] | LONG | 225.01 | Guarantees 4.25/8 IT-GW at OpenAI Ohio + $1.5B SB Energy — backstopping the datacenter (but cut backstop >50%) |
-
 | 2026-08-18 | [[semidoped]] | LONG | 216.85 | $105B guarantee + $1.5B equity backs SB Energy's PORTS-Pike Ohio (OpenAI 10GW primary compute) for exclusive chip placement ($600B lifetime rev claim); China-compliant chip by year-end; circular-finance scrutiny |
 | 2026-08-24 | [[semianalysis]] | NEUTRAL | 214.72 | AgentX benchmark — CUDA software moat holds on multi-turn agentic inference; cheaper $/token than AMD across most frontier models even if AMD compute were free |
 | 2026-08-21 | [[semidoped]] | NEUTRAL | 214.72 | Denies The Information's China-legal Groq-based 'LPU' report; in early talks to acquire Korean inference startup Rebellions |
@@ -180,6 +178,8 @@ last_review: 2026-10-23
 | 2026-09-28 | [[semidoped]] | LONG | 225.07 | Record $150B buyback (largest ever) + Nscale $3.36B pre-IPO anchor; China may reopen ByteDance/Alibaba Nvidia buys |
 | 2026-09-30 | [[semidoped]] | NEUTRAL | 228.38 | DeepSeek open-sources 6 Ascend/CUDA tools + Huawei Tau logic-folding press the moat; 'moat was never the language'. |
 | 2026-10-08 | [[semidoped]] | LONG | 239.24 | SpaceX borrows $40B via Apollo purely for Nvidia chips (~1GW) + 380MW Doosan turbine to xAI + MSFT/NVDA laptop; demand swamps Groq-suit/Huawei-Ascend-950 noise |
+| 2026-10-29 | [[semidoped]] | NEUTRAL | 204.64 | DOJ scrutinizes the $13B Hugging Face acquisition — vertical move into the open-model software layer draws antitrust attention. |
+| 2026-10-30 | [[semidoped]] | NEUTRAL | 204.64 | Weighs credit guarantees behind Nscale's $45B Anthropic compute deal → circular-financing concern (Vik: 'bandaid'; Austin: parent co-signing a mortgage). |
 
 ## Thesis evolution
 The bull thesis began with CUDA lock-in and datacenter GPU dominance in early 2024 and has only deepened since. [[irrationalanalysis]] established the core framework — 17 years of CUDA ecosystem accumulation creates switching costs no hardware advantage can overcome in the medium term — and has held Nvidia as a 40-50% portfolio position throughout, rarely wavering even during Blackwell packaging delays (Aug 2024) and the DeepSeek shock (Jan 2025). [[semianalysis]] started equally bullish on the hardware moat (Blackwell margins, NVL72 TCO, GB300 for reasoning) but has introduced the most substantive bearish notes: Huawei CloudMatrix 384 eroding the China TAM (Apr 2025), TPUv7 threatening hyperscaler accounts on TCO (Nov 2025), and three-front competitive pressure building through 2025. [[citrini]] has drifted from outright LONG to NEUTRAL/lower-conviction by late 2025 and into 2026, arguing the easy alpha is gone and supply-chain names now offer more asymmetry. The key evolution is that competitive risk has migrated from "implausible" to "real but medium-term" — the bear case is no longer dismissed, it is time-bounded to H2 2026+ when hyperscaler ASICs and Huawei Ascend take meaningful share. NVLink Fusion, CPO (COUPE/Quantum-X), the Groq acquihire, and the Vera Rubin full-stack CPU+GPU pod have each extended the moat narrative just as each preceding concern peaked.
@@ -244,3 +244,6 @@ The two entries with concrete px@call data are [[irrationalanalysis]] at $16.53 
 | 2026-10-21 | [[semidoped]] | LONG | 221.97 | ByteDance/Alibaba/Tencent place >$35B in chip orders; locks 6 packaging/substrate partners (incl Ibiden) for 2.5x supply expansion |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 221.97 (2026-10-21). Opened at spot. **Resolution** — SD Sep-21 LONG ($228.87) -> $221.97 = **-3.0% LOSS ✗** (Nscale-S1 optimism gave back into the Oct AI wobble).
+
+## 2026-11-01 run update
+**2026-11-01 — two overhangs.** [[semidoped]] NEUTRAL ($204.64): DOJ scrutinizes the $13B Hugging Face buy (software-layer antitrust) + Nvidia weighs guaranteeing debt behind Nscale's $45B Anthropic deal → circular-financing concern (Vik 'bandaid'; Austin 'parent co-signing'). Recent SD LONGs ($217–239) ~−5-8% in the selloff.

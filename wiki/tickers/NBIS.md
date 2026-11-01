@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: NBIS
 current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -44,3 +44,6 @@ No numeric px@call values are recorded, so mark-to-market tracking is not yet po
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SA Sep-23 ClusterMAX LONG ($243.48) -> $171.57 = **-29.5% LOSS ✗** (Platinum-tier/premium-pricing entry; neocloud de-rating).
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($235.88) → $154.14 = −34.7% LOSS ✗** — neocloud/Token-Factory long crushed with the group.

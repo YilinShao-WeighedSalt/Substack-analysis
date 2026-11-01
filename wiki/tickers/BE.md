@@ -8,7 +8,7 @@ updated: 2026-10-26
 ticker: BE
 current_stance: long
 conviction: medium
-last_review: 2026-10-26
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -76,3 +76,6 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 | 2026-10-24 | [[irrationalanalysis]] | LONG | 193.30 | Great earnings, imploded anyway; IA bought back the dip (stayed out of the earnings YOLO but couldn't resist), would double near ~$160 ('buy and pray'). |
 
 **Outcome tracking (2026-10-26):** New IA LONG @ $193.30. Opened at spot.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($276.98) → $203.17 = −26.6% LOSS ✗** (BTM fuel-cell long corrected).

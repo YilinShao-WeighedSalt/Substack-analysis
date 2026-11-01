@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: TSM
 current_stance: long
 conviction: high
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -59,12 +59,10 @@ last_review: 2026-10-29
 | 2026-07-01 | [[semidoped]] | MENTION | 446.68 | Q2 GM ~70%, Q3 rev +10%+ q/q on 3nm/5nm AI demand; skeptical on High-NA EUV ("30–50% better"); fast-tracking CoPoS under NDA |
 | 2026-07-02 | [[semianalysis]] | LONG | 446.68 | ECTC: CoWoS remains dominant packaging platform, leads microfluidic direct-to-silicon cooling; challengers (Intel EMIB-T) only now appearing |
 | 2026-10-19 | [[semidoped]] | LONG | 412.61 | Samsung routes NVHBM base die to TSMC 3nm (can't match in-house) + Japan $4.1B Kumamoto 3nm + new TW fab |
-
 | 2026-07-07 | [[semidoped]] | MENTION | 446.68 | "Second fleet" localizing suppliers to secure CoWoS/CoPoS packaging supply |
 | 2026-08-11 | [[semidoped]] | LONG | 422.06 | Record July revenue +44.7% YoY; 2nm sold out through 2028 at $30k/wafer; CoWoS finally near-balance; +$6.3B Sony image-sensor JV |
 | 2026-08-12 | [[semidoped]] | LONG | 426.35 | CoWoS yield clears 99%, 3DIC cycle cut to 1yr, pursuing AUO fabs for FOPLP/CoPoS; bottleneck moves upstream to ABF substrate + memory; +$29.44B board capex approval |
 | 2026-08-17 | [[semidoped]] | LONG | 430.97 | TSMC Arizona H1 profit doubles to NT$36.1B; US fab-ramp economics validated |
-
 | 2026-08-19 | [[semidoped]] | LONG | 416.00 | CoWoS at capacity = pricing power (more packaging => more wafers, per Vik); Sony/TSMC 747B-yen Kumamoto sensor fab (2029); COUPE next-gen CoWoS successor in development |
 | 2026-08-21 | [[semidoped]] | LONG | 418.95 | 1.6nm (A16) development wrapped, Q4 mass-production target; CoWoS still supply-constrained (LG enters packaging w/ maskless LDI to help relieve it) |
 | 2026-08-25 | [[semidoped]] | NEUTRAL | 417.69 | Apple M6/M5 Ultra + Xiaomi 3nm volume, but HBM packaging-yield struggles draw analyst attention to Intel's packaging opening. |
@@ -80,6 +78,7 @@ last_review: 2026-10-29
 | 2026-09-30 | [[semidoped]] | LONG | 456.19 | 42% Foundry-2.0 share (Samsung 4%); AI/HPC+3D-IC flow certs; CoWoS-L dominant interconnect thru 2028. |
 | 2026-10-08 | [[semidoped]] | NEUTRAL | 482.30 | Agrees to license process for a Musk-run Terafab (unprecedented) with no operating role; named in 5 key TrendForce earnings themes; +1.1% on the day |
 | 2026-10-27 | [[semidoped]] | LONG | 436.87 | Preparing CoWoS advanced-packaging price increases of up to 20% (TrendForce) — reprices every Nvidia/AMD/hyperscaler accelerator; pricing power holds while EMIB-T yields lag. Anthropic S-1 names TSMC concentration a material compute risk. |
+| 2026-10-30 | [[semidoped]] | LONG | 406.13 | Near a deal to buy two AUO display fabs for CoWoS conversion (adds to AP7/AP8) — fast cleanroom floor vs greenfield into tight accelerator demand; Kinsus exploring AlN vs glass substrates. |
 
 ## Thesis evolution
 From 2024 through mid-2025, the view was near-unanimously bullish: irrationalanalysis treated TSMC as its highest-conviction long, anchored on the collapse of Samsung 3nm yields and Intel Foundry's structural failure leaving TSMC as the only viable advanced-node supplier; semianalysis framed TSMC as the apex predator extending dominance into the GAA era via N2, A16, and CoWoS packaging compounding its ecosystem moat. By late 2025 and into 2026, semianalysis began layering in short-framed arguments — first a hypothetical XRL domestic-fab displacement scenario, then the pointed observation that N3 is running above 100% utilization yet TSMC's pricing discipline is leaving substantial economic rent on the table, and most recently framing TSMC capacity saturation as a binding constraint on global AI buildout rather than a pure pricing windfall. irrationalanalysis remained structurally long but acknowledged TSMC's own pricing power as a systemic risk to the broader AI supply chain it anchors. The resulting mixed stance reflects a consensus on TSMC's irreplaceable technology lead alongside a growing debate over whether the company is monetizing that monopoly adequately — and whether capacity concentration in N3 creates systemic fragility rather than pure upside.
@@ -127,3 +126,6 @@ The only price-anchored call in the log is irrationalanalysis's October 2024 men
 **Outcome tracking (2026-10-26):** New SD NEUTRAL @ $418.51 (supply-chain risk; excluded). **Resolution: SD Sep-23 LONG ($451.15) -> $418.51 = -7.2% LOSS ✗** (the N2-verified/Kumamoto long gave back into the October tape).
 
 **Update 2026-10-29:** **Resolution:** SD Sep-28 LONG ($450.61) crossed 30d at $436.87 = -3.0% ✗ (the late-Sep N2-scaling long round-tripped). New Oct-27 CoWoS-pricing LONG resets the stance. current_stance long.
+
+## 2026-11-01 run update
+**2026-11-01 — CoWoS land-grab.** [[semidoped]] LONG ($406.13): near a deal to buy two AUO display fabs to convert to CoWoS (adds to AP7/AP8) — fast cleanroom floor vs greenfield into tight accelerator demand; Kinsus exploring AlN vs glass substrates. NB: the Sep-30 SD LONG ($456.19) resolved a **−11.0% LOSS** this cycle as the AI tape corrected — entry level, not thesis.

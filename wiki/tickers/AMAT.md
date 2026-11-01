@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: AMAT
 current_stance: long
 conviction: high
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -41,3 +41,6 @@ No px@call values are recorded across the log, so price-based verification is no
 **Update 2026-10-14:** SD LONG $464.24 (EPIC Center). A facility/R&D-cycle moat, not a bookings beat; payoff multi-year.
 
 **Update 2026-10-29:** The Besi stake increase complements the Oct-13 $5B EPIC Center capex. current_stance long.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG ($511.38) → $390.09 = −23.7% LOSS ✗** (Kioxia/NAND co-dev long corrected).

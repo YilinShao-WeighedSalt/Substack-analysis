@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: LITE
 current_stance: long
 conviction: high
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -42,14 +42,14 @@ last_review: 2026-10-23
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 713.94 | Ultra-core; 'cold dead hands' — long-haul optics + CPO through the whipsaw. |
 | 2026-08-05 | [[irrationalanalysis]] | LONG | 826.26 | "Good for Lumentum whatever happens" — substitution winner + CPO laser near-monopoly. |
 | 2026-10-19 | [[irrationalanalysis]] | LONG | 824.13 | UHP-laser supply dominance (cut off Ayar/small buyers); rivals' comb-laser demos flopped |
-
 | 2026-08-09 | [[irrationalanalysis]] | LONG | 820.59 | "HINT HINT LONG LUMENTUM" — hi-power CPO/NPO laser duopoly (LITE+AVGO); Aeva/Innolight SOA win confirms the laser shortage |
 | 2026-08-12 | [[irrationalanalysis]] | LONG | 926.14 | Q4/FY26 call "ultra-bullish": 80–90% GM UHP lasers, no real competition, cavity shrunk again at same linewidth; disaggregated ELS/ELSFP + wide mode-hop-free range = the winning architecture and the qual-only moat |
-
 | 2026-08-18 | [[irrationalanalysis]] | LONG | 879.28 | Nvidia/Lumentum ELSFP paper = 'massive alpha': 0.5 dB coupling loss + single isolator slashes active-alignment/BOM cost; monolithic-DFB-array RIN 'unusable' validates disaggregated-laser moat |
 | 2026-09-06 | [[irrationalanalysis]] | NEUTRAL | 881.25 | 1060nm VCSEL shift needs 6-12mo GR-468 requal; AMS OSRAM 850nm competes in NPO/CPO |
 | 2026-09-21 | [[irrationalanalysis]] | LONG | 945.67 | ECOC: Lumentum phase noise consistently better, effective linewidth 0.5–1.2MHz confirmed — the qual-only laser moat holds |
 | 2026-09-21 | [[semidoped]] | LONG | 945.67 | Lumentum + Qualcomm + Corning to demo 1060nm VCSEL die-to-die scale-up at ECOC |
+| 2026-10-30 | [[irrationalanalysis]] | LONG | 840.70 | 'Beloved Lumentum' — vows to 'kill' the Marvell takeover; UHP co-packaged-optics laser monopoly is why it's a target. Marvell talks sent LITE +11% (~$91B val). |
+| 2026-10-29 | [[semidoped]] | NEUTRAL | 840.70 | Marvell in advanced talks to buy LITE → vertically-integrated 1.6T CPO stack vs Broadcom; reports the news, no directional call. |
 
 ## Thesis evolution
 Coverage opened in early 2024 with semianalysis and citrini framing LITE as a straightforward beneficiary of the 800G/1.6T pluggable transceiver cycle. The view deepened materially in late 2025 when irrationalanalysis pivoted from neutral to a high-conviction long anchored on a specific technical moat: Lumentum's Greensboro fab is the only facility capable of producing high-power, narrow-linewidth O-band DFB and EML lasers meeting the noise specs demanded by Nvidia's ring-modulator CPO architecture, and the author reached a self-imposed position-size ceiling by February 2026. The thesis was refined further at OFC 2026, where LITE was uniquely willing to disclose laser linewidth data — a signal that no rival could match the spec — and the ELSFP (external laser small form-factor pluggable) opportunity emerged as an additional high-margin vector. Citrini broadly agreed through Q1 2026 but began advising partial profit-taking as the trade became crowded; semianalysis and semidoped added corroborating data points (Nvidia supplier confirmation, Virgo OCS role) without disagreeing on direction. The only friction is tactical: the March 2026 neutral entry from irrationalanalysis flagged that Nvidia's $2B investment announcement was a sentiment event, not an engineering event, and citrini's partial-trim advice reflects positioning discipline rather than a thesis reversal. Globalsemiresearch entered in June 2026 as the strongest recent bull, citing the largest-ever ELSFP purchase order and confirmed 2027 shipment scale-up as direct evidence against the CPO-delay thesis.
@@ -83,3 +83,6 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD **and** IA Sep-21 LONG ($945.67) -> $850.70 = **-10.0% LOSS ✗** (the shared ECOC/UHP-laser long round-tripped; IA's companion COHR/CBRS *shorts* won big).
+
+## 2026-11-01 run update
+**2026-11-01 — takeover in play.** Marvell in advanced talks to buy LITE (all-stock, modest premium per Faber); LITE +11% on the report (~$91B val), now $840.70. [[irrationalanalysis]] reaffirms LONG and vows to **kill the deal** — prizes LITE's UHP CPO-laser monopoly. Opens a 3-way tension with the market's deal-arb and IA's standalone-moat thesis; see [[marvell-lumentum-deal]].

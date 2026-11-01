@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: VICR
 current_stance: long
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -36,3 +36,6 @@ No px@call values are recorded in either entry, so price-based verification is n
 | 2026-10-21 | [[semidoped]] | LONG | 213.42 | Q3 rev $197.1M (+78.5% YoY), EPS $1.33 beat by 4c, 68% GM, backlog up; vertical power delivery scaling into advanced packaging |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 213.42 (2026-10-21). Opened at spot. **Resolution** — SD Sep-21 LONG ($268.34) -> $213.42 = **-20.5% LOSS ✗** (VPD-royalty entry; the AI-power trade is volatile — re-logged LONG this run on the Q3 beat).
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($288.94) → $191.09 = −33.9% LOSS ✗** (VPD power-delivery royalty long round-tripped).

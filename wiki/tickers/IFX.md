@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: IFX
 current_stance: long
 conviction: high
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -45,3 +45,6 @@ No px@call value was recorded at the time of the call, which prevents any quanti
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 53.09 (IFX.DE) (2026-10-22). Opened at spot. **Resolution** — SD Sep-22 LONG (€60.13) -> €53.09 = **-11.7% LOSS ✗** (PSOC-C3/SolarEdge entry; re-logged LONG this run on the Nvidia GaN pact).
 
 **Update 2026-10-29:** Two AI-power wins in three days; but Nvidia's 800V list also names MPS/Navitas/onsemi/ROHM/ST/TI ('seat at a long table'), and 900V only cleared testing (650V the only part shipping). **Resolution:** SD Sep-28 LONG (EUR56.71) crossed 30d at EUR52.59 = -7.3% ✗ (auto-softness overhang). current_stance long.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG (€59.50) → €50.56 = −15.0% LOSS ✗** (Eaton SiC solid-state-transformer / 800VDC + Thailand backend long gave back into the AI-trade correction).

@@ -8,7 +8,7 @@ updated: 2026-10-26
 ticker: CRWV
 current_stance: long
 conviction: low
-last_review: 2026-10-26
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -59,3 +59,6 @@ No px@call values exist for any entry, so price-based outcome verification is no
 | 2026-10-23 | [[semidoped]] | NEUTRAL | 54.24 | Short-sellers bank $6B on neocloud debt fears; new 2026 lows (-10% after Jensen flagged an AI funding crunch), AI-credit spreads at a 17-mo high — long GPU leases on short-term debt. |
 
 **Outcome tracking (2026-10-26):** New SD NEUTRAL @ $54.24 (cautionary; excluded). CoreWeave now the poster child of the neocloud credit-stress trade.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG ($87.12) → $54.87 = −37.0% LOSS ✗** — neocloud credit fears + the AI-trade correction hammered CoreWeave.

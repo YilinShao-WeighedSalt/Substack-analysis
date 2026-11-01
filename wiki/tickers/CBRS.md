@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: CBRS
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -75,3 +75,6 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 **Outcome tracking (2026-10-23):** **Resolution** — IA Sep-21 ECOC SHORT ($212.41) -> $117.98 = price -44.5%, **short +44.5% WIN ✓** (biggest resolved win of the run; Cerebras integrated-laser 'fantasy' short).
 
 **Update 2026-10-29:** SD/Oracle note: OCI deal (TPU+Cerebras+SambaNova, 2027) gave CBRS a ~+10% pop. IA stance stays NEUTRAL (engineering-driven, not the Oct-1 activist short). No priced IA call crosses 30d this run.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[irrationalanalysis]] Oct-1 **SHORT ($177.65) → $109.18 = short +38.5% WIN ✓** — third straight win on the Cerebras parametric-yield/integrated-laser thesis.

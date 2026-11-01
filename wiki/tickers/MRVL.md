@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: MRVL
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -73,11 +73,12 @@ last_review: 2026-10-23
 | 2026-07-02 | [[semianalysis]] | LONG | 245.29 | ECTC custom HBM (−60% host PHY area) + OMIB/Photonic Fabric from Celestial validate packaging/optics roadmap; EAM scale risk flagged |
 | 2026-08-05 | [[semidoped]] | NEUTRAL | 211.02 | Rallied on substitution, but its DSPs sit inside the banned Chinese modules - double-edged. |
 | 2026-10-19 | [[irrationalanalysis]] | NEUTRAL | 227.83 | 'Incompetent cheating' -- 400G SerDes so bad the top Keysight scope can't even measure TDECQ |
-
 | 2026-08-19 | [[semidoped]] | LONG | 251.01 | Google granted option to buy $12.2B (~7%) of Marvell tied to TPU supply; vests one tranche/$500M custom-silicon rev (~$120B to FY33, ~$18B/yr); CXL read-through positive |
 | 2026-08-28 | [[semidoped]] | NEUTRAL | 216.62 | Beat + raise but shares fell — cited $120B Google figure is multi-year cumulative, not a near-term booking; timing murky |
 | 2026-09-21 | [[semidoped]] | LONG | 262.36 | Industry-first 2nm optical (co-packaged) tech to demo at ECOC 2026 |
 | 2026-10-08 | [[irrationalanalysis]] | NEUTRAL | 287.01 | Investor-day recap: dense SRAM + die-to-die PHY + one 1.6T coherent constellation (3e-6 pre / 1e-11 post-FEC) genuinely excellent, but TFLN/uLED/GeSi-EAM-to-CPO pivots derided and $70-90B FY31 target read as a bubble tell; moderate bear maintained |
+| 2026-10-30 | [[irrationalanalysis]] | NEUTRAL | 196.40 | Opposes the Lumentum acquisition ('will do everything possible to kill this deal'); moderate-bear overhang stands. MRVL −8/−9% on the deal report. |
+| 2026-10-29 | [[semidoped]] | NEUTRAL | 196.40 | Advanced talks to buy Lumentum (all-stock, modest premium per Faber) = vertical integration into optical; competes with Broadcom. News, no directional call. |
 
 ## Thesis evolution
 The irrationalanalysis view on MRVL oscillated dramatically over the covered period, beginning as a short in early 2024 (5G carrier decline, Broadcom encroachment) before flipping tactically long in late 2024 on the Amazon custom-silicon ramp narrative, then crashing back to a sustained short through mid-2025 as SerDes failures at Trainium 2 and the confirmed loss of Trainium 3 to Alchip destroyed confidence in the custom-silicon franchise. The pivot to long came in October 2025 when the re-spun 1.6T DSP won a Nvidia socket and the Alaska AEC product proved superior to Credo in AEC; the Celestial AI acquisition in December 2025 then shifted the entire bull case to a CPO binary — if Celestial's germanium EAM passes GR-468 qualification, Marvell becomes the sole vertically-integrated CPO vendor at hyperscale; if it fails, the acquisition is worthless. SemiAnalysis has been more consistently constructive on specific product categories (DSP/retimer for 800G, Teralynx switching, Celestial CPO roadmap) while noting individual design-win losses. GlobalSemiResearch is the most broadly bullish outlet, framing Marvell in April and June 2026 as a potential next trillion-dollar AI infrastructure company on the strength of UALink, CXL Structera, Google LPU, and custom HBM work. Irrationalanalysis remains cautiously neutral-to-long as of June 2026, acknowledging the Structera and SRAM catalysts but expressing skepticism about Jensen Huang's $2B investment rationale and declining to add exposure after the sharp June 2026 rally.
@@ -98,3 +99,6 @@ The only legacy px@call is the September 2025 short at $72; the stock at $309 as
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($262.36) -> $244.76 = **-6.7% LOSS ✗** (ECOC 2nm-optical entry at the optics top).
+
+## 2026-11-01 run update
+**2026-11-01 — bids for Lumentum.** MRVL −8/−9% on the Lumentum-takeover report (all-stock, ~$91B; Bernstein: too big to fund with cash; prior Celestial AI $3.25B buy). [[irrationalanalysis]] opposes ('will do everything to kill this deal'); its Oct-8 moderate-bear ($287.01) is tracking well, MRVL now $196.40 (~−32%). NEUTRAL/overhang maintained.

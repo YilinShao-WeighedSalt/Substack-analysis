@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-10-20
+updated: 2026-11-01
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -111,3 +111,6 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 
 ## 2026-10-20 — CXMT becomes a credible #10 DRAM supplier; base-die value leaks to logic (Semi Doped)
 **CXMT (ChangXin Memory)** reported Q3 revenue as high as **$16.7B, a near-600% YoY surge** that lifted its global DRAM share to **~10%** and a nine-month record profit — yet the stock **fell 7.8%** (to 41.52 yuan, off its August 61.8 peak) on margin/yield-sustainability doubts, dragging **SK Hynix** down too as traders weighed what a credible **tenth DRAM supplier** means for commodity-pricing discipline. Combined with the HBM4E-base-die-to-TSMC story (value leaking to logic designers) and **Micron's new "Edge Inference Memory (EIM)"** category for physical-AI/humanoid edge devices, the memory read is mixed: demand strong (Nvidia blamed consumer-GPU shortages directly on insufficient memory supply) but **value-capture and pricing discipline both under question** → [[000660.KS]]/[[005930.KS]]/[[MU]] all NEUTRAL this run.
+
+### 2026-11-01 update
+**Record memory quarters, but the split between winners sharpens.** **SK Hynix (000660.KS)** posts its first-ever **₩100T revenue quarter** (₩104.62T/$78B), record op profit ₩83.33T, and a new CEO debuts a ~**₩100T dividend+buyback**. **Samsung (005930.KS)** posts record total rev ₩195.3T on AI memory but its **device division loses money again** and the chip div still missed some estimates — a lopsided result, no shareholder-return commitment (stock −6.6% on the Oct-29 miss). Management's tell: the **AI chip shortage is 'worsening'** → HBM pricing power unlikely to ease, memory the singular profit engine of the upcycle. HBM sold out through 2027; capex +60%.

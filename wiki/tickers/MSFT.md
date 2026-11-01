@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: MSFT
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -32,11 +32,11 @@ last_review: 2026-10-23
 | 2026-04-15 | [[semianalysis]] | MENTION | n/a | Maia 200 reticle-scale monolithic approach validated for inference but trails multi-die peers in flexibility |
 | 2026-04-16 | [[globalsemiresearch]] | MENTION | n/a | Developing custom AI chips; UALink alliance member and potential Marvell customer |
 | 2026-05-27 | [[semianalysis]] | SHORT | n/a | Azure's IaaS-heavy mix, construction pause, and OpenAI capacity lock-in compress margins vs. AWS |
-
 | 2026-08-07 | [[semianalysis]] | LONG | 503.81 | SpaceX 10GW-in-2027 offtaker; Azure accel 42%→100%+; the $100M/MW inference prize on OpenAI models (post-April rev-share removal) |
 | 2026-09-06 | [[irrationalanalysis]] | NEUTRAL | 499.70 | Maia "still dogshit" (8pj/bit, 1µs); hides real inference benchmarks |
 | 2026-09-11 | [[semidoped]] | LONG | 495.63 | Targets 38 GW of DC capacity by 2032 (~3x fleet) — durable decade-long demand floor |
 | 2026-09-23 | [[semianalysis]] | NEUTRAL | 497.93 | ClusterMAX 3.0: Azure demoted to Silver (relative downgrade); $10B+ Gulf buildout to 2030 |
+| 2026-10-29 | [[semidoped]] | LONG | 521.91 | Azure +48% ($33.17B), strongest cloud growth in years, cleared consensus; capex pulled forward tightening GPU allocation to 2028 — the hyperscaler converting AI capex to revenue now; a rebuttal to Alphabet's miss. |
 
 ## Thesis evolution
 Coverage opened in early 2024 with semianalysis framing Microsoft as a co-leader in the gigawatt-scale AI buildout, albeit already showing operational cracks relative to Google (PUE, density, fault tolerance). The May 2024 NEUTRAL was the first directional signal: semianalysis viewed MAI-1 as a rational hedge against OpenAI's AGI carve-out clause, but not a bullish catalyst in isolation. A brief LONG emerged in January 2025 on regulatory tailwinds — the UVEU framework effectively codified Microsoft's global footprint as compliant infrastructure — but this was immediately offset by a SHORT just days later when Stargate's equity structure revealed OpenAI actively diversifying away from Azure to Oracle. From mid-2025 onward, semianalysis moved to a structurally cautious stance: the April 2025 capacity pause was characterized charitably as recalibration, but the November 2025 deep-dive quantified the cost of the pause as ~$150B in foregone gross profit that accrued to Oracle instead. By May 2026, semianalysis turned explicitly SHORT, arguing Azure's IaaS-heavy mix and OpenAI lock-in create margin compression relative to AWS's Bedrock/Trainium model. irrationalanalysis has been peripheral — one tactical LONG into the January 2025 earnings print and one critical MENTION of Copilot+ — and does not meaningfully contest the semianalysis bear thesis. The live view is therefore mixed-to-short: strong enterprise footprint acknowledged, but structural margin and moat erosion is the dominant concern.
@@ -58,3 +58,6 @@ No px@call values are recorded for any entry, making quantitative P&L assessment
 | 2026-10-22 | [[semidoped]] | NEUTRAL | 532.95 | Azure exclusivity pressured as OpenAI adds Google Cloud; earlier lost Nscale as UK anchor tenant to power delays |
 
 **Outcome tracking (2026-10-23):** New **SD NEUTRAL** @ 532.95 (2026-10-22). Opened at spot.
+
+## 2026-11-01 run update
+**2026-11-01 — Azure +48%.** [[semidoped]] LONG ($521.91): Azure $33.17B, strongest cloud growth in years, cleared consensus; capex pulled forward tightening GPU allocation to 2028 — the hyperscaler converting AI capex to revenue, a rebuttal to Alphabet's miss. Oct-13 SD LONG ($543.45) ~−4% in the broad selloff.

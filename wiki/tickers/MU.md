@@ -8,7 +8,7 @@ updated: 2026-10-26
 ticker: MU
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-26
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -132,3 +132,6 @@ The only hard price anchor in the log is the irrationalanalysis January 2026 re-
 | 2026-10-23 | [[semidoped]] | NEUTRAL | 877.55 | Global profit-linked bonus plan after Taiwan union strike pressure — a structural labor-relations shift. |
 
 **Outcome tracking (2026-10-26):** New SD NEUTRAL @ $877.55 (labor; excluded).
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($1,065.11) → $884.74 = −16.9% LOSS ✗** (record-FY DRAM long round-tripped).

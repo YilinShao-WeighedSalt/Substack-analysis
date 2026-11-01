@@ -4,15 +4,17 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-10-29
+updated: 2026-11-01
 handle: irrationalanalysis
-calls_logged: 648
-hit_rate: "34/60 (57%), ~23 open"
+calls_logged: 651
+hit_rate: "35/63 (56%), ~22 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-11-01): 34/60 → 35/63 (56%) — the Oct-1 Q3 batch resolves 1W/2L, the win a third straight on Cerebras.** **[[CBRS]] SHORT ($177.65→$109.18) = short +38.5% WIN ✓** (the activist parametric-yield/integrated-laser short keeps printing); losses **[[CRDO]] LONG ($194.79→$150.99) = −22.5% ✗** and **[[QMCO]] LONG ($31.72→$18.27) = −42.4% ✗** (the µVCSEL Tier-2 + speculative "Degen" tape long both gave back in the late-Oct AI correction). The Oct-7 Marvell AVGO/AXTI longs cross 30d ~Nov-6, the Oct-19 OCP batch ~Nov-18, the Oct-24 "Dancing in the Rain" batch (AAOI/BE/AXTI/CRDO long, COHR short, TSEM neut) ~Nov-23. This run: **1 post (Intel Q3 "Dead Inside")** — new **SHORT [[INTC]] $65.76** (planning-incompetence/wafer-not-substrate short; IA flips from its cautiously-constructive Oct-11 stance), reaffirm **LONG [[LITE]] $840.70** (vows to kill the Marvell takeover), **NEUTRAL [[MRVL]] $196.40** (opposes the deal). 2 directional + 1 neutral opened at spot.
 
 **hit_rate note (2026-10-26): holds 34/60 (57%) — no priced call crossed 30 days.** The Sep-21 ECOC batch resolved last run (Oct-23); the Oct-1 Q3 CRDO/QMCO longs + CBRS short cross 30d ~Oct-31, the Oct-7 Marvell AVGO/AXTI longs ~Nov-6, the Oct-19 OCP batch ~Nov-18. This run's 6 new calls (5 directional long/short + 1 neutral) opened at spot.
 

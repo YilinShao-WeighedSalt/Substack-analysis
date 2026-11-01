@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: INTC
 current_stance: mixed
 conviction: medium
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -98,9 +98,7 @@ last_review: 2026-10-29
 | 2026-07-06 | [[semidoped]] | LONG | 120.94 | CPU price hikes signal pricing power in a supply-tight market (products-side positive); XBM (Cross-Batch Memory) patent = optional HBM4 competitor |
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 90.20 | Ultra-core; foundry/packaging optionality vs TSMC CoWoS tightness. |
 | 2026-10-19 | [[semidoped]] | LONG | 89.85 | SK Hynix eyeing Intel for HBM4E base dies (TSMC's cost 3-4x its DRAM core dies); Xeon inference-microservice stack |
-
 | 2026-08-11 | [[semidoped]] | LONG | 97.71 | $20B upsized equity raise (first since 1971; "build baby build") + MediaTek $5B foundry commit — external-customer proof point for the AI-foundry bet |
-
 | 2026-08-18 | [[irrationalanalysis]] | NEUTRAL | 92.13 | CPO/SiPho group 'maybe not dead' (16-lambda laser array, hybrid-integration laser); but multi-lambda SOA four-wave-mixing gives 'C+' BER vs Nvidia's A+ clock-forwarded bathtub curve |
 | 2026-08-19 | [[semidoped]] | LONG | 92.13 | Socionext taps Intel 18A-P for HPC chiplet; EMIB-T + Samsung/Unimicron/ASE win reroute volume as TSMC CoWoS fills — external-customer proof points |
 | 2026-08-25 | [[semidoped]] | NEUTRAL | 88.24 | TSMC HBM packaging-yield problems could reroute advanced-packaging customers to Intel — modest turnaround tailwind. |
@@ -114,6 +112,8 @@ last_review: 2026-10-29
 | 2026-10-02 | [[semidoped]] | NEUTRAL | 119.33 | Snapdragon X2 pressures Intel's premium-laptop stronghold into the 2027 refresh — a segment headwind, not a whole-company short. |
 | 2026-10-08 | [[semidoped]] | NEUTRAL | 112.50 | Stays in Terafab (support role) + formal AMAT next-gen R&D pact & all-3-foundries at EPIC; TSMC-Musk leading-edge pull the risk (shares round-tripped the scare) |
 | 2026-10-27 | [[semidoped]] | LONG | 93.74 | Austin: TSMC's CoWoS +20% hike is 'good news for EMIB and Intel' — EMIB-T is the relief valve if TSMC packaging gets dearer; SambaNova-on-OCI adds a CPU pull. (Prior stance had been NEUTRAL on the 18A ramp.) |
+| 2026-10-30 | [[irrationalanalysis]] | SHORT | 65.76 | Q3 'Dead Inside' live-reaction: wafer-limited by PLANNING INCOMPETENCE, not substrates/EMIB (SKU yield-harvest tell; 1H27<2H27 = 6-mo wafer cycle fingers logic wafers); de-levered, Intel named a liquidation target. |
+| 2026-10-30 | [[semidoped]] | NEUTRAL | 65.76 | −23% AH: revenue-forecast miss on weak PC demand + DC-component supply snags (the segment that was supposed to be good news); cash burn mounting; AMD+Arm circling both ends. |
 
 ## Thesis evolution
 The coverage arc divides into three distinct phases. Through early-2025, irrationalanalysis held a consistently bearish view grounded in product deterioration — CPU share losses to AMD and Qualcomm, Lunar Lake COGS blowout from TSMC N3B dependence, and a broken 18A PDK with unacceptable parametric yield; semianalysis was more measured, acknowledging a credible roadmap while flagging the capital gap and absence of external foundry customers. The pivot came in March 2025 with Lip-Bu Tan's appointment, which irrationalanalysis treated as a genuine inflection, initiating a long and holding it through a turbulent 2025 marked by continued shorts on any product-specific bad news. By late 2025 and into 2026 the bull thesis consolidated around three pillars: 18A-P as a process fix, EMIB/Foveros Direct as a differentiated advanced-packaging moat, and sub-book-value as a margin of safety — with globalsemiresearch and semidoped joining semianalysis in supporting the foundry optionality view. The remaining bearish voices (irrationalanalysis's own January 2026 short note; semianalysis's Diamond Rapids throughput critique) focus on the products division, which most bulls now explicitly write off, making the live thesis a pure foundry/packaging option on 18A-P success by 2027. The June 2026 Apple foundry deal — announced by the White House — represents the strongest external validation to date: Apple's partnership with TSMC is what originally made TSMC the global leader, so Apple choosing Intel signals a credibility inflection. Separately, Google's reported ~3M TPU EMIB commitment (via MediaTek, not Broadcom) validates Intel as a viable external advanced packaging vendor. The stock hit an all-time high of $135.48 on June 18; the original $80–81 bull case is now up 65–68%.
@@ -155,3 +155,6 @@ The two calls with explicit px@call values — irrationalanalysis at $81.4 (2026
 **Outcome tracking (2026-10-23):** New **SD NEUTRAL** @ 92.96 (2026-10-22). Opened at spot. **Resolution** — SD Sep-21 LONG ($123.86) -> $92.96 = **-24.9% LOSS ✗** (High-NA-in-production entry at the Intel top).
 
 **Update 2026-10-29:** First clearly LONG-leaning Intel call in a while, driven by the EMIB-vs-CoWoS cost argument rather than 18A process leadership. current_stance neutral→long-leaning.
+
+## 2026-11-01 run update
+**2026-11-01 — Q3 implosion.** Intel −23% AH / ~−30% next day on a revenue-forecast miss (weak PC + DC-chip supply snags); week's selloff epicenter. [[irrationalanalysis]] flips to an explicit **SHORT** ($65.76): wafer-limited by planning incompetence, not substrates (SKU yield-harvest + 6-mo wafer-cycle tells). [[semidoped]] NEUTRAL, concerned on mounting cash burn + AMD/Arm share pressure. The late-Oct-27 SD LONG ($93.74) is now ~−30% underwater. Stock at the 3-mo low $65.76.

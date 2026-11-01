@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-29
+updated: 2026-11-01
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -112,3 +112,6 @@ The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hamme
 **2026-10-26 (customers buy equity in substrate lines — SD Oct-23):** The FC-BGA chokepoint hardened from prepayments into equity: **Tesla (₩1.1T) and Nvidia (₩2.6T) took equity stakes in dedicated SEMCO FC-BGA lines** (Sejong/Busan, ~₩3.7T total) → allocated output rather than a queue slot. Ibiden still holds 70%+ of high-end FC-BGA; Nvidia runs the same play via Ibiden prepayments + Unimicron reservations; Tesla's allocation only lands 2029. China's largest OSAT **JCET committed $2.73B** to chiplet/heterogeneous advanced packaging (into ASE/Amkor's lane); Daeduck added ₩615B substrate capex — the Korean/Taiwan substrate capex wave continues.
 
 **Update 2026-10-29 (substrate crunch + hybrid bonding + CoWoS pricing):** The packaging layer is now the loudest AI bottleneck. (1) **TSMC preparing CoWoS price increases up to 20%** (TrendForce) — CoWoS is the interposer step that stacks HBM beside compute dies; with EMIB-T yields lagging, TSMC can price at will, repricing every Nvidia/AMD/hyperscaler accelerator (Austin: good for Intel EMIB). (2) **Ajinomoto reveals next-gen ABF films** — ABF is the insulating film upstream of every FC-BGA substrate; Unimicron CEO flags a ~20% substrate shortfall through 2027 (T-glass/ABF/CCL all backlogged), and Nvidia is courting Samsung for FC-BGA (threatens Unimicron/Kinsus). (3) **Applied Materials lifts its Besi stake to ~20%** — financializing the hybrid-bonding interdependence (AMAT deposition/surface-prep tools run in sequence with Besi's solder-less Cu-Cu bonders); the path to 16-hi+ HBM. (4) **SEMCO record Q3 op profit +165%** on simultaneous MLCC + ABF demand (AI-MLCC guided 8x by 2027). [[009150.KS]] [[BESI]] [[AMAT]] [[TSM]]
+
+### 2026-11-01 update
+**CoWoS capacity goes land-grab; MLCC/substrate the parallel chokepoint.** TSMC near a deal to buy **two AUO display fabs** to convert to CoWoS (adds to AP7/AP8) — a way to add cleanroom floor fast vs years of greenfield; Kinsus exploring **aluminum nitride (AlN)** vs glass as a next-gen substrate (AlN's low-loss RF-substrate pedigree). Passives/substrate bottleneck: **SEMCO (009150.KS)** now 8 AI-MLCC LTAs cumulative >₩5T (latest ₩879.3B ≈ 23% of a quarter's sales); **Murata (6981.T)** committing ¥1T/5yr to >2× MLCC output; Ibiden +₩1.28T Gama substrate; Unimicron warns PCB-equipment lead times stretched to 30 months. **TC bonder vs hybrid bonding:** Hanmi hits 50% op margin on HBM thermocompression bonders — but Vik flags those margins hold only while HBM stays on TC and not copper-to-copper hybrid bonding (near-term hybrid-bonded stacks still cost too much).

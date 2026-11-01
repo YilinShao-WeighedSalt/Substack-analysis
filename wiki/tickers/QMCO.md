@@ -8,7 +8,7 @@ updated: 2026-10-02
 ticker: QMCO
 current_stance: long
 conviction: low
-last_review: 2026-10-02
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,6 @@ First appearance (2026-10-01). Irrational Analysis added Quantum (QMCO) to its s
 
 ## Outcome tracking
 **Opened 2026-10-01 at $31.72 (LONG).** Open (<30 days). The stock sits near its 52-week high (52w ~$4.31–$32.86), so the entry is at the top of the range — the thesis is a structural-demand bet, not a value entry. Falsifier: tape fails to capture AI cold-storage share (LTO roadmap stalls, or hyperscalers keep archival on HDD/object storage); also a highly speculative small-cap with balance-sheet history to watch.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[irrationalanalysis]] Oct-1 **LONG ($31.72) → $18.27 = −42.4% LOSS ✗** — speculative 'Degen' tape-storage long cratered in the selloff.

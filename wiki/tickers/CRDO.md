@@ -8,7 +8,7 @@ updated: 2026-10-26
 ticker: CRDO
 current_stance: long
 conviction: high
-last_review: 2026-10-26
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -49,3 +49,6 @@ No px@call values are recorded across any entry, so direct price-based PnL attri
 | 2026-10-24 | [[irrationalanalysis]] | LONG | 147.29 | Edgewater xAI-to-optics note crushed it; IA reads it as 'nobody makes 1.6T AEC at 6m,' bad news priced in; ultra-bull on SerDes + uVCSEL NPO/CPO, 'really tempted to go long here.' |
 
 **Outcome tracking (2026-10-26):** New IA LONG @ $147.29 (reaffirm/dip-buy). Opened at spot.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[irrationalanalysis]] Oct-1 **LONG ($194.79) → $150.99 = −22.5% LOSS ✗** — the µVCSEL-pivot Tier-2 long gave back into the late-Oct AI correction.

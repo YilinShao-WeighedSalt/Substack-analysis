@@ -5,14 +5,16 @@ tags: []
 related: []
 created: 2026-04-24
 handle: semidoped
-updated: 2026-10-29
-calls_logged: 425
-hit_rate: "79/176 (45%), ~129 open"
+updated: 2026-11-01
+calls_logged: 438
+hit_rate: "80/191 (42%), ~119 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+**hit_rate note (2026-11-01): 79/176 → 80/191 (42%) — the Sep-30→Oct-2 batch resolves a brutal 1W/14L.** The late-Sept/Oct-1 top round-tripped wholesale into the late-October AI-trade correction (Nasdaq-100 into correction, VIX +17%). Win (1): **[[SNPS]] Oct-1 ($434.94→$467.61 +7.5% ✓)**. Losses (14): **[[QMCO]]-adjacent neoclouds led down — [[NBIS]] Oct-1 ($235.88→$154.14 −34.7% ✗)**, **[[CRWV]] Sep-30 ($87.12→$54.87 −37.0% ✗)**, **[[VICR]] Oct-1 ($288.94→$191.09 −33.9% ✗)**, **[[AMAT]] Sep-30 ($511.38→$390.09 −23.7% ✗)**, **[[009150.KS]] Oct-1 (₩1,542,000→₩1,196,000 −22.4% ✗)**, **[[BE]] Oct-1 ($276.98→$203.17 −26.6% ✗)**, **[[GOOGL]] Oct-1 ($344.08→$279.84 −18.7% ✗)**, **[[CIEN]] Oct-2 ($391.34→$320.72 −18.0% ✗)** (Oct-1 CIEN −8.8% ✗ too), **[[MU]] Oct-1 ($1,065.11→$884.74 −16.9% ✗)**, **[[IFX]] Sep-30 (€59.50→€50.56 −15.0% ✗)**, **[[TSM]] Sep-30 ($456.19→$406.13 −11.0% ✗)**, **[[QCOM]] Oct-2 ($184.87→$164.79 −10.9% ✗)**, **[[JBL]] Sep-30 ($286.86→$272.72 −4.9% ✗)**. (NVDA/INTC/MU-Oct2/AVGO/ASML/285A.T/CORZ Sep30–Oct2 were NEUTRAL, excluded.) This run: **2 dailies (Oct 29–30)** — new **LONG [[MSFT]]/[[000660.KS]]/[[TSM]]/[[009150.KS]]/[[6981.T]]**, **NEUTRAL [[INTC]]/[[005930.KS]]/[[GOOGL]]/[[NVDA]]** (+ MRVL/LITE Marvell-deal news). 5 long / 4+ neutral, no shorts, opened at spot.
 
 - **Daily Update Oct 23 (2026-10-23) — the bubble tape vs the tightening metal:** The news-dense daily (Oct-24 CDP1802-history essay + Oct-23 RF-over-plastic podcast = educational, no calls). **Meta's $34.9B quarter** pushed FCF negative first time in years, shares −7%, 2026 capex guided to $145B (credit gauge fresh high, $825B future commitments) → **[[META]] NEUTRAL $642.62** (monetization-vs-burn debate); **Tesla ₩1.1T + Nvidia ₩2.6T equity into dedicated SEMCO FC-BGA lines** (allocated output; Vik: Ibiden still 70%+, Tesla allocation only 2029) → **[[009150.KS]] LONG ₩1,122,000**; **TSMC asks tool suppliers to purge Chinese rare-earth (NdFeB) magnets** (first tool-level request; multi-year requal) → **[[TSM]] NEUTRAL $418.51**; **SK Hynix scraps Solidigm's $10B US NAND IPO** after Seoul/regulator+shareholder pushback, shares rally on removed dilution → **[[000660.KS]] LONG ₩1,287,000**; **JCET $2.73B into advanced packaging** (China OSAT up the value chain); **short-sellers bank $6B on CoreWeave/neocloud debt fears** (CRWV −10% on Jensen's AI-funding-crunch flag, AI spreads 17-mo high) → **[[CRWV]] NEUTRAL $54.24**; **WDC raises dividend + solid AI HDD/flash outlook** → **[[WDC]] LONG $343.67**; Micron global profit-linked bonus after Taiwan union pressure → **[[MU]] NEUTRAL $877.55**. Book bias: **guarded (3 LONG / 4 NEUTRAL / 0 SHORT)**. New concept knowledge: Tesla/Nvidia-equity-in-FC-BGA-lines + JCET-$2.73B + Daeduck-₩615B to [[advanced-packaging]]; rare-earth-magnet-purge to [[semiconductor-equipment]]; neocloud-$6B-short/17-mo-credit-spread + Meta-FCF-negative to [[ai-debt-financing]]. (→ [[advanced-packaging]], [[ai-debt-financing]], [[semiconductor-equipment]], [[nand-flash-storage]].)
 

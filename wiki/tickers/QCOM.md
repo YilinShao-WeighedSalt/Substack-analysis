@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: QCOM
 current_stance: neutral
 conviction: medium
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -112,3 +112,6 @@ The only anchored px@call in the log is the October 2024 short at $163.08, which
 **Outcome tracking (2026-10-23):** New **SD NEUTRAL** @ 177.96 (2026-10-21). Opened at spot.
 
 **Update 2026-10-29:** Socket-loss + layoffs reinforce the persistent QCOM caution; the modem/Arm-litigation overhang from the Oct-21 note carries. current_stance neutral.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-2 **LONG ($184.87) → $164.79 = −10.9% LOSS ✗** (Snapdragon-X2 share-gain long gave back).

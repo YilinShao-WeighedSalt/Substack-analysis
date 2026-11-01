@@ -8,7 +8,7 @@ updated: 2026-10-02
 ticker: SNPS
 current_stance: long
 conviction: medium
-last_review: 2026-10-02
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -36,3 +36,6 @@ The SNPS view has evolved through three distinct phases. irrationalanalysis open
 No px@call values are recorded across the log, so price-based verification is not possible. The central risk flagged by irrationalanalysis in September 2025 — Intel Foundry NRE contract loss representing structural deterioration — was self-refuted by the same author within days, suggesting the sell-off was an overreaction consistent with the LONG call's thesis. The Ansys deal closure, which was a precondition for the bull case in May 2025, appears to have been resolved given semianalysis's May 2026 framing of the combined Synopsys/Ansys TAM as $31B. The live view is long with medium conviction: the permanent-franchise thesis (PrimeTime monopoly in signoff, advanced-node coverage lock-in) would be falsified by meaningful share loss in signoff tools or a competitive EDA entrant gaining traction at leading-edge nodes; China export restrictions and Intel Foundry's continued contraction remain the primary near-term headwinds.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 397.38 (opened at spot this scan).
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($434.94) → $467.61 = +7.5% WIN ✓** — the lone SD winner of the cycle (AI-native EDA / Amazon silicon-IP pact held up).

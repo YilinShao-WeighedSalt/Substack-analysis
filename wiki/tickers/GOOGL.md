@@ -8,7 +8,7 @@ updated: 2026-10-29
 ticker: GOOGL
 current_stance: long
 conviction: high
-last_review: 2026-10-29
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,7 +29,6 @@ last_review: 2026-10-29
 | 2025-11-28 | [[semianalysis]] | LONG | n/a | TPUv7 TCO advantage strengthens GCP competitive positioning and locks in major AI lab customers via long-term RPO commitments |
 | 2026-04-16 | [[globalsemiresearch]] | MENTION | n/a | Anchor customer for Marvell's custom LPU ASIC and likely CXL Structera deployment partner |
 | 2026-05-27 | [[semianalysis]] | SHORT | n/a | Google Cloud margin optics flattered by excluding $5.4B DeepMind training costs from segment reporting |
-
 | 2026-07-09 | [[semianalysis]] | NEUTRAL | n/a | "Faded dramatically" from AI big-3; models trail on real-world coding (relative knock, not fundamental short) |
 | 2026-08-07 | [[semianalysis]] | LONG | 343.80 | GCP financialization — TPU-system sales (~$35B/GW), GCP growth to mid-100s vs 64% consensus, ~+$3 EPS 2027; DeepMind/Gemini "cooked" after Jeff Dean exit |
 | 2026-08-26 | [[semidoped]] | LONG | 342.00 | TPU v10 goes multi-vendor for the first time, distributing production risk; deepens in-house accelerator lead. |
@@ -40,6 +39,7 @@ last_review: 2026-10-29
 | 2026-10-01 | [[semidoped]] | LONG | 344.08 | TPU revenue recognition begins vs $513.9B cloud backlog; chip capacity sold out; Gemini-4 quality doubts the caveat. |
 | 2026-10-08 | [[semidoped]] | LONG | 347.68 | Locks 3.6GW baseload nuclear (Constellation) to de-risk its buildout; secures the power ceiling ahead of rivals |
 | 2026-10-28 | [[semidoped]] | LONG | 320.58 | TPU demand broadens off-Google: Oracle adds Google TPUs to OCI (2027) and OpenAI is weighing TPU buys to supplement its Nvidia supply (Bloomberg) — external TPU pull validates the custom-silicon franchise. |
+| 2026-10-29 | [[semidoped]] | NEUTRAL | 279.84 | −~10% on weak search/ad sales + negative FCF (is AI a threat to core search?); SD argues GenAI is net-positive for search monetization long-term (Instagram ad-ramp analogy); Google Cloud rev doubled to $30.7B. |
 
 ## Thesis evolution
 Coverage opened with uniform bullishness on Google's infrastructure lead — semianalysis praised the TPU stack, Pathways, and Borg orchestration as a multi-year moat that no hyperscaler could quickly replicate. Citrini diverged sharply in mid-2024, removing GOOGL from its AI basket after repeated Gemini execution failures, introducing the first explicit bear signal. Semianalysis maintained a constructive view on the cloud/silicon side throughout 2025, turning LONG again on UVEU regulatory tailwinds and then doubling down via the TPUv7 deep dive, which framed vertical silicon integration as a durable TCO and customer-lock-in advantage; citrini converged on this view in November 2025. The primary bear thread, distinct from execution risk, is the Search revenue model: semianalysis issued a SHORT in August 2025 on the thesis that agentic AI purchasing funnels structurally disintermediate high-intent commercial queries. The May 2026 accounting concern — DeepMind training costs excluded from GCP segment — adds a separate financial-integrity bear leg. The result is a genuinely split picture: semianalysis and citrini are constructive on GCP/TPU as infrastructure, but semianalysis carries an active SHORT on Search monetization and questions the reported margin quality of the cloud segment itself.
@@ -62,3 +62,6 @@ No px@call values are recorded in this log, precluding quantitative P&L assessme
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 334.76 (2026-10-22). Opened at spot. **Resolution** — SA Sep-23 ClusterMAX LONG ($342.36) -> $334.76 = **-2.2% LOSS ✗** (Gold-tier cloud; thin give-back — re-logged LONG this run on the OpenAI-on-GCP win).
 
 **Update 2026-10-29:** Extends the Oct-22 TorchTPU/OpenAI-on-Google-Cloud thread; TPU now sought by rival clouds + the largest model lab. current_stance long.
+
+## 2026-11-01 run update
+**2026-11-01 — the miss that broke the week.** GOOGL −~10-13% on weak search/ad sales + negative FCF (Thu), seeding the broad AI-trade correction. [[semidoped]] NEUTRAL ($279.84, 3-mo low) but argues GenAI is net-positive for search monetization long-term (Instagram ad-ramp analogy); Google Cloud rev doubled to $30.7B, total capex $51.4B. The Oct-1/Oct-8/Oct-22 SD LONGs ($334–348) now −16–20% — the crash resolved them as losses.

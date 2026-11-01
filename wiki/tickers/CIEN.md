@@ -8,7 +8,7 @@ updated: 2026-10-23
 ticker: CIEN
 current_stance: mixed
 conviction: high
-last_review: 2026-10-23
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -57,3 +57,6 @@ No px@call values are recorded across any entry, so quantitative P&L cannot be a
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($368.56) -> $361.34 = **-2.0% LOSS ✗** (ACE subsea WaveLogic entry, thin give-back).
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($351.82) → $320.72 = −8.8% LOSS ✗** and Oct-2 **LONG ($391.34) → $320.72 = −18.0% LOSS ✗** — coherent-optics longs gave back.

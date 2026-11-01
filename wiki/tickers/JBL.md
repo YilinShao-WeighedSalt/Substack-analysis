@@ -8,7 +8,7 @@ updated: 2026-10-02
 ticker: JBL
 current_stance: long
 conviction: low
-last_review: 2026-10-02
+last_review: 2026-11-01
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,6 @@ First appearance (2026-09-30). Semi Doped flagged Jabil as a read-through on the
 
 ## Outcome tracking
 **Opened 2026-09-30 at $286.86 (LONG).** Open (<30 days). A diversified-EMS proxy for AI-infrastructure breadth rather than a single-chip thesis; margins on EMS work are thin, so the beta is to AI hardware volume. Falsifier: an AI hardware-build digestion/air-pocket, or AI revenue mix not translating to the margin/EPS raise the guide implies.
+
+## 2026-11-01 run update
+**2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG ($286.86) → $272.72 = −4.9% LOSS ✗** (EMS AI-rev guidance raise round-tripped).
