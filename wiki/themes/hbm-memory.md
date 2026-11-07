@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-29
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -114,3 +114,6 @@ SemiAnalysis's *Engrams* codesign piece deepens the de-spec logic. **Engram** (a
 **HBM5:** SK Hynix validated its HBM5 architecture on **TSMC's CoWoS** this week (TSMC Partner of the Year, 2nd year) — power + design-process co-optimization (the base-die story) now the value driver, with value sliding toward the logic/base-die designers.
 
 **Update 2026-10-29 (Korean memory banner quarter vs CXMT's low-yield entry):** **SK Hynix posted a record Q3 and a $75B shareholder-return plan** (Bloomberg parses $45B), partly funded by gains on its Kioxia stake (a $12B special dividend was pre-announced Oct-26) — shares +9-10%, pulled Samsung up; but Bloomberg notes memory equities broadly struggle to hold post-earnings gains (cycle-risk debate). **CXMT started HBM3E at only 20-30% yield** (vs ~60% needed to profit) — the cost of being cut from leading-edge EUV tools; it pursues a **4F² cell** for density from older litho while SK Hynix doubles down on **EUV-extended 6F²** to defend its lead (two genuinely different bets on DRAM scaling without the other's tooling). Also: **Nvidia quietly cut its official HBM4 pin speed 11.7→9.6 Gbps**; **imec published 3D volumetric DRAM-on-GPU stacking** research (post-HBM integration roadmap, wider thermal envelope). [[000660.KS]] [[005930.KS]]
+
+### 2026-11-07 update
+****The HBM base die becomes a foundry weapon — Samsung's 'Project Kairos'.** Samsung is building a new 2nm/4nm foundry fab at Giheung (code-name Kairos, ~₩25-30T, 2nm reserved for HBM5) dedicated to **HBM logic base dies**, converting part of Line 6 to advanced packaging. The base die is now a foundry part, and **Samsung is the only HBM maker that also owns a leading-edge logic fab** — SK Hynix relies on TSMC for its base dies. Separately, **Qualcomm validated first-gen HBC** (High Bandwidth Compute) — compute in the base die under an LPDDR stack, claimed 6x bandwidth/watt vs HBM, shipping in the Dragonfly AI250 mid-2027 (HBC Gen2 in AI300, 2028) — an LPDDR-based alternative to HBM for inference. Altman flew to Seoul to lock 2027-30 HBM supply (volumes suppliers reportedly can't meet). KYEC/Rubin HBM4-yield-delay rumor back in focus.**

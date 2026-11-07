@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-11-01
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -114,3 +114,6 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 
 ### 2026-11-01 update
 **Record memory quarters, but the split between winners sharpens.** **SK Hynix (000660.KS)** posts its first-ever **₩100T revenue quarter** (₩104.62T/$78B), record op profit ₩83.33T, and a new CEO debuts a ~**₩100T dividend+buyback**. **Samsung (005930.KS)** posts record total rev ₩195.3T on AI memory but its **device division loses money again** and the chip div still missed some estimates — a lopsided result, no shareholder-return commitment (stock −6.6% on the Oct-29 miss). Management's tell: the **AI chip shortage is 'worsening'** → HBM pricing power unlikely to ease, memory the singular profit engine of the upcycle. HBM sold out through 2027; capex +60%.
+
+### 2026-11-07 update
+****DRAM at an all-time high; shortage now dated to 2030.** 8Gb DDR4 +5.77% to $27.50 in October (ATH) while commodity NAND flatlined after 21 months — the memory market splitting in two. SK Hynix characterizes the **DRAM shortage as running through 2030**; TechInsights sees memory at **62% of total semi revenue by 2027**; Shin-Etsu raising wafer prices (reprice late-2027); Apple flagged a holiday-quarter margin hit. **CXMT** posted record Q3 (+613% YoY, swung to profit) and validated a **4F² DRAM cell** (vs 6F² — the density 'holy grail,' hard to manufacture, no EUV), samples by year-end, DDR5 in its 2027 roadmap. **Micron paused its $4.5B Taiwan Fab 11E** over a union pay fight (Taiwan = ~60% of its conventional DRAM) — tightens supply, delays capacity. Kioxia record profit but weak guide → NAND momentum leveling.**

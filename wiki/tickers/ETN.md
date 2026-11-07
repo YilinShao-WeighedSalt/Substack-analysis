@@ -2,13 +2,13 @@
 type: ticker
 title: "ETN — Eaton Corporation"
 tags: []
-related: ["[[citrini-2024-08-26-can-you-hear-me-now]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semianalysis-2026-05-26-800vdc-datacenter-revolution]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
+related: ["[[semidoped-2026-11-04-daily-update-november-4th-2026]]", "[[citrini-2024-08-26-can-you-hear-me-now]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semianalysis-2026-05-26-800vdc-datacenter-revolution]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
 created: 2024-08-26
-updated: 2026-09-26
+updated: 2026-11-07
 ticker: ETN
 current_stance: long
 conviction: medium
-last_review: 2026-09-26
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -26,3 +26,10 @@ Eaton first appeared in this coverage as a retrospective template — Citrini ci
 All three appearances carry px@call of n/a, so no price-level verification is possible. The thesis trajectory is net positive: ETN moved from historical analogy to active beneficiary call over roughly 21 months, with the Resilient Power Systems acquisition serving as a concrete strategic signal that management is leaning into the SST opportunity. The live view would be falsified if Phase 3 datacenter adoption stalls (NEC 2032 timing risk and AHJ case-by-case approval friction are the cited gating factors), or if ETN fails to win meaningful SST share against ABB-backed DG Matrix and the funded startup cohort (Amperesand, Heron Power, Novos Power) that collectively raised over $320M through March 2026.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 425.37 (opened at spot this scan).
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-04 | [[semidoped]] | LONG | 353.08 | Record Q3; orders and backlog both hit records and it raised full-year organic-growth guidance as hyperscaler AI power demand pulls forward electrical-distribution orders. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

@@ -4,7 +4,7 @@ title: "Co-Packaged Optics"
 tags: []
 related: []
 created: 2024-03-23
-updated: 2026-11-01
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-03-23
 ---
@@ -59,3 +59,6 @@ Co-packaged optics (CPO) — integrating optical transceivers directly onto swit
 
 ### 2026-11-01 update
 **Marvell bids to vertically integrate optics by buying Lumentum.** Marvell (MRVL) in advanced talks to acquire **Lumentum (LITE)** — folding LITE's lasers/optical engines into Marvell's DSP silicon for a single-vendor **1.6T co-packaged-optics stack**, in direct competition with Broadcom across AI networking. Reported terms: all-stock, modest premium (Faber); LITE +11% on the report (~$91B val), MRVL −8/−9%; Bernstein notes the size is too big to fund with cash. Follows Marvell's 2025 **Celestial AI** $3.25B photonics buy. **[[irrationalanalysis]]** — long LITE for its UHP-laser monopoly — vows to **kill the deal**, viewing LITE as more valuable standalone; Semi Doped (w/ Cignal AI) frames vertical integration (DSP + 200G EMLs + OCS) as the strategic logic, with a possible bidding war (Nvidia a wildcard). See [[marvell-lumentum-deal]].
+
+### 2026-11-07 update
+****Marvell–Lumentum is signed: a $115B all-stock optics megamerger.** Marvell agreed to buy [[LITE]] at 4.5 MRVL/sh (~$1,132, +24% to the Oct-28 close; LITE holders ~33% of the combined co, >$1B synergies, EPS-accretive yr1, close H1-2028, 12-18mo antitrust incl. Chinese review per Rosenblatt). [[irrationalanalysis]] shorted MRVL as a hedge and calls it value destruction — **no integration in the ELSFP case**, and with Lumentum's **Cloudlight** transceiver arm NOT spun out, Marvell now competes with its own optical-module customers (Innolight/[[AAOI]]/Accelink → defect to Broadcom/Credo/Semtech/Macom). But its fireside recap concedes the real driver is **µVCSEL slow-and-wide scale-in**: Lumentum has µVCSEL fab but zero electrical/analog; Marvell has the DSP/equalizer/ZR-dispersion IP (µVCSEL over ~10m ≈ ZR over ~100km). TD Cowen downgraded MRVL on a $47B 2027 optical-TAM read vs ~$100B consensus. See [[marvell-lumentum-deal]].**

@@ -4,11 +4,11 @@ title: "CIEN — Ciena Corporation"
 tags: []
 related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[citrini-2024-08-26-can-you-hear-me-now]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-09-14-september-portfolio-update]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-06-03-whats-going-on-with-marvell]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semidoped-2026-09-21-daily-update]]", "[[irrationalanalysis-2026-10-07-marvell-2026-investor-day]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-08-26
-updated: 2026-10-23
+updated: 2026-11-07
 ticker: CIEN
 current_stance: mixed
 conviction: high
-last_review: 2026-11-01
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -60,3 +60,6 @@ No px@call values are recorded across any entry, so quantitative P&L cannot be a
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($351.82) → $320.72 = −8.8% LOSS ✗** and Oct-2 **LONG ($391.34) → $320.72 = −18.0% LOSS ✗** — coherent-optics longs gave back.
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** SD LONG ($443.65, Openreach/India 1.6T WaveLogic wins) → $230.81 = **−48.0% LOSS ✗** (IA had taken profit on CIEN at the same $443.65 — the profit-take side of query [[cien-ia-profit-take-vs-sd-operational-bull]] wins decisively).

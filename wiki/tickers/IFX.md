@@ -2,13 +2,13 @@
 type: ticker
 title: "IFX — Infineon Technologies"
 tags: []
-related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]"]
+related: ["[[semidoped-2026-11-03-daily-update-november-3rd-2026]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]"]
 created: 2026-05-17
-updated: 2026-10-29
+updated: 2026-11-07
 ticker: IFX
 current_stance: long
-conviction: high
-last_review: 2026-11-01
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -48,3 +48,11 @@ No px@call value was recorded at the time of the call, which prevents any quanti
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG (€59.50) → €50.56 = −15.0% LOSS ✗** (Eaton SiC solid-state-transformer / 800VDC + Thailand backend long gave back into the AI-trade correction).
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-03 | [[semidoped]] | LONG | 52.40 | Signed a tech agreement to put its AURIX safety subsystem (+OPTIREG, BRIGHTLANE, SEMPER) on Qualcomm Snapdragon Ride/Ride Flex; separately signed a HVDC MoU with SOLUM for AI datacenter power. |
+
+**Resolution (Oct-7 batch, 30d):** SD LONG (€64.68, AI rev doubles to $1.6B) → €45.95 = **−29.0% LOSS ✗**.
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

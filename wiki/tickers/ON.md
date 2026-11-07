@@ -2,13 +2,13 @@
 type: ticker
 title: "ON — ON Semiconductor"
 tags: []
-related: ["[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-08-04-daily-update]]", "[[semidoped-2026-09-21-daily-update]]"]
+related: ["[[semidoped-2026-11-03-daily-update-november-3rd-2026]]", "[[irrationalanalysis-2024-01-06-mobileyes-rancid-kitchen-sink]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-21-power-semis-800v-gan]]", "[[irrationalanalysis-2026-04-25-sic-vs-gan-wolfspeed-10kv]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[semidoped-2026-08-04-daily-update]]", "[[semidoped-2026-09-21-daily-update]]"]
 created: 2024-01-06
-updated: 2026-10-23
+updated: 2026-11-07
 ticker: ON
-current_stance: neutral
-conviction: low
-last_review: 2026-10-23
+current_stance: long
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -38,3 +38,10 @@ No px@call values are available for any entry point across the call log, so dire
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-21 LONG ($73.60) -> $76.94 = **+4.5% WIN ✓** (wafer-as-substrate; one of only two SD wins in the batch).
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-03 | [[semidoped]] | LONG | 72.60 | AI datacenter revenue +175% YoY in Q3; agreed to buy Ferric for processor power delivery; raised 2030 AI-DC revenue target to >$3B. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

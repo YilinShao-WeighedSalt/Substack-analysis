@@ -4,7 +4,7 @@ title: "AI Debt Financing & Neocloud Economics"
 tags: [ai-infrastructure-capex, neocloud, ai-debt-financing]
 related: ["[[semianalysis-2026-07-06-nvidia-gpu-debt-backstop, "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]", "[[semianalysis-2026-10-19-datacenters-2027-year-of-acceleration]]", "[[semidoped-2026-10-19-daily-update]]"]]", "[[semianalysis-2026-07-02-meta-compute-neocloud]]", "[[NVDA]]", "[[CRWV]]", "[[META]]", "[[AMD]]", "[[ai-infrastructure-capex]]", "[[buildout-vs-monetization]]"]
 created: 2026-07-07
-updated: 2026-11-01
+updated: 2026-11-07
 status: emerging
 first_seen: 2026-07-06
 ---
@@ -70,3 +70,6 @@ A **neocloud** rents GPUs, financing the hardware almost entirely against hypers
 
 ### 2026-11-01 update
 **The backstop model goes bigger; antitrust and funding wobble arrive.** Nvidia weighs **credit guarantees behind Nscale's $45B Anthropic compute contract** (WV; Nscale also pursuing a $35B IPO) — Vik calls it 'bandaid' circular financing, Austin a 'parent co-signing a mortgage.' Simultaneously an **AI-trade correction** (Nasdaq-100 into correction, VIX +17%, 'Black Friday' chatter) resolved a wave of September/October longs into losses, hitting neoclouds hardest (CRWV −37%, NBIS −35% from their late-Sept marks). **OpenAI pared its raise to ~$20B from $30B** ($1.25T post-money) amid spending-return scrutiny; **DOJ opened inquiries into Nvidia's $13B Hugging Face acquisition** (vertical move into the open-model software layer). Alphabet's negative-FCF Q3 seeded the whole risk-off week.
+
+### 2026-11-07 update
+****Black November — the AI-credit backlash goes political.** Anthropic's amended S-1 put **$895.4B of total cloud/data-center commitments** against $33.2B 9-mo revenue (Q3 swung to a $567M op loss as short-term compute hit $5B); run-rate >$80B but IPO investors push back on $1.5T (some favor ~$1T or a smaller raise). The **Nov-5/6 selloff** ('Black November') — Nasdaq −5.5% (worst in 19mo), SOX −12% — was triggered by a **bipartisan datacenter backlash**: Democrats swept Congress and flipped Texas and other datacenter-state governorships; UBS sees ~30% of 2028 US capacity additions at risk. Credit stress is concrete: **CoreWeave 5-yr CDS at a record 1,267.9bps**, Intel's at 149.7; CoreWeave/Nebius down >50% since Oct-6. MSFT declined to double its Nscale Ward County contract. SemiAnalysis's counter (Nov-1): the 2027 +50GW buildout is ~3/4 under construction already; the real fight is over the unstarted 2028 pipeline (62GW, most in states voting Nov-3).**

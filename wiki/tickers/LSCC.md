@@ -2,13 +2,13 @@
 type: ticker
 title: "LSCC — Lattice Semiconductor"
 tags: []
-related: ["[[irrationalanalysis-2024-08-02-lscc-amd-arm-qcom-mbly-intc]]"]
+related: ["[[semidoped-2026-11-03-daily-update-november-3rd-2026]]", "[[irrationalanalysis-2024-08-02-lscc-amd-arm-qcom-mbly-intc]]"]
 created: 2024-08-02
-updated: 2024-08-02
+updated: 2026-11-07
 ticker: LSCC
-current_stance: short
+current_stance: long
 conviction: medium
-last_review: 2024-08-02
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,10 @@ The sole coverage on LSCC is bearish as of August 2024, with irrationalanalysis 
 
 ## Outcome tracking
 No px@call was recorded at the time of the call, so a precise mark-to-market is not possible. The thesis rests on two independently falsifiable legs: a weak demand cycle (falsified if book-to-bill or revenue guidance turns clearly positive) and a failed toolchain strategy (falsified if Lattice announces significant new design wins attributable to its software platform). As long as both conditions remain unresolved, the short stance stands on its stated logic.
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-03 | [[semidoped]] | LONG | 105.92 | Record 3Q26, revenue +118% YoY — mid-range FPGA market decisively past the 2024-25 inventory correction. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

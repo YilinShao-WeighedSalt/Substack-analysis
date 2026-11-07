@@ -4,7 +4,7 @@ title: "ARM Architecture & Ecosystem"
 tags: []
 related: []
 created: 2024-02-08
-updated: 2025-09-28
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-02-08
 ---
@@ -47,3 +47,6 @@ first_seen: 2024-02-08
 
 ## Narrative
 IrrationalAnalysis has been the dominant voice on ARM since early 2024, initially framing it as a short-squeeze candidate and undervalued royalty play before the thesis deepened into ARM's structural role as the backbone of the AI compute buildout. The October 2024 "Chernobyl moment" cluster marked a turning point, signaling a serious reckoning with ARM's licensing model tensions and its relationships with hyperscalers designing custom silicon. Throughout 2024-2025 the coverage broadened to include ARM's competitive pressure on Intel, Qualcomm's struggles to assert independence from the architecture, and the fate of ARM-based server players like Ampere Computing. By late 2025 the theme remains active and contested — ARM's centrality to both client and server silicon is consensus, but the debate has shifted to who captures value in the ecosystem versus who merely enables others.
+
+### 2026-11-07 update
+****Arm's data-center royalties double; the AGI-CPU story arrives.** Arm Q2 FY27: revenue +27% to $1.44B, licensing +50%, but royalties missed (+8%) on smartphone weakness (the same handset softness that hit Qualcomm). Under it, **data-center royalties doubled** — Arm's share of servers at the top hyperscalers went >50% in 2025 and should top **60% by end-2026**. Its own **AGI CPU** now has purchase orders into 2027 (first deliveries fiscal Q4), with Arm guiding ~$2B of AGI-CPU sales across FY27-28 — the first real read on Arm building silicon itself. Oracle separately plans an Arm-based AGI CPU on OCI in 2027.**

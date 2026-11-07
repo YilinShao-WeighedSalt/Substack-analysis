@@ -2,13 +2,13 @@
 type: ticker
 title: "COHR — Coherent Corp"
 tags: []
-related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-07-practical-optical-comms]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[semidoped-2026-04-24-googles-networking-innovations]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[semidoped-2026-08-05-daily-update]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]", "[[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
+related: ["[[semidoped-2026-11-05-daily-update-november-5th-2026]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-02-08-arm-short-squeeze-fabrinet-sus]]", "[[semianalysis-2024-03-25-nvl72-infiniband-800g-16t-optical]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2024-12-31-year-end-portfolio-performance]]", "[[irrationalanalysis-2025-02-07-1qcy25-earnings-roundup]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-07-practical-optical-comms]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-02-06-earnings-roundup-lite-cohr-sitm-qcom]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[semidoped-2026-04-24-googles-networking-innovations]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semidoped-2026-05-08-power-next-physics-wall-ai]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[semidoped-2026-08-05-daily-update]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]", "[[irrationalanalysis-2026-08-12-lumentum-q4-fy26-earnings]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2024-02-08
-updated: 2026-10-26
+updated: 2026-11-07
 ticker: COHR
-current_stance: short
-conviction: high
-last_review: 2026-10-26
+current_stance: mixed
+conviction: low
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -75,3 +75,10 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 | 2026-10-24 | [[irrationalanalysis]] | SHORT | 209.29 | Won't win AMD/Ayar/Marvell high-power-laser sockets ('retarded, won't get anything') — reaffirms the UHP-laser-off-spec short vs AAOI/Lumentum. |
 
 **Outcome tracking (2026-10-26):** New IA SHORT @ $209.29 (reaffirm). Opened at spot. The Oct-19 OCP COHR short ($232.90) still open, currently working (short +10%).
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-05 | [[semidoped]] | LONG | 169.76 | Beat estimates and disclosed a 5-yr ~$20B PhotonLink supply deal with an unnamed AI company (rev from early 2028). Directly contradicts IA's standing COHR short (laser-socket-loss thesis) — see query. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

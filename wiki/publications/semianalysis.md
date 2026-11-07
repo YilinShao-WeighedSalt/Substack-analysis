@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-26
+updated: 2026-11-07
 handle: semianalysis
-calls_logged: 251
-hit_rate: "13/34 (38%), ~12 open"
+calls_logged: 253
+hit_rate: "13/34 (38%), ~13 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-07): holds 13/34 (38%) — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14; the Oct-19 Datacenters-2027 supplier longs (VRT/STRL/ABB) ~Nov-18. This run: **4 posts, 1 call-bearing.** The marquee **"TPU Strikes the King"** (Nov-5) → new **LONG [[GOOGL]] $282.57** + **NEUTRAL [[NVDA]] $181.60**. The other three carried no priced ticker: **"SpaceX Will Be the World's Biggest AI"** (Nov-3, datacenter-model read — SpaceX private; behind-the-meter/Tesla-modular read-throughs), **"The Datacenter Backlash Goes Bipartisan"** (Nov-1, midterm/permitting macro — frames the Black-November selloff, 2027 buildout intact, fight is over 2028), **"GDPx"** (Nov-2, frontier-model-capability benchmark — Opus/Astra top, Gemini 4 Carbon notable). 1 directional + 1 neutral opened at spot.
+
+- **The Iron(wood) Throne: TPU Strikes the King (2026-11-05, paywalled, full body served).** SA's follow-up to its Sept TPU-externalization call: Google's **TPUv7 "Ironwood"** now posts official long-context multi-turn **AgentX** results and is competitive-to-best on tokens-per-$ for external customers — cheapest on GLM-5.2 FP8 (1.2-2.7x B200/B300/MI355X), beats GB300 FP8 at every interactivity on Qwen3.5 397B (and 1.67x better per-$ than FP4 GB300), competitive on Kimi K3 at launch, and holds up even on the GPU-optimized Muse Spark Open. Caveats: NVIDIA FP4 refreshes reclaim decode on some models; **TPUv7 has no native FP4** until TPUv8 (Q1-27); Rubin preview ~4-6x per-$ (vs TPUv8i, benchmarking soon). The thesis: TPU runs NVIDIA's own ecosystem playbook (chips to vLLM/SGLang/PyTorch/llm-d, Day-0 support) while **NVIDIA bureaucracy** (3-mo legal review on driver features, stingy OSS clusters) slows it vs AMD/Google — SA's named "biggest risk to the NVIDIA moat." External customers: Oracle/OpenAI/Anthropic/Meta. → **LONG [[GOOGL]] $282.57**, **NEUTRAL [[NVDA]] $181.60** (moat erosion, not a short), read-through [[AVGO]]/[[AMD]]. (→ [[custom-silicon-asic]], [[ai-accelerator-competition]], [[nvidia-gpu-platform]].)
 
 **hit_rate note (2026-10-26): holds 13/34 (38%) — no priced call crossed 30 days.** The Sep-23 ClusterMAX longs resolved last run (Oct-23); Sep-25 China-DC and Sep-26 Panther Lake carried no/neutral priced calls. The Oct-15 ASML LONG / BESI SHORT + Oct-19 Datacenters-2027 supplier longs resolve in later runs. This run's 1 new call (AMZN LONG) opened at spot.
 

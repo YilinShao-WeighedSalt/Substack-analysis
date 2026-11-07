@@ -4,11 +4,11 @@ title: "VICR — Vicor Corporation"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2026-05-13-cerebras-faster-tokens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-10-05-daily-update]]", "[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-07-18
-updated: 2026-10-23
+updated: 2026-11-07
 ticker: VICR
 current_stance: long
 conviction: medium
-last_review: 2026-11-01
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -39,3 +39,6 @@ No px@call values are recorded in either entry, so price-based verification is n
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($288.94) → $191.09 = −33.9% LOSS ✗** (VPD power-delivery royalty long round-tripped).
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** SD LONG ($299.29, Q3 guide +30% / ITC-337 expansion) → $135.10 = **−54.9% LOSS ✗** — vertical-power-delivery name more than halved.

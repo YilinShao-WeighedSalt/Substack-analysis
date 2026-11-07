@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semi Scan — Black November</title>
+<meta name="description" content="Visual intelligence brief from 3 semiconductor Substacks, 2026-11-01 to 11-06: Black November selloff, Marvell-Lumentum, TPU vs GPU.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  font-size:15px;-webkit-text-size-adjust:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 16px 64px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)} .sec{color:var(--sec)} .sm{font-size:12px}
+h1{font-size:26px;margin:0 0 4px;letter-spacing:-.4px}
+h2{font-size:17px;margin:34px 0 12px;letter-spacing:-.2px;display:flex;align-items:center;gap:8px}
+h2 .n{font-family:var(--mono);color:var(--muted);font-size:13px;font-weight:600}
+a{color:var(--accent)}
+.masthead{border-bottom:1px solid var(--border);padding-bottom:14px}
+.sources{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.src-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--sec)}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.runstatus{background:var(--surface-2);border:1px solid var(--border);border-radius:8px;
+  padding:9px 12px;font-size:12.5px;color:var(--sec);margin-top:14px}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px}
+.tile .big{font-size:30px;font-weight:700;font-family:var(--mono);letter-spacing:-1px;line-height:1}
+.tile .lab{font-size:11.5px;color:var(--muted);margin-top:6px;text-transform:uppercase;letter-spacing:.4px}
+.distbar{display:flex;height:8px;border-radius:4px;overflow:hidden;margin-top:10px;gap:2px}
+.distbar>i{display:block;border-radius:2px}
+.distleg{display:flex;gap:10px;margin-top:7px;font-size:11px;color:var(--sec);flex-wrap:wrap}
+.distleg b{font-family:var(--mono)}
+/* card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px}
+/* board */
+.board-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:680px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+td.tk{font-weight:600;font-size:13.5px}
+td.px{text-align:right;font-size:13px}
+td.th{font-size:12.5px;color:var(--sec);min-width:240px;max-width:340px}
+.src{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--sec);white-space:nowrap}
+.chip{font-family:var(--mono);font-size:11px;font-weight:700;padding:2px 7px;border-radius:5px;white-space:nowrap;display:inline-block}
+.chip.long{color:var(--long);background:color-mix(in srgb,var(--long) 14%,transparent)}
+.chip.short{color:var(--short);background:color-mix(in srgb,var(--short) 14%,transparent)}
+.chip.neut{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 16%,transparent)}
+.pnl{font-family:var(--mono);font-size:13px;font-weight:700}
+.pnl.gain{color:var(--gain)} .pnl.loss{color:var(--loss)} .pnl.neutp{color:var(--muted)}
+.pnlcell{text-align:right;white-space:nowrap}
+td.spark svg,.spark svg{display:block}
+/* spotlights */
+.spot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot .spot-h{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap}
+.tk.big{font-size:18px;font-weight:700}
+.spot-dir{display:flex;align-items:center;gap:6px}
+.spot-chart{margin:10px 0 4px}
+.spot-px{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.big2{font-size:22px;font-weight:700}
+.rangebar{display:flex;align-items:center;gap:8px;margin:12px 0 10px}
+.rtrack{position:relative;flex:1;height:6px;background:var(--surface-2);border-radius:3px}
+.rfill{position:absolute;height:100%;background:var(--base);border-radius:3px;opacity:.6}
+.rmark{position:absolute;width:10px;height:10px;border-radius:50%;top:-2px;background:var(--accent);
+  border:2px solid var(--surface);transform:translateX(-50%)}
+.spot-note{font-size:12.5px;color:var(--sec);margin-top:2px}
+/* scorecards */
+.score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.sc-h{display:flex;align-items:center;gap:7px;font-size:14px}
+.meter{height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden;margin:10px 0 6px}
+.meter-fill{height:100%;border-radius:4px}
+.meter-lab{display:flex;justify-content:space-between;align-items:center;font-size:12px}
+.postlist{list-style:none;padding:0;margin:12px 0 0;font-size:12px}
+.postlist li{padding:7px 0;border-top:1px solid var(--border)}
+.ptitle{color:var(--sec);font-weight:600}
+.minichip{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  padding:1px 5px;border-radius:4px;margin:2px 2px 0 0}
+.minichip.long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.minichip.short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.minichip.neut{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.sc-note{font-size:11.5px;color:var(--muted);margin-top:10px;font-style:italic}
+/* jargon */
+.jrow{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px}
+.jrow:last-child{border-bottom:none}
+.jterm{font-weight:700;color:var(--ink)}
+.jdef{color:var(--sec)}
+/* themes */
+.trow{display:grid;grid-template-columns:230px 1fr 34px;gap:10px;align-items:center;padding:5px 0}
+.tlab{font-size:12.5px;color:var(--sec)}
+.tbar{height:14px;background:var(--surface-2);border-radius:3px;overflow:hidden}
+.tfill{height:100%;background:var(--accent);border-radius:3px}
+.tval{text-align:right;color:var(--muted)}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:12px;color:var(--muted)}
+@media (max-width:720px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .spot-grid{grid-template-columns:1fr}
+  .score-grid{grid-template-columns:1fr}
+  .jrow{grid-template-columns:1fr}
+  .trow{grid-template-columns:140px 1fr 28px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <h1>Semi Scan — <span style="color:var(--loss)">Black November</span></h1>
+    <div class="sec">Visual intelligence brief · posts dated <span class="mono">2026-11-01 → 11-06</span> · generated <span class="mono">2026-11-07</span></div>
+    <div class="sources">
+      <span class="src-item"><span class="dot" style="background:var(--pub-irrational)"></span>Irrational Analysis</span>
+      <span class="src-item"><span class="dot" style="background:var(--pub-semianalysis)"></span>SemiAnalysis</span>
+      <span class="src-item"><span class="dot" style="background:var(--pub-semidoped)"></span>Semi Doped</span>
+    </div>
+    <div class="runstatus"><strong>Run status:</strong> All three sources fetched OK. IA: 3 posts (Marvell deal note Nov-3, Murphy/Hurlston fireside Nov-3, Avicena deep-dive Nov-6). SA: 4 posts — TPU-vs-GB300 (Nov-5) call-bearing; SpaceX-datacenter (Nov-3), datacenter-backlash (Nov-1) & GDPx benchmark (Nov-2) carried no priced ticker (context/model-capability). SD: 5 dailies (Nov-2…6); Sunday pub-quiz (Nov-1) skipped — no calls. Analyst-consensus bars omitted (Yahoo crumb egress-blocked, as prior runs). Window extended to Nov-1 to cover the un-ingested gap since the Oct-30 ingest.</div>
+  </div>
+
+  <p class="sec" style="margin:16px 0 0">
+    <strong>The AI trade broke while the supply chain kept tightening.</strong> A bipartisan datacenter backlash —
+    Democrats swept Congress and flipped Texas and other datacenter-state governorships — triggered the worst Nasdaq day in 19 months
+    (SOX −12%, Taiwan's stabilization fund armed, TSMC limit-down). Yet orders ran the other way: AMD guided to $17B,
+    ASE committed $3.7B to packaging, AOI booked a 1.6T deal, and SK Hynix reaffirmed a DRAM shortage to 2030.
+    Over the top of it all, Marvell agreed to buy Lumentum for $115B — splitting the newsletters.
+  </p>
+
+  <div class="tiles">
+    <div class="tile"><div class="big">12</div><div class="lab">posts scanned</div></div>
+    <div class="tile"><div class="big">23</div><div class="lab">tickers priced</div></div>
+    <div class="tile">
+      <div class="big">25</div><div class="lab">calls logged</div>
+      <div class="distbar">
+        <i style="background:var(--long);flex:19"></i>
+        <i style="background:var(--neutral);flex:5"></i>
+        <i style="background:var(--short);flex:1"></i>
+      </div>
+      <div class="distleg"><span>▲ <b>19</b> long</span><span>● <b>5</b> neut</span><span>▼ <b>1</b> short</span></div>
+    </div>
+    <div class="tile"><div class="big" style="color:var(--long)">Long</div><div class="lab">book bias — long the metal, neutral on the shaken AI-credit / Marvell complex</div></div>
+  </div>
+
+  <h2><span class="n">01</span> Call Board</h2>
+  <div class="board-wrap">
+    <table>
+      <thead><tr><th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis</th><th style="text-align:right">Px@call</th><th>3-mo</th><th style="text-align:right">P&amp;L→call</th></tr></thead>
+      <tbody>
+      <tr>
+      <td class="mono tk">MRVL</td>
+      <td><span class="chip short">▼ SHORT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-irrational)"></span><span>Irrational Analysis</span></td>
+      <td class="th">Shorted as a hedge; Lumentum deal is value destruction — channel conflict pushes optics customers to AVGO/CRDO/SMTC; mgmt 'incompetent'</td>
+      <td class="mono px">171.97</td>
+      <td class="spark" data-t="MRVL" data-d="SHORT" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl gain">+22.3%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">009150.KS</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">SEMCO: high-cap MLCC shortage peaks 1H27; >₩5T AI-server component contracts</td>
+      <td class="mono px">1,193,000</td>
+      <td class="spark" data-t="009150.KS" data-d="LONG" data-ci="57"></td>
+      <td class="pnlcell"><span class="pnl loss">-27.1%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">LITE</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-irrational)"></span><span>Irrational Analysis</span></td>
+      <td class="th">Holding through the deal; standalone optical/UHP-laser moat; may run an activist campaign vs Murphy</td>
+      <td class="mono px">680.16</td>
+      <td class="spark" data-t="LITE" data-d="LONG" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl loss">-25.1%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">TSEM</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Record $526M Q3; guides Q4 $600M toward a $2B annual run-rate</td>
+      <td class="mono px">163.06</td>
+      <td class="spark" data-t="TSEM" data-d="LONG" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl loss">-19.7%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">000660.KS</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">SK Hynix: DRAM shortage runs to 2030; memory → 62% of semi revenue by 2027</td>
+      <td class="mono px">1,398,000</td>
+      <td class="spark" data-t="000660.KS" data-d="LONG" data-ci="58"></td>
+      <td class="pnlcell"><span class="pnl loss">-19.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">AMD</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">$17B Q4 guide, 2027 rev +80%, MI450/Helios ramping; wafers/substrates/HBM already locked</td>
+      <td class="mono px">488.78</td>
+      <td class="spark" data-t="AMD" data-d="LONG" data-ci="62"></td>
+      <td class="pnlcell"><span class="pnl loss">-17.3%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">GEV</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Order backlog hits $197B on record gas-turbine demand</td>
+      <td class="mono px">918.20</td>
+      <td class="spark" data-t="GEV" data-d="LONG" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl loss">-16.1%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">ON</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">AI-DC revenue +175% YoY; buys Ferric for power delivery; 2030 AI-DC target >$3B</td>
+      <td class="mono px">72.60</td>
+      <td class="spark" data-t="ON" data-d="LONG" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl loss">-13.2%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">IFX</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">AURIX safety subsystem win on Snapdragon Ride + SOLUM HVDC MoU for AI datacenters</td>
+      <td class="mono px">52.40</td>
+      <td class="spark" data-t="IFX" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl loss">-12.3%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">SMCI</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Fiscal Q1 $19.9B beat; raised FY27 to $72–82B</td>
+      <td class="mono px">29.60</td>
+      <td class="spark" data-t="SMCI" data-d="LONG" data-ci="62"></td>
+      <td class="pnlcell"><span class="pnl loss">-8.5%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">LSCC</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Record Q3, revenue +118% YoY — mid-range FPGA past its inventory correction</td>
+      <td class="mono px">105.92</td>
+      <td class="spark" data-t="LSCC" data-d="LONG" data-ci="61"></td>
+      <td class="pnlcell"><span class="pnl loss">-7.4%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">ETN</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Record quarter; record orders + backlog on AI electrical demand</td>
+      <td class="mono px">353.08</td>
+      <td class="spark" data-t="ETN" data-d="LONG" data-ci="62"></td>
+      <td class="pnlcell"><span class="pnl loss">-7.4%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">005930.KS</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Samsung 'Project Kairos' 2nm/4nm HBM base-die foundry — only HBM maker that owns a leading-edge logic fab</td>
+      <td class="mono px">201,500</td>
+      <td class="spark" data-t="005930.KS" data-d="LONG" data-ci="60"></td>
+      <td class="pnlcell"><span class="pnl loss">-6.4%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">CRDO</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-irrational)"></span><span>Irrational Analysis</span></td>
+      <td class="th">µVCSEL slow-and-wide is winning scale-in; Avicena's µLED has only a narrow 10m path + ~6x fiber cost</td>
+      <td class="mono px">112.33</td>
+      <td class="spark" data-t="CRDO" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">GOOGL</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semianalysis)"></span><span>SemiAnalysis</span></td>
+      <td class="th">TPUv7 (Ironwood) matches/beats GB300 on perf-per-$ in agentic inference; Oracle/OpenAI/Anthropic/Meta all buying</td>
+      <td class="mono px">282.57</td>
+      <td class="spark" data-t="GOOGL" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">ARM</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">DC royalties doubled; hyperscaler server share >50%→60%; own AGI CPU ~$2B FY27–28</td>
+      <td class="mono px">166.72</td>
+      <td class="spark" data-t="ARM" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">COHR</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">5-yr ~$20B PhotonLink supply deal (rev from 2028) — directly contradicts IA's standing COHR short</td>
+      <td class="mono px">169.76</td>
+      <td class="spark" data-t="COHR" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">AAOI</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Record Q3; signed 1.6T Tier-1 deal worth $1–1.5B; a 5x-larger deal 'within weeks'</td>
+      <td class="mono px">46.89</td>
+      <td class="spark" data-t="AAOI" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">BE</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">NTT Data 900MW Bloom fuel-cell deal — its largest international, behind-the-meter power</td>
+      <td class="mono px">167.52</td>
+      <td class="spark" data-t="BE" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">ASX</td>
+      <td><span class="chip long">▲ LONG</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">MOEA-approved $3.7B packaging expansion + Nvidia reportedly funding SPIL CoWoS capacity</td>
+      <td class="mono px">29.72</td>
+      <td class="spark" data-t="ASX" data-d="LONG" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl gain">+0.0%</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">NVDA</td>
+      <td><span class="chip neut">● NEUT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semianalysis)"></span><span>SemiAnalysis</span></td>
+      <td class="th">Still leads on Rubin FP4, but TPU erodes the perf-per-$ moat; internal bureaucracy slowing vs AMD/Google</td>
+      <td class="mono px">181.60</td>
+      <td class="spark" data-t="NVDA" data-d="NEUT" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl neutp">—</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">MU</td>
+      <td><span class="chip neut">● NEUT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Taiwan Fab 11E paused over a union pay fight — tightens supply but delays new capacity</td>
+      <td class="mono px">656.39</td>
+      <td class="spark" data-t="MU" data-d="NEUT" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl neutp">—</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">QCOM</td>
+      <td><span class="chip neut">● NEUT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">DC ramp to $15B+ FY29, but handset −26% and stock −9%; raising prices on input costs</td>
+      <td class="mono px">156.75</td>
+      <td class="spark" data-t="QCOM" data-d="NEUT" data-ci="63"></td>
+      <td class="pnlcell"><span class="pnl neutp">—</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">MRVL</td>
+      <td><span class="chip neut">● NEUT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Reports the vertical-integration logic; TD Cowen downgrade (optical TAM $47B vs ~$100B consensus)</td>
+      <td class="mono px">171.41</td>
+      <td class="spark" data-t="MRVL" data-d="NEUT" data-ci="60"></td>
+      <td class="pnlcell"><span class="pnl neutp">—</span></td>
+    </tr>
+<tr>
+      <td class="mono tk">LITE</td>
+      <td><span class="chip neut">● NEUT</span></td>
+      <td class="src"><span class="dot" style="background:var(--pub-semidoped)"></span><span>Semi Doped</span></td>
+      <td class="th">Acquired at 4.5 MRVL sh (~$1,132, +24% premium); 2nd NPO/CPO win + >$5B commitments</td>
+      <td class="mono px">684.40</td>
+      <td class="spark" data-t="LITE" data-d="NEUT" data-ci="60"></td>
+      <td class="pnlcell"><span class="pnl neutp">—</span></td>
+    </tr>
+
+      </tbody>
+    </table>
+  </div>
+  <div class="muted sm" style="margin-top:7px">P&amp;L→call = move since the post-date close (shorts sign-flipped, so green = the call working). Prices are last close (Nov-5); foreign listings in local currency. ● on a chart marks the call.</div>
+
+  <h2><span class="n">02</span> Ticker Spotlights</h2>
+  <div class="spot-grid">
+    <div class="card spot">
+      <div class="spot-h">
+        <div><span class="mono tk big">LITE</span> <span class="muted">Lumentum</span></div>
+        <div class="spot-dir"><span class="chip long">▲ LONG</span> <span class="dot" style="background:var(--pub-irrational)"></span><span class="muted sm">Irrational Analysis</span></div>
+      </div>
+      <div class="spot-chart" data-t="LITE" data-d="LONG" data-ci="61"></div>
+      <div class="spot-px"><span class="mono big2">509.70</span> <span class="pnl loss">-25.1% to call</span></div>
+      <div class="rangebar" data-lo="509.7" data-hi="1133.4" data-cur="509.7">
+        <span class="mono sm">509.70</span>
+        <div class="rtrack"><div class="rfill"></div><div class="rmark"></div></div>
+        <span class="mono sm">1,133</span>
+      </div>
+      <div class="spot-note">Target of Marvell's $115B bid at ~$1,132/sh — then the whole optics complex cratered in Black November. IA holds (standalone moat); SD neutral (deal-pending, close H1-28).</div>
+    </div>
+<div class="card spot">
+      <div class="spot-h">
+        <div><span class="mono tk big">MRVL</span> <span class="muted">Marvell</span></div>
+        <div class="spot-dir"><span class="chip short">▼ SHORT</span> <span class="dot" style="background:var(--pub-irrational)"></span><span class="muted sm">Irrational Analysis</span></div>
+      </div>
+      <div class="spot-chart" data-t="MRVL" data-d="SHORT" data-ci="61"></div>
+      <div class="spot-px"><span class="mono big2">133.55</span> <span class="pnl gain">+22.3% to call</span></div>
+      <div class="rangebar" data-lo="133.55" data-hi="286.95" data-cur="133.55">
+        <span class="mono sm">133.55</span>
+        <div class="rtrack"><div class="rfill"></div><div class="rmark"></div></div>
+        <span class="mono sm">286.95</span>
+      </div>
+      <div class="spot-note">The acquirer. IA is short it as a hedge and calls the deal value-destruction; TD Cowen downgraded on a $47B optical-TAM read vs ~$100B consensus. −13% the day talks leaked.</div>
+    </div>
+<div class="card spot">
+      <div class="spot-h">
+        <div><span class="mono tk big">AMD</span> <span class="muted">Advanced Micro Devices</span></div>
+        <div class="spot-dir"><span class="chip long">▲ LONG</span> <span class="dot" style="background:var(--pub-semidoped)"></span><span class="muted sm">Semi Doped</span></div>
+      </div>
+      <div class="spot-chart" data-t="AMD" data-d="LONG" data-ci="62"></div>
+      <div class="spot-px"><span class="mono big2">404.40</span> <span class="pnl loss">-17.3% to call</span></div>
+      <div class="rangebar" data-lo="404.4" data-hi="649.42" data-cur="404.4">
+        <span class="mono sm">404.40</span>
+        <div class="rtrack"><div class="rfill"></div><div class="rmark"></div></div>
+        <span class="mono sm">649.42</span>
+      </div>
+      <div class="spot-note">$17B Q4 guide and 2027 rev +80% on MI450/Helios — then −17% in the Black November rout. Fundamentals vs. the macro de-rate in one chart.</div>
+    </div>
+<div class="card spot">
+      <div class="spot-h">
+        <div><span class="mono tk big">GOOGL</span> <span class="muted">Alphabet</span></div>
+        <div class="spot-dir"><span class="chip long">▲ LONG</span> <span class="dot" style="background:var(--pub-semianalysis)"></span><span class="muted sm">SemiAnalysis</span></div>
+      </div>
+      <div class="spot-chart" data-t="GOOGL" data-d="LONG" data-ci="63"></div>
+      <div class="spot-px"><span class="mono big2">282.57</span> <span class="pnl gain">+0.0% to call</span></div>
+      <div class="rangebar" data-lo="278.99" data-hi="357.29" data-cur="282.57">
+        <span class="mono sm">278.99</span>
+        <div class="rtrack"><div class="rfill"></div><div class="rmark"></div></div>
+        <span class="mono sm">357.29</span>
+      </div>
+      <div class="spot-note">SemiAnalysis: TPUv7 now matches or beats GB300 on perf-per-dollar in realistic agentic inference, with Oracle/OpenAI/Anthropic/Meta as external customers — the first real crack in Nvidia's inference moat.</div>
+    </div>
+
+  </div>
+
+  <h2><span class="n">03</span> Source Scorecards</h2>
+  <div class="score-grid">
+    <div class="card score" style="border-top:3px solid var(--pub-irrational)">
+      <div class="sc-h"><span class="dot" style="background:var(--pub-irrational)"></span><strong>Irrational Analysis</strong></div>
+      <div class="meter"><div class="meter-fill" style="width:54%;background:var(--pub-irrational)"></div></div>
+      <div class="meter-lab"><span class="mono">35/65 resolved (54%)</span><span class="muted sm">~23 open</span></div>
+      <ul class="postlist"><li><span class="ptitle">Marvellous Value Destruction (Nov-3)</span><br><span class="minichip short">MRVL</span> <span class="minichip long">LITE</span> </li><li><span class="ptitle">Murphy/Hurlston Fireside Recap (Nov-3)</span><br><span class="minichip neut">MRVL</span> </li><li><span class="ptitle">Avicena Deep-Dive (Nov-6)</span><br><span class="minichip long">CRDO</span> </li></ul>
+      <div class="sc-note">Oct-7 Marvell batch resolved 0W/2L — AVGO −22.4%, AXTI −56.3% (both longs gutted in the selloff).</div>
+    </div>
+<div class="card score" style="border-top:3px solid var(--pub-semianalysis)">
+      <div class="sc-h"><span class="dot" style="background:var(--pub-semianalysis)"></span><strong>SemiAnalysis</strong></div>
+      <div class="meter"><div class="meter-fill" style="width:38%;background:var(--pub-semianalysis)"></div></div>
+      <div class="meter-lab"><span class="mono">13/34 resolved (38%)</span><span class="muted sm">~13 open</span></div>
+      <ul class="postlist"><li><span class="ptitle">The Iron(wood) Throne: TPU Strikes the King (Nov-5)</span><br><span class="minichip long">GOOGL</span> <span class="minichip neut">NVDA</span> </li><li><span class="ptitle">SpaceX Will Be World's Biggest AI (Nov-3)</span><br><span class='muted sm'>— no priced call —</span></li><li><span class="ptitle">The Datacenter Backlash Goes Bipartisan (Nov-1)</span><br><span class='muted sm'>— no priced call —</span></li><li><span class="ptitle">GDPx: Measuring Frontier Models (Nov-2)</span><br><span class='muted sm'>— no priced call —</span></li></ul>
+      <div class="sc-note">No priced call crossed 30 days — holds 13/34. Oct-15 ASML-long/BESI-short resolve ~Nov-14.</div>
+    </div>
+<div class="card score" style="border-top:3px solid var(--pub-semidoped)">
+      <div class="sc-h"><span class="dot" style="background:var(--pub-semidoped)"></span><strong>Semi Doped</strong></div>
+      <div class="meter"><div class="meter-fill" style="width:39%;background:var(--pub-semidoped)"></div></div>
+      <div class="meter-lab"><span class="mono">80/206 resolved (39%)</span><span class="muted sm">~120 open</span></div>
+      <ul class="postlist"><li><span class="ptitle">Daily Nov-2 (Marvell-LITE, CXMT 4F², Kioxia)</span><br><span class="minichip long">009150.KS</span> <span class="minichip neut">MRVL</span> <span class="minichip neut">LITE</span> </li><li><span class="ptitle">Daily Nov-3 (Anthropic $895B, DRAM ATH, HBC)</span><br><span class="minichip long">000660.KS</span> <span class="minichip long">LSCC</span> <span class="minichip long">TSEM</span> <span class="minichip long">IFX</span> <span class="minichip long">ON</span> <span class="minichip long">GEV</span> </li><li><span class="ptitle">Daily Nov-4 (AMD $17B, Texas, laminate fire)</span><br><span class="minichip long">AMD</span> <span class="minichip long">SMCI</span> <span class="minichip long">ETN</span> </li><li><span class="ptitle">Daily Nov-5 (Micron pause, QCOM DC, Kairos)</span><br><span class="minichip long">005930.KS</span> <span class="minichip long">ARM</span> <span class="minichip long">COHR</span> <span class="minichip neut">QCOM</span> <span class="minichip neut">MU</span> </li><li><span class="ptitle">Daily Nov-6 (Black November, ASE $3.7B, AOI)</span><br><span class="minichip long">AAOI</span> <span class="minichip long">BE</span> <span class="minichip long">ASX</span> </li></ul>
+      <div class="sc-note">Oct 5-7 top resolved 0W/15L — the entire batch round-tripped in Black November (AXTI −56%, VICR −55%, SNDK −51%, 009150 −45%).</div>
+    </div>
+
+  </div>
+
+  <h2><span class="n">04</span> Jargon Decoder</h2>
+  <div class="card">
+    <div class="jrow"><span class="jterm">Black November</span><span class="jdef">The Nov-5/6 2026 selloff: Nasdaq −5.5% (worst in 19 mo), SOX −12%, triggered by a bipartisan datacenter backlash after Democrats swept Congress and flipped datacenter-state governorships.</span></div>
+<div class="jrow"><span class="jterm">Marvell–Lumentum</span><span class="jdef">$115B all-stock merger (announced Nov-2): Marvell pairs its DSPs/switching with Lumentum's InP lasers & optics. 4.5 MRVL shares per LITE share; close targeted H1-2028.</span></div>
+<div class="jrow"><span class="jterm">µVCSEL vs µLED</span><span class="jdef">Rival 'slow-and-wide' optical scale-in light sources. Credo's micro-VCSEL can push ~20–30m reach; Avicena's micro-LED needs ~6x the fibers and must hit 10m to be viable.</span></div>
+<div class="jrow"><span class="jterm">NPO / CPO / ELSFP</span><span class="jdef">Near-/Co-Packaged Optics put the optical engine next to the switch ASIC. ELSFP = OIF's standardized external-laser module — IA argues it means Lumentum needs no vertical integration.</span></div>
+<div class="jrow"><span class="jterm">HBC (Qualcomm)</span><span class="jdef">High Bandwidth Compute: puts logic in the base die under an LPDDR stack (vs HBM, which only stacks DRAM on a 2.5D interposer). QCOM claims 6x bandwidth-per-watt; ships in AI250 mid-2027.</span></div>
+<div class="jrow"><span class="jterm">4F² DRAM</span><span class="jdef">A denser DRAM cell layout (vs today's 6F²) — the 'holy grail' of DRAM density, hard to manufacture. CXMT claims it's validated, pursuing a density edge without EUV.</span></div>
+<div class="jrow"><span class="jterm">Project Kairos</span><span class="jdef">Samsung's new 2nm/4nm foundry fab for HBM logic base dies. The base die is now a foundry part — Samsung is the only HBM maker that also owns a leading-edge logic fab (SK Hynix uses TSMC).</span></div>
+<div class="jrow"><span class="jterm">TPUv7 'Ironwood'</span><span class="jdef">Google's 7th-gen inference TPU. On SemiAnalysis's AgentX benchmark it delivers competitive-to-best tokens-per-dollar vs Nvidia GB300 for external customers.</span></div>
+<div class="jrow"><span class="jterm">MEGTRON laminate</span><span class="jdef">Panasonic's low-loss copper-clad laminate for AI server/switch boards. The Hsinchu plant fire (Nov-5, 2 dead) took out ~4% of global high-end multilayer supply, already sold out.</span></div>
+<div class="jrow"><span class="jterm">National Stabilization Fund</span><span class="jdef">Taiwan's state market-support vehicle (up to NT$500B). Authorized to deploy for the 10th time as TSMC — >40% of Taiwan's market cap — hit limit-down in Black November.</span></div>
+<div class="jrow"><span class="jterm">Behind-the-meter (BTM)</span><span class="jdef">On-site power (gas turbines, fuel cells, BESS) that bypasses the grid and permitting — the workaround for the datacenter-power/permitting squeeze (NTT-Bloom 900MW, SpaceX Colossus).</span></div>
+
+  </div>
+
+  <h2><span class="n">05</span> Themes in Play</h2>
+  <div class="card">
+    <div class="trow"><span class="tlab">AI-credit / datacenter backlash</span>
+      <div class="tbar"><div class="tfill" style="width:100%"></div></div>
+      <span class="mono sm tval">9</span></div>
+<div class="trow"><span class="tlab">Memory shortage → 2030</span>
+      <div class="tbar"><div class="tfill" style="width:89%"></div></div>
+      <span class="mono sm tval">8</span></div>
+<div class="trow"><span class="tlab">Advanced packaging & substrates</span>
+      <div class="tbar"><div class="tfill" style="width:89%"></div></div>
+      <span class="mono sm tval">8</span></div>
+<div class="trow"><span class="tlab">Optical interconnect / Marvell-Lumentum</span>
+      <div class="tbar"><div class="tfill" style="width:78%"></div></div>
+      <span class="mono sm tval">7</span></div>
+<div class="trow"><span class="tlab">Datacenter power (BTM / HVDC)</span>
+      <div class="tbar"><div class="tfill" style="width:67%"></div></div>
+      <span class="mono sm tval">6</span></div>
+<div class="trow"><span class="tlab">Custom silicon / TPU vs GPU</span>
+      <div class="tbar"><div class="tfill" style="width:56%"></div></div>
+      <span class="mono sm tval">5</span></div>
+<div class="trow"><span class="tlab">Supply-chain shocks (laminate fire, MLCC)</span>
+      <div class="tbar"><div class="tfill" style="width:56%"></div></div>
+      <span class="mono sm tval">5</span></div>
+
+  </div>
+
+  <div class="foot">
+    Built from the accumulated wiki knowledge base + this run's posts. Not financial advice. Hit-rates count only resolved priced calls (≥30 days).
+    Analyst-consensus panels omitted (data egress-blocked). Sparklines are 3-month daily closes, hand-rendered inline SVG.
+  </div>
+
+</div>
+
+<script>
+const PRICES = {"MRVL": {"closes": [218.67, 208.51, 212.26, 217.03, 222.13, 221.97, 234.28, 215.95, 237.22, 250.96, 236.99, 229.24, 240.33, 245.06, 241.4, 216.57, 211.61, 210.34, 206.43, 208.78, 223.5, 225.36, 234.96, 226.91, 236.05, 218.77, 221.65, 229.66, 240.71, 244.2, 257.32, 262.3, 260.84, 258.89, 261.88, 251.84, 263.21, 264.15, 268.02, 272.23, 271.19, 286.95, 284.62, 274.6, 275.28, 265.86, 268.73, 245.28, 241.24, 227.83, 237.09, 240.42, 244.76, 223.47, 228.51, 233.78, 243.57, 251.65, 218.34, 196.4, 171.41, 171.97, 159.8, 133.55], "hi": 286.95, "lo": 133.55}, "LITE": {"closes": [890.17, 813.51, 820.59, 932.47, 880.41, 926.14, 968.9, 873.31, 827.6, 879.28, 866.71, 830.17, 885.57, 939.03, 956.14, 895.0, 914.76, 868.95, 870.58, 847.37, 881.26, 978.53, 988.98, 935.7, 927.03, 835.03, 838.96, 919.4, 893.61, 930.91, 954.49, 945.67, 937.0, 929.04, 941.65, 921.32, 973.49, 971.26, 1045.78, 1085.42, 1091.67, 1133.4, 1111.07, 1048.6, 1103.35, 995.41, 987.99, 896.33, 869.54, 824.13, 834.51, 822.51, 850.7, 752.54, 756.17, 818.1, 866.18, 913.95, 919.53, 840.7, 684.4, 680.16, 626.75, 509.7], "hi": 1133.4, "lo": 509.7}, "CRDO": {"closes": [249.89, 239.93, 247.69, 268.16, 265.99, 259.9, 282.82, 245.97, 234.82, 231.35, 230.57, 222.61, 226.51, 226.49, 240.24, 232.75, 226.19, 206.63, 165.22, 164.17, 170.57, 167.75, 167.92, 160.31, 162.95, 150.09, 150.39, 161.49, 168.25, 175.89, 187.27, 192.56, 193.87, 195.97, 210.97, 192.67, 192.35, 194.79, 210.17, 218.64, 212.48, 220.83, 220.01, 211.86, 216.55, 200.84, 198.31, 179.23, 178.5, 169.7, 172.81, 171.51, 182.28, 162.77, 147.29, 151.15, 167.43, 173.69, 165.29, 150.99, 140.02, 150.91, 136.5, 112.33], "hi": 282.82, "lo": 112.33}, "GOOGL": {"closes": [354.07, 357.29, 343.58, 343.32, 346.14, 345.68, 343.78, 343.98, 344.5, 340.45, 344.6, 347.84, 346.74, 341.78, 340.43, 346.37, 339.13, 334.8, 336.9, 342.26, 338.46, 338.36, 330.65, 332.6, 338.5, 349.39, 344.98, 342.87, 347.33, 349.54, 354.97, 351.16, 337.83, 342.36, 343.92, 342.75, 340.92, 344.08, 338.24, 343.5, 346.47, 347.68, 350.5, 348.29, 351.66, 352.72, 353.78, 347.64, 349.22, 340.59, 344.18, 340.28, 334.76, 324.22, 320.21, 316.8, 320.58, 324.89, 283.82, 279.84, 278.99, 280.03, 288.93, 282.57], "hi": 357.29, "lo": 278.99}, "NVDA": {"closes": [223.71, 217.31, 217.26, 223.84, 225.05, 224.91, 224.76, 219.49, 217.32, 216.61, 214.48, 208.25, 212.81, 209.43, 227.73, 217.31, 220.53, 217.2, 224.16, 228.19, 230.1, 225.48, 223.42, 218.36, 218.29, 210.96, 212.17, 213.9, 219.34, 222.27, 227.38, 228.87, 225.51, 224.58, 225.07, 228.86, 227.21, 228.38, 230.86, 233.95, 238.9, 239.24, 237.47, 230.48, 229.28, 226.32, 228.52, 221.3, 217.23, 214.13, 217.09, 216.47, 221.97, 212.21, 210.96, 216.0, 217.94, 215.38, 213.66, 204.64, 202.06, 206.69, 200.13, 181.6], "hi": 239.24, "lo": 181.6}, "009150.KS": {"closes": [1229000.0, 1278000.0, 1274000.0, 1262000.0, 1335000.0, 1503000.0, 1558000.0, 1440000.0, 1387000.0, 1396000.0, 1316000.0, 1318000.0, 1362000.0, 1330000.0, 1385000.0, 1421000.0, 1458000.0, 1430000.0, 1400000.0, 1348000.0, 1401000.0, 1454000.0, 1370000.0, 1404000.0, 1400000.0, 1400000.0, 1337000.0, 1317000.0, 1381000.0, 1330000.0, 1388000.0, 1429000.0, 1486000.0, 1507000.0, 1499000.0, 1528000.0, 1513000.0, 1561000.0, 1581000.0, 1675000.0, 1604000.0, 1546000.0, 1487000.0, 1363000.0, 1374000.0, 1163000.0, 1188000.0, 1170000.0, 1155000.0, 1168000.0, 1145000.0, 1122000.0, 1118000.0, 1201000.0, 1306000.0, 1293000.0, 1196000.0, 1193000.0, 1105000.0, 1115000.0, 944000.0, 870000.0], "hi": 1675000.0, "lo": 870000.0}, "005930.KS": {"closes": [226572.11, 227063.59, 226080.62, 235418.75, 251146.09, 263433.09, 269822.31, 263924.56, 243282.42, 266381.97, 276703.03, 252620.53, 252620.53, 257043.84, 261467.17, 252620.53, 255569.41, 256552.38, 246231.3, 245739.81, 251146.09, 265399.0, 264907.53, 264907.53, 264416.03, 255077.94, 244756.86, 244265.38, 249180.17, 248197.22, 256552.38, 269330.84, 271788.25, 280634.88, 265399.0, 272500.0, 268500.0, 276000.0, 276000.0, 272000.0, 268500.0, 262000.0, 250500.0, 232000.0, 232000.0, 210000.0, 215500.0, 218000.0, 211500.0, 223500.0, 214500.0, 215500.0, 213000.0, 222000.0, 242000.0, 232000.0, 225000.0, 229000.0, 219500.0, 218000.0, 201500.0, 188700.0], "hi": 280634.88, "lo": 188700.0}, "000660.KS": {"closes": [1494675.88, 1421691.75, 1419692.12, 1424691.12, 1503674.0, 1592654.62, 1644643.38, 1661639.75, 1499674.88, 1690633.38, 1729625.0, 1670637.75, 1677636.25, 1687634.12, 1729625.0, 1653000.0, 1674000.0, 1693000.0, 1613000.0, 1596000.0, 1647000.0, 1783000.0, 1793000.0, 1856000.0, 1853000.0, 1812000.0, 1697000.0, 1690000.0, 1759000.0, 1745000.0, 1857000.0, 1868000.0, 1840000.0, 1862000.0, 1768000.0, 1765000.0, 1776000.0, 1833000.0, 1841000.0, 1773000.0, 1723000.0, 1681000.0, 1605000.0, 1443000.0, 1419000.0, 1262000.0, 1272000.0, 1277000.0, 1223000.0, 1294000.0, 1223000.0, 1277000.0, 1275000.0, 1341000.0, 1487000.0, 1526000.0, 1418000.0, 1472000.0, 1398000.0, 1396000.0, 1264000.0, 1132000.0], "hi": 1868000.0, "lo": 1132000.0}, "MU": {"closes": [877.43, 860.86, 868.38, 911.15, 949.68, 971.51, 1011.59, 940.61, 936.96, 974.18, 966.63, 910.29, 932.82, 938.25, 935.24, 932.71, 958.58, 933.29, 955.93, 958.01, 1016.43, 1000.1, 1027.61, 977.26, 975.11, 923.88, 927.45, 926.4, 977.35, 1015.64, 1043.8, 1095.99, 1071.71, 1080.36, 1082.11, 1053.81, 1064.91, 1064.94, 1097.22, 1074.72, 1063.79, 1045.4, 1087.83, 1035.68, 1028.84, 988.88, 953.04, 914.13, 931.24, 878.84, 904.9, 896.07, 913.67, 856.49, 877.55, 903.7, 928.76, 983.23, 934.27, 884.74, 833.59, 855.1, 795.23, 656.39], "hi": 1097.22, "lo": 656.39}, "AMD": {"closes": [483.36, 469.56, 474.32, 482.93, 483.01, 514.39, 506.0, 484.39, 466.42, 469.46, 473.25, 456.75, 479.18, 480.93, 476.67, 465.58, 470.72, 459.61, 457.06, 456.16, 477.57, 505.74, 521.1, 503.6, 516.13, 493.41, 504.2, 512.5, 545.09, 559.82, 615.52, 623.77, 614.61, 629.26, 630.63, 607.87, 607.57, 611.76, 615.73, 633.91, 631.75, 649.42, 645.86, 620.68, 608.1, 594.24, 605.53, 570.82, 562.23, 528.75, 538.05, 534.74, 552.72, 507.93, 516.79, 531.28, 560.26, 578.44, 566.42, 504.8, 466.84, 483.9, 488.78, 404.4], "hi": 649.42, "lo": 404.4}, "SMCI": {"closes": [31.13, 31.46, 31.6, 37.61, 39.16, 39.84, 38.28, 37.41, 36.58, 36.5, 37.24, 35.17, 38.46, 37.39, 38.46, 37.08, 37.28, 36.71, 37.0, 37.87, 39.59, 40.26, 38.93, 37.38, 40.1, 36.74, 35.64, 36.85, 40.35, 39.09, 41.2, 41.54, 41.44, 41.51, 43.26, 41.78, 41.02, 41.07, 41.92, 43.69, 43.19, 43.46, 44.94, 42.77, 41.86, 39.98, 39.07, 35.78, 35.09, 31.63, 32.1, 32.47, 35.57, 33.72, 32.94, 32.69, 35.09, 35.81, 34.43, 32.95, 30.44, 31.39, 29.6, 27.08], "hi": 44.94, "lo": 27.08}, "LSCC": {"closes": [130.03, 128.32, 126.12, 129.27, 128.43, 130.46, 132.67, 124.21, 117.68, 117.56, 117.69, 114.15, 116.1, 119.34, 120.47, 114.4, 115.34, 111.68, 113.88, 113.63, 115.9, 117.49, 115.45, 114.14, 119.76, 106.5, 106.49, 106.32, 108.53, 110.96, 117.24, 122.53, 121.66, 122.22, 128.05, 124.03, 125.45, 125.62, 128.86, 134.0, 132.85, 134.47, 130.99, 124.98, 126.05, 122.84, 121.15, 115.0, 107.09, 103.65, 108.73, 107.41, 107.79, 96.4, 96.19, 98.37, 103.52, 104.17, 103.0, 92.97, 95.44, 105.92, 107.25, 98.03], "hi": 134.47, "lo": 92.97}, "TSEM": {"closes": [252.49, 252.55, 249.58, 260.31, 252.95, 265.48, 263.73, 240.55, 226.46, 223.78, 222.59, 211.1, 212.71, 221.23, 219.85, 208.01, 205.05, 199.06, 206.81, 206.16, 222.34, 219.82, 216.57, 208.07, 211.52, 191.12, 195.12, 202.2, 219.24, 223.6, 233.82, 236.61, 230.5, 217.28, 230.47, 226.04, 234.43, 227.43, 241.3, 240.86, 249.57, 258.41, 248.25, 228.75, 228.71, 216.5, 222.2, 209.16, 209.8, 195.58, 200.3, 183.78, 189.55, 167.71, 167.56, 178.75, 189.08, 193.52, 187.92, 166.48, 155.32, 163.06, 148.8, 130.99], "hi": 265.48, "lo": 130.99}, "ETN": {"closes": [448.68, 444.96, 459.29, 459.96, 453.33, 451.51, 455.4, 431.33, 424.67, 415.29, 419.2, 408.67, 409.2, 419.44, 416.04, 402.78, 401.88, 390.71, 390.85, 397.12, 410.85, 422.13, 415.22, 409.15, 425.37, 393.16, 392.4, 397.8, 409.46, 424.77, 435.43, 442.49, 438.76, 440.0, 439.98, 431.41, 433.27, 429.71, 437.28, 436.11, 432.6, 445.09, 431.33, 424.51, 429.65, 426.69, 428.31, 408.85, 402.48, 391.25, 391.5, 381.98, 393.94, 368.99, 366.11, 371.92, 384.2, 392.88, 393.72, 369.97, 366.07, 391.7, 353.08, 327.02], "hi": 459.96, "lo": 327.02}, "ON": {"closes": [81.17, 79.78, 81.11, 83.32, 81.56, 82.66, 83.38, 79.42, 76.58, 74.71, 74.21, 71.93, 72.51, 73.22, 74.8, 72.61, 74.09, 72.65, 72.34, 73.65, 74.38, 71.08, 70.98, 70.17, 76.14, 71.65, 73.2, 66.6, 68.3, 69.98, 71.72, 73.6, 74.1, 73.15, 77.2, 75.65, 75.95, 76.87, 80.08, 84.89, 85.93, 86.31, 82.51, 79.41, 77.53, 76.0, 76.69, 73.36, 73.7, 72.02, 73.12, 75.62, 76.94, 73.23, 72.25, 74.06, 78.67, 75.63, 75.24, 71.67, 70.11, 72.6, 71.24, 63.01], "hi": 86.31, "lo": 63.01}, "GEV": {"closes": [989.74, 990.27, 1011.29, 1039.29, 1048.81, 1062.63, 1078.37, 1003.94, 986.88, 965.45, 956.29, 941.55, 926.19, 952.53, 953.27, 911.4, 898.0, 898.0, 921.4, 941.29, 941.4, 970.74, 950.48, 923.37, 956.71, 874.25, 882.29, 924.55, 924.39, 939.78, 945.67, 949.72, 951.26, 954.48, 957.07, 949.21, 961.93, 949.93, 986.87, 988.12, 989.42, 1028.61, 996.51, 998.77, 1004.14, 996.22, 1003.45, 941.23, 925.9, 920.66, 907.91, 889.81, 925.38, 826.94, 814.52, 854.62, 895.08, 878.03, 887.85, 857.87, 862.25, 918.2, 832.83, 770.51], "hi": 1078.37, "lo": 770.51}, "IFX": {"closes": [60.32, 62.08, 62.53, 62.85, 63.09, 62.5, 61.73, 61.97, 57.24, 54.98, 55.41, 55.97, 54.16, 54.85, 55.19, 57.17, 57.08, 56.29, 55.54, 55.77, 55.53, 56.86, 60.79, 58.45, 56.95, 55.8, 58.56, 54.04, 54.33, 55.0, 54.4, 55.86, 58.29, 60.13, 58.57, 56.26, 56.71, 56.57, 59.3, 59.5, 59.42, 64.64, 63.47, 64.68, 60.95, 58.9, 58.86, 57.22, 56.0, 55.35, 52.47, 52.39, 52.52, 52.04, 53.09, 49.88, 48.67, 50.2, 52.59, 53.44, 54.01, 50.56, 52.0, 52.4, 50.24, 45.95], "hi": 64.68, "lo": 45.95}, "ARM": {"closes": [282.57, 267.85, 268.93, 271.87, 278.65, 279.44, 271.43, 253.32, 249.34, 250.72, 243.32, 238.78, 241.56, 251.06, 255.21, 239.05, 241.91, 234.82, 234.86, 242.59, 252.09, 261.53, 264.23, 254.18, 264.79, 239.01, 241.83, 243.98, 264.9, 275.61, 322.9, 333.2, 332.56, 306.34, 310.32, 283.33, 293.67, 289.66, 292.34, 307.49, 302.9, 302.56, 294.37, 275.29, 266.28, 255.24, 255.39, 238.01, 244.79, 227.8, 228.05, 221.06, 226.59, 210.1, 210.33, 223.35, 226.6, 235.9, 228.77, 205.97, 196.79, 202.49, 191.8, 166.72], "hi": 333.2, "lo": 166.72}, "COHR": {"closes": [379.13, 325.15, 328.57, 355.64, 327.23, 325.83, 351.22, 306.43, 287.47, 290.03, 289.52, 275.49, 288.14, 294.37, 295.39, 279.2, 277.83, 272.03, 268.64, 264.41, 281.86, 301.88, 303.48, 293.17, 305.37, 266.5, 271.17, 289.93, 295.98, 317.36, 321.52, 310.39, 300.6, 290.61, 295.83, 282.45, 292.21, 287.81, 319.19, 337.04, 333.64, 338.36, 334.56, 302.35, 312.62, 288.02, 289.98, 263.32, 250.6, 232.9, 232.02, 231.8, 237.53, 207.82, 209.29, 221.5, 235.79, 239.59, 237.22, 210.32, 199.95, 207.49, 195.09, 169.76], "hi": 379.13, "lo": 169.76}, "AAOI": {"closes": [135.63, 132.81, 134.33, 138.08, 130.08, 150.28, 154.89, 131.41, 122.19, 129.1, 124.82, 107.63, 113.15, 113.76, 113.28, 106.23, 107.69, 103.39, 103.13, 100.38, 105.53, 111.55, 107.93, 103.29, 105.36, 95.76, 95.29, 96.74, 98.06, 105.17, 108.67, 107.0, 101.06, 101.03, 101.4, 96.82, 100.67, 99.26, 107.32, 115.59, 121.57, 130.16, 122.54, 105.9, 109.64, 100.68, 97.78, 86.22, 83.73, 75.57, 78.2, 76.74, 77.32, 68.07, 67.51, 71.94, 76.95, 82.22, 79.19, 69.05, 62.5, 63.97, 59.27, 46.89], "hi": 154.89, "lo": 46.89}, "BE": {"closes": [219.34, 210.63, 211.21, 237.16, 236.22, 229.94, 232.16, 209.01, 206.63, 202.48, 201.45, 204.02, 217.45, 218.21, 217.83, 210.77, 206.3, 213.63, 217.28, 235.55, 252.87, 277.22, 269.28, 258.49, 275.75, 257.05, 259.35, 270.02, 280.76, 265.63, 272.89, 276.53, 275.19, 266.65, 288.7, 262.87, 291.25, 276.98, 277.58, 289.15, 286.65, 295.78, 291.29, 272.82, 280.5, 262.28, 263.45, 239.34, 236.3, 221.31, 226.22, 222.65, 238.53, 217.77, 193.3, 203.92, 218.5, 228.08, 222.3, 203.17, 196.25, 214.01, 200.4, 167.52], "hi": 295.78, "lo": 167.52}, "ASX": {"closes": [37.39, 37.59, 38.65, 39.28, 39.64, 39.54, 39.91, 36.41, 35.66, 36.51, 36.51, 36.24, 37.08, 37.26, 38.9, 37.78, 36.95, 37.43, 37.08, 37.43, 37.51, 39.79, 41.2, 39.86, 39.47, 37.08, 37.12, 37.95, 39.99, 41.63, 43.73, 45.2, 43.93, 43.5, 44.31, 43.79, 45.31, 44.46, 44.73, 47.45, 47.53, 46.78, 45.76, 45.26, 46.43, 47.53, 47.6, 44.33, 41.89, 39.53, 40.8, 40.77, 42.41, 37.74, 38.69, 39.91, 42.06, 43.92, 44.55, 39.5, 39.17, 39.05, 37.51, 29.72], "hi": 47.6, "lo": 29.72}, "QCOM": {"closes": [166.95, 161.29, 161.8, 162.19, 163.9, 164.89, 161.3, 159.32, 161.03, 159.87, 159.88, 157.67, 159.69, 162.83, 163.89, 163.3, 169.56, 165.71, 169.04, 168.57, 168.74, 174.09, 176.4, 176.88, 181.97, 180.15, 187.8, 184.84, 188.71, 177.72, 194.23, 198.27, 197.24, 194.26, 201.97, 187.48, 184.1, 184.04, 182.09, 184.87, 180.79, 181.03, 177.12, 176.01, 175.5, 174.43, 176.86, 172.62, 178.4, 172.11, 173.53, 175.71, 177.96, 172.83, 175.91, 179.6, 184.17, 182.97, 185.41, 164.79, 162.08, 164.43, 173.19, 156.75], "hi": 201.97, "lo": 156.75}};
+const CALLS = [
+{t:'MRVL',d:'SHORT',pub:'ia',date:'2026-11-03',th:"Shorted as a hedge; Lumentum deal is value destruction — channel conflict pushes optics customers to AVGO/CRDO/SMTC; mgmt 'incompetent'",ci:61,px:171.97,cur:133.55,pnl:22.3},
+{t:'LITE',d:'LONG',pub:'ia',date:'2026-11-03',th:'Holding through the deal; standalone optical/UHP-laser moat; may run an activist campaign vs Murphy',ci:61,px:680.16,cur:509.70,pnl:-25.1},
+{t:'CRDO',d:'LONG',pub:'ia',date:'2026-11-06',th:"µVCSEL slow-and-wide is winning scale-in; Avicena's µLED has only a narrow 10m path + ~6x fiber cost",ci:63,px:112.33,cur:112.33,pnl:0.0},
+{t:'GOOGL',d:'LONG',pub:'sa',date:'2026-11-05',th:'TPUv7 (Ironwood) matches/beats GB300 on perf-per-$ in agentic inference; Oracle/OpenAI/Anthropic/Meta all buying',ci:63,px:282.57,cur:282.57,pnl:0.0},
+{t:'NVDA',d:'NEUT',pub:'sa',date:'2026-11-05',th:'Still leads on Rubin FP4, but TPU erodes the perf-per-$ moat; internal bureaucracy slowing vs AMD/Google',ci:63,px:181.60,cur:181.60,pnl:null},
+{t:'009150.KS',d:'LONG',pub:'sd',date:'2026-11-02',th:'SEMCO: high-cap MLCC shortage peaks 1H27; >₩5T AI-server component contracts',ci:57,px:1193000.00,cur:870000.00,pnl:-27.1},
+{t:'005930.KS',d:'LONG',pub:'sd',date:'2026-11-05',th:"Samsung 'Project Kairos' 2nm/4nm HBM base-die foundry — only HBM maker that owns a leading-edge logic fab",ci:60,px:201500.00,cur:188700.00,pnl:-6.4},
+{t:'000660.KS',d:'LONG',pub:'sd',date:'2026-11-03',th:'SK Hynix: DRAM shortage runs to 2030; memory → 62% of semi revenue by 2027',ci:58,px:1398000.00,cur:1132000.00,pnl:-19.0},
+{t:'MU',d:'NEUT',pub:'sd',date:'2026-11-05',th:'Taiwan Fab 11E paused over a union pay fight — tightens supply but delays new capacity',ci:63,px:656.39,cur:656.39,pnl:null},
+{t:'AMD',d:'LONG',pub:'sd',date:'2026-11-04',th:'$17B Q4 guide, 2027 rev +80%, MI450/Helios ramping; wafers/substrates/HBM already locked',ci:62,px:488.78,cur:404.40,pnl:-17.3},
+{t:'SMCI',d:'LONG',pub:'sd',date:'2026-11-04',th:'Fiscal Q1 $19.9B beat; raised FY27 to $72–82B',ci:62,px:29.60,cur:27.08,pnl:-8.5},
+{t:'LSCC',d:'LONG',pub:'sd',date:'2026-11-03',th:'Record Q3, revenue +118% YoY — mid-range FPGA past its inventory correction',ci:61,px:105.92,cur:98.03,pnl:-7.4},
+{t:'TSEM',d:'LONG',pub:'sd',date:'2026-11-03',th:'Record $526M Q3; guides Q4 $600M toward a $2B annual run-rate',ci:61,px:163.06,cur:130.99,pnl:-19.7},
+{t:'ETN',d:'LONG',pub:'sd',date:'2026-11-04',th:'Record quarter; record orders + backlog on AI electrical demand',ci:62,px:353.08,cur:327.02,pnl:-7.4},
+{t:'ON',d:'LONG',pub:'sd',date:'2026-11-03',th:'AI-DC revenue +175% YoY; buys Ferric for power delivery; 2030 AI-DC target >$3B',ci:61,px:72.60,cur:63.01,pnl:-13.2},
+{t:'GEV',d:'LONG',pub:'sd',date:'2026-11-03',th:'Order backlog hits $197B on record gas-turbine demand',ci:61,px:918.20,cur:770.51,pnl:-16.1},
+{t:'IFX',d:'LONG',pub:'sd',date:'2026-11-03',th:'AURIX safety subsystem win on Snapdragon Ride + SOLUM HVDC MoU for AI datacenters',ci:63,px:52.40,cur:45.95,pnl:-12.3},
+{t:'ARM',d:'LONG',pub:'sd',date:'2026-11-05',th:'DC royalties doubled; hyperscaler server share >50%→60%; own AGI CPU ~$2B FY27–28',ci:63,px:166.72,cur:166.72,pnl:0.0},
+{t:'COHR',d:'LONG',pub:'sd',date:'2026-11-05',th:"5-yr ~$20B PhotonLink supply deal (rev from 2028) — directly contradicts IA's standing COHR short",ci:63,px:169.76,cur:169.76,pnl:0.0},
+{t:'AAOI',d:'LONG',pub:'sd',date:'2026-11-06',th:"Record Q3; signed 1.6T Tier-1 deal worth $1–1.5B; a 5x-larger deal 'within weeks'",ci:63,px:46.89,cur:46.89,pnl:0.0},
+{t:'BE',d:'LONG',pub:'sd',date:'2026-11-06',th:'NTT Data 900MW Bloom fuel-cell deal — its largest international, behind-the-meter power',ci:63,px:167.52,cur:167.52,pnl:0.0},
+{t:'ASX',d:'LONG',pub:'sd',date:'2026-11-06',th:'MOEA-approved $3.7B packaging expansion + Nvidia reportedly funding SPIL CoWoS capacity',ci:63,px:29.72,cur:29.72,pnl:0.0},
+{t:'QCOM',d:'NEUT',pub:'sd',date:'2026-11-05',th:'DC ramp to $15B+ FY29, but handset −26% and stock −9%; raising prices on input costs',ci:63,px:156.75,cur:156.75,pnl:null},
+{t:'MRVL',d:'NEUT',pub:'sd',date:'2026-11-02',th:'Reports the vertical-integration logic; TD Cowen downgrade (optical TAM $47B vs ~$100B consensus)',ci:60,px:171.41,cur:133.55,pnl:null},
+{t:'LITE',d:'NEUT',pub:'sd',date:'2026-11-02',th:'Acquired at 4.5 MRVL sh (~$1,132, +24% premium); 2nd NPO/CPO win + >$5B commitments',ci:60,px:684.40,cur:509.70,pnl:null}
+];
+function cssv(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+function dirColor(d){return d==="SHORT"?cssv("--short"):d==="NEUT"?cssv("--neutral"):cssv("--long");}
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+document.querySelectorAll(".spark").forEach(el=>{
+  const t=el.dataset.t,d=el.dataset.d,ci=+el.dataset.ci;
+  const c=PRICES[t].closes; el.innerHTML=sparkSVG(c,96,30,dirColor(d),{ci:ci});
+});
+document.querySelectorAll(".spot-chart").forEach(el=>{
+  const t=el.dataset.t,d=el.dataset.d,ci=+el.dataset.ci;
+  const c=PRICES[t].closes; el.innerHTML=sparkSVG(c,el.clientWidth||480,110,dirColor(d),{ci:ci,refline:true});
+});
+document.querySelectorAll(".rangebar").forEach(el=>{
+  const lo=+el.dataset.lo,hi=+el.dataset.hi,cur=+el.dataset.cur;
+  const p=Math.max(0,Math.min(100,(cur-lo)/((hi-lo)||1)*100));
+  el.querySelector(".rfill").style.width=p+"%";
+  el.querySelector(".rmark").style.left=p+"%";
+});
+</script>
+</body>
+</html>

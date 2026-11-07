@@ -2,13 +2,13 @@
 type: ticker
 title: "SMCI — Super Micro Computer"
 tags: []
-related: ["[[semianalysis-2024-05-30-dell-beating-supermicro]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
+related: ["[[semidoped-2026-11-04-daily-update-november-4th-2026]]", "[[semianalysis-2024-05-30-dell-beating-supermicro]]", "[[irrationalanalysis-2024-06-01-dell-clown-fiesta]]", "[[semianalysis-2024-10-03-ai-neocloud-playbook-anatomy]]", "[[irrationalanalysis-2024-11-09-arm-qualcomm-astera-fabrinet-wolfspeed-smci]]", "[[semidoped-2026-09-23-daily-update-september-23rd]]"]
 created: 2024-05-30
-updated: 2026-10-23
+updated: 2026-11-07
 ticker: SMCI
 current_stance: long
-conviction: high
-last_review: 2026-10-23
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -30,3 +30,10 @@ No price-at-call values are available for any of the four entries, so quantitati
 | 2026-10-21 | [[semidoped]] | LONG | 35.57 | Raised fiscal Q1 revenue guide to $6.6-6.8B (from $5.6-6.4B) on AI-server demand; flagged improved gross margin |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 35.57 (2026-10-21). Opened at spot.
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-04 | [[semidoped]] | LONG | 29.60 | Fiscal Q1 revenue $19.9B above its preliminary range; raised FY27 guidance to $72-82B (from $65-72B). |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

@@ -4,11 +4,11 @@ title: "CEG — Constellation Energy"
 tags: []
 related: ["[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2026-03-03
-updated: 2026-10-08
+updated: 2026-11-07
 ticker: CEG
 current_stance: long
 conviction: medium
-last_review: 2026-10-08
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -21,3 +21,6 @@ SemiAnalysis introduced CEG in March 2026 as a structural beneficiary of the PJM
 
 ## Outcome tracking
 No px@call value was recorded, so quantitative outcome assessment is not possible. The thesis trajectory is intact as of the call date: PJM BRA prices remain capped at FERC's $329/MW-day ceiling and Winter Storm Fern validated the premium value of nuclear reliability over thermal capacity. The live view would be falsified by: (1) FERC or PJM market reforms that structurally compress BRA clearing prices toward pre-2025 norms; (2) material degradation in CEG's nuclear fleet availability or an unexpected plant retirement that reduces its capacity credit; or (3) large-scale hyperscaler pivots to dedicated on-site nuclear or bilateral PPA structures that bypass the capacity market entirely and reduce CEG's merchant upside.
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** SD LONG ($300.40, Google 3.6GW nuclear PPA) → $239.65 = **−20.2% LOSS ✗** — power names de-rated with the whole AI-capex complex.

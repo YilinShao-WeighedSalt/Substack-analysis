@@ -4,11 +4,11 @@ title: "AXTI — AXT Inc."
 tags: []
 related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[globalsemiresearch-2026-04-18-axt-indium-phosphide-optical-interconnect]]", "[[globalsemiresearch-2026-05-16-china-indium-phosphide-surge]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-08-14-coherent-q4-fy26-earnings]]", "[[irrationalanalysis-2026-10-07-marvell-2026-investor-day]]"]
 created: 2026-04-18
-updated: 2026-10-26
+updated: 2026-11-07
 ticker: AXTI
 current_stance: long
 conviction: high
-last_review: 2026-10-26
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -50,3 +50,6 @@ No price data was recorded at either call (both px@call are n/a), so mark-to-mar
 | 2026-10-24 | [[irrationalanalysis]] | LONG | 52.08 | Favorite name; 6-inch InP the industry chokepoint beyond 2027, 'a great bet'; still wants a China-export-panic dip to March prices. |
 
 **Outcome tracking (2026-10-26):** New IA LONG @ $52.08 (reaffirm). Opened at spot.
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** IA LONG ($84.06, 6-in InP chokepoint add) and SD LONG ($84.06) → $36.72 = **−56.3% LOSS ✗** — worst resolution of the run; the speculative InP long round-tripped and then some.

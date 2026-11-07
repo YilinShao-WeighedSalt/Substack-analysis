@@ -4,15 +4,19 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-11-01
+updated: 2026-11-07
 handle: irrationalanalysis
-calls_logged: 651
-hit_rate: "35/63 (56%), ~22 open"
+calls_logged: 654
+hit_rate: "35/65 (54%), ~23 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-11-07): 35/63 → 35/65 (54%) — the Oct-7 Marvell-investor-day batch resolves 0W/2L in Black November.** **[[AVGO]] LONG ($375.81) → $291.53 = −22.4% ✗** (the ultra-Broadcom-bull add) and **[[AXTI]] LONG ($84.06) → $36.72 = −56.3% ✗** (the 6-in InP chokepoint favorite, worst resolution of the run) both gutted. The Oct-19 OCP batch (CRDO/SMTC/GLW/LITE/AVGO long, COHR short, MRVL/MTSI/ALAB neut) crosses 30d ~Nov-18; the Oct-24 "Dancing in the Rain" batch ~Nov-23. This run: **3 posts on the Marvell–Lumentum deal + Avicena** — new **SHORT [[MRVL]] $171.97** (Lumentum deal = value destruction / channel conflict; shorted as a hedge against the LITE hold), reaffirm **LONG [[LITE]] $680.16** (holding, weighing an activist campaign vs Murphy), new **LONG [[CRDO]] $112.33** (Avicena deep-dive: µVCSEL slow-and-wide beats µLED's ~6x-fiber 10m path). The Murphy/Hurlston fireside softened the MRVL stance (concedes a real µVCSEL scale-in rationale) but the short stands as the hedge. 2 directional + 1 reaffirm opened in the Black-November tape.
+
+- **Marvellous Value Destruction + Murphy/Hurlston Fireside (2026-11-03) & Avicena Deep-Dive (2026-11-06):** IA's furious-then-constructive arc on the **$115B Marvell–[[LITE]] all-stock merger**. Night 1 ("Value Destruction"): zero integration in the ELSFP case, Cloudlight (Lumentum transceivers) NOT spun out → Marvell now **competes with its own customers** (Innolight/[[AAOI]]/Accelink) who'll defect to **Broadcom/Credo/Semtech/Macom**; a long rant on Marvell's engineering diaspora + botched Ara 1.6T DSP; discloses holding LITE for LTCG timing and **shorting MRVL as the hedge**, weighing an activist campaign. Night 2 (fireside recap): separates noise from the real driver — **this deal is about µVCSEL slow-and-wide scale-in** (Lumentum has µVCSEL manufacturing but zero electrical/analog; Marvell has all the DSP/equalizer/ZR-dispersion IP; µVCSEL over ~10m ≈ ZR over ~100km) → "maybe not completely stupid." The **Avicena deep-dive (Nov-6)** reaffirms the µVCSEL/[[CRDO]] long: Avicena's µLED (TSMC N12 die-to-wafer, IO² direct-drive on N3P the holy grail) needs **~6x the fibers** and must hit **10m** to be viable; <=5m is copper-AEC (Credo/[[AVGO]]/[[MRVL]], all rumored failing at 6m), µVCSEL scales 20-30m. Calls: **SHORT [[MRVL]] $171.97**, **LONG [[LITE]] $680.16**, **LONG [[CRDO]] $112.33**. (→ [[co-packaged-optics]], [[silicon-photonics-interconnects]], [[custom-silicon-asic]].)
 
 **hit_rate note (2026-11-01): 34/60 → 35/63 (56%) — the Oct-1 Q3 batch resolves 1W/2L, the win a third straight on Cerebras.** **[[CBRS]] SHORT ($177.65→$109.18) = short +38.5% WIN ✓** (the activist parametric-yield/integrated-laser short keeps printing); losses **[[CRDO]] LONG ($194.79→$150.99) = −22.5% ✗** and **[[QMCO]] LONG ($31.72→$18.27) = −42.4% ✗** (the µVCSEL Tier-2 + speculative "Degen" tape long both gave back in the late-Oct AI correction). The Oct-7 Marvell AVGO/AXTI longs cross 30d ~Nov-6, the Oct-19 OCP batch ~Nov-18, the Oct-24 "Dancing in the Rain" batch (AAOI/BE/AXTI/CRDO long, COHR short, TSEM neut) ~Nov-23. This run: **1 post (Intel Q3 "Dead Inside")** — new **SHORT [[INTC]] $65.76** (planning-incompetence/wafer-not-substrate short; IA flips from its cautiously-constructive Oct-11 stance), reaffirm **LONG [[LITE]] $840.70** (vows to kill the Marvell takeover), **NEUTRAL [[MRVL]] $196.40** (opposes the deal). 2 directional + 1 neutral opened at spot.
 

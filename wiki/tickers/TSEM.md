@@ -2,13 +2,13 @@
 type: ticker
 title: "TSEM — Tower Semiconductor"
 tags: []
-related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-06-19-daily-update-june-19]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-08-04-daily-update]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]]"]
+related: ["[[semidoped-2026-11-03-daily-update-november-3rd-2026]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-02-16-optical-illusions-fn-cien-sitm-lite]]", "[[irrationalanalysis-2025-03-13-make-intel-great-again]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-04-12-co-packaged-optics-guide]]", "[[irrationalanalysis-2025-04-22-logic-foundry-slash-burn]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-09-18-qualcomm-is-out-of-time]]", "[[irrationalanalysis-2025-09-19-intel-nvidia-deal-enfabrica]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[irrationalanalysis-2026-02-12-tower-glofo-hbm4-earnings]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-06-19-daily-update-june-19]]", "[[irrationalanalysis-2026-07-01-q2-consolidated-holdings]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-08-04-daily-update]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[irrationalanalysis-2026-09-20-calm-before-the-ipo-storm]]"]
 created: 2024-12-02
-updated: 2026-10-26
+updated: 2026-11-07
 ticker: TSEM
 current_stance: long
-conviction: high
-last_review: 2026-10-26
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -71,3 +71,10 @@ No px@call values were recorded across the first 18 appearances (all pre-2026-06
 | 2026-10-24 | [[irrationalanalysis]] | NEUTRAL | 167.56 | Wants to fade SA's 'mostly wrong Claude-slop' anti-Tower note but disciplined; only a 'buy and pray' near ~$130. (SA anti-TSEM vs IA pro-Tower disagreement.) |
 
 **Outcome tracking (2026-10-26):** New IA NEUTRAL @ $167.56 (watching; would buy near ~$130). Excluded from ratio.
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-03 | [[semidoped]] | LONG | 163.06 | Record $526M Q3 (+33% YoY); guides Q4 to $600M (+36%), on track for a $2B annual run-rate in 2026. (Contradicts SA's prior anti-Tower note.) |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

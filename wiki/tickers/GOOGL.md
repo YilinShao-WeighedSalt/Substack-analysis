@@ -2,13 +2,13 @@
 type: ticker
 title: "GOOGL — Alphabet"
 tags: []
-related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2026-09-07-tpu-inferencex-full-steam]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]", "[[semidoped-2026-10-06-daily-update]]"]
+related: ["[[semianalysis-2026-11-05-tpu-strikes-the-king]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2026-09-07-tpu-inferencex-full-steam]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2024-03-13
-updated: 2026-10-29
+updated: 2026-11-07
 ticker: GOOGL
 current_stance: long
-conviction: high
-last_review: 2026-11-01
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -65,3 +65,11 @@ No px@call values are recorded in this log, precluding quantitative P&L assessme
 
 ## 2026-11-01 run update
 **2026-11-01 — the miss that broke the week.** GOOGL −~10-13% on weak search/ad sales + negative FCF (Thu), seeding the broad AI-trade correction. [[semidoped]] NEUTRAL ($279.84, 3-mo low) but argues GenAI is net-positive for search monetization long-term (Instagram ad-ramp analogy); Google Cloud rev doubled to $30.7B, total capex $51.4B. The Oct-1/Oct-8/Oct-22 SD LONGs ($334–348) now −16–20% — the crash resolved them as losses.
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-05 | [[semianalysis]] | LONG | 282.57 | TPUv7 (Ironwood) matches or beats GB300 NVL72 on tokens-per-dollar in realistic long-context agentic inference (AgentX) for external customers; ecosystem traction with vLLM/SGLang/PyTorch and Oracle/OpenAI/Anthropic/Meta as buyers — the first real crack in Nvidia's inference moat. |
+
+**Resolution (Oct-7 batch, 30d):** SD LONG ($347.68, Google nuclear PPA / power-the-binding-constraint) → $282.57 = **−18.7% LOSS ✗**. (SA's Sep-23 ClusterMAX GOOGL already resolved −2.2%.) Fresh SA LONG opens this run on the TPU thesis.
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

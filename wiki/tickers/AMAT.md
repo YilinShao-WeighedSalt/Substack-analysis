@@ -4,11 +4,11 @@ title: "AMAT — Applied Materials"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[semianalysis-2024-02-09-hybrid-bonding-process-flow]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-01-03
-updated: 2026-10-29
+updated: 2026-11-07
 ticker: AMAT
 current_stance: long
 conviction: high
-last_review: 2026-11-01
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -44,3 +44,6 @@ No px@call values are recorded across the log, so price-based verification is no
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG ($511.38) → $390.09 = −23.7% LOSS ✗** (Kioxia/NAND co-dev long corrected).
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** SD LONG ($530.27, AMAT+Intel EPIC / all-3-foundries) → $319.25 = **−39.8% LOSS ✗**.

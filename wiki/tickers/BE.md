@@ -2,13 +2,13 @@
 type: ticker
 title: "BE — Bloom Energy"
 tags: []
-related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
+related: ["[[semidoped-2026-11-06-daily-update-november-6th-2026]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-09-10-behind-the-meter-power-part-1]]", "[[semidoped-2026-09-07-daily-update-september-7th]]", "[[semidoped-2026-07-29-daily-update]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[irrationalanalysis-2025-11-28-tpu-vs-nvda-avgo-intel-foundry]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[semianalysis-2025-12-30-ai-labs-onsite-gas-power-crisis]]", "[[irrationalanalysis-2026-01-01-2025-end-of-year-portfolio-update]]", "[[semianalysis-2026-03-03-ai-datacenters-electric-bills]]", "[[irrationalanalysis-2026-04-24-intel-cheap-price-book]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[semidoped-2026-07-31-daily-update]]", "[[semidoped-2026-09-11-daily]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2025-10-24
-updated: 2026-10-26
+updated: 2026-11-07
 ticker: BE
 current_stance: long
 conviction: medium
-last_review: 2026-11-01
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -79,3 +79,10 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($276.98) → $203.17 = −26.6% LOSS ✗** (BTM fuel-cell long corrected).
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-06 | [[semidoped]] | LONG | 167.52 | NTT Data agreed to deploy 900MW of Bloom fuel cells across global datacenters (its largest international), initial shipments 2027 — primary behind-the-meter power. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

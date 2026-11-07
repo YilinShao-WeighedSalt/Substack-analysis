@@ -4,11 +4,11 @@ title: "SNDK — Sandisk"
 tags: []
 related: ["[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-01-16-memory-madness]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[globalsemiresearch-2026-04-07-memory-suppliers-hold-all-cards]]", "[[semidoped-2026-05-04-capex-memory-tax-deepseek-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[semidoped-2026-08-27-daily-update]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2025-10-01
-updated: 2026-10-08
+updated: 2026-11-07
 ticker: SNDK
 current_stance: long
 conviction: medium
-last_review: 2026-10-08
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -42,3 +42,6 @@ No px@call values are recorded across any entry, so quantitative performance tra
 **Update 2026-08-18:** SD's **Jul-3 LONG ($1,745) resolved at $1,786.85 = +2.4% WIN ✓** (>30d; the July memory selloff has fully retraced). SD Aug-14 Investor-Day LONG ($1,641.11) is **+8.9%** (open). New SD Aug-17 LONG on Phison's NAND-shortage-to-2030 warning + the SanDisk/Kioxia 1 PB SSD demo. YMTC passing Kioxia for #3 NAND is the geopolitical wrinkle, not a demand hit.
 
 **Update 2026-09-17 (resolution):** SD's Aug-17 LONG ($1,786.85, Phison NAND-shortage-to-2030 / 1PB SSD) → $1,519.97 = **-14.9% LOSS ✗** — bought near the mid-Aug top; the shortage thesis intact but the entry gave back.
+
+## 2026-11-07 run update
+**Resolution (Oct-7 batch, 30d):** SD LONG ($1,660.46, YMTC NAND-shortage-to-2029 / BiCS Gen10) → $806.43 = **−51.4% LOSS ✗** — NAND momentum leveling (Kioxia guide) + the macro rout halved it.

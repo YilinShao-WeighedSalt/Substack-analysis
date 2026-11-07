@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-10-29
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -113,3 +113,6 @@ Two structural moves this week. (1) The custom-silicon turn finally pulls in the
 **2026-10-26 (Trainium3 training-stack viability — SA Oct-23):** SemiAnalysis's hands-on Trainium3 review argues Amazon's software course-correction broadens the chip from inference into research training. **TorchNeuron** = a first-class native-PyTorch backend (swap `.to('cuda')`→`.to('neuron')`, eager + torch.compile, native torch.distributed/DTensor/FSDP) replacing the old PyTorch/XLA graph-capture; AWS hired Google's native-Torch-on-TPU lead. Already supports HF Accelerate/TorchTitan/gpt-oss + investing in vLLM/SGLang; TorchTitan hit 30.47% MFU compiled; a single Trainium3 core beats GB300 MFU from the mid-range and again past 1 TFLOP; FlexAttention 93% pass; up to 80k cores on CI. Weakness: slow Neuron compiler (gpt-oss 27-min compile; ~2-orders-faster TTFS targeted). The **Neuron Explorer profiler is SOTA / 'GPU-impossible'** (per-HW-unit event timeline) and Anthropic's perf lead prefers it to Nvidia Nsight/AMD.
 
 **Update 2026-10-29 (accelerators go multi-vendor on third-party clouds):** **Oracle loaded OCI with Google TPUs, Cerebras wafer-scale, and SambaNova inference** in a single cycle (Cerebras/SambaNova 2027; Cerebras +~10% on the news) alongside expanded Vera Rubin — Oracle, already living inside rivals' clouds, sells whatever the customer wants. **OpenAI is weighing TPU buys** to supplement Nvidia, and **Microsoft publicly demoed Maia 300** at OCP 2026 (first detailed hardware showing). On the financing side, **Broadcom's $63B XPU SPV for Anthropic** carries a residual-value guarantee that exposes the key difference between a resaleable GPU and a thin-resale-market custom XPU. [[GOOGL]] [[AVGO]] [[CBRS]]
+
+### 2026-11-07 update
+****TPUv7 cracks the inference-perf-per-$ moat.** SemiAnalysis's 'TPU Strikes the King' (Nov-5) posts official AgentX (long-context, multi-turn) results: **TPUv7 'Ironwood' is competitive-to-best on tokens-per-dollar for external customers** — cheapest on GLM-5.2 FP8, beats GB300 FP8 at every interactivity on Qwen3.5 397B (1.67x better per-$ than even FP4 GB300), competitive on Kimi K3. Caveats: NVIDIA FP4 refreshes reclaim decode on some models; TPUv7 has **no native FP4** until TPUv8 (Q1-27); Rubin preview ~4-6x per-$ (vs TPUv8i). TPU is running NVIDIA's own ecosystem playbook (vLLM/SGLang/PyTorch/llm-d, Day-0 support) while NVIDIA bureaucracy slows it — SA calls it the biggest moat risk. External TPU customers: Oracle/OpenAI/Anthropic/Meta. Qualcomm's own DC accelerators (AI250/AI300) now have a revenue calendar ($5B FY27 → $15B+ FY29).**

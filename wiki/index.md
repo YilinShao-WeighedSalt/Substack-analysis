@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-11-01
+updated: 2026-11-07
 ---
 
 # Wiki Index
@@ -210,6 +210,7 @@ updated: 2026-11-01
 - [[cien-ia-profit-take-vs-sd-operational-bull]] — CIEN: Irrational profit-take vs Semi Doped operational bull (1.6T India/UK wins)
 - [[ai-credit-subprime-vs-binding-leases]] — AI credit: Irrational's 'sub-prime/CDO' bear vs SemiAnalysis's >$1T binding-lease bull
 - [[asml-hybrid-bonder-vs-besi-orders]] — Hybrid bonding: SemiAnalysis's ASML-D2W-bonder SHORT vs Semi Doped's defense of Besi (+96% orders)
+- [[cohr-short-vs-photonlink-20b-deal]] — Coherent: IA's UHP-laser-socket SHORT vs Semi Doped's read on a 5-yr ~$20B PhotonLink supply deal
 
 ## Publications
 
@@ -224,6 +225,15 @@ updated: 2026-11-01
 - [[irrationalanalysis-2026-10-30-intel-q3-2026-dead-inside]] — IA: Intel Q3 'Dead Inside' — wafer-limited not substrate-limited; SHORT INTC, LONG LITE, opposes Marvell/LITE
 - [[semidoped-2026-10-29-daily-update-october-29th-2026]] — SD: Marvell-LITE talks, Alphabet+Samsung miss, Azure +48%, SK Hynix ₩100T
 - [[semidoped-2026-10-30-daily-update-october-30th-2026]] — SD: Intel −23%, Samsung record/device-drag, TSMC-AUO CoWoS, Murata/SEMCO MLCC, Nscale backstop
+- [[irrationalanalysis-2026-11-03-marvellous-value-destruction]] — IA: shorts MRVL (hedge), holds LITE; Marvell–Lumentum $115B deal = value destruction, channel conflict, Cloudlight not spun out
+- [[irrationalanalysis-2026-11-03-matt-murphy-and-michael-hurlston]] — IA: fireside recap half-concedes the deal's µVCSEL slow-and-wide scale-in rationale; NPO is standardized
+- [[irrationalanalysis-2026-11-06-avicena-deep-dive]] — IA: Avicena µLED (TSMC N12, IO²) needs ~6x fibers + 10m reach to beat Credo's µVCSEL → reaffirm LONG CRDO
+- [[semianalysis-2026-11-05-tpu-strikes-the-king]] — SA: TPUv7 Ironwood matches/beats GB300 on perf-per-$ in AgentX; LONG GOOGL, NEUT NVDA (moat erosion)
+- [[semidoped-2026-11-02-daily-update-november-2nd-2026]] — SD: Marvell–LITE $115B, CXMT 4F² DRAM +613%, Altman Seoul HBM, Kioxia weak guide, SEMCO MLCC 1H27 peak
+- [[semidoped-2026-11-03-daily-update-november-3rd-2026]] — SD: Anthropic $895B compute obligations, DRAM all-time high/shortage to 2030, QCOM HBC, Lattice/Tower records
+- [[semidoped-2026-11-04-daily-update-november-4th-2026]] — SD: AMD $17B guide, Texas anti-datacenter governor, Panasonic laminate fire, Mitsui–JSR, Eaton record
+- [[semidoped-2026-11-05-daily-update-november-5th-2026]] — SD: Micron pauses Taiwan fab (union), QCOM datacenter calendar, Arm DC royalties double, Samsung Project Kairos, Coherent $20B
+- [[semidoped-2026-11-06-daily-update-november-6th-2026]] — SD: Black November (Nasdaq −5.5%, SOX −12%, Taiwan stabilization fund), ASE $3.7B, AOI 1.6T, NTT–Bloom 900MW
 ### Citrini Research
 
 - [[citrini-2024-06-03-annual-review-ai-highlights]] — Annual Review: AI Thematic Highlights

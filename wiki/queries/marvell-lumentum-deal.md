@@ -4,7 +4,7 @@ title: "Marvell–Lumentum: strategic vertical integration vs. a moat worth more
 tags: [m&a, optics, co-packaged-optics, marvell, lumentum]
 related: [[[MRVL]], [[LITE]], [[irrationalanalysis]], [[semidoped]], [[co-packaged-optics]], [[silicon-photonics-interconnects]]]
 created: 2026-11-01
-updated: 2026-11-01
+updated: 2026-11-07
 ---
 
 # Marvell–Lumentum: deal logic vs. standalone-moat value
@@ -37,3 +37,26 @@ Could be announced as early as the first week of November.
 - Post-close: does Marvell preserve LITE's qual-only UHP-laser moat or does customer conflict erode it?
 
 Price marks at open (2026-11-01): **LITE $840.70 · MRVL $196.40**.
+
+## 2026-11-07 update — the deal is signed (and dividing the newsletters)
+
+**Definitive terms (announced Nov-2):** all-stock, **4.5 MRVL shares per LITE share ≈ $1,132/sh (+23.9%)**,
+~$115B incl. debt (~$80B equity, WSJ); LITE holders ~**33%** of the combined co; Marvell claims >$1B
+annual cost synergies, EPS accretion in year 1, TAM to ~$550B; close targeted **H1-2028**. Rosenblatt
+flags a **12-18mo antitrust review incl. intense Chinese scrutiny**. TD Cowen **downgraded MRVL**,
+putting the 2027 optical-transceiver TAM at $47B vs ~$100B consensus. Nvidia is a $2B strategic investor
+in both (March).
+
+**IA hardens, then half-concedes.** "Marvellous Value Destruction" (Nov-3): IA **shorted MRVL as a hedge**
+against its LITE hold and calls the deal value destruction — zero integration in the ELSFP case, and with
+**Cloudlight (Lumentum transceivers) NOT spun out**, Marvell competes with its own module customers
+(Innolight/AAOI/Accelink → defect to Broadcom/Credo/Semtech/Macom). The Murphy/Hurlston fireside recap
+(same day) softens it: the real rationale is **µVCSEL slow-and-wide scale-in** (Lumentum µVCSEL fab +
+Marvell DSP/ZR-dispersion IP) — "maybe not completely stupid." Weighing a LITE activist campaign.
+
+**SD stays neutral/strategic.** Reports the vertical-integration logic; NEUTRAL both tickers.
+
+**Price marks (2026-11-07, post-Black-November):** **LITE $509.70 (IA long −25% since the Nov-3 call) ·
+MRVL $133.55 (IA short +22% since Nov-3; −13% the day talks leaked).** The hedge is working so far; the
+LITE long is underwater on the deal-arb discount + the macro rout. Still open: antitrust path, Cloudlight
+spin-out, a counter-bid ("other buyers still circling" per SD Nov-5).

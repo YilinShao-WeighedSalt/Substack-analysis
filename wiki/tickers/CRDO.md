@@ -2,13 +2,13 @@
 type: ticker
 title: "CRDO — Credo Technology"
 tags: []
-related: ["[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-03-interconnects-101]]", "[[citrini-2024-07-15-in-conversation-credo-semiconductor]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[citrini-2025-09-18-single-stock-long-thesis]]", "[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
+related: ["[[irrationalanalysis-2026-11-06-avicena-deep-dive]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[citrini-2024-07-03-interconnects-101]]", "[[citrini-2024-07-15-in-conversation-credo-semiconductor]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2024-12-27-2025-irrational-ideas]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[citrini-2025-09-18-single-stock-long-thesis]]", "[[irrationalanalysis-2025-10-01-partial-mea-culpa-sandisk-marvell]]", "[[irrationalanalysis-2025-10-24-ocp-global-summit-irrational-recap]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[citrini-2026-03-12-let-there-be-light]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-10-19-ocp-global-summit-2026]]"]
 created: 2024-06-03
-updated: 2026-10-26
+updated: 2026-11-07
 ticker: CRDO
 current_stance: long
-conviction: high
-last_review: 2026-11-01
+conviction: medium
+last_review: 2026-11-07
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -52,3 +52,10 @@ No px@call values are recorded across any entry, so direct price-based PnL attri
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[irrationalanalysis]] Oct-1 **LONG ($194.79) → $150.99 = −22.5% LOSS ✗** — the µVCSEL-pivot Tier-2 long gave back into the late-Oct AI correction.
+
+## 2026-11-07 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-06 | [[irrationalanalysis]] | LONG | 112.33 | Avicena deep-dive: uVCSEL slow-and-wide is winning scale-in; Avicena's uLED needs ~6x the fibers and must hit 10m reach to be viable (first product a 1.6T gearboxed AOC). Credo can scale/bundle/cross-sell; <=5m served by Credo/Broadcom/Marvell copper AEC. |
+
+**Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.

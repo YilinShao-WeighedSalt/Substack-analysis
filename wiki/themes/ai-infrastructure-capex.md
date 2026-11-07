@@ -4,7 +4,7 @@ title: "AI Infrastructure & Hyperscaler Capex"
 tags: []
 related: []
 created: 2024-01-27
-updated: 2026-09-17
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-01-27
 ---
@@ -161,3 +161,6 @@ The AI infrastructure capex theme emerged in early 2024 as IrrationalAnalysis an
 
 ## Update 2026-09-17 — moratoriums don't (yet) kill the buildout (SemiAnalysis)
 SemiAnalysis's parcel-by-parcel audit rebuts the viral "moratoriums are killing the US datacenter buildout" story. Of ~20GW nominally exposed to 400+ local/state instruments, **only ~2.3GW is genuinely delayed** (~1,525MW local across 3 projects + ~0.8GW from NY's order). The model still forecasts **+38GW US IT capacity in 2027 (>2x 2026)**. Plain terms — **"counting moratoriums ≠ counting megawatts":** a pause only bites a project if it reaches the parcel (county rules often stop at city lines), freezes an approval the developer still needs (most freeze *new* applications, not existing approvals), and doesn't expire first. Brownsville de-annexed 444 acres days before approving Elon's DC. The buildout is increasingly **behind-the-meter** (75GW firm BtM orders), which sidesteps grid-permitting entirely and is a net positive for on-site generation. Bullish for the whole AI-infra complex; a durable statewide moratorium wave would be the tell to watch.
+
+### 2026-11-07 update
+****The datacenter NIMBY backlash becomes a market event.** The Nov-3 midterms made local opposition to datacenters a bipartisan, electorally potent force: Texas elected a governor (Hinojosa) who ran on a construction moratorium, and backlash races broke across the country — triggering the Nov-5/6 'Black November' rout (Nasdaq −5.5%, SOX −12%, ~$2.5T off the Nasdaq-100). SemiAnalysis's framing: 2027 (+50GW) is largely already under construction and hard to stop; the real exposure is the **unstarted 2028 pipeline** (62GW US net adds, 70% in states that just voted), where a prolonged Texas TCEQ permit freeze (~30% of 2028 US GW) is the single biggest risk. Most candidates want conditions (pay your own grid costs, end tax breaks, report water) rather than outright bans — expensive and slow, but a route to 'yes.' TrendForce still models 2027 cloud capex +60% to $1.52T (forecast finalized before the shock).**

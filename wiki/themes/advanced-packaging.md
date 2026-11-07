@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-11-01
+updated: 2026-11-07
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -115,3 +115,6 @@ The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hamme
 
 ### 2026-11-01 update
 **CoWoS capacity goes land-grab; MLCC/substrate the parallel chokepoint.** TSMC near a deal to buy **two AUO display fabs** to convert to CoWoS (adds to AP7/AP8) — a way to add cleanroom floor fast vs years of greenfield; Kinsus exploring **aluminum nitride (AlN)** vs glass as a next-gen substrate (AlN's low-loss RF-substrate pedigree). Passives/substrate bottleneck: **SEMCO (009150.KS)** now 8 AI-MLCC LTAs cumulative >₩5T (latest ₩879.3B ≈ 23% of a quarter's sales); **Murata (6981.T)** committing ¥1T/5yr to >2× MLCC output; Ibiden +₩1.28T Gama substrate; Unimicron warns PCB-equipment lead times stretched to 30 months. **TC bonder vs hybrid bonding:** Hanmi hits 50% op margin on HBM thermocompression bonders — but Vik flags those margins hold only while HBM stays on TC and not copper-to-copper hybrid bonding (near-term hybrid-bonded stacks still cost too much).
+
+### 2026-11-07 update
+****A deadly laminate fire + a $3.7B ASE check underline the packaging squeeze.** A Nov-5 explosion/fire at **Panasonic's Hukou (Hsinchu) MEGTRON high-speed-laminate plant** (2 dead) took out ~4% of global high-end multilayer-board supply — M6-M8 AI-server laminate was already sold out, so overflow strains EMC/TUC/ITEQ/Nan Ya. **ASE** got MOEA approval for a **NT$123.7B (~$3.7B)** automated packaging/test expansion (largest Invest Taiwan case in memory); **Nvidia reportedly funding CoWoS-class capacity at ASE unit SPIL**; advanced packaging to pass traditional packaging for the first time in 2026 (~$28B capex, Yole). Substrate tightness broadening: Simmtech op profit >₩100B (4-yr high) on AI-server substrates; AT&S record quarter (AI substrates ~$200/unit vs single digits); Ibiden/Shinko/Isu Petasys/Daeduck expansions; China tungsten-drill-bit export squeeze; Powertech $400M panel-level JV with Broadcom; JNTC glass-core TGV qualified to Nvidia.**
