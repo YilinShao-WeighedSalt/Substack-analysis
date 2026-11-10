@@ -255,3 +255,10 @@ The two entries with concrete px@call data are [[irrationalanalysis]] at $16.53 
 
 **Resolution (Oct-7 batch, 30d):** SD LONG ($239.24, SpaceX $40B-Apollo / fresh 52-wk high) → $181.60 = **−24.1% LOSS ✗** — bought the exact top; −9% on the Black November day alone. SA opens NEUTRAL this run (TPU moat-erosion).
 **Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | NEUTRAL | 186.64 | Board opens independent probe into whether Huang was a foreign-intel (China) target a week before FQ3 (Nov 17); hardware thesis intact, succession + China-export scrutiny the overhang; fell 4.3% vs market +2%. |
+
+**Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=186.64); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.

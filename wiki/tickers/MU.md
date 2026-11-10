@@ -142,3 +142,10 @@ The only hard price anchor in the log is the irrationalanalysis January 2026 re-
 | 2026-11-05 | [[semidoped]] | NEUTRAL | 656.39 | Micron paused nearly all construction on the $3-4.5B Taiwan Fab 11E (Taoyuan) over a union pay fight (smaller union wants 15% of op profit in cash); delays new DRAM capacity in an already-short market but tightens supply. Taiwan makes ~60% of Micron's conventional DRAM. |
 
 **Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | NEUTRAL | 690.0 | Memory-price-leveling: channel check sees DRAM flattening Q1 and easing Q2 2027. |
+
+**Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=690.0); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.

@@ -4,15 +4,17 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-07
+updated: 2026-11-10
 handle: semianalysis
-calls_logged: 253
-hit_rate: "13/34 (38%), ~13 open"
+calls_logged: 255
+hit_rate: "13/34 (38%), ~15 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-10): holds 13/34 (38%), ~15 open — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14; the Oct-19 supplier longs ~Nov-18 (next runs). This run: **1 post (paywall-truncated field report), 2 soft mentions** — "We Visited China's Stargate in Inner Mongolia" (Nov-7) → NEUTRAL [[VNET]] + NEUTRAL [[300750.SZ]] (CATL). No explicit directional call; primary value is the theme (China DC vertical integration, 800V DC/SST, SGLS wind, sub-$3mm/MW capex). Opened at spot.
 
 **hit_rate note (2026-11-07): holds 13/34 (38%) — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14; the Oct-19 Datacenters-2027 supplier longs (VRT/STRL/ABB) ~Nov-18. This run: **4 posts, 1 call-bearing.** The marquee **"TPU Strikes the King"** (Nov-5) → new **LONG [[GOOGL]] $282.57** + **NEUTRAL [[NVDA]] $181.60**. The other three carried no priced ticker: **"SpaceX Will Be the World's Biggest AI"** (Nov-3, datacenter-model read — SpaceX private; behind-the-meter/Tesla-modular read-throughs), **"The Datacenter Backlash Goes Bipartisan"** (Nov-1, midterm/permitting macro — frames the Black-November selloff, 2027 buildout intact, fight is over 2028), **"GDPx"** (Nov-2, frontier-model-capability benchmark — Opus/Astra top, Gemini 4 Carbon notable). 1 directional + 1 neutral opened at spot.
 

@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-11-07
+updated: 2026-11-10
 ---
 
 # Wiki Index
@@ -15,11 +15,15 @@ updated: 2026-11-07
 - [[2317.TW]] — 2317.TW — Foxconn / Hon Hai
 - [[2382.TW]] — 2382.TW — Quanta Computer
 - [[2454.TW]] — 2454.TW — MediaTek
+- [[300750.SZ]] — 300750.SZ — CATL (Contemporary Amperex; DC green-power/storage pivot)
 - [[268A.T]] — 268A.T — Rigaku
 - [[285A.T]] — 285A.T — Kioxia
 - [[3661.TW]] — 3661.TW — Alchip Technologies
+- [[4183.T]] — 4183.T — Mitsui Chemicals (EUV-photoresist via JSR buy)
 - [[5801.T]] — 5801.T — Furukawa Electric
 - [[6506.T]] — 6506.T — Yaskawa Electric
+- [[6525.T]] — 6525.T — Kokusai Electric (deposition tools)
+- [[6669.TW]] — 6669.TW — Wiwynn (Wistron AI-server ODM)
 - [[6723.JP]] — 6723.JP — Renesas Electronics
 - [[6762.JP]] — 6762.JP — TDK Corporation
 - [[6857.T]] — 6857.T — Advantest
@@ -145,6 +149,7 @@ updated: 2026-11-07
 - [[TTMI]] — TTM Technologies
 - [[TXN]] — Texas Instruments
 - [[VICR]] — Vicor Corporation
+- [[VNET]] — VNET — 21Vianet (China colocation; CATL–Zhongheng power tie-up)
 - [[VRT]] — Vertiv
 - [[VSH]] — Vishay Intertechnology
 - [[VST]] — Vistra Energy
@@ -221,6 +226,8 @@ updated: 2026-11-07
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[semidoped-2026-11-09-daily-update-november-9th-2026]] — Huang spy probe, Mitsui–JSR ¥1.84T, TSMC denies 3D DRAM, Terafab 1M wafers/mo, MSFT returns Oracle GPUs
+- [[semianalysis-2026-11-07-china-stargate-inner-mongolia]] — China's Stargate: Envision Galaxy, 800V DC/SST, SGLS wind, vertical integration
 
 - [[irrationalanalysis-2026-10-30-intel-q3-2026-dead-inside]] — IA: Intel Q3 'Dead Inside' — wafer-limited not substrate-limited; SHORT INTC, LONG LITE, opposes Marvell/LITE
 - [[semidoped-2026-10-29-daily-update-october-29th-2026]] — SD: Marvell-LITE talks, Alphabet+Samsung miss, Azure +48%, SK Hynix ₩100T

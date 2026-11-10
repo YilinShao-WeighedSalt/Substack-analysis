@@ -129,3 +129,10 @@ The only price-anchored call in the log is irrationalanalysis's October 2024 men
 
 ## 2026-11-01 run update
 **2026-11-01 — CoWoS land-grab.** [[semidoped]] LONG ($406.13): near a deal to buy two AUO display fabs to convert to CoWoS (adds to AP7/AP8) — fast cleanroom floor vs greenfield into tight accelerator demand; Kinsus exploring AlN vs glass substrates. NB: the Sep-30 SD LONG ($456.19) resolved a **−11.0% LOSS** this cycle as the AI tape corrected — entry level, not thesis.
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | LONG | 375.44 | Rebuffs The Information's 3D-DRAM-for-Nvidia report, reaffirms pure logic foundry; Nvidia's memory land-grab validates ecosystem; +4.7%, Taiex 2nd-largest point gain. |
+
+**Outcome tracking (2026-11-10):** New LONG logged at spot (px@call=375.44); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.

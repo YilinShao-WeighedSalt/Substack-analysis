@@ -5,14 +5,16 @@ tags: []
 related: []
 created: 2026-04-24
 handle: semidoped
-updated: 2026-11-07
-calls_logged: 458
-hit_rate: "80/206 (39%), ~120 open"
+updated: 2026-11-10
+calls_logged: 470
+hit_rate: "80/206 (39%), ~132 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+**hit_rate note (2026-11-10): holds 80/206 (39%), ~132 open — no priced call crossed 30 days this run.** The Oct-11/12 batch resolves ~Nov-11/12 (next run). This run: **1 call-bearing daily (Nov-9)** + 3 educational (Nov-7 TIL, Nov-8 quiz, Nov-9 d-Matrix podcast = no calls). **12 new calls, all opened at spot:** 5 LONG ([[TSM]]/[[2382.TW]]/[[6669.TW]]/[[6525.T]]/[[4183.T]]) + 7 NEUTRAL ([[NVDA]]/[[005930.KS]]/[[MU]]/[[000660.KS]]/[[ORCL]]/[[CRWV]]/[[INTC]]). Book bias: **long the Taiwan/Japan AI-server & equipment metal, neutral on memory (margin-convergence peak signal), neoclouds (weak MOU→PO conversion), and Nvidia (Huang-probe overhang into Nov-17 earnings); 0 shorts.**
 
 **hit_rate note (2026-11-07): 80/191 → 80/206 (39%) — the Oct 5-7 top resolves a brutal 0W/15L.** The late-Sept/Oct-1 peak's successor batch round-tripped wholesale in Black November (entries made Oct 5-7, right at the Oct-6 record). Every priced long resolved red: **[[AXTI]] −56.3%** (worst), **[[VICR]] −54.9%**, **[[SNDK]] −51.4%**, **[[CIEN]] −48.0%**, **[[009150.KS]] −45.2%**, **[[AMAT]] −39.8%**, **[[AMD]] −37.7%**, **[[8035.T]] −33.4%**, **[[2454.TW]] −29.9%**, **[[IFX]] −29.0%**, **[[NVDA]] −24.1%**, **[[AVGO]] −22.4%**, **[[CEG]] −20.2%**, **[[GOOGL]] −18.7%**, **[[2317.TW]] −10.9%** (shallowest). (TSM/INTC/MU/QCOM/MRVL/CIEN-neut/BE Oct 5-7 were NEUTRAL, excluded.) This run: **5 dailies (Nov 2-6)** spanning the Marvell–Lumentum deal and Black November — **17 LONG** (009150/005930/000660/AMD/SMCI/LSCC/TSEM/ETN/ON/GEV/IFX/ARM/COHR/AAOI/BE/ASX) + **3 NEUTRAL** (MU/QCOM + MRVL, plus LITE neut). Book bias: **long the metal, neutral on the shaken AI-credit & Marvell complex (0 shorts).** Opened in a −5.5% tape; Nov-2→4 longs already underwater.
 

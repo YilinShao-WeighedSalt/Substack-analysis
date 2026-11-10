@@ -158,3 +158,10 @@ The two calls with explicit px@call values — irrationalanalysis at $81.4 (2026
 
 ## 2026-11-01 run update
 **2026-11-01 — Q3 implosion.** Intel −23% AH / ~−30% next day on a revenue-forecast miss (weak PC + DC-chip supply snags); week's selloff epicenter. [[irrationalanalysis]] flips to an explicit **SHORT** ($65.76): wafer-limited by planning incompetence, not substrates (SKU yield-harvest + 6-mo wafer-cycle tells). [[semidoped]] NEUTRAL, concerned on mounting cash burn + AMD/Arm share pressure. The late-Oct-27 SD LONG ($93.74) is now ~−30% underwater. Stock at the 3-mo low $65.76.
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | NEUTRAL | 56.28 | Reportedly coordinating 2nm/1.4nm logic support for Musk's Terafab — but SD skeptical of the 1M-wafer/mo-by-2032 target. |
+
+**Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=56.28); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.

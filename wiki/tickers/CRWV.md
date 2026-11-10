@@ -62,3 +62,10 @@ No px@call values exist for any entry, so price-based outcome verification is no
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Sep-30 **LONG ($87.12) → $54.87 = −37.0% LOSS ✗** — neocloud credit fears + the AI-trade correction hammered CoreWeave.
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | NEUTRAL | 46.4 | Industry check: only 30-40% of neocloud first-phase MOUs convert to binding POs; reports this week. |
+
+**Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=46.4); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.

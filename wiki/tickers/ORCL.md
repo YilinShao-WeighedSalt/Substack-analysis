@@ -39,3 +39,10 @@ No px@call values are recorded across any of the eleven entries, so price-level 
 **Update 2026-07-04:** the consensus bull thesis took its first real crack this week from two independent sources in the same week — a rare same-direction signal. SemiAnalysis, in its Meta-compute piece, singled out Oracle as having *under-monetized its gigawatts* versus SpaceX's premium-pricing playbook ("a massive blow," valuation divergence illustrated). Separately, Oracle *itself* warned its AI datacenter investment "may not pay off" and listed customer non-payment as a risk on the $300B Stargate/OpenAI contract (via semidoped). First priced calls logged at $141.01: SemiAnalysis SHORT/critical, semidoped CAUTIOUS. Stance moved long→mixed, conviction high→medium. The monetization-efficiency and Stargate-counterparty risks are now the active falsifiers, layered on the earlier permitting/pipeline delays.
 
 **Update 2026-09-14:** [[semidoped]] LONG @ 150.28 (opened at spot this scan).
+
+## 2026-11-10 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-10 | [[semidoped]] | NEUTRAL | 116.1 | Microsoft winds down 2023 older-GPU lease (non-renewal); Oracle says demand 'remains strong, including earlier-gen GPUs.' |
+
+**Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=116.1); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.
