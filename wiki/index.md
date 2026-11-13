@@ -205,6 +205,7 @@ updated: 2026-11-10
 - [[modular-datacenter-construction]] — factory-built 'LEGO' datacenters; labor shortage + speed=revenue
 
 ## Queries
+- [[nvda-post-jensen-structural-bear-vs-roadmap-intact]] — NVDA after Jensen: SemiAnalysis structural bear vs Semi Doped roadmap-intact NEUTRAL
 
 - [[marvell-lumentum-deal]] — Marvell's bid for Lumentum: vertical-integration logic vs. standalone-moat value (IA opposes)
 - [[memory-longs-vs-sovereign-shareholder-tension]] — Memory: Semi Doped's persistent longs vs SemiAnalysis's sovereign/shareholder caution
@@ -226,6 +227,10 @@ updated: 2026-11-10
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[semianalysis-2026-11-12-nvidia-and-the-world-without-jensen]] — Jensen resigns: no successor bench, supply-chain/backstop grip loosens, RASA ascendant → structural SHORT NVDA
+- [[semidoped-2026-11-12-jensen-huang-resigns]] — Episode: governance > shareholder value, no succession plan, bureaucracy risk; AMD's opening
+- [[semidoped-2026-11-11-daily-update-november-11th-2026]] — Prosecutor probes Huang, CoreWeave beats+raises, Anthropic IPO terms, TSMC buys into Anthropic+OpenAI, AMD 6th-Gen EPYC ships
+- [[semidoped-2026-11-10-daily-update-november-10th-2026]] — Nvidia lawyer contacted Megaspeed investigators, Google adds 2 TPUs on AMD hosts, TSMC record month, Infineon DC-power doubles, Rapidus behind on 2nm
 - [[semidoped-2026-11-09-daily-update-november-9th-2026]] — Huang spy probe, Mitsui–JSR ¥1.84T, TSMC denies 3D DRAM, Terafab 1M wafers/mo, MSFT returns Oracle GPUs
 - [[semianalysis-2026-11-07-china-stargate-inner-mongolia]] — China's Stargate: Envision Galaxy, 800V DC/SST, SGLS wind, vertical integration
 

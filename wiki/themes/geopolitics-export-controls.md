@@ -4,7 +4,7 @@ title: "Semiconductor Geopolitics & Export Controls"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-10-23
+updated: 2026-11-13
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -82,3 +82,9 @@ Two China workarounds advanced this run. **DeepSeek open-sourced six programming
 
 ## 2026-10-23 update — the Huawei-DeepSeek symbiosis hardens
 SemiAnalysis's **Huawei-DeepSeek symbiosis** ([[semianalysis-2026-10-21-huawei-deepseek]]): Huawei has silicon (Ascend) but no frontier lab; DeepSeek has models but no compute — so DeepSeek's Sep-30 release of **Ascend support for TileLang/DeepGEMM/DeepEP/FlashMLA/etc.** is the artifact of a trade routed "through the kernel-authoring language," and SA expects DeepSeek primarily on Huawei's stack by 2027-28. Ascend 950PR benches ~A100-to-MI300X-class *silicon* ("~5 years behind A100") but **software right at the frontier** (best kernels 99.7% of GEMM ceiling); Huawei bins both compute *and* memory into SKUs. Caveat: optimizations are supernode/ARM-centric, so x86 support is broken — the partnership helps DeepSeek more than everyone else. Alongside: **US bars DeepSeek from federal systems**; the **CUDA-moat challengers multiplied** (Amazon TorchNeuron on Trainium, Google TorchTPU, an AMD+Intel oneDNN x86 pact in PyTorch) even as China still placed **>$35B in Nvidia orders** (ByteDance/Alibaba/Tencent).
+
+## 2026-11-13 update — Jensen out, RASA ascendant (the controls hawks win)
+The China-controls fight became the Nvidia-CEO fight. SemiAnalysis's **"Nvidia and the World Without Jensen"** ([[semianalysis-2026-11-12-nvidia-and-the-world-without-jensen]]) reads **Jensen Huang's forced resignation (Nov-12)** as partly a Washington power play: with AI's loudest anti-restriction voice gone, SA expects **RASA and much harsher controls to move fast.**
+- **RASA = Remote Access Security Act** (plain language): a bill to stop Chinese firms **renting** US GPUs remotely (via overseas neoclouds) that they aren't allowed to import. Passed the **House 369-22** (Jan-12), approved by House Foreign Affairs 51-0, stuck in Senate Banking — now the hot DC topic, with a Senate vote in play during a lame-duck session. Nvidia and Oracle lobbied hard against it. Neoclouds in Asia/Australia/ME/Nordics/Europe/Canada/US reportedly sell capacity to Chinese firms → all would be hit.
+- **SA's contrarian warning:** cutting China off entirely only accelerates its move onto domestic **Huawei Ascend / DeepSeek** stacks (already: Z.ai GLM-5 on 7 domestic accelerators, DeepSeek V4 on Ascend, Meituan LongCat 2.0 pretrained on Ascend 910B) and kills the open-source feedback loop (MSA/DeepEP/DeepGEMM/FlashKDA) that western startups and engines (SGLang, vLLM) depend on. SA prefers **Biden-style diffusion rules** (ban in-China export, allow remote access by trusted clouds) over RASA.
+- **The smuggling evidence** (why the hawks have ammunition): SA's Accelerator Model counts **>1.5GW of restricted Nvidia chips** that reached China (Commerce now agrees). Two prosecuted rings: **SuperMicro / Wally Liaw $2.5B** (US v. Liaw, SDNY — dummy-server audit fraud, hair-dryer sticker swaps; Willy Sun pleaded guilty) and the **Keelung, Taiwan B300 ring** (9 indicted incl. an Nvidia Taiwan senior manager; 130 B300 servers, 74 reached China via a fake Japan end-user). Nov-10/11 adds: Nvidia GC **Tim Teter** contacted the Megaspeed investigators (now a DOJ criminal case); **Northwestern Polytechnical Univ** (Entity List) bought H200s via a reseller; **Moonshot AI** renting B300 servers inside China. → [[NVDA]], [[geopolitics-export-controls]], [[nvidia-gpu-platform]].

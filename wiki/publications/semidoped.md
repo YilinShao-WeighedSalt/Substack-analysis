@@ -5,14 +5,18 @@ tags: []
 related: []
 created: 2026-04-24
 handle: semidoped
-updated: 2026-11-10
-calls_logged: 470
-hit_rate: "80/206 (39%), ~132 open"
+updated: 2026-11-13
+calls_logged: 476
+hit_rate: "81/221 (37%), ~121 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+**hit_rate note (2026-11-13): 80/206 → 81/221 (37%) — the Oct-11/14 OCP-top batch resolves a brutal 1W/14L.** The entries were made right at the Oct-6→14 OCP top, straight into Black November. Only win: **[[AMZN]] Oct-12 ($258.58→$266.17 +2.9% ✓)**. 14 losses: **[[MRVL]] −37.2%**, **[[VICR]] −37.1%**, **[[LITE]] −34.4%**, **[[CRDO]] −28.7%**, **[[CIEN]] −26.1%**, **[[NVDA]] Oct-12 −24.0%** & **Oct-14 −20.0%**, **[[BE]] −20.5%**, **[[AMAT]] −14.9%**, **[[000660.KS]] −12.1%**, **[[ASML]] −10.7%**, **[[AMD]] −8.7%**, **[[TSM]] −7.1%**, **[[MSFT]] −4.1%**. (MSFT Oct-13 Maia-300 was LONG; the shallowest loser.) This run: **3 new posts (Nov-10/11 dailies + Nov-12 "Jensen Resigns" episode)** dominated by **Jensen Huang's resignation** → **4 LONG** ([[AMD]]/[[TSM]]/[[GOOGL]]/[[IFX]]) + **2 NEUTRAL** ([[NVDA]]/[[CRWV]]). Book bias: **long the Jensen-exit beneficiaries (AMD's opening, TSMC's insatiable demand, Google TPU expansion, Infineon DC-power doubling), neutral on Nvidia (succession/China overhang into Nov-17 earnings) and CoreWeave (beat/raise eases funding fear but bonds >16% junk); 0 shorts.**
+
+- **Jensen Resigns + Daily Updates Nov 10-11 (2026-11-10…12):** **Nov-12 episode** — board governance must trump shareholder value even for a founder; **no succession plan (only Ian Buck internal; Rene Haas external)**; long-term fear is decay into spreadsheet-CEO bureaucracy (the Intel tale); Nvidia's vacuum is **AMD's** moment ("foot on the gas") → **NEUT [[NVDA]]**, **LONG [[AMD]]**. **Nov-11:** **CoreWeave Q3 +168% to $3.66B, raises FY26 to $13.0-13.3B, $132.5B backlog, ~$9B prepayments** but bonds >16% junk → **NEUT [[CRWV]]**; **Anthropic IPO $70-78/sh (ANT), ~$1.4T, $900.9B committed compute**; **TSMC buys up to $500M each of Anthropic & OpenAI + $40.9B capex + NT$9 dividend, "insatiable" demand** → **LONG [[TSM]]**; **AMD 6th-Gen EPYC (Zen 6, 2nm, Meta lead) shipping as its own AI product** → reaffirm LONG AMD. **Nov-10:** **Google adds TPU 8tx (confidential-compute, AMD EPYC host) + 8i Max (2-chip, 2× BW)** → **LONG [[GOOGL]]**; EPYC host CPU at >10 hyperscalers; **TSMC record Oct (+59.7% YoY)** → reaffirm LONG TSM; **Infineon FY27 ~€20B, DC-power revenue ~doubles to €4B, >€10B reservation pipeline** → **LONG [[IFX]]**; Nvidia DOJ criminal probe + shareholder suit (−4.3%); Rapidus behind on 2nm SRAM. New concept knowledge: RASA/Megaspeed-smuggling/Jensen-exit to [[geopolitics-export-controls]]; founder-CEO-succession-risk / 60-direct-reports / Jensen-put to [[nvidia-gpu-platform]]; TPU-8tx/8i-Max + EPYC-host-socket to [[custom-silicon-asic]]; Infineon-DC-power-doubling to [[datacenter-power]]; CoreWeave-junk-bonds + Anthropic-$900B to [[ai-debt-financing]]. (→ [[nvidia-gpu-platform]], [[custom-silicon-asic]], [[datacenter-power]], [[ai-debt-financing]], [[geopolitics-export-controls]].)
 
 **hit_rate note (2026-11-10): holds 80/206 (39%), ~132 open — no priced call crossed 30 days this run.** The Oct-11/12 batch resolves ~Nov-11/12 (next run). This run: **1 call-bearing daily (Nov-9)** + 3 educational (Nov-7 TIL, Nov-8 quiz, Nov-9 d-Matrix podcast = no calls). **12 new calls, all opened at spot:** 5 LONG ([[TSM]]/[[2382.TW]]/[[6669.TW]]/[[6525.T]]/[[4183.T]]) + 7 NEUTRAL ([[NVDA]]/[[005930.KS]]/[[MU]]/[[000660.KS]]/[[ORCL]]/[[CRWV]]/[[INTC]]). Book bias: **long the Taiwan/Japan AI-server & equipment metal, neutral on memory (margin-convergence peak signal), neoclouds (weak MOU→PO conversion), and Nvidia (Huang-probe overhang into Nov-17 earnings); 0 shorts.**
 

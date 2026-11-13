@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-10
+updated: 2026-11-13
 handle: semianalysis
-calls_logged: 255
-hit_rate: "13/34 (38%), ~15 open"
+calls_logged: 256
+hit_rate: "13/34 (38%), ~16 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-13): holds 13/34 (38%), ~16 open — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14 (one day out); the Oct-19 Datacenters-2027 supplier longs ~Nov-18 (next runs). This run: **1 post, 1 call-bearing** — the marquee **"Nvidia and the World Without Jensen"** (Nov-12) on Jensen Huang's forced resignation → new **structural SHORT [[NVDA]] $173.73** (no deep successor bench; the HBM/logic supply stranglehold, ~$3/Gb HBM4 edge and $530B neocloud backstop were personal to Jensen and loosen with him gone → SA models >70% of 2028 capacity non-Nvidia; China hawks & RASA now win). SA's **first structurally-bearish NVDA stance** — opens a contradiction vs SemiDoped's roadmap-intact NEUTRAL ([[nvda-post-jensen-structural-bear-vs-roadmap-intact]]). Opened at spot. New concept knowledge: RASA / Megaspeed-smuggling / >1.5GW-diverted + diffusion-vs-RASA to [[geopolitics-export-controls]]; founder-CEO succession risk / 60-direct-reports / Jensen-put to [[nvidia-gpu-platform]].
+
+- **Nvidia and the World Without Jensen (2026-11-12, paywalled, full body served).** SemiAnalysis's structural read on Jensen's resignation (after only four days as the board probe went public): a real conduct issue **plus** a Washington power play — SA's Accelerator Model counts **>1.5GW** of restricted Nvidia chips in China, and SA believes the intelligence community pushed Jensen out to clear **RASA** (passed House 369-22) and harsher controls. SA's contrarian warning: fully cutting China off only accelerates its move to Ascend/DeepSeek and kills the open-source feedback loop western startups rely on; Biden-style diffusion rules make more sense. On the stock: ~60 direct reports / no 1:1s / ~42k employees = a kingdom with **no deep successor bench** (only Ian Buck / Jonah Alben internally; Rene Haas external); founder bets die under professional managers; **"customers bought Jensen, not just GPUs"** ($530B gross off-B/S guarantees, the "Jensen put"); the **supply-chain stranglehold loosens** (Korea HBM4 ~$3.0-3.3/Gb for Nvidia vs $3.7-4.1 for others; Taiwan logic) → **>70% of 2028 capacity possibly non-Nvidia**. Enforcement detail: SuperMicro/Wally-Liaw $2.5B + Keelung B300 ring (9 indicted). → **SHORT [[NVDA]] $173.73**; positive read-through [[AMD]]/[[AVGO]]/[[GOOGL]]/[[AMZN]] (no priced call). (→ [[nvidia-gpu-platform]], [[geopolitics-export-controls]], [[custom-silicon-asic]], [[ai-debt-financing]].)
 
 **hit_rate note (2026-11-10): holds 13/34 (38%), ~15 open — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14; the Oct-19 supplier longs ~Nov-18 (next runs). This run: **1 post (paywall-truncated field report), 2 soft mentions** — "We Visited China's Stargate in Inner Mongolia" (Nov-7) → NEUTRAL [[VNET]] + NEUTRAL [[300750.SZ]] (CATL). No explicit directional call; primary value is the theme (China DC vertical integration, 800V DC/SST, SGLS wind, sub-$3mm/MW capex). Opened at spot.
 

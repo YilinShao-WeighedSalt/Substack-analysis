@@ -2,13 +2,13 @@
 type: ticker
 title: "CRWV — CoreWeave"
 tags: []
-related: ["[[semidoped-2026-10-23-daily-update]]", "[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
+related: ["[[semidoped-2026-11-11-daily-update-november-11th-2026]]", "[[semidoped-2026-10-23-daily-update]]", "[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[irrationalanalysis-2025-03-22-tales-from-gtc-week]]", "[[semianalysis-2025-03-26-gpu-cloud-clustermax-rating-system]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-06-18-daily-update]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2025-03-22
-updated: 2026-10-26
+updated: 2026-11-13
 ticker: CRWV
-current_stance: long
+current_stance: mixed
 conviction: low
-last_review: 2026-11-01
+last_review: 2026-11-13
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -69,3 +69,10 @@ No px@call values exist for any entry, so price-based outcome verification is no
 | 2026-11-10 | [[semidoped]] | NEUTRAL | 46.4 | Industry check: only 30-40% of neocloud first-phase MOUs convert to binding POs; reports this week. |
 
 **Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=46.4); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.
+
+## 2026-11-13 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-11 | [[semidoped]] | NEUTRAL | 60.77 | Q3 beat (+168% to $3.66B vs $3.55B est) & raise (FY26 rev $13.0–13.3B, adj op income +26%); backlog $132.5B, ~$9B customer prepayments incoming (answers the funding question); +13% premarket. But still −$709M net loss, $846M net interest, bonds >16% = firmly junk / high default risk. |
+
+**Outcome tracking (2026-11-13):** New NEUTRAL @60.77 — the beat/raise and $9B prepayments materially eased the funding-crunch fear that drove the stock to $46 (now +31% off the Nov-10 mark), but Vik keeps it NEUTRAL because the capital structure (16%+ junk bonds against long GPU leases) is the unchanged risk. No priced directional CRWV call has resolved since the Sep-23 ClusterMAX batch (every call since is NEUTRAL, excluded from hit-rate). Stance mixed/low: an execution story fighting a balance-sheet story.
