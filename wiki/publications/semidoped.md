@@ -5,14 +5,16 @@ tags: []
 related: []
 created: 2026-04-24
 handle: semidoped
-updated: 2026-11-13
-calls_logged: 476
-hit_rate: "81/221 (37%), ~121 open"
+updated: 2026-11-16
+calls_logged: 481
+hit_rate: "81/227 (36%), ~120 open"
 ---
 ## Profile
 Semi Doped is a semiconductor-focused podcast and newsletter hosted by a rotating panel that includes regulars Vik Sekar (Vik's Newsletter) and Austin Lyons (Chipstrat). The publication's edge is deep technical fluency — it moves comfortably between physics (EUV optics, power delivery, hybrid bonding), supply-chain economics, and equity implications — without reducing analysis to surface-level narrative. Posts tend to be long-form, primary-source-driven, and willing to push back on viral claims (e.g., deflating the "EUV killer" framing around Huawei's tau scaling paper).
 
 ## Coverage
+
+**hit_rate note (2026-11-16): 81/221 → 81/227 (36%) — the Oct-15→17 batch resolves 0W/6L.** The mid-October longs round-tripped through Black November: **[[BE]] −18.8%** (AEP/Bloom 702MW Google PPA), **[[ASML]] −9.8%** (record Q/EUV sold-out), **[[TSM]] −5.6%** (×2: record-Q guide + AZ Fab 2), **[[SU.PA]] −5.6%** (2nd target raise), **[[2454.TW]] −3.1%** (ByteDance deal) — all ✗; entry near the Oct top, not thesis, decided each. (NEUTRALs excluded: 005930/000660/CRWV/BESI.) This run: **1 new call-bearing post (Nov-13 daily)** → **3 LONG** ([[AMAT]] record WFE/+30% 2027 guide, [[CSCO]] $9B AI-infra/P200 wins — first SD coverage, [[005930.KS]] Modine cooling M&A) + **2 NEUTRAL** ([[NBIS]] demand-not-buildings, +571% but guide cut −17%; [[CBRS]] beat + MSFT win but behind OpenAI tranches). Book bias: **long the records (WFE, networking, cooling), neutral on the neoclouds getting repriced on the buildings bottleneck; 0 shorts.** +5 calls (481 logged, ~120 open).
 
 **hit_rate note (2026-11-13): 80/206 → 81/221 (37%) — the Oct-11/14 OCP-top batch resolves a brutal 1W/14L.** The entries were made right at the Oct-6→14 OCP top, straight into Black November. Only win: **[[AMZN]] Oct-12 ($258.58→$266.17 +2.9% ✓)**. 14 losses: **[[MRVL]] −37.2%**, **[[VICR]] −37.1%**, **[[LITE]] −34.4%**, **[[CRDO]] −28.7%**, **[[CIEN]] −26.1%**, **[[NVDA]] Oct-12 −24.0%** & **Oct-14 −20.0%**, **[[BE]] −20.5%**, **[[AMAT]] −14.9%**, **[[000660.KS]] −12.1%**, **[[ASML]] −10.7%**, **[[AMD]] −8.7%**, **[[TSM]] −7.1%**, **[[MSFT]] −4.1%**. (MSFT Oct-13 Maia-300 was LONG; the shallowest loser.) This run: **3 new posts (Nov-10/11 dailies + Nov-12 "Jensen Resigns" episode)** dominated by **Jensen Huang's resignation** → **4 LONG** ([[AMD]]/[[TSM]]/[[GOOGL]]/[[IFX]]) + **2 NEUTRAL** ([[NVDA]]/[[CRWV]]). Book bias: **long the Jensen-exit beneficiaries (AMD's opening, TSMC's insatiable demand, Google TPU expansion, Infineon DC-power doubling), neutral on Nvidia (succession/China overhang into Nov-17 earnings) and CoreWeave (beat/raise eases funding fear but bonds >16% junk); 0 shorts.**
 

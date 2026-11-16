@@ -48,3 +48,6 @@ No px@call values are available across any of the three entries, so quantitative
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 162.45 (BESI.AS) (2026-10-22). Opened at spot.
 
 **Update 2026-10-29:** AMAT raising its equity stake is a conviction signal that cuts against the Oct-15 SemiAnalysis ASML-bonder SHORT (see query). current_stance long.
+
+## 2026-11-16 run update
+**Resolution (30d):** [[semianalysis]] Oct-15 **SHORT** (€163.40, ASML building a D2W hybrid bonder onto Besi's one moat; HBM D2W slips to 2029+) → €154.10 = price −5.7%, **short +5.7% WIN ✓**. The first scored point for SA's bonder-disruption thesis against SD's "+96% orders / AMAT 20% stake" bull case — see [[asml-hybrid-bonder-vs-besi-orders]]. SD's own Oct-16 NEUTRAL (€163.40) is excluded from scoring.

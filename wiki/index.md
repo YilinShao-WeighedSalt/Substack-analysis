@@ -227,6 +227,7 @@ updated: 2026-11-10
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[semidoped-2026-11-13-daily-update-november-13th-2026]] — SD: Washington piles on Nvidia (DOJ probes + ≥4 export bills); AMAT record WFE +30% 2027 guide; Cisco $9B AI-infra; Nebius/Cerebras = demand not buildings; Samsung eyes Modine for DC cooling
 - [[semianalysis-2026-11-12-nvidia-and-the-world-without-jensen]] — Jensen resigns: no successor bench, supply-chain/backstop grip loosens, RASA ascendant → structural SHORT NVDA
 - [[semidoped-2026-11-12-jensen-huang-resigns]] — Episode: governance > shareholder value, no succession plan, bureaucracy risk; AMD's opening
 - [[semidoped-2026-11-11-daily-update-november-11th-2026]] — Prosecutor probes Huang, CoreWeave beats+raises, Anthropic IPO terms, TSMC buys into Anthropic+OpenAI, AMD 6th-Gen EPYC ships

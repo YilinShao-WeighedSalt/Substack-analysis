@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semi Scan — 2026-11-16</title>
+<meta name="description" content="Visual intelligence brief from semiconductor Substacks — scan of 2026-11-13 to 2026-11-16.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;padding:0 16px;}
+.wrap{max-width:1000px;margin:0 auto;padding:28px 0 72px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1,h2,h3{line-height:1.15;margin:0}
+section{margin-top:34px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:12px}
+/* masthead */
+.mast{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;justify-content:space-between;
+  border-bottom:1px solid var(--border);padding-bottom:18px}
+.mast h1{font-size:30px;letter-spacing:-.02em}
+.mast .sub{color:var(--sec);font-size:14px;margin-top:6px}
+.srcs{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--sec)}
+.srcs span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.d-ir{background:var(--pub-irrational)} .d-sa{background:var(--pub-semianalysis)} .d-sd{background:var(--pub-semidoped)}
+/* run status */
+.status{margin-top:16px;font-size:13px;color:var(--sec);background:var(--surface-2);
+  border:1px solid var(--border);border-radius:10px;padding:11px 14px}
+.status b{color:var(--ink)}
+.ok{color:var(--pub-semidoped);font-weight:700} .no{color:var(--muted);font-weight:700}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:15px 16px}
+.tile .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.tile .v{font-family:var(--mono);font-size:30px;font-weight:600;margin-top:6px;letter-spacing:-.01em}
+.tile .n{font-size:12px;color:var(--sec);margin-top:3px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:11px;gap:2px;background:transparent}
+.distbar i{display:block}
+.leg{display:flex;gap:10px;font-size:11px;color:var(--sec);margin-top:7px;flex-wrap:wrap}
+.leg span{display:inline-flex;align-items:center;gap:4px}
+.sq{width:8px;height:8px;border-radius:2px}
+/* call board */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+.board-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+thead th{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:700;
+  text-align:left;padding:11px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody td{padding:12px;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody tr:last-child td{border-bottom:none}
+.tk{font-family:var(--mono);font-weight:600;font-size:14px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.c-long{color:var(--long);background:color-mix(in srgb,var(--long) 13%,transparent)}
+.c-short{color:var(--short);background:color-mix(in srgb,var(--short) 13%,transparent)}
+.c-neut{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 15%,transparent)}
+.srccell{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--sec);white-space:nowrap}
+.th{color:var(--sec);font-size:12.5px;max-width:360px}
+.th b{color:var(--ink)}
+.px{font-family:var(--mono);font-weight:600;white-space:nowrap}
+.pl{font-family:var(--mono);font-weight:600;font-size:12px}
+.pl .new{color:var(--muted);font-weight:700;font-size:10px;letter-spacing:.05em}
+.ctx{font-size:11px;color:var(--muted);font-family:var(--mono)}
+.gain{color:var(--gain)} .loss{color:var(--loss)}
+/* spotlights */
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px}
+.spot .top{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.spot .tk2{font-family:var(--mono);font-weight:700;font-size:18px}
+.spot .co{font-size:12px;color:var(--muted);margin-top:1px}
+.spot .big{font-family:var(--mono);font-size:22px;font-weight:600;text-align:right}
+.spot .chg{font-size:11px;font-family:var(--mono);text-align:right;margin-top:1px}
+.spot .chart{margin:12px 0 4px}
+.spot .chart svg{width:100%;height:68px;display:block}
+.rng{margin:12px 0 6px}
+.rng .lab{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);font-family:var(--mono);margin-bottom:4px}
+.rngbar{position:relative;height:6px;background:var(--surface-2);border-radius:3px}
+.rngbar i{position:absolute;top:50%;width:11px;height:11px;border-radius:50%;transform:translate(-50%,-50%);
+  background:var(--surface);border:2.5px solid var(--accent)}
+.rngfill{position:absolute;top:0;height:100%;border-radius:3px;background:color-mix(in srgb,var(--accent) 22%,transparent)}
+.bul{list-style:none;padding:0;margin:10px 0 0;font-size:12.5px;color:var(--sec)}
+.bul li{padding-left:15px;position:relative;margin-top:6px}
+.bul li::before{content:"";position:absolute;left:0;top:7px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
+/* scorecards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;border-top:3px solid var(--base)}
+.card.ir{border-top-color:var(--pub-irrational)} .card.sa{border-top-color:var(--pub-semianalysis)} .card.sd{border-top-color:var(--pub-semidoped)}
+.card h3{font-size:15px;display:flex;align-items:center;gap:7px}
+.card .meta{font-size:11.5px;color:var(--muted);margin-top:3px}
+.meter{margin:12px 0 4px}
+.meter .mt{display:flex;justify-content:space-between;font-size:11px;color:var(--sec);margin-bottom:5px}
+.meter .mt b{color:var(--ink);font-family:var(--mono)}
+.mbar{height:7px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.mbar i{display:block;height:100%;background:var(--accent);border-radius:4px}
+.plist{list-style:none;padding:0;margin:12px 0 0;font-size:12px}
+.plist li{display:flex;gap:7px;align-items:flex-start;padding:5px 0;border-top:1px solid var(--border);color:var(--sec)}
+.plist li:first-child{border-top:none}
+.plist .tk3{font-family:var(--mono);font-weight:600;color:var(--ink);white-space:nowrap}
+.none{font-size:12.5px;color:var(--muted);margin-top:10px;font-style:italic}
+/* jargon */
+.jg{display:grid;grid-template-columns:1fr 1fr;gap:0 26px}
+.jg dl{margin:0;display:contents}
+.jrow{display:flex;gap:9px;padding:9px 0;border-bottom:1px solid var(--border);font-size:12.5px}
+.jrow .t{font-family:var(--mono);font-weight:600;color:var(--ink);flex:0 0 118px}
+.jrow .m{color:var(--sec)}
+/* themes */
+.tbars{display:flex;flex-direction:column;gap:9px}
+.trow{display:grid;grid-template-columns:168px 1fr 26px;align-items:center;gap:10px;font-size:12.5px}
+.trow .tl{color:var(--sec);text-align:right}
+.tbar{height:16px;background:color-mix(in srgb,var(--accent) 78%,transparent);border-radius:0 4px 4px 0}
+.trow .tv{font-family:var(--mono);color:var(--muted);font-size:11px}
+.foot{margin-top:46px;padding-top:16px;border-top:1px solid var(--border);font-size:11.5px;color:var(--muted)}
+@media(max-width:760px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .spots{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .jg{grid-template-columns:1fr}
+  .trow{grid-template-columns:120px 1fr 24px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- 1. MASTHEAD -->
+<div class="mast">
+  <div>
+    <h1>Semiconductor Scan</h1>
+    <div class="sub mono">2026-11-13 → 2026-11-16 · 3-day loop</div>
+  </div>
+  <div class="srcs">
+    <span><i class="dot d-ir"></i>Irrational Analysis</span>
+    <span><i class="dot d-sa"></i>SemiAnalysis</span>
+    <span><i class="dot d-sd"></i>Semi Doped</span>
+  </div>
+</div>
+
+<!-- 2. RUN STATUS -->
+<div class="status">
+  <span class="ok">✓ semidoped</span> 1 new call-bearing post (Nov-13 daily; Nov-14 TIL + Nov-15 pub-quiz = no priced calls).
+  &nbsp;<span class="no">— irrationalanalysis</span> no post in window (last Nov-6).
+  &nbsp;<span class="no">— semianalysis</span> no new post (last Nov-12, already ingested).
+  Prices via yfinance 3-mo closes; <b>P/E + analyst-consensus host egress-blocked → those panels omitted, not fabricated.</b> All 5 calls are <b>fresh (Nov-13)</b> — P&L-to-call is 0; sparklines show the 3-mo path <em>into</em> the call.
+</div>
+
+<!-- 3. HERO TILES -->
+<section>
+<div class="tiles">
+  <div class="tile"><div class="k">Posts scanned</div><div class="v">1</div><div class="n">+2 educational, skipped</div></div>
+  <div class="tile"><div class="k">Tickers priced</div><div class="v">5</div><div class="n">+6 resolved to grade</div></div>
+  <div class="tile"><div class="k">Calls logged</div><div class="v">5</div>
+    <div class="distbar">
+      <i style="flex:3;background:var(--long)"></i><i style="flex:2;background:var(--neutral)"></i>
+    </div>
+    <div class="leg">
+      <span><i class="sq" style="background:var(--long)"></i>3 ▲ Long</span>
+      <span><i class="sq" style="background:var(--neutral)"></i>2 ● Neutral</span>
+      <span><i class="sq" style="background:var(--short)"></i>0 ▼ Short</span>
+    </div>
+  </div>
+  <div class="tile"><div class="k">Book bias</div><div class="v" style="font-size:19px;line-height:1.3;margin-top:9px">Long the<br>metal</div><div class="n">records vs repricing</div></div>
+</div>
+</section>
+
+<!-- 4. CALL BOARD -->
+<section>
+<div class="eyebrow">Call Board · one row per logged call</div>
+<div class="board-wrap">
+<table>
+<thead><tr>
+  <th>Ticker</th><th>Dir</th><th>Source</th><th>Thesis · track-record clause</th><th>Px@call</th><th>3-mo path</th><th>P&amp;L→call</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td class="tk">AMAT</td>
+  <td><span class="chip c-long">▲ LONG</span></td>
+  <td><span class="srccell"><i class="dot d-sd"></i>Semi Doped</span></td>
+  <td class="th"><b>Record FQ4 $10.41B (+53%); equipment +64%; guides WFE spend +30% in 2027</b> — "customers want tools sooner." SD's prior AMAT longs are −6% since Oct-27 as the group derated.</td>
+  <td class="px">$370.50</td>
+  <td><span id="s-AMAT"></span><div class="ctx" data-pl="AMAT"></div></td>
+  <td class="pl"><span class="new">NEW ●</span> 0.0%</td>
+</tr>
+<tr>
+  <td class="tk">CSCO</td>
+  <td><span class="chip c-long">▲ LONG</span></td>
+  <td><span class="srccell"><i class="dot d-sd"></i>Semi Doped</span></td>
+  <td class="th"><b>Record FQ1 $18.5B (+24%, fastest in 15yr); AI-infra guide raised to $9B; 3 new hyperscaler wins</b> (2× Silicon One P200, 1× 1.6T optics). First SD coverage — "time to go deeper."</td>
+  <td class="px">$95.64</td>
+  <td><span id="s-CSCO"></span><div class="ctx" data-pl="CSCO"></div></td>
+  <td class="pl"><span class="new">NEW ●</span> 0.0%</td>
+</tr>
+<tr>
+  <td class="tk">NBIS</td>
+  <td><span class="chip c-neut">● NEUTRAL</span></td>
+  <td><span class="srccell"><i class="dot d-sd"></i>Semi Doped</span></td>
+  <td class="th"><b>Rev +571% to $981M but 2026 guide trimmed — capacity slipped to 2027; stock −17%.</b> Bottleneck is land/power/construction, not chips. SD's prior Oct-1 long is −51%.</td>
+  <td class="px">$115.88</td>
+  <td><span id="s-NBIS"></span><div class="ctx" data-pl="NBIS"></div></td>
+  <td class="pl"><span class="new">NEW ●</span> 0.0%</td>
+</tr>
+<tr>
+  <td class="tk">CBRS</td>
+  <td><span class="chip c-neut">● NEUTRAL</span></td>
+  <td><span class="srccell"><i class="dot d-sd"></i>Semi Doped</span></td>
+  <td class="th"><b>Beat (core rev $231M +70%); adds Microsoft as 3rd hyperscaler</b> — but admits it is behind on OpenAI's first tranches, back on schedule 2H27. IA also sits NEUTRAL post-Culper.</td>
+  <td class="px">$108.72</td>
+  <td><span id="s-CBRS"></span><div class="ctx" data-pl="CBRS"></div></td>
+  <td class="pl"><span class="new">NEW ●</span> 0.0%</td>
+</tr>
+<tr>
+  <td class="tk">005930.KS</td>
+  <td><span class="chip c-long">▲ LONG</span></td>
+  <td><span class="srccell"><i class="dot d-sd"></i>Semi Doped</span></td>
+  <td class="th"><b>In talks to buy Modine ($5.6B, cooling) — a N. American cooling base after FläktGroup</b>; told BofA it sees <em>no</em> order cuts post-midterms. Higher rack density → cooling the next land-grab.</td>
+  <td class="px">₩207,000</td>
+  <td><span id="s-005930"></span><div class="ctx" data-pl="005930.KS"></div></td>
+  <td class="pl"><span class="new">NEW ●</span> 0.0%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- 5. SPOTLIGHTS -->
+<section>
+<div class="eyebrow">Spotlights · the promoted names</div>
+<div class="spots">
+  <div class="spot">
+    <div class="top">
+      <div><div class="tk2">AMAT</div><div class="co">Applied Materials · LONG</div></div>
+      <div><div class="big">$370.50</div><div class="chg loss mono">−26.9% · 3mo</div></div>
+    </div>
+    <div class="chart" id="sp-AMAT"></div>
+    <div class="rng">
+      <div class="lab"><span id="lo-AMAT"></span><span>3-mo range</span><span id="hi-AMAT"></span></div>
+      <div class="rngbar"><div class="rngfill" id="rf-AMAT"></div><i id="rp-AMAT"></i></div>
+    </div>
+    <ul class="bul">
+      <li>WFE guide <b>+30% in 2027</b>, $11.1B next-Q guide beats; $2B buyback — the clearest "demand is real" signal in the post.</li>
+      <li>Austin's caveat: WFE is the bullwhip's tail — a demand air-pocket shows up here a quarter or two late.</li>
+    </ul>
+  </div>
+  <div class="spot">
+    <div class="top">
+      <div><div class="tk2">CSCO</div><div class="co">Cisco Systems · LONG</div></div>
+      <div><div class="big">$95.64</div><div class="chg loss mono">−14.0% · 3mo</div></div>
+    </div>
+    <div class="chart" id="sp-CSCO"></div>
+    <div class="rng">
+      <div class="lab"><span id="lo-CSCO"></span><span>3-mo range</span><span id="hi-CSCO"></span></div>
+      <div class="rngbar"><div class="rngfill" id="rf-CSCO"></div><i id="rp-CSCO"></i></div>
+    </div>
+    <ul class="bul">
+      <li>AI-infra revenue guide lifted to <b>$9B</b> (from $7.5B three months ago) — 18 AI design wins over 5 quarters.</li>
+      <li>Caveat: Silicon One is scale-out / scale-across only (not scale-up); product GM −3.5pts YoY on the mix.</li>
+    </ul>
+  </div>
+  <div class="spot">
+    <div class="top">
+      <div><div class="tk2">NBIS</div><div class="co">Nebius · NEUTRAL</div></div>
+      <div><div class="big">$115.88</div><div class="chg loss mono">−58.3% · 3mo</div></div>
+    </div>
+    <div class="chart" id="sp-NBIS"></div>
+    <div class="rng">
+      <div class="lab"><span id="lo-NBIS"></span><span>3-mo range</span><span id="hi-NBIS"></span></div>
+      <div class="rngbar"><div class="rngfill" id="rf-NBIS"></div><i id="rp-NBIS"></i></div>
+    </div>
+    <ul class="bul">
+      <li>Demand isn't the problem — <b>+571% rev</b>; the guide cut is third-party datacenter capacity slipping to 2027.</li>
+      <li>2027 capex plan $40–45B for only $12–13B rev; prepay/financing covers 75–85% of next year's spend.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- 6. SCORECARDS -->
+<section>
+<div class="eyebrow">Source scorecards · resolved-call track record</div>
+<div class="cards">
+  <div class="card sd">
+    <h3><i class="dot d-sd"></i>Semi Doped</h3>
+    <div class="meta">481 calls logged · ~120 open</div>
+    <div class="meter"><div class="mt"><span>Hit rate (resolved)</span><b>81/227 · 36%</b></div><div class="mbar"><i style="width:36%"></i></div></div>
+    <div class="meta" style="margin-top:8px">This run's Oct 15–17 batch resolved <b style="color:var(--loss)">0W / 6L</b> — the mid-Oct longs round-tripped through Black November (BE −18.8%, ASML −9.8%, TSM −5.6%, SU.PA −5.6%, 2454 −3.1%).</div>
+    <ul class="plist">
+      <li><span class="tk3">AMAT</span><span class="chip c-long" style="font-size:9px">▲L</span><span>record WFE Q, +30% 2027 guide</span></li>
+      <li><span class="tk3">CSCO</span><span class="chip c-long" style="font-size:9px">▲L</span><span>$9B AI-infra, P200 wins</span></li>
+      <li><span class="tk3">005930</span><span class="chip c-long" style="font-size:9px">▲L</span><span>Modine cooling M&amp;A</span></li>
+      <li><span class="tk3">NBIS</span><span class="chip c-neut" style="font-size:9px">●N</span><span>demand yes, buildings no</span></li>
+      <li><span class="tk3">CBRS</span><span class="chip c-neut" style="font-size:9px">●N</span><span>beat, but behind OpenAI</span></li>
+    </ul>
+  </div>
+  <div class="card sa">
+    <h3><i class="dot d-sa"></i>SemiAnalysis</h3>
+    <div class="meta">256 calls logged · ~14 open</div>
+    <div class="meter"><div class="mt"><span>Hit rate (resolved)</span><b>14/36 · 39%</b></div><div class="mbar"><i style="width:39%"></i></div></div>
+    <div class="meta" style="margin-top:8px">No new post this run. Its Oct-15 hybrid-bonder pair crossed 30 days: <b style="color:var(--gain)">BESI short ✓</b> (−5.7%) vs <b style="color:var(--loss)">ASML long ✗</b> (−9.8%) → 1W/1L.</div>
+    <div class="none">Last post: Nov-12 "Nvidia and the World Without Jensen" (ingested).</div>
+  </div>
+  <div class="card ir">
+    <h3><i class="dot d-ir"></i>Irrational Analysis</h3>
+    <div class="meta">654 calls logged · ~23 open</div>
+    <div class="meter"><div class="mt"><span>Hit rate (resolved)</span><b>35/65 · 54%</b></div><div class="mbar"><i style="width:54%"></i></div></div>
+    <div class="meta" style="margin-top:8px">Best-performing book. No post in window, no 30-day crossing — unchanged.</div>
+    <div class="none">Last post: Nov-6 "Avicena Deep-Dive" (ingested).</div>
+  </div>
+</div>
+</section>
+
+<!-- 7. JARGON DECODER -->
+<section>
+<div class="eyebrow">Jargon Decoder · terms used this run</div>
+<div class="jg">
+  <div class="jrow"><div class="t">WFE</div><div class="m">Wafer-Fab Equipment — the tools (etch, deposition, etc.) fabs buy; AMAT's core. +30% 2027 guide = fabs still building ahead of demand.</div></div>
+  <div class="jrow"><div class="t">Silicon One P200</div><div class="m">Cisco's routing silicon for linking data centers (scale-across / DCI) — not in-rack "scale-up"; two new hyperscaler wins this Q.</div></div>
+  <div class="jrow"><div class="t">Neocloud</div><div class="m">GPU-rental cloud (Nebius, Cerebras, CoreWeave) renting AI compute; now gated by land/power/construction, not chip supply.</div></div>
+  <div class="jrow"><div class="t">EMIB-T</div><div class="m">Intel's next advanced-packaging bridge variant; sell-side counts ~7 external customer engagements — a foundry proof-point.</div></div>
+  <div class="jrow"><div class="t">Crescent Island</div><div class="m">Intel's inference GPU; Lip-Bu Tan claims ~"$2B" of customer purchases already (currency/terms unspecified — a whisper).</div></div>
+  <div class="jrow"><div class="t">HBM4 price edge</div><div class="m">SemiAnalysis: Nvidia pays ~19–20% less for HBM4 than Google/AMD/Broadcom — a Jensen-era discount the chain now questions.</div></div>
+  <div class="jrow"><div class="t">Dummy-load</div><div class="m">Smoothing power/thermals so a wafer-scale part behaves — context for Cerebras's inference power-TCO debate.</div></div>
+  <div class="jrow"><div class="t">CXL DDR4 reuse</div><div class="m">Penguin's card lets servers re-use old DDR4 as extra memory over CXL — a cheap relief valve for the DRAM shortage.</div></div>
+</div>
+</section>
+
+<!-- 8. THEMES -->
+<section>
+<div class="eyebrow">Themes in play · by weight in the Nov-13 scan</div>
+<div class="tbars">
+  <div class="trow"><div class="tl">Export controls / geopolitics</div><div class="tbar" style="width:100%"></div><div class="tv">5</div></div>
+  <div class="trow"><div class="tl">WFE / equipment</div><div class="tbar" style="width:80%"></div><div class="tv">4</div></div>
+  <div class="trow"><div class="tl">Datacenter power &amp; cooling</div><div class="tbar" style="width:80%"></div><div class="tv">4</div></div>
+  <div class="trow"><div class="tl">Neocloud economics</div><div class="tbar" style="width:60%"></div><div class="tv">3</div></div>
+  <div class="trow"><div class="tl">AI networking</div><div class="tbar" style="width:60%"></div><div class="tv">3</div></div>
+  <div class="trow"><div class="tl">Advanced packaging</div><div class="tbar" style="width:40%"></div><div class="tv">2</div></div>
+  <div class="trow"><div class="tl">Memory supply</div><div class="tbar" style="width:40%"></div><div class="tv">2</div></div>
+</div>
+</section>
+
+<div class="foot">
+  Generated by the Substack Scanner 3-day memory loop · knowledge base in <span class="mono">wiki/</span>. Calls are logged newsletter opinions, not advice. Prices: yfinance 3-mo closes (latest Nov-13; KS Nov-16). Status colors always ship with ▲/▼/● + label.
+</div>
+
+</div>
+<script>
+const PRICES = /*DATA*/{"AMAT":{"price":370.5,"hi":542.28,"lo":319.25,"closes":[506.64,534.74,513.78,495.64,496.21,492.32,484.19,480.04,479.76,482.36,461.67,458.39,441.85,438.46,435.91,454.71,472.79,468.85,454.01,456.49,424.21,421.17,415.38,417.4,444.57,464.24,472.46,474.38,474.25,485.0,486.76,512.01,511.38,529.3,540.04,542.28,530.27,520.65,509.57,507.03,497.53,464.24,446.63,430.01,409.29,413.11,404.98,408.94,375.58,377.24,387.59,395.93,416.0,421.66,390.09,374.53,381.92,369.4,319.25,332.72,370.55,372.53,395.08,380.95,370.5],"chg3mo":-26.9},"CSCO":{"price":95.64,"hi":118.39,"lo":93.85,"closes":[111.25,112.46,111.18,110.12,109.17,110.61,109.8,110.68,111.93,111.72,109.51,110.06,109.32,109.04,108.19,108.78,108.75,109.01,107.03,111.7,109.63,109.64,107.32,109.81,109.09,111.03,106.03,106.02,106.56,106.29,106.33,106.53,107.21,108.34,112.2,112.82,117.94,117.39,114.89,118.39,115.34,115.07,113.64,109.85,107.39,106.5,106.71,107.26,104.89,106.5,110.24,111.38,110.29,108.59,104.51,101.61,102.97,103.61,95.72,93.85,98.65,98.15,100.76,102.01,95.64],"chg3mo":-14.0},"NBIS":{"price":115.88,"hi":277.68,"lo":115.88,"closes":[277.68,268.85,248.43,223.9,220.11,219.13,210.91,221.97,213.93,218.48,209.18,206.32,199.54,204.09,210.63,226.39,243.88,240.35,228.11,224.55,212.19,207.37,209.37,217.99,223.54,232.8,236.12,226.61,243.48,237.33,231.88,237.35,235.88,232.28,242.81,232.57,249.87,237.15,219.71,221.07,210.06,206.86,186.01,188.41,165.47,170.24,171.45,171.57,159.17,158.74,153.27,170.47,182.34,171.99,154.14,141.39,151.64,141.52,120.37,129.49,141.45,134.0,154.69,128.64,115.88],"chg3mo":-58.3},"CBRS":{"price":108.72,"hi":251.98,"lo":81.71,"closes":[218.98,251.98,220.01,215.69,209.85,196.13,185.43,183.92,182.15,186.67,179.08,184.24,172.62,184.52,190.44,210.05,199.77,196.2,191.34,191.93,181.21,184.03,190.47,194.14,198.37,208.49,212.41,205.24,206.41,206.75,196.74,194.95,177.65,169.52,166.43,181.55,177.1,175.05,167.92,164.17,146.62,149.09,141.48,142.17,127.21,120.66,118.24,117.98,108.94,110.82,108.37,119.31,112.56,115.16,109.18,96.36,97.82,91.85,81.71,89.68,96.7,93.66,101.08,97.75,108.72],"chg3mo":-50.4},"005930.KS":{"price":207000.0,"hi":280634.88,"lo":188700.0,"closes":[263924.56,243282.42,266381.97,276703.03,252620.53,252620.53,257043.84,261467.17,252620.53,255569.41,256552.38,246231.3,245739.81,251146.09,265399.0,264907.53,264907.53,264416.03,255077.94,244756.86,244265.38,249180.17,248197.22,256552.38,269330.84,271788.25,280634.88,265399.0,272500.0,268500.0,276000.0,276000.0,272000.0,268500.0,262000.0,250500.0,232000.0,232000.0,210000.0,215500.0,218000.0,211500.0,223500.0,214500.0,215500.0,213000.0,222000.0,242000.0,232000.0,225000.0,229000.0,219500.0,218000.0,201500.0,188700.0,189900.0,198900.0,206000.0,208000.0,206000.0,207000.0],"chg3mo":-21.6}};
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+const css=getComputedStyle(document.documentElement);
+const LONG=css.getPropertyValue('--long').trim(), NEUT=css.getPropertyValue('--neutral').trim(), ACC=css.getPropertyValue('--accent').trim();
+const dirColor={AMAT:LONG,CSCO:LONG,NBIS:NEUT,CBRS:NEUT,'005930.KS':LONG};
+function key(id){return id==='005930'?'005930.KS':id;}
+// call-board mini sparks
+['AMAT','CSCO','NBIS','CBRS','005930'].forEach(id=>{
+  const k=key(id), p=PRICES[k]; if(!p)return;
+  const el=document.getElementById('s-'+id);
+  if(el) el.innerHTML=sparkSVG(p.closes,120,30,dirColor[k]||ACC);
+  const c=document.querySelector('.ctx[data-pl="'+k+'"]');
+  if(c){const s=p.chg3mo>=0?'+':''; c.textContent='3mo '+s+p.chg3mo+'%';}
+});
+// spotlights
+['AMAT','CSCO','NBIS'].forEach(id=>{
+  const p=PRICES[id]; if(!p)return;
+  document.getElementById('sp-'+id).innerHTML=sparkSVG(p.closes,320,68,dirColor[id],{ci:p.closes.length-1,refline:true});
+  const lo=p.lo,hi=p.hi,px=p.price,pos=Math.max(0,Math.min(1,(px-lo)/((hi-lo)||1)));
+  document.getElementById('lo-'+id).textContent=lo.toLocaleString();
+  document.getElementById('hi-'+id).textContent=hi.toLocaleString();
+  document.getElementById('rp-'+id).style.left=(pos*100)+'%';
+  document.getElementById('rf-'+id).style.width=(pos*100)+'%';
+});
+</script>
+</body>
+</html>

@@ -86,3 +86,6 @@ No entry prices were recorded at any call date (all px@call = n/a), so precise m
 | 2026-11-06 | [[semidoped]] | LONG | 167.52 | NTT Data agreed to deploy 900MW of Bloom fuel cells across global datacenters (its largest international), initial shipments 2027 — primary behind-the-meter power. |
 
 **Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.
+
+## 2026-11-16 run update
+**Resolution (30d):** SD Oct-15 LONG ($236.30, AEP+Bloom 20-yr 702MW Google fuel-cell PPA — largest on record) → $191.99 = **−18.8% LOSS ✗** (worst of this run's resolutions; the record power deal did not hold the stock through Black November). BTM fuel-cell demand thesis intact (NTT 900MW deal logged Nov-6); entry at the Oct peak drove the loss.

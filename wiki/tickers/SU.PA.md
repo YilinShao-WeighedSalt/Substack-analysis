@@ -32,3 +32,5 @@ First call this run, px@call EUR 284.60 (~-3% from 52-wk high — most resilient
 | 2026-10-20 | [[semidoped]] | LONG | 249.10 | Schneider record Q3 revenue on data-center demand; lifted full-year 2026 targets (stock fell 2.2% on the print) |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 249.10 (2026-10-20). Opened at spot.
+
+**Resolution (2026-11-16, 30d):** SD Oct-16 LONG (€258.00, 2nd 2026-target raise on surging DC orders; power/cooling the binding constraint) → €243.45 = **−5.6% LOSS ✗**. Order-book visibility into 2027–28 intact; entry near the mid-Oct high, not thesis, drove the loss.

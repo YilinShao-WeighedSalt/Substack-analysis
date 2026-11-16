@@ -4,11 +4,11 @@ title: "NBIS — Nebius"
 tags: []
 related: ["[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[semianalysis-2026-04-02-great-gpu-shortage-h100-rental]]", "[[semianalysis-2026-06-18-datacenter-capacity-not-canceled]]", "[[semidoped-2026-08-13-daily-update]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]"]
 created: 2026-04-02
-updated: 2026-10-23
+updated: 2026-11-16
 ticker: NBIS
-current_stance: long
-conviction: medium
-last_review: 2026-11-01
+current_stance: neutral
+conviction: low
+last_review: 2026-11-16
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -47,3 +47,10 @@ No numeric px@call values are recorded, so mark-to-market tracking is not yet po
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($235.88) → $154.14 = −34.7% LOSS ✗** — neocloud/Token-Factory long crushed with the group.
+
+## 2026-11-16 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-13 | [[semidoped]] | NEUTRAL | 115.88 | Q3 rev +571% to $981M but 2026 guide trimmed to $3.0–3.2B as third-party DC capacity slipped to 2027; raised capex (2026 ~$27B, 2027 $40–45B for $12–13B rev); stock −17%. Demand not the problem — land/power/construction is; prepay/financing covers 75–85% of next-yr capex. |
+
+**Stance change (2026-11-16):** SD's first *non-long* NBIS call — demand is still blistering (+571%), but the thesis has shifted from "neocloud pricing power" to "buildings-not-chips bottleneck," and the guide cut punished the stock. NBIS is now at a fresh 3-mo low ($115.88), −58% over 3 months; SD's string of priced longs all resolved as big losses (Sep-18 −26.0%✗, Sep-23 SA −29.5%✗, Oct-1 −34.7%✗). current_stance long → **neutral**, conviction medium → low. Falsifier for the constraint story: if approved power/construction accelerates in 2027, the demand backlog converts. Added [[semidoped-2026-11-13-daily-update-november-13th-2026]] to sources.

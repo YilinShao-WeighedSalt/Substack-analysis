@@ -78,3 +78,5 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 | 2026-10-22 | [[semidoped]] | LONG | 1630.84 | Warns of equipment shortages through 2028; EUV sold out; SEMI wafer shipments +11.8% record → backlog holders own the queue |
 
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 1630.84 (2026-10-22). Opened at spot. **Resolution** — SD Sep-21 LONG ($1,747.90) -> $1,630.84 = **-6.7% LOSS ✗** (India/Tata entry near the 3-mo high).
+
+**Resolution (2026-11-16, 30d):** the Oct-15 pair both → $1,495.16 = **−9.8% LOSS ✗** — SD LONG ($1,657.44, record Q3 / EUV sold-out / first price increases) and SA LONG ($1,657.44, D2W hybrid-bonder patent trail). AMAT's Nov-13 record FQ4 + "WFE spend +30% in 2027" guide is a bullish read-through for the WFE complex (ASML included) even as the stock sits below the Oct entry.

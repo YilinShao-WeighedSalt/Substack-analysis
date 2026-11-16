@@ -4,15 +4,17 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-13
+updated: 2026-11-16
 handle: semianalysis
 calls_logged: 256
-hit_rate: "13/34 (38%), ~16 open"
+hit_rate: "14/36 (39%), ~14 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-16): 13/34 → 14/36 (39%), ~14 open — no new post; the Oct-15 hybrid-bonder pair resolves 1W/1L.** **[[BESI]] SHORT (€163.40 → €154.10) = short +5.7% WIN ✓** (ASML-builds-a-D2W-bonder thesis scores its first point against SemiDoped's +96%-orders bull case — [[asml-hybrid-bonder-vs-besi-orders]]); **[[ASML]] LONG ($1,657.44 → $1,495.16) = −9.8% LOSS ✗** (D2W-patent-trail long, bought near the record-Q high). The Oct-19 Datacenters-2027 supplier longs ([[VRT]]/[[STRL]]/[[ABB]]) cross 30d ~Nov-18 (next run). Last post Nov-12 (Jensen), already ingested.
 
 **hit_rate note (2026-11-13): holds 13/34 (38%), ~16 open — no priced call crossed 30 days.** The Oct-15 ASML-LONG / BESI-SHORT pair crosses 30d ~Nov-14 (one day out); the Oct-19 Datacenters-2027 supplier longs ~Nov-18 (next runs). This run: **1 post, 1 call-bearing** — the marquee **"Nvidia and the World Without Jensen"** (Nov-12) on Jensen Huang's forced resignation → new **structural SHORT [[NVDA]] $173.73** (no deep successor bench; the HBM/logic supply stranglehold, ~$3/Gb HBM4 edge and $530B neocloud backstop were personal to Jensen and loosen with him gone → SA models >70% of 2028 capacity non-Nvidia; China hawks & RASA now win). SA's **first structurally-bearish NVDA stance** — opens a contradiction vs SemiDoped's roadmap-intact NEUTRAL ([[nvda-post-jensen-structural-bear-vs-roadmap-intact]]). Opened at spot. New concept knowledge: RASA / Megaspeed-smuggling / >1.5GW-diverted + diffusion-vs-RASA to [[geopolitics-export-controls]]; founder-CEO succession risk / 60-direct-reports / Jensen-put to [[nvidia-gpu-platform]].
 

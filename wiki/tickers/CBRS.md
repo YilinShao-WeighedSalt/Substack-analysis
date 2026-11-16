@@ -4,11 +4,11 @@ title: "CBRS — Cerebras Systems"
 tags: []
 related: ["[[irrationalanalysis-2026-10-04-practical-parametric-yield]]", "[[irrationalanalysis-2026-10-01-q3-2026-consolidated-holdings-performance]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2024-10-01-cerebras-s1-initial-analysis]]", "[[irrationalanalysis-2024-10-14-cerebras-cbrs-equity-report]]", "[[irrationalanalysis-2024-12-15-tenstorrent-state-ai-hardware-startups]]", "[[irrationalanalysis-2026-05-04-cerebras-cbrs-equity-research-2026]]", "[[semidoped-2026-05-15-cerebras-ipo]]", "[[irrationalanalysis-2026-06-24-cerebras-june-2026-earnings]]", "[[semidoped-2026-06-24-daily-update]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semianalysis-2026-08-10-tilert-inferencex]]", "[[semidoped-2026-08-13-daily-update]]", "[[semidoped-2026-08-17-daily-update]]", "[[irrationalanalysis-2026-09-21-emergency-coherent-cerebras-roast]]"]
 created: 2024-10-01
-updated: 2026-10-29
+updated: 2026-11-16
 ticker: CBRS
 current_stance: neutral
 conviction: medium
-last_review: 2026-11-01
+last_review: 2026-11-16
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -78,3 +78,10 @@ semidoped's NEUTRAL at $185 IPO is now tracking wrong — stock at $226.72 (+22.
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[irrationalanalysis]] Oct-1 **SHORT ($177.65) → $109.18 = short +38.5% WIN ✓** — third straight win on the Cerebras parametric-yield/integrated-laser thesis.
+
+## 2026-11-16 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-13 | [[semidoped]] | NEUTRAL | 108.72 | Earnings beat (core rev $231M +70%); adds Microsoft as 3rd hyperscaler after AWS/Oracle — but admits it is behind on OpenAI's first capacity tranches, back on schedule 2H27; same land/power/construction bottleneck as the neoclouds. |
+
+**Outcome tracking (2026-11-16):** First *Semi Doped* priced call on CBRS (prior log is all irrationalanalysis); SD lands NEUTRAL, converging with IA's post-Culper NEUTRAL stance — a beat + marquee MSFT win, offset by the OpenAI-tranche slip and the buildings-not-chips constraint. Stock $108.72, bouncing off the ~$82 Black-November low. IA's view stays "CS-4 gross margin in ~6mo is the tell" ([[cbrs-yield-short-vs-inference-tam]]); the Microsoft add is a counter-datapoint to the demand-erosion leg. Fresh call, open (<30d). Added [[semidoped-2026-11-13-daily-update-november-13th-2026]] to sources.
