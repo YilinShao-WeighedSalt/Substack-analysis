@@ -4,7 +4,7 @@ title: "HBM Memory Supply & Demand"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-07
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -117,3 +117,6 @@ SemiAnalysis's *Engrams* codesign piece deepens the de-spec logic. **Engram** (a
 
 ### 2026-11-07 update
 ****The HBM base die becomes a foundry weapon — Samsung's 'Project Kairos'.** Samsung is building a new 2nm/4nm foundry fab at Giheung (code-name Kairos, ~₩25-30T, 2nm reserved for HBM5) dedicated to **HBM logic base dies**, converting part of Line 6 to advanced packaging. The base die is now a foundry part, and **Samsung is the only HBM maker that also owns a leading-edge logic fab** — SK Hynix relies on TSMC for its base dies. Separately, **Qualcomm validated first-gen HBC** (High Bandwidth Compute) — compute in the base die under an LPDDR stack, claimed 6x bandwidth/watt vs HBM, shipping in the Dragonfly AI250 mid-2027 (HBC Gen2 in AI300, 2028) — an LPDDR-based alternative to HBM for inference. Altman flew to Seoul to lock 2027-30 HBM supply (volumes suppliers reportedly can't meet). KYEC/Rubin HBM4-yield-delay rumor back in focus.**
+
+## 2026-11-19 — HBM4 pricing doubles; Nvidia locks up multiyear memory
+**TrendForce (Nov-18 Seoul roadshow):** HBM4 will cost **$3–5.50/Gb in 2027**, up from ≥$2.05 this year; **average HBM prices +122%**, and HBM4 = **51% of HBM shipments**. Critically, TrendForce expects **no conventional-DRAM price cut in any quarter of 2027** because HBM consumes **3–4× the wafers** of regular DRAM, crowding it out. **Nvidia's FQ3 supply commitments jumped to $390B (from $279B), mostly multiyear memory procurement** — the buyer side confirming the squeeze. SK hynix is adding **>20k wafers/mo** of HBM4 back-end tools at Cheongju P&T6. **Google is moving to buy HBM directly** for its TPUs rather than through Broadcom's bundle (value to the designer, a mild negative to AVGO's attach). Samsung picks **wafer bonding for HBM5** as one of three next-gen DRAM tracks. 2028 is the risk year (Samsung P5, SK hynix Yongin, CXMT all adding capacity).

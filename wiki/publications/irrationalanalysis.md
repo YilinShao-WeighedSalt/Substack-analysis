@@ -4,15 +4,17 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-11-07
+updated: 2026-11-19
 handle: irrationalanalysis
 calls_logged: 654
-hit_rate: "35/65 (54%), ~23 open"
+hit_rate: "37/71 (52%), ~17 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-11-19): 35/65 → 37/71 (52%) — the Oct-19 OCP batch resolves 2W/4L.** The two optics *shorts/anti-bull* calls paid while the honest-player longs all cratered in the Jensen-exit drawdown: **[[AVGO]] LONG ($328.75) → $341.60 = +3.9% ✓** (the "cleanest 1.6T AEC" — the one Oct-19 long that worked) and **[[COHR]] SHORT ($232.90) → $210.86 = short +9.5% ✓** (the UHP-laser-socket short), vs losses **[[LITE]] −32.1%**, **[[CRDO]] −27.0%**, **[[SMTC]] −21.9%**, **[[GLW]] −17.8%** ✗ (the µVCSEL/copper/Corning longs). (NEUTRALs MRVL/MTSI/ALAB excluded.) The Oct-24 "Dancing in the Rain" batch (AAOI/BE/AXTI/CRDO long, COHR short, TSEM neut) crosses 30d ~Nov-23. **This run: 1 post — "[Market Memo] Guillotines and Gigawatts" (Nov-16), a one-off political/macro memo with NO priced ticker call.** The author argues the Jensen saga masks a coordinated grassroots+establishment+deep-state move to **kill open-source AI** / regulatory-capture; cites Susan Collins losing to the AI backlash; declares readers "almost certainly offsides" and is **fully de-levered / on vacation** ("go home, sleep it off, come back later"). Logged as a **macro de-risk** (book-bias + [[datacenter-power]]/[[geopolitics-export-controls]] themes), not a Call Board row → calls_logged unchanged (654).
 
 **hit_rate note (2026-11-07): 35/63 → 35/65 (54%) — the Oct-7 Marvell-investor-day batch resolves 0W/2L in Black November.** **[[AVGO]] LONG ($375.81) → $291.53 = −22.4% ✗** (the ultra-Broadcom-bull add) and **[[AXTI]] LONG ($84.06) → $36.72 = −56.3% ✗** (the 6-in InP chokepoint favorite, worst resolution of the run) both gutted. The Oct-19 OCP batch (CRDO/SMTC/GLW/LITE/AVGO long, COHR short, MRVL/MTSI/ALAB neut) crosses 30d ~Nov-18; the Oct-24 "Dancing in the Rain" batch ~Nov-23. This run: **3 posts on the Marvell–Lumentum deal + Avicena** — new **SHORT [[MRVL]] $171.97** (Lumentum deal = value destruction / channel conflict; shorted as a hedge against the LITE hold), reaffirm **LONG [[LITE]] $680.16** (holding, weighing an activist campaign vs Murphy), new **LONG [[CRDO]] $112.33** (Avicena deep-dive: µVCSEL slow-and-wide beats µLED's ~6x-fiber 10m path). The Murphy/Hurlston fireside softened the MRVL stance (concedes a real µVCSEL scale-in rationale) but the short stands as the hedge. 2 directional + 1 reaffirm opened in the Black-November tape.
 

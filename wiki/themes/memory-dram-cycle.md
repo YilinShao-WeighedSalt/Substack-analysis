@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-11-07
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -120,3 +120,6 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 
 ### 2026-11-10 update
 **First "peak" tell of the upcycle — margin convergence.** Channel check (SD Nov-9): DRAM margins have **nearly caught up with HBM**, so **Samsung is expected to swing some wafer capacity HBM → conventional DRAM in Q4** — historically a cycle-top signal. In that scenario **memory prices level off in Q1 2027 and ease in Q2**. Note this is the opposite tension to the Nov-1/Nov-7 "shortage to 2030 / 62% of semi rev" bull case: supply discipline is the swing variable, and Samsung adding DRAM supply is what caps prices. Separately, **TSMC denied** drafting 3D-DRAM-for-Nvidia plans (The Information) and reaffirmed pure logic foundry — 3D DRAM (4F²-class density) remains years from volume at all three makers, so no near-term supply relief; the report mainly shows how hard **Nvidia is pushing for memory**. [[MU]]/[[000660.KS]]/[[005930.KS]] all NEUTRAL this run (margin-convergence, not demand break). Also: **Mitsui Chemicals buying EUV-photoresist #2 JSR for ¥1.84T** consolidates a scarce materials input one layer upstream of the memory/logic build. [[4183.T]]
+
+## 2026-11-19 — DRAM stays tight into 2027; NAND rolls over sooner
+TrendForce: **conventional DRAM price increases slow but do not turn negative in any quarter of 2027** (HBM eats the wafers). **Samsung–Apple** are in final talks on a **4–5yr DRAM supply deal (1H27)** with guaranteed minimum volumes and market-based pricing — a volume floor for Samsung. **NAND is the weak spot:** spot prices fell ~20% in two weeks (weak consumer demand, rising YMTC supply), and TrendForce sees **NAND contract prices starting to fall in Q2-2027** as Chinese clouds cut enterprise-SSD orders. Korea memory capex hit a record ₩88.16T ($65.7B) in 9 months (Samsung +76.6%); ₩329T cash on hand. CXMT says it has lined up long-term deals with several tier-1 customers.

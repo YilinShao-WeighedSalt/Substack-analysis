@@ -2,13 +2,13 @@
 type: ticker
 title: "ASX — ASE Technology"
 tags: []
-related: ["[[semidoped-2026-11-06-daily-update-november-6th-2026]]", "[[citrini-2024-07-08-inference-on-device]]"]
+related: ["[[semidoped-2026-11-16-daily-update-november-16th-2026]]", "[[semidoped-2026-11-06-daily-update-november-6th-2026]]", "[[citrini-2024-07-08-inference-on-device]]"]
 created: 2024-07-08
-updated: 2026-11-07
+updated: 2026-11-19
 ticker: ASX
 current_stance: long
 conviction: medium
-last_review: 2026-11-07
+last_review: 2026-11-19
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -27,3 +27,10 @@ No entry price was recorded at the time of the call, so return attribution is no
 | 2026-11-06 | [[semidoped]] | LONG | 29.72 | Taiwan MOEA approved ASE's NT$123.7B (~$3.7B) automated packaging/test expansion (largest Invest Taiwan case in memory); Nvidia reportedly funding CoWoS-class capacity at ASE unit SPIL; advanced packaging to pass traditional in 2026 (~$28B capex). |
 
 **Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.
+
+## 2026-11-19 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-16 | [[semidoped]] | LONG | 31.83 | **ASE opens Lujhu phase 1 + breaks ground on phase 2** (~NT$100B invest, ~NT$80B rev/yr at full; phase 1 = a former AUO panel fab bought for NT$6.5B); capex raised 3× to **$11.5B** because demand outruns capacity next year. |
+
+**Outcome tracking (2026-11-19):** New **SD LONG** @ 31.83 (Nov-18 close), opened flat; ASX near 3-mo lows ($30-32) on the Taiwan packaging/PCB selloff even as ASE pours capacity into Lujhu. Thesis: advanced-packaging/CoWoS capacity is the bottleneck and ASE is adding the most of it. Added [[semidoped-2026-11-16-daily-update-november-16th-2026]].

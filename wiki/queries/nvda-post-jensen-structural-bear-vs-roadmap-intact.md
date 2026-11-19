@@ -4,7 +4,7 @@ title: "NVDA after Jensen: SemiAnalysis structural bear vs Semi Doped 'roadmap i
 tags: [nvidia, succession, geopolitics-export-controls]
 related: ["[[semianalysis-2026-11-12-nvidia-and-the-world-without-jensen]]", "[[semidoped-2026-11-12-jensen-huang-resigns]]", "[[NVDA]]", "[[nvidia-gpu-platform]]", "[[geopolitics-export-controls]]", "[[AMD]]", "[[ARM]]"]
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-19
 ---
 ## Open question
 Jensen Huang resigned as Nvidia CEO on Nov-12, 2026 after a board conduct probe. Both covering sources reacted the same day and drew materially different conclusions about what it means for the stock.
@@ -20,3 +20,6 @@ Jensen Huang resigned as Nvidia CEO on Nov-12, 2026 after a board conduct probe.
 - Tell to watch (SA's own falsifier): **GPU rental rates rolling over** → backstops triggered → Nvidia exposed to price risk. Track vs the non-Nvidia 2028-capacity-share estimate.
 
 Shared price mark: NVDA **$173.73** (Nov-13), down ~24% over 3 months and ~6.9% since the Nov-10 NEUTRAL ($186.64).
+
+## 2026-11-19 update — FQ3 beat validates "roadmap-intact" near-term
+Nvidia's **FQ3 (first without Huang) beat and raised**: rev **$115.8B (+103%)**, Q4 guide **$130B**, and Kress **raised FY28 growth to 75% from 70%** — the forecast the bear case feared would be scrapped. **$390B supply commitments** (mostly multiyear memory) and a called **margin trough**; board won't reinstate Huang; +4% AH. → **Semi Doped's roadmap-intact side wins the near term** (logged **LONG $155.46**, stance neutral→constructive). **But the bear is not refuted:** SemiAnalysis's case is long-term (no successor bench, the HBM/logic supply stranglehold + $530B backstop decaying *with* Jensen), and in the same window **SA cut its own 2028 accelerator forecast to $758B (−28%)** with Nvidia taking most of the cut, while the **BIS remote-access rule** and the **H200-to-China halt** add the policy headwinds SA tied to Jensen's exit. SA's SHORT ($173.73) stays **open**. Net: near-term demand unbroken (roadmap-intact ✓), structural thesis still open; watch GPU-rental rates + the non-Nvidia 2028-capacity share. NVDA $155.46 (Nov-18 close, lowest since ~Jul-2025 despite the beat).

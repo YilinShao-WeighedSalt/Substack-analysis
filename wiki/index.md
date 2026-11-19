@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-11-10
+updated: 2026-11-19
 ---
 
 # Wiki Index
@@ -227,6 +227,11 @@ updated: 2026-11-10
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[irrationalanalysis-2026-11-16-market-memo-guillotines-and-gigawatts]] — IA political/macro memo: a grassroots+establishment+deep-state anti-AI alliance; de-levered, no priced ticker call
+- [[semidoped-2026-11-16-daily-update-november-16th-2026]] — SD: Jensen-return drama vs Bessent-wants-outsider; Taiwan −6%; Nvidia closes the neocloud checkbook; ASE Lujhu + Xintec CoWoS; GloFo NY fab
+- [[semidoped-2026-11-17-daily-update-november-17th-2026]] — SD: BIS remote-access rule (renting=exporting); SA cuts 2028 forecast to $758B; Altman double-counting; OpenAI 457MW AMD via TensorWave
+- [[semidoped-2026-11-18-daily-update-november-18th-2026]] — SD: Nvidia FQ3 beat+raise ($116B, FY28 75%, $390B memory lock); TrendForce HBM4 doubles; H200-China halt; Google buys HBM direct
+- [[semidoped-2026-11-17-google-built-two-new-tpus-8i-max-8tx]] — SD episode: Google's four V8 TPU SKUs (8TX confidential/EPYC, 8i Max) + TPU Sync vs Dynamo + external-customer push (educational)
 - [[semidoped-2026-11-13-daily-update-november-13th-2026]] — SD: Washington piles on Nvidia (DOJ probes + ≥4 export bills); AMAT record WFE +30% 2027 guide; Cisco $9B AI-infra; Nebius/Cerebras = demand not buildings; Samsung eyes Modine for DC cooling
 - [[semianalysis-2026-11-12-nvidia-and-the-world-without-jensen]] — Jensen resigns: no successor bench, supply-chain/backstop grip loosens, RASA ascendant → structural SHORT NVDA
 - [[semidoped-2026-11-12-jensen-huang-resigns]] — Episode: governance > shareholder value, no succession plan, bureaucracy risk; AMD's opening

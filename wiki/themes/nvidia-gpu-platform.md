@@ -4,7 +4,7 @@ title: "Nvidia GPU Platform & Moat"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-11-13
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -132,3 +132,6 @@ First third-party Rubin results on the AgentX agentic-inference benchmark (pre-r
 - **Why it matters (plain language):** Nvidia is run as a **flat kingdom — ~60 direct reports, no 1:1s, ~42k employees** — which makes it fast when the founder decides but leaves **no deep successor bench**. SemiAnalysis: the company "was never built for him not to be there." Founder-only advantages that are hard to transfer: decade-long "zero-billion-dollar bets" (CUDA, tensor cores, Omniverse) with board cover; the **neocloud backstop / "Jensen put"** ($530B gross off-B/S guarantees) built on his personal credibility; and **supply-chain lock-ups** (Korea HBM at a ~$3/Gb discount, Taiwan logic) won CEO-to-CEO. SA's structural read: without him, suppliers de-prioritize Nvidia and **>70% of 2028 capacity could be non-Nvidia.**
 - **Two reads diverge (see query [[nvda-post-jensen-structural-bear-vs-roadmap-intact]]):** **SemiAnalysis = structurally bearish** (the moat and backstops were personal). **Semi Doped = near-term constructive / NEUTRAL** — demand and the Rubin Ultra/Feynman roadmap are intact under "maintain mode," the real risk is a *long-term* slide into spreadsheet-CEO bureaucracy (the Intel cautionary tale).
 - **Succession candidates:** internal — **Ian Buck** (father of CUDA) the only plausible name, Jonah Alben respected but reluctant; external — **Rene Haas** (Arm CEO, Nvidia alumnus) credible; Lisa Su / Tim Cook / Lip-Bu Tan dismissed. → [[NVDA]], [[AMD]], [[ARM]].
+
+## 2026-11-19 — first earnings without Jensen: beat, raise, margin trough
+Nvidia's FQ3 (first report since Huang's resignation) **beat and raised**: rev **$115.8B (+103% YoY)** vs ~$109B expected; DC rev $107.6B; **Vera Rubin ~$20B in its first production quarter** (and topped MLPerf Training); **Q4 guide $130B ±3%** (extra week, **no China DC compute**). Interim CEO **Colette Kress raised FY28 growth to ~75% from 70%** — the forecast investors feared would be scrapped — and called the **71-72% next-quarter GM the trough** (honoring old POs before new pricing) returning to 72-73% in FY28. Board chair Harvey Jones: **no intent to reinstate Huang** (Heidrick & Struggles retained; Marvell's Matt Murphy floated). Supply commitments jumped to **$390B** (mostly multiyear memory); inventory $39.7B for the Rubin ramp; the board added a National Security & Export-Control Oversight Committee. Shares +4% AH but the regular-session close ($155.46) was the lowest since ~Jul-2025 (−24% on the month). This is the near-term validation of the **"roadmap-intact"** side vs SemiAnalysis's structural short — see [[nvda-post-jensen-structural-bear-vs-roadmap-intact]].

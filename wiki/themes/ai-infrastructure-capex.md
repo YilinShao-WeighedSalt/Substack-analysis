@@ -4,7 +4,7 @@ title: "AI Infrastructure & Hyperscaler Capex"
 tags: []
 related: []
 created: 2024-01-27
-updated: 2026-11-07
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-01-27
 ---
@@ -167,3 +167,6 @@ SemiAnalysis's parcel-by-parcel audit rebuts the viral "moratoriums are killing 
 
 ### 2026-11-16 update
 **The binding constraint flips from chips to buildings.** Both neoclouds reporting this week said the same thing out loud: demand and GPU supply are fine — **land, power and construction** are the bottleneck. **Nebius** grew Q3 rev +571% to $981M but *cut* its 2026 revenue guide (to $3.0–3.2B) because third-party datacenter capacity slipped into 2027; it raised 2026 capex to ~$27B and plans $40–45B in 2027 for just $12–13B of revenue (stock −17%). **Cerebras** beat and added Microsoft as a 3rd hyperscaler, but admitted it is *behind on OpenAI's first capacity tranches*, back on schedule only in 2H27. This is the physical-world corollary of the Black-November datacenter backlash: with new buildouts politically harder, **every gigawatt of already-approved, already-built power becomes more valuable** (Semi Doped's Vik), and the companies with contracts but no buildings get repriced. Financing against existing contracts still covers 75–85% of Nebius's next-year capex. [[NBIS]] [[CBRS]]
+
+## 2026-11-19 — the forecasters blink, even as Nvidia beats
+**SemiAnalysis cut its AI-accelerator spend forecast to $758B for 2028 (−28%) and $923B for 2030 (−40%)**, with **Nvidia taking most of the cut** (greater exposure to smaller neoclouds). **Sam Altman** (Semafor) explained the inflation: several chip startups each **book the same foundry capacity** assuming they'll win most OpenAI/Anthropic orders — **supplier double-counting against the same few buyers**. Nvidia itself is pulling back the **"open checkbook"**: interim CEO Kress calls neocloud support **"disciplined and selective,"** and Huang had already told neocloud CEOs to secure upfront customer payments (UBS: a pullback could pull **$50B+** from the market; QTS cut a debt sale ~60%). Yet **Nvidia's FQ3 beat+raise** (FY28 growth *raised* to 75%, $390B commitments) says the biggest buyer disagrees with the cut — the central 2027-28 tension. Financing stress markers: **SpaceX ~$4B bonds** (first slice of ~$40B Nvidia financing via Goldman/Apollo), **AWS sells 75% of 13 DC shells to Blackstone** ($5B leaseback), and lenders adding **export-default clauses** (Bridge Data Centres' $6.6B loan). IA ("Guillotines and Gigawatts") warns the **political/backlash front** (post-midterm anti-AI alliance) is the mispriced risk, not the usual financial red flags — and has fully de-risked.

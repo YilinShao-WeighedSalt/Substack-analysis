@@ -4,7 +4,7 @@ title: "Advanced Packaging"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-11-07
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -118,3 +118,6 @@ The hybrid-bonding supplier fight came to a head. On **Oct-20** the market hamme
 
 ### 2026-11-07 update
 ****A deadly laminate fire + a $3.7B ASE check underline the packaging squeeze.** A Nov-5 explosion/fire at **Panasonic's Hukou (Hsinchu) MEGTRON high-speed-laminate plant** (2 dead) took out ~4% of global high-end multilayer-board supply — M6-M8 AI-server laminate was already sold out, so overflow strains EMC/TUC/ITEQ/Nan Ya. **ASE** got MOEA approval for a **NT$123.7B (~$3.7B)** automated packaging/test expansion (largest Invest Taiwan case in memory); **Nvidia reportedly funding CoWoS-class capacity at ASE unit SPIL**; advanced packaging to pass traditional packaging for the first time in 2026 (~$28B capex, Yole). Substrate tightness broadening: Simmtech op profit >₩100B (4-yr high) on AI-server substrates; AT&S record quarter (AI substrates ~$200/unit vs single digits); Ibiden/Shinko/Isu Petasys/Daeduck expansions; China tungsten-drill-bit export squeeze; Powertech $400M panel-level JV with Broadcom; JNTC glass-core TGV qualified to Nvidia.**
+
+## 2026-11-19 — CoWoS capacity spreads beyond TSMC; substrate squeeze persists
+TSMC, capacity-starved, signs a **7-yr deal with 41%-owned Xintec to run the CoWoS "on-substrate" step inside a TSMC fab** (volume 2029; NT$15B CBs) and is working with **AUO on glass substrates for CoPoS** in the two ex-AUO plants. **ASE opens Lujhu phase 1 + breaks ground on phase 2** (~NT$100B invest, ~NT$80B rev/yr; capex raised 3× to $11.5B). Nvidia widened its packaging/substrate web in FQ3: **Kinsus grows Nvidia-dedicated ABF capacity >3.5×** (Nvidia funding >$1B), **SPIL** multiyear Nvidia-funded expansion to mid-2029, and **Samsung Electro-Mechanics amends its substrate deal + expands into MLCCs**. ABF substrate and CoWoS remain the binding AI-supply constraints.

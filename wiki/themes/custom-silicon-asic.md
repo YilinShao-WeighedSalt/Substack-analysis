@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-11-07
+updated: 2026-11-19
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -116,3 +116,6 @@ Two structural moves this week. (1) The custom-silicon turn finally pulls in the
 
 ### 2026-11-07 update
 ****TPUv7 cracks the inference-perf-per-$ moat.** SemiAnalysis's 'TPU Strikes the King' (Nov-5) posts official AgentX (long-context, multi-turn) results: **TPUv7 'Ironwood' is competitive-to-best on tokens-per-dollar for external customers** — cheapest on GLM-5.2 FP8, beats GB300 FP8 at every interactivity on Qwen3.5 397B (1.67x better per-$ than even FP4 GB300), competitive on Kimi K3. Caveats: NVIDIA FP4 refreshes reclaim decode on some models; TPUv7 has **no native FP4** until TPUv8 (Q1-27); Rubin preview ~4-6x per-$ (vs TPUv8i). TPU is running NVIDIA's own ecosystem playbook (vLLM/SGLang/PyTorch/llm-d, Day-0 support) while NVIDIA bureaucracy slows it — SA calls it the biggest moat risk. External TPU customers: Oracle/OpenAI/Anthropic/Meta. Qualcomm's own DC accelerators (AI250/AI300) now have a revenue calendar ($5B FY27 → $15B+ FY29).**
+
+## 2026-11-19 — Google's four-flavor TPU and merchant-silicon push
+Google quietly announced **two more V8-generation TPU systems — not new silicon** — the **8TX** (confidential-compute, pairing the TPU with an **AMD EPYC** secure host) and the **8i Max** (memory-maxed for inference), joining the **8T (training)** and **8i (inference)** = **four SKUs in one generation**. The 8i (inference) is the *bigger* die, with more HBM (288 vs 216 GB) and ~3× the SRAM (384 MB) — inference is memory-bound. **TPU Sync** is Google's inference-orchestration layer, explicitly its **answer to Nvidia's Dynamo**, and a step toward **selling TPUs to external customers** (Kuo: order visibility to 2029 via OpenAI/Anthropic; TPU v9+ on Intel EMIB-T). Separately, **AMD closed its $2.9B Taalas** inference-chip buy (folded into Instinct) and **MSFT's Arm Cobalt 200** VMs went GA (+50% vs Cobalt 100); **Cerebras** put **disaggregated inference** into production (AMD GPUs prefill, CS-3 decode).
