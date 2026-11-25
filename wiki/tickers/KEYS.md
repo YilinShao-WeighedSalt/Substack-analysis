@@ -29,3 +29,11 @@ The thesis originated in August 2024 as a structural long on Keysight's wireline
 
 ## Outcome tracking
 No px@call values are available for any entry in the log, so quantitative P&L cannot be assessed. The thesis trajectory is strong: every predicted demand driver — the 224G/PCIe-7 hardware upgrade cycle, hyperscaler R&D intensity, and the optical/photonics buildout — has continued to materialize or accelerate through the covered period, and management's FQ4 2024 gross-margin beat was cited as direct validation of the premium-hardware demand thesis. The live view would be falsified by a sustained collapse in hyperscaler and AI ASIC R&D spending (reducing demand for high-end BERTs and oscilloscopes), a credible competitor closing Keysight's jitter/performance gap in wireline test gear, or a structural deterioration in the SaaS/calibration attach economics.
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-20 | [[semidoped]] | LONG | 289.63 | Record FQ4 — orders +53%, revenue +41% to $1.99B, commercial communications +73% (AI/datacenter test demand). |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 289.63 — a clean record print in test & measurement, levered to AI-infra build. Opened at spot. current_stance long.

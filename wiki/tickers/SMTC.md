@@ -43,3 +43,11 @@ No px@call prices are recorded across any of the seven entries, so precise retur
 ## 2026-10-23 run update
 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($174.33) -> $141.63 = **-18.8% LOSS ✗** (XPO-MSA entry).
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-24 | [[semidoped]] | LONG | 104.13 | Record FQ3 $423.0M (+58% YoY), guides FQ4 to ~$480M — copper+optics AI-connectivity demand. |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 104.13 — record + sequential guide-up. Opened at spot. Note: IA's Sep-22 SMTC long resolved −18.8% earlier; SMTC remains ~3-mo low despite the beat. current_stance long.

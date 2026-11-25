@@ -55,3 +55,11 @@ No px@call values are recorded across any entry in this log, making quantitative
 | 2026-10-23 | [[semianalysis]] | LONG | 248.00 | Trainium3 TorchNeuron = native PyTorch (swap .to('cuda')->.to('neuron')); Neuron Explorer profiler SOTA (Anthropic's perf lead agrees), MatMul beats GB300 mid-range; training viability broadens Trainium3 adoption. |
 
 **Outcome tracking (2026-10-26):** New SA LONG @ $248.00 (Trainium3 training-stack deep-dive). Opened at spot.
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-24 | [[semidoped]] | LONG | 255.39 | Buys Decart's chip-optimization software/team (~$7.5B) ahead of selling Trainium outside AWS — lifting Trainium token economics for a merchant launch. |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 255.39 (a re-up of the Oct-12 Decart thread, now ~$7.5B and tied to an external-Trainium launch). **Resolutions (30d):** SD Oct-20 LONG ($262.37) → $255.39 = **−2.7% LOSS ✗**; SA Oct-23 LONG ($248.00) → **+3.0% WIN ✓** — AMZN the rare relative-strength name, roughly flat while the cohort round-tripped. current_stance long.

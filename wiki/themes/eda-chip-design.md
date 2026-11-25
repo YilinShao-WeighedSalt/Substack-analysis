@@ -4,7 +4,7 @@ title: "EDA & Chip Design Tools"
 tags: []
 related: []
 created: 2024-01-11
-updated: 2026-10-29
+updated: 2026-11-25
 status: maturing
 first_seen: 2024-01-11
 ---
@@ -52,3 +52,6 @@ EDA and chip design tools emerged as a peripheral topic in early 2024, initially
 **AI-native EDA** — design-automation where an AI agent writes the chip, from RTL through physical implementation — moved from demo to commercial this run. **Synopsys** announced **GPT-Synopsys**, jointly built with OpenAI under a **revenue-share ("pay for results") arrangement** rather than a flat fee (a structure meant to ease customer concern about AI-generated design), targeting **engineer-level** RTL→layout; alongside a **$1B+ Amazon silicon-IP pact**. Synopsys also debuted **AgentEngineer** (autonomous chip design, GA end-2026). Three EDA vendors (Synopsys, Cadence, Siemens) certified AI/HPC + 3D-IC flows on TSMC nodes in one window. Cadence has **no announced equivalent** to the Amazon/OpenAI deals — it defends domain depth (CEO Devgan: certified foundry flows aren't easily replicated by general-purpose models). Vik's read: repetitive design work gets **reshored and automated**, bad for offshore design houses (expect layoffs). Caveat: these "L5 autonomous" agents still have **human approval checkpoints** — watch for a *named production customer*.
 
 **Update 2026-10-29 (agentic EDA splits into two bets):** **Cadence beat Q3 and shipped Maestro** — a portfolio of domain-specialized AI models powering autonomous "super agents" wired into its EDA/SDA tools via reinforcement-learning loops, running **on-premises** inside customer facilities (Q4 early access). The strategic fork: **Synopsys partnered OpenAI** (frontier general models) while **Cadence bets on proprietary, domain-trained models**. Vik's framing: digital design is largely code and a verifiable domain, so AI-amenable; analog, power, and RF still carry tacit knowledge that resists automation — and lower the barrier for more companies to design their own chips. [[CDNS]]
+
+## 2026-11-25 — agentic EDA goes from demo to tape-out
+OpenAI said its models **rewrote the SystemVerilog behind AMD's flagship GPU IP** and found up to **14% power/performance/area (PPA)** gains over heavily optimized baselines — and AMD has already put some rewrites into a **design it sent to manufacturing** (plus single-digit gains on a next CPU; −13% standard-cell area in OpenAI's own Jalapeño vector unit). Every rewrite was **verified with Synopsys tools**, and OpenAI is now **training a model with Synopsys** to drive EDA software "like an expert designer" (calling it ~a year of progress in <5 months). The read for [[SNPS]] (and EDA broadly): AI-driven design is a new demand vector that compounds on itself, with verification/sign-off staying in the incumbent toolchain. Caveat: "up to 14%" with no block-by-block breakdown means the gains may be block-specific.

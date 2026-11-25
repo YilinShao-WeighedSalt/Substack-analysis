@@ -150,3 +150,11 @@ No px@call values are recorded across the log, so price-based verification is no
 | 2026-11-17 | [[semidoped]] | LONG | 503.41 | OpenAI books **457 MW of MI455X via neocloud TensorWave** (Helios racks; first named OpenAI-AMD supplier; AMD Ventures invested); closes ~$8.2B **World Labs** (Fei-Fei Li) + $2.9B **Taalas** (inference silicon); chosen as the **secure EPYC host** inside Google's TPU 8TX (CPU "renaissance" breadth). |
 
 **Outcome tracking (2026-11-19):** New **SD LONG** @ 503.41 (Nov-18 close), opened flat. The inference share-gain story broadens: a named OpenAI tranche (TensorWave 457MW) + two bolt-ons (World Labs, Taalas) + the EPYC host-socket win in Google's new TPU. Falsifier: SemiAnalysis's $758B-2028 forecast cut (−28%) hits neocloud-exposed demand; AMD's warrant charges to OpenAI/Meta keep diluting GAAP. Added [[semidoped-2026-11-17-daily-update-november-17th-2026]] + [[semidoped-2026-11-17-google-built-two-new-tpus-8i-max-8tx]].
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-20 | [[semidoped]] | NEUTRAL | 453.46 | OpenAI's models rewrote AMD GPU RTL for +14% PPA (some taped out) — a genuine design-productivity win — but Hunterbrook alleged blacklisted IEIT loaded newer AMD firmware → stock −7.7%; House Foreign Affairs license data + Zen6-desktop-to-N2X slip round out a mixed two days. |
+
+**Outcome tracking (2026-11-25):** New **SD NEUTRAL** @ 453.46 — the two-day net: a strong EDA/PPA positive offset by a China-firmware short + export scrutiny. Opened at spot. current_stance mixed.

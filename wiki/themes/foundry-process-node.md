@@ -4,7 +4,7 @@ title: "Foundry & Process Node Competition"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-01-03
-updated: 2026-11-01
+updated: 2026-11-25
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -101,3 +101,6 @@ TechInsights torn-down the iPhone 18 Pro and **confirmed Apple's A20 Pro runs on
 
 ### 2026-11-01 update
 **Intel's Q3: wafer-limited, not substrate-limited (per IA).** Intel −23% AH / ~−30% next day on a revenue-forecast miss (weak PC + DC-component supply snags). [[irrationalanalysis]]'s engineering read: the 'substrate/EMIB shortage' excuse is cover for a **leading-edge logic-wafer shortfall from planning incompetence** — the SKU yield-harvest tell (if substrate-limited, hold defective dies and ship only top-ASP SKUs) and the 6-month wafer cycle (why 1H27 is worse than 2H27; substrates don't take 6 months) both finger wafers. A once-in-a-lifetime datacenter-CPU shortage mishandled.
+
+## 2026-11-25 — Intel Foundry's external-customer proof + TSMC's US 2nm bid
+The multi-year question for [[INTC]]'s foundry turnaround was always *"who outside Intel actually buys it?"* This run gave two answers: **Microsoft** became the first company to use Intel Foundry **EMIB** packaging for its own first-party Azure silicon (plus a multiyear Xeon/Diamond Rapids lock-in), and Lip-Bu Tan said Intel **"just signed the first customer" for 18A** (on 18A-P, the improved variant in risk production since June; unnamed). EMIB is a *packaging* win — easier than a leading-edge wafer customer, and valuable because it's a second route for big AI chips while TSMC CoWoS stays stretched — while the 18A customer is the harder, long-chased wafer prize. 18A yields reportedly climbed to ~70% (from "horrible"). Separately, **TSMC filed for a $22.6B 2nm Texas campus** (Brazos County, 2nm+, 2027-31 construction) with Arizona as the fallback, calling property-tax terms "determinative" — not yet a commitment (land under contract, agreements non-binding). And under the new remote-access rule, TSMC/Samsung now must turn away Chinese designs ≤16nm absent US licenses (the old spec-check-and-ship route is closed).

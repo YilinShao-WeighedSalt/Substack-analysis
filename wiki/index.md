@@ -2,7 +2,7 @@
 type: overview
 title: "Wiki Index"
 created: 2026-06-17
-updated: 2026-11-19
+updated: 2026-11-25
 ---
 
 # Wiki Index
@@ -71,6 +71,7 @@ updated: 2026-11-19
 - [[CIEN]] — Ciena Corporation
 - [[COHR]] — Coherent Corp
 - [[CRDO]] — Credo Technology
+- [[CRWD]] — CrowdStrike Holdings (cloud security; Zscaler $43.9B merger)
 - [[CRWV]] — CoreWeave
 - [[CSCO]] — Cisco Systems
 - [[DELL]] — Dell Technologies
@@ -87,6 +88,7 @@ updated: 2026-11-19
 - [[GNRC]] — Generac Holdings (backup gensets / datacenter BTM power)
 - [[GOOGL]] — Alphabet
 - [[HIMX]] — Himax Technologies
+- [[HPE]] — Hewlett Packard Enterprise (AI-server ODM; margin vs memory-cost pass-through)
 - [[IFNNF]] — Infineon Technologies (OTC)
 - [[IFNNY]] — Infineon Technologies (ADR)
 - [[IFX]] — Infineon Technologies
@@ -227,6 +229,10 @@ updated: 2026-11-19
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[semidoped-2026-11-24-daily-update-november-24th-2026]] — SD: Jensen reinstated +31.5% (biggest day since 2003); Commerce blacklists Megaspeed+Alibaba-SG; TSMC $22.6B TX 2nm filing; HPE record AI orders/margin squeeze; Goldman HBM→$200B but cuts Samsung/SK −43%; Semtech record; Amazon buys Decart for Trainium
+- [[semidoped-2026-11-23-daily-update-november-23rd-2026]] — SD: SEC probes Nvidia accounting (customer-HQ geo + circular financing); POTUS wants Jensen back; Korea exports 4×, no cuts; server makers reprice +25-45%; SoftBank $1T SK sounding; CrowdStrike–Zscaler $43.9B
+- [[semidoped-2026-11-20-daily-update-november-20th-2026]] — SD: remote-access rule reaches the fab door (TSMC/Samsung halt China ≤16nm); SK hynix = Kioxia's top holder; SpaceX $32B off-B/S GPU debt @8.26%; Hunterbrook shorts AMD on China firmware; Keysight record FQ4
+- [[semidoped-2026-11-19-daily-update-november-19th-2026]] — SD: Intel Foundry lands Microsoft EMIB + first 18A customer; Micron '27 75% sold/take-or-pay; Anthropic $107B IPO (largest ever); OpenAI models redesign AMD GPUs (+14% PPA) verified in Synopsys
 - [[irrationalanalysis-2026-11-16-market-memo-guillotines-and-gigawatts]] — IA political/macro memo: a grassroots+establishment+deep-state anti-AI alliance; de-levered, no priced ticker call
 - [[semidoped-2026-11-16-daily-update-november-16th-2026]] — SD: Jensen-return drama vs Bessent-wants-outsider; Taiwan −6%; Nvidia closes the neocloud checkbook; ASE Lujhu + Xintec CoWoS; GloFo NY fab
 - [[semidoped-2026-11-17-daily-update-november-17th-2026]] — SD: BIS remote-access rule (renting=exporting); SA cuts 2028 forecast to $758B; Altman double-counting; OpenAI 457MW AMD via TensorWave

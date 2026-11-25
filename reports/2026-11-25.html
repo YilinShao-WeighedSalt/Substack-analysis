@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Semi Scan</title>
+<meta name="description" content="Visual intelligence brief from a 3-day scan of semiconductor Substacks — Nov 19-24, 2026.">
+<style>
+:root{ color-scheme:light;
+  --page:#f6f7f9;--surface:#fbfcfd;--surface-2:#f1f3f5;
+  --ink:#0b0b0b;--sec:#52514e;--muted:#8a8983;
+  --grid:#e3e4e0;--base:#c6c6bf;--border:rgba(11,11,11,.10);--accent:#2a78d6;
+  --pub-irrational:#2a78d6;--pub-semianalysis:#eb6834;--pub-semidoped:#1baf7a;
+  --long:#0ca30c;--short:#d03b3b;--neutral:#8a8983;--gain:#0ca30c;--loss:#d03b3b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme=light])){ color-scheme:dark;
+  --page:#0c0d0e;--surface:#191a1b;--surface-2:#212223;
+  --ink:#fff;--sec:#c3c2b7;--muted:#8a8983;
+  --grid:#2c2c2a;--base:#3a3a37;--border:rgba(255,255,255,.11);--accent:#3987e5;
+  --pub-irrational:#3987e5;--pub-semianalysis:#d95926;--pub-semidoped:#199e70;}}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--page);color:var(--ink);font-family:var(--sans);line-height:1.5;
+  -webkit-font-smoothing:antialiased;padding:0 16px 64px}
+.wrap{max-width:960px;margin:0 auto}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+h1,h2,h3{line-height:1.2;margin:0}
+section{margin-top:34px}
+.sec-h{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+  font-weight:700;margin-bottom:14px;border-bottom:1px solid var(--border);padding-bottom:7px}
+/* masthead */
+.mast{padding-top:30px}
+.mast h1{font-size:32px;font-weight:800;letter-spacing:-.02em}
+.mast .sub{color:var(--sec);margin-top:6px;font-size:15px}
+.dots{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:var(--sec)}
+.dot{display:inline-flex;align-items:center;gap:6px}
+.dot i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.status{margin-top:12px;font-size:12.5px;color:var(--muted);background:var(--surface-2);
+  border:1px solid var(--border);border-radius:8px;padding:9px 12px;font-family:var(--mono)}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.tile .v{font-size:34px;font-weight:800;margin-top:4px;font-family:var(--mono)}
+.tile .n{font-size:12px;color:var(--sec);margin-top:3px}
+.distbar{display:flex;height:9px;border-radius:5px;overflow:hidden;margin-top:12px;gap:2px}
+.distbar span{display:block}
+.distleg{display:flex;gap:10px;font-size:11px;color:var(--sec);margin-top:7px;flex-wrap:wrap}
+.distleg b{font-family:var(--mono)}
+/* call board */
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+.board-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+th{text-align:left;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);
+  font-weight:700;padding:11px 12px;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:11px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+.tk{font-family:var(--mono);font-weight:700;font-size:14px;white-space:nowrap}
+.tkname{display:block;font-family:var(--sans);font-weight:400;font-size:11px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;
+  padding:2px 8px;border-radius:20px;white-space:nowrap;border:1px solid transparent}
+.chip.LONG{color:var(--long);background:color-mix(in srgb,var(--long) 12%,transparent);border-color:color-mix(in srgb,var(--long) 30%,transparent)}
+.chip.SHORT{color:var(--short);background:color-mix(in srgb,var(--short) 12%,transparent);border-color:color-mix(in srgb,var(--short) 30%,transparent)}
+.chip.NEUTRAL{color:var(--neutral);background:color-mix(in srgb,var(--neutral) 14%,transparent);border-color:color-mix(in srgb,var(--neutral) 30%,transparent)}
+.srcdot{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--sec);white-space:nowrap}
+.srcdot i{width:9px;height:9px;border-radius:50%}
+.th{color:var(--sec);font-size:12.5px;max-width:320px}
+.pnl{font-family:var(--mono);font-weight:700;white-space:nowrap}
+.pnl.flat{color:var(--muted)}
+/* spotlight */
+.spots{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.spot{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px}
+.spot .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.spot .tk2{font-family:var(--mono);font-weight:800;font-size:18px}
+.spot .px2{font-family:var(--mono);font-weight:700;font-size:16px}
+.spot svg.big{width:100%;height:68px;display:block;margin:10px 0 4px}
+.rangebar{margin:12px 0 6px}
+.rangebar .lab{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.rangetrack{position:relative;height:6px;background:var(--surface-2);border-radius:4px;margin-top:4px}
+.rangefill{position:absolute;height:6px;background:var(--base);border-radius:4px}
+.rangedot{position:absolute;top:50%;transform:translate(-50%,-50%);width:11px;height:11px;border-radius:50%;background:var(--accent);border:2px solid var(--surface)}
+.conh{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:10px 0 5px;font-weight:600}
+.seg{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px}
+.seg span{display:block}
+.bul{margin:10px 0 0;padding-left:16px;font-size:12.5px;color:var(--sec)}
+.bul li{margin-bottom:5px}
+/* scorecards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;border-top:3px solid var(--base)}
+.card h3{font-size:15px;display:flex;align-items:center;gap:7px}
+.card h3 i{width:10px;height:10px;border-radius:50%}
+.meter{margin:12px 0}
+.meter .mlab{display:flex;justify-content:space-between;font-size:12px;color:var(--sec);font-family:var(--mono);margin-bottom:4px}
+.mtrack{height:7px;background:var(--surface-2);border-radius:4px;overflow:hidden}
+.mfill{height:7px;border-radius:4px}
+.plist{list-style:none;margin:10px 0 0;padding:0;font-size:12px}
+.plist li{padding:8px 0;border-top:1px solid var(--border)}
+.plist .pt{color:var(--sec)}
+.plist .pd{color:var(--ink);font-weight:600;margin-bottom:3px}
+.pchips{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}
+.pchip{font-family:var(--mono);font-size:10.5px;font-weight:700;padding:1px 6px;border-radius:4px;background:var(--surface-2);color:var(--sec)}
+/* decoder */
+.decoder{columns:2;column-gap:20px}
+.dterm{break-inside:avoid;margin-bottom:12px}
+.dterm b{font-family:var(--mono);color:var(--ink);font-size:12.5px}
+.dterm span{display:block;color:var(--sec);font-size:12px;margin-top:2px}
+/* themes */
+.thm{display:grid;gap:7px}
+.thm .row{display:grid;grid-template-columns:150px 1fr 34px;align-items:center;gap:10px;font-size:12.5px}
+.thm .name{color:var(--sec);text-align:right}
+.thm .track{background:var(--surface-2);border-radius:4px;height:16px;overflow:hidden}
+.thm .fill{height:16px;background:var(--accent);border-radius:4px}
+.thm .ct{font-family:var(--mono);color:var(--muted);font-size:12px}
+.foot{margin-top:40px;font-size:11.5px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px}
+@media(max-width:720px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .spots{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .decoder{columns:1}
+  .thm .row{grid-template-columns:110px 1fr 30px}
+  .mast h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <h1>Semiconductor Substack Scan</h1>
+  <div class="sub">Visual intelligence brief · 3-day loop · <span class="mono">Nov 19 – Nov 24, 2026</span></div>
+  <div class="dots">
+    <span class="dot"><i style="background:var(--pub-irrational)"></i>Irrational Analysis</span>
+    <span class="dot"><i style="background:var(--pub-semianalysis)"></i>SemiAnalysis</span>
+    <span class="dot"><i style="background:var(--pub-semidoped)"></i>Semi Doped</span>
+  </div>
+  <div class="status" id="status"></div>
+</header>
+
+<section>
+  <div class="tiles">
+    <div class="tile"><div class="k">Posts scanned</div><div class="v">4</div><div class="n">+2 educational skipped</div></div>
+    <div class="tile"><div class="k">Tickers priced</div><div class="v">12</div><div class="n">all calls this run</div></div>
+    <div class="tile"><div class="k">Calls logged</div><div class="v">12</div>
+      <div class="distbar"><span style="flex:7;background:var(--long)"></span><span style="flex:5;background:var(--neutral)"></span></div>
+      <div class="distleg"><span>▲ LONG <b>7</b></span><span>● NEUTRAL <b>5</b></span><span>▼ SHORT <b>0</b></span></div>
+    </div>
+    <div class="tile"><div class="k">Book bias</div><div class="v" style="font-size:20px;line-height:1.25;padding-top:8px">Constructive,<br>peak-wary</div><div class="n">long the metal · wary of memory top &amp; NVDA governance</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-h">Call Board — one row per logged call · all opened at spot (Nov 19-24)</div>
+  <div class="board-wrap">
+    <table id="board"><thead><tr>
+      <th>Ticker</th><th>Call</th><th>Source</th><th>Thesis</th><th>Price</th><th>3-mo</th><th>P&amp;L</th>
+    </tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-h">Ticker spotlights — the run's promoted names</div>
+  <div class="spots" id="spots"></div>
+</section>
+
+<section>
+  <div class="sec-h">Source scorecards</div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<section>
+  <div class="sec-h">Jargon decoder — terms used this run, one line each</div>
+  <div class="decoder" id="decoder"></div>
+</section>
+
+<section>
+  <div class="sec-h">Themes in play — by mention weight</div>
+  <div class="thm" id="themes"></div>
+</section>
+
+<div class="foot">
+  Generated by an unattended 3-day scan loop reading full post bodies via Substack's public API; prices &amp; 3-mo closes via yfinance (latest close Nov-24). Trailing P/E, market-cap and analyst-consensus endpoints were egress-blocked (401 Invalid Crumb) and are omitted rather than fabricated; range bars are drawn from 3-month closes. Not investment advice.
+</div>
+
+</div>
+<script>
+const CALLS=[{"t":"NVDA","name":"NVIDIA","dir":"NEUTRAL","th":"Jensen forced out\u2192reinstated +31.5% (biggest day since 2003) as SEC accounting probe + circular-financing questions stay open","px":165.05,"closes":[212.81,209.43,227.73,217.31,220.53,217.2,224.16,228.19,230.1,225.48,223.42,218.36,218.29,210.96,212.17,213.9,219.34,222.27,227.38,228.87,225.51,224.58,225.07,228.86,227.21,228.38,230.86,233.95,238.9,239.24,237.47,230.48,229.28,226.32,228.52,221.3,217.23,214.13,217.09,216.47,221.97,212.21,210.96,216.0,217.94,215.38,213.66,204.64,202.06,206.69,200.13,181.6,186.64,178.67,168.89,173.73,166.19,162.85,156.14,155.46,150.96,145.98,125.53,165.05],"hi":239.24,"lo":125.53,"ci":63,"cd":"2026-11-24"},{"t":"MU","name":"Micron","dir":"LONG","th":"Mehrotra: squeeze tightens from here \u2014 75% of 2027 sold, 26 LTAs / $32B upfront + take-or-pay; 3D DRAM 2028-29","px":707.7,"closes":[932.82,938.25,935.24,932.71,958.58,933.29,955.93,958.01,1016.43,1000.1,1027.61,977.26,975.11,923.88,927.45,926.4,977.35,1015.64,1043.8,1095.99,1071.71,1080.36,1082.11,1053.81,1064.91,1064.94,1097.22,1074.72,1063.79,1045.4,1087.83,1035.68,1028.84,988.88,953.04,914.13,931.24,878.84,904.9,896.07,913.67,856.49,877.55,903.7,928.76,983.23,934.27,884.74,833.59,855.1,795.23,656.39,690.0,733.15,725.11,811.3,798.44,778.31,719.02,712.42,705.27,690.44,594.51,707.7],"hi":1097.22,"lo":594.51,"ci":61,"cd":"2026-11-19"},{"t":"INTC","name":"Intel","dir":"LONG","th":"Foundry proof points: Microsoft EMIB for Azure + multiyear Xeon, first 18A(-P) customer signed, 18A yields ~70%","px":59.66,"closes":[87.48,88.24,92.09,89.47,89.51,88.97,90.05,91.67,95.8,104.47,106.24,100.32,102.94,97.19,97.14,101.05,108.8,108.6,121.78,123.86,122.6,127.39,123.0,116.03,115.93,120.23,120.0,119.33,116.19,112.5,113.12,107.08,104.7,101.35,102.81,98.12,95.37,89.85,92.03,91.69,92.96,85.49,86.96,90.47,93.74,95.53,92.07,65.76,59.97,60.55,58.27,52.25,56.28,59.37,58.13,62.5,61.2,59.66,55.47,55.17,54.67,55.72,51.28,59.66],"hi":127.39,"lo":51.28,"ci":61,"cd":"2026-11-19"},{"t":"TSM","name":"TSMC","dir":"LONG","th":"$22.6B Texas 2nm campus filing; limit-up on Jensen; Cliff Hou \u2014 no order cancellations (China \u226416nm halted on compliance)","px":363.6,"closes":[416.29,416.57,426.16,416.4,414.21,412.89,414.39,415.89,427.76,437.83,434.2,426.88,432.08,416.89,412.64,417.72,430.26,434.67,445.14,452.0,446.57,451.15,450.61,452.88,456.94,456.19,459.2,472.78,485.8,482.3,472.2,457.99,453.31,444.35,445.12,430.0,422.25,412.61,420.22,425.08,431.89,412.35,418.51,424.37,436.87,439.51,431.81,406.13,398.63,404.8,395.75,353.1,375.44,388.62,396.48,413.35,405.49,398.73,373.45,359.69,362.62,352.09,318.71,363.6],"hi":485.8,"lo":318.71,"ci":63,"cd":"2026-11-24"},{"t":"005930.KS","name":"Samsung","dir":"NEUTRAL","th":"Korea exports quadruple / no cuts / sold-out-2027 + HBM dev promoted to memory president \u2014 vs Goldman \u221243% PT (DRAM/NAND rollover '28)","px":176000.0,"closes":[252620.53,257043.84,261467.17,252620.53,255569.41,256552.38,246231.3,245739.81,251146.09,265399.0,264907.53,264907.53,264416.03,255077.94,244756.86,244265.38,249180.17,248197.22,256552.38,269330.84,271788.25,280634.88,265399.0,272500.0,268500.0,276000.0,276000.0,272000.0,268500.0,262000.0,250500.0,232000.0,232000.0,210000.0,215500.0,218000.0,211500.0,223500.0,214500.0,215500.0,213000.0,222000.0,242000.0,232000.0,225000.0,229000.0,219500.0,218000.0,201500.0,188700.0,189900.0,198900.0,206000.0,208000.0,206000.0,196800.0,190300.0,194700.0,196900.0,183100.0,177500.0,189400.0,176000.0],"hi":280634.88,"lo":176000.0,"ci":61,"cd":"2026-11-24"},{"t":"000660.KS","name":"SK hynix","dir":"NEUTRAL","th":"Becomes Kioxia's largest holder (14.1%) + first Besi hybrid bonders + SoftBank $1T sounding \u2014 vs Goldman \u221243% PT","px":1078000.0,"closes":[1677636.25,1687634.12,1729625.0,1653000.0,1674000.0,1693000.0,1613000.0,1596000.0,1647000.0,1783000.0,1793000.0,1856000.0,1853000.0,1812000.0,1697000.0,1690000.0,1759000.0,1745000.0,1857000.0,1868000.0,1840000.0,1862000.0,1768000.0,1765000.0,1776000.0,1833000.0,1841000.0,1773000.0,1723000.0,1681000.0,1605000.0,1443000.0,1419000.0,1262000.0,1272000.0,1277000.0,1223000.0,1294000.0,1223000.0,1277000.0,1275000.0,1341000.0,1487000.0,1526000.0,1418000.0,1472000.0,1398000.0,1396000.0,1264000.0,1132000.0,1136000.0,1212000.0,1277000.0,1254000.0,1216000.0,1120000.0,1098000.0,1144000.0,1183000.0,1113000.0,1085000.0,1158000.0,1078000.0],"hi":1868000.0,"lo":1078000.0,"ci":61,"cd":"2026-11-24"},{"t":"AMD","name":"AMD","dir":"NEUTRAL","th":"OpenAI models rewrote AMD GPU RTL (+14% PPA, taped out) vs Hunterbrook China-firmware short (\u22127.7%) + House license scrutiny","px":453.46,"closes":[479.18,480.93,476.67,465.58,470.72,459.61,457.06,456.16,477.57,505.74,521.1,503.6,516.13,493.41,504.2,512.5,545.09,559.82,615.52,623.77,614.61,629.26,630.63,607.87,607.57,611.76,615.73,633.91,631.75,649.42,645.86,620.68,608.1,594.24,605.53,570.82,562.23,528.75,538.05,534.74,552.72,507.93,516.79,531.28,560.26,578.44,566.42,504.8,466.84,483.9,488.78,404.4,449.04,508.58,515.21,552.9,585.3,534.06,504.28,503.41,530.14,489.19,424.39,453.46],"hi":649.42,"lo":404.4,"ci":62,"cd":"2026-11-20"},{"t":"SNPS","name":"Synopsys","dir":"LONG","th":"OpenAI+Synopsys agentic EDA: RTL rewrites verified in Synopsys; training a Synopsys model to drive EDA like an expert designer","px":426.99,"closes":[408.79,410.0,464.89,442.61,439.59,414.82,415.97,416.31,393.84,392.03,393.22,397.17,397.38,381.43,367.7,378.47,381.17,384.97,401.85,409.24,413.06,424.91,425.76,417.61,415.09,434.94,490.54,489.9,488.47,505.17,502.67,497.75,509.99,502.51,494.51,479.93,468.11,454.63,454.58,447.62,451.19,422.48,430.14,454.33,474.42,481.89,490.19,467.61,466.08,462.88,462.95,440.31,450.46,466.97,459.95,462.12,462.69,455.2,441.33,435.51,434.01,430.91,396.17,426.99],"hi":509.99,"lo":367.7,"ci":61,"cd":"2026-11-19"},{"t":"KEYS","name":"Keysight","dir":"LONG","th":"Record FQ4 \u2014 orders +53%, revenue +41% to $1.99B, commercial comms +73%","px":289.63,"closes":[320.12,321.87,325.82,319.97,322.7,319.27,321.58,322.62,327.21,333.42,331.01,325.65,338.64,314.96,313.36,322.04,331.44,335.0,342.03,347.32,353.36,357.54,362.15,359.74,360.65,364.04,373.88,384.64,384.17,388.03,381.42,374.67,382.75,377.7,370.22,357.62,342.08,331.21,335.86,334.16,341.35,311.52,314.77,326.04,336.1,335.5,329.84,307.2,298.94,305.11,285.86,260.61,272.13,288.97,291.46,305.64,304.23,297.68,285.63,284.45,286.3,281.42,261.51,289.63],"hi":388.03,"lo":260.61,"ci":62,"cd":"2026-11-20"},{"t":"HPE","name":"HPE","dir":"NEUTRAL","th":"Record AI orders $4.5B +130%, raised FY27 to 27-35%, memory shortage thru 2H28 \u2014 but Cloud&AI margin guided ~14% (from 18.4%)","px":48.02,"closes":[53.31,55.09,54.27,52.18,52.11,50.74,51.7,54.3,51.87,55.89,58.75,55.08,61.93,55.27,55.74,56.54,61.04,60.76,61.75,61.03,62.33,63.52,62.94,62.63,61.49,63.89,64.58,69.33,68.36,70.48,72.09,71.0,73.46,70.33,68.81,63.11,58.63,55.13,55.87,56.09,58.17,55.47,56.69,58.72,60.84,60.33,58.87,55.09,51.19,53.1,50.09,44.16,44.77,47.54,47.93,50.25,50.16,48.29,46.57,46.09,45.78,45.49,40.91,48.02],"hi":73.46,"lo":40.91,"ci":63,"cd":"2026-11-24"},{"t":"SMTC","name":"Semtech","dir":"LONG","th":"Record FQ3 $423.0M +58%, guides FQ4 to ~$480M","px":104.13,"closes":[127.52,140.8,142.43,131.17,132.96,132.27,133.85,135.4,147.89,162.62,163.94,159.13,167.24,147.05,150.91,167.55,178.19,185.0,177.37,174.33,169.33,174.5,182.3,174.78,180.1,178.35,186.59,194.88,192.83,197.2,193.78,187.49,187.3,168.28,172.78,160.26,144.21,136.73,142.22,136.2,141.63,125.12,132.0,136.73,144.35,146.97,140.85,127.38,122.38,127.42,110.96,91.54,103.21,116.45,113.49,125.22,119.44,114.59,105.3,106.77,104.25,101.81,87.63,104.13],"hi":197.2,"lo":87.63,"ci":63,"cd":"2026-11-24"},{"t":"AMZN","name":"Amazon","dir":"LONG","th":"Buys Decart ~$7.5B ahead of selling Trainium outside AWS","px":255.39,"closes":[261.06,260.28,256.26,266.43,259.77,254.92,254.98,258.9,258.51,256.97,252.4,251.89,256.78,253.54,248.42,245.96,251.19,253.71,258.45,254.98,249.27,249.38,249.67,246.15,246.67,249.15,248.23,251.52,251.4,256.29,259.92,254.06,262.43,259.53,258.58,254.08,254.76,250.0,262.45,262.63,262.37,250.38,248.0,249.09,253.1,254.6,243.79,240.35,245.63,250.69,266.03,260.21,259.3,266.93,270.87,266.17,267.44,266.66,257.75,257.89,267.74,257.37,246.82,255.39],"hi":270.87,"lo":240.35,"ci":63,"cd":"2026-11-24"}];
+const SPOT={"NVDA": {"bul": ["Board forced Huang out, then reinstated him 6 days later after White House pressure; stock round-tripped a 14% drop into a +31.5% session.", "SEC accounting inquiry + circular-financing questions stay open; Congress testimony next week."]}, "MU": {"bul": ["75% of 2027 output already sold; customers negotiating 2028 \u2014 Mehrotra calls '27/'28 tighter than '26.", "26 supply agreements, many 5yr+, backed by $32B upfront + take-or-pay; 3D DRAM partnering 2028-29."]}, "INTC": {"bul": ["Microsoft is first to use Intel Foundry EMIB for its own Azure silicon + multiyear Xeon/Diamond Rapids \u2014 a second packaging route to stretched CoWoS.", "First 18A(-P) leading-edge customer signed (unnamed); 18A yields reportedly ~70%, up from 'horrible'."]}, "TSM": {"bul": ["Filed for a $22.6B 2nm Texas campus (Brazos County), Arizona the fallback \u2014 'determinative' on property-tax terms, not yet committed.", "Hit the 10% daily limit in Taipei on Jensen's return; Cliff Hou says no client order cancellations."]}};
+const DECODER=[["EMIB", "Intel's embedded bridge that links chiplets inside one package \u2014 a rival route to TSMC's CoWoS; Microsoft adopting it is Intel Foundry's first external-packaging win."], ["18A / 18A-P", "Intel's most advanced node (18A) and its improved variant; the 'first 18A customer' is the long-chased proof an outside buyer trusts Intel's leading edge."], ["Remote-access rule", "Nov-19 BIS rule treating renting AI compute abroad like exporting the chips; now reaching the foundry door \u2014 TSMC/Samsung must turn away China orders \u226416nm without a license."], ["Take-or-pay / LTA", "Long-term supply contract where the buyer pays whether or not it lifts the volume \u2014 why Micron says customers 'won't walk away' from memory."], ["3D DRAM", "Stacking DRAM cells vertically (like NAND) to beat the planar scaling wall; Micron sees market penetration 2028-29, every major customer asking to co-develop."], ["HBM", "High-bandwidth memory stacked beside the GPU/ASIC; Goldman sees the market tripling to $200B by 2027 even as plain DRAM/NAND prices roll over in 2028."], ["Hybrid bonding", "Copper-to-copper die stacking (no solder bumps) for taller HBM; SK hynix installing Besi/AMAT bonders to test 20-high HBM5."], ["Circular financing", "Chipmaker backs a customer that then buys its chips; one of the two areas the SEC is said to be probing at Nvidia (the other: customer-HQ revenue geography)."], ["Off-B/S GPU lease", "An Apollo trust buys the racks and leases them back \u2014 SpaceX's $32B bond keeps $47B of Vera Rubin GPUs off its balance sheet; 8.26% yield prices used-GPU risk."], ["Agentic EDA", "AI models driving chip-design tools; OpenAI's models rewrote AMD GPU RTL for +14% PPA, verified in Synopsys \u2014 a new demand vector for EDA."], ["Trainium", "Amazon's in-house AI accelerator; the Decart buy is about selling Trainium capacity outside AWS by lifting its token economics."], ["SOCAMM2", "Next-gen memory module substrate for AI servers; the shortage Korean substrate makers are spending \u20a92.8T to chase."]];
+const THEMES=[["Memory / DRAM cycle", 9], ["Export controls", 8], ["Nvidia platform", 6], ["AI debt financing", 5], ["Foundry / process node", 5], ["Advanced packaging", 4], ["HBM memory", 4], ["Infra capex", 3]];
+const SRC={"irrationalanalysis": {"name": "Irrational Analysis", "hr": "37/76 (49%)", "w": 37, "n": 76, "posts": []}, "semianalysis": {"name": "SemiAnalysis", "hr": "15/40 (38%)", "w": 15, "n": 40, "posts": []}, "semidoped": {"name": "Semi Doped", "hr": "83/253 (33%)", "w": 83, "n": 253, "posts": [["Nov 24 \u00b7 Daily", "Jensen reinstated +31.5%; TSMC $22.6B TX 2nm; HPE memory shortage thru '28; Goldman HBM\u2192$200B, cuts Samsung/SK", ["NVDA \u25cf", "TSM \u25b2", "HPE \u25cf", "SMTC \u25b2", "AMZN \u25b2"]], ["Nov 23 \u00b7 Daily", "SEC probes Nvidia accounting; POTUS wants Jensen back; Korea exports 4\u00d7; server makers reprice +25-45%; SoftBank $1T SK sounding", ["NVDA \u25cf"]], ["Nov 20 \u00b7 Daily", "TSMC/Samsung halt China \u226416nm; SK hynix = Kioxia's top holder; SpaceX $32B GPU debt @8.26%; Hunterbrook shorts AMD", ["AMD \u25cf", "KEYS \u25b2", "000660 \u25cf"]], ["Nov 19 \u00b7 Daily", "Intel lands Microsoft EMIB + first 18A customer; Micron '27 75% sold; Anthropic $107B IPO; OpenAI redesigns AMD GPUs", ["INTC \u25b2", "MU \u25b2", "SNPS \u25b2"]]]}};
+function sparkSVG(closes,w,h,color,opts={}){
+  const pad=4,n=closes.length,min=Math.min(...closes),max=Math.max(...closes),rng=(max-min)||1;
+  const X=i=>pad+i*(w-2*pad)/(n-1), Y=v=>h-pad-(v-min)/rng*(h-2*pad);
+  let line=""; closes.forEach((v,i)=>line+=(i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1)+" ");
+  const area=line+"L"+X(n-1).toFixed(1)+" "+(h-pad)+" L"+X(0).toFixed(1)+" "+(h-pad)+" Z";
+  const ex=X(n-1).toFixed(1),ey=Y(closes[n-1]).toFixed(1); let call="";
+  if(opts.ci!=null){const cx=X(opts.ci).toFixed(1),cy=Y(closes[opts.ci]).toFixed(1);
+    call=(opts.refline?`<line x1="${pad}" y1="${cy}" x2="${w-pad}" y2="${cy}" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity=".55"/>`:"")
+        +`<circle cx="${cx}" cy="${cy}" r="4" fill="none" stroke="var(--muted)" stroke-width="2"/>`;}
+  return `<svg viewBox="0 0 ${w} ${h}" width="${w}" height="${h}" preserveAspectRatio="none" aria-hidden="true">
+    <path d="${area}" fill="${color}" fill-opacity=".11"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${call}<circle cx="${ex}" cy="${ey}" r="6" fill="var(--surface)"/><circle cx="${ex}" cy="${ey}" r="3.6" fill="${color}"/></svg>`;
+}
+const PUBCOL={semidoped:"var(--pub-semidoped)",semianalysis:"var(--pub-semianalysis)",irrationalanalysis:"var(--pub-irrational)"};
+const ICON={LONG:"▲",SHORT:"▼",NEUTRAL:"●"};
+const DIRCOL={LONG:"var(--long)",SHORT:"var(--short)",NEUTRAL:"var(--neutral)"};
+function fmtpx(t,p){ if(t.endsWith(".KS")) return "₩"+Math.round(p).toLocaleString(); return "$"+p.toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2}); }
+
+document.getElementById("status").textContent=
+ "RUN STATUS — semidoped: 4 call-bearing dailies (Nov 19/20/23/24) + Nov-24 Cornelis episode & Nov-22 quiz (educational, no priced calls). irrationalanalysis: no new post (last Nov-16, ingested). semianalysis: no new post (last Nov-12, ingested). Window extended to Nov-19 to cover the Nov-22 scheduled run, which produced no output. All sources reachable; full bodies served.";
+
+// CALL BOARD
+const tb=document.querySelector("#board tbody");
+CALLS.forEach(c=>{
+  const tr=document.createElement("tr");
+  const col=DIRCOL[c.dir];
+  tr.innerHTML=
+   `<td><span class="tk">${c.t}</span><span class="tkname">${c.name}</span></td>
+    <td><span class="chip ${c.dir}">${ICON[c.dir]} ${c.dir}</span></td>
+    <td><span class="srcdot"><i style="background:var(--pub-semidoped)"></i>Semi Doped</span></td>
+    <td class="th">${c.th}</td>
+    <td class="mono">${fmtpx(c.t,c.px)}</td>
+    <td>${sparkSVG(c.closes,88,26,col,{ci:c.ci})}</td>
+    <td class="pnl flat">new · 0.0%</td>`;
+  tb.appendChild(tr);
+});
+
+// SPOTLIGHTS
+const sp=document.getElementById("spots");
+CALLS.filter(c=>SPOT[c.t]).forEach(c=>{
+  const m=SPOT[c.t], col=DIRCOL[c.dir];
+  const lo=c.lo,hi=c.hi,cur=c.px;
+  const fillpct=Math.max(0,Math.min(100,(cur-lo)/((hi-lo)||1)*100));
+  const bul=m.bul.map(b=>`<li>${b}</li>`).join("");
+  const d=document.createElement("div"); d.className="spot";
+  d.innerHTML=
+   `<div class="top"><div><span class="tk2">${c.t}</span> <span class="chip ${c.dir}" style="margin-left:4px">${ICON[c.dir]} ${c.dir}</span></div><span class="px2">${fmtpx(c.t,cur)}</span></div>
+    ${sparkSVG(c.closes,440,68,col,{ci:c.ci,refline:true})}
+    <div class="rangebar"><div class="lab"><span>${fmtpx(c.t,lo)}</span><span>52-wk range (3-mo)</span><span>${fmtpx(c.t,hi)}</span></div>
+      <div class="rangetrack"><div class="rangefill" style="left:0;width:100%"></div><div class="rangedot" style="left:${fillpct}%"></div></div></div>
+    <ul class="bul">${bul}</ul>`;
+  sp.appendChild(d);
+});
+
+// SCORECARDS
+const cw=document.getElementById("cards");
+["irrationalanalysis","semianalysis","semidoped"].forEach(h=>{
+  const s=SRC[h],col=PUBCOL[h],pct=Math.round(s.w/s.n*100);
+  const posts=s.posts.map(p=>{
+    const chips=p[2].map(x=>`<span class="pchip">${x}</span>`).join("");
+    return `<li><div class="pd">${p[0]}</div><div class="pt">${p[1]}</div><div class="pchips">${chips}</div></li>`;
+  }).join("") || '<li><div class="pt" style="color:var(--muted)">No new post in window.</div></li>';
+  const d=document.createElement("div"); d.className="card"; d.style.borderTopColor=col;
+  d.innerHTML=
+   `<h3><i style="background:${col}"></i>${s.name}</h3>
+    <div class="meter"><div class="mlab"><span>hit rate</span><span>${s.hr}</span></div>
+      <div class="mtrack"><div class="mfill" style="width:${pct}%;background:${col}"></div></div></div>
+    <ul class="plist">${posts}</ul>`;
+  cw.appendChild(d);
+});
+
+// DECODER
+document.getElementById("decoder").innerHTML=
+  DECODER.map(d=>`<div class="dterm"><b>${d[0]}</b><span>${d[1]}</span></div>`).join("");
+
+// THEMES
+const mx=Math.max(...THEMES.map(t=>t[1]));
+document.getElementById("themes").innerHTML=
+  THEMES.map(t=>`<div class="row"><div class="name">${t[0]}</div><div class="track"><div class="fill" style="width:${t[1]/mx*100}%"></div></div><div class="ct">${t[1]}</div></div>`).join("");
+</script>
+</body>
+</html>

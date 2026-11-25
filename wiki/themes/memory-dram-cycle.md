@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-11-19
+updated: 2026-11-25
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -123,3 +123,6 @@ Micron's **record FY2026** gave the DRAM-supercycle leg its strongest confirmati
 
 ## 2026-11-19 — DRAM stays tight into 2027; NAND rolls over sooner
 TrendForce: **conventional DRAM price increases slow but do not turn negative in any quarter of 2027** (HBM eats the wafers). **Samsung–Apple** are in final talks on a **4–5yr DRAM supply deal (1H27)** with guaranteed minimum volumes and market-based pricing — a volume floor for Samsung. **NAND is the weak spot:** spot prices fell ~20% in two weeks (weak consumer demand, rising YMTC supply), and TrendForce sees **NAND contract prices starting to fall in Q2-2027** as Chinese clouds cut enterprise-SSD orders. Korea memory capex hit a record ₩88.16T ($65.7B) in 9 months (Samsung +76.6%); ₩329T cash on hand. CXMT says it has lined up long-term deals with several tier-1 customers.
+
+## 2026-11-25 — the memory-peak debate crystallizes (Micron bull vs Goldman cut)
+The run's central tension: **is this the top?** On the bull side, **Micron's Mehrotra** said the squeeze "tightens from here" — 75% of 2027 production already sold, customers negotiating 2028, '27/'28 "even tighter than 2026" — anchored by **26 supply agreements (many 5yr+), $32B of upfront cash/commitments, and take-or-pay + pricing bands**; memory now "sets the economics of AI factories," so customers can't walk. **Korea's chip exports nearly quadrupled** (Nov 1-20, 49.7% of all exports) and checks found **no contract cuts** (Nvidia/Google sold out '27, >half '28 under LTAs). On the bear side, **Goldman lifted 2027 HBM to $200B** (from $60B; $237B '28; custom chips 44% of HBM by '28) **but cut Samsung & SK hynix PTs by up to 43%** — HBM growth alone won't offset the profit hit when **conventional DRAM/NAND prices roll over in 2028**; tight through '27, easing after. **Stacked 3D DRAM** (vertical cells, NAND-style) is the next node, penetrating 2028-29. Consolidation: **SK hynix became Kioxia's largest shareholder (14.1%)** via a ¥129B CB conversion (already owns Solidigm). Server-side, memory's +400%-since-2024 cost is driving AI-server makers to reprice signed contracts +25-45% (Dell/HPE/Lenovo/SMCI).

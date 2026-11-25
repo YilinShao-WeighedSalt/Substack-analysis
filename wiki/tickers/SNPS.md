@@ -39,3 +39,11 @@ No px@call values are recorded across the log, so price-based verification is no
 
 ## 2026-11-01 run update
 **2026-11-01 — resolution.** [[semidoped]] Oct-1 **LONG ($434.94) → $467.61 = +7.5% WIN ✓** — the lone SD winner of the cycle (AI-native EDA / Amazon silicon-IP pact held up).
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-19 | [[semidoped]] | LONG | 426.99 | OpenAI+Synopsys agentic EDA: OpenAI's RTL rewrites (AMD GPU, +14% PPA) were all verified with Synopsys tools, and OpenAI is training a Synopsys model to drive EDA software 'like an expert designer' — a new demand vector for the EDA incumbents. |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 426.99 — agentic/AI-driven EDA as a structural tailwind (chip-design demand compounding on itself). Opened at spot. Falsifier: in-house/open EDA models bypassing Synopsys, or the PPA gains proving block-specific ('up to' doing work). current_stance long.

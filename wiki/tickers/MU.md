@@ -149,3 +149,11 @@ The only hard price anchor in the log is the irrationalanalysis January 2026 re-
 | 2026-11-10 | [[semidoped]] | NEUTRAL | 690.0 | Memory-price-leveling: channel check sees DRAM flattening Q1 and easing Q2 2027. |
 
 **Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=690.0); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-19 | [[semidoped]] | LONG | 707.70 | Mehrotra (TomorrowX): squeeze tightens from here, 75% of 2027 sold, customers negotiating 2028; 26 supply agreements many 5yr+ / $32B upfront + take-or-pay + pricing bands; 3D DRAM penetration 2028-29 (every major customer asking to co-develop). |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 707.70 (Nov-19 close) — the strongest memory-bull datapoint of the run: contracts, not spot, now anchor the thesis (take-or-pay, 5yr+, $32B upfront). Opened at spot. Falsifier: a DRAM/NAND price rollover in 2028 (the Goldman cut-Samsung/SK thesis Nov-24) or LTAs getting repriced down. current_stance long.

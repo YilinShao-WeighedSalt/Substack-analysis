@@ -4,15 +4,17 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-11-19
+updated: 2026-11-25
 handle: irrationalanalysis
 calls_logged: 654
-hit_rate: "37/71 (52%), ~17 open"
+hit_rate: "37/76 (49%), ~12 open"
 ---
 ## Profile
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-11-25): 37/71 → 37/76 (49%) — the Oct-24 "Dancing in the Rain" batch resolves 0W/5L.** IA's speculative chart-section longs from the bubble-vibes memo all cratered into the Jensen/memory-peak drawdown: **[[AAOI]] LONG ($67.51 → $38.70) = −42.7% ✗** (worst), **[[AXTI]] LONG ($52.08 → $38.02) = −27.0% ✗** (the 6-in InP favorite, gutted again), **[[CRDO]] LONG ($147.29 → $122.46) = −16.9% ✗**, **[[BE]] LONG ($193.30 → $168.15) = −13.0% ✗**, and the **[[COHR]] SHORT ($209.29 → $215.81) = short −3.1% ✗** — Coherent's $2B buyback (Nov-20) and PhotonLink momentum pushed the price up, so the UHP-laser-socket short finally gave a point back after two winning resolutions. (TSEM NEUTRAL excluded.) **No new post this run** (last: Nov-16 "Guillotines and Gigawatts" macro memo, already ingested; the author remains de-levered/on vacation). calls_logged unchanged (654).
 
 **hit_rate note (2026-11-19): 35/65 → 37/71 (52%) — the Oct-19 OCP batch resolves 2W/4L.** The two optics *shorts/anti-bull* calls paid while the honest-player longs all cratered in the Jensen-exit drawdown: **[[AVGO]] LONG ($328.75) → $341.60 = +3.9% ✓** (the "cleanest 1.6T AEC" — the one Oct-19 long that worked) and **[[COHR]] SHORT ($232.90) → $210.86 = short +9.5% ✓** (the UHP-laser-socket short), vs losses **[[LITE]] −32.1%**, **[[CRDO]] −27.0%**, **[[SMTC]] −21.9%**, **[[GLW]] −17.8%** ✗ (the µVCSEL/copper/Corning longs). (NEUTRALs MRVL/MTSI/ALAB excluded.) The Oct-24 "Dancing in the Rain" batch (AAOI/BE/AXTI/CRDO long, COHR short, TSEM neut) crosses 30d ~Nov-23. **This run: 1 post — "[Market Memo] Guillotines and Gigawatts" (Nov-16), a one-off political/macro memo with NO priced ticker call.** The author argues the Jensen saga masks a coordinated grassroots+establishment+deep-state move to **kill open-source AI** / regulatory-capture; cites Susan Collins losing to the AI backlash; declares readers "almost certainly offsides" and is **fully de-levered / on vacation** ("go home, sleep it off, come back later"). Logged as a **macro de-risk** (book-bias + [[datacenter-power]]/[[geopolitics-export-controls]] themes), not a Call Board row → calls_logged unchanged (654).
 

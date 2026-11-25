@@ -152,3 +152,11 @@ The only price-anchored call in the log is irrationalanalysis's October 2024 men
 | 2026-11-18 | [[semidoped]] | LONG | 359.69 | **2027 wafer price hikes 10-20%+** sent to designers = pricing power; hands CoWoS "on-substrate" step to affiliate **Xintec** inside a TSMC fab + AUO glass substrates (CoPoS); record **NT$167.6B** subsidies; per-customer credit limits/prepay to secure capacity — held through the −6% Taiwan tape. |
 
 **Outcome tracking (2026-11-19):** New **SD LONG** @ 359.69 (Nov-18 close), a 3-mo low — TSMC round-tripped with Taiwan's −6% Nov-16 session. Thesis is pricing power + capacity discipline (credit limits, 2027 hikes); demand signal intact (CoWoS expansion, Kinsus/SPIL/AUO). **Resolution (30d):** SD Oct-19 LONG ($412.61) → $359.69 = **−12.8% LOSS ✗** (entry before the BIS-rule/Taiwan selloff). Added [[semidoped-2026-11-18-daily-update-november-18th-2026]] + [[semidoped-2026-11-16-daily-update-november-16th-2026]].
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-24 | [[semidoped]] | LONG | 363.60 | Files for a $22.6B 2nm Texas campus (Brazos County, 2nm+, construction 2027-31; Arizona fallback, not committed); limit-up in Taipei on Jensen's reinstatement; Cliff Hou says no client order cancellations (China ≤16nm halted on compliance). |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 363.60 — US advanced-capacity expansion + demand reaffirmation, with China-foundry compliance a small offset. Opened at spot. **Resolution (30d):** SD Oct-23 NEUT ($418.51) excluded; the Oct-22 cohort's peers resolved red (see semidoped note). current_stance long.

@@ -4,7 +4,7 @@ title: "Nvidia GPU Platform & Moat"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-11-19
+updated: 2026-11-25
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -135,3 +135,6 @@ First third-party Rubin results on the AgentX agentic-inference benchmark (pre-r
 
 ## 2026-11-19 — first earnings without Jensen: beat, raise, margin trough
 Nvidia's FQ3 (first report since Huang's resignation) **beat and raised**: rev **$115.8B (+103% YoY)** vs ~$109B expected; DC rev $107.6B; **Vera Rubin ~$20B in its first production quarter** (and topped MLPerf Training); **Q4 guide $130B ±3%** (extra week, **no China DC compute**). Interim CEO **Colette Kress raised FY28 growth to ~75% from 70%** — the forecast investors feared would be scrapped — and called the **71-72% next-quarter GM the trough** (honoring old POs before new pricing) returning to 72-73% in FY28. Board chair Harvey Jones: **no intent to reinstate Huang** (Heidrick & Struggles retained; Marvell's Matt Murphy floated). Supply commitments jumped to **$390B** (mostly multiyear memory); inventory $39.7B for the Rubin ramp; the board added a National Security & Export-Control Oversight Committee. Shares +4% AH but the regular-session close ($155.46) was the lowest since ~Jul-2025 (−24% on the month). This is the near-term validation of the **"roadmap-intact"** side vs SemiAnalysis's structural short — see [[nvda-post-jensen-structural-bear-vs-roadmap-intact]].
+
+## 2026-11-25 — the Jensen whipsaw and an SEC accounting probe
+An extraordinary governance round-trip: after Huang's Nov-12 forced exit, **Reuters reported SEC enforcement staff are scrutinizing Nvidia's accounting** — two areas drawing focus: the switch to reporting **revenue by customer HQ** (Singapore, ~half of global revenue per FT, dropped out of the geo breakdown) and **circular financing** (Nvidia backing customers that then buy its chips; interim CEO Kress said Nvidia will be "far more selective"). [[NVDA]] fell 14% Fri to $125.53; then, after White-House pressure, the board **reinstated Huang** Monday (adding a National Security & Export Control Committee + searching for a Chief Compliance Officer) → **+31.5% to $165.05**, biggest day since 2003, SOX +14%. The SEC inquiry, circular-financing questions, and foreign-intel probe all stay open; Congress testimony follows next week. The episode sharpens the open contradiction [[nvda-post-jensen-structural-bear-vs-roadmap-intact]].

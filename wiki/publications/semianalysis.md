@@ -4,15 +4,17 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-19
+updated: 2026-11-25
 handle: semianalysis
 calls_logged: 256
-hit_rate: "14/39 (36%), ~11 open"
+hit_rate: "15/40 (38%), ~10 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-25): 14/39 → 15/40 (38%), ~10 open — no new post; the Oct-23 Trainium [[AMZN]] LONG resolves a WIN.** **[[AMZN]] LONG ($248.00) → $255.39 = +3.0% ✓** — the TorchNeuron/Neuron-Explorer training-stack thesis held up as one of the very few names that *didn't* round-trip the late-October top (SemiDoped's own Oct-20 AMZN long, logged higher at $262.37, resolved −2.7%). Last post Nov-12 (Jensen), already ingested; the structural **SHORT [[NVDA]] ($173.73)** stays open and sits +5.0% in its favor at $165.05 after the SEC-probe/Jensen-whipsaw week — the governance turmoil is, if anything, the bear case playing out. calls_logged unchanged (256).
 
 **hit_rate note (2026-11-19): 14/36 → 14/39 (36%), ~11 open — no new post; the Oct-19 "Datacenters 2027" supplier longs resolve 0W/3L.** The +50GW/>$1T-binding-leases supplier basket all round-tripped in the Jensen-exit/BIS-rule drawdown: **[[VRT]] LONG ($206.42) → $190.37 = −7.8% ✗**, **[[STRL]] LONG ($424.36) → $275.26 = −35.1% ✗**, **[[ABB]] LONG (CHF 75.68) → CHF 68.02 = −10.1% ✗**. Last post Nov-12 (Jensen), already ingested. **Via SemiDoped this run: SA cut its 2028 AI-accelerator spend forecast to $758B (−28%) and 2030 to $923B (−40%)**, Nvidia taking most of the cut (neocloud exposure) — a notable walk-back of the datacenter-bull stance, logged to [[ai-infrastructure-capex]]; the Nov-12 structural **SHORT [[NVDA]] ($173.73)** stays open and was *not* refuted by the FQ3 beat (SA's bear is long-term succession/supply-lock-decay, not the next print).
 

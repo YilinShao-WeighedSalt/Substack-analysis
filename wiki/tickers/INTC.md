@@ -165,3 +165,11 @@ The two calls with explicit px@call values — irrationalanalysis at $81.4 (2026
 | 2026-11-10 | [[semidoped]] | NEUTRAL | 56.28 | Reportedly coordinating 2nm/1.4nm logic support for Musk's Terafab — but SD skeptical of the 1M-wafer/mo-by-2032 target. |
 
 **Outcome tracking (2026-11-10):** New NEUTRAL logged at spot (px@call=56.28); fresh call, open (<30d). Added [[semidoped-2026-11-09-daily-update-november-9th-2026]] to sources.
+
+
+## 2026-11-25 run update
+| date | publication | stance | px@call | thesis |
+|------|-------------|--------|---------|--------|
+| 2026-11-19 | [[semidoped]] | LONG | 59.66 | Intel Foundry's external-customer proof points: Microsoft first to use **EMIB** for its own Azure silicon (+ multiyear Xeon/Diamond Rapids); **first 18A(-P) customer signed** (unnamed); 18A yields reportedly ~70%. |
+
+**Outcome tracking (2026-11-25):** New **SD LONG** @ 59.66 — the foundry turnaround narrative gets its two hardest datapoints yet (a named packaging customer + the long-chased leading-edge wafer customer). Opened at spot. Falsifier: the 18A customer stays unnamed/small or 18A-P yields slip; EMIB is packaging-only (easier win than wafers). current_stance mixed→constructive.

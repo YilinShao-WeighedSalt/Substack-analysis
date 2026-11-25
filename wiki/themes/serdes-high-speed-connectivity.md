@@ -4,7 +4,7 @@ title: "SerDes & High-Speed Connectivity"
 tags: []
 related: []
 created: 2024-03-10
-updated: 2026-06-10
+updated: 2026-11-25
 status: maturing
 first_seen: 2024-03-10
 ---
@@ -72,3 +72,6 @@ first_seen: 2024-03-10
 
 ## Narrative
 SerDes and high-speed connectivity emerged as a central AI infrastructure theme in early 2024, anchored by Astera Labs' IPO and irrationalanalysis's early call on PCIe/CXL competitive dynamics. SemiAnalysis and irrationalanalysis drove the initial framing — debating CXL's irrelevance in the AI era, the rise of 800G optical, and whether pure-play connectivity vendors like Astera faced existential threats from integrated competitors such as Marvell and Broadcom. Through 2024-2025, coverage intensified around SerDes specification races (PCIe 7, 224G), co-packaged optics timelines, and the emerging battleground between NVLink, UALink, and Ultra Ethernet for scale-out interconnect. By late 2025, the narrative shifted toward competitive casualties — Marvell's SerDes execution failures, MediaTek and Semtech entering the fray, and hyperscaler custom silicon (TPU, Trainium) increasingly designing their own connectivity. As of mid-2026, globalsemiresearch has joined with fresh analysis on CPO timelines and Marvell's trajectory, indicating the theme remains actively contested with no clear winner in the SerDes supply chain.
+
+## 2026-11-25 — in-network compute (Cornelis Active Compute Fabric)
+Educational concept from the Nov-24 Semi Doped episode with Cornelis Networks CEO Lisa Spelman (Cornelis is private, spun out of Intel's Omni-Path). The usual fix for idle GPUs is **more network bandwidth**; Cornelis instead **puts AI-capable compute cores directly in the NICs and switches** — an "Active Compute Fabric" that runs collective operations (all-reduce), KV-cache movement, and MoE routing *in the network* rather than bouncing them back to GPUs. It positions against InfiniBand/NVLink, Ultra Ethernet and UALink as the scale-up/scale-out interconnect war broadens. Related datapoint this run: SemiAnalysis previewed **AMD MI550x multi-rack Ethernet scale-up** ("a new era for Ethernet beyond a single rack").
