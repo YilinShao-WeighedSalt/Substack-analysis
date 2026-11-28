@@ -4,11 +4,11 @@ title: "AMAT — Applied Materials"
 tags: []
 related: ["[[semidoped-2026-09-30-daily-update-september-30th-2026]]", "[[semianalysis-2024-01-03-iedm-2023-genai-yield-cfet]]", "[[semianalysis-2024-02-09-hybrid-bonding-process-flow]]", "[[irrationalanalysis-2024-04-03-everything-not-fine-at-intel]]", "[[irrationalanalysis-2024-07-01-memory-is-still-commodity]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2024-10-28-chinese-fab-sanctions-evasion]]", "[[semianalysis-2025-02-05-tsmc-n2-intel-emib-cfet-2d]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[semianalysis-2026-01-13-interconnects-beyond-copper-cfet-nand]]", "[[semidoped-2026-08-14-daily-update]]", "[[semidoped-2026-10-07-daily-update]]"]
 created: 2024-01-03
-updated: 2026-11-16
+updated: 2026-11-28
 ticker: AMAT
 current_stance: long
 conviction: high
-last_review: 2026-11-16
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -54,3 +54,6 @@ No px@call values are recorded across the log, so price-based verification is no
 | 2026-11-13 | [[semidoped]] | LONG | 370.50 | Record FQ4 $10.41B (+53%), chip-equipment +~64% to $8B, guides next-Q ~$11.1B > consensus; CEO Dickerson sees WFE spend +30% in 2027, "customers want tools sooner"; $2B buyback. |
 
 **Outcome tracking (2026-11-16):** The clearest "demand is real" print of the scan — the guidance raise + WFE +30% 2027 call is a bullish read-through for the whole WFE complex (ASML/LRCX/TEL/Besi). Caveat (Austin): WFE is the bullwhip tail — a demand air-pocket shows here a quarter or two late. SD's prior AMAT longs remain deeply underwater after Black November (Oct-8 $530.27 −39.8%✗, Oct-27 $395.93 → $370.50 = −6.4% open), so the stock derated with the group even as fundamentals beat. Added [[semidoped-2026-11-13-daily-update-november-13th-2026]] to sources.
+
+## Outcome tracking update 2026-11-28 (resolution)
+- **SD 2026-10-27 LONG (@395.93) -> 311.18 = -21.4% LOSS X** - Besi-stake / ALD-WFE long; crossed 30d in the Nov-28 run. Part of the Oct 26-28 batch that resolved **0W/12L** (the late-October top round-tripped through Black November + the Nov drawdown). Entry level, not thesis, decided it.

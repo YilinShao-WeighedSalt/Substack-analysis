@@ -2,13 +2,13 @@
 type: ticker
 title: "AMZN — Amazon"
 tags: []
-related: ["[[semianalysis-2026-10-23-amazons-trainium-takes-a-strike]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-07-30-robotics-levels-of-autonomy]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]]"]
+related: ["[[semianalysis-2026-10-23-amazons-trainium-takes-a-strike]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[irrationalanalysis-2024-07-16-astera-labs-revenue-implosion]]", "[[semianalysis-2024-12-03-trainium2-architecture-networking]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2024-12-25-gb300-b300-reasoning-inference]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-06-11-new-ai-networks-ultra-ethernet-uec]]", "[[semianalysis-2025-06-13-amd-mi350x-mi400-mi500]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-07-30-robotics-levels-of-autonomy]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[semianalysis-2025-12-04-aws-trainium3-deep-dive-challenger-approaching]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-01-ai-value-capture-model-labs]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-06-30-tokenbudgeting-enterprise-token-spend]]", "[[semidoped-2026-11-26-daily-update-november-26th-2026]]", "[[semianalysis-2026-11-27-trainium3-inference-microarchitecture]]"]
 created: 2024-03-13
-updated: 2026-10-26
+updated: 2026-11-28
 ticker: AMZN
 current_stance: long
 conviction: medium
-last_review: 2026-10-26
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -31,6 +31,8 @@ last_review: 2026-10-26
 | 2026-05-01 | [[semianalysis]] | MENTION | n/a | AWS Bedrock and Anthropic partnership cited as beneficiary of model-lab value shift; no explicit directional call. |
 | 2026-05-27 | [[semianalysis]] | LONG | n/a | Bedrock TaaS model, Trainium silicon, and 2 GW capacity buildout drive sustained AWS margin expansion |
 | 2026-07-01 | [[semianalysis]] | NEUTRAL | 243.06 | TokenBudgeting note: AWS Bedrock running "well above street"; enterprise token demand early not late (read-through LONG) |
+| 2026-11-26 | [[semidoped]] | LONG | 244.43 | Trainium3 2.28x perf/$ of GB300 on SemiAnalysis AgentX; Decart $7.5B buy lifts token economics ahead of a 'late 2027' merchant Trainium launch. |
+| 2026-11-27 | [[semianalysis]] | LONG | 244.43 | Trainium3 best perf/$ on AgentX except Vera Rubin (2.28x GB300); 73.5% profit margin vs GB300's 53% at 135 tok/s/user; SOTA profiler (Anthropic prefers it); 4-Hi 'Short King' HBM validated. |
 
 | 2026-07-08 | [[semidoped]] | MENTION | 243.06 | $25B AI bonds (soft demand) — AI-debt buildout |
 | 2026-07-08 | [[semianalysis]] | MENTION | 243.06 | Anthropic-IPO read-through: profitable Anthropic on AWS Bedrock lifts AWS margins |
@@ -63,3 +65,7 @@ No px@call values are recorded across any entry in this log, making quantitative
 | 2026-11-24 | [[semidoped]] | LONG | 255.39 | Buys Decart's chip-optimization software/team (~$7.5B) ahead of selling Trainium outside AWS — lifting Trainium token economics for a merchant launch. |
 
 **Outcome tracking (2026-11-25):** New **SD LONG** @ 255.39 (a re-up of the Oct-12 Decart thread, now ~$7.5B and tied to an external-Trainium launch). **Resolutions (30d):** SD Oct-20 LONG ($262.37) → $255.39 = **−2.7% LOSS ✗**; SA Oct-23 LONG ($248.00) → **+3.0% WIN ✓** — AMZN the rare relative-strength name, roughly flat while the cohort round-tripped. current_stance long.
+
+## Update 2026-11-28
+- New [[semidoped]] call logged (see call log); opened at spot (px@call = current close, 0% P&L). current_stance -> long.
+- New [[semianalysis]] call logged (see call log); opened at spot (px@call = current close, 0% P&L). current_stance -> long.

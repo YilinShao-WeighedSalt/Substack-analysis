@@ -2,13 +2,13 @@
 type: ticker
 title: "AAOI — Applied Optoelectronics"
 tags: []
-related: ["[[semidoped-2026-11-06-daily-update-november-6th-2026]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]"]
+related: ["[[semidoped-2026-11-06-daily-update-november-6th-2026]]", "[[irrationalanalysis-2026-10-24-market-memo-dancing-in-the-rain]]", "[[irrationalanalysis-2024-12-02-communication-systems-guide]]", "[[irrationalanalysis-2025-03-15-macro-mobile-markets-mercy-intel]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2025-08-22-tower-semi-fabrinet-nvidia-1-6t]]", "[[irrationalanalysis-2025-12-21-2026-irrational-ideas]]", "[[irrationalanalysis-2026-03-01-aaoi-probably-worth-chasing]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]", "[[irrationalanalysis-2026-03-12-optics-basket-comments]]", "[[irrationalanalysis-2026-03-27-ofc-2026-irrational-recap]]", "[[irrationalanalysis-2026-04-05-its-just-money-made-up]]", "[[irrationalanalysis-2026-05-08-earnings-roundup-semis-optics]]", "[[irrationalanalysis-2026-05-17-high-voltage-low-competence]]", "[[globalsemiresearch-2026-06-10-cpo-not-delayed-semianalysis-wrong]]", "[[irrationalanalysis-2026-08-01-market-memo-a-tale-of-two-heroes]]", "[[irrationalanalysis-2026-08-05-orange-man-transceiver-ban]]", "[[irrationalanalysis-2026-08-09-cbrs-wolf-navitas-hbf]]", "[[semidoped-2026-11-25-daily-update-november-25th-2026]]"]
 created: 2024-12-02
-updated: 2026-11-07
+updated: 2026-11-28
 ticker: AAOI
 current_stance: long
 conviction: low
-last_review: 2026-11-07
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -29,6 +29,7 @@ last_review: 2026-11-07
 | 2026-07-28 | [[irrationalanalysis]] | LONG | 97.82 | Now disclosed as owned (flips the author's May SHORT); held alongside LITE/AXTI as the InP-shortage basket. |
 | 2026-08-01 | [[irrationalanalysis]] | LONG | 94.32 | US-based transceivers, 'lots of torque' but violent. |
 | 2026-08-05 | [[irrationalanalysis]] | LONG | 128.56 | "Fun degen play," better ST risk/reward than AXTI on big transceiver-capacity ramp; owned. |
+| 2026-11-25 | [[semidoped]] | LONG | 37.02 | Second hyperscaler 4-yr deal: ~$1.5B 800G transceivers 2027 + ~$0.7B laser diodes 2028-29 (some for CPO from 2028); US-made from Q1-27; >$10B demand potential; locked pricing caps upside. |
 
 | 2026-08-09 | [[irrationalanalysis]] | NEUTRAL | 134.33 | Done trading the chaos ticker; calls the CEO's bluff on 300mW DWDM/CPO laser (no phase-noise/linewidth data; "2-3 years away") |
 
@@ -58,3 +59,6 @@ No px@call values are recorded across any entry, so quantitative P&L tracking is
 | 2026-11-06 | [[semidoped]] | LONG | 46.89 | Record Q3 $269.9M (>2x YoY), back to GAAP profit; signed a 1.6T Tier-1 hyperscaler agreement (>=10% of its 1.6T needs, Jun-26→May-29, $1-1.5B); a 5x-larger 800G+laser deal 'within weeks'. Strings: locked pricing caps upside, US expansion slipping on power/construction. |
 
 **Outcome tracking (2026-11-07):** 1 call(s) opened at/near spot in the Black-November tape (px@call = post-date close). Longs logged Nov-2→4 are already underwater on the −5.5% Nov-5 Nasdaq day; the structural supply-chain theses (memory→2030, MLCC/substrate/laminate shortage, packaging capex) are intact — entry level, not thesis, is the risk.
+
+## Update 2026-11-28
+- New [[semidoped]] call logged (see call log); opened at spot (px@call = current close, 0% P&L). current_stance -> long.

@@ -4,7 +4,7 @@ title: "Custom Silicon & ASICs"
 tags: []
 related: []
 created: 2024-02-04
-updated: 2026-11-19
+updated: 2026-11-28
 status: maturing
 first_seen: 2024-02-04
 ---
@@ -119,3 +119,7 @@ Two structural moves this week. (1) The custom-silicon turn finally pulls in the
 
 ## 2026-11-19 — Google's four-flavor TPU and merchant-silicon push
 Google quietly announced **two more V8-generation TPU systems — not new silicon** — the **8TX** (confidential-compute, pairing the TPU with an **AMD EPYC** secure host) and the **8i Max** (memory-maxed for inference), joining the **8T (training)** and **8i (inference)** = **four SKUs in one generation**. The 8i (inference) is the *bigger* die, with more HBM (288 vs 216 GB) and ~3× the SRAM (384 MB) — inference is memory-bound. **TPU Sync** is Google's inference-orchestration layer, explicitly its **answer to Nvidia's Dynamo**, and a step toward **selling TPUs to external customers** (Kuo: order visibility to 2029 via OpenAI/Anthropic; TPU v9+ on Intel EMIB-T). Separately, **AMD closed its $2.9B Taalas** inference-chip buy (folded into Instinct) and **MSFT's Arm Cobalt 200** VMs went GA (+50% vs Cobalt 100); **Cerebras** put **disaggregated inference** into production (AMD GPUs prefill, CS-3 decode).
+
+### 2026-11-28 update (Nov 25-27 scan)
+- **2026-11-27 — Trainium3 is now a verified cost-per-token challenger (SemiAnalysis deep-dive).** On the AgentX agentic-inference benchmark, Trainium3 + vLLM posts the best perf/$ TCO across the whole frontier *except* Nvidia's Vera Rubin, beating GB300 (2.28x), B300 and MI355X. The edge is cost, not speed: a modeled Trainium3 chip-hour is $1.05 vs $2.31 for GB300, per-chip throughput only ~4% higher. At 135 tok/s/user it yields a 73.5% profit margin vs GB300's 53%. Microarch wins: tiles as a first-class primitive, Descriptor Generation Engines (DGE, ~Nvidia TMA) hit peak HBM bandwidth at small messages, NeuronCore-v4 adds microscaling MXFP4/MXFP8 (quad-MXFP8 K=512), and a SOTA profiler Anthropic's perf lead prefers to Nvidia/AMD. Only 144GB HBM/chip (half GB300) — the '4-Hi Short King' thesis. Google TPU joined InferenceX the same day; both of Nvidia's biggest custom-silicon rivals now publish tokens/$ (Nvidia's own metric). Rubin NVL72 still ~3.3x Trainium3/$.
+- **2026-11-27 — Custom HBM base-die design moves to the accelerator designer.** Google is pursuing custom HBM5 for its 10th-gen TPU (~512GB) with MediaTek the lead candidate to design the HBM base die + SerDes — the logic chip at the bottom of the stack that memory makers (Samsung/SK) used to own. Nvidia took the same step in August; Samsung set up a Logic Development Team inside its memory business to respond. Whoever designs the base die sets the stack spec.

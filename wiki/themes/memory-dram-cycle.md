@@ -4,7 +4,7 @@ title: "DRAM & Memory Cycle"
 tags: []
 related: ["[[semidoped-2026-10-19-daily-update]]"]
 created: 2024-03-16
-updated: 2026-11-25
+updated: 2026-11-28
 status: maturing
 first_seen: 2024-03-16
 ---
@@ -126,3 +126,8 @@ TrendForce: **conventional DRAM price increases slow but do not turn negative in
 
 ## 2026-11-25 — the memory-peak debate crystallizes (Micron bull vs Goldman cut)
 The run's central tension: **is this the top?** On the bull side, **Micron's Mehrotra** said the squeeze "tightens from here" — 75% of 2027 production already sold, customers negotiating 2028, '27/'28 "even tighter than 2026" — anchored by **26 supply agreements (many 5yr+), $32B of upfront cash/commitments, and take-or-pay + pricing bands**; memory now "sets the economics of AI factories," so customers can't walk. **Korea's chip exports nearly quadrupled** (Nov 1-20, 49.7% of all exports) and checks found **no contract cuts** (Nvidia/Google sold out '27, >half '28 under LTAs). On the bear side, **Goldman lifted 2027 HBM to $200B** (from $60B; $237B '28; custom chips 44% of HBM by '28) **but cut Samsung & SK hynix PTs by up to 43%** — HBM growth alone won't offset the profit hit when **conventional DRAM/NAND prices roll over in 2028**; tight through '27, easing after. **Stacked 3D DRAM** (vertical cells, NAND-style) is the next node, penetrating 2028-29. Consolidation: **SK hynix became Kioxia's largest shareholder (14.1%)** via a ¥129B CB conversion (already owns Solidigm). Server-side, memory's +400%-since-2024 cost is driving AI-server makers to reprice signed contracts +25-45% (Dell/HPE/Lenovo/SMCI).
+
+### 2026-11-28 update (Nov 25-27 scan)
+- **2026-11-27 — TrendForce dates the top.** Base case: conventional DRAM price increases narrow through 2027, flatten in 2H, then turn to **declines across all product types from Q1 2028**; bear case starts Q4 2027. Demand-side drivers: Chinese cloud cut server-DRAM orders early this quarter, phones/PCs can't absorb more increases, buyers wary of midterms + Nvidia neocloud financing + new compute limits; supply grows through 2028 on new capacity/processes. But **today's shortage is still severe** — WSJ reports procurement 'war rooms' and some chip prices up 10x in a year. BofA: DRAM op margins (now >80%) would still be 50-60% in 2028 even if prices fell 40-50%, thanks to HBM + LTAs — this cycle is structurally more profitable than past downturns.
+- **2026-11-25 — the squeeze reaches consumers.** HP FQ4 PC units -29% (margin 3%), Ambarella guided down ~35% ($115M->$70-75M) blaming the memory spike, Xiaomi cut its 2027 phone target to ~90M from ~120M (Samsung/Apple/Oppo/Vivo trimming). AI servers take the memory; consumer/edge devices pay in lost units.
+- **2026-11-26 — SK hynix dates 3D DRAM:** mass production ~2031, first product 100 stacked layers (~75 needed to match today's 10nm-class density); 200-300 layers need dedicated tools; studying an IGZO channel; long term borrows NAND stacking + hybrid bonding past 1,000 layers.

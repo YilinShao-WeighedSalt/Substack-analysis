@@ -4,7 +4,7 @@ title: "Semiconductor Geopolitics & Export Controls"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-25
+updated: 2026-11-28
 status: maturing
 first_seen: 2024-01-03
 ---
@@ -96,3 +96,7 @@ The China-controls fight became the Nvidia-CEO fight. SemiAnalysis's **"Nvidia a
 
 ## 2026-11-25 — the remote-access rule reaches the fab door + enforcement hits resellers
 The **Nov-19 BIS remote-access rule** (renting AI compute abroad = exporting the chips) took effect and immediately closed the **foundry route**: TSMC told affected Chinese designers to halt orders **≤16nm** without US licenses (limited to 28/40nm, no HBM/advanced packaging); FT says TSMC+Samsung will hold some shipments for licenses (ByteDance, Baidu Kunlunxin, even Xiaomi/Oppo/Vivo phone chips caught). Enforcement is moving to the **resellers/hosts**: Commerce **blacklisted Megaspeed** (the Singapore cloud at the center of the Nvidia chip-diversion probe) **+ Alibaba's Singapore unit** and 5 others (presumption-of-denial); Malaysia (>half of SE-Asia DC capacity under construction) told operators not to serve them. The overseas-GPU detour is closing too (Moonshot scraps a $150M Indonesian Blackwell rental; a ByteDance-serving Malaysian DC loan paused). Trump threatened "a tremendous tax" on US firms building DCs abroad (no rate/legal basis). Separately, short-seller **Hunterbrook alleged blacklisted IEIT Systems kept loading newer AMD firmware** → [[AMD]] −7.7%; House Foreign Affairs released data that Nvidia+AMD sought 3.4M AI chips for China (>879k approved).
+
+### 2026-11-28 update (Nov 25-27 scan)
+- **2026-11-26 — the remote-access rule bites: Nvidia halts SE-Asia server shipments.** Nvidia told Dell/Supermicro to stop shipping chip-bearing servers to Malaysia, Singapore, Thailand and Indonesia (FT) as it works out compliance with last week's rule treating *renting* compute to restricted firms like *exporting* chips. Singapore booked $104B of Nvidia FY25 revenue (some TW/CN routed through SG). DCs serving restricted Chinese firms have 90 days to win a license — 'nobody knows how to apply.' Goldman: 0.5-0.75GW of capacity (~263-395k Blackwell-class GPUs, ~$17-25B/yr rent) is tied to Chinese customers and needs licenses/new tenants/buyers. SE-Asia DC lenders (ByteDance/Alibaba/Tencent-tied) paused loans.
+- **2026-11-27 — MATCH Act + Section 301.** The MATCH Act (eyed for the Dec defense bill) would force allies (Netherlands, Japan) to match US export controls or face unilateral US limits on their tools; the Dutch + EU/Germany/France are lobbying to kill it (risks ASML immersion DUV + China tool servicing, ~20% of ASML revenue). Separately, USTR ruled 14 economies (incl. Korea) run distorting overcapacity policy under Section 301 — **semiconductors exempted** (covered by Section 232) but Korea's K-Semiconductor Belt named, with a 25%-from-15% all-goods tariff threat read as leverage for more US investment.

@@ -4,11 +4,11 @@ title: "ASM.AS — ASM International"
 tags: []
 related: ["[[semidoped-2026-10-27-daily-update]]", "[[semidoped-2026-10-28-daily-update]]"]
 created: 2026-10-28
-updated: 2026-10-29
+updated: 2026-11-28
 ticker: ASM.AS
 current_stance: long
 conviction: medium
-last_review: 2026-10-29
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -20,3 +20,6 @@ First ASM International entry. The atomic-layer-deposition (ALD) leader; Semi Do
 
 ## Outcome tracking
 Opened at spot €743.20 (Oct-28). Falsifier: a GAA/advanced-packaging capex air-pocket, or ALD share loss to AMAT/TEL. current_stance long, conviction medium.
+
+## Outcome tracking update 2026-11-28 (resolution)
+- **SD 2026-10-28 LONG (@743.20) -> 606.60 = -18.4% LOSS X** - 2030->2027 pull-forward / ALD long; crossed 30d in the Nov-28 run. Part of the Oct 26-28 batch that resolved **0W/12L** (the late-October top round-tripped through Black November + the Nov drawdown). Entry level, not thesis, decided it.

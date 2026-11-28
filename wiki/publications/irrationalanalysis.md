@@ -4,7 +4,7 @@ title: "Irrational Analysis"
 tags: []
 related: []
 created: 2024-01-06
-updated: 2026-11-25
+updated: 2026-11-28
 handle: irrationalanalysis
 calls_logged: 654
 hit_rate: "37/76 (49%), ~12 open"
@@ -13,6 +13,8 @@ hit_rate: "37/76 (49%), ~12 open"
 Irrational Analysis is a technically-driven semiconductor and datacenter-infrastructure publication written from a practitioner's engineering perspective. Coverage spans AI compute, memory, optical interconnects, custom silicon, and power semis, with a strong emphasis on chip architecture, process node dynamics, and supply-chain signal-reading. The author writes with high conviction and a willingness to publicly revise wrong calls, mixing bottom-up technical diligence with opportunistic macro overlays.
 
 ## Coverage
+
+**hit_rate note (2026-11-28): holds 37/76 (49%), ~12 open — no new post in window, no 30d crossing.** Last post is still the Nov-16 "Guillotines and Gigawatts" macro memo (ingested Nov-19); the author remains de-levered/on vacation. The **Oct-30 "Dead Inside" batch (SHORT [[INTC]] $65.76, LONG [[LITE]] $840.70; NEUT MRVL) crosses 30d ~Nov-29 — one day out, resolves next run** (INTC now $54.47 → the short tracking hard in its favor, −17% from call; LITE to be priced next run). The Nov-3/6 Marvell-deal + Avicena batch (SHORT MRVL, LONG LITE/CRDO) crosses 30d ~Dec-3/6. calls_logged unchanged (654).
 
 **hit_rate note (2026-11-25): 37/71 → 37/76 (49%) — the Oct-24 "Dancing in the Rain" batch resolves 0W/5L.** IA's speculative chart-section longs from the bubble-vibes memo all cratered into the Jensen/memory-peak drawdown: **[[AAOI]] LONG ($67.51 → $38.70) = −42.7% ✗** (worst), **[[AXTI]] LONG ($52.08 → $38.02) = −27.0% ✗** (the 6-in InP favorite, gutted again), **[[CRDO]] LONG ($147.29 → $122.46) = −16.9% ✗**, **[[BE]] LONG ($193.30 → $168.15) = −13.0% ✗**, and the **[[COHR]] SHORT ($209.29 → $215.81) = short −3.1% ✗** — Coherent's $2B buyback (Nov-20) and PhotonLink momentum pushed the price up, so the UHP-laser-socket short finally gave a point back after two winning resolutions. (TSEM NEUTRAL excluded.) **No new post this run** (last: Nov-16 "Guillotines and Gigawatts" macro memo, already ingested; the author remains de-levered/on vacation). calls_logged unchanged (654).
 

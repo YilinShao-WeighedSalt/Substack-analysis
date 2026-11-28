@@ -47,6 +47,7 @@ updated: 2026-11-25
 - [[AKAM]] — Akamai Technologies (CDN → Anthropic model-layer stake)
 - [[ALAB]] — Astera Labs
 - [[AMAT]] — Applied Materials
+- [[AMBA]] — Ambarella (edge-AI vision SoCs; memory-squeeze margin bellwether)
 - [[AMD]] — Advanced Micro Devices
 - [[AMKR]] — Amkor Technology
 - [[AMZN]] — Amazon
@@ -229,6 +230,11 @@ updated: 2026-11-25
 - [[semidoped]] — Semi Doped
 
 ## Sources
+- [[semianalysis-2026-11-27-trainium3-inference-microarchitecture]] — SA: Trainium3 best perf/$ on AgentX ex-Vera-Rubin (2.28× GB300, 73.5% vs 53% margin); DGE/MXFP4 microarch; SOTA profiler; 4-Hi 'Short King' → LONG AMZN
+- [[semidoped-2026-11-27-daily-update-november-27th-2026]] — SD: ASE no-cancellations/doubling to $8B 2027 (LONG ASX); Google HBM5 base die via MediaTek (LONG 2454); Tesla AI5 slips to 2028 (NEUT TSLA); TrendForce DRAM declines Q1-28; Dutch fight MATCH Act (NEUT ASML); TDK TMR 2× (LONG 6762)
+- [[semidoped-2026-11-26-daily-update-november-26th-2026]] — SD: Nvidia halts SE-Asia server shipments + S&P AA CreditWatch (NEUT NVDA); Trainium3 2.28× GB300 (LONG AMZN); Kioxia SSD-as-GPU-memory (LONG 285A.T); Section 301 spares memory; SK 3D DRAM ~2031
+- [[semidoped-2026-11-25-daily-update-november-25th-2026]] — SD: Dell FY27→$202B/+$25B buyback (LONG DELL); memory squeeze hits PCs/phones (NEUT AMBA); AOI 2nd-hyperscaler CPO lasers (LONG AAOI); ADI record FQ4 (LONG ADI); AIXTRON Nokia InP (LONG AIXA); Samsung/SK license YMTC Xtacking; Canon returns to ArF
+- [[semianalysis-2026-11-26-evaluating-recent-model-releases-gdpx]] — SA (educational): GDPx leaderboard — OpenAI 6.2 Astra #1, Fable 5.2 #2, Gemini 4 resurgent but distant 3rd tier; no priced call
 - [[semidoped-2026-11-24-daily-update-november-24th-2026]] — SD: Jensen reinstated +31.5% (biggest day since 2003); Commerce blacklists Megaspeed+Alibaba-SG; TSMC $22.6B TX 2nm filing; HPE record AI orders/margin squeeze; Goldman HBM→$200B but cuts Samsung/SK −43%; Semtech record; Amazon buys Decart for Trainium
 - [[semidoped-2026-11-23-daily-update-november-23rd-2026]] — SD: SEC probes Nvidia accounting (customer-HQ geo + circular financing); POTUS wants Jensen back; Korea exports 4×, no cuts; server makers reprice +25-45%; SoftBank $1T SK sounding; CrowdStrike–Zscaler $43.9B
 - [[semidoped-2026-11-20-daily-update-november-20th-2026]] — SD: remote-access rule reaches the fab door (TSMC/Samsung halt China ≤16nm); SK hynix = Kioxia's top holder; SpaceX $32B off-B/S GPU debt @8.26%; Hunterbrook shorts AMD on China firmware; Keysight record FQ4

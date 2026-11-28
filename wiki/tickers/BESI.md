@@ -4,11 +4,11 @@ title: "BESI — BE Semiconductor Industries"
 tags: []
 related: ["[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[irrationalanalysis-2025-06-15-marvell-management-bluffing-serdes-failure]]", "[[irrationalanalysis-2025-08-01-august-1st-portfolio-update]]", "[[irrationalanalysis-2026-03-05-march-ms-tmt-madness]]"]
 created: 2025-06-15
-updated: 2026-10-29
+updated: 2026-11-28
 ticker: BESI
 current_stance: long
 conviction: high
-last_review: 2026-10-29
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -51,3 +51,6 @@ No px@call values are available across any of the three entries, so quantitative
 
 ## 2026-11-16 run update
 **Resolution (30d):** [[semianalysis]] Oct-15 **SHORT** (€163.40, ASML building a D2W hybrid bonder onto Besi's one moat; HBM D2W slips to 2029+) → €154.10 = price −5.7%, **short +5.7% WIN ✓**. The first scored point for SA's bonder-disruption thesis against SD's "+96% orders / AMAT 20% stake" bull case — see [[asml-hybrid-bonder-vs-besi-orders]]. SD's own Oct-16 NEUTRAL (€163.40) is excluded from scoring.
+
+## Outcome tracking update 2026-11-28 (resolution)
+- **SD 2026-10-27 LONG (@163.05) -> 138.35 (BESI.AS) = -15.1% LOSS X** - AMAT ~20%-stake / hybrid-bonding long; crossed 30d in the Nov-28 run. Part of the Oct 26-28 batch that resolved **0W/12L** (the late-October top round-tripped through Black November + the Nov drawdown). Entry level, not thesis, decided it.

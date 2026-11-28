@@ -2,13 +2,13 @@
 type: ticker
 title: "ADI — Analog Devices"
 tags: []
-related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2025-03-11-america-missing-new-labor-economy-robotics]]"]
+related: ["[[semidoped-2026-09-09-daily-update-september-9th]]", "[[citrini-2024-07-08-inference-on-device]]", "[[irrationalanalysis-2024-07-18-electromigration-htol-aehr-vicr-intc]]", "[[semianalysis-2025-03-11-america-missing-new-labor-economy-robotics]]", "[[semidoped-2026-11-25-daily-update-november-25th-2026]]"]
 created: 2024-07-08
-updated: 2026-09-11
+updated: 2026-11-28
 ticker: ADI
-current_stance: mixed
+current_stance: long
 conviction: medium
-last_review: 2026-09-11
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -16,6 +16,7 @@ last_review: 2026-09-11
 | 2024-07-08 | [[citrini]] | LONG | n/a | Going long; Maxim Integrated heritage provides power management for on-device training and inference |
 | 2024-07-18 | [[irrationalanalysis]] | MENTION | n/a | Cited as a Vicor power-components competitor |
 | 2025-03-11 | [[semianalysis]] | SHORT | n/a | Standardized analog products increasingly exposed as Chinese competitors offer tailored alternatives |
+| 2026-11-25 | [[semidoped]] | LONG | 333.11 | Record FQ4 +42% to $4.37B led by data center; guides next quarter flat. |
 
 | 2026-07-08 | [[semidoped]] | MENTION | n/a | Closed Empower Semiconductor buy — vertical power delivery / IVR IP for AI power |
 | 2026-08-19 | [[semidoped]] | LONG | 370.24 | Record $4.02B quarter on datacenter+industrial; Empower ($1.5B, closed Jul-7) positions in-package power delivery for sub-1V kilo-amp AI chips (rev +40%, EPS +163% YoY) |
@@ -26,3 +27,6 @@ Citrini's July 2024 long was a picks-and-shovels play on the edge AI / on-device
 
 ## Outcome tracking
 No px@call values are available for any of the three observations, so price-based PnL attribution is not possible. The live tension is between Citrini's edge-AI power-management bull case — which hinges on continued iPhone/edge device upgrade cycles and ADI's Maxim heritage commanding a premium — and SemiAnalysis's structural bear case, which would be falsified if ADI demonstrates material design-win gains in next-generation robotics platforms or if Chinese analog entrants fail to ramp into high-reliability industrial sockets. The bear case strengthens if ADI reports sustained gross-margin compression or incremental design-win losses in Chinese OEM robotics accounts.
+
+## Update 2026-11-28
+- New [[semidoped]] call logged (see call log); opened at spot (px@call = current close, 0% P&L). current_stance -> long.

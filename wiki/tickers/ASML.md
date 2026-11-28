@@ -2,13 +2,13 @@
 type: ticker
 title: "ASML — ASML Holding"
 tags: []
-related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]"]
+related: ["[[semidoped-2026-10-02-daily-update-october-2nd]]", "[[semidoped-2026-09-28-daily-update-september-28th-2026]]", "[[semidoped-2026-09-09-daily-update-september-9th]]", "[[semidoped-2026-07-29-daily-update]]", "[[semianalysis-2024-04-18-intel-14a-dsa-magic-bullet]]", "[[semianalysis-2024-10-01-clash-foundries-gaa-backside-power-2nm]]", "[[irrationalanalysis-2024-10-20-asml-tsmc-earnings]]", "[[semianalysis-2025-04-10-tariff-gpu-loopholes-mexico]]", "[[semianalysis-2025-04-14-high-na-euv-spie2025]]", "[[semianalysis-2025-09-08-huawei-ascend-hbm-bottleneck-tsmc]]", "[[semianalysis-2025-10-26-nil-stop-saying-replace-euv]]", "[[semianalysis-2025-10-29-kill-2-monopolies-1-tool]]", "[[irrationalanalysis-2026-01-31-january-is-finally-over]]", "[[irrationalanalysis-2026-04-30-market-memo-semis]]", "[[semidoped-2026-05-22-masterclass-ic-lithography]]", "[[semidoped-2026-05-29-huawei-tau-scaling-euv-killer-real]]", "[[semianalysis-2026-06-11-intel-should-raise-capital]]", "[[semidoped-2026-06-23-daily-update]]", "[[semidoped-2026-09-21-daily-update]]", "[[semidoped-2026-09-25-daily-update-september-25th]]", "[[semidoped-2026-11-27-daily-update-november-27th-2026]]"]
 created: 2024-04-18
-updated: 2026-10-23
+updated: 2026-11-28
 ticker: ASML
-current_stance: long
+current_stance: neutral
 conviction: medium
-last_review: 2026-10-23
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -36,6 +36,7 @@ last_review: 2026-10-23
 | 2026-09-21 | [[semidoped]] | LONG | 1747.90 | Formally begins India operations, tied to Tata Electronics' Dholera fab ramp |
 | 2026-09-25 | [[semidoped]] | NEUTRAL | 1722.50 | Zero European fab revenue this year; MATCH Act threatens the China sales still driving the book |
 | 2026-09-28 | [[semidoped]] | LONG | 1743.94 | 2027 EUV output fully sold out; High-NA demand firming; opens India office |
+| 2026-11-27 | [[semidoped]] | NEUTRAL | 1303.08 | MATCH Act (eyed for the Dec defense bill) threatens ~20% of ASML revenue (immersion DUV + China tool servicing); Netherlands + EU/Germany/France lobbying Congress to kill it. |
 
 ## Thesis evolution
 The coverage arc began with ASML as a peripheral beneficiary of process technology transitions — DSA adoption, backside power, and overlay improvements — before crystallizing into a direct monopoly thesis by mid-2025. SemiAnalysis turned constructive in April 2025, anchoring on the EXE:5000's technical outperformance and the absence of any credible near-term substitute; semidoped reinforced this in May 2026 by arguing tau scaling structurally increases wafer starts per chip, making ASML a volume beneficiary even if individual tool ASPs compress. The bearish thread runs through IrrationalAnalysis (Oct 2024, customer delay risk) and SemiAnalysis's own October 2025 piece flagging XRL as a potential monopoly-killer at one-tenth the price — a rare instance where the same publication holds both the bull and the bear case simultaneously. The net posture across publications is cautiously long on the monopoly durability but alert to the XRL/Substrate industrialization timeline as the primary falsifying catalyst.
@@ -80,3 +81,6 @@ No px@call values are recorded across any entry, so price-based score-keeping is
 **Outcome tracking (2026-10-23):** New **SD LONG** @ 1630.84 (2026-10-22). Opened at spot. **Resolution** — SD Sep-21 LONG ($1,747.90) -> $1,630.84 = **-6.7% LOSS ✗** (India/Tata entry near the 3-mo high).
 
 **Resolution (2026-11-16, 30d):** the Oct-15 pair both → $1,495.16 = **−9.8% LOSS ✗** — SD LONG ($1,657.44, record Q3 / EUV sold-out / first price increases) and SA LONG ($1,657.44, D2W hybrid-bonder patent trail). AMAT's Nov-13 record FQ4 + "WFE spend +30% in 2027" guide is a bullish read-through for the WFE complex (ASML included) even as the stock sits below the Oct entry.
+
+## Update 2026-11-28
+- New [[semidoped]] call logged (see call log); opened at spot (px@call = current close, 0% P&L). current_stance -> neutral.

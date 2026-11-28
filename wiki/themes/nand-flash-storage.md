@@ -4,7 +4,7 @@ title: "NAND Flash & Storage"
 tags: []
 related: []
 created: 2024-07-01
-updated: 2026-10-29
+updated: 2026-11-28
 status: maturing
 first_seen: 2024-07-01
 ---
@@ -71,3 +71,7 @@ Two-sided NAND signals. **Kioxia halted further NAND price hikes** to protect de
 **3D XPoint (3DXP)** = Intel *Optane* / Micron *QuantX*, a **phase-change memory (PCM)**: performance sits **between NAND and DRAM** — byte-addressable, persistent (survives power-off), DRAM-like random latency. Its real niche was always **cheaper-than-DRAM with more capacity + persistence**, NOT competing with NAND on $/bit (fatal mistake). Died ~2022 for two reasons: scaling stalled at **4 layers** while NAND marched to 300+; and the **interface choked it** — most shipped as NVMe/PCIe SSDs (8µs latency, "supersonic jet for 100-mile hops") or CPU "Memory mode" (dumb DRAM cache). Only **App-direct mode** (3DXP in DRAM slots, persistence exposed to software; KV-cache/weights survive reboot; needs Optane-SKU CPU + BIOS striping) captured the value, but Intel's 10nm/Ice-Lake delays meant PMem cost DRAM bandwidth. **Revival angle:** CXL (protocol on PCIe) could be the *right* bus for PCM; Alibaba + Demingli reviving byte-addressable PCM at OCP 2026; IA's long-shot is **SpaceX/Terafab licensing 3DXP from Intel** and cracking >4-layer scaling. Too-early (pre-AI-persistence demand) and too-late (vs NAND cost) at once. (→ contrast with HBF, which IA still calls "a solution looking for a problem.")
 
 **Update 2026-10-29 (HAMR clears its last hyperscale hurdle):** **Microsoft Azure formally qualified Seagate's HAMR-SMR drives paired with Broadcom host bus adapters** — HAMR (heat-assisted magnetic recording) + SMR (shingled) pushes density past PMR, and the combined validation removes the last compatibility hurdle to hyperscale deployment (a tested vendor-backed BOM vs a patchwork of vetted parts). It compresses $/TB for exabyte-scale AI storage tiers while keeping power/cost roughly flat. First tracked Seagate entry ([[STX]]). Separately, SK Hynix is monetizing its 2018 Kioxia (ex-Toshiba Memory) NAND stake into a ~$12B dividend / part of a $75B return.
+
+### 2026-11-28 update (Nov 25-27 scan)
+- **2026-11-25 — Samsung and SK hynix license YMTC's Xtacking wafer-bonding** (Nikkei). Xtacking builds the NAND array and its control circuits on separate wafers, then bonds them — the direction for high-layer NAND. The Koreans reportedly signed 'to avoid legal disputes'; YMTC (US Entity List) has filed >12,000 patents and its portfolio is now hard to design around. SK hynix is the new name (Samsung's hybrid-bonding deal was reported early 2025). The top-two memory makers licensing from a Chinese rival shows how fast 3D-NAND IP has shifted.
+- **2026-11-26 — SSD-as-GPU-memory (Kioxia + Nvidia).** A GB200 NVL72 rack used Nvidia's SCADA software to treat 144 Kioxia SSDs (~1.1PB flash) as an extension of GPU memory, reading 512-byte chunks (single vectors for vector/graph DBs). The pitch: HBM is scarce, so an agent's lookup knowledge can live on flash if the GPU reaches it directly. Kioxia's GP2 (PCIe 6.0, XL-FLASH) is rated >18M random reads/s at 512B. A constant search to optimize away from HBM (strong since DeepSeek).

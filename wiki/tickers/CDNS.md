@@ -4,11 +4,11 @@ title: "CDNS — Cadence"
 tags: []
 related: ["[[semidoped-2026-09-29-daily-update-september-29th-2026]]", "[[semidoped-2026-07-28-daily-update]]", "[[irrationalanalysis-2025-05-17-smh-favorite-names-q2-2025]]", "[[irrationalanalysis-2025-05-22-nvlink-fusion-jensen-murders-ualink]]", "[[irrationalanalysis-2025-09-13-synopsys-is-probably-buy]]", "[[irrationalanalysis-2025-09-28-smh-favorite-names-q3-2025]]", "[[semianalysis-2026-05-12-eda-primer-rtl-silicon]]", "[[semianalysis-2026-05-21-eda-market-cadence-synopsys-siemens]]", "[[semidoped-2026-09-22-daily-update]]", "[[semidoped-2026-09-24-daily-update-september-24th]]"]
 created: 2025-05-17
-updated: 2026-10-29
+updated: 2026-11-28
 ticker: CDNS
 current_stance: long
 conviction: medium
-last_review: 2026-10-29
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -37,3 +37,6 @@ No px@call values are recorded across any of the six entries, so mark-to-market 
 **Outcome tracking (2026-10-23):** **Resolution** — SD Sep-22 LONG ($302.95) -> $326.07 = **+7.6% WIN ✓** (ChipStack AI-agent; EDA held — one of only two SD wins).
 
 **Update 2026-10-29:** First clear SD LONG on Cadence; Vik notes digital design is code-like/verifiable (AI-amenable) while analog/power/RF keep tacit-knowledge moats. current_stance long.
+
+## Outcome tracking update 2026-11-28 (resolution)
+- **SD 2026-10-27 LONG (@343.08) -> 294.89 = -14.0% LOSS X** - Maestro agentic-EDA long; crossed 30d in the Nov-28 run. Part of the Oct 26-28 batch that resolved **0W/12L** (the late-October top round-tripped through Black November + the Nov drawdown). Entry level, not thesis, decided it.

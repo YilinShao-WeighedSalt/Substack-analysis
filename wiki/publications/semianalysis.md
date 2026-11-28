@@ -4,15 +4,19 @@ title: "SemiAnalysis"
 tags: []
 related: []
 created: 2024-01-03
-updated: 2026-11-25
+updated: 2026-11-28
 handle: semianalysis
-calls_logged: 256
-hit_rate: "15/40 (38%), ~10 open"
+calls_logged: 257
+hit_rate: "15/40 (38%), ~11 open"
 ---
 ## Profile
 SemiAnalysis, founded and led by Dylan Patel, is the dominant institutional-grade research publication at the intersection of semiconductor physics and capital markets, with roughly 50,000 subscribers and influence reaching investors, hyperscalers, and policymakers worldwide. The publication's edge is extraordinary supply-chain granularity — tracking fab capacity builds via satellite imagery, mapping component BoMs rack-by-rack, and modeling CoWoS/HBM wafer allocations by customer — at a depth that precedes and often shapes Wall Street consensus. Coverage spans the full stack from process node yields and advanced packaging constraints through datacenter CapEx cycles, hyperscaler custom silicon roadmaps, and foundry competitive dynamics.
 
 ## Coverage
+
+**hit_rate note (2026-11-28): holds 15/40 (38%), ~11 open — no priced call crossed 30 days; +1 new call.** The Nov-5 GOOGL LONG ($282.57) crosses 30d ~Dec-5 and the Nov-12 structural SHORT [[NVDA]] ($173.73) ~Dec-12 (both resolve next runs; NVDA sits deep in the short's favor at $149.30). This run: **2 posts, 1 call-bearing.** The marquee **"AWS Challenger: Trainium3 Inference & Microarchitecture Deep Dive"** (Nov-27) → new **LONG [[AMZN]] $244.43** — Trainium3 posts the best perf/$ TCO on AgentX across the whole frontier except Vera Rubin (2.28× GB300, 73.5% margin vs 53% at 135 tok/s/user), with a SOTA profiler and the 4-Hi 'Short King' HBM economics validated; reinforces (doesn't replace) the structural NVDA-moat-erosion read (Rubin still ~3.3× Trainium3/$). The 2nd post, **"Evaluating Recent Model Releases on GDPx"** (Nov-26) is educational (OpenAI 6.2 Astra #1 / Fable 5.2 #2, Gemini 4 resurgent but a distant 3rd tier — SA walks back its 'Gemini is cooked' call) — no priced ticker → [[ai-software-models]]. Opened at spot. calls_logged 256→257. New concept knowledge: Trainium3-microarch (DGE/MXFP4/SOTA-profiler) + custom-silicon-cost-per-token to [[custom-silicon-asic]]/[[ai-accelerator-competition]]; Astera-Scorpio-X-gen2-single-plane to [[serdes-high-speed-connectivity]]; GDPx-leaderboard to [[ai-software-models]].
+
+- **AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive (2026-11-27, "only_paid" flag but full body served).** A ground-up microarch + UBenchX microbenchmark study (validated with AWS Annapurna's Trainium team). On AgentX, Trainium3 + PDS + vLLM delivers best perf/$ TCO across the entire frontier except Vera Rubin, beating GB300/B300/MI355X; the edge is cost (modeled $1.05/chip-hr vs $2.31 GB300, ~4% higher throughput). At p90 135 tok/s/user it yields a 73.5% profit margin vs GB300+SGLang's 53% (3-yr rental, Z.ai pricing, 60% util). Only 144GB HBM/chip (half GB300) — the '4-Hi Short King' thesis. Microarch: tiles as a first-class primitive, DGE hits peak HBM BW at small messages (impossible on Nvidia GPUs), NeuronCore-v4 MXFP4/MXFP8 (quad-MXFP8 K=512) + row-tiling, VectorE exponential for FlashAttention; the profiler is SOTA and Anthropic's perf lead prefers it to Nvidia/AMD. Interconnect: gen1 Astera Scorpio X 160-lane dual-plane → **Trainium3n** gen2 320-lane single-plane = 2.8× all-to-all BW (MoE). Google TPU joined InferenceX same day; Nvidia's two biggest custom-silicon rivals now both publish tokens/$. → **LONG [[AMZN]] $244.43**; moat-erosion read-through [[NVDA]] (no fresh call), component read [[ALAB]] (Scorpio X). (→ [[custom-silicon-asic]], [[ai-accelerator-competition]], [[nvidia-gpu-platform]], [[serdes-high-speed-connectivity]].)
 
 **hit_rate note (2026-11-25): 14/39 → 15/40 (38%), ~10 open — no new post; the Oct-23 Trainium [[AMZN]] LONG resolves a WIN.** **[[AMZN]] LONG ($248.00) → $255.39 = +3.0% ✓** — the TorchNeuron/Neuron-Explorer training-stack thesis held up as one of the very few names that *didn't* round-trip the late-October top (SemiDoped's own Oct-20 AMZN long, logged higher at $262.37, resolved −2.7%). Last post Nov-12 (Jensen), already ingested; the structural **SHORT [[NVDA]] ($173.73)** stays open and sits +5.0% in its favor at $165.05 after the SEC-probe/Jensen-whipsaw week — the governance turmoil is, if anything, the bear case playing out. calls_logged unchanged (256).
 

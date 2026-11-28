@@ -4,11 +4,11 @@ title: "GOOGL — Alphabet"
 tags: []
 related: ["[[semidoped-2026-11-17-google-built-two-new-tpus-8i-max-8tx]]", "[[semidoped-2026-11-10-daily-update-november-10th-2026]]", "[[semianalysis-2026-11-05-tpu-strikes-the-king]]", "[[semidoped-2026-10-01-daily-update-october-1st-2026]]", "[[irrationalanalysis-2026-09-06-hot-chips-2026-irrational-recap]]", "[[semianalysis-2026-09-07-tpu-inferencex-full-steam]]", "[[semianalysis-2024-03-13-ai-datacenter-energy-race]]", "[[semianalysis-2024-05-07-openai-doomed-et-tu-microsoft]]", "[[citrini-2024-06-03-annual-review-ai-highlights]]", "[[semianalysis-2024-09-04-multi-datacenter-openai-google]]", "[[semianalysis-2024-12-11-scaling-laws-o1-pro-reasoning-failures]]", "[[semianalysis-2025-01-15-ai-diffusion-export-controls]]", "[[semianalysis-2025-01-31-deepseek-cost-training-closed-model-margins]]", "[[semianalysis-2025-07-03-deepseek-debrief-128-days]]", "[[semianalysis-2025-08-13-gpt5-ad-monetization-superapp]]", "[[semianalysis-2025-09-03-amazons-ai-resurgence-aws-anthropic]]", "[[semianalysis-2025-09-10-rubin-cpx-specialized-accelerator-rack]]", "[[semianalysis-2025-11-06-clustermax-gpu-cloud-rating]]", "[[citrini-2025-11-27-carving-up-the-tpu]]", "[[semianalysis-2025-11-28-tpuv7-google-challenges-nvidia]]", "[[globalsemiresearch-2026-04-16-marvell-next-chip-giant]]", "[[semianalysis-2026-05-27-anthropic-bedrock-drive-aws-margins-higher]]", "[[semianalysis-2026-08-07-gemini-cooked-gcp-cooking]]", "[[semidoped-2026-09-03-daily-update-september-3rd]]", "[[semidoped-2026-09-04-daily-update-september-4th]]", "[[semianalysis-2026-09-23-clustermax-30-the-industry-standard]]", "[[semidoped-2026-10-06-daily-update]]"]
 created: 2024-03-13
-updated: 2026-11-19
+updated: 2026-11-28
 ticker: GOOGL
 current_stance: long
 conviction: medium
-last_review: 2026-11-19
+last_review: 2026-11-28
 ---
 ## Call log
 | date | publication | stance | px@call | thesis |
@@ -87,3 +87,6 @@ No px@call values are recorded in this log, precluding quantitative P&L assessme
 | 2026-11-17 | [[semidoped]] | LONG | 280.20 | **Four V8 TPU SKUs** (8T train, 8i infer, **8TX** confidential-compute w/ AMD EPYC host, **8i Max** memory-maxed) + **TPU Sync** (Google's Dynamo rival) + external-customer push; Kuo sees TPU order visibility to **2029**; Google now moving to **buy HBM directly** (bypassing Broadcom's bundle) — value to the designer. |
 
 **Outcome tracking (2026-11-19):** New **SD LONG** @ 280.20 (Nov-18 close), opened flat; GOOGL sits near 3-mo lows ($279-280) despite the TPU merchant-silicon momentum. Thesis: TPU moving from internal tool to external product (TPU Sync + 8TX/8i Max + visibility to 2029) accrues value to Google and pressures Nvidia's inference moat; the direct-HBM move trims Broadcom's take. Added [[semidoped-2026-11-17-google-built-two-new-tpus-8i-max-8tx]].
+
+## Outcome tracking update 2026-11-28 (resolution)
+- **SD 2026-10-28 LONG (@320.58) -> 273.10 = -14.8% LOSS X** - external-TPU-pull long; crossed 30d in the Nov-28 run. Part of the Oct 26-28 batch that resolved **0W/12L** (the late-October top round-tripped through Black November + the Nov drawdown). Entry level, not thesis, decided it.
